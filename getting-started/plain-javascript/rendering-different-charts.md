@@ -158,7 +158,8 @@ Now that the data is ready, let us dive in directly to render the 
 </html>
 ```
 
-You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts).
+> You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts).
+
 
 ## Combination Charts
 
@@ -406,12 +407,12 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts).
+> You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts).
 
 ## Real Time Charts
-Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts. 
+Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts.
 
-FusionCharts XT supports six types of Real-time charts - Line, Area, Column, Stacked Area, Stacked Column, and Line (Dual Y axis). In the section below, we will see how to build a real-time area 2D chart.
+FusionCharts XT supports various types of Real-time charts - [Line](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-line-chart), [Area](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-area-chart), [Column](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-column-chart), [Stacked Area](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-stacked-area-chart), [Stacked Column](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart), and [Line (Dual Y axis)](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart). In the section below, we will see how to build a real-time area 2D chart.
 
 {% embed_chart standard-charts-real-time-charts-example-2.js %}
 
@@ -573,11 +574,12 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 </html>
 ```
 
-You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts).
+You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts).
 
 ## Gauges
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range.
-This scale can be color-coded to indicate divisions within the range. A dial is used to point to the data value. The gauge can also be rendered with multiple dials. It is often used to simulate a speedometer and on dashboards.
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. FusionCharts XT provides you with seven different gauges - [Angular Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/angular-gauge), [Bulb Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/bulb-gauge), [Cylinder Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/cylinder-gauge), [LED Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/led-gauge), [Linear Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/linear-gauge), [Thermometer Gauge](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/thermometer-gauge) and Vertical LED Gauge. 
+
+An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range. This scale can be color-coded to indicate divisions within the range. A dial is used to point to the data value. The gauge can also be rendered with multiple dials. It is often used to simulate a speedometer and on dashboards.
 
 To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
@@ -711,14 +713,12 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#gauges).
+> You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#gauges).
 
 ## Maps
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
 
-To render these maps, you need to download the map definition files from <<here>>. Copy and paste the `maps` folder within your `fusioncharts` directory. (inlcuding map definition files)
-
-In the section below, we will see how to build a world map.
+You can download the map definition files separately from [here](https://www.fusioncharts.com/download/map-definition-files) if you want to save them locally. In the section below, we will see how to build a world map.
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -891,17 +891,230 @@ We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/m
 </html>
 ```
 
-That’s it. Your first map is ready. FusionCharts offers you more than 2000 different maps suitable for various purposes. You can find more about the different types of maps [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+That’s it. Your first map is ready.
 
+### Render other Maps
+
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
+
+Let's create a map of California to show the "Web visits for a particular month" as shown below:
+
+{% embed_chartData getting-started-your-first-map-california.js json %}
+
+The consolidated code for rendering the map is shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='npm'>NPM</a></li> 
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+
+<pre><code class="language-javascript">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script>
+    &lt;!-- Including the map definition file --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
+
+const colorrange = {
+  "minvalue": "0",
+  "startlabel": "Low",
+  "endlabel": "High",
+  "code": "e44a00",
+  "gradient": "1",
+  "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+};
+
+const chartConfiguration = {
+    type: 'maps/california',
+    renderAt: 'chart-container',
+    width: '100%',
+    height: '550',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "animation": "0",
+            "showbevel": "0",
+            "usehovercolor": "1",
+            "showlegend": "1",
+            "legendposition": "BOTTOM",
+            "legendborderalpha": "0",
+            "legendbordercolor": "ffffff",
+            "legendallowdrag": "0",
+            "legendshadow": "0",
+            "caption": "Website Visits for the month of March 2018",
+            "connectorcolor": "000000",
+            "fillalpha": "80",
+            "hovercolor": "CCCCCC",
+            "theme": "fusion"
+        },
+        "colorrange": colorrange,
+        "data": mapData
+    }
+};
+
+FusionCharts.ready(function() {
+	new FusionCharts(chartConfiguration).render();
+})
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab npm-tab'>
+To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
+
+<pre><code class="language-javascript">
+npm install fusionmaps
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>The `fusioncharts` and `fusionmaps` package for `npm` can now be used in two different ways:</strong></div>
+<ul>
+    <li>FusionCharts ES module</li>
+    <li>FusionCharts CJS module</li>
+</ul>
+<div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
+
+<h4>ES6</h4>
+<pre><code class="language-javascript">
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the map files
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+// Add the map as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(FusionMaps);
+FusionCharts.addDep(California);
+FusionCharts.addDep(FusionTheme);
+
+// Create an Instance with map options
+var webVisit = new FusionCharts({
+type: 'maps/california',
+width: '800',
+height: '550',
+renderAt: 'chart-container',
+dataFormat: 'json',
+dataSource: {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": {
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+},
+"data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+}
+});
+// Render
+webVisit.render();
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+
+<h4>CJS</h4>
+<pre><code class="language-javascript">
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
+var California = require('fusionmaps/maps/fusioncharts.california');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+FusionMaps(FusionCharts);
+California(FusionCharts);
+FusionTheme(FusionCharts);
+
+// Create an Instance with map options
+var webVisit = new FusionCharts({
+type: 'maps/california',
+width: '800',
+height: '550',
+renderAt: 'chart-container',
+dataFormat: 'json',
+dataSource: {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": {
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+},
+"data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+}
+});
+// Render
+webVisit.render();
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
+
+That's it! The **California** map is ready. 
+> FusionCharts offers you more than 2000 different maps suitable for various purposes. You can find more about the different types of maps [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
 ## Heat Map
 A heat map chart utilizes different colors to represent data values within a table. It comes in handy the most, when you have to plot large and complex data sets. FusionCharts suite XT supports two types of heat map charts - a numeric heat map to plot numeric values, and a category-based heat map to plot non-numeric data.
+
+TreeMaps are another similar chart types with heirarchial data. Treemaps are ideal for displaying large amounts of hierarchically structured (tree-structured) data. The space in the visualization is split up into rectangles that are sized and ordered by a quantitative variable.The levels in the hierarchy of the treemap are visualized as rectangles containing other rectangles. FInd more about the treemaps [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/treemap).
 
 In the section below, we will see how to build a heat map chart.
 
 {% embed_chart standard-charts-heat-map-chart-example-1.js %}
 
-As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors. 
+As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors.
 
 | State | Processor | Screen Size | Price | Battery Backup | Camera |
 | ----- | --------- | ----------- | ----- | ---------------| ------ ||
@@ -1394,8 +1607,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-Know more about Heat maps and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/heat-map-chart).
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
+> There are more variants of Heatmap charts available with FusionCharts. Know more about Heat maps and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/heat-map-chart). You can also create various charts belonging to the [PowerCharts](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt) family in a similar way. 
 
 ## Gantt Chart
 A Gantt chart is a date/time-based chart, which you can use to plot tasks along with their start and end dates/times. You can also use the chart to define milestones for a project, indicating different stages with their deadlines. That way, you can constantly keep an eye on project status, and plan alternate strategies in case you encounter an unprecedented delay.
@@ -3221,7 +3433,4 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of otehr charts here.
-Know more about Gantt Chart and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/gantt-chart).
-
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
+> Know more about Gantt Chart and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
