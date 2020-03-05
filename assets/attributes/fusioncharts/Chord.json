@@ -870,7 +870,7 @@
         "range": "",
         "type": "Number",
         "name": "legendNumColumns"
-      },
+      }
     ],
     "description": "In a chart, the series name of each dataset shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
   },
@@ -961,7 +961,7 @@
       },
       {
         "description": "This option helps you specify the position of the thousand separator.",
-        "range": " ",
+        "range": " ",
         "type": "Number",
         "versionsince": "3.2.2 - SR3",
         "name": "thousandSeparatorPosition"

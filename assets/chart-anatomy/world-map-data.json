@@ -1,0 +1,61 @@
+{
+    "header": "Chart Anatomy",
+    "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+    "content": {
+        "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+        "contentGroup": [
+            {
+                "itemHeader": "",
+                "imgSrc": "world-map-anatomy1.png",
+                "annotations": [
+                    {
+                        "annotationNumber": "1",
+                        "annotationName": "colorRange",
+                        "annotationDesc": "Outlines the color variation of the different gegraphical entities based on their values. An array consisting of objects with range of values along with the color code.",
+                        "annotationDescLinkPath": null,
+                        "syntax": "{\r\n    \"minvalue\": \"0\",\r\n    \"code\": \"#FFE0B2\",\r\n    \"gradient\": \"1\",\r\n    \"color\": [{\r\n        \"minvalue\": \"0.5\",\r\n        \"maxvalue\": \"1.0\",\r\n        \"color\": \"#FFD74D\"\r\n    },...\r\n]}",
+                        "leftPosition": "14.5%",
+                        "topPosition": "79.5%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "2",
+                        "annotationName": "data",
+                        "annotationDesc": "An array of objects where an individual object represents a geogrsphical area and the value associated with it.",
+                        "syntax": "[{\r\n    \"id\": \"NA\",\r\n    \"value\": \".82\",\r\n    \"showLabel\": \"1\"\r\n}, .....\r\n]",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "37%",
+                        "topPosition": "37%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "3",
+                        "annotationName": "id",
+                        "annotationDesc": "id is the unique identifier for eacch location. For example, if you want to denote Africa, the value for the corresponding id must be AF and not AFR.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "18.5%",
+                        "topPosition": "27.5%",
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "We have a detailed Map Specification Sheets for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create.",
+                                "linkPath": "/maps/spec-sheets/world"
+                            },
+                            {
+                                "linkDesc": "You can find different types of maps available with FusionCharts ",
+                                "linkPath": "/map-guide/list-of-maps"
+                            }
+                        ]
+                    },
+                    {
+                        "annotationNumber": "4",
+                        "annotationName": "value",
+                        "annotationDesc": "value brings the numerical significance to the geographical entity concerning the use-case mapping",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "52.5%",
+                        "topPosition": "47.5%"
+                    }
+                ]
+            }
+        ]
+    }
+}
