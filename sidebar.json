@@ -437,12 +437,8 @@
                     "path": "/getting-started/vue/your-first-chart-using-vuejs"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/vue/your-first-gauge-using-vuejs"
-                  },
-                  {
-                    "title": "Your First Map",
-                    "path": "/getting-started/vue/your-first-map-using-vuejs"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/vue/rendering-different-charts-using-vue"
                   }
                 ]
               },
