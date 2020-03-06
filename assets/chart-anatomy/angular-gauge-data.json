@@ -1,0 +1,34 @@
+{
+    "header": "Chart Anatomy",
+    "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+    "content": {
+        "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+        "contentGroup": [
+            {
+                "itemHeader": "",
+                "imgSrc": "angular-gauge-anatomy.png",
+                "annotations": [
+                    {
+                        "annotationNumber": "1",
+                        "annotationName": "colorRange",
+                        "annotationDesc": "Outlines the color variation of the angular gauge. An array consisting of objects with range of values along with the color code.",
+                        "annotationDescLinkPath": null,
+                        "syntax": "{\r\n  \"color\": [\r\n    {\r\n      \"minValue\": \"0\",\r\n      \"maxValue\": \"50\",\r\n      \"code\": \"#F2726F\"\r\n    },...  \r\n  ]\r\n}",
+                        "leftPosition": "33.5%",
+                        "topPosition": "46.5%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "2",
+                        "annotationName": "dials",
+                        "annotationDesc": "Represents the value of the dial. A dial object with a value parameter representing the dial of the gauge.",
+                        "syntax": "{\r\n  \"dial\": [\r\n    {\"value\": \"81\"}\r\n  ]\r\n}",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "52%",
+                        "topPosition": "60%"
+                    }
+                ]
+            }
+        ]
+    }
+}

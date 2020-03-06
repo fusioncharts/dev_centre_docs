@@ -961,7 +961,7 @@
       },
       {
         "description": "This option helps you specify the position of the thousand separator.",
-        "range": " ",
+        "range": " ",
         "type": "Number",
         "versionsince": "3.2.2 - SR3",
         "name": "thousandSeparatorPosition"

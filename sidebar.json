@@ -24,12 +24,8 @@
                     "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
-                  },
-                  {
-                    "title": "Your First Map",
-                    "path": "/getting-started/plain-javascript/your-first-map-using-plain-javascript"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript"
                   }
                 ]
               },
@@ -304,12 +300,8 @@
                     "path": "/getting-started/react/your-first-chart-using-react"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/react/your-first-gauge-using-react"
-                  },
-                  {
-                    "title": "Your First Map\t",
-                    "path": "/getting-started/react/your-first-map-using-react"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/react/rendering-different-charts-using-react"
                   }
                 ]
               },
@@ -538,12 +530,8 @@
                     "path": "/getting-started/jquery/your-first-chart-using-jquery"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/jquery/your-first-gauge-using-jquery"
-                  },
-                  {
-                    "title": "Your First Map",
-                    "path": "/getting-started/jquery/your-first-map-using-jquery"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/jquery/rendering-different-charts-using-jquery"
                   }
                 ]
               },
@@ -1659,6 +1647,10 @@
               {
                 "title": "Architecture of the FusionCharts Export Server",
                 "path": "/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server"
+              },
+              {
+                "title": "Exporting Scroll Charts",
+                "path": "/exporting-charts/using-fc-export-server/exporting-scroll-charts"
               }
             ]
           },
