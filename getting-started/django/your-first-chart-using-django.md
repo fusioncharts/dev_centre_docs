@@ -43,7 +43,7 @@ After downloading the fusioncharts components, add `django-fusioncharts` wrapper
 
 - Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) inside `static>fusioncharts` directory.
 
-- Create a `template` folder inside the fusioncharts (app) directory.
+- Create a `templates` folder inside the fusioncharts (app) directory.
 
 The directory structure will look like this:
 
@@ -103,7 +103,7 @@ chartConfig["theme"] = "fusion"
 dataSource["chart"] = chartConfig
 ```
 
-- Create an `index.html` file inside the `template` folder (created previously in the fusioncharts directory) to create the **container** for the chart and to include the FusionCharts Javascript files and FusionCharts theme file to apply the style to the charts.
+- Create an `index.html` file inside the `templates` folder (created previously in the fusioncharts directory) to create the **container** for the chart and to include the FusionCharts Javascript files and FusionCharts theme file to apply the style to the charts.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -152,7 +152,7 @@ dataSource["chart"] = chartConfig
 </div>
 </div>
 
-- Update the path of static files and templates in the `settings.py` file. Add the template location in the `DIRS` in `TEMPLATES` list on the `settings.py` file. Refer to the code below:
+- Update the path of static files and templates in the `settings.py` file. Add the templates location in the `DIRS` in `TEMPLATES` list on the `settings.py` file. Refer to the code below:
 
 ```javascript
 'DIRS': ['FusionChartsProject/fusioncharts/templates'],
