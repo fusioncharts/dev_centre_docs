@@ -15,6 +15,99 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project.
 
+You can install the fusioncharts components by following any of the methods below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
+<div>
+    <ol>
+        <li>Include the <strong>FusionCharts</strong> JavaScript files from CDN in your static <strong>HTML</strong> file.</li>
+        <li>Include the theme file.</li>
+    </ol>
+</div>
+<div>The code is shown below:</div>
+<pre><code class="language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab local-tab'>
+<div><strong>To install the <strong>FusionCharts</strong> Suite follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the <strong>FusionCharts</strong> JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
+    </ol>
+</div>
+<div>The code that goes into your static <strong>HTML</strong> file is shown below:</div>
+<pre><code class="language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab npm-tab'>
+<div><strong>Create a project folder using the following command:</strong></div>
+<pre><code class="language-bash">
+$ mkdir projectName
+$ cd projectName
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div><strong>To install the latest webpack release, run the following command:</strong></div>
+<pre><code class="language-bash">
+$ npm install webpack webpack-cli --save-dev
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
+<pre><code class="language-bash">
+$ npm install fusioncharts
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div>Now we'll create the following directory structure, files and their contents:</div>
+<ul>
+    <li>Create an `src` folder inside project directory. Within the src folder, create an  `index.js` file.</li>
+    <li>Create a `dist` folder inside the project directory. Within the dist folder, create an `index.html` file.</li>
+</ul>
+<div>The directory structure will look like this:</div>
+<img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
+<div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
+<pre><code class="language-javascript">
+// Include the core fusioncharts file from core
+import FusionCharts from 'fusioncharts/core';
+// Include the chart from viz folder
+import Column2D from 'fusioncharts/viz/column2d';
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
+
 Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/en/).
 
 One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
