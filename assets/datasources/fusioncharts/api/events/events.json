@@ -7,8 +7,9 @@
     "about": "Triggered just before chart data is passed to the chart.",
     "description": "Triggered just before chart data is passed to the chart. \n\n All events, when triggered, will provide two parameters for the handler - __eventObj__ (object containing information generic to all events) and __dataObj__ (object containing information specific to an event). \n\n Scroll down to the table rendered below the chart to view information contained in the dataObj object.",
     "examples": {
-      "codeFile": "beforeDataUpdate",
-      "fiddle": "https://jsfiddle.net/fusioncharts/b1cadey2/"
+      "header": "Examples",
+      "slug": "fc-event-beforerender",
+      "_renderBtn": true
     },
     "params": {
       "eventObj": {
