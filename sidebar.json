@@ -209,6 +209,10 @@
                         "path": "/getting-started/angular/angular/your-first-chart-using-angular"
                       },
                       {
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-angular"
+                      },
+                      {
                         "title": "Your First Gauge",
                         "path": "/getting-started/angular/angular/your-first-gauge-using-angular"
                       },
