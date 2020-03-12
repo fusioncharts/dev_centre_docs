@@ -15,7 +15,31 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project.
 
-You can install the fusioncharts components by following any of the methods below:
+Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/en/).
+
+One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
+
+```javascript
+npm install -g @angular/cli
+```
+
+Open the terminal, go ahead and enter:
+
+```javascript
+ng new first-fusioncharts-project
+cd first-fusioncharts-project
+ng serve --open
+```
+
+- Angular requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+
+`first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
+
+Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
+
+## Installation and Including Dependencies
+
+You can install the `fusioncharts` components by following any of the methods below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -72,65 +96,6 @@ $ mkdir projectName
 $ cd projectName
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div><strong>To install the latest webpack release, run the following command:</strong></div>
-<pre><code class="language-bash">
-$ npm install webpack webpack-cli --save-dev
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
-<pre><code class="language-bash">
-$ npm install fusioncharts
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div>Now we'll create the following directory structure, files and their contents:</div>
-<ul>
-    <li>Create an `src` folder inside project directory. Within the src folder, create an  `index.js` file.</li>
-    <li>Create a `dist` folder inside the project directory. Within the dist folder, create an `index.html` file.</li>
-</ul>
-<div>The directory structure will look like this:</div>
-<img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
-<div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
-<pre><code class="language-javascript">
-// Include the core fusioncharts file from core
-import FusionCharts from 'fusioncharts/core';
-// Include the chart from viz folder
-import Column2D from 'fusioncharts/viz/column2d';
-// Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
-// Add the chart and theme as dependency
-// E.g. FusionCharts.addDep(ChartType)
-FusionCharts.addDep(Column2D);
-FusionCharts.addDep(FusionTheme);
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
-
-Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/en/).
-
-One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
-
-```javascript
-npm install -g @angular/cli
-```
-
-Open the terminal, go ahead and enter:
-
-```javascript
-ng new first-fusioncharts-project
-cd first-fusioncharts-project
-ng serve --open
-```
-
-- Angular requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
-
-`first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
-
-Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
-
-## Installation and Including Dependencies
 
 Install the angular-fusioncharts and fusioncharts modules by the following command
 
@@ -249,70 +214,69 @@ Get ready to render your first chart finally with the steps below:
 Specify the chart data within the AppComponent class in `src/app/app.component.ts` file in your root project folder.
 
 ```javascript
+// STEP 1- To import the dependencies
 import { Component } from "@angular/core";
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
+]
+// STEP 3- Construct the dataset comprising multiple series
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
+]
+
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html"
+
 })
+
+
 export class AppComponent {
   dataSource: Object;
   constructor() {
-    //STEP 2 - Chart Data
-    const chartData = [
-      {
-        label: "Venezuela",
-        value: "290"
+    this.dataSource = {
+      "chart": {
+        "theme": "fusion",
+        "caption": "Comparison of Quarterly Revenue",
+        "xAxisname": "Quarter",
+        "yAxisName": "Revenues (In USD)",
+        "numberPrefix": "$",
+        "plotFillAlpha": "80",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1"
       },
-      {
-        label: "Saudi",
-        value: "260"
-      },
-      {
-        label: "Canada",
-        value: "180"
-      },
-      {
-        label: "Iran",
-        value: "140"
-      },
-      {
-        label: "Russia",
-        value: "115"
-      },
-      {
-        label: "UAE",
-        value: "100"
-      },
-      {
-        label: "US",
-        value: "30"
-      },
-      {
-        label: "China",
-        value: "30"
-      }
-    ];
-    // STEP 3 - Chart Configuration
-    const dataSource = {
-      chart: {
-        //Set the chart caption
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        //Set the chart subcaption
-        subCaption: "In MMbbl = One Million barrels",
-        //Set the x-axis name
-        xAxisName: "Country",
-        //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        //Set the theme for your chart
-        theme: "fusion"
-      },
-      // Chart Data - from step 2
-      data: chartData
-    };
-    this.dataSource = dataSource;
-  }
-}
+      "categories": categories,
+      "dataset": dataset,
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
 ```
 
 Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
