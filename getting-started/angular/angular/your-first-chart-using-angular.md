@@ -106,22 +106,24 @@ npm install fusioncharts angular-fusioncharts --save
 After installing the fusioncharts components, you can replace the code in `src/app/app.module.ts` file with the consolidated code shown below to create your first chart. Import all the required dependencies in `@NgModule` to get started.
 
 ```javascript
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppComponent } from "./app.component";
-import { FusionChartsModule } from "angular-fusioncharts";
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from "fusioncharts";
+import * as FusionCharts from 'fusioncharts';
 import * as charts from "fusioncharts/fusioncharts.charts";
-import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FusionChartsModule],
+  imports: [BrowserModule,FusionChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -285,11 +287,10 @@ Now using the fusioncharts component create the chart container in `app.componen
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
   width="700"
   height="400"
-  type="Column2d"
+  type="mscolumn2d"
   [dataSource]="dataSource"
 >
 </fusioncharts>
