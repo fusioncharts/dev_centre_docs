@@ -329,14 +329,245 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 <div class='tab js-tab active'>
 <pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
 
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require Chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+
+Charts(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories = [{
+        "category": [{
+                "label": "Jan"
+            },
+            {
+                "label": "Feb"
+            },
+            {
+                "label": "Mar"
+            },
+            {
+                "label": "Apr"
+            },
+            {
+                "label": "May"
+            },
+            {
+                "label": "Jun"
+            },
+            {
+                "label": "Jul"
+            },
+            {
+                "label": "Aug"
+            },
+            {
+                "label": "Sep"
+            },
+            {
+                "label": "Oct"
+            },
+            {
+                "label": "Nov"
+            },
+            {
+                "label": "Dec"
+            }
+        ]
+    }]
+    // STEP 3- Construct the dataset comprising combination series
+const dataset = [{
+        "seriesName": "Actual Revenue",
+        "showValues": "1",
+        "data": [{
+                "value": "16000"
+            },
+            {
+                "value": "20000"
+            },
+            {
+                "value": "18000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "15000"
+            },
+            {
+                "value": "21000"
+            },
+            {
+                "value": "16000"
+            },
+            {
+                "value": "20000"
+            },
+            {
+                "value": "17000"
+            },
+            {
+                "value": "25000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "23000"
+            }
+        ]
+    },
+    {
+        "seriesName": "Projected Revenue",
+        "renderAs": "line",
+        "data": [{
+                "value": "15000"
+            },
+            {
+                "value": "16000"
+            },
+            {
+                "value": "17000"
+            },
+            {
+                "value": "18000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "19000"
+            },
+            {
+                "value": "20000"
+            },
+            {
+                "value": "21000"
+            },
+            {
+                "value": "22000"
+            },
+            {
+                "value": "23000"
+            }
+        ]
+    },
+    {
+        "seriesName": "Profit",
+        "renderAs": "area",
+        "data": [{
+                "value": "4000"
+            },
+            {
+                "value": "5000"
+            },
+            {
+                "value": "3000"
+            },
+            {
+                "value": "4000"
+            },
+            {
+                "value": "1000"
+            },
+            {
+                "value": "7000"
+            },
+            {
+                "value": "1000"
+            },
+            {
+                "value": "4000"
+            },
+            {
+                "value": "1000"
+            },
+            {
+                "value": "8000"
+            },
+            {
+                "value": "2000"
+            },
+            {
+                "value": "7000"
+            }
+        ]
+    }
+]
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "caption": "Harry's SuperMart",
+                "subCaption": "Sales analysis of last year",
+                "xAxisname": "Month",
+                "yAxisName": "Amount (In USD)",
+                "numberPrefix": "$",
+                "divlineColor": "#999999",
+                "divLineIsDashed": "1",
+                "divLineDashLen": "1",
+                "divLineGapLen": "1",
+                "toolTipColor": "#ffffff",
+                "toolTipBorderThickness": "0",
+                "toolTipBgColor": "#000000",
+                "toolTipBgAlpha": "80",
+                "toolTipBorderRadius": "2",
+                "toolTipPadding": "5",
+                "theme": "fusion"
+            },
+            "categories": categories,
+            "dataset": dataset
+        }
+    }
+]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
 <div class='tab html-tab'>
 <pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
 
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="mscombi2d" datasource="{{dataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
