@@ -905,76 +905,128 @@ In the above JSON:
 - Create the `dials` object to represent the customer satisfaction score.
 - Create the `dial` object under the `dials` object to set the value of customer satisfaction score.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```html
-<html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    // Define the colorVariations of the angular gauge
-    const colorRange = {
-    "color": [{
-        "minValue": "0",
-        "maxValue": "50",
-        "code": "#F2726F"
-        },{
-        "minValue": "50",
-        "maxValue": "75",
-        "code": "#FFC533"
-        },{
-        "minValue": "75",
-        "maxValue": "100",
-        "code": "#62B58F"
-        }]
-    };
-    //Set up the dial value
-    const dials = {
-        "dial": [
-            {"value": "81"}
-        ]
-    };
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='modulets'>module.ts</a></li>
+    <li><a data-toggle='componentts'>component.ts</a></li>
+    <li><a data-toggle='appcomphtml'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-    //STEP 3 - Chart Configurations
-    var chartConfigurations = {
-        type: 'angulargauge', // The gauge type
-        width: '450', // Width of the gauge
-        height: '250', // Height of the gauge
-        dataFormat: 'json', // Data type
-        renderAt:'chart-container', //Container where the chart will render
-        dataSource: {
-            // Gauge Configuration
-            "chart": {
-                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": colorRange,
-            "dials": dials
-        }
-    }
+<div class='tab modulets-tab active'>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
+<div>
+Copy and paste the code given below in the `module.ts` file:
+</div>
+<pre><code class="language-javascript">
 
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
-
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
-</html>
 ```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as Widgets from 'fusioncharts/fusioncharts.widgets';
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab componentts-tab'>
+<div>
+Copy and paste the code given below in the `component.ts` file:
+</div>
+<pre><code class="language-javascript">
+
+```
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+
+//STEP 2 - Defining the dataset for the angular gauge along with the color configuration
+const colorRange = {
+  "color": [{
+    "minValue": "0",
+    "maxValue": "50",
+    "code": "#e44a00"
+  }, {
+    "minValue": "50",
+    "maxValue": "75",
+    "code": "#f8bd19"
+  }, {
+    "minValue": "75",
+    "maxValue": "100",
+    "code": "#6baa01"
+  }]
+};
+
+const dials = {
+  "dial": [{
+    "value": "67"
+  }]
+};
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
+
+})
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "caption": "Customer Satisfaction Score",
+        "subcaption": "Last week",
+        "lowerLimit": "0",
+        "upperLimit": "100",
+        "theme": "fusion"
+      },
+      "colorRange": colorRange,
+      "dials": dials
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab appcomphtml-tab'>
+<div>Copy and paste the code given below in the `app.component.html` file:</div>
+<pre><code class="language-javascript">
+
+```
+<h1>
+    {{title}}
+</h1>
+<fusioncharts width="700" height="400" type="angulargauge" [dataSource]="dataSource">
+</fusioncharts>
+```
+
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
 
 > You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](/chart-guide/list-of-charts#gauges).
 
@@ -1060,102 +1112,159 @@ const data = [{
 
 We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
-```html
-<html>
-<head>
-<title>My First map using FusionCharts Suite XT</title>
-<!-- Including the fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Including the map renderer file -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "></script>
-<!-- Including the map definition file -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"></script>
-<!-- Including the fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    // Define the colorVariations of the angular gauge
-    const colorRange = {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, {
-            "minvalue": "2.0",
-            "maxvalue": "3.0",
-            "color": "#E65100"
-        }]
-    };
-    //Set up the Map's data
-    const data = [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, {
-        "id": "EU",
-        "value": ".40",
-        "showLabel": "1"
-    }, {
-        "id": "AF",
-        "value": "2.58",
-        "showLabel": "1"
-    }, {
-        "id": "AU",
-        "value": "1.30",
-        "showLabel": "1"
-    }];
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-    //STEP 3 - Map Configurations
-    var mapConfigurations = {
-        "type": "maps/world",
-        "renderAt": "chart-container",
-        "width": "800",
-        "height": "550",
-        "dataFormat": "json",
-        "dataSource": {
-            // Map Configuration
-            "chart": {
-                "caption": "Average Annual Population Growth",
-                "subcaption": " 1955-2015",
-                "numbersuffix": "%",
-                "includevalueinlabels": "1",
-                "labelsepchar": ": ",
-                "entityFillHoverColor": "#FFF9C4",
-                "theme": "fusion"
-            },
-            // Aesthetics; ranges synced with the slider
-            "colorrange": colorRange,
-            // Source data as JSON --> id represents countries of world.
-            "data": data
-        }
-    }
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='modulets'>module.ts</a></li>
+    <li><a data-toggle='componentts'>component.ts</a></li>
+    <li><a data-toggle='appcomphtml'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(mapConfigurations);
-    fusioncharts.render();
-    });
+<div class='tab modulets-tab active'>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
+<div>
+Copy and paste the code given below in the `module.ts` file:
+</div>
+<pre><code class="language-javascript">
 
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
-</html>
 ```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as FusionMaps from "fusionmaps/fusioncharts.maps";
+
+import * as California from "fusionmaps/maps/fusioncharts.california";
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab componentts-tab'>
+<div>
+Copy and paste the code given below in the `component.ts` file:
+</div>
+<pre><code class="language-javascript">
+
+```
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+
+//STEP 2 - Define the dataset and the colorRange of the map
+const dataset = [{
+  "id": "NA",
+  "value": ".82",
+  "showLabel": "1"
+  }, {
+  "id": "SA",
+  "value": "2.04",
+  "showLabel": "1"
+  }, {
+  "id": "AS",
+  "value": "1.78",
+  "showLabel": "1"
+  }, {
+  "id": "EU",
+  "value": ".40",
+  "showLabel": "1"
+  }, {
+  "id": "AF",
+  "value": "2.58",
+  "showLabel": "1"
+  }, {
+  "id": "AU",
+  "value": "1.30",
+  "showLabel": "1"
+}];
+
+const colorrange = {
+"minvalue": "0",
+"code": "#FFE0B2",
+"gradient": "1",
+"color":
+[{
+  "minvalue": "0.5",
+  "maxvalue": "1.0",
+  "color": "#FFD74D"
+  }, {
+  "minvalue": "1.0",
+  "maxvalue": "2.0",
+  "color": "#FB8C00"
+  }, {
+  "minvalue": "2.0",
+  "maxvalue": "3.0",
+  "color": "#E65100"
+}]
+};
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
+
+})
+
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "caption": "Average Annual Population Growth",
+        "subcaption": " 1955-2015",
+        "numbersuffix": "%",
+        "includevalueinlabels": "1",
+        "labelsepchar": ": ",
+        "entityFillHoverColor": "#FFF9C4",
+        "theme": "fusion"
+      },
+      // Aesthetics; ranges synced with the slider
+      "colorrange": colorrange,
+      // Source data as JSON --> id represents countries of the world.
+      "data": dataset
+
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab appcomphtml-tab'>
+<div>Copy and paste the code given below in the `app.component.html` file:</div>
+<pre><code class="language-javascript">
+
+```
+<h1>
+    {{title}}
+</h1>
+<fusioncharts width="700" height="400" type="world" [dataSource]="dataSource">
+</fusioncharts>
+```
+
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
 
 That’s it. Your first map is ready.
 
@@ -1169,27 +1278,61 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 The consolidated code for rendering the map is shown below:
 
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='npm'>NPM</a></li> 
+    <li class='active'><a data-toggle='modulets'>module.ts</a></li>
+    <li><a data-toggle='componentts'>component.ts</a></li>
+    <li><a data-toggle='appcomphtml'>app.component.html</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab cdn-tab active'>
-
+<div class='tab modulets-tab active'>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
+<div>
+Copy and paste the code given below in the `module.ts` file:
+</div>
 <pre><code class="language-javascript">
-&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script>
-    &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as FusionMaps from "fusionmaps/fusioncharts.maps";
+
+import * as California from "fusionmaps/maps/fusioncharts.california";
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab componentts-tab'>
+<div>
+Copy and paste the code given below in the `component.ts` file:
+</div>
+<pre><code class="language-javascript">
+
+```
+import { Component } from "@angular/core";
+
 const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
 
 const colorrange = {
@@ -1201,176 +1344,59 @@ const colorrange = {
   "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
 };
 
-const chartConfiguration = {
-    type: 'maps/california',
-    renderAt: 'chart-container',
-    width: '100%',
-    height: '550',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "animation": "0",
-            "showbevel": "0",
-            "usehovercolor": "1",
-            "showlegend": "1",
-            "legendposition": "BOTTOM",
-            "legendborderalpha": "0",
-            "legendbordercolor": "ffffff",
-            "legendallowdrag": "0",
-            "legendshadow": "0",
-            "caption": "Website Visits for the month of March 2018",
-            "connectorcolor": "000000",
-            "fillalpha": "80",
-            "hovercolor": "CCCCCC",
-            "theme": "fusion"
-        },
-        "colorrange": colorrange,
-        "data": mapData
-    }
-};
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 
-FusionCharts.ready(function() {
-  new FusionCharts(chartConfiguration).render();
 })
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;/html&gt;
+
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "animation": "0",
+        "showbevel": "0",
+        "usehovercolor": "1",
+        "showlegend": "1",
+        "legendposition": "BOTTOM",
+        "legendborderalpha": "0",
+        "legendbordercolor": "ffffff",
+        "legendallowdrag": "0",
+        "legendshadow": "0",
+        "caption": "Website Visits for the month of March 2018",
+        "connectorcolor": "000000",
+        "fillalpha": "80",
+        "hovercolor": "CCCCCC",
+        "theme": "fusion"
+      },
+      "colorrange": colorrange,
+      "data": mapData
+
+
+    } // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+```
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
-<div class='tab npm-tab'>
-To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
-
+<div class='tab appcomphtml-tab'>
+<div>Copy and paste the code given below in the `app.component.html` file:</div>
 <pre><code class="language-javascript">
-npm install fusionmaps
+
+```
+<h1>
+    {{title}}
+</h1>
+<fusioncharts width="700" height="400" type="california" [dataSource]="dataSource">
+</fusioncharts>
+```
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
-<div class='mt-30'><strong>The `fusioncharts` and `fusionmaps` package for `npm` can now be used in two different ways:</strong></div>
-<ul>
-    <li>FusionCharts ES module</li>
-    <li>FusionCharts CJS module</li>
-</ul>
-<div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
-
-<h4>ES6</h4>
-<pre><code class="language-javascript">
-// Include the core fusioncharts file from core  -
-import FusionCharts from 'fusioncharts/core';
-
-// Include the map files
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-// Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-
-// Add the map as dependency
-// E.g. FusionCharts.addDep(ChartType)
-FusionCharts.addDep(FusionMaps);
-FusionCharts.addDep(California);
-FusionCharts.addDep(FusionTheme);
-
-// Create an Instance with map options
-var webVisit = new FusionCharts({
-type: 'maps/california',
-width: '800',
-height: '550',
-renderAt: 'chart-container',
-dataFormat: 'json',
-dataSource: {
-"chart": {
-"animation": "0",
-"showbevel": "0",
-"usehovercolor": "1",
-"showlegend": "1",
-"legendposition": "BOTTOM",
-"legendborderalpha": "0",
-"legendbordercolor": "ffffff",
-"legendallowdrag": "0",
-"legendshadow": "0",
-"caption": "Website Visits for the month of March 2018",
-"connectorcolor": "000000",
-"fillalpha": "80",
-"hovercolor": "CCCCCC",
-"theme": "fusion"
-},
-"colorrange": {
-"minvalue": "0",
-"startlabel": "Low",
-"endlabel": "High",
-"code": "e44a00",
-"gradient": "1",
-"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-},
-"data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
-}
-});
-// Render
-webVisit.render();
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-
-<h4>CJS</h4>
-<pre><code class="language-javascript">
-var FusionCharts = require('fusioncharts');
-var FusionMaps = require('fusioncharts/fusioncharts.maps');
-var California = require('fusionmaps/maps/fusioncharts.california');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-
-FusionMaps(FusionCharts);
-California(FusionCharts);
-FusionTheme(FusionCharts);
-
-const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
-
-const colorrange = {
-    "minvalue": "0",
-    "startlabel": "Low",
-    "endlabel": "High",
-    "code": "e44a00",
-    "gradient": "1",
-    "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-};
-
-const chartConfigs = {
-    type: 'maps/california',
-    width: '800',
-    height: '550',
-    renderAt: 'chart-container',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "animation": "0",
-            "showbevel": "0",
-            "usehovercolor": "1",
-            "showlegend": "1",
-            "legendposition": "BOTTOM",
-            "legendborderalpha": "0",
-            "legendbordercolor": "ffffff",
-            "legendallowdrag": "0",
-            "legendshadow": "0",
-            "caption": "Website Visits for the month of March 2018",
-            "connectorcolor": "000000",
-            "fillalpha": "80",
-            "hovercolor": "CCCCCC",
-            "theme": "fusion"
-        },
-        "colorrange": colorrange,
-        "data": mapData
-    }
-}
-
-// Create an Instance with map options
-var webVisit = new FusionCharts(chartConfigs);
-// Render
-webVisit.render();
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-
 </div>
 </div>
 
