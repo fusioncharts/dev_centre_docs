@@ -619,30 +619,128 @@ Now that we’ve seen the structuring of the data object, let us deal with feedi
 To build the sample chart, we will feed the data at regular intervals from a random generator (math.random function), for the sake of simplicity.
 
 ```javascript
-function addLeadingZero(num) {
-  return num <= 9 ? "0" + num : num;
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View } from "react-native";
+import FusionCharts from "react-native-fusioncharts";
+let apiCaller = null;
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    // STEP 2- Define the categories representing the labels on the X-axis
+    const categories =  [{
+      "category": [{
+          "label": "Start"
+      }]
+    }];
+​
+    const dataset = [{
+      "data": [{
+          "value": "35.27"
+      }]
+    }];
+​
+    //STEP 3 - Chart Configurations
+    const chartConfig = {
+      type: "realtimearea",
+      id: "stockRealTimeChart",
+      width: "100%",
+      height: "400",
+      dataFormat: "json",
+      dataSource: {
+        chart: {
+          caption: "Live visitors on web",
+          subCaption: "Skatter Tech",
+          refreshinterval: "3",
+          numdisplaysets: "10",
+          theme: "fusion",
+          drawAnchors: "0",
+          plotToolText: "$label: <b>$dataValue Feeds</b>",
+          showRealTimeValue: "0",
+          labelDisplay: "rotate"
+        },
+        "categories": categories,
+        "dataset": dataset,
+      }
+    };
+    this.state = chartConfig;
+​
+    this.libraryPath = Platform.select({
+      // Specify fusioncharts.html file location
+      android: {
+        uri: "file:///android_asset/fusioncharts.html"
+      },
+      ios: require("./assets/fusioncharts.html")
+    });
+​
+    this.updateData = this.updateData.bind(this);
+  }
+  addLeadingZero(num) {
+    return num <= 9 ? '0' + num : num;
+  }
+​
+  updateData() {
+    var chartRef = FusionCharts("stockRealTimeChart")
+    setInterval(() => {
+      let currDate = new Date(),
+        label =
+          this.addLeadingZero(currDate.getHours()) +
+          ':' +
+          this.addLeadingZero(currDate.getMinutes()) +
+          ':' +
+          this.addLeadingZero(currDate.getSeconds()),
+        // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+        randomValue = Math.floor(Math.random() * 50) / 100 + 35.25;
+        const script = `
+        let data = '&label=${label}&value=${randomValue}'
+        window.alert(data);
+        true;
+        `;
+    
+      apiCaller(script);
+    }, 2000);
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>A Real Time Area Chart</Text>
+        <View style={styles.chartContainer}>
+          <FusionCharts
+            id= {this.state.id}
+            type={this.state.type}
+            width={this.state.width}
+            height={this.state.height}
+            dataFormat={this.state.dataFormat}
+            dataSource={this.state.dataSource}
+            onInitialized={caller => {
+              apiCaller = caller;
+            }}
+            events={{
+              rendercomplete: this.updateData,
+            }}
+            libraryPath={this.libraryPath} // set the libraryPath property
+          />
+        </View>
+      </View>
+    );
+  }
 }
-
-function updateData() {
-  // Get reference to the chart using its ID(stockRealTimeChart)
-  var chartRef = FusionCharts("stockRealTimeChart"),
-    // We need to create a querystring format incremental update, containing
-    // label in hh:mm:ss format
-    // and a value (random).
-    currDate = new Date(),
-    label =
-      addLeadingZero(currDate.getHours()) +
-      ":" +
-      addLeadingZero(currDate.getMinutes()) +
-      ":" +
-      addLeadingZero(currDate.getSeconds()),
-    // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-    randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
-    // Build Data String in format &label=...&value=...
-    strData = "&label=" + label + "&value=" + randomValue;
-  // Feed it to the chart. chartRef is the instance of the chart.
-  chartRef.feedData(strData);
-}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10
+  },
+  header: {
+    fontWeight: "bold",
+    fontSize: 20,
+    textAlign: "center",
+    paddingBottom: 10
+  },
+  chartContainer: {
+    height: 400,
+    borderColor: "#000",
+    borderWidth: 1
+  }
+});
 ```
 
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
