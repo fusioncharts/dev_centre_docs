@@ -829,105 +829,105 @@ In the above JSON:
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-export default class MultiSeriesColumn2D extends Component {
-  constructor(props) {
-    super(props);
-    //STEP 2 - Defining the dataset for the angular gauge along with the color configuration
-    const colorRange = {
-      "color": [{
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
+
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require Widget modules
+var Widgets = require('fusioncharts/fusioncharts.widgets');
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+
+Widgets(FusionCharts);
+FusionTheme(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+//STEP 2 - Defining the dataset for the angular gauge along with the color configuration
+const colorRange = {
+    "color": [{
         "minValue": "0",
         "maxValue": "50",
         "code": "#e44a00"
-      }, {
+    }, {
         "minValue": "50",
         "maxValue": "75",
         "code": "#f8bd19"
-      }, {
+    }, {
         "minValue": "75",
         "maxValue": "100",
         "code": "#6baa01"
-      }]
-    };
+    }]
+};
 
-    const dials = {
-      "dial": [{
+const dials = {
+    "dial": [{
         "value": "67"
-      }]
-    };
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "angulargauge",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        "chart": {
-          "caption": "Customer Satisfaction Score",
-          "subcaption": "Last week",
-          "lowerLimit": "0",
-          "upperLimit": "100",
-          "theme": "fusion"
-        },
-        "colorRange": colorRange,
-        "dials": dials
-  
-      }
-    };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>An Angular Gauge</Text>
+    }]
+};
 
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "caption": "Customer Satisfaction Score",
+                "subcaption": "Last week",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "theme": "fusion"
+            },
+            "colorRange": colorRange,
+            "dials": dials
+        }
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
 
-    padding: 10
-  },
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
 
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="angulargauge" datasource="{{dataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](/chart-guide/list-of-charts#gauges).
 
