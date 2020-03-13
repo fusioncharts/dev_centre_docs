@@ -4,7 +4,7 @@ description: This article outlines some of the popular charts and the way to ren
 heading: Rendering Different Charts
 ---
 
-In the [Getting Started](/getting-started/angular/angularjs/your-first-chart-using-angularjs) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and React Native.
+In the [Getting Started](/getting-started/angular/angularjs/your-first-chart-using-angularjs) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and AngularJS.
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
