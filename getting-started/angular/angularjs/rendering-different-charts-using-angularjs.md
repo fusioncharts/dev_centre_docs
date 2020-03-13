@@ -1619,266 +1619,269 @@ const colorRange = {
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
 
-export default class HeatMap extends Component {
-  constructor(props) {
-    super(props);
-    //STEP 2 - Define the chart data constituting dataset and colorrange objects
-    const dataset = [{
-      "data": [{
-          "rowid": "Samsung Galaxy S5",
-          "columnid": "Processor",
-          "value": "8.7",
-          "tllabel": "Quad Core 2.5 GHz",
-          "trlabel": "OS : Android 4.4 Kitkat"
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require HeatMap Chart modules
+var HeatMap = require('fusioncharts/fusioncharts.powercharts');
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+
+//Charts(FusionCharts);
+HeatMap(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+//STEP 2 - Define the chart data constituting dataset and colorrange objects
+const dataset = [{
+    "data": [{
+            "rowid": "Samsung Galaxy S5",
+            "columnid": "Processor",
+            "value": "8.7",
+            "tllabel": "Quad Core 2.5 GHz",
+            "trlabel": "OS : Android 4.4 Kitkat"
         },
         {
-          "rowid": "Samsung Galaxy S5",
-          "columnid": "Screen Size",
-          "value": "8.5",
-          "tllabel": "5.1 inch",
-          "trlabel": "AMOLED screen"
+            "rowid": "Samsung Galaxy S5",
+            "columnid": "Screen Size",
+            "value": "8.5",
+            "tllabel": "5.1 inch",
+            "trlabel": "AMOLED screen"
         },
         {
-          "rowid": "Samsung Galaxy S5",
-          "columnid": "Price",
-          "value": "9.3",
-          "tllabel": "$600"
+            "rowid": "Samsung Galaxy S5",
+            "columnid": "Price",
+            "value": "9.3",
+            "tllabel": "$600"
         },
         {
-          "rowid": "Samsung Galaxy S5",
-          "columnid": "Battery Backup",
-          "value": "9.7",
-          "tllabel": "29 Hrs",
-          "trlabel": "Battery : 2800 MAH"
+            "rowid": "Samsung Galaxy S5",
+            "columnid": "Battery Backup",
+            "value": "9.7",
+            "tllabel": "29 Hrs",
+            "trlabel": "Battery : 2800 MAH"
         },
         {
-          "rowid": "Samsung Galaxy S5",
-          "columnid": "Camera",
-          "value": "8",
-          "tllabel": "16 MP",
-          "trlabel": "Front Camera : 2.1 MP"
+            "rowid": "Samsung Galaxy S5",
+            "columnid": "Camera",
+            "value": "8",
+            "tllabel": "16 MP",
+            "trlabel": "Front Camera : 2.1 MP"
         },
         {
-          "rowid": "HTC One (M8)",
-          "columnid": "Processor",
-          "value": "9.2",
-          "tllabel": "Quad Core 2.3 GHz",
-          "trlabel": "OS : Android 4.4 Kitkat"
+            "rowid": "HTC One (M8)",
+            "columnid": "Processor",
+            "value": "9.2",
+            "tllabel": "Quad Core 2.3 GHz",
+            "trlabel": "OS : Android 4.4 Kitkat"
         },
         {
-          "rowid": "HTC One (M8)",
-          "columnid": "Screen Size",
-          "value": "8.3",
-          "tllabel": "5 inch",
-          "trlabel": "LCD screen"
+            "rowid": "HTC One (M8)",
+            "columnid": "Screen Size",
+            "value": "8.3",
+            "tllabel": "5 inch",
+            "trlabel": "LCD screen"
         },
         {
-          "rowid": "HTC One (M8)",
-          "columnid": "Price",
-          "value": "7.3",
-          "tllabel": "$600"
+            "rowid": "HTC One (M8)",
+            "columnid": "Price",
+            "value": "7.3",
+            "tllabel": "$600"
         },
         {
-          "rowid": "HTC One (M8)",
-          "columnid": "Battery Backup",
-          "value": "8.8",
-          "tllabel": "20 Hrs",
-          "trlabel": "Battery : 2600 MAH"
+            "rowid": "HTC One (M8)",
+            "columnid": "Battery Backup",
+            "value": "8.8",
+            "tllabel": "20 Hrs",
+            "trlabel": "Battery : 2600 MAH"
         },
         {
-          "rowid": "HTC One (M8)",
-          "columnid": "Camera",
-          "value": "8.7",
-          "tllabel": "4 MP",
-          "trlabel": "Front Camera : 5 MP"
+            "rowid": "HTC One (M8)",
+            "columnid": "Camera",
+            "value": "8.7",
+            "tllabel": "4 MP",
+            "trlabel": "Front Camera : 5 MP"
         },
         {
-          "rowid": "Apple iPhone 5S",
-          "columnid": "Processor",
-          "value": "9.1",
-          "tllabel": "Dual Core",
-          "trlabel": "OS : iOS 7"
+            "rowid": "Apple iPhone 5S",
+            "columnid": "Processor",
+            "value": "9.1",
+            "tllabel": "Dual Core",
+            "trlabel": "OS : iOS 7"
         },
         {
-          "rowid": "Apple iPhone 5S",
-          "columnid": "Screen Size",
-          "value": "8.6",
-          "tllabel": "4 inch",
-          "trlabel": "Retina LCD screen"
+            "rowid": "Apple iPhone 5S",
+            "columnid": "Screen Size",
+            "value": "8.6",
+            "tllabel": "4 inch",
+            "trlabel": "Retina LCD screen"
         },
         {
-          "rowid": "Apple iPhone 5S",
-          "columnid": "Price",
-          "value": "7.2",
-          "tllabel": "$649"
+            "rowid": "Apple iPhone 5S",
+            "columnid": "Price",
+            "value": "7.2",
+            "tllabel": "$649"
         },
         {
-          "rowid": "Apple iPhone 5S",
-          "columnid": "Battery Backup",
-          "value": "8.4",
-          "tllabel": "10 Hrs",
-          "trlabel": "Battery : 1560 MAH"
+            "rowid": "Apple iPhone 5S",
+            "columnid": "Battery Backup",
+            "value": "8.4",
+            "tllabel": "10 Hrs",
+            "trlabel": "Battery : 1560 MAH"
         },
         {
-          "rowid": "Apple iPhone 5S",
-          "columnid": "Camera",
-          "value": "9.5",
-          "tllabel": "8 MP",
-          "trlabel": "Front Camera : 1.2 MP"
+            "rowid": "Apple iPhone 5S",
+            "columnid": "Camera",
+            "value": "9.5",
+            "tllabel": "8 MP",
+            "trlabel": "Front Camera : 1.2 MP"
         },
         {
-          "rowid": "Nokia Lumia 1520",
-          "columnid": "Processor",
-          "value": "8.8",
-          "tllabel": "Quad Core 2.2 GHz",
-          "trlabel": "OS: Windows Phone 8"
+            "rowid": "Nokia Lumia 1520",
+            "columnid": "Processor",
+            "value": "8.8",
+            "tllabel": "Quad Core 2.2 GHz",
+            "trlabel": "OS: Windows Phone 8"
         },
         {
-          "rowid": "Nokia Lumia 1520",
-          "columnid": "Screen Size",
-          "value": "9.1",
-          "tllabel": "6 inch",
-          "trlabel": "LCD screen"
+            "rowid": "Nokia Lumia 1520",
+            "columnid": "Screen Size",
+            "value": "9.1",
+            "tllabel": "6 inch",
+            "trlabel": "LCD screen"
         },
         {
-          "rowid": "Nokia Lumia 1520",
-          "columnid": "Price",
-          "value": "9.7",
-          "tllabel": "$470"
+            "rowid": "Nokia Lumia 1520",
+            "columnid": "Price",
+            "value": "9.7",
+            "tllabel": "$470"
         },
         {
-          "rowid": "Nokia Lumia 1520",
-          "columnid": "Battery Backup",
-          "value": "9.2",
-          "tllabel": "27 Hrs",
-          "trlabel": "Battery : 3400 MAH"
+            "rowid": "Nokia Lumia 1520",
+            "columnid": "Battery Backup",
+            "value": "9.2",
+            "tllabel": "27 Hrs",
+            "trlabel": "Battery : 3400 MAH"
         },
         {
-          "rowid": "Nokia Lumia 1520",
-          "columnid": "Camera",
-          "value": "8.1",
-          "tllabel": "20MP",
-          "trlabel": "Front Camera : 1.2 MP"
+            "rowid": "Nokia Lumia 1520",
+            "columnid": "Camera",
+            "value": "8.1",
+            "tllabel": "20MP",
+            "trlabel": "Front Camera : 1.2 MP"
         }
-      ]
-    }];
+    ]
+}];
 
-    const colorrange = {
-      "gradient": "0",
-      "minvalue": "0",
-      "code": "E24B1A",
-      "startlabel": "Poor",
-      "endlabel": "Good",
-      "color": [{
-          "code": "E24B1A",
-          "minvalue": "1",
-          "maxvalue": "5",
-          "label": "Bad"
+const colorrange = {
+    "gradient": "0",
+    "minvalue": "0",
+    "code": "E24B1A",
+    "startlabel": "Poor",
+    "endlabel": "Good",
+    "color": [{
+            "code": "E24B1A",
+            "minvalue": "1",
+            "maxvalue": "5",
+            "label": "Bad"
         },
         {
-          "code": "F6BC33",
-          "minvalue": "5",
-          "maxvalue": "8.5",
-          "label": "Average"
+            "code": "F6BC33",
+            "minvalue": "5",
+            "maxvalue": "8.5",
+            "label": "Average"
         },
         {
-          "code": "6DA81E",
-          "minvalue": "8.5",
-          "maxvalue": "10",
-          "label": "Good"
+            "code": "6DA81E",
+            "minvalue": "8.5",
+            "maxvalue": "10",
+            "label": "Good"
         }
-      ]
-    };
+    ]
+};
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "caption": "Top Smartphone Ratings",
+                "subcaption": "By Features",
+                "xAxisName": "Features",
+                "yAxisName": "Model",
+                "showPlotBorder": "1",
+                "xAxisLabelsOnTop": "1",
+                "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
+                //Cosmetics
+                "showValues": "1",
+                "showBorder": "0",
+                "bgColor": "#ffffff",
+                "showShadow": "0",
+                "usePlotGradientColor": "0",
+                "toolTipColor": "#ffffff",
+                "toolTipBorderThickness": "0",
+                "toolTipBgColor": "#000000",
+                "toolTipBgAlpha": "80",
+                "toolTipBorderRadius": "2",
+                "toolTipPadding": "5",
+                "theme": "fusion"
+            },
+            "dataset": dataset,
+            "colorrange": colorrange
+        }
 
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "heatmap",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        "chart": {
-          "caption": "Top Smartphone Ratings",
-          "subcaption": "By Features",
-          "xAxisName": "Features",
-          "yAxisName": "Model",
-          "showPlotBorder": "1",
-          "xAxisLabelsOnTop": "1",
-          "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-          //Cosmetics
-          "showValues": "1",
-          "showBorder": "0",
-          "bgColor": "#ffffff",
-          "showShadow": "0",
-          "usePlotGradientColor": "0",
-          "toolTipColor": "#ffffff",
-          "toolTipBorderThickness": "0",
-          "toolTipBgColor": "#000000",
-          "toolTipBgAlpha": "80",
-          "toolTipBorderRadius": "2",
-          "toolTipPadding": "5",
-          "theme": "fusion"
-        },
-        "dataset": dataset,
-        "colorrange": colorrange
-  
-      }
-    };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>A HeatMap</Text>
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 10
-  },
+&lt;html&gt;
 
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="heatmap" datasource="{{dataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 > There are more variants of Heatmap charts available with FusionCharts. Know more about Heat maps and its configurations [here](/chart-guide/standard-charts/heat-map-chart). You can also create various charts belonging to the [PowerCharts](/chart-guide/list-of-charts#powercharts-xt) family in a similar way.
 
