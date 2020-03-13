@@ -619,258 +619,141 @@ Now that we’ve seen the structuring of the data object, let us deal with feedi
 - The data can be fetched at regular intervals from third-party endpoints as per the requirement
 - Data can be fed from google sheets in real-time.
 
-To build the sample chart, we will feed the data at regular intervals from a random generator (math.random function), for the sake of simplicity.
-
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
-let apiCaller = null;
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    // STEP 2- Define the categories representing the labels on the X-axis
-    const categories =  [{
-      "category": [{
-          "label": "Start"
-      }]
-    }];
-​
-    const dataset = [{
-      "data": [{
-          "value": "35.27"
-      }]
-    }];
-​
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "realtimearea",
-      id: "stockRealTimeChart",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        chart: {
-          caption: "Live visitors on web",
-          subCaption: "Skatter Tech",
-          refreshinterval: "3",
-          numdisplaysets: "10",
-          theme: "fusion",
-          drawAnchors: "0",
-          plotToolText: "$label: <b>$dataValue Feeds</b>",
-          showRealTimeValue: "0",
-          labelDisplay: "rotate"
-        },
-        "categories": categories,
-        "dataset": dataset,
-      }
-    };
-    this.state = chartConfig;
-​
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-​
-    this.updateData = this.updateData.bind(this);
-  }
-  addLeadingZero(num) {
-    return num <= 9 ? '0' + num : num;
-  }
-​
-  updateData() {
-    var chartRef = FusionCharts("stockRealTimeChart")
-    setInterval(() => {
-      let currDate = new Date(),
-        label =
-          this.addLeadingZero(currDate.getHours()) +
-          ':' +
-          this.addLeadingZero(currDate.getMinutes()) +
-          ':' +
-          this.addLeadingZero(currDate.getSeconds()),
-        // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-        randomValue = Math.floor(Math.random() * 50) / 100 + 35.25;
-        const script = `
-        let data = '&label=${label}&value=${randomValue}'
-        window.alert(data);
-        true;
-        `;
-    
-      apiCaller(script);
-    }, 2000);
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>A Real Time Area Chart</Text>
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            id= {this.state.id}
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            onInitialized={caller => {
-              apiCaller = caller;
-            }}
-            events={{
-              rendercomplete: this.updateData,
-            }}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 10
-  },
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
-
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
-let apiCaller = null;
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    // STEP 2- Define the categories representing the labels on the X-axis
-    const categories =  [{
-      "category": [{
-          "label": "Start"
-      }]
-    }];
-    
-    const dataset = [{
-      "data": [{
-          "value": "35.27"
-      }]
-    }];
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "realtimearea",
-      id: "stockRealTimeChart",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {  
-        chart: {
-          caption: "Live visitors on web",
-          subCaption: "Skatter Tech",
-          refreshinterval: "3",
-          numdisplaysets: "10",
-          theme: "fusion",
-          drawAnchors: "0",
-          plotToolText: "$label: <b>$dataValue Feeds</b>",
-          showRealTimeValue: "0",
-          labelDisplay: "rotate"
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
+
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require Widgets modules
+var RealTimeArea = require('fusioncharts/fusioncharts.widgets');
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Widgets with FusionCharts instance
+RealTimeArea(FusionCharts);
+FusionTheme(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+
+const categories = [{
+    "category": [{
+            "label": "Start"
         },
-        "categories": categories,
-        "dataset": dataset,
-      }
-    };
-    this.state = chartConfig;
-    
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
+        {
+            "label": "Start1"
+        }
+    ]
+}];
+// Construct the dataset comprising multiple series
+const dataset = [{
+    "data": [{
+            "value": "35.27"
+        },
+        {
+            "value": "41.27"
+        },
+    ]
+}];
 
-    this.rendercomplete = this.rendercomplete.bind(this);
-  }
-  addLeadingZero(num) {
-    return num <= 9 ? '0' + num : num;
-  }
-  
-  rendercomplete() {
-    var chartRef = FusionCharts("stockRealTimeChart")
-    setInterval(() => {
-      let currDate = new Date(),
-        label =
-          this.addLeadingZero(currDate.getHours()) +
-          ':' +
-          this.addLeadingZero(currDate.getMinutes()) +
-          ':' +
-          this.addLeadingZero(currDate.getSeconds()),
-        // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-        randomValue = Math.floor(Math.random() * 50) / 100 + 35.25;
-      const script = `
-      let data = '&label=${label}&value=${randomValue}'
-      chartRef.feedData(data);
-      true;
-      `;
-      apiCaller(script);
-    }, 2000);
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>A Real Time Area Chart</Text>
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            id= {this.state.id}
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            onInitialized={caller => {
-              apiCaller = caller;
-            }}
-            events={{
-              rendercomplete: this.rendercomplete,
-            }}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 10
-  },
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+app.controller('MyController', [
+    '$scope',
+
+    function($scope) {
+
+        $scope.dataSource = {
+            chart: {
+                caption: "Live visitors on web",
+                subCaption: "Skatter Tech",
+                refreshinterval: "3",
+                numdisplaysets: "10",
+                theme: "fusion",
+                drawAnchors: "0",
+                plotToolText: "$label: <b>$dataValue Feeds</b>",
+                showRealTimeValue: "0",
+                labelDisplay: "rotate"
+            },
+            "categories": categories,
+            "dataset": dataset,
+
+        };
+        $scope.events = {
+            initialized: function(e) {
+                function addLeadingZero(num) {
+                    return num <= 9 ? "0" + num : num;
+                }
+
+                function updateData() {
+                    var currDate = new Date(),
+                        label =
+                        addLeadingZero(currDate.getHours()) +
+                        ":" +
+                        addLeadingZero(currDate.getMinutes()) +
+                        ":" +
+                        addLeadingZero(currDate.getSeconds()),
+                        // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+                        randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
+                        // Build Data String in format &label=...&value=...
+                        strData = "&label=" + label + "&value=" + randomValue;
+                    // Feed it to chart.
+                    e.sender.feedData(strData);
+                }
+
+                var myVar = setInterval(function() {
+                    updateData();
+                }, 300);
+            }
+        }
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="realtimearea" dataFormat="json" datasource="{{dataSource}}" events="events"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
@@ -1130,132 +1013,138 @@ const data = [{
 
 We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-export default class WorldMap extends Component {
-  constructor(props) {
-    super(props);
-    //STEP 2 - Define the dataset and the colorRange of the map
-    const dataset = [{
-      "id": "NA",
-      "value": ".82",
-      "showLabel": "1"
-      }, {
-      "id": "SA",
-      "value": "2.04",
-      "showLabel": "1"
-      }, {
-      "id": "AS",
-      "value": "1.78",
-      "showLabel": "1"
-      }, {
-      "id": "EU",
-      "value": ".40",
-      "showLabel": "1"
-      }, {
-      "id": "AF",
-      "value": "2.58",
-      "showLabel": "1"
-      }, {
-      "id": "AU",
-      "value": "1.30",
-      "showLabel": "1"
-    }];
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
 
-    const colorrange = {
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require Map modules
+var FusionMaps = require('fusionmaps/fusioncharts.maps');
+var World = require('fusionmaps/maps/fusioncharts.world')
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize FusionMaps with FusionCharts instance
+
+FusionMaps(FusionCharts);
+World(FusionCharts);
+FusionTheme(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+//STEP 2 - Define the dataset and the colorRange of the map
+const dataset = [{
+    "id": "NA",
+    "value": ".82",
+    "showLabel": "1"
+}, {
+    "id": "SA",
+    "value": "2.04",
+    "showLabel": "1"
+}, {
+    "id": "AS",
+    "value": "1.78",
+    "showLabel": "1"
+}, {
+    "id": "EU",
+    "value": ".40",
+    "showLabel": "1"
+}, {
+    "id": "AF",
+    "value": "2.58",
+    "showLabel": "1"
+}, {
+    "id": "AU",
+    "value": "1.30",
+    "showLabel": "1"
+}];
+
+const colorrange = {
     "minvalue": "0",
     "code": "#FFE0B2",
     "gradient": "1",
-    "color":
-    [{
-      "minvalue": "0.5",
-      "maxvalue": "1.0",
-      "color": "#FFD74D"
-      }, {
-      "minvalue": "1.0",
-      "maxvalue": "2.0",
-      "color": "#FB8C00"
-      }, {
-      "minvalue": "2.0",
-      "maxvalue": "3.0",
-      "color": "#E65100"
+    "color": [{
+        "minvalue": "0.5",
+        "maxvalue": "1.0",
+        "color": "#FFD74D"
+    }, {
+        "minvalue": "1.0",
+        "maxvalue": "2.0",
+        "color": "#FB8C00"
+    }, {
+        "minvalue": "2.0",
+        "maxvalue": "3.0",
+        "color": "#E65100"
     }]
-    };
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "world",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        "chart": {
-          "caption": "Average Annual Population Growth",
-          "subcaption": " 1955-2015",
-          "numbersuffix": "%",
-          "includevalueinlabels": "1",
-          "labelsepchar": ": ",
-          "entityFillHoverColor": "#FFF9C4",
-          "theme": "fusion"
-        },
-        // Aesthetics; ranges synced with the slider
-        "colorrange": colorrange,
-        // Source data as JSON --> id represents countries of the world.
-        "data": dataset
-      }
-    };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>A World Map</Text>
+};
 
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": colorrange,
+            // Source data as JSON --> id represents countries of the world.
+            "data": dataset
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+        };
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-    padding: 10
-  },
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
 
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
+&lt;head&gt;
+  &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+
+&lt;body ng-app="myApp"&gt;
+  &lt;div ng-controller="MyController"&gt;
+      &lt;div fusioncharts width="600" height="400" type="world" datasource="{{dataSource}}"&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 That’s it. Your first map is ready.
 
