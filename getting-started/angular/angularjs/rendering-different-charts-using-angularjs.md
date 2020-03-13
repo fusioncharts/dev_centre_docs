@@ -638,50 +638,32 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 //STEP 1- Including dependencies
 //  Require AngularJS
 var angular = require('angular');
-
 // Require FusionCharts
 var FusionCharts = require('fusioncharts');
-
 // Require Widgets modules
 var RealTimeArea = require('fusioncharts/fusioncharts.widgets');
-
 //Require AngularJS module
 require('angularjs-fusioncharts');
-
 // Require Fusion Theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-
 // Initialize Widgets with FusionCharts instance
 RealTimeArea(FusionCharts);
 FusionTheme(FusionCharts);
-
 var app = angular.module('myApp', ['ng-fusioncharts']);
-
 const categories = [{
-"category": [{
-"label": "Start"
-},
-{
-"label": "Start1"
-}
-]
+    "category": [{
+            "label": "Start"
+        }]
 }];
 // Construct the dataset comprising multiple series
 const dataset = [{
-"data": [{
-"value": "35.27"
-},
-{
-"value": "41.27"
-},
-]
+    "data": [{
+            "value": "35.27"
+        }]
 }];
-
 app.controller('MyController', [
-'\$scope',
-
+    '$scope',
     function($scope) {
-
         $scope.dataSource = {
             chart: {
                 caption: "Live visitors on web",
@@ -696,14 +678,12 @@ app.controller('MyController', [
             },
             "categories": categories,
             "dataset": dataset,
-
         };
         $scope.events = {
             initialized: function(e) {
                 function addLeadingZero(num) {
                     return num <= 9 ? "0" + num : num;
                 }
-
                 function updateData() {
                     var currDate = new Date(),
                         label =
@@ -719,14 +699,12 @@ app.controller('MyController', [
                     // Feed it to chart.
                     e.sender.feedData(strData);
                 }
-
                 var myVar = setInterval(function() {
                     updateData();
                 }, 300);
             }
         }
     }
-
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
