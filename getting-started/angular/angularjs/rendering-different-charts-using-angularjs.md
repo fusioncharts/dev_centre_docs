@@ -1158,103 +1158,110 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 The consolidated code for rendering the map is shown below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-export default class CaliforniaMap extends Component {
-  constructor(props) {
-    super(props);
-    //STEP 2 - Define the dataset and the colorRange of the map
-    const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
 
-    const colorrange = {
-      "minvalue": "0",
-      "startlabel": "Low",
-      "endlabel": "High",
-      "code": "e44a00",
-      "gradient": "1",
-      "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-    };
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
 
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "maps/california",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        "chart": {
-          "animation": "0",
-          "showbevel": "0",
-          "usehovercolor": "1",
-          "showlegend": "1",
-          "legendposition": "BOTTOM",
-          "legendborderalpha": "0",
-          "legendbordercolor": "ffffff",
-          "legendallowdrag": "0",
-          "legendshadow": "0",
-          "caption": "Website Visits for the month of March 2018",
-          "connectorcolor": "000000",
-          "fillalpha": "80",
-          "hovercolor": "CCCCCC",
-          "theme": "fusion"
-        },
-        "colorrange": colorrange,
-        "data": mapData
-      }
-    };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>California Map</Text>
+// Require Map modules
+var FusionMaps = require('fusionmaps/fusioncharts.maps');
+var California = require('fusionmaps/maps/fusioncharts.california')
 
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
+//Require AngularJS module
+require('angularjs-fusioncharts');
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-    padding: 10
-  },
+// Initialize Maps with FusionCharts instance
 
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
+FusionMaps(FusionCharts);
+California(FusionCharts);
+FusionTheme(FusionCharts);
 
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+var app = angular.module('myApp', ['ng-fusioncharts']);
+
+//STEP 2 - Define the dataset and the colorRange of the map
+const mapData = [{ "id": "001", "value": 2834 }, { "id": "003", "value": 3182 }, { "id": "005", "value": 3280 }, { "id": "007", "value": 911 }, { "id": "009", "value": 292 }, { "id": "011", "value": 530 }, { "id": "013", "value": 2515 }, { "id": "015", "value": 728 }, { "id": "017", "value": 1974 }, { "id": "019", "value": 848 }, { "id": "021", "value": 3278 }, { "id": "023", "value": 4463 }, { "id": "025", "value": 1198 }, { "id": "027", "value": 378 }, { "id": "029", "value": 2610 }, { "id": "031", "value": 1200 }, { "id": "033", "value": 3820 }, { "id": "035", "value": 940 }, { "id": "037", "value": 3416 }, { "id": "039", "value": 4004 }, { "id": "041", "value": 1604 }, { "id": "043", "value": 4011 }, { "id": "045", "value": 3203 }, { "id": "047", "value": 3775 }, { "id": "049", "value": 2721 }, { "id": "051", "value": 3417 }, { "id": "053", "value": 1530 }, { "id": "055", "value": 412 }, { "id": "057", "value": 3434 }, { "id": "059", "value": 1670 }, { "id": "061", "value": 1274 }, { "id": "063", "value": 4339 }, { "id": "065", "value": 2073 }, { "id": "067", "value": 1018 }, { "id": "069", "value": 3967 }, { "id": "071", "value": 3401 }, { "id": "073", "value": 3307 }, { "id": "075", "value": 1938 }, { "id": "077", "value": 489 }, { "id": "079", "value": 3207 }, { "id": "081", "value": 2295 }, { "id": "083", "value": 2747 }, { "id": "085", "value": 1114 }, { "id": "087", "value": 3400 }, { "id": "089", "value": 784 }, { "id": "091", "value": 1673 }, { "id": "093", "value": 4274 }, { "id": "095", "value": 4509 }, { "id": "097", "value": 3862 }, { "id": "099", "value": 1356 }, { "id": "101", "value": 4126 }, { "id": "103", "value": 1314 }, { "id": "105", "value": 1807 }, { "id": "107", "value": 4026 }, { "id": "109", "value": 3456 }, { "id": "111", "value": 1393 }, { "id": "113", "value": 1500 }, { "id": "115", "value": 2218 }];
+
+const colorrange = {
+    "minvalue": "0",
+    "startlabel": "Low",
+    "endlabel": "High",
+    "code": "e44a00",
+    "gradient": "1",
+    "color": [{ "maxvalue": "2500", "code": "f8bd19" }, { "maxvalue": "5000", "code": "6baa01" }]
+};
+
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "animation": "0",
+                "showbevel": "0",
+                "usehovercolor": "1",
+                "showlegend": "1",
+                "legendposition": "BOTTOM",
+                "legendborderalpha": "0",
+                "legendbordercolor": "ffffff",
+                "legendallowdrag": "0",
+                "legendshadow": "0",
+                "caption": "Website Visits for the month of March 2018",
+                "connectorcolor": "000000",
+                "fillalpha": "80",
+                "hovercolor": "CCCCCC",
+                "theme": "fusion"
+            },
+            "colorrange": colorrange,
+            "data": mapData
+
+        }
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="california" datasource="{{dataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 That's it! The **California** map is ready.
 
