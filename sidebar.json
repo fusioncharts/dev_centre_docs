@@ -209,12 +209,8 @@
                         "path": "/getting-started/angular/angular/your-first-chart-using-angular"
                       },
                       {
-                        "title": "Your First Gauge",
-                        "path": "/getting-started/angular/angular/your-first-gauge-using-angular"
-                      },
-                      {
-                        "title": "Your First Map",
-                        "path": "/getting-started/angular/angular/your-first-map-using-angular"
+                        "title": "Rendering Different Charts using Angular",
+                        "path": "/getting-started/angular/angular/rendering-different-charts-using-angular"
                       }
                     ]
                   },
@@ -390,11 +386,7 @@
                   },
                   {
                     "title": "Your First Gauge",
-                    "path": "/getting-started/react-native/your-first-gauge-using-react-native"
-                  },
-                  {
-                    "title": "Your First Map",
-                    "path": "/getting-started/react-native/your-first-map-using-react-native"
+                    "path": "/getting-started/react-native/rendering-different-charts-using-react-native"
                   }
                 ]
               },
