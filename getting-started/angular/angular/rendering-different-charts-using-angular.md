@@ -154,20 +154,22 @@ export class AppComponent {
   } // end of constructor
 } // end of class AppComponent
 ```
-Now, copy the codes for the `.ts` and `html` files from below and paste them in the respective files:
+Now, copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='modulets'>module.ts</a></li>
-    <li class='active'><a data-toggle='componentts'>component.ts</a></li>
+    <li><a data-toggle='componentts'>component.ts</a></li>
     <li><a data-toggle='appcomphtml'>app.component.html</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab ts-tab active'>
-Copy and paste the code given below in the `.ts` file:
+<div class='tab modulets-tab active'>
+Copy and paste the code given below in the `module.ts` file:
 
 <pre><code class="language-javascript">
 ```
+//Module.ts
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -195,9 +197,82 @@ export class AppModule {}
 </pre>
 </div>
 
-<div class='tab html-tab active'>
+<div class='tab componentts-tab active'>
 </div>
-<div>Copy and paste the code given below in the `.html` file:</div>
+<div>Copy and paste the code given below in the `component.ts` file:</div>
+<pre><code class="language-javascript">
+```
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
+]
+// STEP 3- Construct the dataset comprising multiple series
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
+]
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
+
+})
+
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "theme": "fusion",
+        "caption": "Comparison of Quarterly Revenue",
+        "xAxisname": "Quarter",
+        "yAxisName": "Revenues (In USD)",
+        "numberPrefix": "$",
+        "plotFillAlpha": "80",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1"
+      },
+      "categories": categories,
+      "dataset": dataset,
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab appcomphtml-tab active'>
+</div>
+<div>Copy and paste the code given below in the `app.component.html` file:</div>
 <pre><code class="language-javascript">
 ```
 <h1>
