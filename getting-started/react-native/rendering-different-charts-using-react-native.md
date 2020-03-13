@@ -8,13 +8,13 @@ In the [Getting Started](/getting-started/react-native/your-first-chart-using-re
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/react-native/rendering-different-charts-using-vue#multi-series-charts)
-- [Combination Charts](/getting-started/react-native/rendering-different-charts-using-vue#combination-charts)
-- [Real-time Chart](/getting-started/react-native/rendering-different-charts-using-vue#real-time-charts)
-- [Gauges](/getting-started/react-native/rendering-different-charts-using-vue#gauges)
-- [Maps](/getting-started/react-native/rendering-different-charts-using-vue#maps)
-- [Heatmap](/getting-started/react-native/rendering-different-charts-using-vue#heat-map)
-- [Gantt Chart](/getting-started/react-native/rendering-different-charts-using-vue#gantt-chart)
+- [Multi-series Charts](/getting-started/react-native/rendering-different-charts-using-react-native#multi-series-charts)
+- [Combination Charts](/getting-started/react-native/rendering-different-charts-using-react-native#combination-charts)
+- [Real-time Chart](/getting-started/react-native/rendering-different-charts-using-react-native#real-time-charts)
+- [Gauges](/getting-started/react-native/rendering-different-charts-using-react-native#gauges)
+- [Maps](/getting-started/react-native/rendering-different-charts-using-react-native#maps)
+- [Heatmap](/getting-started/react-native/rendering-different-charts-using-react-native#heat-map)
+- [Gantt Chart](/getting-started/react-native/rendering-different-charts-using-react-native#gantt-chart)
 
 ## Multi-series Charts
 
