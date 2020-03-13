@@ -8,40 +8,13 @@ In the [Getting Started](/getting-started/plain-javascript/your-first-chart-usin
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='mscolumn2d'>[Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#multi-series-charts)</a></li>
-    <li><a data-toggle='mscombi2d'>[Combination Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#combination-charts)</a></li>
-    <li><a data-toggle='realtimearea'>[Real-time Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#real-time-charts)</a></li>
-    <li><a data-toggle='heatmap'>[Heatmap](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#heat-map)</a></li>
-    <li><a data-toggle='gantt'>[Gantt Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gantt-chart)</a></li>
-    <li><a data-toggle='gauge'>[Gauges](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gauges)</a></li>
-    <li><a data-toggle='map'>[Maps](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#maps)</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab mscolumn2d-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab mscombi2d-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab realtimearea-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab heatmap-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab gantt-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab gauge-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-  <div class='tab map-tab active'>
-<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
-<div>
-
+- [Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#multi-series-charts)
+- [Combination Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#combination-charts)
+- [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#real-time-charts)
+- [Gauges](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gauges)
+- [Maps](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#maps)
+- [Heatmap](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#heat-map)
+- [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gantt-chart)
 
 ## Multi-series Charts
 
