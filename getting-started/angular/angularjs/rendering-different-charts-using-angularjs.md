@@ -2768,350 +2768,371 @@ const connectors = [{
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='js'>JS</a></li>
+    <li><a data-toggle='html'>HTML</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-export default class GanttChart extends Component {
-  constructor(props) {
-    super(props);
-    //STEP 2 - Define the various data objects for the Gantt Chart
-    const categories = [{
-      "bgcolor": "#999999",
-      "category": [{
+<div class='tab js-tab active'>
+<pre><code class="language-javascript">
+//STEP 1- Including dependencies
+//  Require AngularJS
+var angular = require('angular');
+
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
+
+// Require Gantt Chart modules
+var Gantt = require('fusioncharts/fusioncharts.gantt');
+
+//Require AngularJS module
+require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Gantt Charts with FusionCharts instance
+Gantt(FusionCharts);
+
+var app = angular.module('myApp', ['ng-fusioncharts']);
+//STEP 2 - Define the various data objects for the Gantt Chart
+const categories = [{
+    "bgcolor": "#999999",
+    "category": [{
         "start": "1/4/2014",
         "end": "30/6/2014",
         "label": "Months",
         "align": "middle",
         "fontcolor": "#ffffff",
         "fontsize": "12"
-      }]
-    }, {
-      "bgcolor": "#999999",
-      "align": "middle",
-      "fontcolor": "#ffffff",
-      "fontsize": "12",
-      "category": [{
+    }]
+}, {
+    "bgcolor": "#999999",
+    "align": "middle",
+    "fontcolor": "#ffffff",
+    "fontsize": "12",
+    "category": [{
         "start": "1/4/2014",
         "end": "30/4/2014",
         "label": "April"
-      }, {
+    }, {
         "start": "1/5/2014",
         "end": "31/5/2014",
         "label": "May"
-      }, {
+    }, {
         "start": "1/6/2014",
         "end": "30/6/2014",
         "label": "June"
-      }]
-    }, {
-      "bgcolor": "#ffffff",
-      "fontcolor": "#333333",
-      "fontsize": "11",
-      "align": "center",
-      "category": [{
+    }]
+}, {
+    "bgcolor": "#ffffff",
+    "fontcolor": "#333333",
+    "fontsize": "11",
+    "align": "center",
+    "category": [{
         "start": "1/4/2014",
         "end": "5/4/2014",
         "label": "Week 1"
-      }, {
+    }, {
         "start": "6/4/2014",
         "end": "12/4/2014",
         "label": "Week 2"
-      }, {
+    }, {
         "start": "13/4/2014",
         "end": "19/4/2014",
         "label": "Week 3"
-      }, {
+    }, {
         "start": "20/4/2014",
         "end": "26/4/2014",
         "label": "Week 4"
-      }, {
+    }, {
         "start": "27/4/2014",
         "end": "3/5/2014",
         "label": "Week 5"
-      }, {
+    }, {
         "start": "4/5/2014",
         "end": "10/5/2014",
         "label": "Week 6"
-      }, {
+    }, {
         "start": "11/5/2014",
         "end": "17/5/2014",
         "label": "Week 7"
-      }, {
+    }, {
         "start": "18/5/2014",
         "end": "24/5/2014",
         "label": "Week 8"
-      }, {
+    }, {
         "start": "25/5/2014",
         "end": "31/5/2014",
         "label": "Week 9"
-      }, {
+    }, {
         "start": "1/6/2014",
         "end": "7/6/2014",
         "label": "Week 10"
-      }, {
+    }, {
         "start": "8/6/2014",
         "end": "14/6/2014",
         "label": "Week 11"
-      }, {
+    }, {
         "start": "15/6/2014",
         "end": "21/6/2014",
         "label": "Week 12"
-      }, {
+    }, {
         "start": "22/6/2014",
         "end": "28/6/2014",
         "label": "Week 13"
-      }]
-    }];
-    //List out the different processes of the Gantt chart
-    const processes = {
-      "headertext": "Task",
-      "fontcolor": "#000000",
-      "fontsize": "11",
-      "isanimated": "1",
-      "bgcolor": "#6baa01",
-      "headervalign": "bottom",
-      "headeralign": "left",
-      "headerbgcolor": "#999999",
-      "headerfontcolor": "#ffffff",
-      "headerfontsize": "12",
-      "align": "left",
-      "isbold": "1",
-      "bgalpha": "25",
-      "process": [{
+    }]
+}];
+//List out the different processes of the Gantt chart
+const processes = {
+    "headertext": "Task",
+    "fontcolor": "#000000",
+    "fontsize": "11",
+    "isanimated": "1",
+    "bgcolor": "#6baa01",
+    "headervalign": "bottom",
+    "headeralign": "left",
+    "headerbgcolor": "#999999",
+    "headerfontcolor": "#ffffff",
+    "headerfontsize": "12",
+    "align": "left",
+    "isbold": "1",
+    "bgalpha": "25",
+    "process": [{
         "label": "Clear site",
         "id": "1"
-      }, {
+    }, {
         "label": "Excavate Foundation",
         "id": "2",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Concrete Foundation",
         "id": "3",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Footing to DPC",
         "id": "4",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Drainage Services",
         "id": "5",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Backfill",
         "id": "6",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Ground Floor",
         "id": "7"
-      }, {
+    }, {
         "label": "Walls on First Floor",
         "id": "8"
-      }, {
+    }, {
         "label": "First Floor Carcass",
         "id": "9",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "First Floor Deck",
         "id": "10",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Roof Structure",
         "id": "11"
-      }, {
+    }, {
         "label": "Roof Covering",
         "id": "12"
-      }, {
+    }, {
         "label": "Rainwater Gear",
         "id": "13"
-      }, {
+    }, {
         "label": "Windows",
         "id": "14"
-      }, {
+    }, {
         "label": "External Doors",
         "id": "15"
-      }, {
+    }, {
         "label": "Connect Electricity",
         "id": "16"
-      }, {
+    }, {
         "label": "Connect Water Supply",
         "id": "17",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Install Air Conditioning",
         "id": "18",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Interior Decoration",
         "id": "19",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Fencing And signs",
         "id": "20"
-      }, {
+    }, {
         "label": "Exterior Decoration",
         "id": "21",
         "hoverBandColor": "#e44a00",
         "hoverBandAlpha": "40"
-      }, {
+    }, {
         "label": "Setup racks",
         "id": "22"
-      }]
-    };
+    }]
+};
 
-    const datatable = {
-      "showprocessname": "1",
-      "namealign": "left",
-      "fontcolor": "#000000",
-      "fontsize": "10",
-      "valign": "right",
-      "align": "center",
-      "headervalign": "bottom",
-      "headeralign": "center",
-      "headerbgcolor": "#999999",
-      "headerfontcolor": "#ffffff",
-      "headerfontsize": "12",
-      "datacolumn": [{
+const datatable = {
+    "showprocessname": "1",
+    "namealign": "left",
+    "fontcolor": "#000000",
+    "fontsize": "10",
+    "valign": "right",
+    "align": "center",
+    "headervalign": "bottom",
+    "headeralign": "center",
+    "headerbgcolor": "#999999",
+    "headerfontcolor": "#ffffff",
+    "headerfontsize": "12",
+    "datacolumn": [{
         "bgcolor": "#eeeeee",
         "headertext": "Actual{br}Start{br}Date",
         "text": [{
-          "label": "9/4/2014"
+            "label": "9/4/2014"
         }, {
-          "label": "13/4/2014"
+            "label": "13/4/2014"
         }, {
-          "label": "26/4/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40",
+            "label": "26/4/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40",
 
         }, {
-          "label": "4/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "4/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "6/5/2014"
+            "label": "6/5/2014"
         }, {
-          "label": "5/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "5/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "11/5/2014"
+            "label": "11/5/2014"
         }, {
-          "label": "16/5/2014"
+            "label": "16/5/2014"
         }, {
-          "label": "16/5/2014"
+            "label": "16/5/2014"
         }, {
-          "label": "21/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "21/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "25/5/2014"
+            "label": "25/5/2014"
         }, {
-          "label": "28/5/2014"
+            "label": "28/5/2014"
         }, {
-          "label": "4/6/2014"
+            "label": "4/6/2014"
         }, {
-          "label": "4/6/2014"
+            "label": "4/6/2014"
         }, {
-          "label": "4/6/2014"
+            "label": "4/6/2014"
         }, {
-          "label": "2/6/2014"
+            "label": "2/6/2014"
         }, {
-          "label": "5/6/2014"
+            "label": "5/6/2014"
         }, {
-          "label": "18/6/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "18/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "16/6/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "16/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "23/6/2014"
+            "label": "23/6/2014"
         }, {
-          "label": "18/6/2014"
+            "label": "18/6/2014"
         }, {
-          "label": "25/6/2014"
+            "label": "25/6/2014"
         }]
-      }, {
+    }, {
         "bgcolor": "#eeeeee",
         "headertext": "Actual{br}End{br}Date",
         "text": [{
-          "label": "12/4/2014"
+            "label": "12/4/2014"
         }, {
-          "label": "25/4/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "25/4/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "4/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "4/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "10/5/2014"
+            "label": "10/5/2014"
         }, {
-          "label": "10/5/2014"
+            "label": "10/5/2014"
         }, {
-          "label": "11/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "11/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "14/5/2014"
+            "label": "14/5/2014"
         }, {
-          "label": "19/5/2014"
+            "label": "19/5/2014"
         }, {
-          "label": "21/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "21/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "24/5/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "24/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "27/5/2014"
+            "label": "27/5/2014"
         }, {
-          "label": "1/6/2014"
+            "label": "1/6/2014"
         }, {
-          "label": "6/6/2014"
+            "label": "6/6/2014"
         }, {
-          "label": "4/6/2014"
+            "label": "4/6/2014"
         }, {
-          "label": "4/6/2014"
+            "label": "4/6/2014"
         }, {
-          "label": "7/6/2014"
+            "label": "7/6/2014"
         }, {
-          "label": "17/6/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "17/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "20/6/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "20/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "23/6/2014"
+            "label": "23/6/2014"
         }, {
-          "label": "23/6/2014"
+            "label": "23/6/2014"
         }, {
-          "label": "23/6/2014",
-          "bgcolor": "#e44a00",
-          "bgAlpha": "40"
+            "label": "23/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
         }, {
-          "label": "28/6/2014"
+            "label": "28/6/2014"
         }]
-      }]
-    };
-    //Define different tasks of the process in a JSON object
-    const tasks = {
-      "task": [{
+    }]
+};
+//Define different tasks of the process in a JSON object
+const tasks = {
+    "task": [{
         "label": "Planned",
         "processid": "1",
         "start": "9/4/2014",
@@ -3120,7 +3141,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "1",
         "start": "9/4/2014",
@@ -3129,7 +3150,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "2",
         "start": "13/4/2014",
@@ -3138,7 +3159,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "2",
         "start": "13/4/2014",
@@ -3147,7 +3168,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "2",
         "start": "23/4/2014",
@@ -3157,7 +3178,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 2 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "3",
         "start": "23/4/2014",
@@ -3166,7 +3187,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "3",
         "start": "26/4/2014",
@@ -3175,7 +3196,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "3",
         "start": "3/5/2014",
@@ -3185,7 +3206,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 1 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "4",
         "start": "3/5/2014",
@@ -3194,7 +3215,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "4",
         "start": "4/5/2014",
@@ -3203,7 +3224,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "5",
         "start": "6/5/2014",
@@ -3212,7 +3233,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "5",
         "start": "6/5/2014",
@@ -3221,7 +3242,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "6",
         "start": "4/5/2014",
@@ -3230,7 +3251,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "6",
         "start": "5/5/2014",
@@ -3239,7 +3260,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "6",
         "start": "7/5/2014",
@@ -3249,7 +3270,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 4 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "7",
         "start": "11/5/2014",
@@ -3258,7 +3279,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "7",
         "start": "11/5/2014",
@@ -3267,7 +3288,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "8",
         "start": "16/5/2014",
@@ -3276,7 +3297,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "8",
         "start": "16/5/2014",
@@ -3285,7 +3306,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "9",
         "start": "16/5/2014",
@@ -3294,7 +3315,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "9",
         "start": "16/5/2014",
@@ -3303,7 +3324,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "9",
         "start": "18/5/2014",
@@ -3313,7 +3334,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 3 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "10",
         "start": "20/5/2014",
@@ -3322,7 +3343,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "10",
         "start": "21/5/2014",
@@ -3331,7 +3352,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "10",
         "start": "23/5/2014",
@@ -3341,7 +3362,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 1 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "11",
         "start": "25/5/2014",
@@ -3350,7 +3371,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "11",
         "start": "25/5/2014",
@@ -3359,7 +3380,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "12",
         "start": "28/5/2014",
@@ -3368,7 +3389,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "12",
         "start": "28/5/2014",
@@ -3377,7 +3398,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "13",
         "start": "4/6/2014",
@@ -3386,7 +3407,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "13",
         "start": "4/6/2014",
@@ -3395,7 +3416,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "14",
         "start": "4/6/2014",
@@ -3404,7 +3425,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "14",
         "start": "4/6/2014",
@@ -3413,7 +3434,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "15",
         "start": "4/6/2014",
@@ -3422,7 +3443,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "15",
         "start": "4/6/2014",
@@ -3431,7 +3452,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "16",
         "start": "2/6/2014",
@@ -3440,7 +3461,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "16",
         "start": "2/6/2014",
@@ -3449,7 +3470,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "17",
         "start": "5/6/2014",
@@ -3458,7 +3479,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "17",
         "start": "5/6/2014",
@@ -3467,7 +3488,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "17",
         "start": "10/6/2014",
@@ -3477,7 +3498,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 7 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "18",
         "start": "10/6/2014",
@@ -3486,7 +3507,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "18",
         "start": "18/6/2014",
@@ -3496,7 +3517,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 8 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "19",
         "start": "15/6/2014",
@@ -3505,7 +3526,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "19",
         "start": "16/6/2014",
@@ -3514,7 +3535,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "20",
         "start": "23/6/2014",
@@ -3523,7 +3544,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "20",
         "start": "23/6/2014",
@@ -3532,7 +3553,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Planned",
         "processid": "21",
         "start": "18/6/2014",
@@ -3541,7 +3562,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "21",
         "start": "18/6/2014",
@@ -3550,7 +3571,7 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }, {
+    }, {
         "label": "Delay",
         "processid": "21",
         "start": "21/6/2014",
@@ -3560,7 +3581,7 @@ export default class GanttChart extends Component {
         "toppadding": "56%",
         "height": "32%",
         "tooltext": "Delayed by 2 days."
-      }, {
+    }, {
         "label": "Planned",
         "processid": "22",
         "start": "24/6/2014",
@@ -3569,7 +3590,7 @@ export default class GanttChart extends Component {
         "color": "#008ee4",
         "height": "32%",
         "toppadding": "12%"
-      }, {
+    }, {
         "label": "Actual",
         "processid": "22",
         "start": "25/6/2014",
@@ -3578,171 +3599,147 @@ export default class GanttChart extends Component {
         "color": "#6baa01",
         "toppadding": "56%",
         "height": "32%"
-      }]
-    };
-    //Structurize the connectors between different tasks of the Gantt chart
-    const connectors = [{
-      "connector": [{
+    }]
+};
+//Structurize the connectors between different tasks of the Gantt chart
+const connectors = [{
+    "connector": [{
         "fromtaskid": "1",
         "totaskid": "2",
         "color": "#008ee4",
         "thickness": "2",
         "fromtaskconnectstart_": "1"
-      }, {
+    }, {
         "fromtaskid": "2-2",
         "totaskid": "3",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "3-2",
         "totaskid": "4",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "3-2",
         "totaskid": "6",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "7",
         "totaskid": "8",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "7",
         "totaskid": "9",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "12",
         "totaskid": "16",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "12",
         "totaskid": "17",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "17-2",
         "totaskid": "18",
         "color": "#008ee4",
         "thickness": "2"
-      }, {
+    }, {
         "fromtaskid": "19",
         "totaskid": "22",
         "color": "#008ee4",
         "thickness": "2"
-      }]
-    }];
-
-    //STEP 3 - Chart Configurations
-    const chartConfig = {
-      type: "gantt",
-      width: "100%",
-      height: "400",
-      dataFormat: "json",
-      dataSource: {
-        "chart": {
-          "theme": "fusion",
-          "caption": "New Store Opening - Project Plan",
-          "subcaption": "Planned vs Actual",
-          "dateformat": "dd/mm/yyyy",
-          "outputdateformat": "ddds mns yy",
-          "ganttwidthpercent": "60",
-          "ganttPaneDuration": "40",
-          "ganttPaneDurationUnit": "d",
-          "plottooltext": "$processName{br}$label starting date $start{br}$label ending date $end",
-          "legendBorderAlpha": "0",
-          "legendShadow": "0",
-          "usePlotGradientColor": "0",
-          "showCanvasBorder": "0",
-          "flatScrollBars": "1",
-          "gridbordercolor": "#333333",
-          "gridborderalpha": "20",
-          "slackFillColor": "#e44a00",
-          "taskBarFillMix": "light+0"
-        },
-        "categories": categories,
-        "processes": processes,
-        "datatable": datatable,
-        "tasks": tasks,
-        "connectors": connectors,
-        "milestones": {
-          "milestone": [{
-              "date": "2/6/2014",
-              "taskid": "12",
-              "color": "#f8bd19",
-              "shape": "star",
-              "tooltext": "Completion of Phase 1"
+    }]
+}];
+app.controller('MyController', [
+    '$scope',
+    function($scope) {
+        $scope.dataSource = {
+            "chart": {
+                "theme": "fusion",
+                "caption": "New Store Opening - Project Plan",
+                "subcaption": "Planned vs Actual",
+                "dateformat": "dd/mm/yyyy",
+                "outputdateformat": "ddds mns yy",
+                "ganttwidthpercent": "60",
+                "ganttPaneDuration": "40",
+                "ganttPaneDurationUnit": "d",
+                "plottooltext": "$processName{br}$label starting date $start{br}$label ending date $end",
+                "legendBorderAlpha": "0",
+                "legendShadow": "0",
+                "usePlotGradientColor": "0",
+                "showCanvasBorder": "0",
+                "flatScrollBars": "1",
+                "gridbordercolor": "#333333",
+                "gridborderalpha": "20",
+                "slackFillColor": "#e44a00",
+                "taskBarFillMix": "light+0"
+            },
+            "categories": categories,
+            "processes": processes,
+            "datatable": datatable,
+            "tasks": tasks,
+            "connectors": connectors,
+            "milestones": {
+                "milestone": [{
+                    "date": "2/6/2014",
+                    "taskid": "12",
+                    "color": "#f8bd19",
+                    "shape": "star",
+                    "tooltext": "Completion of Phase 1"
+                }]
+            },
+            "legend": {
+                "item": [{
+                    "label": "Planned",
+                    "color": "#008ee4"
+                }, {
+                    "label": "Actual",
+                    "color": "#6baa01"
+                }, {
+                    "label": "Slack (Delay)",
+                    "color": "#e44a00"
+                }]
             }
-          ]
-        },
-        "legend": {
-          "item": [{
-            "label": "Planned",
-            "color": "#008ee4"
-          }, {
-            "label": "Actual",
-            "color": "#6baa01"
-          }, {
-            "label": "Slack (Delay)",
-            "color": "#e44a00"
-          }]
         }
-  
-  
-      }
-    };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>A Gantt Chart</Text>
+    }
+]);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-          />
-        </View>
-      </View>
-    );
-  }
-}
+<div class='tab html-tab'>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+&lt;head&gt;
+    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
-    padding: 10
-  },
+&lt;/head&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
 
-  header: {
-    fontWeight: "bold",
-    fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
-  },
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts width="600" height="400" type="gantt" datasource="{{dataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
 
-  chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
-  }
-});
-```
+&lt;/html&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 > Know more about Gantt Chart and its configurations [here](/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](/chart-guide/list-of-charts#powercharts-xt).
