@@ -83,6 +83,7 @@ const dataset = [
 > The number of objects passed in the series should be the same as the number of labels.
 
 Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='modulets'>module.ts</a></li>
@@ -92,6 +93,8 @@ Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and 
 <div class='tab-content extra-tabs'>
 
 <div class='tab modulets-tab active'>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
+<div>
 Copy and paste the code given below in the `module.ts` file:
 </div>
 <pre><code class="language-javascript">
@@ -122,10 +125,12 @@ export class AppModule {}
 ```
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
-<div class='tab componentts-tab active'>
 </div>
-<div>Copy and paste the code given below in the `component.ts` file:</div>
+
+<div class='tab componentts-tab'>
+<div>
+Copy and paste the code given below in the `component.ts` file:
+</div>
 <pre><code class="language-javascript">
 
 ```
@@ -197,8 +202,7 @@ export class AppComponent {
 </pre>
 </div>
 
-<div class='tab appcomphtml-tab active'>
-</div>
+<div class='tab appcomphtml-tab'>
 <div>Copy and paste the code given below in the `app.component.html` file:</div>
 <pre><code class="language-javascript">
 
@@ -214,8 +218,10 @@ export class AppComponent {
 >
 </fusioncharts>
 ```
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+</div>
 </div>
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
