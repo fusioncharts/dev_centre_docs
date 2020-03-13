@@ -93,11 +93,10 @@ Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and 
 
 <div class='tab modulets-tab active'>
 Copy and paste the code given below in the `module.ts` file:
-
+</div>
 <pre><code class="language-javascript">
-```
-//Module.ts
 
+```
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -123,7 +122,6 @@ export class AppModule {}
 ```
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-</div>
 
 <div class='tab componentts-tab active'>
 </div>
@@ -195,14 +193,12 @@ export class AppComponent {
   } // end of constructor
 } // end of class AppComponent
 ```
-
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
 <div class='tab appcomphtml-tab active'>
 </div>
-
 <div>Copy and paste the code given below in the `app.component.html` file:</div>
 <pre><code class="language-javascript">
 
