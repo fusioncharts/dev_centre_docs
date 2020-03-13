@@ -129,6 +129,7 @@ export class AppModule {}
 </div>
 <div>Copy and paste the code given below in the `component.ts` file:</div>
 <pre><code class="language-javascript">
+
 ```
 // STEP 1- To import the dependencies
 import { Component } from "@angular/core";
@@ -194,6 +195,7 @@ export class AppComponent {
   } // end of constructor
 } // end of class AppComponent
 ```
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -201,6 +203,7 @@ export class AppComponent {
 <div class='tab appcomphtml-tab active'>
 </div>
 <div>Copy and paste the code given below in the `app.component.html` file:</div>
+
 <pre><code class="language-javascript">
 ```
 <h1>
