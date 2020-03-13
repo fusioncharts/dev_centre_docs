@@ -4,17 +4,17 @@ description: This article outlines some of the popular charts and the way to ren
 heading: Rendering Different Charts
 ---
 
-In the [Getting Started](/getting-started/react-native/your-first-chart-using-react-native) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and React Native.
+In the [Getting Started](/getting-started/angular/angularjs/your-first-chart-using-angularjs) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and React Native.
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/react-native/rendering-different-charts-using-vue#multi-series-charts)
-- [Combination Charts](/getting-started/react-native/rendering-different-charts-using-vue#combination-charts)
-- [Real-time Chart](/getting-started/react-native/rendering-different-charts-using-vue#real-time-charts)
-- [Gauges](/getting-started/react-native/rendering-different-charts-using-vue#gauges)
-- [Maps](/getting-started/react-native/rendering-different-charts-using-vue#maps)
-- [Heatmap](/getting-started/react-native/rendering-different-charts-using-vue#heat-map)
-- [Gantt Chart](/getting-started/react-native/rendering-different-charts-using-vue#gantt-chart)
+- [Multi-series Charts](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#multi-series-charts)
+- [Combination Charts](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#combination-charts)
+- [Real-time Chart](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#real-time-charts)
+- [Gauges](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#gauges)
+- [Maps](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#maps)
+- [Heatmap](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#heat-map)
+- [Gantt Chart](/getting-started/angular/angularjs/rendering-different-charts-using-angularjs#gantt-chart)
 
 ## Multi-series Charts
 
@@ -118,55 +118,57 @@ var app = angular.module('myApp', ['ng-fusioncharts']);
 
 //STEP 2- Construct the categories comprising label
 const categories = [{
-        "category": [
-            { "label": "Q1" },
-            { "label": "Q2" },
-            { "label": "Q3" },
-            { "label": "Q4" }
-        ]
-    }]
-    // STEP 3- Construct the dataset comprising multiple series
+"category": [
+{ "label": "Q1" },
+{ "label": "Q2" },
+{ "label": "Q3" },
+{ "label": "Q4" }
+]
+}]
+// STEP 3- Construct the dataset comprising multiple series
 const dataset = [{
-        "seriesname": "Previous Year",
-        "data": [
-            { "value": "12000" },
-            { "value": "10500" },
-            { "value": "23500" },
-            { "value": "16000" }
-        ]
-    },
-    {
-        "seriesname": "Current Year",
-        "data": [
-            { "value": "24400" },
-            { "value": "29800" },
-            { "value": "20800" },
-            { "value": "26800" }
-        ]
-    }
+"seriesname": "Previous Year",
+"data": [
+{ "value": "12000" },
+{ "value": "10500" },
+{ "value": "23500" },
+{ "value": "16000" }
+]
+},
+{
+"seriesname": "Current Year",
+"data": [
+{ "value": "24400" },
+{ "value": "29800" },
+{ "value": "20800" },
+{ "value": "26800" }
+]
+}
 ]
 app.controller('MyController', [
-    '$scope',
+'$scope',
     function($scope) {
-        $scope.dataSource = {
+$scope.dataSource = {
             "chart": {
                 "theme": "fusion",
                 "caption": "Comparison of Quarterly Revenue",
                 "xAxisname": "Quarter",
                 "yAxisName": "Revenues (In USD)",
                 "numberPrefix": "$",
-                "plotFillAlpha": "80",
-                "divLineIsDashed": "1",
-                "divLineDashLen": "1",
-                "divLineGapLen": "1"
-            },
-            "categories": categories,
-            "dataset": dataset,
+"plotFillAlpha": "80",
+"divLineIsDashed": "1",
+"divLineDashLen": "1",
+"divLineGapLen": "1"
+},
+"categories": categories,
+"dataset": dataset,
 
         };
     }
+
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -176,16 +178,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="mscolumn2d" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="mscolumn2d" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -193,6 +195,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -352,197 +355,198 @@ Charts(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 // STEP 2- Define the categories representing the labels on the X-axis
 const categories = [{
-        "category": [{
-                "label": "Jan"
-            },
-            {
-                "label": "Feb"
-            },
-            {
-                "label": "Mar"
-            },
-            {
-                "label": "Apr"
-            },
-            {
-                "label": "May"
-            },
-            {
-                "label": "Jun"
-            },
-            {
-                "label": "Jul"
-            },
-            {
-                "label": "Aug"
-            },
-            {
-                "label": "Sep"
-            },
-            {
-                "label": "Oct"
-            },
-            {
-                "label": "Nov"
-            },
-            {
-                "label": "Dec"
-            }
-        ]
-    }]
-    // STEP 3- Construct the dataset comprising combination series
+"category": [{
+"label": "Jan"
+},
+{
+"label": "Feb"
+},
+{
+"label": "Mar"
+},
+{
+"label": "Apr"
+},
+{
+"label": "May"
+},
+{
+"label": "Jun"
+},
+{
+"label": "Jul"
+},
+{
+"label": "Aug"
+},
+{
+"label": "Sep"
+},
+{
+"label": "Oct"
+},
+{
+"label": "Nov"
+},
+{
+"label": "Dec"
+}
+]
+}]
+// STEP 3- Construct the dataset comprising combination series
 const dataset = [{
-        "seriesName": "Actual Revenue",
-        "showValues": "1",
-        "data": [{
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "15000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "25000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
-    },
-    {
-        "seriesName": "Projected Revenue",
-        "renderAs": "line",
-        "data": [{
-                "value": "15000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "22000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
-    },
-    {
-        "seriesName": "Profit",
-        "renderAs": "area",
-        "data": [{
-                "value": "4000"
-            },
-            {
-                "value": "5000"
-            },
-            {
-                "value": "3000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "7000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "8000"
-            },
-            {
-                "value": "2000"
-            },
-            {
-                "value": "7000"
-            }
-        ]
-    }
+"seriesName": "Actual Revenue",
+"showValues": "1",
+"data": [{
+"value": "16000"
+},
+{
+"value": "20000"
+},
+{
+"value": "18000"
+},
+{
+"value": "19000"
+},
+{
+"value": "15000"
+},
+{
+"value": "21000"
+},
+{
+"value": "16000"
+},
+{
+"value": "20000"
+},
+{
+"value": "17000"
+},
+{
+"value": "25000"
+},
+{
+"value": "19000"
+},
+{
+"value": "23000"
+}
+]
+},
+{
+"seriesName": "Projected Revenue",
+"renderAs": "line",
+"data": [{
+"value": "15000"
+},
+{
+"value": "16000"
+},
+{
+"value": "17000"
+},
+{
+"value": "18000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "20000"
+},
+{
+"value": "21000"
+},
+{
+"value": "22000"
+},
+{
+"value": "23000"
+}
+]
+},
+{
+"seriesName": "Profit",
+"renderAs": "area",
+"data": [{
+"value": "4000"
+},
+{
+"value": "5000"
+},
+{
+"value": "3000"
+},
+{
+"value": "4000"
+},
+{
+"value": "1000"
+},
+{
+"value": "7000"
+},
+{
+"value": "1000"
+},
+{
+"value": "4000"
+},
+{
+"value": "1000"
+},
+{
+"value": "8000"
+},
+{
+"value": "2000"
+},
+{
+"value": "7000"
+}
+]
+}
 ]
 app.controller('MyController', [
-    '$scope',
-    function($scope) {
-        $scope.dataSource = {
-            "chart": {
-                "caption": "Harry's SuperMart",
-                "subCaption": "Sales analysis of last year",
-                "xAxisname": "Month",
-                "yAxisName": "Amount (In USD)",
-                "numberPrefix": "$",
-                "divlineColor": "#999999",
-                "divLineIsDashed": "1",
-                "divLineDashLen": "1",
-                "divLineGapLen": "1",
-                "toolTipColor": "#ffffff",
-                "toolTipBorderThickness": "0",
-                "toolTipBgColor": "#000000",
-                "toolTipBgAlpha": "80",
-                "toolTipBorderRadius": "2",
-                "toolTipPadding": "5",
-                "theme": "fusion"
-            },
-            "categories": categories,
-            "dataset": dataset
-        }
-    }
+'$scope',
+function($scope) {
+$scope.dataSource = {
+"chart": {
+"caption": "Harry's SuperMart",
+"subCaption": "Sales analysis of last year",
+"xAxisname": "Month",
+"yAxisName": "Amount (In USD)",
+"numberPrefix": "$",
+"divlineColor": "#999999",
+"divLineIsDashed": "1",
+"divLineDashLen": "1",
+"divLineGapLen": "1",
+"toolTipColor": "#ffffff",
+"toolTipBorderThickness": "0",
+"toolTipBgColor": "#000000",
+"toolTipBgAlpha": "80",
+"toolTipBorderRadius": "2",
+"toolTipPadding": "5",
+"theme": "fusion"
+},
+"categories": categories,
+"dataset": dataset
+}
+}
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -552,16 +556,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="mscombi2d" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="mscombi2d" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -569,6 +573,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -653,27 +658,27 @@ FusionTheme(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 
 const categories = [{
-    "category": [{
-            "label": "Start"
-        },
-        {
-            "label": "Start1"
-        }
-    ]
+"category": [{
+"label": "Start"
+},
+{
+"label": "Start1"
+}
+]
 }];
 // Construct the dataset comprising multiple series
 const dataset = [{
-    "data": [{
-            "value": "35.27"
-        },
-        {
-            "value": "41.27"
-        },
-    ]
+"data": [{
+"value": "35.27"
+},
+{
+"value": "41.27"
+},
+]
 }];
 
 app.controller('MyController', [
-    '$scope',
+'\$scope',
 
     function($scope) {
 
@@ -721,8 +726,10 @@ app.controller('MyController', [
             }
         }
     }
+
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -732,16 +739,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="realtimearea" dataFormat="json" datasource="{{dataSource}}" events="events"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="realtimearea" dataFormat="json" datasource="{{dataSource}}" events="events"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -749,6 +756,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -862,44 +870,45 @@ FusionTheme(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 //STEP 2 - Defining the dataset for the angular gauge along with the color configuration
 const colorRange = {
-    "color": [{
-        "minValue": "0",
-        "maxValue": "50",
-        "code": "#e44a00"
-    }, {
-        "minValue": "50",
-        "maxValue": "75",
-        "code": "#f8bd19"
-    }, {
-        "minValue": "75",
-        "maxValue": "100",
-        "code": "#6baa01"
-    }]
+"color": [{
+"minValue": "0",
+"maxValue": "50",
+"code": "#e44a00"
+}, {
+"minValue": "50",
+"maxValue": "75",
+"code": "#f8bd19"
+}, {
+"minValue": "75",
+"maxValue": "100",
+"code": "#6baa01"
+}]
 };
 
 const dials = {
-    "dial": [{
-        "value": "67"
-    }]
+"dial": [{
+"value": "67"
+}]
 };
 
 app.controller('MyController', [
-    '$scope',
-    function($scope) {
-        $scope.dataSource = {
-            "chart": {
-                "caption": "Customer Satisfaction Score",
-                "subcaption": "Last week",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "theme": "fusion"
-            },
-            "colorRange": colorRange,
-            "dials": dials
-        }
-    }
+'$scope',
+function($scope) {
+$scope.dataSource = {
+"chart": {
+"caption": "Customer Satisfaction Score",
+"subcaption": "Last week",
+"lowerLimit": "0",
+"upperLimit": "100",
+"theme": "fusion"
+},
+"colorRange": colorRange,
+"dials": dials
+}
+}
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -909,20 +918,21 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="angulargauge" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="angulargauge" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1048,72 +1058,74 @@ FusionTheme(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 //STEP 2 - Define the dataset and the colorRange of the map
 const dataset = [{
-    "id": "NA",
-    "value": ".82",
-    "showLabel": "1"
+"id": "NA",
+"value": ".82",
+"showLabel": "1"
 }, {
-    "id": "SA",
-    "value": "2.04",
-    "showLabel": "1"
+"id": "SA",
+"value": "2.04",
+"showLabel": "1"
 }, {
-    "id": "AS",
-    "value": "1.78",
-    "showLabel": "1"
+"id": "AS",
+"value": "1.78",
+"showLabel": "1"
 }, {
-    "id": "EU",
-    "value": ".40",
-    "showLabel": "1"
+"id": "EU",
+"value": ".40",
+"showLabel": "1"
 }, {
-    "id": "AF",
-    "value": "2.58",
-    "showLabel": "1"
+"id": "AF",
+"value": "2.58",
+"showLabel": "1"
 }, {
-    "id": "AU",
-    "value": "1.30",
-    "showLabel": "1"
+"id": "AU",
+"value": "1.30",
+"showLabel": "1"
 }];
 
 const colorrange = {
-    "minvalue": "0",
-    "code": "#FFE0B2",
-    "gradient": "1",
-    "color": [{
-        "minvalue": "0.5",
-        "maxvalue": "1.0",
-        "color": "#FFD74D"
-    }, {
-        "minvalue": "1.0",
-        "maxvalue": "2.0",
-        "color": "#FB8C00"
-    }, {
-        "minvalue": "2.0",
-        "maxvalue": "3.0",
-        "color": "#E65100"
-    }]
+"minvalue": "0",
+"code": "#FFE0B2",
+"gradient": "1",
+"color": [{
+"minvalue": "0.5",
+"maxvalue": "1.0",
+"color": "#FFD74D"
+}, {
+"minvalue": "1.0",
+"maxvalue": "2.0",
+"color": "#FB8C00"
+}, {
+"minvalue": "2.0",
+"maxvalue": "3.0",
+"color": "#E65100"
+}]
 };
 
 app.controller('MyController', [
-    '$scope',
+'$scope',
     function($scope) {
-        $scope.dataSource = {
-            "chart": {
-                "caption": "Average Annual Population Growth",
-                "subcaption": " 1955-2015",
-                "numbersuffix": "%",
-                "includevalueinlabels": "1",
-                "labelsepchar": ": ",
-                "entityFillHoverColor": "#FFF9C4",
-                "theme": "fusion"
-            },
-            // Aesthetics; ranges synced with the slider
-            "colorrange": colorrange,
-            // Source data as JSON --> id represents countries of the world.
-            "data": dataset
+\$scope.dataSource = {
+"chart": {
+"caption": "Average Annual Population Growth",
+"subcaption": " 1955-2015",
+"numbersuffix": "%",
+"includevalueinlabels": "1",
+"labelsepchar": ": ",
+"entityFillHoverColor": "#FFF9C4",
+"theme": "fusion"
+},
+// Aesthetics; ranges synced with the slider
+"colorrange": colorrange,
+// Source data as JSON --> id represents countries of the world.
+"data": dataset
 
         };
     }
+
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1123,16 +1135,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-  &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-  &lt;div ng-controller="MyController"&gt;
-      &lt;div fusioncharts width="600" height="400" type="world" datasource="{{dataSource}}"&gt;
-      &lt;/div&gt;
-  &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="world" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -1140,6 +1152,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1196,41 +1209,43 @@ var app = angular.module('myApp', ['ng-fusioncharts']);
 const mapData = [{ "id": "001", "value": 2834 }, { "id": "003", "value": 3182 }, { "id": "005", "value": 3280 }, { "id": "007", "value": 911 }, { "id": "009", "value": 292 }, { "id": "011", "value": 530 }, { "id": "013", "value": 2515 }, { "id": "015", "value": 728 }, { "id": "017", "value": 1974 }, { "id": "019", "value": 848 }, { "id": "021", "value": 3278 }, { "id": "023", "value": 4463 }, { "id": "025", "value": 1198 }, { "id": "027", "value": 378 }, { "id": "029", "value": 2610 }, { "id": "031", "value": 1200 }, { "id": "033", "value": 3820 }, { "id": "035", "value": 940 }, { "id": "037", "value": 3416 }, { "id": "039", "value": 4004 }, { "id": "041", "value": 1604 }, { "id": "043", "value": 4011 }, { "id": "045", "value": 3203 }, { "id": "047", "value": 3775 }, { "id": "049", "value": 2721 }, { "id": "051", "value": 3417 }, { "id": "053", "value": 1530 }, { "id": "055", "value": 412 }, { "id": "057", "value": 3434 }, { "id": "059", "value": 1670 }, { "id": "061", "value": 1274 }, { "id": "063", "value": 4339 }, { "id": "065", "value": 2073 }, { "id": "067", "value": 1018 }, { "id": "069", "value": 3967 }, { "id": "071", "value": 3401 }, { "id": "073", "value": 3307 }, { "id": "075", "value": 1938 }, { "id": "077", "value": 489 }, { "id": "079", "value": 3207 }, { "id": "081", "value": 2295 }, { "id": "083", "value": 2747 }, { "id": "085", "value": 1114 }, { "id": "087", "value": 3400 }, { "id": "089", "value": 784 }, { "id": "091", "value": 1673 }, { "id": "093", "value": 4274 }, { "id": "095", "value": 4509 }, { "id": "097", "value": 3862 }, { "id": "099", "value": 1356 }, { "id": "101", "value": 4126 }, { "id": "103", "value": 1314 }, { "id": "105", "value": 1807 }, { "id": "107", "value": 4026 }, { "id": "109", "value": 3456 }, { "id": "111", "value": 1393 }, { "id": "113", "value": 1500 }, { "id": "115", "value": 2218 }];
 
 const colorrange = {
-    "minvalue": "0",
-    "startlabel": "Low",
-    "endlabel": "High",
-    "code": "e44a00",
-    "gradient": "1",
-    "color": [{ "maxvalue": "2500", "code": "f8bd19" }, { "maxvalue": "5000", "code": "6baa01" }]
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{ "maxvalue": "2500", "code": "f8bd19" }, { "maxvalue": "5000", "code": "6baa01" }]
 };
 
 app.controller('MyController', [
-    '$scope',
+'$scope',
     function($scope) {
-        $scope.dataSource = {
-            "chart": {
-                "animation": "0",
-                "showbevel": "0",
-                "usehovercolor": "1",
-                "showlegend": "1",
-                "legendposition": "BOTTOM",
-                "legendborderalpha": "0",
-                "legendbordercolor": "ffffff",
-                "legendallowdrag": "0",
-                "legendshadow": "0",
-                "caption": "Website Visits for the month of March 2018",
-                "connectorcolor": "000000",
-                "fillalpha": "80",
-                "hovercolor": "CCCCCC",
-                "theme": "fusion"
-            },
-            "colorrange": colorrange,
-            "data": mapData
+\$scope.dataSource = {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": colorrange,
+"data": mapData
 
         }
     }
+
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1240,16 +1255,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="california" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="california" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -1257,6 +1272,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1548,175 +1564,175 @@ HeatMap(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 //STEP 2 - Define the chart data constituting dataset and colorrange objects
 const dataset = [{
-    "data": [{
-            "rowid": "Samsung Galaxy S5",
-            "columnid": "Processor",
-            "value": "8.7",
-            "tllabel": "Quad Core 2.5 GHz",
-            "trlabel": "OS : Android 4.4 Kitkat"
-        },
-        {
-            "rowid": "Samsung Galaxy S5",
-            "columnid": "Screen Size",
-            "value": "8.5",
-            "tllabel": "5.1 inch",
-            "trlabel": "AMOLED screen"
-        },
-        {
-            "rowid": "Samsung Galaxy S5",
-            "columnid": "Price",
-            "value": "9.3",
-            "tllabel": "$600"
-        },
-        {
-            "rowid": "Samsung Galaxy S5",
-            "columnid": "Battery Backup",
-            "value": "9.7",
-            "tllabel": "29 Hrs",
-            "trlabel": "Battery : 2800 MAH"
-        },
-        {
-            "rowid": "Samsung Galaxy S5",
-            "columnid": "Camera",
-            "value": "8",
-            "tllabel": "16 MP",
-            "trlabel": "Front Camera : 2.1 MP"
-        },
-        {
-            "rowid": "HTC One (M8)",
-            "columnid": "Processor",
-            "value": "9.2",
-            "tllabel": "Quad Core 2.3 GHz",
-            "trlabel": "OS : Android 4.4 Kitkat"
-        },
-        {
-            "rowid": "HTC One (M8)",
-            "columnid": "Screen Size",
-            "value": "8.3",
-            "tllabel": "5 inch",
-            "trlabel": "LCD screen"
-        },
-        {
-            "rowid": "HTC One (M8)",
-            "columnid": "Price",
-            "value": "7.3",
-            "tllabel": "$600"
-        },
-        {
-            "rowid": "HTC One (M8)",
-            "columnid": "Battery Backup",
-            "value": "8.8",
-            "tllabel": "20 Hrs",
-            "trlabel": "Battery : 2600 MAH"
-        },
-        {
-            "rowid": "HTC One (M8)",
-            "columnid": "Camera",
-            "value": "8.7",
-            "tllabel": "4 MP",
-            "trlabel": "Front Camera : 5 MP"
-        },
-        {
-            "rowid": "Apple iPhone 5S",
-            "columnid": "Processor",
-            "value": "9.1",
-            "tllabel": "Dual Core",
-            "trlabel": "OS : iOS 7"
-        },
-        {
-            "rowid": "Apple iPhone 5S",
-            "columnid": "Screen Size",
-            "value": "8.6",
-            "tllabel": "4 inch",
-            "trlabel": "Retina LCD screen"
-        },
-        {
-            "rowid": "Apple iPhone 5S",
-            "columnid": "Price",
-            "value": "7.2",
-            "tllabel": "$649"
-        },
-        {
-            "rowid": "Apple iPhone 5S",
-            "columnid": "Battery Backup",
-            "value": "8.4",
-            "tllabel": "10 Hrs",
-            "trlabel": "Battery : 1560 MAH"
-        },
-        {
-            "rowid": "Apple iPhone 5S",
-            "columnid": "Camera",
-            "value": "9.5",
-            "tllabel": "8 MP",
-            "trlabel": "Front Camera : 1.2 MP"
-        },
-        {
-            "rowid": "Nokia Lumia 1520",
-            "columnid": "Processor",
-            "value": "8.8",
-            "tllabel": "Quad Core 2.2 GHz",
-            "trlabel": "OS: Windows Phone 8"
-        },
-        {
-            "rowid": "Nokia Lumia 1520",
-            "columnid": "Screen Size",
-            "value": "9.1",
-            "tllabel": "6 inch",
-            "trlabel": "LCD screen"
-        },
-        {
-            "rowid": "Nokia Lumia 1520",
-            "columnid": "Price",
-            "value": "9.7",
-            "tllabel": "$470"
-        },
-        {
-            "rowid": "Nokia Lumia 1520",
-            "columnid": "Battery Backup",
-            "value": "9.2",
-            "tllabel": "27 Hrs",
-            "trlabel": "Battery : 3400 MAH"
-        },
-        {
-            "rowid": "Nokia Lumia 1520",
-            "columnid": "Camera",
-            "value": "8.1",
-            "tllabel": "20MP",
-            "trlabel": "Front Camera : 1.2 MP"
-        }
-    ]
+"data": [{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Processor",
+"value": "8.7",
+"tllabel": "Quad Core 2.5 GHz",
+"trlabel": "OS : Android 4.4 Kitkat"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Screen Size",
+"value": "8.5",
+"tllabel": "5.1 inch",
+"trlabel": "AMOLED screen"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Price",
+"value": "9.3",
+"tllabel": "$600"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Battery Backup",
+"value": "9.7",
+"tllabel": "29 Hrs",
+"trlabel": "Battery : 2800 MAH"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Camera",
+"value": "8",
+"tllabel": "16 MP",
+"trlabel": "Front Camera : 2.1 MP"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Processor",
+"value": "9.2",
+"tllabel": "Quad Core 2.3 GHz",
+"trlabel": "OS : Android 4.4 Kitkat"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Screen Size",
+"value": "8.3",
+"tllabel": "5 inch",
+"trlabel": "LCD screen"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Price",
+"value": "7.3",
+"tllabel": "$600"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Battery Backup",
+"value": "8.8",
+"tllabel": "20 Hrs",
+"trlabel": "Battery : 2600 MAH"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Camera",
+"value": "8.7",
+"tllabel": "4 MP",
+"trlabel": "Front Camera : 5 MP"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Processor",
+"value": "9.1",
+"tllabel": "Dual Core",
+"trlabel": "OS : iOS 7"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Screen Size",
+"value": "8.6",
+"tllabel": "4 inch",
+"trlabel": "Retina LCD screen"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Price",
+"value": "7.2",
+"tllabel": "$649"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Battery Backup",
+"value": "8.4",
+"tllabel": "10 Hrs",
+"trlabel": "Battery : 1560 MAH"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Camera",
+"value": "9.5",
+"tllabel": "8 MP",
+"trlabel": "Front Camera : 1.2 MP"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Processor",
+"value": "8.8",
+"tllabel": "Quad Core 2.2 GHz",
+"trlabel": "OS: Windows Phone 8"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Screen Size",
+"value": "9.1",
+"tllabel": "6 inch",
+"trlabel": "LCD screen"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Price",
+"value": "9.7",
+"tllabel": "$470"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Battery Backup",
+"value": "9.2",
+"tllabel": "27 Hrs",
+"trlabel": "Battery : 3400 MAH"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Camera",
+"value": "8.1",
+"tllabel": "20MP",
+"trlabel": "Front Camera : 1.2 MP"
+}
+]
 }];
 
 const colorrange = {
-    "gradient": "0",
-    "minvalue": "0",
-    "code": "E24B1A",
-    "startlabel": "Poor",
-    "endlabel": "Good",
-    "color": [{
-            "code": "E24B1A",
-            "minvalue": "1",
-            "maxvalue": "5",
-            "label": "Bad"
-        },
-        {
-            "code": "F6BC33",
-            "minvalue": "5",
-            "maxvalue": "8.5",
-            "label": "Average"
-        },
-        {
-            "code": "6DA81E",
-            "minvalue": "8.5",
-            "maxvalue": "10",
-            "label": "Good"
-        }
-    ]
+"gradient": "0",
+"minvalue": "0",
+"code": "E24B1A",
+"startlabel": "Poor",
+"endlabel": "Good",
+"color": [{
+"code": "E24B1A",
+"minvalue": "1",
+"maxvalue": "5",
+"label": "Bad"
+},
+{
+"code": "F6BC33",
+"minvalue": "5",
+"maxvalue": "8.5",
+"label": "Average"
+},
+{
+"code": "6DA81E",
+"minvalue": "8.5",
+"maxvalue": "10",
+"label": "Good"
+}
+]
 };
 app.controller('MyController', [
-    '$scope',
+'$scope',
     function($scope) {
-        $scope.dataSource = {
+$scope.dataSource = {
             "chart": {
                 "caption": "Top Smartphone Ratings",
                 "subcaption": "By Features",
@@ -1725,27 +1741,29 @@ app.controller('MyController', [
                 "showPlotBorder": "1",
                 "xAxisLabelsOnTop": "1",
                 "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-                //Cosmetics
-                "showValues": "1",
-                "showBorder": "0",
-                "bgColor": "#ffffff",
-                "showShadow": "0",
-                "usePlotGradientColor": "0",
-                "toolTipColor": "#ffffff",
-                "toolTipBorderThickness": "0",
-                "toolTipBgColor": "#000000",
-                "toolTipBgAlpha": "80",
-                "toolTipBorderRadius": "2",
-                "toolTipPadding": "5",
-                "theme": "fusion"
-            },
-            "dataset": dataset,
-            "colorrange": colorrange
-        }
+//Cosmetics
+"showValues": "1",
+"showBorder": "0",
+"bgColor": "#ffffff",
+"showShadow": "0",
+"usePlotGradientColor": "0",
+"toolTipColor": "#ffffff",
+"toolTipBorderThickness": "0",
+"toolTipBgColor": "#000000",
+"toolTipBgAlpha": "80",
+"toolTipBorderRadius": "2",
+"toolTipPadding": "5",
+"theme": "fusion"
+},
+"dataset": dataset,
+"colorrange": colorrange
+}
 
     }
+
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1756,16 +1774,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="heatmap" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="heatmap" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -1773,6 +1791,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -2698,221 +2717,221 @@ Gantt(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
 //STEP 2 - Define the various data objects for the Gantt Chart
 const categories = [{
-    "bgcolor": "#999999",
-    "category": [{
-        "start": "1/4/2014",
-        "end": "30/6/2014",
-        "label": "Months",
-        "align": "middle",
-        "fontcolor": "#ffffff",
-        "fontsize": "12"
-    }]
+"bgcolor": "#999999",
+"category": [{
+"start": "1/4/2014",
+"end": "30/6/2014",
+"label": "Months",
+"align": "middle",
+"fontcolor": "#ffffff",
+"fontsize": "12"
+}]
 }, {
-    "bgcolor": "#999999",
-    "align": "middle",
-    "fontcolor": "#ffffff",
-    "fontsize": "12",
-    "category": [{
-        "start": "1/4/2014",
-        "end": "30/4/2014",
-        "label": "April"
-    }, {
-        "start": "1/5/2014",
-        "end": "31/5/2014",
-        "label": "May"
-    }, {
-        "start": "1/6/2014",
-        "end": "30/6/2014",
-        "label": "June"
-    }]
+"bgcolor": "#999999",
+"align": "middle",
+"fontcolor": "#ffffff",
+"fontsize": "12",
+"category": [{
+"start": "1/4/2014",
+"end": "30/4/2014",
+"label": "April"
 }, {
-    "bgcolor": "#ffffff",
-    "fontcolor": "#333333",
-    "fontsize": "11",
-    "align": "center",
-    "category": [{
-        "start": "1/4/2014",
-        "end": "5/4/2014",
-        "label": "Week 1"
-    }, {
-        "start": "6/4/2014",
-        "end": "12/4/2014",
-        "label": "Week 2"
-    }, {
-        "start": "13/4/2014",
-        "end": "19/4/2014",
-        "label": "Week 3"
-    }, {
-        "start": "20/4/2014",
-        "end": "26/4/2014",
-        "label": "Week 4"
-    }, {
-        "start": "27/4/2014",
-        "end": "3/5/2014",
-        "label": "Week 5"
-    }, {
-        "start": "4/5/2014",
-        "end": "10/5/2014",
-        "label": "Week 6"
-    }, {
-        "start": "11/5/2014",
-        "end": "17/5/2014",
-        "label": "Week 7"
-    }, {
-        "start": "18/5/2014",
-        "end": "24/5/2014",
-        "label": "Week 8"
-    }, {
-        "start": "25/5/2014",
-        "end": "31/5/2014",
-        "label": "Week 9"
-    }, {
-        "start": "1/6/2014",
-        "end": "7/6/2014",
-        "label": "Week 10"
-    }, {
-        "start": "8/6/2014",
-        "end": "14/6/2014",
-        "label": "Week 11"
-    }, {
-        "start": "15/6/2014",
-        "end": "21/6/2014",
-        "label": "Week 12"
-    }, {
-        "start": "22/6/2014",
-        "end": "28/6/2014",
-        "label": "Week 13"
-    }]
+"start": "1/5/2014",
+"end": "31/5/2014",
+"label": "May"
+}, {
+"start": "1/6/2014",
+"end": "30/6/2014",
+"label": "June"
+}]
+}, {
+"bgcolor": "#ffffff",
+"fontcolor": "#333333",
+"fontsize": "11",
+"align": "center",
+"category": [{
+"start": "1/4/2014",
+"end": "5/4/2014",
+"label": "Week 1"
+}, {
+"start": "6/4/2014",
+"end": "12/4/2014",
+"label": "Week 2"
+}, {
+"start": "13/4/2014",
+"end": "19/4/2014",
+"label": "Week 3"
+}, {
+"start": "20/4/2014",
+"end": "26/4/2014",
+"label": "Week 4"
+}, {
+"start": "27/4/2014",
+"end": "3/5/2014",
+"label": "Week 5"
+}, {
+"start": "4/5/2014",
+"end": "10/5/2014",
+"label": "Week 6"
+}, {
+"start": "11/5/2014",
+"end": "17/5/2014",
+"label": "Week 7"
+}, {
+"start": "18/5/2014",
+"end": "24/5/2014",
+"label": "Week 8"
+}, {
+"start": "25/5/2014",
+"end": "31/5/2014",
+"label": "Week 9"
+}, {
+"start": "1/6/2014",
+"end": "7/6/2014",
+"label": "Week 10"
+}, {
+"start": "8/6/2014",
+"end": "14/6/2014",
+"label": "Week 11"
+}, {
+"start": "15/6/2014",
+"end": "21/6/2014",
+"label": "Week 12"
+}, {
+"start": "22/6/2014",
+"end": "28/6/2014",
+"label": "Week 13"
+}]
 }];
 //List out the different processes of the Gantt chart
 const processes = {
-    "headertext": "Task",
-    "fontcolor": "#000000",
-    "fontsize": "11",
-    "isanimated": "1",
-    "bgcolor": "#6baa01",
-    "headervalign": "bottom",
-    "headeralign": "left",
-    "headerbgcolor": "#999999",
-    "headerfontcolor": "#ffffff",
-    "headerfontsize": "12",
-    "align": "left",
-    "isbold": "1",
-    "bgalpha": "25",
-    "process": [{
-        "label": "Clear site",
-        "id": "1"
-    }, {
-        "label": "Excavate Foundation",
-        "id": "2",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Concrete Foundation",
-        "id": "3",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Footing to DPC",
-        "id": "4",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Drainage Services",
-        "id": "5",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Backfill",
-        "id": "6",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Ground Floor",
-        "id": "7"
-    }, {
-        "label": "Walls on First Floor",
-        "id": "8"
-    }, {
-        "label": "First Floor Carcass",
-        "id": "9",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "First Floor Deck",
-        "id": "10",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Roof Structure",
-        "id": "11"
-    }, {
-        "label": "Roof Covering",
-        "id": "12"
-    }, {
-        "label": "Rainwater Gear",
-        "id": "13"
-    }, {
-        "label": "Windows",
-        "id": "14"
-    }, {
-        "label": "External Doors",
-        "id": "15"
-    }, {
-        "label": "Connect Electricity",
-        "id": "16"
-    }, {
-        "label": "Connect Water Supply",
-        "id": "17",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Install Air Conditioning",
-        "id": "18",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Interior Decoration",
-        "id": "19",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Fencing And signs",
-        "id": "20"
-    }, {
-        "label": "Exterior Decoration",
-        "id": "21",
-        "hoverBandColor": "#e44a00",
-        "hoverBandAlpha": "40"
-    }, {
-        "label": "Setup racks",
-        "id": "22"
-    }]
+"headertext": "Task",
+"fontcolor": "#000000",
+"fontsize": "11",
+"isanimated": "1",
+"bgcolor": "#6baa01",
+"headervalign": "bottom",
+"headeralign": "left",
+"headerbgcolor": "#999999",
+"headerfontcolor": "#ffffff",
+"headerfontsize": "12",
+"align": "left",
+"isbold": "1",
+"bgalpha": "25",
+"process": [{
+"label": "Clear site",
+"id": "1"
+}, {
+"label": "Excavate Foundation",
+"id": "2",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Concrete Foundation",
+"id": "3",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Footing to DPC",
+"id": "4",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Drainage Services",
+"id": "5",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Backfill",
+"id": "6",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Ground Floor",
+"id": "7"
+}, {
+"label": "Walls on First Floor",
+"id": "8"
+}, {
+"label": "First Floor Carcass",
+"id": "9",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "First Floor Deck",
+"id": "10",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Roof Structure",
+"id": "11"
+}, {
+"label": "Roof Covering",
+"id": "12"
+}, {
+"label": "Rainwater Gear",
+"id": "13"
+}, {
+"label": "Windows",
+"id": "14"
+}, {
+"label": "External Doors",
+"id": "15"
+}, {
+"label": "Connect Electricity",
+"id": "16"
+}, {
+"label": "Connect Water Supply",
+"id": "17",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Install Air Conditioning",
+"id": "18",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Interior Decoration",
+"id": "19",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Fencing And signs",
+"id": "20"
+}, {
+"label": "Exterior Decoration",
+"id": "21",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Setup racks",
+"id": "22"
+}]
 };
 
 const datatable = {
-    "showprocessname": "1",
-    "namealign": "left",
-    "fontcolor": "#000000",
-    "fontsize": "10",
-    "valign": "right",
-    "align": "center",
-    "headervalign": "bottom",
-    "headeralign": "center",
-    "headerbgcolor": "#999999",
-    "headerfontcolor": "#ffffff",
-    "headerfontsize": "12",
-    "datacolumn": [{
-        "bgcolor": "#eeeeee",
-        "headertext": "Actual{br}Start{br}Date",
-        "text": [{
-            "label": "9/4/2014"
-        }, {
-            "label": "13/4/2014"
-        }, {
-            "label": "26/4/2014",
-            "bgcolor": "#e44a00",
-            "bgAlpha": "40",
+"showprocessname": "1",
+"namealign": "left",
+"fontcolor": "#000000",
+"fontsize": "10",
+"valign": "right",
+"align": "center",
+"headervalign": "bottom",
+"headeralign": "center",
+"headerbgcolor": "#999999",
+"headerfontcolor": "#ffffff",
+"headerfontsize": "12",
+"datacolumn": [{
+"bgcolor": "#eeeeee",
+"headertext": "Actual{br}Start{br}Date",
+"text": [{
+"label": "9/4/2014"
+}, {
+"label": "13/4/2014"
+}, {
+"label": "26/4/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40",
 
         }, {
             "label": "4/5/2014",
@@ -3028,537 +3047,538 @@ const datatable = {
             "label": "28/6/2014"
         }]
     }]
+
 };
 //Define different tasks of the process in a JSON object
 const tasks = {
-    "task": [{
-        "label": "Planned",
-        "processid": "1",
-        "start": "9/4/2014",
-        "end": "12/4/2014",
-        "id": "1-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "1",
-        "start": "9/4/2014",
-        "end": "12/4/2014",
-        "id": "1",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "2",
-        "start": "13/4/2014",
-        "end": "23/4/2014",
-        "id": "2-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "2",
-        "start": "13/4/2014",
-        "end": "25/4/2014",
-        "id": "2",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "2",
-        "start": "23/4/2014",
-        "end": "25/4/2014",
-        "id": "2-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 2 days."
-    }, {
-        "label": "Planned",
-        "processid": "3",
-        "start": "23/4/2014",
-        "end": "30/4/2014",
-        "id": "3-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "3",
-        "start": "26/4/2014",
-        "end": "4/5/2014",
-        "id": "3",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "3",
-        "start": "3/5/2014",
-        "end": "4/5/2014",
-        "id": "3-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 1 days."
-    }, {
-        "label": "Planned",
-        "processid": "4",
-        "start": "3/5/2014",
-        "end": "10/5/2014",
-        "id": "4-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "4",
-        "start": "4/5/2014",
-        "end": "10/5/2014",
-        "id": "4",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "5",
-        "start": "6/5/2014",
-        "end": "11/5/2014",
-        "id": "5-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "5",
-        "start": "6/5/2014",
-        "end": "10/5/2014",
-        "id": "5",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "6",
-        "start": "4/5/2014",
-        "end": "7/5/2014",
-        "id": "6-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "6",
-        "start": "5/5/2014",
-        "end": "11/5/2014",
-        "id": "6",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "6",
-        "start": "7/5/2014",
-        "end": "11/5/2014",
-        "id": "6-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 4 days."
-    }, {
-        "label": "Planned",
-        "processid": "7",
-        "start": "11/5/2014",
-        "end": "14/5/2014",
-        "id": "7-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "7",
-        "start": "11/5/2014",
-        "end": "14/5/2014",
-        "id": "7",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "8",
-        "start": "16/5/2014",
-        "end": "19/5/2014",
-        "id": "8-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "8",
-        "start": "16/5/2014",
-        "end": "19/5/2014",
-        "id": "8",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "9",
-        "start": "16/5/2014",
-        "end": "18/5/2014",
-        "id": "9-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "9",
-        "start": "16/5/2014",
-        "end": "21/5/2014",
-        "id": "9",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "9",
-        "start": "18/5/2014",
-        "end": "21/5/2014",
-        "id": "9-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 3 days."
-    }, {
-        "label": "Planned",
-        "processid": "10",
-        "start": "20/5/2014",
-        "end": "23/5/2014",
-        "id": "10-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "10",
-        "start": "21/5/2014",
-        "end": "24/5/2014",
-        "id": "10",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "10",
-        "start": "23/5/2014",
-        "end": "24/5/2014",
-        "id": "10-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 1 days."
-    }, {
-        "label": "Planned",
-        "processid": "11",
-        "start": "25/5/2014",
-        "end": "27/5/2014",
-        "id": "11-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "11",
-        "start": "25/5/2014",
-        "end": "27/5/2014",
-        "id": "11",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "12",
-        "start": "28/5/2014",
-        "end": "1/6/2014",
-        "id": "12-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "12",
-        "start": "28/5/2014",
-        "end": "1/6/2014",
-        "id": "12",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "13",
-        "start": "4/6/2014",
-        "end": "6/6/2014",
-        "id": "13-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "13",
-        "start": "4/6/2014",
-        "end": "6/6/2014",
-        "id": "13",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "14",
-        "start": "4/6/2014",
-        "end": "4/6/2014",
-        "id": "14-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "14",
-        "start": "4/6/2014",
-        "end": "4/6/2014",
-        "id": "14",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "15",
-        "start": "4/6/2014",
-        "end": "4/6/2014",
-        "id": "15-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "15",
-        "start": "4/6/2014",
-        "end": "4/6/2014",
-        "id": "15",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "16",
-        "start": "2/6/2014",
-        "end": "7/6/2014",
-        "id": "16-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "16",
-        "start": "2/6/2014",
-        "end": "7/6/2014",
-        "id": "16",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "17",
-        "start": "5/6/2014",
-        "end": "10/6/2014",
-        "id": "17-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "17",
-        "start": "5/6/2014",
-        "end": "17/6/2014",
-        "id": "17",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "17",
-        "start": "10/6/2014",
-        "end": "17/6/2014",
-        "id": "17-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 7 days."
-    }, {
-        "label": "Planned",
-        "processid": "18",
-        "start": "10/6/2014",
-        "end": "12/6/2014",
-        "id": "18-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Delay",
-        "processid": "18",
-        "start": "18/6/2014",
-        "end": "20/6/2014",
-        "id": "18",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 8 days."
-    }, {
-        "label": "Planned",
-        "processid": "19",
-        "start": "15/6/2014",
-        "end": "23/6/2014",
-        "id": "19-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "19",
-        "start": "16/6/2014",
-        "end": "23/6/2014",
-        "id": "19",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "20",
-        "start": "23/6/2014",
-        "end": "23/6/2014",
-        "id": "20-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "20",
-        "start": "23/6/2014",
-        "end": "23/6/2014",
-        "id": "20",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Planned",
-        "processid": "21",
-        "start": "18/6/2014",
-        "end": "21/6/2014",
-        "id": "21-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "21",
-        "start": "18/6/2014",
-        "end": "23/6/2014",
-        "id": "21",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }, {
-        "label": "Delay",
-        "processid": "21",
-        "start": "21/6/2014",
-        "end": "23/6/2014",
-        "id": "21-2",
-        "color": "#e44a00",
-        "toppadding": "56%",
-        "height": "32%",
-        "tooltext": "Delayed by 2 days."
-    }, {
-        "label": "Planned",
-        "processid": "22",
-        "start": "24/6/2014",
-        "end": "28/6/2014",
-        "id": "22-1",
-        "color": "#008ee4",
-        "height": "32%",
-        "toppadding": "12%"
-    }, {
-        "label": "Actual",
-        "processid": "22",
-        "start": "25/6/2014",
-        "end": "28/6/2014",
-        "id": "22",
-        "color": "#6baa01",
-        "toppadding": "56%",
-        "height": "32%"
-    }]
+"task": [{
+"label": "Planned",
+"processid": "1",
+"start": "9/4/2014",
+"end": "12/4/2014",
+"id": "1-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "1",
+"start": "9/4/2014",
+"end": "12/4/2014",
+"id": "1",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "2",
+"start": "13/4/2014",
+"end": "23/4/2014",
+"id": "2-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "2",
+"start": "13/4/2014",
+"end": "25/4/2014",
+"id": "2",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "2",
+"start": "23/4/2014",
+"end": "25/4/2014",
+"id": "2-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 2 days."
+}, {
+"label": "Planned",
+"processid": "3",
+"start": "23/4/2014",
+"end": "30/4/2014",
+"id": "3-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "3",
+"start": "26/4/2014",
+"end": "4/5/2014",
+"id": "3",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "3",
+"start": "3/5/2014",
+"end": "4/5/2014",
+"id": "3-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 1 days."
+}, {
+"label": "Planned",
+"processid": "4",
+"start": "3/5/2014",
+"end": "10/5/2014",
+"id": "4-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "4",
+"start": "4/5/2014",
+"end": "10/5/2014",
+"id": "4",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "5",
+"start": "6/5/2014",
+"end": "11/5/2014",
+"id": "5-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "5",
+"start": "6/5/2014",
+"end": "10/5/2014",
+"id": "5",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "6",
+"start": "4/5/2014",
+"end": "7/5/2014",
+"id": "6-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "6",
+"start": "5/5/2014",
+"end": "11/5/2014",
+"id": "6",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "6",
+"start": "7/5/2014",
+"end": "11/5/2014",
+"id": "6-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 4 days."
+}, {
+"label": "Planned",
+"processid": "7",
+"start": "11/5/2014",
+"end": "14/5/2014",
+"id": "7-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "7",
+"start": "11/5/2014",
+"end": "14/5/2014",
+"id": "7",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "8",
+"start": "16/5/2014",
+"end": "19/5/2014",
+"id": "8-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "8",
+"start": "16/5/2014",
+"end": "19/5/2014",
+"id": "8",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "9",
+"start": "16/5/2014",
+"end": "18/5/2014",
+"id": "9-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "9",
+"start": "16/5/2014",
+"end": "21/5/2014",
+"id": "9",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "9",
+"start": "18/5/2014",
+"end": "21/5/2014",
+"id": "9-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 3 days."
+}, {
+"label": "Planned",
+"processid": "10",
+"start": "20/5/2014",
+"end": "23/5/2014",
+"id": "10-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "10",
+"start": "21/5/2014",
+"end": "24/5/2014",
+"id": "10",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "10",
+"start": "23/5/2014",
+"end": "24/5/2014",
+"id": "10-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 1 days."
+}, {
+"label": "Planned",
+"processid": "11",
+"start": "25/5/2014",
+"end": "27/5/2014",
+"id": "11-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "11",
+"start": "25/5/2014",
+"end": "27/5/2014",
+"id": "11",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "12",
+"start": "28/5/2014",
+"end": "1/6/2014",
+"id": "12-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "12",
+"start": "28/5/2014",
+"end": "1/6/2014",
+"id": "12",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "13",
+"start": "4/6/2014",
+"end": "6/6/2014",
+"id": "13-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "13",
+"start": "4/6/2014",
+"end": "6/6/2014",
+"id": "13",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "14",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "14-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "14",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "14",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "15",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "15-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "15",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "15",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "16",
+"start": "2/6/2014",
+"end": "7/6/2014",
+"id": "16-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "16",
+"start": "2/6/2014",
+"end": "7/6/2014",
+"id": "16",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "17",
+"start": "5/6/2014",
+"end": "10/6/2014",
+"id": "17-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "17",
+"start": "5/6/2014",
+"end": "17/6/2014",
+"id": "17",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "17",
+"start": "10/6/2014",
+"end": "17/6/2014",
+"id": "17-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 7 days."
+}, {
+"label": "Planned",
+"processid": "18",
+"start": "10/6/2014",
+"end": "12/6/2014",
+"id": "18-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Delay",
+"processid": "18",
+"start": "18/6/2014",
+"end": "20/6/2014",
+"id": "18",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 8 days."
+}, {
+"label": "Planned",
+"processid": "19",
+"start": "15/6/2014",
+"end": "23/6/2014",
+"id": "19-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "19",
+"start": "16/6/2014",
+"end": "23/6/2014",
+"id": "19",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "20",
+"start": "23/6/2014",
+"end": "23/6/2014",
+"id": "20-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "20",
+"start": "23/6/2014",
+"end": "23/6/2014",
+"id": "20",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "21",
+"start": "18/6/2014",
+"end": "21/6/2014",
+"id": "21-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "21",
+"start": "18/6/2014",
+"end": "23/6/2014",
+"id": "21",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "21",
+"start": "21/6/2014",
+"end": "23/6/2014",
+"id": "21-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 2 days."
+}, {
+"label": "Planned",
+"processid": "22",
+"start": "24/6/2014",
+"end": "28/6/2014",
+"id": "22-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "22",
+"start": "25/6/2014",
+"end": "28/6/2014",
+"id": "22",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}]
 };
 //Structurize the connectors between different tasks of the Gantt chart
 const connectors = [{
-    "connector": [{
-        "fromtaskid": "1",
-        "totaskid": "2",
-        "color": "#008ee4",
-        "thickness": "2",
-        "fromtaskconnectstart_": "1"
-    }, {
-        "fromtaskid": "2-2",
-        "totaskid": "3",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "3-2",
-        "totaskid": "4",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "3-2",
-        "totaskid": "6",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "7",
-        "totaskid": "8",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "7",
-        "totaskid": "9",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "12",
-        "totaskid": "16",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "12",
-        "totaskid": "17",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "17-2",
-        "totaskid": "18",
-        "color": "#008ee4",
-        "thickness": "2"
-    }, {
-        "fromtaskid": "19",
-        "totaskid": "22",
-        "color": "#008ee4",
-        "thickness": "2"
-    }]
+"connector": [{
+"fromtaskid": "1",
+"totaskid": "2",
+"color": "#008ee4",
+"thickness": "2",
+"fromtaskconnectstart_": "1"
+}, {
+"fromtaskid": "2-2",
+"totaskid": "3",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "3-2",
+"totaskid": "4",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "3-2",
+"totaskid": "6",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "7",
+"totaskid": "8",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "7",
+"totaskid": "9",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "12",
+"totaskid": "16",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "12",
+"totaskid": "17",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "17-2",
+"totaskid": "18",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "19",
+"totaskid": "22",
+"color": "#008ee4",
+"thickness": "2"
+}]
 }];
 app.controller('MyController', [
-    '$scope',
+'$scope',
     function($scope) {
-        $scope.dataSource = {
+$scope.dataSource = {
             "chart": {
                 "theme": "fusion",
                 "caption": "New Store Opening - Project Plan",
@@ -3569,46 +3589,47 @@ app.controller('MyController', [
                 "ganttPaneDuration": "40",
                 "ganttPaneDurationUnit": "d",
                 "plottooltext": "$processName{br}$label starting date $start{br}$label ending date $end",
-                "legendBorderAlpha": "0",
-                "legendShadow": "0",
-                "usePlotGradientColor": "0",
-                "showCanvasBorder": "0",
-                "flatScrollBars": "1",
-                "gridbordercolor": "#333333",
-                "gridborderalpha": "20",
-                "slackFillColor": "#e44a00",
-                "taskBarFillMix": "light+0"
-            },
-            "categories": categories,
-            "processes": processes,
-            "datatable": datatable,
-            "tasks": tasks,
-            "connectors": connectors,
-            "milestones": {
-                "milestone": [{
-                    "date": "2/6/2014",
-                    "taskid": "12",
-                    "color": "#f8bd19",
-                    "shape": "star",
-                    "tooltext": "Completion of Phase 1"
-                }]
-            },
-            "legend": {
-                "item": [{
-                    "label": "Planned",
-                    "color": "#008ee4"
-                }, {
-                    "label": "Actual",
-                    "color": "#6baa01"
-                }, {
-                    "label": "Slack (Delay)",
-                    "color": "#e44a00"
-                }]
-            }
-        }
-    }
+"legendBorderAlpha": "0",
+"legendShadow": "0",
+"usePlotGradientColor": "0",
+"showCanvasBorder": "0",
+"flatScrollBars": "1",
+"gridbordercolor": "#333333",
+"gridborderalpha": "20",
+"slackFillColor": "#e44a00",
+"taskBarFillMix": "light+0"
+},
+"categories": categories,
+"processes": processes,
+"datatable": datatable,
+"tasks": tasks,
+"connectors": connectors,
+"milestones": {
+"milestone": [{
+"date": "2/6/2014",
+"taskid": "12",
+"color": "#f8bd19",
+"shape": "star",
+"tooltext": "Completion of Phase 1"
+}]
+},
+"legend": {
+"item": [{
+"label": "Planned",
+"color": "#008ee4"
+}, {
+"label": "Actual",
+"color": "#6baa01"
+}, {
+"label": "Slack (Delay)",
+"color": "#e44a00"
+}]
+}
+}
+}
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -3618,16 +3639,16 @@ app.controller('MyController', [
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
+&lt;title&gt;Getting Started- AngularJS&lt;/title&gt;
 
 &lt;/head&gt;
 &lt;script src="main.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts width="600" height="400" type="gantt" datasource="{{dataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts width="600" height="400" type="gantt" datasource="{{dataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -3635,6 +3656,7 @@ app.controller('MyController', [
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
