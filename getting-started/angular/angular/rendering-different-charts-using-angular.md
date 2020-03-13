@@ -202,9 +202,10 @@ export class AppComponent {
 
 <div class='tab appcomphtml-tab active'>
 </div>
-<div>Copy and paste the code given below in the `app.component.html` file:</div>
 
+<div>Copy and paste the code given below in the `app.component.html` file:</div>
 <pre><code class="language-javascript">
+
 ```
 <h1>
   {{title}}
