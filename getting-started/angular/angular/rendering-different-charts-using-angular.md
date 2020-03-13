@@ -8,13 +8,13 @@ In the [Getting Started](/getting-started/angular/angular/your-first-chart-using
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#multi-series-charts)
-- [Combination Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#combination-charts)
-- [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#real-time-charts)
-- [Gauges](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gauges)
-- [Maps](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#maps)
-- [Heatmap](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#heat-map)
-- [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gantt-chart)
+- [Multi-series Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#multi-series-charts)
+- [Combination Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#combination-charts)
+- [Real-time Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#real-time-charts)
+- [Gauges](/getting-started/angular/angular/rendering-different-charts-using-angular#gauges)
+- [Maps](/getting-started/angular/angular/rendering-different-charts-using-angular#maps)
+- [Heatmap](/getting-started/angular/angular/rendering-different-charts-using-angular#heat-map)
+- [Gantt Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#gantt-chart)
 
 ## Multi-series Charts
 
