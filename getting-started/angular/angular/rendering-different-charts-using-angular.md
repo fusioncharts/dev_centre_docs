@@ -47,7 +47,6 @@ The illustration below can give you an idea about how we are going to assign val
 As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
 
 ```json
-// Define the categories representing the labels on the X-axis
 const categories =  [
   {
     "category": [
@@ -58,7 +57,7 @@ const categories =  [
     ]
   }
 ]
-// Construct the dataset comprising multiple series 
+// STEP 3- Construct the dataset comprising multiple series
 const dataset = [
   {
     "seriesname": "Previous Year",
@@ -83,86 +82,138 @@ const dataset = [
 
 > The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. First, include the dependencies using the code given below:
 
-```html
-<html>
-  <head>
-    <title>My first chart using FusionCharts Suite XT</title>
-    <!-- Include fusioncharts core library -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
-    ></script>
-    <!-- Include fusion theme -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
-    ></script>
-    <script type="text/javascript">
-      //STEP 2 - Chart Data
-      // Define the categories representing the labels on the X-axis
-      const categories = [
-        {
-          category: [
-            { label: "Q1" },
-            { label: "Q2" },
-            { label: "Q3" },
-            { label: "Q4" }
-          ]
-        }
-      ];
-      // Construct the dataset comprising multiple series
-      const dataset = [
-        {
-          seriesname: "Previous Year",
-          data: [
-            { value: "12000" },
-            { value: "10500" },
-            { value: "23500" },
-            { value: "16000" }
-          ]
-        },
-        {
-          seriesname: "Current Year",
-          data: [
-            { value: "24400" },
-            { value: "29800" },
-            { value: "20800" },
-            { value: "26800" }
-          ]
-        }
-      ];
-
-      //STEP 3 - Chart Configurations
-      var chartConfigurations = {
-        type: "mscolumn2d",
-        renderAt: "chart-container",
-        width: "700",
-        height: "400",
-        dataFormat: "json",
-        dataSource: {
-          chart: {
-            theme: "fusion",
-            caption: "Comparison of Quarterly Sales",
-            xAxisname: "Quarter",
-            yAxisName: "Sales"
-          },
-          categories: categories,
-          dataset: dataset
-        }
-      };
-      FusionCharts.ready(function() {
-        var fusioncharts = new FusionCharts(chartConfigurations);
-        fusioncharts.render();
-      });
-    </script>
-  </head>
-  <body>
-    <div id="chart-container">FusionCharts XT will load here!</div>
-  </body>
-</html>
 ```
+import { Component } from "@angular/core";
+```
+
+
+```
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
+]
+// STEP 3- Construct the dataset comprising multiple series
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
+]
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
+
+})
+
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "theme": "fusion",
+        "caption": "Comparison of Quarterly Revenue",
+        "xAxisname": "Quarter",
+        "yAxisName": "Revenues (In USD)",
+        "numberPrefix": "$",
+        "plotFillAlpha": "80",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1"
+      },
+      "categories": categories,
+      "dataset": dataset,
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+```
+Now, copy the codes for the `.ts` and `html` files from below and paste them in the respective files:
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='modulets'>module.ts</a></li>
+    <li class='active'><a data-toggle='componentts'>component.ts</a></li>
+    <li><a data-toggle='appcomphtml'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab ts-tab active'>
+Copy and paste the code given below in the `.ts` file:
+
+<pre><code class="language-javascript">
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as charts from "fusioncharts/fusioncharts.charts";
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab html-tab active'>
+</div>
+<div>Copy and paste the code given below in the `.html` file:</div>
+<pre><code class="language-javascript">
+```
+<h1>
+  {{title}}
+</h1>
+<fusioncharts
+  width="700"
+  height="400"
+  type="mscolumn2d"
+  [dataSource]="dataSource"
+>
+</fusioncharts>
+```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
