@@ -4,6 +4,14 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.1.1</h2>
+
+<p class="release-date">16th March, 2020</p>
+
+<h4 class="sub-heading">Announcement</h4>
+
+- Copyrights change from **Infosoft Global Pvt. Ltd.** to **FusionCharts Inc**.
+
 <h2 class="sub-heading">Version 2.1.0</h2>
 
 <p class="release-date">26th February, 2020</p>
