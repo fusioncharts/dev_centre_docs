@@ -6,7 +6,7 @@ heading: Release Notes
 
 <h2 class="sub-heading">Version 2.1.1</h2>
 
-<p class="release-date">16th March, 2020</p>
+<p class="release-date">17th March, 2020</p>
 
 <h4 class="sub-heading">Announcement</h4>
 
