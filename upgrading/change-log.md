@@ -10,7 +10,7 @@ heading: Version 3.15.x
 
 <h4>Announcement</h4>
 
-- Copyrights change from **Infosoft Global Pvt. Ltd.** to **FusionCharts Inc**.
+- Change in license agreements.
 
 <h2 class="sub-heading">Version 3.15.1</h2>
 

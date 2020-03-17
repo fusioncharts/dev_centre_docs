@@ -10,7 +10,7 @@ heading: Release Notes
 
 <h4 class="sub-heading">Announcement</h4>
 
-- Copyrights change from **Infosoft Global Pvt. Ltd.** to **FusionCharts Inc**.
+- Change in license agreements.
 
 <h2 class="sub-heading">Version 2.1.0</h2>
 
