@@ -1724,7 +1724,7 @@
       },
       {
         "description": "This attribute sets the transparency of the lower quartile box.",
-        "range": "Hex Color Code",
+        "range": "0 - 100",
         "type": "Number",
         "name": "lowerBoxAlpha"
       },
@@ -3468,7 +3468,7 @@
       },
       {
         "description": "This attribute sets the transparency of the lower quartile box.",
-        "range": "Hex Color code",
+        "range": "0 - 100",
         "type": "Number",
         "name": "lowerBoxAlpha"
       },
@@ -4124,7 +4124,7 @@
       },
       {
         "description": "This attribute sets the transparency of the lower quartile box.",
-        "range": "Hex Color Code",
+        "range": "0 - 100",
         "type": "Number",
         "name": "lowerBoxAlpha"
       },
