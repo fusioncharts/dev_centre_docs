@@ -602,7 +602,7 @@ export class AppModule {}
 
 > You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. from [here](/chart-guide/standard-charts/combination-charts).
 
-## Real Time Charts
+## Real-time Charts
 
 Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts.
 
@@ -673,111 +673,129 @@ function updateData() {
 }
 ```
 
-Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import angular from "angular";
-import angularFusionCharts from "angular-fusioncharts";
-import FusionCharts from "fusioncharts";
-import RealTimeArea from "fusioncharts/fusioncharts.widgets";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-angular.use(angularFusionCharts, FusionCharts, RealTimeArea, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+import { Component } from "@angular/core";
 
-//STEP 2 - Chart Data
-// Define the categories representing the labels on the X-axis
-const categories = [{
-    "category": [{
-        "label": "Day Start"
-    }]
+const categories =  [{
+  "category": [{
+      "label": "Start"
+  }]
 }];
 // Construct the dataset comprising multiple series
 const dataset = [{
-    "data": [{
-        "value": "35.27"
-    }]
+  "data": [{
+      "value": "35.27"
+  }]
 }];
 
-// STEP 3: Configure your chart
-const dataSource = {
-    "chart": {
-        "theme": "fusion",
-        "caption": "Real-time stock price monitor",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Time",
-        "yAxisName": "Stock Price",
-        "numberPrefix": "$",
-        "refreshinterval": "5",
-        "yaxisminvalue": "35",
-        "yaxismaxvalue": "36",
-        "numdisplaysets": "10",
-        "labeldisplay": "rotate",
-        "showRealTimeValue": "0"
-
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
+})
+export class AppComponent {
+  chartBarObj: any;
+  dataSource: any = {
+    chart: {
+      caption: "Live visitors on web",
+      subCaption: "Skatter Tech",
+      refreshinterval: "3",
+      numdisplaysets: "10",
+      theme: "fusion",
+      drawAnchors: "0",
+      plotToolText: "$label: <b>$dataValue Feeds</b>",
+      showRealTimeValue: "0",
+      labelDisplay: "rotate"
     },
     "categories": categories,
-    "dataset": dataset
-};
+      "dataset": dataset,
 
-export default {
-    name: 'app',
-    data() {
-        return {
-            "id": "stockRealTimeChart",
-            "type": 'realtimearea',
-            "renderAt": 'chart-container',
-            "width": '700',
-            "height": '400',
-            "dataFormat": 'json',
-            dataSource,
-            "events": {
-                "initialized": function() {
-                    setInterval(function() {
-                        function addLeadingZero(num) {
-                            return (num <= 9) ? ("0" + num) : num;
-                        }
+  };
+  events: any = {
+    initialized: function(e) {
+      function addLeadingZero(num) {
+        return num <= 9 ? "0" + num : num;
+      }
 
-                        function updateData() {
-                            // Get reference to the chart using its ID
-                            var chartRef = FusionCharts("stockRealTimeChart"),
-                                // We need to create a querystring format incremental update, containing
-                                // label in hh:mm:ss format
-                                // and a value (random).
-                                currDate = new Date(),
-                                label = addLeadingZero(currDate.getHours()) + ":" +
-                                addLeadingZero(currDate.getMinutes()) + ":" +
-                                addLeadingZero(currDate.getSeconds()),
-                                // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-                                randomValue = Math.floor(Math.random() *
-                                    1) / 100 + 35.25,
-                                // Build Data String in format &label=...&value=...
-                                strData = "&label=" + label +
-                                "&value=" +
-                                randomValue;
-                            // Feed it to chart.
-                            chartRef.feedData(strData);
-                        }
-                        updateData();
-                    }, 3000);
-                }
-            }
-        }
-    }
-}
-</script>
+      function updateData() {
+        var currDate = new Date(),
+          label =
+            addLeadingZero(currDate.getHours()) +
+            ":" +
+            addLeadingZero(currDate.getMinutes()) +
+            ":" +
+            addLeadingZero(currDate.getSeconds()),
+          // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+          randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
+          // Build Data String in format &label=...&value=...
+          strData = "&label=" + label + "&value=" + randomValue;
+        // Feed it to chart.
+        e.sender.feedData(strData);
+      }
 
-//STEP 4: Render the chart
-<template >
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: id = "id": type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource": events = "events">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+      var myVar = setInterval(function() {
+        updateData();
+      }, 500);
+    } // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as RealTimeArea from "fusioncharts/fusioncharts.widgets";
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, RealTimeArea, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1d&gt;
+    {{title}}
+&lt;/h1d&gt;
+&lt;fusioncharts width="700" height="450" type="realtimearea" dataFormat="JSON" [dataSource]="dataSource" [events]="events"d&gt;
+&lt;/fusionchartsd&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
