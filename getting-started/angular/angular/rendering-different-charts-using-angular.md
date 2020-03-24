@@ -94,7 +94,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 <div class='tab-content extra-tabs'>
 
 <div class='tab component.ts-tab active'>
-<pre><code class="language-angular">
+<pre><code class="language-javascript">
 // STEP 1- To import the dependencies
 import { Component } from "@angular/core";
 // STEP 2- Define the categories representing the labels on the X-axis
@@ -163,7 +163,7 @@ export class AppComponent {
 </div>
 
 <div class='tab module-tab'>
-<pre><code class="language-angular">
+<pre><code class="language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
