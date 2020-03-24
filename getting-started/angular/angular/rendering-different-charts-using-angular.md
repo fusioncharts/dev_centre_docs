@@ -8,13 +8,13 @@ In the [Getting Started](/getting-started/angular/angular/your-first-chart-using
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/angular/angular/rendering-different-charts-using-vue#multi-series-charts)
-- [Combination Charts](/getting-started/angular/angular/rendering-different-charts-using-vue#combination-charts)
-- [Real-time Chart](/getting-started/angular/angular/rendering-different-charts-using-vue#real-time-charts)
-- [Gauges](/getting-started/angular/angular/rendering-different-charts-using-vue#gauges)
-- [Maps](/getting-started/angular/angular/rendering-different-charts-using-vue#maps)
-- [Heatmap](/getting-started/angular/angular/rendering-different-charts-using-vue#heat-map)
-- [Gantt Chart](/getting-started/angular/angular/rendering-different-charts-using-vue#gantt-chart)
+- [Multi-series Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#multi-series-charts)
+- [Combination Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#combination-charts)
+- [Real-time Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#real-time-charts)
+- [Gauges](/getting-started/angular/angular/rendering-different-charts-using-angular#gauges)
+- [Maps](/getting-started/angular/angular/rendering-different-charts-using-angular#maps)
+- [Heatmap](/getting-started/angular/angular/rendering-different-charts-using-angular#heat-map)
+- [Gantt Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#gantt-chart)
 
 ## Multi-series Charts
 
@@ -85,107 +85,131 @@ const dataset = [
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Column2D from 'fusioncharts/fusioncharts.charts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
-
-//STEP 2- Define the categories representing the labels on the X-axis
-const categories = [{
-    "category": [{
-            "label": "Q1"
-        },
-        {
-            "label": "Q2"
-        },
-        {
-            "label": "Q3"
-        },
-        {
-            "label": "Q4"
-        }
+<div class='tab component.ts-tab active'>
+<pre><code class="language-angular">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
     ]
-}]
-//STEP 3- Construct the dataset comprising multiple series
-const dataset = [{
-        "seriesname": "Previous Year",
-        "data": [{
-                "value": "12000"
-            },
-            {
-                "value": "10500"
-            },
-            {
-                "value": "23500"
-            },
-            {
-                "value": "16000"
-            }
-        ]
-    },
-    {
-        "seriesname": "Current Year",
-        "data": [{
-                "value": "24400"
-            },
-            {
-                "value": "29800"
-            },
-            {
-                "value": "20800"
-            },
-            {
-                "value": "26800"
-            }
-        ]
-    }
+  }
+]
+// STEP 3- Construct the dataset comprising multiple series
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
 ]
 
-// STEP 4: Configure your chart
-const dataSource = {
-    chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subcaption: "In MMbbl = One Million barrels",
-        xaxisname: "Country",
-        yaxisname: "Reserves (MMbbl)",
-        numbersuffix: "K",
-        theme: "fusion"
-    },
-    categories: categories,
-    dataset: dataset
-};
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 
-export default {
-    name: 'app',
-    data() {
-        return {
-            "type": "mscolumn2d",
-            "renderAt": "chart-container",
-            "width": "550",
-            "height": "350",
-            "dataFormat": "json",
-            dataSource
-        }
-    }
-} <
-/script>
+})
 
-//STEP 5: Render the chart
-<template>
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
+        "theme": "fusion",
+        "caption": "Comparison of Quarterly Revenue",
+        "xAxisname": "Quarter",
+        "yAxisName": "Revenues (In USD)",
+        "numberPrefix": "$",
+        "plotFillAlpha": "80",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1"
+      },
+      "categories": categories,
+      "dataset": dataset,
+
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-angular">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as charts from "fusioncharts/fusioncharts.charts";
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="mscolumn2d"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
@@ -311,13 +335,13 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 ```javascript
 // STEP 1: Include the dependencies
 <script>
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
+import angular from 'angular';
+import angularFusionCharts from 'angular-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Column2D from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
+angular.use(angularFusionCharts, FusionCharts, Column2D, FusionTheme);
 
 // STEP 2: Prepare the data
 const categories = [{
@@ -613,13 +637,13 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 ```javascript
 // STEP 1: Include the dependencies
 <script>
-import Vue from "vue";
-import VueFusionCharts from "vue-fusioncharts";
+import angular from "angular";
+import angularFusionCharts from "angular-fusioncharts";
 import FusionCharts from "fusioncharts";
 import RealTimeArea from "fusioncharts/fusioncharts.widgets";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-Vue.use(VueFusionCharts, FusionCharts, RealTimeArea, FusionTheme);
+angular.use(angularFusionCharts, FusionCharts, RealTimeArea, FusionTheme);
 
 //STEP 2 - Chart Data
 // Define the categories representing the labels on the X-axis
@@ -951,13 +975,13 @@ We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all t
 ```html
 // STEP 1: Include the dependencies
 <script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
+  import angular from "angular";
+  import angularFusionCharts from "angular-fusioncharts";
   import FusionCharts from "fusioncharts";
   import FusionMaps from "fusioncharts/maps/es/fusioncharts.world";
   import World from "fusioncharts/fusioncharts.maps";
   import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-  Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme);
+  angular.use(angularFusionCharts, FusionCharts, FusionMaps, World, FusionTheme);
   //STEP 2 - Define the dataset and the colorRange of the map
   const dataset = [
     {
@@ -1075,15 +1099,15 @@ The consolidated code for rendering the map is shown below:
 
 ```html
 <script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
+  import angular from "angular";
+  import angularFusionCharts from "angular-fusioncharts";
   import FusionCharts from "fusioncharts";
   import FusionMaps from "fusioncharts/fusioncharts.maps";
   import California from "fusionmaps/maps/fusioncharts.california";
   import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-  // Register VueFusionCharts component
-  Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme);
+  // Register angularFusionCharts component
+  angular.use(angularFusionCharts, FusionCharts, FusionMaps, California, FusionTheme);
 
   const mapData = [
     { id: "001", value: 2834 },
@@ -1465,13 +1489,13 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 ```html
 // STEP 1: Include the dependencies
 <script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
+  import angular from "angular";
+  import angularFusionCharts from "angular-fusioncharts";
   import FusionCharts from "fusioncharts";
   import PowerCharts from "fusioncharts/fusioncharts.powercharts";
   import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-  Vue.use(VueFusionCharts, FusionCharts, PowerCharts, FusionTheme);
+  angular.use(angularFusionCharts, FusionCharts, PowerCharts, FusionTheme);
 
   //STEP 2 - Define the chart data constituting dataset and colorrange objects
 
@@ -2598,13 +2622,13 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 ```html
 // STEP 1: Include the dependencies
 <script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
+  import angular from "angular";
+  import angularFusionCharts from "angular-fusioncharts";
   import FusionCharts from "fusioncharts";
   import Gantt from "fusioncharts/fusioncharts.gantt";
   import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-  Vue.use(VueFusionCharts, FusionCharts, Gantt, FusionTheme);
+  angular.use(angularFusionCharts, FusionCharts, Gantt, FusionTheme);
 
   // STEP 2: Prepare the data
   const categories = [
