@@ -1,7 +1,7 @@
 {
     type: 'zoomlinedy',
     renderAt: 'chart-container',
-    width: '680',
+    width: '100%',
     height: '390',
     dataFormat: 'json',
     dataSource: {

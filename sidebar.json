@@ -205,12 +205,8 @@
                         "path": "/getting-started/angular/angular/your-first-chart-using-angular"
                       },
                       {
-                        "title": "Your First Gauge",
-                        "path": "/getting-started/angular/angular/your-first-gauge-using-angular"
-                      },
-                      {
-                        "title": "Your First Map",
-                        "path": "/getting-started/angular/angular/your-first-map-using-angular"
+                        "title": "Rendering Different Charts",
+                        "path": "/getting-started/angular/angular/rendering-different-charts-using-angular"
                       }
                     ]
                   },
