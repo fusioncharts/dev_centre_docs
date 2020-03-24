@@ -83,7 +83,7 @@ const dataset = [
 
 > The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -330,188 +330,199 @@ const dataset = [
 
 > The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import angular from 'angular';
-import angularFusionCharts from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Column2D from 'fusioncharts/fusioncharts.charts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-angular.use(angularFusionCharts, FusionCharts, Column2D, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
 
-// STEP 2: Prepare the data
+// STEP 2- Define the categories representing the labels on the X-axis
 const categories = [{
-    "category": [{
-            "label": "Jan"
-        },
-        {
-            "label": "Feb"
-        },
-        {
-            "label": "Mar"
-        },
-        {
-            "label": "Apr"
-        },
-        {
-            "label": "May"
-        },
-        {
-            "label": "Jun"
-        },
-        {
-            "label": "Jul"
-        },
-        {
-            "label": "Aug"
-        },
-        {
-            "label": "Sep"
-        },
-        {
-            "label": "Oct"
-        },
-        {
-            "label": "Nov"
-        },
-        {
-            "label": "Dec"
-        }
-    ]
-}]
+  "category": [{
+      "label": "Jan"
+    },
+    {
+      "label": "Feb"
+    },
+    {
+      "label": "Mar"
+    },
+    {
+      "label": "Apr"
+    },
+    {
+      "label": "May"
+    },
+    {
+      "label": "Jun"
+    },
+    {
+      "label": "Jul"
+    },
+    {
+      "label": "Aug"
+    },
+    {
+      "label": "Sep"
+    },
+    {
+      "label": "Oct"
+    },
+    {
+      "label": "Nov"
+    },
+    {
+      "label": "Dec"
+    }
+  ]
+}
+]
 // STEP 3- Construct the dataset comprising combination series
 const dataset = [{
-        "seriesName": "Actual Revenue",
-        "showValues": "1",
-        "data": [{
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "15000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "25000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
+  "seriesName": "Actual Revenue",
+  "showValues": "1",
+  "data": [{
+      "value": "16000"
     },
     {
-        "seriesName": "Projected Revenue",
-        "renderAs": "line",
-        "data": [{
-                "value": "15000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "22000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
+      "value": "20000"
     },
     {
-        "seriesName": "Profit",
-        "renderAs": "area",
-        "data": [{
-                "value": "4000"
-            },
-            {
-                "value": "5000"
-            },
-            {
-                "value": "3000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "7000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "8000"
-            },
-            {
-                "value": "2000"
-            },
-            {
-                "value": "7000"
-            }
-        ]
+      "value": "18000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "15000"
+    },
+    {
+      "value": "21000"
+    },
+    {
+      "value": "16000"
+    },
+    {
+      "value": "20000"
+    },
+    {
+      "value": "17000"
+    },
+    {
+      "value": "25000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "23000"
     }
+  ]
+},
+{
+  "seriesName": "Projected Revenue",
+  "renderAs": "line",
+  "data": [{
+      "value": "15000"
+    },
+    {
+      "value": "16000"
+    },
+    {
+      "value": "17000"
+    },
+    {
+      "value": "18000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "19000"
+    },
+    {
+      "value": "20000"
+    },
+    {
+      "value": "21000"
+    },
+    {
+      "value": "22000"
+    },
+    {
+      "value": "23000"
+    }
+  ]
+},
+{
+  "seriesName": "Profit",
+  "renderAs": "area",
+  "data": [{
+      "value": "4000"
+    },
+    {
+      "value": "5000"
+    },
+    {
+      "value": "3000"
+    },
+    {
+      "value": "4000"
+    },
+    {
+      "value": "1000"
+    },
+    {
+      "value": "7000"
+    },
+    {
+      "value": "1000"
+    },
+    {
+      "value": "4000"
+    },
+    {
+      "value": "1000"
+    },
+    {
+      "value": "8000"
+    },
+    {
+      "value": "2000"
+    },
+    {
+      "value": "7000"
+    }
+  ]
+}
 ]
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 
-// STEP 4: Configure your chart
-const dataSource = {
-    "chart": {
+})
+
+
+export class AppComponent {
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      "chart": {
         "caption": "Harry's SuperMart",
         "subCaption": "Sales analysis of last year",
         "xAxisname": "Month",
@@ -528,36 +539,66 @@ const dataSource = {
         "toolTipBorderRadius": "2",
         "toolTipPadding": "5",
         "theme": "fusion"
-    },
-    categories: categories,
-    dataset: dataset
-};
+      },
+      "categories": categories,
+      "dataset": dataset
 
-export default {
-    name: 'app',
-    data() {
-        return {
-            "type": "mscombi2d",
-            "renderAt": "chart-container",
-            "width": "550",
-            "height": "350",
-            "dataFormat": "json",
-            dataSource
-        }
-    }
-} </script>
+    }; // end of this.dataSource
+  } // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
+</pre>
+</div>
 
-//STEP 5: Render the chart
-<template>
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as charts from "fusioncharts/fusioncharts.charts";
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="mscombi2d"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. from [here](/chart-guide/standard-charts/combination-charts).
 
