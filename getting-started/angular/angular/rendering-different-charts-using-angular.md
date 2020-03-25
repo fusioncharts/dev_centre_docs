@@ -4,17 +4,17 @@ description: This article outlines some of the popular charts and the way to ren
 heading: Rendering Different Charts
 ---
 
-In the [Getting Started](/getting-started/angular/angular/your-first-chart-using-angular) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Angular 2.
+In the [Getting Started](/getting-started/angular/angular/your-first-chart-using-angular) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Angular 2+.
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/angular/angular/rendering-different-charts-using-vue#multi-series-charts)
-- [Combination Charts](/getting-started/angular/angular/rendering-different-charts-using-vue#combination-charts)
-- [Real-time Chart](/getting-started/angular/angular/rendering-different-charts-using-vue#real-time-charts)
-- [Gauges](/getting-started/angular/angular/rendering-different-charts-using-vue#gauges)
-- [Maps](/getting-started/angular/angular/rendering-different-charts-using-vue#maps)
-- [Heatmap](/getting-started/angular/angular/rendering-different-charts-using-vue#heat-map)
-- [Gantt Chart](/getting-started/angular/angular/rendering-different-charts-using-vue#gantt-chart)
+- [Multi-series Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#multi-series-charts)
+- [Combination Charts](/getting-started/angular/angular/rendering-different-charts-using-angular#combination-charts)
+- [Real-time Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#real-time-charts)
+- [Gauges](/getting-started/angular/angular/rendering-different-charts-using-angular#gauges)
+- [Maps](/getting-started/angular/angular/rendering-different-charts-using-angular#maps)
+- [Heatmap](/getting-started/angular/angular/rendering-different-charts-using-angular#heat-map)
+- [Gantt Chart](/getting-started/angular/angular/rendering-different-charts-using-angular#gantt-chart)
 
 ## Multi-series Charts
 
@@ -83,109 +83,134 @@ const dataset = [
 
 > The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Column2D from 'fusioncharts/fusioncharts.charts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
-
-//STEP 2- Define the categories representing the labels on the X-axis
-const categories = [{
-    "category": [{
-            "label": "Q1"
-        },
-        {
-            "label": "Q2"
-        },
-        {
-            "label": "Q3"
-        },
-        {
-            "label": "Q4"
-        }
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
     ]
-}]
-//STEP 3- Construct the dataset comprising multiple series
-const dataset = [{
-        "seriesname": "Previous Year",
-        "data": [{
-                "value": "12000"
-            },
-            {
-                "value": "10500"
-            },
-            {
-                "value": "23500"
-            },
-            {
-                "value": "16000"
-            }
-        ]
-    },
-    {
-        "seriesname": "Current Year",
-        "data": [{
-                "value": "24400"
-            },
-            {
-                "value": "29800"
-            },
-            {
-                "value": "20800"
-            },
-            {
-                "value": "26800"
-            }
-        ]
-    }
+  }
+]
+// STEP 3- Construct the dataset comprising multiple series
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
 ]
 
-// STEP 4: Configure your chart
-const dataSource = {
-    chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subcaption: "In MMbbl = One Million barrels",
-        xaxisname: "Country",
-        yaxisname: "Reserves (MMbbl)",
-        numbersuffix: "K",
-        theme: "fusion"
-    },
-    categories: categories,
-    dataset: dataset
-};
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
 
-export default {
-    name: 'app',
-    data() {
-        return {
-            "type": "mscolumn2d",
-            "renderAt": "chart-container",
-            "width": "550",
-            "height": "350",
-            "dataFormat": "json",
-            dataSource
-        }
-    }
-} <
-/script>
+})
 
-//STEP 5: Render the chart
-<template>
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"theme": "fusion",
+"caption": "Comparison of Quarterly Revenue",
+"xAxisname": "Quarter",
+"yAxisName": "Revenues (In USD)",
+"numberPrefix": "\$",
+"plotFillAlpha": "80",
+"divLineIsDashed": "1",
+"divLineDashLen": "1",
+"divLineGapLen": "1"
+},
+"categories": categories,
+"dataset": dataset,
+
+    }; // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as charts from "fusioncharts/fusioncharts.charts";
+
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="mscolumn2d"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
@@ -306,238 +331,279 @@ const dataset = [
 
 > The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Column2D from 'fusioncharts/fusioncharts.charts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
 
-// STEP 2: Prepare the data
+// STEP 2- Define the categories representing the labels on the X-axis
 const categories = [{
-    "category": [{
-            "label": "Jan"
-        },
-        {
-            "label": "Feb"
-        },
-        {
-            "label": "Mar"
-        },
-        {
-            "label": "Apr"
-        },
-        {
-            "label": "May"
-        },
-        {
-            "label": "Jun"
-        },
-        {
-            "label": "Jul"
-        },
-        {
-            "label": "Aug"
-        },
-        {
-            "label": "Sep"
-        },
-        {
-            "label": "Oct"
-        },
-        {
-            "label": "Nov"
-        },
-        {
-            "label": "Dec"
-        }
-    ]
-}]
+"category": [{
+"label": "Jan"
+},
+{
+"label": "Feb"
+},
+{
+"label": "Mar"
+},
+{
+"label": "Apr"
+},
+{
+"label": "May"
+},
+{
+"label": "Jun"
+},
+{
+"label": "Jul"
+},
+{
+"label": "Aug"
+},
+{
+"label": "Sep"
+},
+{
+"label": "Oct"
+},
+{
+"label": "Nov"
+},
+{
+"label": "Dec"
+}
+]
+}
+]
 // STEP 3- Construct the dataset comprising combination series
 const dataset = [{
-        "seriesName": "Actual Revenue",
-        "showValues": "1",
-        "data": [{
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "15000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "25000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
-    },
-    {
-        "seriesName": "Projected Revenue",
-        "renderAs": "line",
-        "data": [{
-                "value": "15000"
-            },
-            {
-                "value": "16000"
-            },
-            {
-                "value": "17000"
-            },
-            {
-                "value": "18000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "19000"
-            },
-            {
-                "value": "20000"
-            },
-            {
-                "value": "21000"
-            },
-            {
-                "value": "22000"
-            },
-            {
-                "value": "23000"
-            }
-        ]
-    },
-    {
-        "seriesName": "Profit",
-        "renderAs": "area",
-        "data": [{
-                "value": "4000"
-            },
-            {
-                "value": "5000"
-            },
-            {
-                "value": "3000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "7000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "4000"
-            },
-            {
-                "value": "1000"
-            },
-            {
-                "value": "8000"
-            },
-            {
-                "value": "2000"
-            },
-            {
-                "value": "7000"
-            }
-        ]
-    }
+"seriesName": "Actual Revenue",
+"showValues": "1",
+"data": [{
+"value": "16000"
+},
+{
+"value": "20000"
+},
+{
+"value": "18000"
+},
+{
+"value": "19000"
+},
+{
+"value": "15000"
+},
+{
+"value": "21000"
+},
+{
+"value": "16000"
+},
+{
+"value": "20000"
+},
+{
+"value": "17000"
+},
+{
+"value": "25000"
+},
+{
+"value": "19000"
+},
+{
+"value": "23000"
+}
 ]
+},
+{
+"seriesName": "Projected Revenue",
+"renderAs": "line",
+"data": [{
+"value": "15000"
+},
+{
+"value": "16000"
+},
+{
+"value": "17000"
+},
+{
+"value": "18000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "19000"
+},
+{
+"value": "20000"
+},
+{
+"value": "21000"
+},
+{
+"value": "22000"
+},
+{
+"value": "23000"
+}
+]
+},
+{
+"seriesName": "Profit",
+"renderAs": "area",
+"data": [{
+"value": "4000"
+},
+{
+"value": "5000"
+},
+{
+"value": "3000"
+},
+{
+"value": "4000"
+},
+{
+"value": "1000"
+},
+{
+"value": "7000"
+},
+{
+"value": "1000"
+},
+{
+"value": "4000"
+},
+{
+"value": "1000"
+},
+{
+"value": "8000"
+},
+{
+"value": "2000"
+},
+{
+"value": "7000"
+}
+]
+}
+]
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
 
-// STEP 4: Configure your chart
-const dataSource = {
-    "chart": {
-        "caption": "Harry's SuperMart",
-        "subCaption": "Sales analysis of last year",
-        "xAxisname": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "divlineColor": "#999999",
-        "divLineIsDashed": "1",
-        "divLineDashLen": "1",
-        "divLineGapLen": "1",
-        "toolTipColor": "#ffffff",
-        "toolTipBorderThickness": "0",
-        "toolTipBgColor": "#000000",
-        "toolTipBgAlpha": "80",
-        "toolTipBorderRadius": "2",
-        "toolTipPadding": "5",
-        "theme": "fusion"
-    },
-    categories: categories,
-    dataset: dataset
-};
+})
 
-export default {
-    name: 'app',
-    data() {
-        return {
-            "type": "mscombi2d",
-            "renderAt": "chart-container",
-            "width": "550",
-            "height": "350",
-            "dataFormat": "json",
-            dataSource
-        }
-    }
-} </script>
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"caption": "Harry's SuperMart",
+"subCaption": "Sales analysis of last year",
+"xAxisname": "Month",
+"yAxisName": "Amount (In USD)",
+"numberPrefix": "\$",
+"divlineColor": "#999999",
+"divLineIsDashed": "1",
+"divLineDashLen": "1",
+"divLineGapLen": "1",
+"toolTipColor": "#ffffff",
+"toolTipBorderThickness": "0",
+"toolTipBgColor": "#000000",
+"toolTipBgAlpha": "80",
+"toolTipBorderRadius": "2",
+"toolTipPadding": "5",
+"theme": "fusion"
+},
+"categories": categories,
+"dataset": dataset
 
+    }; // end of this.dataSource
 
-//STEP 5: Render the chart
-<template>
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as charts from "fusioncharts/fusioncharts.charts";
+
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="mscombi2d"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. from [here](/chart-guide/standard-charts/combination-charts).
 
-## Real Time Charts
+## Real-time Charts
 
 Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts.
 
@@ -608,111 +674,130 @@ function updateData() {
 }
 ```
 
-Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```javascript
-// STEP 1: Include the dependencies
-<script>
-import Vue from "vue";
-import VueFusionCharts from "vue-fusioncharts";
-import FusionCharts from "fusioncharts";
-import RealTimeArea from "fusioncharts/fusioncharts.widgets";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-Vue.use(VueFusionCharts, FusionCharts, RealTimeArea, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+import { Component } from "@angular/core";
 
-//STEP 2 - Chart Data
-// Define the categories representing the labels on the X-axis
 const categories = [{
-    "category": [{
-        "label": "Day Start"
-    }]
+"category": [{
+"label": "Start"
+}]
 }];
 // Construct the dataset comprising multiple series
 const dataset = [{
-    "data": [{
-        "value": "35.27"
-    }]
+"data": [{
+"value": "35.27"
+}]
 }];
 
-// STEP 3: Configure your chart
-const dataSource = {
-    "chart": {
-        "theme": "fusion",
-        "caption": "Real-time stock price monitor",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Time",
-        "yAxisName": "Stock Price",
-        "numberPrefix": "$",
-        "refreshinterval": "5",
-        "yaxisminvalue": "35",
-        "yaxismaxvalue": "36",
-        "numdisplaysets": "10",
-        "labeldisplay": "rotate",
-        "showRealTimeValue": "0"
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
+})
+export class AppComponent {
+chartBarObj: any;
+dataSource: any = {
+chart: {
+caption: "Live visitors on web",
+subCaption: "Skatter Tech",
+refreshinterval: "3",
+numdisplaysets: "10",
+theme: "fusion",
+drawAnchors: "0",
+plotToolText: "$label: <b>$dataValue Feeds</b>",
+showRealTimeValue: "0",
+labelDisplay: "rotate"
+},
+"categories": categories,
+"dataset": dataset,
 
-    },
-    "categories": categories,
-    "dataset": dataset
 };
-
-export default {
-    name: 'app',
-    data() {
-        return {
-            "id": "stockRealTimeChart",
-            "type": 'realtimearea',
-            "renderAt": 'chart-container',
-            "width": '700',
-            "height": '400',
-            "dataFormat": 'json',
-            dataSource,
-            "events": {
-                "initialized": function() {
-                    setInterval(function() {
-                        function addLeadingZero(num) {
-                            return (num <= 9) ? ("0" + num) : num;
-                        }
-
-                        function updateData() {
-                            // Get reference to the chart using its ID
-                            var chartRef = FusionCharts("stockRealTimeChart"),
-                                // We need to create a querystring format incremental update, containing
-                                // label in hh:mm:ss format
-                                // and a value (random).
-                                currDate = new Date(),
-                                label = addLeadingZero(currDate.getHours()) + ":" +
-                                addLeadingZero(currDate.getMinutes()) + ":" +
-                                addLeadingZero(currDate.getSeconds()),
-                                // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-                                randomValue = Math.floor(Math.random() *
-                                    1) / 100 + 35.25,
-                                // Build Data String in format &label=...&value=...
-                                strData = "&label=" + label +
-                                "&value=" +
-                                randomValue;
-                            // Feed it to chart.
-                            chartRef.feedData(strData);
-                        }
-                        updateData();
-                    }, 3000);
-                }
-            }
-        }
-    }
+events: any = {
+initialized: function(e) {
+function addLeadingZero(num) {
+return num <= 9 ? "0" + num : num;
 }
-</script>
 
-//STEP 4: Render the chart
-<template >
-    <div id = "app">
-    <div id = "chart-container">
-    <fusioncharts: id = "id": type = "type": width = "width": height = "height": dataformat = "dataFormat": dataSource = "dataSource": events = "events">
-    </fusioncharts>
-    </div>
-    </div>
-</template>
-```
+      function updateData() {
+        var currDate = new Date(),
+          label =
+            addLeadingZero(currDate.getHours()) +
+            ":" +
+            addLeadingZero(currDate.getMinutes()) +
+            ":" +
+            addLeadingZero(currDate.getSeconds()),
+          // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+          randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
+          // Build Data String in format &label=...&value=...
+          strData = "&label=" + label + "&value=" + randomValue;
+        // Feed it to chart.
+        e.sender.feedData(strData);
+      }
+
+      var myVar = setInterval(function() {
+        updateData();
+      }, 500);
+    } // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as RealTimeArea from "fusioncharts/fusioncharts.widgets";
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, RealTimeArea, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1d&gt;
+    {{title}}
+&lt;/h1d&gt;
+&lt;fusioncharts width="700" height="450" type="realtimearea" dataFormat="JSON" [dataSource]="dataSource" [events]="events"d&gt;
+&lt;/fusionchartsd&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
@@ -786,83 +871,116 @@ In the above JSON:
 - Create the `dials` object to represent the customer satisfaction score.
 - Create the `dial` object under the `dials` object to set the value of customer satisfaction score.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```html
-<html>
-  <head>
-    <title>My first chart using FusionCharts Suite XT</title>
-    <!-- Include fusioncharts core library -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
-    ></script>
-    <!-- Include fusion theme -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
-    ></script>
-    <script type="text/javascript">
-      // Define the colorVariations of the angular gauge
-      const colorRange = {
-        color: [
-          {
-            minValue: "0",
-            maxValue: "50",
-            code: "#F2726F"
-          },
-          {
-            minValue: "50",
-            maxValue: "75",
-            code: "#FFC533"
-          },
-          {
-            minValue: "75",
-            maxValue: "100",
-            code: "#62B58F"
-          }
-        ]
-      };
-      //Set up the dial value
-      const dials = {
-        dial: [{ value: "81" }]
-      };
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-      //STEP 3 - Chart Configurations
-      var chartConfigurations = {
-        type: "angulargauge", // The gauge type
-        width: "450", // Width of the gauge
-        height: "250", // Height of the gauge
-        dataFormat: "json", // Data type
-        renderAt: "chart-container", //Container where the chart will render
-        dataSource: {
-          // Gauge Configuration
-          chart: {
-            caption: "Nordstrom's Customer Satisfaction Score for 2017",
-            lowerLimit: "0",
-            upperLimit: "100",
-            showValue: "1",
-            numberSuffix: "%",
-            theme: "fusion",
-            showToolTip: "0"
-          },
-          // Chart Data
-          colorRange: colorRange,
-          dials: dials
-        }
-      };
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
 
-      FusionCharts.ready(function() {
-        var fusioncharts = new FusionCharts(chartConfigurations);
-        fusioncharts.render();
-      });
-    </script>
-  </head>
-  <body>
-    <div id="chart-container">FusionCharts XT will load here!</div>
-  </body>
-</html>
-```
+//STEP 2 - Defining the dataset for the angular gauge along with the color configuration
+const colorRange = {
+"color": [{
+"minValue": "0",
+"maxValue": "50",
+"code": "#e44a00"
+}, {
+"minValue": "50",
+"maxValue": "75",
+"code": "#f8bd19"
+}, {
+"minValue": "75",
+"maxValue": "100",
+"code": "#6baa01"
+}]
+};
+
+const dials = {
+"dial": [{
+"value": "67"
+}]
+};
+
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
+
+})
+
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"caption": "Customer Satisfaction Score",
+"subcaption": "Last week",
+"lowerLimit": "0",
+"upperLimit": "100",
+"theme": "fusion"
+},
+"colorRange": colorRange,
+"dials": dials
+
+    }; // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as Widgets from 'fusioncharts/fusioncharts.widgets';
+
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+    {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts width="700" height="400" type="angulargauge" [dataSource]="dataSource"&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](/chart-guide/list-of-charts#gauges).
 
@@ -948,118 +1066,142 @@ const data = [{
 
 We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
-```html
-// STEP 1: Include the dependencies
-<script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
-  import FusionCharts from "fusioncharts";
-  import FusionMaps from "fusioncharts/maps/es/fusioncharts.world";
-  import World from "fusioncharts/fusioncharts.maps";
-  import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-  Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme);
-  //STEP 2 - Define the dataset and the colorRange of the map
-  const dataset = [
-    {
-      id: "NA",
-      value: ".82",
-      showLabel: "1"
-    },
-    {
-      id: "SA",
-      value: "2.04",
-      showLabel: "1"
-    },
-    {
-      id: "AS",
-      value: "1.78",
-      showLabel: "1"
-    },
-    {
-      id: "EU",
-      value: ".40",
-      showLabel: "1"
-    },
-    {
-      id: "AF",
-      value: "2.58",
-      showLabel: "1"
-    },
-    {
-      id: "AU",
-      value: "1.30",
-      showLabel: "1"
-    }
-  ];
-  const colorrange = {
-    minvalue: "0",
-    code: "#FFE0B2",
-    gradient: "1",
-    color: [
-      {
-        minvalue: "0.5",
-        maxvalue: "1.0",
-        color: "#FFD74D"
-      },
-      {
-        minvalue: "1.0",
-        maxvalue: "2.0",
-        color: "#FB8C00"
-      },
-      {
-        minvalue: "2.0",
-        maxvalue: "3.0",
-        color: "#E65100"
-      }
-    ]
-  };
-  // STEP 3: Configure your chart
-  const dataSource = {
-    // Map Configuration
-    chart: {
-      caption: "Average Annual Population Growth",
-      subcaption: " 1955-2015",
-      numbersuffix: "%",
-      includevalueinlabels: "1",
-      labelsepchar: ": ",
-      entityFillHoverColor: "#FFF9C4",
-      theme: "fusion"
-    },
-    // Aesthetics; ranges synced with the slider
-    colorrange: colorrange,
-    // Source data as JSON --> id represents countries of the world.
-    data: dataset
-  };
-  export default {
-    name: "app",
-    data() {
-      return {
-        type: "world",
-        renderAt: "chart-container",
-        width: "550",
-        height: "350",
-        dataFormat: "json",
-        dataSource
-      };
-    }
-  };
-</script>
-//STEP 4: Render the chart
-<template>
-  <div id="app">
-    <div id="chart-container">
-      <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataformat="dataFormat"
-        :dataSource="dataSource"
-      >
-      </fusioncharts>
-    </div>
-  </div>
-</template>
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
+
+//STEP 2 - Define the dataset and the colorRange of the map
+const dataset = [{
+"id": "NA",
+"value": ".82",
+"showLabel": "1"
+}, {
+"id": "SA",
+"value": "2.04",
+"showLabel": "1"
+}, {
+"id": "AS",
+"value": "1.78",
+"showLabel": "1"
+}, {
+"id": "EU",
+"value": ".40",
+"showLabel": "1"
+}, {
+"id": "AF",
+"value": "2.58",
+"showLabel": "1"
+}, {
+"id": "AU",
+"value": "1.30",
+"showLabel": "1"
+}];
+
+const colorrange = {
+"minvalue": "0",
+"code": "#FFE0B2",
+"gradient": "1",
+"color":
+[{
+"minvalue": "0.5",
+"maxvalue": "1.0",
+"color": "#FFD74D"
+}, {
+"minvalue": "1.0",
+"maxvalue": "2.0",
+"color": "#FB8C00"
+}, {
+"minvalue": "2.0",
+"maxvalue": "3.0",
+"color": "#E65100"
+}]
+};
+
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
+
+})
+
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"caption": "Average Annual Population Growth",
+"subcaption": " 1955-2015",
+"numbersuffix": "%",
+"includevalueinlabels": "1",
+"labelsepchar": ": ",
+"entityFillHoverColor": "#FFF9C4",
+"theme": "fusion"
+},
+// Aesthetics; ranges synced with the slider
+"colorrange": colorrange,
+// Source data as JSON --> id represents countries of the world.
+"data": dataset
+
+    }; // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as FusionMaps from "fusionmaps/fusioncharts.maps";
+
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+d&lt;h1&gt;
+    {{title}}
+d&lt;/h1&gt;
+d&lt;fusioncharts width="700" height="400" type="world" [dataSource]="dataSource"&gt;
+d&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 That’s it. Your first map is ready.
 
@@ -1073,142 +1215,111 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 The consolidated code for rendering the map is shown below:
 
-```html
-<script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
-  import FusionCharts from "fusioncharts";
-  import FusionMaps from "fusioncharts/fusioncharts.maps";
-  import California from "fusionmaps/maps/fusioncharts.california";
-  import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-  // Register VueFusionCharts component
-  Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+import { Component } from "@angular/core";
 
-  const mapData = [
-    { id: "001", value: 2834 },
-    { id: "003", value: 3182 },
-    { id: "005", value: 3280 },
-    { id: "007", value: 911 },
-    { id: "009", value: 292 },
-    { id: "011", value: 530 },
-    { id: "013", value: 2515 },
-    { id: "015", value: 728 },
-    { id: "017", value: 1974 },
-    { id: "019", value: 848 },
-    { id: "021", value: 3278 },
-    { id: "023", value: 4463 },
-    { id: "025", value: 1198 },
-    { id: "027", value: 378 },
-    { id: "029", value: 2610 },
-    { id: "031", value: 1200 },
-    { id: "033", value: 3820 },
-    { id: "035", value: 940 },
-    { id: "037", value: 3416 },
-    { id: "039", value: 4004 },
-    { id: "041", value: 1604 },
-    { id: "043", value: 4011 },
-    { id: "045", value: 3203 },
-    { id: "047", value: 3775 },
-    { id: "049", value: 2721 },
-    { id: "051", value: 3417 },
-    { id: "053", value: 1530 },
-    { id: "055", value: 412 },
-    { id: "057", value: 3434 },
-    { id: "059", value: 1670 },
-    { id: "061", value: 1274 },
-    { id: "063", value: 4339 },
-    { id: "065", value: 2073 },
-    { id: "067", value: 1018 },
-    { id: "069", value: 3967 },
-    { id: "071", value: 3401 },
-    { id: "073", value: 3307 },
-    { id: "075", value: 1938 },
-    { id: "077", value: 489 },
-    { id: "079", value: 3207 },
-    { id: "081", value: 2295 },
-    { id: "083", value: 2747 },
-    { id: "085", value: 1114 },
-    { id: "087", value: 3400 },
-    { id: "089", value: 784 },
-    { id: "091", value: 1673 },
-    { id: "093", value: 4274 },
-    { id: "095", value: 4509 },
-    { id: "097", value: 3862 },
-    { id: "099", value: 1356 },
-    { id: "101", value: 4126 },
-    { id: "103", value: 1314 },
-    { id: "105", value: 1807 },
-    { id: "107", value: 4026 },
-    { id: "109", value: 3456 },
-    { id: "111", value: 1393 },
-    { id: "113", value: 1500 },
-    { id: "115", value: 2218 }
-  ];
+const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
 
-  const colorrange = {
-    minvalue: "0",
-    startlabel: "Low",
-    endlabel: "High",
-    code: "e44a00",
-    gradient: "1",
-    color: [
-      { maxvalue: "2500", code: "f8bd19" },
-      { maxvalue: "5000", code: "6baa01" }
-    ]
-  };
+const colorrange = {
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+};
 
-  const mapConfigs = {
-    type: "california",
-    renderAt: "chart-container",
-    width: "550",
-    height: "350",
-    dataFormat: "json",
-    datasource: {
-      // Map Configuration
-      chart: {
-        animation: "0",
-        showbevel: "0",
-        usehovercolor: "1",
-        showlegend: "1",
-        legendposition: "BOTTOM",
-        legendborderalpha: "0",
-        legendbordercolor: "ffffff",
-        legendallowdrag: "0",
-        legendshadow: "0",
-        caption: "Website Visits for the month of March 2018",
-        connectorcolor: "000000",
-        fillalpha: "80",
-        hovercolor: "CCCCCC",
-        theme: "fusion"
-      },
-      colorrange: colorrange,
-      data: mapData
-    }
-  };
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
 
-  export default {
-    name: "app",
-    data() {
-      return mapConfigs;
-    }
-  };
-</script>
-<template>
-  <div id="app">
-    <div id="chart-container">
-      <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataformat="dataformat"
-        :datasource="datasource"
-      >
-      </fusioncharts>
-    </div>
-  </div>
-</template>
-```
+})
+
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": colorrange,
+"data": mapData
+
+    } // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import _ as FusionCharts from 'fusioncharts';
+import _ as FusionMaps from "fusionmaps/fusioncharts.maps";
+
+import _ as California from "fusionmaps/maps/fusioncharts.california";
+import _ as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
+
+@NgModule({
+declarations: [AppComponent],
+imports: [BrowserModule,FusionChartsModule],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+d&lt;h1&gt;
+    {{title}}
+d&lt;/h1&gt;
+d&lt;fusioncharts width="700" height="400" type="california" [dataSource]="dataSource"&gt;
+d&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 That's it! The **California** map is ready.
 
@@ -1460,252 +1571,281 @@ const colorRange = {
 };
 ```
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```html
-// STEP 1: Include the dependencies
-<script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
-  import FusionCharts from "fusioncharts";
-  import PowerCharts from "fusioncharts/fusioncharts.powercharts";
-  import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-  Vue.use(VueFusionCharts, FusionCharts, PowerCharts, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
 
-  //STEP 2 - Define the chart data constituting dataset and colorrange objects
+//STEP 2 - Define the chart data constituting dataset and colorrange objects
+const dataset = [{
+"data": [{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Processor",
+"value": "8.7",
+"tllabel": "Quad Core 2.5 GHz",
+"trlabel": "OS : Android 4.4 Kitkat"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Screen Size",
+"value": "8.5",
+"tllabel": "5.1 inch",
+"trlabel": "AMOLED screen"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Price",
+"value": "9.3",
+"tllabel": "$600"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Battery Backup",
+"value": "9.7",
+"tllabel": "29 Hrs",
+"trlabel": "Battery : 2800 MAH"
+},
+{
+"rowid": "Samsung Galaxy S5",
+"columnid": "Camera",
+"value": "8",
+"tllabel": "16 MP",
+"trlabel": "Front Camera : 2.1 MP"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Processor",
+"value": "9.2",
+"tllabel": "Quad Core 2.3 GHz",
+"trlabel": "OS : Android 4.4 Kitkat"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Screen Size",
+"value": "8.3",
+"tllabel": "5 inch",
+"trlabel": "LCD screen"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Price",
+"value": "7.3",
+"tllabel": "$600"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Battery Backup",
+"value": "8.8",
+"tllabel": "20 Hrs",
+"trlabel": "Battery : 2600 MAH"
+},
+{
+"rowid": "HTC One (M8)",
+"columnid": "Camera",
+"value": "8.7",
+"tllabel": "4 MP",
+"trlabel": "Front Camera : 5 MP"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Processor",
+"value": "9.1",
+"tllabel": "Dual Core",
+"trlabel": "OS : iOS 7"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Screen Size",
+"value": "8.6",
+"tllabel": "4 inch",
+"trlabel": "Retina LCD screen"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Price",
+"value": "7.2",
+"tllabel": "$649"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Battery Backup",
+"value": "8.4",
+"tllabel": "10 Hrs",
+"trlabel": "Battery : 1560 MAH"
+},
+{
+"rowid": "Apple iPhone 5S",
+"columnid": "Camera",
+"value": "9.5",
+"tllabel": "8 MP",
+"trlabel": "Front Camera : 1.2 MP"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Processor",
+"value": "8.8",
+"tllabel": "Quad Core 2.2 GHz",
+"trlabel": "OS: Windows Phone 8"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Screen Size",
+"value": "9.1",
+"tllabel": "6 inch",
+"trlabel": "LCD screen"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Price",
+"value": "9.7",
+"tllabel": "$470"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Battery Backup",
+"value": "9.2",
+"tllabel": "27 Hrs",
+"trlabel": "Battery : 3400 MAH"
+},
+{
+"rowid": "Nokia Lumia 1520",
+"columnid": "Camera",
+"value": "8.1",
+"tllabel": "20MP",
+"trlabel": "Front Camera : 1.2 MP"
+}
+]
+}];
 
-  const dataset = [
-    {
-      data: [
-        {
-          rowid: "Samsung Galaxy S5",
-          columnid: "Processor",
-          value: "8.7",
-          tllabel: "Quad Core 2.5 GHz",
-          trlabel: "OS : Android 4.4 Kitkat"
-        },
-        {
-          rowid: "Samsung Galaxy S5",
-          columnid: "Screen Size",
-          value: "8.5",
-          tllabel: "5.1 inch",
-          trlabel: "AMOLED screen"
-        },
-        {
-          rowid: "Samsung Galaxy S5",
-          columnid: "Price",
-          value: "9.3",
-          tllabel: "$600"
-        },
-        {
-          rowid: "Samsung Galaxy S5",
-          columnid: "Battery Backup",
-          value: "9.7",
-          tllabel: "29 Hrs",
-          trlabel: "Battery : 2800 MAH"
-        },
-        {
-          rowid: "Samsung Galaxy S5",
-          columnid: "Camera",
-          value: "8",
-          tllabel: "16 MP",
-          trlabel: "Front Camera : 2.1 MP"
-        },
-        {
-          rowid: "HTC One (M8)",
-          columnid: "Processor",
-          value: "9.2",
-          tllabel: "Quad Core 2.3 GHz",
-          trlabel: "OS : Android 4.4 Kitkat"
-        },
-        {
-          rowid: "HTC One (M8)",
-          columnid: "Screen Size",
-          value: "8.3",
-          tllabel: "5 inch",
-          trlabel: "LCD screen"
-        },
-        {
-          rowid: "HTC One (M8)",
-          columnid: "Price",
-          value: "7.3",
-          tllabel: "$600"
-        },
-        {
-          rowid: "HTC One (M8)",
-          columnid: "Battery Backup",
-          value: "8.8",
-          tllabel: "20 Hrs",
-          trlabel: "Battery : 2600 MAH"
-        },
-        {
-          rowid: "HTC One (M8)",
-          columnid: "Camera",
-          value: "8.7",
-          tllabel: "4 MP",
-          trlabel: "Front Camera : 5 MP"
-        },
-        {
-          rowid: "Apple iPhone 5S",
-          columnid: "Processor",
-          value: "9.1",
-          tllabel: "Dual Core",
-          trlabel: "OS : iOS 7"
-        },
-        {
-          rowid: "Apple iPhone 5S",
-          columnid: "Screen Size",
-          value: "8.6",
-          tllabel: "4 inch",
-          trlabel: "Retina LCD screen"
-        },
-        {
-          rowid: "Apple iPhone 5S",
-          columnid: "Price",
-          value: "7.2",
-          tllabel: "$649"
-        },
-        {
-          rowid: "Apple iPhone 5S",
-          columnid: "Battery Backup",
-          value: "8.4",
-          tllabel: "10 Hrs",
-          trlabel: "Battery : 1560 MAH"
-        },
-        {
-          rowid: "Apple iPhone 5S",
-          columnid: "Camera",
-          value: "9.5",
-          tllabel: "8 MP",
-          trlabel: "Front Camera : 1.2 MP"
-        },
-        {
-          rowid: "Nokia Lumia 1520",
-          columnid: "Processor",
-          value: "8.8",
-          tllabel: "Quad Core 2.2 GHz",
-          trlabel: "OS: Windows Phone 8"
-        },
-        {
-          rowid: "Nokia Lumia 1520",
-          columnid: "Screen Size",
-          value: "9.1",
-          tllabel: "6 inch",
-          trlabel: "LCD screen"
-        },
-        {
-          rowid: "Nokia Lumia 1520",
-          columnid: "Price",
-          value: "9.7",
-          tllabel: "$470"
-        },
-        {
-          rowid: "Nokia Lumia 1520",
-          columnid: "Battery Backup",
-          value: "9.2",
-          tllabel: "27 Hrs",
-          trlabel: "Battery : 3400 MAH"
-        },
-        {
-          rowid: "Nokia Lumia 1520",
-          columnid: "Camera",
-          value: "8.1",
-          tllabel: "20MP",
-          trlabel: "Front Camera : 1.2 MP"
-        }
-      ]
-    }
-  ];
+const colorrange = {
+"gradient": "0",
+"minvalue": "0",
+"code": "E24B1A",
+"startlabel": "Poor",
+"endlabel": "Good",
+"color": [{
+"code": "E24B1A",
+"minvalue": "1",
+"maxvalue": "5",
+"label": "Bad"
+},
+{
+"code": "F6BC33",
+"minvalue": "5",
+"maxvalue": "8.5",
+"label": "Average"
+},
+{
+"code": "6DA81E",
+"minvalue": "8.5",
+"maxvalue": "10",
+"label": "Good"
+}
+]
+};
 
-  const colorrange = {
-    gradient: "0",
-    minvalue: "0",
-    code: "E24B1A",
-    startlabel: "Poor",
-    endlabel: "Good",
-    color: [
-      {
-        code: "E24B1A",
-        minvalue: "1",
-        maxvalue: "5",
-        label: "Bad"
-      },
-      {
-        code: "F6BC33",
-        minvalue: "5",
-        maxvalue: "8.5",
-        label: "Average"
-      },
-      {
-        code: "6DA81E",
-        minvalue: "8.5",
-        maxvalue: "10",
-        label: "Good"
-      }
-    ]
-  };
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
 
-  // STEP 3: Configure your chart
-  const dataSource = {
-    chart: {
-      caption: "Top Smartphone Ratings",
-      subcaption: "By Features",
-      xAxisName: "Features",
-      yAxisName: "Model",
-      showPlotBorder: "1",
-      xAxisLabelsOnTop: "1",
-      plottooltext:
-        "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-      //Cosmetics
-      showValues: "1",
-      showBorder: "0",
-      bgColor: "#ffffff",
-      showShadow: "0",
-      usePlotGradientColor: "0",
-      toolTipColor: "#ffffff",
-      toolTipBorderThickness: "0",
-      toolTipBgColor: "#000000",
-      toolTipBgAlpha: "80",
-      toolTipBorderRadius: "2",
-      toolTipPadding: "5",
-      theme: "fusion"
-    },
-    dataset: dataset,
-    colorrange: colorrange
-  };
+})
 
-  export default {
-    name: "app",
-    data() {
-      return {
-        type: "heatmap",
-        renderAt: "chart-container",
-        width: "550",
-        height: "350",
-        dataFormat: "json",
-        dataSource
-      };
-    }
-  };
-</script>
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"caption": "Top Smartphone Ratings",
+"subcaption": "By Features",
+"xAxisName": "Features",
+"yAxisName": "Model",
+"showPlotBorder": "1",
+"xAxisLabelsOnTop": "1",
+"plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>\$trLabel</b>",
+//Cosmetics
+"showValues": "1",
+"showBorder": "0",
+"bgColor": "#ffffff",
+"showShadow": "0",
+"usePlotGradientColor": "0",
+"toolTipColor": "#ffffff",
+"toolTipBorderThickness": "0",
+"toolTipBgColor": "#000000",
+"toolTipBgAlpha": "80",
+"toolTipBorderRadius": "2",
+"toolTipPadding": "5",
+"theme": "fusion"
+},
+"dataset": dataset,
+"colorrange": colorrange
 
-//STEP 4: Render the chart
-<template>
-  <div id="app">
-    <div id="chart-container">
-      <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataformat="dataFormat"
-        :dataSource="dataSource"
-      >
-      </fusioncharts>
-    </div>
-  </div>
-</template>
-```
+    }// end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+ 
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+ 
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as charts from 'fusioncharts/fusioncharts.charts';
+import * as PowerCharts from "fusioncharts/fusioncharts.powercharts";
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+ 
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme, PowerCharts);
+ 
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="heatmap"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > There are more variants of Heatmap charts available with FusionCharts. Know more about Heat maps and its configurations [here](/chart-guide/standard-charts/heat-map-chart). You can also create various charts belonging to the [PowerCharts](/chart-guide/list-of-charts#powercharts-xt) family in a similar way.
 
@@ -2593,1126 +2733,996 @@ const connectors = [{
 }];
 ```
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now to build the chart. Copy the codes for the `module.ts`, `component.ts`, and `app.component.html` files from below and paste them in the respective files:
 
-```html
-// STEP 1: Include the dependencies
-<script>
-  import Vue from "vue";
-  import VueFusionCharts from "vue-fusioncharts";
-  import FusionCharts from "fusioncharts";
-  import Gantt from "fusioncharts/fusioncharts.gantt";
-  import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='component.ts'>component.ts</a></li>
+    <li><a data-toggle='module'>module.ts</a></li>
+    <li><a data-toggle='component.html'>app.component.html</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-  Vue.use(VueFusionCharts, FusionCharts, Gantt, FusionTheme);
+<div class='tab component.ts-tab active'>
+<pre><code class="language-javascript">
+// STEP 1- To import the dependencies
+import { Component } from "@angular/core";
 
-  // STEP 2: Prepare the data
-  const categories = [
-    {
-      bgcolor: "#999999",
-      category: [
-        {
-          start: "1/4/2014",
-          end: "30/6/2014",
-          label: "Months",
-          align: "middle",
-          fontcolor: "#ffffff",
-          fontsize: "12"
-        }
-      ]
-    },
-    {
-      bgcolor: "#999999",
-      align: "middle",
-      fontcolor: "#ffffff",
-      fontsize: "12",
-      category: [
-        {
-          start: "1/4/2014",
-          end: "30/4/2014",
-          label: "April"
-        },
-        {
-          start: "1/5/2014",
-          end: "31/5/2014",
-          label: "May"
-        },
-        {
-          start: "1/6/2014",
-          end: "30/6/2014",
-          label: "June"
-        }
-      ]
-    },
-    {
-      bgcolor: "#ffffff",
-      fontcolor: "#333333",
-      fontsize: "11",
-      align: "center",
-      category: [
-        {
-          start: "1/4/2014",
-          end: "5/4/2014",
-          label: "Week 1"
-        },
-        {
-          start: "6/4/2014",
-          end: "12/4/2014",
-          label: "Week 2"
-        },
-        {
-          start: "13/4/2014",
-          end: "19/4/2014",
-          label: "Week 3"
-        },
-        {
-          start: "20/4/2014",
-          end: "26/4/2014",
-          label: "Week 4"
-        },
-        {
-          start: "27/4/2014",
-          end: "3/5/2014",
-          label: "Week 5"
-        },
-        {
-          start: "4/5/2014",
-          end: "10/5/2014",
-          label: "Week 6"
-        },
-        {
-          start: "11/5/2014",
-          end: "17/5/2014",
-          label: "Week 7"
-        },
-        {
-          start: "18/5/2014",
-          end: "24/5/2014",
-          label: "Week 8"
-        },
-        {
-          start: "25/5/2014",
-          end: "31/5/2014",
-          label: "Week 9"
-        },
-        {
-          start: "1/6/2014",
-          end: "7/6/2014",
-          label: "Week 10"
-        },
-        {
-          start: "8/6/2014",
-          end: "14/6/2014",
-          label: "Week 11"
-        },
-        {
-          start: "15/6/2014",
-          end: "21/6/2014",
-          label: "Week 12"
-        },
-        {
-          start: "22/6/2014",
-          end: "28/6/2014",
-          label: "Week 13"
-        }
-      ]
-    }
-  ];
-  //List out the different processes of the Gantt chart
-  const processes = {
-    headertext: "Task",
-    fontcolor: "#000000",
-    fontsize: "11",
-    isanimated: "1",
-    bgcolor: "#6baa01",
-    headervalign: "bottom",
-    headeralign: "left",
-    headerbgcolor: "#999999",
-    headerfontcolor: "#ffffff",
-    headerfontsize: "12",
-    align: "left",
-    isbold: "1",
-    bgalpha: "25",
-    process: [
-      {
-        label: "Clear site",
-        id: "1"
-      },
-      {
-        label: "Excavate Foundation",
-        id: "2",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Concrete Foundation",
-        id: "3",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Footing to DPC",
-        id: "4",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Drainage Services",
-        id: "5",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Backfill",
-        id: "6",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Ground Floor",
-        id: "7"
-      },
-      {
-        label: "Walls on First Floor",
-        id: "8"
-      },
-      {
-        label: "First Floor Carcass",
-        id: "9",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "First Floor Deck",
-        id: "10",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Roof Structure",
-        id: "11"
-      },
-      {
-        label: "Roof Covering",
-        id: "12"
-      },
-      {
-        label: "Rainwater Gear",
-        id: "13"
-      },
-      {
-        label: "Windows",
-        id: "14"
-      },
-      {
-        label: "External Doors",
-        id: "15"
-      },
-      {
-        label: "Connect Electricity",
-        id: "16"
-      },
-      {
-        label: "Connect Water Supply",
-        id: "17",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Install Air Conditioning",
-        id: "18",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Interior Decoration",
-        id: "19",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Fencing And signs",
-        id: "20"
-      },
-      {
-        label: "Exterior Decoration",
-        id: "21",
-        hoverBandColor: "#e44a00",
-        hoverBandAlpha: "40"
-      },
-      {
-        label: "Setup racks",
-        id: "22"
-      }
-    ]
-  };
+//STEP 2 - Define the various data objects for the Gantt Chart
+const categories = [{
+"bgcolor": "#999999",
+"category": [{
+"start": "1/4/2014",
+"end": "30/6/2014",
+"label": "Months",
+"align": "middle",
+"fontcolor": "#ffffff",
+"fontsize": "12"
+}]
+}, {
+"bgcolor": "#999999",
+"align": "middle",
+"fontcolor": "#ffffff",
+"fontsize": "12",
+"category": [{
+"start": "1/4/2014",
+"end": "30/4/2014",
+"label": "April"
+}, {
+"start": "1/5/2014",
+"end": "31/5/2014",
+"label": "May"
+}, {
+"start": "1/6/2014",
+"end": "30/6/2014",
+"label": "June"
+}]
+}, {
+"bgcolor": "#ffffff",
+"fontcolor": "#333333",
+"fontsize": "11",
+"align": "center",
+"category": [{
+"start": "1/4/2014",
+"end": "5/4/2014",
+"label": "Week 1"
+}, {
+"start": "6/4/2014",
+"end": "12/4/2014",
+"label": "Week 2"
+}, {
+"start": "13/4/2014",
+"end": "19/4/2014",
+"label": "Week 3"
+}, {
+"start": "20/4/2014",
+"end": "26/4/2014",
+"label": "Week 4"
+}, {
+"start": "27/4/2014",
+"end": "3/5/2014",
+"label": "Week 5"
+}, {
+"start": "4/5/2014",
+"end": "10/5/2014",
+"label": "Week 6"
+}, {
+"start": "11/5/2014",
+"end": "17/5/2014",
+"label": "Week 7"
+}, {
+"start": "18/5/2014",
+"end": "24/5/2014",
+"label": "Week 8"
+}, {
+"start": "25/5/2014",
+"end": "31/5/2014",
+"label": "Week 9"
+}, {
+"start": "1/6/2014",
+"end": "7/6/2014",
+"label": "Week 10"
+}, {
+"start": "8/6/2014",
+"end": "14/6/2014",
+"label": "Week 11"
+}, {
+"start": "15/6/2014",
+"end": "21/6/2014",
+"label": "Week 12"
+}, {
+"start": "22/6/2014",
+"end": "28/6/2014",
+"label": "Week 13"
+}]
+}];
+//List out the different processes of the Gantt chart
+const processes = {
+"headertext": "Task",
+"fontcolor": "#000000",
+"fontsize": "11",
+"isanimated": "1",
+"bgcolor": "#6baa01",
+"headervalign": "bottom",
+"headeralign": "left",
+"headerbgcolor": "#999999",
+"headerfontcolor": "#ffffff",
+"headerfontsize": "12",
+"align": "left",
+"isbold": "1",
+"bgalpha": "25",
+"process": [{
+"label": "Clear site",
+"id": "1"
+}, {
+"label": "Excavate Foundation",
+"id": "2",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Concrete Foundation",
+"id": "3",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Footing to DPC",
+"id": "4",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Drainage Services",
+"id": "5",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Backfill",
+"id": "6",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Ground Floor",
+"id": "7"
+}, {
+"label": "Walls on First Floor",
+"id": "8"
+}, {
+"label": "First Floor Carcass",
+"id": "9",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "First Floor Deck",
+"id": "10",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Roof Structure",
+"id": "11"
+}, {
+"label": "Roof Covering",
+"id": "12"
+}, {
+"label": "Rainwater Gear",
+"id": "13"
+}, {
+"label": "Windows",
+"id": "14"
+}, {
+"label": "External Doors",
+"id": "15"
+}, {
+"label": "Connect Electricity",
+"id": "16"
+}, {
+"label": "Connect Water Supply",
+"id": "17",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Install Air Conditioning",
+"id": "18",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Interior Decoration",
+"id": "19",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Fencing And signs",
+"id": "20"
+}, {
+"label": "Exterior Decoration",
+"id": "21",
+"hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40"
+}, {
+"label": "Setup racks",
+"id": "22"
+}]
+};
 
-  const datatable = {
-    showprocessname: "1",
-    namealign: "left",
-    fontcolor: "#000000",
-    fontsize: "10",
-    valign: "right",
-    align: "center",
-    headervalign: "bottom",
-    headeralign: "center",
-    headerbgcolor: "#999999",
-    headerfontcolor: "#ffffff",
-    headerfontsize: "12",
-    datacolumn: [
-      {
-        bgcolor: "#eeeeee",
-        headertext: "Actual{br}Start{br}Date",
-        text: [
-          {
-            label: "9/4/2014"
-          },
-          {
-            label: "13/4/2014"
-          },
-          {
-            label: "26/4/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "4/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "6/5/2014"
-          },
-          {
-            label: "5/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "11/5/2014"
-          },
-          {
-            label: "16/5/2014"
-          },
-          {
-            label: "16/5/2014"
-          },
-          {
-            label: "21/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "25/5/2014"
-          },
-          {
-            label: "28/5/2014"
-          },
-          {
-            label: "4/6/2014"
-          },
-          {
-            label: "4/6/2014"
-          },
-          {
-            label: "4/6/2014"
-          },
-          {
-            label: "2/6/2014"
-          },
-          {
-            label: "5/6/2014"
-          },
-          {
-            label: "18/6/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "16/6/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "23/6/2014"
-          },
-          {
-            label: "18/6/2014"
-          },
-          {
-            label: "25/6/2014"
-          }
-        ]
-      },
-      {
-        bgcolor: "#eeeeee",
-        headertext: "Actual{br}End{br}Date",
-        text: [
-          {
-            label: "12/4/2014"
-          },
-          {
-            label: "25/4/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "4/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "10/5/2014"
-          },
-          {
-            label: "10/5/2014"
-          },
-          {
-            label: "11/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "14/5/2014"
-          },
-          {
-            label: "19/5/2014"
-          },
-          {
-            label: "21/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "24/5/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "27/5/2014"
-          },
-          {
-            label: "1/6/2014"
-          },
-          {
-            label: "6/6/2014"
-          },
-          {
-            label: "4/6/2014"
-          },
-          {
-            label: "4/6/2014"
-          },
-          {
-            label: "7/6/2014"
-          },
-          {
-            label: "17/6/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "20/6/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "23/6/2014"
-          },
-          {
-            label: "23/6/2014"
-          },
-          {
-            label: "23/6/2014",
-            bgcolor: "#e44a00",
-            bgAlpha: "40"
-          },
-          {
-            label: "28/6/2014"
-          }
-        ]
-      }
-    ]
-  };
-  //Define different tasks of the process in a JSON object
-  const tasks = {
-    task: [
-      {
-        label: "Planned",
-        processid: "1",
-        start: "9/4/2014",
-        end: "12/4/2014",
-        id: "1-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "1",
-        start: "9/4/2014",
-        end: "12/4/2014",
-        id: "1",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "2",
-        start: "13/4/2014",
-        end: "23/4/2014",
-        id: "2-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "2",
-        start: "13/4/2014",
-        end: "25/4/2014",
-        id: "2",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "2",
-        start: "23/4/2014",
-        end: "25/4/2014",
-        id: "2-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 2 days."
-      },
-      {
-        label: "Planned",
-        processid: "3",
-        start: "23/4/2014",
-        end: "30/4/2014",
-        id: "3-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "3",
-        start: "26/4/2014",
-        end: "4/5/2014",
-        id: "3",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "3",
-        start: "3/5/2014",
-        end: "4/5/2014",
-        id: "3-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 1 days."
-      },
-      {
-        label: "Planned",
-        processid: "4",
-        start: "3/5/2014",
-        end: "10/5/2014",
-        id: "4-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "4",
-        start: "4/5/2014",
-        end: "10/5/2014",
-        id: "4",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "5",
-        start: "6/5/2014",
-        end: "11/5/2014",
-        id: "5-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "5",
-        start: "6/5/2014",
-        end: "10/5/2014",
-        id: "5",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "6",
-        start: "4/5/2014",
-        end: "7/5/2014",
-        id: "6-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "6",
-        start: "5/5/2014",
-        end: "11/5/2014",
-        id: "6",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "6",
-        start: "7/5/2014",
-        end: "11/5/2014",
-        id: "6-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 4 days."
-      },
-      {
-        label: "Planned",
-        processid: "7",
-        start: "11/5/2014",
-        end: "14/5/2014",
-        id: "7-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "7",
-        start: "11/5/2014",
-        end: "14/5/2014",
-        id: "7",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "8",
-        start: "16/5/2014",
-        end: "19/5/2014",
-        id: "8-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "8",
-        start: "16/5/2014",
-        end: "19/5/2014",
-        id: "8",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "9",
-        start: "16/5/2014",
-        end: "18/5/2014",
-        id: "9-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "9",
-        start: "16/5/2014",
-        end: "21/5/2014",
-        id: "9",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "9",
-        start: "18/5/2014",
-        end: "21/5/2014",
-        id: "9-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 3 days."
-      },
-      {
-        label: "Planned",
-        processid: "10",
-        start: "20/5/2014",
-        end: "23/5/2014",
-        id: "10-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "10",
-        start: "21/5/2014",
-        end: "24/5/2014",
-        id: "10",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "10",
-        start: "23/5/2014",
-        end: "24/5/2014",
-        id: "10-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 1 days."
-      },
-      {
-        label: "Planned",
-        processid: "11",
-        start: "25/5/2014",
-        end: "27/5/2014",
-        id: "11-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "11",
-        start: "25/5/2014",
-        end: "27/5/2014",
-        id: "11",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "12",
-        start: "28/5/2014",
-        end: "1/6/2014",
-        id: "12-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "12",
-        start: "28/5/2014",
-        end: "1/6/2014",
-        id: "12",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "13",
-        start: "4/6/2014",
-        end: "6/6/2014",
-        id: "13-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "13",
-        start: "4/6/2014",
-        end: "6/6/2014",
-        id: "13",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "14",
-        start: "4/6/2014",
-        end: "4/6/2014",
-        id: "14-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "14",
-        start: "4/6/2014",
-        end: "4/6/2014",
-        id: "14",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "15",
-        start: "4/6/2014",
-        end: "4/6/2014",
-        id: "15-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "15",
-        start: "4/6/2014",
-        end: "4/6/2014",
-        id: "15",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "16",
-        start: "2/6/2014",
-        end: "7/6/2014",
-        id: "16-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "16",
-        start: "2/6/2014",
-        end: "7/6/2014",
-        id: "16",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "17",
-        start: "5/6/2014",
-        end: "10/6/2014",
-        id: "17-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "17",
-        start: "5/6/2014",
-        end: "17/6/2014",
-        id: "17",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "17",
-        start: "10/6/2014",
-        end: "17/6/2014",
-        id: "17-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 7 days."
-      },
-      {
-        label: "Planned",
-        processid: "18",
-        start: "10/6/2014",
-        end: "12/6/2014",
-        id: "18-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Delay",
-        processid: "18",
-        start: "18/6/2014",
-        end: "20/6/2014",
-        id: "18",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 8 days."
-      },
-      {
-        label: "Planned",
-        processid: "19",
-        start: "15/6/2014",
-        end: "23/6/2014",
-        id: "19-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "19",
-        start: "16/6/2014",
-        end: "23/6/2014",
-        id: "19",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "20",
-        start: "23/6/2014",
-        end: "23/6/2014",
-        id: "20-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "20",
-        start: "23/6/2014",
-        end: "23/6/2014",
-        id: "20",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Planned",
-        processid: "21",
-        start: "18/6/2014",
-        end: "21/6/2014",
-        id: "21-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "21",
-        start: "18/6/2014",
-        end: "23/6/2014",
-        id: "21",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      },
-      {
-        label: "Delay",
-        processid: "21",
-        start: "21/6/2014",
-        end: "23/6/2014",
-        id: "21-2",
-        color: "#e44a00",
-        toppadding: "56%",
-        height: "32%",
-        tooltext: "Delayed by 2 days."
-      },
-      {
-        label: "Planned",
-        processid: "22",
-        start: "24/6/2014",
-        end: "28/6/2014",
-        id: "22-1",
-        color: "#008ee4",
-        height: "32%",
-        toppadding: "12%"
-      },
-      {
-        label: "Actual",
-        processid: "22",
-        start: "25/6/2014",
-        end: "28/6/2014",
-        id: "22",
-        color: "#6baa01",
-        toppadding: "56%",
-        height: "32%"
-      }
-    ]
-  };
-  //Structurize the connectors between different tasks of the Gantt chart
-  const connectors = [
-    {
-      connector: [
-        {
-          fromtaskid: "1",
-          totaskid: "2",
-          color: "#008ee4",
-          thickness: "2",
-          fromtaskconnectstart_: "1"
-        },
-        {
-          fromtaskid: "2-2",
-          totaskid: "3",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "3-2",
-          totaskid: "4",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "3-2",
-          totaskid: "6",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "7",
-          totaskid: "8",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "7",
-          totaskid: "9",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "12",
-          totaskid: "16",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "12",
-          totaskid: "17",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "17-2",
-          totaskid: "18",
-          color: "#008ee4",
-          thickness: "2"
-        },
-        {
-          fromtaskid: "19",
-          totaskid: "22",
-          color: "#008ee4",
-          thickness: "2"
-        }
-      ]
-    }
-  ];
+const datatable = {
+"showprocessname": "1",
+"namealign": "left",
+"fontcolor": "#000000",
+"fontsize": "10",
+"valign": "right",
+"align": "center",
+"headervalign": "bottom",
+"headeralign": "center",
+"headerbgcolor": "#999999",
+"headerfontcolor": "#ffffff",
+"headerfontsize": "12",
+"datacolumn": [{
+"bgcolor": "#eeeeee",
+"headertext": "Actual{br}Start{br}Date",
+"text": [{
+"label": "9/4/2014"
+}, {
+"label": "13/4/2014"
+}, {
+"label": "26/4/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40",
 
-  // STEP 3: Configure your chart
-  const dataSource = {
-    chart: {
-      theme: "fusion",
-      caption: "New Store Opening - Project Plan",
-      subcaption: "Planned vs Actual",
-      dateformat: "dd/mm/yyyy",
-      outputdateformat: "ddds mns yy",
-      ganttwidthpercent: "60",
-      ganttPaneDuration: "40",
-      ganttPaneDurationUnit: "d",
-      plottooltext:
-        "$processName{br}$label starting date $start{br}$label ending date $end",
-      legendBorderAlpha: "0",
-      legendShadow: "0",
-      usePlotGradientColor: "0",
-      showCanvasBorder: "0",
-      flatScrollBars: "1",
-      gridbordercolor: "#333333",
-      gridborderalpha: "20",
-      slackFillColor: "#e44a00",
-      taskBarFillMix: "light+0"
-    },
-    categories: categories,
-    processes: processes,
-    datatable: datatable,
-    tasks: tasks,
-    connectors: connectors,
-    milestones: {
-      milestone: [
-        {
-          date: "2/6/2014",
-          taskid: "12",
-          color: "#f8bd19",
-          shape: "star",
-          tooltext: "Completion of Phase 1"
-        }
-      ]
-    },
-    legend: {
-      item: [
-        {
-          label: "Planned",
-          color: "#008ee4"
-        },
-        {
-          label: "Actual",
-          color: "#6baa01"
-        },
-        {
-          label: "Slack (Delay)",
-          color: "#e44a00"
-        }
-      ]
-    }
-  };
+    }, {
+      "label": "4/5/2014",
+      "bgcolor": "#e44a00",
+      "bgAlpha": "40"
+    }, {
+      "label": "6/5/2014"
+    }, {
+      "label": "5/5/2014",
+      "bgcolor": "#e44a00",
+      "bgAlpha": "40"
+    }, {
+      "label": "11/5/2014"
+    }, {
+      "label": "16/5/2014"
+    }, {
+      "label": "16/5/2014"
+    }, {
+      "label": "21/5/2014",
+      "bgcolor": "#e44a00",
+      "bgAlpha": "40"
+    }, {
+      "label": "25/5/2014"
+    }, {
+      "label": "28/5/2014"
+    }, {
+      "label": "4/6/2014"
+    }, {
+      "label": "4/6/2014"
+    }, {
+      "label": "4/6/2014"
+    }, {
+      "label": "2/6/2014"
+    }, {
+      "label": "5/6/2014"
+    }, {
+      "label": "18/6/2014",
+      "bgcolor": "#e44a00",
+      "bgAlpha": "40"
+    }, {
+      "label": "16/6/2014",
+      "bgcolor": "#e44a00",
+      "bgAlpha": "40"
+    }, {
+      "label": "23/6/2014"
+    }, {
+      "label": "18/6/2014"
+    }, {
+      "label": "25/6/2014"
+    }]
 
-  export default {
-    name: "app",
-    data() {
-      return {
-        type: "gantt",
-        renderAt: "chart-container",
-        width: "100%",
-        height: "550",
-        dataFormat: "json",
-        dataSource
-      };
-    }
-  };
-</script>
+}, {
+"bgcolor": "#eeeeee",
+"headertext": "Actual{br}End{br}Date",
+"text": [{
+"label": "12/4/2014"
+}, {
+"label": "25/4/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "4/5/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "10/5/2014"
+}, {
+"label": "10/5/2014"
+}, {
+"label": "11/5/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "14/5/2014"
+}, {
+"label": "19/5/2014"
+}, {
+"label": "21/5/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "24/5/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "27/5/2014"
+}, {
+"label": "1/6/2014"
+}, {
+"label": "6/6/2014"
+}, {
+"label": "4/6/2014"
+}, {
+"label": "4/6/2014"
+}, {
+"label": "7/6/2014"
+}, {
+"label": "17/6/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "20/6/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "23/6/2014"
+}, {
+"label": "23/6/2014"
+}, {
+"label": "23/6/2014",
+"bgcolor": "#e44a00",
+"bgAlpha": "40"
+}, {
+"label": "28/6/2014"
+}]
+}]
+};
+//Define different tasks of the process in a JSON object
+const tasks = {
+"task": [{
+"label": "Planned",
+"processid": "1",
+"start": "9/4/2014",
+"end": "12/4/2014",
+"id": "1-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "1",
+"start": "9/4/2014",
+"end": "12/4/2014",
+"id": "1",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "2",
+"start": "13/4/2014",
+"end": "23/4/2014",
+"id": "2-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "2",
+"start": "13/4/2014",
+"end": "25/4/2014",
+"id": "2",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "2",
+"start": "23/4/2014",
+"end": "25/4/2014",
+"id": "2-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 2 days."
+}, {
+"label": "Planned",
+"processid": "3",
+"start": "23/4/2014",
+"end": "30/4/2014",
+"id": "3-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "3",
+"start": "26/4/2014",
+"end": "4/5/2014",
+"id": "3",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "3",
+"start": "3/5/2014",
+"end": "4/5/2014",
+"id": "3-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 1 days."
+}, {
+"label": "Planned",
+"processid": "4",
+"start": "3/5/2014",
+"end": "10/5/2014",
+"id": "4-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "4",
+"start": "4/5/2014",
+"end": "10/5/2014",
+"id": "4",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "5",
+"start": "6/5/2014",
+"end": "11/5/2014",
+"id": "5-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "5",
+"start": "6/5/2014",
+"end": "10/5/2014",
+"id": "5",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "6",
+"start": "4/5/2014",
+"end": "7/5/2014",
+"id": "6-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "6",
+"start": "5/5/2014",
+"end": "11/5/2014",
+"id": "6",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "6",
+"start": "7/5/2014",
+"end": "11/5/2014",
+"id": "6-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 4 days."
+}, {
+"label": "Planned",
+"processid": "7",
+"start": "11/5/2014",
+"end": "14/5/2014",
+"id": "7-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "7",
+"start": "11/5/2014",
+"end": "14/5/2014",
+"id": "7",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "8",
+"start": "16/5/2014",
+"end": "19/5/2014",
+"id": "8-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "8",
+"start": "16/5/2014",
+"end": "19/5/2014",
+"id": "8",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "9",
+"start": "16/5/2014",
+"end": "18/5/2014",
+"id": "9-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "9",
+"start": "16/5/2014",
+"end": "21/5/2014",
+"id": "9",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "9",
+"start": "18/5/2014",
+"end": "21/5/2014",
+"id": "9-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 3 days."
+}, {
+"label": "Planned",
+"processid": "10",
+"start": "20/5/2014",
+"end": "23/5/2014",
+"id": "10-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "10",
+"start": "21/5/2014",
+"end": "24/5/2014",
+"id": "10",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "10",
+"start": "23/5/2014",
+"end": "24/5/2014",
+"id": "10-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 1 days."
+}, {
+"label": "Planned",
+"processid": "11",
+"start": "25/5/2014",
+"end": "27/5/2014",
+"id": "11-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "11",
+"start": "25/5/2014",
+"end": "27/5/2014",
+"id": "11",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "12",
+"start": "28/5/2014",
+"end": "1/6/2014",
+"id": "12-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "12",
+"start": "28/5/2014",
+"end": "1/6/2014",
+"id": "12",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "13",
+"start": "4/6/2014",
+"end": "6/6/2014",
+"id": "13-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "13",
+"start": "4/6/2014",
+"end": "6/6/2014",
+"id": "13",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "14",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "14-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "14",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "14",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "15",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "15-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "15",
+"start": "4/6/2014",
+"end": "4/6/2014",
+"id": "15",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "16",
+"start": "2/6/2014",
+"end": "7/6/2014",
+"id": "16-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "16",
+"start": "2/6/2014",
+"end": "7/6/2014",
+"id": "16",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "17",
+"start": "5/6/2014",
+"end": "10/6/2014",
+"id": "17-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "17",
+"start": "5/6/2014",
+"end": "17/6/2014",
+"id": "17",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "17",
+"start": "10/6/2014",
+"end": "17/6/2014",
+"id": "17-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 7 days."
+}, {
+"label": "Planned",
+"processid": "18",
+"start": "10/6/2014",
+"end": "12/6/2014",
+"id": "18-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Delay",
+"processid": "18",
+"start": "18/6/2014",
+"end": "20/6/2014",
+"id": "18",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 8 days."
+}, {
+"label": "Planned",
+"processid": "19",
+"start": "15/6/2014",
+"end": "23/6/2014",
+"id": "19-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "19",
+"start": "16/6/2014",
+"end": "23/6/2014",
+"id": "19",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "20",
+"start": "23/6/2014",
+"end": "23/6/2014",
+"id": "20-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "20",
+"start": "23/6/2014",
+"end": "23/6/2014",
+"id": "20",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Planned",
+"processid": "21",
+"start": "18/6/2014",
+"end": "21/6/2014",
+"id": "21-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "21",
+"start": "18/6/2014",
+"end": "23/6/2014",
+"id": "21",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}, {
+"label": "Delay",
+"processid": "21",
+"start": "21/6/2014",
+"end": "23/6/2014",
+"id": "21-2",
+"color": "#e44a00",
+"toppadding": "56%",
+"height": "32%",
+"tooltext": "Delayed by 2 days."
+}, {
+"label": "Planned",
+"processid": "22",
+"start": "24/6/2014",
+"end": "28/6/2014",
+"id": "22-1",
+"color": "#008ee4",
+"height": "32%",
+"toppadding": "12%"
+}, {
+"label": "Actual",
+"processid": "22",
+"start": "25/6/2014",
+"end": "28/6/2014",
+"id": "22",
+"color": "#6baa01",
+"toppadding": "56%",
+"height": "32%"
+}]
+};
+//Structurize the connectors between different tasks of the Gantt chart
+const connectors = [{
+"connector": [{
+"fromtaskid": "1",
+"totaskid": "2",
+"color": "#008ee4",
+"thickness": "2",
+"fromtaskconnectstart_": "1"
+}, {
+"fromtaskid": "2-2",
+"totaskid": "3",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "3-2",
+"totaskid": "4",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "3-2",
+"totaskid": "6",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "7",
+"totaskid": "8",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "7",
+"totaskid": "9",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "12",
+"totaskid": "16",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "12",
+"totaskid": "17",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "17-2",
+"totaskid": "18",
+"color": "#008ee4",
+"thickness": "2"
+}, {
+"fromtaskid": "19",
+"totaskid": "22",
+"color": "#008ee4",
+"thickness": "2"
+}]
+}];
 
-//STEP 4: Render the chart
-<template>
-  <div id="app">
-    <div id="chart-container">
-      <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataformat="dataFormat"
-        :dataSource="dataSource"
-      >
-      </fusioncharts>
-    </div>
-  </div>
-</template>
-```
+@Component({
+selector: "app-root",
+templateUrl: "./app.component.html"
+
+})
+
+export class AppComponent {
+dataSource: Object;
+constructor() {
+this.dataSource = {
+"chart": {
+"theme": "fusion",
+"caption": "New Store Opening - Project Plan",
+"subcaption": "Planned vs Actual",
+"dateformat": "dd/mm/yyyy",
+"outputdateformat": "ddds mns yy",
+"ganttwidthpercent": "60",
+"ganttPaneDuration": "40",
+"ganttPaneDurationUnit": "d",
+"plottooltext": "$processName{br}$label starting date $start{br}$label ending date \$end",
+"legendBorderAlpha": "0",
+"legendShadow": "0",
+"usePlotGradientColor": "0",
+"showCanvasBorder": "0",
+"flatScrollBars": "1",
+"gridbordercolor": "#333333",
+"gridborderalpha": "20",
+"slackFillColor": "#e44a00",
+"taskBarFillMix": "light+0"
+},
+"categories": categories,
+"processes": processes,
+"datatable": datatable,
+"tasks": tasks,
+"connectors": connectors,
+"milestones": {
+"milestone": [{
+"date": "2/6/2014",
+"taskid": "12",
+"color": "#f8bd19",
+"shape": "star",
+"tooltext": "Completion of Phase 1"
+}
+]
+},
+"legend": {
+"item": [{
+"label": "Planned",
+"color": "#008ee4"
+}, {
+"label": "Actual",
+"color": "#6baa01"
+}, {
+"label": "Slack (Delay)",
+"color": "#e44a00"
+}]
+}
+
+    }; // end of this.dataSource
+
+} // end of constructor
+} // end of class AppComponent
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab module-tab'>
+<pre><code class="language-javascript">
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+ 
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+ 
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as charts from 'fusioncharts/fusioncharts.charts';
+import * as Gantt from "fusioncharts/fusioncharts.gantt";
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+ 
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme, Gantt);
+ 
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab component.html-tab'>
+<pre><code class="language-html">
+&lt;h1&gt;
+  {{title}}
+&lt;/h1&gt;
+&lt;fusioncharts
+  width="700"
+  height="400"
+  type="gantt"
+  [dataSource]="dataSource"
+&gt;
+&lt;/fusioncharts&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
 
 > Know more about Gantt Chart and its configurations [here](/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](/chart-guide/list-of-charts#powercharts-xt).
