@@ -2217,59 +2217,16 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-quality"
           },
           {
-            "title": "Customize the width and height of an exported chart",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart"
-          },
-          {
-            "title": "Export in bulk using multiple json files",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
+            "title": "Export a dashboard",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
           },
           {
             "title": "Export the output files as a zip",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip"
           },
           {
-            "title": "Override the chart config",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/override-the-chart-config"
-          },
-          {
-            "title": "Export a dashboard",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
-          },
-          {
-            "title": "Add a logo or a heading to the dashboard",
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
-          },
-          {
-            "title": "Convert an SVG image to PNG/JPEG/PDF",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
-          },
-          {
-            "title": "Inject extra JavaScript while exporting",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
-          },
-          {
-            "title": "Manipulate the output filename",
-            "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
-          },
-          {
-            "title": "Enable logging",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
-          },
-          {
-            "title": "Save exported files to S3",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
-          },
-          {
-            "title": "Asynchronous capture",
-            "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
+            "title": "Export FusionTime charts",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-time-series-charts"
           },
           {
             "title": "Export a D3 chart",
@@ -2286,6 +2243,56 @@
           {
             "title": "Export PDF files in Print Format",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
+          },
+          {
+            "title": "Customize the width and height of an exported chart",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart"
+          },
+          {
+            "title": "Export in bulk using multiple json files",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
+          },
+          {
+            "title": "Override the chart config",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/override-the-chart-config"
+          },
+          {
+            "title": "Add a logo or a heading to the dashboard",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
+          },
+          {
+            "title": "Convert an SVG image to PNG/JPEG/PDF",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
+          },
+          {
+            "title": "Inject extra JavaScript while exporting",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
+          },
+          {
+            "title": "Manipulate the output filename",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
+          },
+          {
+            "title": "Enable logging",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
+          },
+          {
+            "title": "Save exported files to S3",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
+          },
+          {
+            "title": "Asynchronous capture",
+            "visibility": false,
+            "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
           },
           {
             "title": "Customize the Dimensions of Exported Files",
