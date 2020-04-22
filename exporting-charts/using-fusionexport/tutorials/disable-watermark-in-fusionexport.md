@@ -63,3 +63,51 @@ To run licensed FusionExport with licensed FusionCharts run:
 After removing the watermarks, the chart looks like:
 
 ![No Water Mark](/images/export-chart-without-watermark.png)
+
+## Remove trial mark in Docker
+
+As mentioned earlier, to remove FusionExport watermark, you need to purchase the licensed version. Contact our [sales team](mailto:sales@fusioncharts.com) to purchase the license. They will be sharing a Docker package where watermark is not present. Once you have purchased the license, run the licensed package and export; FusionExport watermark will go away.
+
+However, in case of FusionCharts there is a slight change in the configuration you have to do.
+
+Get the licensed FusionCharts files. You can contact our [sales team](mailto:sales@fusioncharts.com) or go to our [pricing page](https://www.fusioncharts.com/buy) to download the licensed package of FusionCharts. Keep it in your system location and get the location path where you have copied the folder.
+
+Go to `fusionexport-docker` package that you downloaded from our website. Open `fusionexport-docker/docker-composer.yml` and add an entry in the `volume` section:
+
+```yml
+fusionexport:
+    build:
+      context: ./service
+    volumes:
+      - ${DATA_SAVE_PATH}/exported_images:/app/exported_images
+      - /Downloads/fusioncharts-suite/js:/app/fusioncharts
+    ports:
+      - "${SERVICE_PORT}:1337"
+
+```
+
+As you can see above, in our local system FusionCharts library is present in `/Downloads/fusioncharts-suite/js`. In your case, use the appropriate location. The same folder is mounted in `/app/fusioncharts` inside Docker container. You can choose any location you want.
+
+Now open the `config.json` file inside the `fusionexport-docker/service/config.json` and change the `libraryDirectoryPath`  value to `/app/fusioncharts`.
+
+```json
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 1337,
+    "logEnabled": true,
+    "allowSave": true,
+    "savePath": "exported_images",
+    "workerCount": 2,
+    "libraryDirectoryPath": "/app/fusioncharts"
+  }
+}
+```
+
+That is it. Now restart Docker by running following command and you are done.
+
+```bash
+docker-compose build && docker-compose up
+```
+
+I hope this tutorial was helpful for you to remove the trial mark. If you need any help, feel free to reach out to our (support team)[mailto:support@fusioncharts.com] or share your feedback below.
