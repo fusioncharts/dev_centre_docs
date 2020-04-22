@@ -74,7 +74,7 @@ Get the licensed FusionCharts files. You can contact our [sales team](mailto:sal
 
 Go to `fusionexport-docker` package that you downloaded from our website. Open `fusionexport-docker/docker-composer.yml` and add an entry in the `volume` section:
 
-```yml
+```
 fusionexport:
     build:
       context: ./service
