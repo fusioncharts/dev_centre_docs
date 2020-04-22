@@ -4,7 +4,9 @@ description: Learn how to export time-series charts made using FusionTime in Fus
 heading: Export FusionTime charts
 ---
 
-> **Important Note:** You need FusionExport v1.2.3 and above to be able to export FusionTime charts. You can check the version of your package by using `-v` option. In case of if you are using older version, visit [the download page](https://www.fusioncharts.com/download/fusionexport) to download the latest version of FusionExport.
+<p class="alert alert-info mb-1 mt-1">
+**Important Note:** You need FusionExport v1.2.3 and above to be able to export FusionTime charts. You can check the version of your package by using `-v` option. In case of if you are using older version, visit [the download page](https://www.fusioncharts.com/download/fusionexport) to download the latest version of FusionExport.
+</p>
 
 Exporting charts built using FusionCharts is a straightforward affair. All you have to do is, pass the chart configurations to `chartConfig` and you are done. With FusionTime things are little different. Since, FusionTime uses [DataStore](https://www.fusioncharts.com/dev/fusiontime/fusiontime-data-engine/overview) which consists of data and schema, simply passing the data to `dataSource` or any other property does not work. In this tutorial we will learn how to overcome this issue.
 
@@ -47,10 +49,11 @@ In case if you find the concept of `data` and `schema` confusing, we highly reco
 
 ## Implementation
 
-In this tutorial, we will be rendering following chart:
+In this tutorial, we will be exporting following chart:
+
+{% embed_ftChart single-series-line %}
 
 Source code of this chart is as follows:
-
 ```javascript
 Promise.all([
    loadData('https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'),
@@ -124,7 +127,7 @@ const chartConfig = [
         ],
       },
       caption: {
-        text: "Sales Analysis json data all",
+        text: "Sales Analysis",
       },
       subCaption: {
         text: "Grocery",
