@@ -110,4 +110,4 @@ That is it. Now restart Docker by running following command and you are done.
 docker-compose build && docker-compose up
 ```
 
-I hope this tutorial was helpful for you to remove the trial mark. If you need any help, feel free to reach out to our (support team)[mailto:support@fusioncharts.com] or share your feedback below.
+I hope this tutorial was helpful for you to remove the trial mark. If you need any help, feel free to reach out to our [support team](mailto:support@fusioncharts.com) or share your feedback below.
