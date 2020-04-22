@@ -3,8 +3,20 @@ title: FusionExport Release Notes | FusionCharts
 description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
+<h2 class="sub-heading">v1.2.3</h2>
 
-<h2 class="sub-heading">Version 1.2.2</h2>
+<p class="release-date">21st April 2020</p>
+
+<h4 class="sub-heading">Improvements</h4>
+
+- **Support for FusionTime**: No need to add FusionTime files in the templates because the FusionExport engine comes with the support for FusionTime as well.
+- **Reduced build size**: There were many external packages used in the FusionExport core. However, in this build, we have done the cleanup to ensure that FusionExport is as light as possible.
+
+<h4 class="sub-heading">Bugs</h4>
+
+- **Better handling of FusionCharts library**: For those who have a partial license of the product, it was difficult to render charts. Fear not; this issue has been fixed.
+
+<h2 class="sub-heading">v1.2.2</h2>
 
 <p class="release-date">20th January 2020</p>
 
@@ -24,7 +36,7 @@ heading: FusionExport Release Notes
 
 - **Dependency issues:** In the previous release, we included all the dependencies in the build itself. However, it led to a few issues while executing FusionExport. We have resolved that issue.
 
-<h2 class="sub-heading">Version 1.2.1</h2>
+<h2 class="sub-heading">v1.2.1</h2>
 
 <p class="release-date">28th August 2019</p>
 
@@ -32,7 +44,7 @@ heading: FusionExport Release Notes
 
 - **No more External Dependencies:** In v1.1.1, we made by allowing you to download dependencies during runtime. However, this created a huge backlash as many of our customers run FusionExport behind a firewall. Hence, with this minor release, we have reverted back the change.
 
-<h2 class="sub-heading">Version 1.2.0</h2>
+<h2 class="sub-heading">v1.2.0</h2>
 
 <p class="release-date">8th August 2019</p>
 
@@ -46,7 +58,7 @@ heading: FusionExport Release Notes
 
 - **Supports FusionCharts v3.14:** This version also support the latest version of FusionCharts so that you are up to date with the FusionCharts engine as well.
 
-<h2 class="sub-heading">Version 1.1.1</h2>
+<h2 class="sub-heading">v1.1.1</h2>
 
 <p class="release-date">23rd April 2019</p>
 
@@ -54,7 +66,7 @@ heading: FusionExport Release Notes
 
 - **No more waiting while downloading:** We have reduced the file size from almost 100MB to 30MB. Don't get too excited we just removed the dependcies which are installed when you are running FusionExport for the first time.
 
-<h2 class="sub-heading">Version 1.1.0</h2>
+<h2 class="sub-heading">v1.1.0</h2>
 
 <p class="release-date">13th March 2019</p>
 
@@ -68,7 +80,7 @@ heading: FusionExport Release Notes
 
 - **Support for Headers and Footers:** Wait is now over, most requested feature of adding headers and footers is here!
 
-<h2 class="sub-heading">Version 1.0.3</h2>
+<h2 class="sub-heading">v1.0.3</h2>
 
 <p class="release-date">27th February, 2019</p>
 
@@ -76,7 +88,7 @@ heading: FusionExport Release Notes
 
 - **Annotation Object Merge :** When annotations were adding in the configurations, its behaviour was unpredictable. This issue has now been fixed.
 
-<h2 class="sub-heading">Version 1.0.2</h2>
+<h2 class="sub-heading">v1.0.2</h2>
 
 <p class="release-date">7th January, 2019</p>
 
@@ -100,7 +112,7 @@ heading: FusionExport Release Notes
 
 - **Be Transparent:** No, we are not talking about culture but transparent PNGs. FusionExport used to crash while exporting with a transparent background. Worry no more!
 
-<h2 class="sub-heading">Version 1.0.0</h2>
+<h2 class="sub-heading">v1.0.0</h2>
 
 <p class="release-date">1st October, 2018</p>
 

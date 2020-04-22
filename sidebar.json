@@ -2217,6 +2217,34 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-quality"
           },
           {
+            "title": "Export a dashboard",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
+          },
+          {
+            "title": "Export the output files as a zip",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip"
+          },
+          {
+            "title": "Export FusionTime charts",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-time-series-charts"
+          },
+          {
+            "title": "Export a D3.js chart",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
+          },
+          {
+            "title": "Remove watermark from exported files",
+            "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
+          },
+          {
+            "title": "Custom version of FusionCharts in FusionExport",
+            "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
+          },
+          {
+            "title": "Export PDF files in print format",
+            "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
+          },
+          {
             "title": "Customize the width and height of an exported chart",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart"
@@ -2227,20 +2255,13 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
           },
           {
-            "title": "Export the output files as a zip",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip"
-          },
-          {
             "title": "Override the chart config",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/override-the-chart-config"
           },
           {
-            "title": "Export a dashboard",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
-          },
-          {
             "title": "Add a logo or a heading to the dashboard",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
           },
           {
@@ -2255,6 +2276,7 @@
           },
           {
             "title": "Manipulate the output filename",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
           },
           {
@@ -2269,23 +2291,8 @@
           },
           {
             "title": "Asynchronous capture",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
-          },
-          {
-            "title": "Export a D3 chart",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
-          },
-          {
-            "title": "Disable Watermark",
-            "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
-          },
-          {
-            "title": "Custom Version of FusionCharts in FusionExport",
-            "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
-          },
-          {
-            "title": "Export PDF files in Print Format",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
           },
           {
             "title": "Customize the Dimensions of Exported Files",
