@@ -10,6 +10,7 @@ heading: FusionExport Release Notes
 <h4 class="sub-heading">Improvements</h4>
 
 - **Support for FusionTime**: No need to add FusionTime files in the templates because the FusionExport engine comes with the support for FusionTime as well.
+
 - **Reduced build size**: There were many external packages used in the FusionExport core. However, in this build, we have done the cleanup to ensure that FusionExport is as light as possible.
 
 <h4>Bugs</h4>
