@@ -8,10 +8,12 @@ heading: FusionExport Release Notes
 <p class="release-date">21st April 2020</p>
 
 <h4 class="sub-heading">Improvements</h4>
+
 - **Support for FusionTime**: No need to add FusionTime files in the templates because the FusionExport engine comes with the support for FusionTime as well.
 - **Reduced build size**: There were many external packages used in the FusionExport core. However, in this build, we have done the cleanup to ensure that FusionExport is as light as possible.
 
 <h4 class="sub-heading">Bugs</h4>
+
 - **Better handling of FusionCharts library**: For those who have a partial license of the product, it was difficult to render charts. Fear not; this issue has been fixed.
 
 <h2 class="sub-heading">v1.2.2</h2>
