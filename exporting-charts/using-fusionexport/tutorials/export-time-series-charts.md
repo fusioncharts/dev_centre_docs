@@ -5,7 +5,7 @@ heading: Export FusionTime charts
 ---
 
 <p class="alert alert-info mb-1 mt-1">
-**Important Note:** You need FusionExport v1.2.3 and above to be able to export FusionTime charts. You can check the version of your package by using `-v` option. In case of if you are using older version, visit [the download page](https://www.fusioncharts.com/download/fusionexport) to download the latest version of FusionExport.
+**Note:** You need FusionExport v1.2.3 and above to be able to export FusionTime charts. You can check the version of your package by using `-v` option. In case of if you are using older version, visit [the download page](https://www.fusioncharts.com/download/fusionexport) to download the latest version of FusionExport.
 </p>
 
 Exporting charts built using FusionCharts is a straightforward affair. All you have to do is, pass the chart configurations to `chartConfig` and you are done. With FusionTime things are little different. Since, FusionTime uses [DataStore](https://www.fusioncharts.com/dev/fusiontime/fusiontime-data-engine/overview) which consists of data and schema, simply passing the data to `dataSource` or any other property does not work. In this tutorial we will learn how to overcome this issue.
@@ -54,6 +54,7 @@ In this tutorial, we will be exporting following chart:
 {% embed_ftChart single-series-line %}
 
 Source code of this chart is as follows:
+
 ```javascript
 Promise.all([
    loadData('https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'),
@@ -97,7 +98,58 @@ Promise.all([
 
 As mentioned in the earlier example, data which you have assigned for `data` and `schema` variables, we will passing that to `data` and `schema` property in `dataSource`. Here is the implementation of the above code:
 
-```js
+<div class="code-wrapper">
+<ul class="code-tabs extra-tabs">
+
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
+
+</ul>
+
+<div class="tab-content">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using FusionCharts.FusionExport.Client; // Import sdk
+
+namespace FusionExportTest
+{
+    public static class TimeSeries
+    {
+        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
+        {
+            // Instantiate the ExportConfig class and add the required configurations
+            ExportConfig exportConfig = new ExportConfig();
+            List<string> results = new List<string>();
+
+            // Instantiate the ExportManager class
+            using (ExportManager exportManager = new ExportManager())
+            {
+                exportConfig.Set("chartConfig", File.ReadAllText("./resources/timeseries-config.json"));
+                exportConfig.Set("quality", "best");
+
+                // Call the Export() method with the export config
+                results.AddRange(exportManager.Export(exportConfig));
+            }
+
+            foreach (string path in results)
+            {
+                Console.WriteLine(path);
+            }
+
+            Console.Read();
+
+        }
+    }
+}
+</code></pre>
+</div>
+
+<div class="tab nodejs-tab">
+<pre><code class="language-javascript">
 const { ExportManager, ExportConfig } = require("..");
 
 // Instantiate ExportManager
@@ -159,7 +211,11 @@ exportManager
     console.error(err);
   });
 
-```
+</code></pre>
+</div>
+
+</div>
+</div>
 
 For `schema`, you can also pass the URL as a parameter but for the demonstration purpose we are showing how you can pass an object. As you can see above, contents of `data` is assigned to `dataSource.data.data` while contents of `schema` is assigned to `dataSource.data.schema`. Once you execute the above code, you will get the following output:
 
