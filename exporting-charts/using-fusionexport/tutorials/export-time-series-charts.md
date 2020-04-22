@@ -101,8 +101,8 @@ As mentioned in the earlier example, data which you have assigned for `data` and
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
 
-    <li class="active"><a data-toggle="csharp">C#</a></li>
-    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li class="active"><a data-toggle="nodejs">Node.js</a></li>
+    <li><a data-toggle="csharp">C#</a></li>
 
 </ul>
 
@@ -148,7 +148,7 @@ namespace FusionExportTest
 </code></pre>
 </div>
 
-<div class="tab nodejs-tab">
+<div class="tab nodejs-tab active">
 <pre><code class="language-javascript">
 const { ExportManager, ExportConfig } = require("..");
 
