@@ -1,7 +1,7 @@
 ---
-title: Disable Watermark | FusionCharts
+title: Remove watermark from exported files | FusionCharts
 description: This article tells how to disable watermarks while exporting the chart in fusionexport.
-heading: Disable Watermark
+heading: Remove FusionCharts and FusionExport watermark from your exported files
 ---
 
 FusionExport is used to export dashboards to images and PDFs. The exported chart using FusionExport consists of two types of watermark:

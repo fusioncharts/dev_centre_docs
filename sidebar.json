@@ -2229,19 +2229,19 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/export-time-series-charts"
           },
           {
-            "title": "Export a D3 chart",
+            "title": "Export a D3.js chart",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
           },
           {
-            "title": "Disable Watermark",
+            "title": "Remove watermark from exported files",
             "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
           },
           {
-            "title": "Custom Version of FusionCharts in FusionExport",
+            "title": "Custom version of FusionCharts in FusionExport",
             "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
           },
           {
-            "title": "Export PDF files in Print Format",
+            "title": "Export PDF files in print format",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
           },
           {

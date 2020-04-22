@@ -1,7 +1,7 @@
 ---
-title: Custom Version of FusionCharts in FusionExport | FusionCharts
+title: Use custom version of FusionCharts in FusionExport | FusionCharts
 description: This article talks about how to update the custom version of FusionCharts in FusionExport.
-heading: Custom version of FusionCharts in FusionExport
+heading: Use custom version of FusionCharts in FusionExport
 ---
 
 By default, whenever you download FusionExport it uses the latest version of FusionCharts. However, you might be using an older version of FusionCharts, for example - 3.11. FusionExport allows you to override the default FusionCharts version with the version you are using.
