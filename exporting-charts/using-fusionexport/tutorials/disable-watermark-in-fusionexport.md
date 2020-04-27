@@ -4,55 +4,40 @@ description: This article tells how to disable watermarks while exporting the ch
 heading: Remove FusionCharts and FusionExport watermark from your exported files
 ---
 
-FusionExport is used to export dashboards to images and PDFs. The exported chart using FusionExport consists of two types of watermark:
+The exported chart using FusionExport consists of two types of watermark:
 
-> The exported chart consists of watermarks only if you are not using the licensed version of FusionExport.
-
-- FusionCharts Trial Mark
-- FusionExport Trial Mark
+1. FusionCharts Trial Mark
+2. FusionExport Trial Mark
 
 ![Water Mark](/images/export-chart-with-watermark.png)
 
-FusionExport, allow you to remove trial marks from your exported chart. Before you start with the code implementations to remove the trial marks, check out the following video which contains the step by step process to remove the trails marks in FusionExport.
+> **Note**: The exported chart consists of watermarks only if you are not using the licensed version of FusionExport and FusionCharts.
+
+The most important step to remove both the watermark is to purchase the licensed versions of both FusionExport and FusionCharts. You can contact our [sales team](mailto:sales@fusioncharts.com) or go to our [pricing page](https://www.fusioncharts.com/buy) to download the licensed packages of FusionExport and FusionCharts.
+
+Before you start with the code implementations to remove the trial marks, check out the following video which contains the step by step process to remove the trails marks in FusionExport.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;">
     <iframe src="https://www.loom.com/embed/527a63befb2f46dd9b296ae6d6dc6b1b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
 
+
 Now, let’s check out the basic steps to remove the watermarks from your exported chart.
 
-## Prerequisites
+## Remove FusionExport watermark
 
-Before you start, ensure that you have:
+It is the most straightforward step to remove the watermark. Once you have purchased the license of FusionExport, run the licensed package and export; FusionExport watermark will go away.
 
-1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
-
-2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
-
-3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
-
-## Remove FusionExport Watermark
-
-To remove FusionExport watermark, you need to purchase the licensed version. Contact our [sales team](mailto:sales@fusioncharts.com) to purchase the license. Once you have purchased the license, run the licensed package and export; FusionExport watermark will go away.
-
-The exported chart without the FusionExport trail mark looks like as shown below:
+The exported chart without the FusionExport trail mark looks like, as shown below:
 
 ![FusionExport Water Mark removed](/images/export-chart-without-export-watermark.png)
 
-## Remove FusionCharts Trial mark
+## Remove FusionCharts trial mark
 
-To remove the FusionCharts watermark, you have to buy a FusionCharts licensed version and use the downloaded files as a custom library. You can either contact our [sales team](mailto:sales@fusioncharts.com) or go to our [pricing page](https://www.fusioncharts.com/buy) to download the licensed package of FusionCharts.
+To remove the FusionCharts trial mark, you have to purchase the license of FusionCharts and tell FusionExport that you have the license. To do that, you have to override the default package version of **FusionCharts** in **FusionExport** with your licensed version by passing `-L` option of FusionExport. Here are the steps:
 
-You can override the default package version of **FusionCharts** in **FusionExport** with your current version by passing your custom FusionCharts directory to the `-L` options of FusionExport.
-
-```bash
-./fusionexport -L <path_to_fusioncharts_lib>
-```
-
-To remove the FusionCharts watermark, follow the steps below:
-
-- Copy all the files in the `js` folder of your licensed distribution.
-- Place all the files present inside the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file.
+1. Copy all the files in the `js` folder of your licensed distribution.
+2. Place all the files present inside the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file.
 
 To run licensed FusionExport with licensed FusionCharts run:
 
@@ -66,13 +51,7 @@ After removing the watermarks, the chart looks like:
 
 ## Remove trial mark in Docker
 
-As mentioned earlier, to remove FusionExport watermark, you need to purchase the licensed version. Contact our [sales team](mailto:sales@fusioncharts.com) to purchase the license. They will be sharing a Docker package where watermark is not present. Once you have purchased the license, run the licensed package and export; FusionExport watermark will go away.
-
-However, in case of FusionCharts there is a slight change in the configuration you have to do.
-
-Get the licensed FusionCharts files. You can contact our [sales team](mailto:sales@fusioncharts.com) or go to our [pricing page](https://www.fusioncharts.com/buy) to download the licensed package of FusionCharts. Keep it in your system location and get the location path where you have copied the folder.
-
-Go to `fusionexport-docker` package that you downloaded from our website. Open `fusionexport-docker/docker-composer.yml` and add an entry in the `volume` section:
+To remove the FusionExport watermark, all you have to do is run the licensed Docker package of FusionExport, which you have purchased. However, to remove FusionCharts watermark, get the location path where you have the licensed FusionCharts folder. Go to `fusionexport-docker` package that you downloaded from our website. Open `fusionexport-docker/docker-composer.yml` and add an entry in the `volume` section:
 
 ```
 fusionexport:
@@ -86,7 +65,7 @@ fusionexport:
 
 ```
 
-As you can see above, in our local system FusionCharts library is present in `/Downloads/fusioncharts-suite/js`. In your case, use the appropriate location. The same folder is mounted in `/app/fusioncharts` inside Docker container. You can choose any location you want.
+As you can see above, in our local system, licensed FusionCharts library is present in `/Downloads/fusioncharts-suite/js.` In your case, use the respective location. The same folder is mounted in `/app/fusioncharts` inside the Docker container. You can choose any location you want.
 
 Now open the `config.json` file inside the `fusionexport-docker/service/config.json` and change the `libraryDirectoryPath`  value to `/app/fusioncharts`.
 
@@ -104,10 +83,21 @@ Now open the `config.json` file inside the `fusionexport-docker/service/config.j
 }
 ```
 
-That is it. Now restart Docker by running following command and you are done.
+That is it. Now restart Docker by running the following command, and you are done.
 
 ```bash
 docker-compose build && docker-compose up
 ```
+
+## Remove trial mark in Windows Service
+
+To remove the FusionExport watermark, all you have to do is run the licensed Windows Service of FusionExport, which you have purchased and run it. To remove FusionCharts watermark, follow these steps:
+
+1. Stop FusionExport Windows Service and open windows registry.
+2. Go to the location `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\FusionCharts Technologies LLP\FusionExport Windows Service.`
+3. Set the licensed version of FusionCharts JS files in the `FCLibraryPath` key.
+4. Close the registry editor and start FusionExport Service
+
+![FusionExport watermark removal](/images/fusionexport-windows-service-no-watermark.png)
 
 I hope this tutorial was helpful for you to remove the trial mark. If you need any help, feel free to reach out to our [support team](mailto:support@fusioncharts.com) or share your feedback below.
