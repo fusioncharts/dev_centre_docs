@@ -7,6 +7,39 @@ heading: Version 3.15.x
 
 <p class="release-date">2020</p>
 
+<h4>Fixes</h4>
+
+- In Marimekko chart, using `yAxisValueDecimal` now works properly when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled.
+
+- Decimal and thousand separator attributes now work properly on Marimekko chart. 
+
+- For all 2D and 3D bar chart variants, the fontSize attribute now works properly when set with a numeric value. Earlier a JS error was thrown.
+
+- The task labels are now displayed properly in Gannt charts and are available on further horizontal scrolling. Previously, the task label overlapped with the vertical scroll bar. 
+
+- The attribute `seriesname` of a dataset is now working properly for charts rendered in IE 11 browser. Earlier, the usage of 1 {br} tag was considered as 2 {br} tags in IE 11 browser.
+
+- The event handlers `chartRollOver` and `chartRollOut`are now working properly when multiple charts are present on a web page. Earlier, upon multiple instances of hover over each other one of the charts stopped invoking the hover events and threw a JS error. 
+
+- When using stacked charts, the macros `$sum` and `$unformattedSum` are now working properly for customized tooltips.Previously, the `$sum` and `$unformattedSum` macros were returning an incorrect value.  
+
+- The "%" symbol is now displayed properly in situations where the trendline value coincides with the div line value of the yAxis of 100percent stacked charts. Earlier the "%" symbol was not visible in such situations. 
+
+
+<h4>Improvements</h4>
+
+- The space between legend items has been decreased in order to provide an improved visualization of data plots. 
+
+- When exporting spark charts to a CSV file, the exported csv data displays now displays column headers. Previously, the header was not included in the CSV file.
+
+- Plot events and tooltips work properly with CSS 2D transformations like rotate, skew, skewX, skewY, matrix, or any combination of them.
+
+- Crossline tooltips on zoomLine and zoomLineDY charts now display sorted values in decreasing order.
+
+- Using the `isRaw` boolean property `getJSONData()` and `getChartData()` now return property names in the same format as defined in the dataSource.
+
+- The space between legend items has been decreased in order to provide an improved visualization of data plots. 
+
 
 <h2 class="sub-heading">Version 3.15.1-sr.1</h2>
 

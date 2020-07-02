@@ -1,0 +1,14 @@
+[{
+        "name": "Time",
+        "type": "date",
+        "format": "%Y %b"
+      },
+      {
+        "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "Rainfall",
+        "type": "number"
+      }
+    ]

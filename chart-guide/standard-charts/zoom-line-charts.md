@@ -32,6 +32,7 @@ To create a zoom line chart follow the steps given below:
 
 * Specify the thickness of the line on the char using `lineThickness` attribute.
 
+
 > The anchors in the zoom line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomline) page of zoomline chart.
@@ -51,6 +52,30 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 > The performance of a zoom line chart is based on the technical capabilities of a browser. A typical zoom line chart can render up to 10,000 data points without any performance issues.
 
 > The anchors in the zoom line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
+
+## Displaying values in tooltips
+
+By default the `useCrossLine` attribute is set to 1, enabled. When `useCrossLine` is enabled the chart displays data values for all the series when hovering a data point, the chart displays these values in tooltips aligned with a vertical line in descending order. When `useCrossLine` is set to 0, disabled, hovering a data point only shows the values for that data point.
+
+To set useCrossLine refer to the following code:
+
+```json
+{
+  "chart": {
+    "useCrossLine": "1"
+  },
+}
+```
+
+The following chart has useCrossLine set to 1:
+
+{% embed_chart standard-charts-zoom-line-charts-crossline-example-1.js %}
+
+The following chart has useCrossLine set to 0:
+
+{% embed_chart standard-charts-zoom-line-charts-crossline-example-2.js %}
+
+[Try it yourself](https://jsfiddle.net/fusioncharts/h4ufbgs9/6/) 
 
 ## Create a Zoom line Dual Y-axis Chart
 

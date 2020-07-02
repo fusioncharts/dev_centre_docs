@@ -93,6 +93,16 @@ Refer to the code below:
     }
 }
 ```
+## Grid Lines
+
+The Time Navigator contains grid lines that visually represent data bin levels, to avoid cluttering and overlapping when there's a lot of data these grid lines adjust automatically and might show labels at different intervals depending on available space.
+
+![gridlines behavior](/images/gridlines_timenavigator.png)
+
+{% embed_ftChart fusiontime-timenavigator-gridlines %}
+
+[__Try it yourslef!__](https://jsfiddle.net/fusioncharts/wvd08ebq/)
+
 
 ## Style Definition
 

@@ -800,7 +800,7 @@
         "name": "forceYAxisValueDecimals"
       },
       {
-        "description": "If you've opted to not adjust div lines, you can specify the div line values decimal precision using this attribute.",
+        "description": "Specifies the decimal precision of yAxis values when adjustDiv is set to 0.",
         "range": "0-10",
         "type": "Number",
         "name": "yAxisValueDecimals"

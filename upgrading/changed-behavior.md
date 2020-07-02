@@ -4,102 +4,110 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.2. 
 
-## Exporting of Gantt and Spark Charts as XLSX
+## Task labels in Gannt Charts 
 
-You can now export Gantt and Spark Line charts in CSV or XLSX format, and the files display chart data correctly.
+In Gantt charts, the task labels are now displayed properly. Previously, when horizontal scrolling the task labels overlapped with the vertical scroll bar.
 
 The Gantt chart looks like as shown below:
 
-{% embed_chart standard-charts-gantt-chart-with-csv-xlsx-export.js %}
+(ImageBefore) (ImageAfter)
 
-Export the above chart in CSV or XLSX format.
 
-## Legend Position in all Charts
+## Legend spacing in all Charts
 
-In all charts in FusionCharts XT, you can now specify the legend using the attribute `legendPosition`. You can set its value to - `bottom`, `top`, `top-left`, `top-right`, `bottom-left`, `bottom-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, or `absolute`.
+For an optimal data visualization, the space between legend items has been decreased in order to improve the visual space of the data plot. 
 
-In the chart below, the legend is placed at the `top-right` of the chart:
+For more information see [legend](chart-guide/chart-configurations/legend).
 
-{% embed_chart chart-configurations-legend-example-16.js %}
+(ImageBefore) (ImageAfter)
 
-## Decouple Scrollbar from Axis
 
-FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar independently of the X-axis.
+## Improved the csv structure for Spark Charts  
 
-- In charts where the X-axis is located at the bottom or the top (as in a column chart), you can set the value of the `scrollPosition` attribute to `top` or `bottom`.
+FusionCharts XT suite now allows Spark Charts to export csv files which contain label names for the column headers. Previously, exported spark charts data to a csv file had no label name for the column headers. 
 
-- In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
+For more information see, [spark charts](chart-guide/standard-charts/spark-charts)
 
-## Height of Navigation Bar in Treemap After Drill Down
+(Need screenshots)
 
-In Treemaps, you can now set a custom height to the navigation bar after drill down, using the `navigationBarHeight` attribute. Earlier the navigation bar would expand when you drilled down. The chart has been optimized to prevent that issue.
 
-**Before Drill Down**
 
-![Treemap-pre-drilldown-NEW](/images/Treemap-pre-drilldown-NEW.png)
+## The "%" symbol correctly displays in all Stacked Charts
 
-**After Drill Down**
+In Stacked bar charts the percentage “%” symbol now displays properly on the numeric axis. Previously, when the stack100Percent attribute was set to 1, the “%” symbol did not get applied on the numeric axis
 
-![Treemap-post-drilldown-NEW](/images/Treemap-post-drilldown-NEW.png)
+(ImageBefore) (ImageAfter)
 
-In the screenshots below, you can see how the navigation bar expanded when drill down was performed in earlier versions.
 
-**Before Drill Down**
+## Setting yAxisValueDecimals when setAdaptiveYMin is enabled.
 
-![Treemap-pre-drilldown-OLD](/images/Treemap-pre-drilldown-OLD.png)
+yAxisValueDecimal now displays the right number of decimal places when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled. Previously, yAxisValueDecimal failed to work  properly with values lower than 3 when `setAdaptiveYMin` was enabled.
 
-**After Drill Down**
+**Before the fix**
 
-![Treemap-post-drilldown-OLD](/images/Treemap-post-drilldown-OLD.png)
+yAxisValueDecimals is to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 3 decimal places. 
 
-## Radar Charts Optimized for Resizing After Using `radarRadius`
+![Decimal Issue](/images/Decimal_Issue.png)
 
-In Radar charts, you can now explicitly mention the value of the `radarRadius` attribute and then resize the chart without any issue. Previously, when you did this, the long labels and the chart border would be displaced. The chart has been optimized for resizing to ensure that does not happen any longer.
+**After the fix**
 
-The live chart below displays this behavior:
+yAxisValueDecimals is to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 2 decimal places. 
 
-{% embed_chart changed-behavior-radar-chart-example-1.js %}
+![Decimal Fix](/images/Decimal_Fix.png)
 
-## Scrolling in Box and Whisker Chart
 
-You can now enable scrolling in Box and Whisker charts. Use the `numVisiblePlot` attribute to set the number of plot points visible on the chart canvas. The scrollbar will automatically appear when there are more plot points than the ones you choose to display on the chart canvas.
+## Crossline tooltips position.
 
-The live chart below displays this behavior:
+zoomline and zoomlineDY charts now show tooltips values sorted in decreasing order. Previously, tooltip values were displayed in the same order they had on the category object. For further information refer to [Displaying Values in Tooltips](chart-guide/standard-charts/zoom-line-charts#displaying-values-in-tooltips)
 
-{% embed_chart changed-behavior-box-and-whisker-example-2.js %}
 
-## Tooltip Edges in Pie 2D/3D and Doughnut 2D/3D Charts
+## Returning property names using getJSONData() and getChartData() 
 
-The edges of the tooltips in Pie and Doughnut (2D/3D) now appear rounded when you set the value of the attribute `tooltipBorderRadius`.
+With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned al property names as lowercase regardless of the casing used on the dataSource.
 
-The live chart below displays this behavior:
+Previously `getJSONData()` and `getChartData()` returned all property names as lower case.
 
-{% embed_chart changed-behavior-pie-chart-example-3.js %}
+![isRaw disabled](/images/isRaw_disabled.png)
 
-## Space Management in Pie 2D/Doughnut 2D Charts
+Now `getJSONData()` and `getChartData()` return all property names as as defined on the data source. 
 
-Pie 2D and Doughnut 2D charts now retain their plot size even if you turn off data labels and data values. Earlier the plot would shrink if you turned those off. Space management has been drastically improved now.
+![isRaw enabled](/images/isRaw_enabled.png)
 
-The live chart below displays this behavior:
+For more information refer to [getChartData](api/fusioncharts/fusioncharts-methods#getChartData) and [getJSONData](api/fusioncharts/fusioncharts-methods#getJSONData).
 
-{% embed_chart changed-behavior-pie-chart-example-4.js %}
 
-In earlier versions:
+## Task labels in Gannt Charts 
 
-**With Labels and Values turned on:**
+In Gantt charts, the task labels are now displayed properly. Previously, when scrolling horizontally  the task labels overlapped with the vertical scroll bar.
 
-![Pie chart with labels and values visible in earlier version](/images/pie2d-label-value-on.png)
+**Before the fix**
+![label overlap](/images/LabelOverlap_original.png)
 
-**With Labels and Values turned off:**
+**After the fix**
+![label overlap fixed](/images/LabelOverlap_update.png)
 
-![Pie chart with labels and values turned off in earlier version](/images/pie2d-label-value-off.png)
 
-## Gantt Chart Values Unaffected by Browser Resizing
+## Legend spacing in all Charts
 
-Previously, in Gantt charts, if you set the width in percentage and used the `scrollToDate` attribute, the start dates of all charts changed whenever you resized the browser window. The chart has been modified to ensure that the data values are now properly maintained in the above circumstance.
+For an optimal data visualization, the space between legend items has been decreased in order to improve the visual space of the data plot. 
 
-The live chart below displays this behavior:
+For more information see [legend](chart-guide/chart-configurations/legend).
 
-{% embed_chart changed-behavior-gantt-example-5.js %}
+**Before the fix**
+![legend spacing](/images/legend_spacing_original.png)
+
+**After the fix**
+![legend spacing fixed](/images/legend_spacing_update.png)
+
+
+## The "%" symbol correctly displays in all Stacked Charts
+
+In Stacked bar charts the percentage "%" symbol now displays properly on the numeric axis. Previously, when the `stack100Percent` attribute was set to 1, the "%" symbol did not get applied on the numeric axis
+
+**Before the fix**
+![legend spacing](/images/percentage_original.png)
+
+**After the fix**
+![legend spacing](/images/percentage_update.png)

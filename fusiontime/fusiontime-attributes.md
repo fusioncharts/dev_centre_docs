@@ -18,6 +18,7 @@ new FusionCharts({
     dataSource: {
 		xAxis {
 			plot: ' ', //Column Name
+			showTimeSpanMarkerTooltipAt: , // Crosslines on time span markers 
 			timemarker: [{
 				// Attributes of Time Marker
 			}],
@@ -39,6 +40,11 @@ new FusionCharts({
 		<td>`plot`</td>
 		<td>String</td>
 		<td>Defines the column, which will be plotted along this axis.</td>
+	</tr>
+	<tr>
+		<td>`showTimeSpanMarkerTooltipAt`</td>
+		<td>Number</td>
+		<td>Specifies how to show the time span marker tooltip. Valid values are [1,0]</td>
 	</tr>
 	<tr>
 		<td>`timeMarker`</td>
@@ -2002,6 +2008,7 @@ To handle the above cases, the padding modifiers are listed below:
 | `0` (Zero)       | Zero padding (For example, **12/2/2018**)   |
 
 > The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
+
 
 ## Apply CSS Transform
 

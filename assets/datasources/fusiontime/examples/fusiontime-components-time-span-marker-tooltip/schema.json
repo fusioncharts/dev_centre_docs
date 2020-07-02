@@ -1,0 +1,11 @@
+[{
+          "name": "Time",
+          "type": "date",
+          "format": "%d/%m/%y"
+        }, {
+          "name": "Value",
+          "type": "number"
+        },{
+  "name": "type",
+  "type": "string"
+}]

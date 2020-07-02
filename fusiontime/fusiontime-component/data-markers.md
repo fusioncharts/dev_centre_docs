@@ -116,6 +116,26 @@ A time-series chart with pin type data marker looks like as shown below:
 
 LIVE CHART
 
+### Data Markers visibility
+
+Date specified data markers like "02/15/2020" are visible until the immediate time hierarchy, markers that specify time like "02/15/2020 14:30" are visible until two immediate time hierarchies.
+
+
+In the following example data marker is specified at "02/16/2020 13:40:30"
+![seconds marker](/images/seconds_marker.png)
+
+In the following example data marker is specified at "02/16/2020 13:40"
+![minutes marker](/images/minutes_marker.png)
+
+In the following example data marker is specified at "02/16/2020"
+![day marker](/images/day_marker.png)
+
+
+{% embed_ftChart fusioncharts-data-markers-levels %}
+
+[__Try it yourself__]()
+
+
 ## Data Markers in MultiVariate Chart
 
 When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.

@@ -26,6 +26,10 @@
                   {
                     "title": "Rendering Different Charts",
                     "path": "/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript"
+                  },				  
+                  {
+                    "title": "CSS Transformations",
+                    "path": "/getting-started/plain-javascript/css-transformations"
                   }
                 ]
               },
@@ -1824,7 +1828,8 @@
               },
               {
                 "title": "What's New",
-                "path": "/upgrading/whats-new"
+                "path": "/upgrading/whats-new",
+				"visibility": true
               },
               {
                 "title": "Changed Behavior",

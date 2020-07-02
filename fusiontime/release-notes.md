@@ -4,6 +4,34 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.2</h2>
+
+<p class="release-date"> 2020</p>
+
+<h4 class="sub-heading">Improvements</h4>
+
+- Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick.
+
+For more information see, [binning](fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
+
+- Now you can use `showTimeSpanMarkerTooltipAt` to set how to display time span marker tooltips.
+
+- CRS labels now show time information when data binning happens in time units.
+
+- Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick. For more information see  [Data Binning](fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
+
+- In range series charts, plots that have their entire range inside the reference zone now standout better when you highlight the reference zone. For more information refer to the [reference zone documentation](fusiontime/fusiontime-component/reference-zone-in-fusiontime)
+
+- Improved the density of grid lines on the time navigator, now each grid line has a label. Previously, gridlines number was higher and labeling wasn't clear. For more information refer to the [time navigator documentation](/fusiontime/fusiontime-component/time-navigator).
+
+
+
+<h4>Fixes<h4>
+
+- Data points between points without values now have a visual representation on area plots, previously these points were not visible on charts.
+
+- Area plots now work properly when using negative values, previously borders were plotted incorrectly. For more in formation refer to the  [area plots](/fusiontime/fusiontime-component/plot-types-in-fusiontime#area)
+
 <h2 class="sub-heading">Version 2.1.1</h2>
 
 <p class="release-date">17th March, 2020</p>

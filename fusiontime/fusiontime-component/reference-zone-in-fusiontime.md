@@ -210,3 +210,19 @@ dataSource: {
     }]
 }
 ```
+## Reference Zone in a Range Series Chart
+
+![Reference zone in range series](/images/ref_zone_range_series.png)
+
+- In an area-range series chart, the reference zone only highlights plots when their  minimum and maximum values fall between the zone.
+
+- In a column-area range series chart columns don't get highlighted. 
+
+An area-range chart with a reference zone looks as shown below:
+
+{% embed_ftChart reference-zone-in-range-series %}
+
+[__Try it yourself__](https://jsfiddle.net/fusioncharts/ntodmwLs/)
+
+In the above chart, if you hover over the notch of each reference zone, you will notice that the minimum and maximum values of the zone will be visible on the axis for which the reference zone has been drawn.
+

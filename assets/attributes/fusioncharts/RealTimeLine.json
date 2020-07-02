@@ -736,8 +736,8 @@
         "name": "showDivLineValues"
       },
       {
-        "description": "Decimal places for y-axis values.",
-        "range": "",
+        "description": "Specifies the decimal precision of yAxis values when adjustDiv is set to 0.",
+        "range": "1-10",
         "type": "Number",
         "name": "yAxisValueDecimals"
       },

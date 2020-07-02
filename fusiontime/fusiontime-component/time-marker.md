@@ -155,6 +155,46 @@ A sample chart is shown below:
 
 {% embed_ftChart fusiontime-components-time-span-marker-full %}
 
+
+### Time Span Marker Tooltip
+
+The `showTimeSpanMarkerTooltipAt` attribute allows you to configure the behavior of time span marker tooltips. This attribute accepts either 1 or 0.
+
++ Setting `showTimeSpanMarkerTooltipAt` to 0 disables the time span marker tooltip. 
+
++ Setting `showTimeSpanMarkerTooltipAt` to 1 shows the time span marker tooltip while the time span marker width is less than the width of the chart canvas.
+
++ When `showTimeSpanMarkerTooltipAt` is not specified the behavior is the same as setting it to 1.
+
+When `showTimeSpanMarkerTooltipAt` is set to 0 if you hover the mouse over any part of the chart canvas a vertical crossline shows bin details in a tooltip. 
+
+In the example below `showTimeSpanMarkerTooltipAt` is set to 1, hovering over a time span marker shows its tooltip. If we zoom in until the time span marker is bigger than the chart canvas, hovering over the time span marker now shows a vertical crossline displaying bin details on a tooltip. This behavior could be useful in cases where you have various time span markers that should be easy to identify on  a zoomed out view and can be explored in more detail while zoomed in.
+
+{% embed_ftChart fusiontime-components-time-span-marker-tooltip %}
+
+Refer to the code given below:
+
+```javascript
+xAxis: {
+    plot: 'Time',
+    showTimeSpanMarkerTooltipAt: 1, 
+	timemarker: [{
+        start: 'Mar-1980',
+        end: 'Jun-1983',
+        label: 'US inflation peaked at 14.8%.',
+        timeFormat: "%b-%Y",
+        type: 'full',
+        style: {
+            marker: {
+                fill: '#f8b8b7'
+            }
+        }
+    }]
+}
+```
+
+[__Try it Yourself__](https://jsfiddle.net/fusioncharts/jntb04f9/)
+
 ## Style Definition
 
 You can set the cosmetic properties of all the parts of a time marker using familiar CSS styling approach by specifying the different style parameters in the 'style' object' of the 'timeMarker' object. Even the cosmetic properties for the hover state of each time marker element can be specified.
