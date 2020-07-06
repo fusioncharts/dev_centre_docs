@@ -806,7 +806,7 @@
         "name": "forceYAxisValueDecimals"
       },
       {
-        "description": "Specifies the decimal precision of yAxis values when adjustDiv is set to 0."
+        "description": "Specifies the decimal precision of yAxis values when adjustDiv is set to 0.",
         "range": "0-10",
         "type": "Number",
         "name": "yAxisValueDecimals"
