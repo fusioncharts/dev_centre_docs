@@ -4,19 +4,15 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
-<h2 class="sub-heading">Version 2.2</h2>
+<h2 class="sub-heading">Version 2.2.0</h2>
 
-<p class="release-date"> 2020</p>
+<p class="release-date">14th July, 2020</p>
 
 <h4 class="sub-heading">Improvements</h4>
 
-- Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick.
-
-For more information see, [binning](fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
-
 - Now you can use `showTimeSpanMarkerTooltipAt` to set how to display time span marker tooltips.
 
-- CRS labels now show time information when data binning happens in time units.
+- Custom Range Selector (CRS) labels now show time information when data binning happens in time units.
 
 - Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick. For more information see  [Data Binning](fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
 
@@ -26,7 +22,7 @@ For more information see, [binning](fusioncharts-aspnet-visualization/components
 
 
 
-<h4>Fixes<h4>
+<h4>Fixes</h4>
 
 - Data points between points without values now have a visual representation on area plots, previously these points were not visible on charts.
 
@@ -36,7 +32,7 @@ For more information see, [binning](fusioncharts-aspnet-visualization/components
 
 <p class="release-date">17th March, 2020</p>
 
-<h4 class="sub-heading">Announcement</h4>
+<h4>Fixes</h4>
 
 - Change in license agreements.
 
