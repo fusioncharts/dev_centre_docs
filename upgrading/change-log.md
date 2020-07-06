@@ -13,7 +13,7 @@ heading: Version 3.15.x
 
 - Decimal and thousand separator attributes now work properly on Marimekko chart.
 
-- For all 2D and 3D bar chart variants, the fontSize attribute now works properly when set with a numeric value. Earlier a JS error was thrown.
+- For all 2D and 3D bar chart variants, the `fontSize` attribute now works properly when set with a numeric value. Earlier a JS error was thrown.
 
 - The task labels are now displayed properly in Gannt charts and are available on further horizontal scrolling. Previously, the task label overlapped with the vertical scroll bar.
 
@@ -32,9 +32,9 @@ heading: Version 3.15.x
 
 - When exporting spark charts to a CSV file, the exported csv data displays now displays column headers. Previously, the header was not included in the CSV file.
 
-- Plot events and tooltips work properly with CSS 2D transformations like rotate, skew, skewX, skewY, matrix, or any combination of them.
+- Plot events and tooltips work properly with CSS 2D transformations like `rotate`, `skew`, `skewX`, `skewY`, `matrix`, or any combination of them.
 
-- Crossline tooltips on zoomLine and zoomLineDY charts now display sorted values in decreasing order.
+- Crossline tooltips on `zoomLine` and `zoomLineDY` charts now display sorted values in decreasing order.
 
 - Using the `isRaw` boolean property `getJSONData()` and `getChartData()` now return property names in the same format as defined in the dataSource.
 
