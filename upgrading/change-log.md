@@ -7,6 +7,10 @@ heading: Version 3.15.x
 
 <p class="release-date">14th July, 2020</p>
 
+<h4>New Features</h4>
+
+- Starting version 3.15.2, FusionCharts expanded the coverage of existing dataPlot events to the nodes and links of the Chord diagram. Events such as Click and Hover as well as support for link attributes were added to nodes, ribbons and labels for Chord diagrams. 
+
 <h4>Fixes</h4>
 
 - In Marimekko chart, using `yAxisValueDecimal` now works properly when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled.
