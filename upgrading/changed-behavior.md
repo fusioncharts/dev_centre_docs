@@ -67,13 +67,47 @@ yAxisValueDecimals is to 2 and setAdaptiveYMin to 1 (enabled) the chart shows va
 
 With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned al property names as lowercase regardless of the casing used on the dataSource.
 
-Previously `getJSONData()` and `getChartData()` returned all property names as lower case.
+ `getJSONData()` can now return all property names as defined on the data source.
 
-![isRaw disabled](/images/isRaw_disabled.png)
+```
+        "chart": {
+          "theme": "fusion",
+          "caption": "Top 5 Stores by Sales",
+          "subCaption": "Last month",
+          "yAxisName": "Sales (In USD)",
+          "numberPrefix": "$",
+          "alignCaptionWithCanvas": "0"
+        },
 
-Now `getJSONData()` and `getChartData()` return all property names as as defined on the data source.
+        "data": [{
+            "label": "Bakersfield Central",
+            "value": "880000",
+            "aCamelCaseValue":"text"
+          },
+    ...
+    data = topStores.getJSONData({isRaw:1});
+```
 
-![isRaw enabled](/images/isRaw_enabled.png)
+ `getChartData()` can now return all property names as defined on the data source.
+
+```
+        "chart": {
+          "theme": "fusion",
+          "caption": "Top 5 Stores by Sales",
+          "subCaption": "Last month",
+          "yAxisName": "Sales (In USD)",
+          "numberPrefix": "$",
+          "alignCaptionWithCanvas": "0"
+        },
+
+        "data": [{
+            "label": "Bakersfield Central",
+            "value": "880000",
+            "aCamelCaseValue":"text"
+          },
+    ...
+    data = topStores.getJSONData({format:'json', isRaw:1});
+```
 
 For more information refer to [getChartData](api/fusioncharts/fusioncharts-methods#getChartData) and [getJSONData](api/fusioncharts/fusioncharts-methods#getJSONData).
 
