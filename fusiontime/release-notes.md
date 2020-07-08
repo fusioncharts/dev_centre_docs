@@ -28,6 +28,9 @@ heading: Release Notes
 
 - Area plots now work properly when using negative values, previously borders were plotted incorrectly. For more in formation refer to the  [area plots](/fusiontime/fusiontime-component/plot-types-in-fusiontime#area)
 
+- Data markers now work properly. Previously, data markers were drawn at incorrect bins in certain situations. For more in formation refer to [area plots](/fusiontime/fusiontime-component/data-markers#data-markers-visibility).
+
+
 <h2 class="sub-heading">Version 2.1.1</h2>
 
 <p class="release-date">17th March, 2020</p>

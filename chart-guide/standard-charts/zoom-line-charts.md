@@ -75,7 +75,7 @@ The following chart has useCrossLine set to 0:
 
 {% embed_chart standard-charts-zoom-line-charts-crossline-example-2.js %}
 
-[Try it yourself](https://jsfiddle.net/fusioncharts/h4ufbgs9/6/) 
+[Try it yourself](https://jsfiddle.net/fusioncharts/h4ufbgs9/7/) 
 
 ## Create a Zoom line Dual Y-axis Chart
 
