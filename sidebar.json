@@ -3,6 +3,7 @@
     "title": "FusionCharts",
     "header": "FusionCharts Suite XT",
     "icon": "fc_fusioncharts_xt",
+    "visibility": true,
     "description": "Plot 95+ charts and 1400+ data-driven maps",
     "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
     "children": [
@@ -1910,6 +1911,7 @@
     "description": "Plot high performance time-series visualizations",
     "longDescription": "Learn how to create time-series and stock charts in JavaScript",
     "icon": "fc_fusiontime",
+    "visibility": true,
     "children": [
       {
         "title": "Overview",
@@ -2170,6 +2172,7 @@
     "icon": "fc_fusionexport",
     "description": "Export full Dashboards as PDFs for use in reports and emails",
     "longDescription": "Learn how to export full dashboards in your server",
+    "visibility": true,
     "children": [
       {
         "title": "Overview",
@@ -2343,6 +2346,343 @@
       {
         "title": "Release Notes",
         "path": "/exporting-charts/using-fusionexport/fusionexport-release-notes"
+      }
+    ]
+  },
+  {
+    "title": "FusionCharts.NET",
+    "icon": "fc_net",
+    "description": "Charting library for ASP.NET MVC & ASP.NET WebForms",
+    "longDescription": "Learn how to implement FusionCharts in ASP.NET MVC and WebForms using our .NET assembly",
+    "visibility": false,
+    "children": [
+      {
+        "title": "Overview",
+        "path": "/fusioncharts-aspnet-visualization/getting-started/overview-of-fusioncharts-net-viz"
+      },
+      {
+        "title": "Getting Started",
+        "children": [
+          {
+            "title": "Installation",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net"
+          },
+          {
+            "title": "Create your First Chart",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
+          },
+          {
+            "title": "Create a chart using Razor Page",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/fusioncharts-net-using-razor"
+          },
+          {
+            "title": "Filter Chart Data",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net",
+            "visibility": false
+          },
+          {
+            "title": "Change Theme",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/change-theme-using-fusioncharts-net"
+          },
+          {
+            "title": "Export Charts",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/export-chart-using-fusioncharts-net"
+          },
+          {
+            "title": "Exception Handling",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/exception-handling-in-fcnet"
+          }
+        ]
+      },
+      {
+        "title": "Chart Types",
+        "children": [
+          {
+            "title": "List of Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net"
+          },
+          {
+            "title": "Column and Bar Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/column-bar-net"
+          },
+          {
+            "title": "Line and Spline Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/line-spline-net"
+          },
+          {
+            "title": "Area Chart",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/area-chart-net"
+          },
+          {
+            "title": "Stacked Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net"
+          },
+          {
+            "title": "Overlapped Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net",
+            "visibility": false
+          },
+          {
+            "title": "Scroll Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net",
+            "visibility": false
+          },
+          {
+            "title": "Combination Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/combination-charts-net"
+          },
+          {
+            "title": "Pie and Doughnut Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net"
+          },
+          {
+            "title": "Funnel Chart",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/funnel-chart-net"
+          },
+          {
+            "title": "Pyramid Chart",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
+          },
+          {
+            "title": "Time-Series Charts",
+            "children": [
+              {
+                "title": "Create Your First Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
+              },
+              {
+                "title": "Create Multivariate Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-multivariate-chart-net"
+              },
+              {
+                "title": "Add Multiple Data Plots",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-multiple-data-plot-chart-net"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chart Components",
+        "children": [
+          {
+            "title": "Caption and Sub-Caption",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-caption-sub-caption"
+          },
+          {
+            "title": "Axes",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-axes"
+          },
+          {
+            "title": "Data Plot",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-plot"
+          },
+          {
+            "title": "Data Value",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-value"
+          },
+          {
+            "title": "Data Labels",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-labels"
+          },
+          {
+            "title": "Legend",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-legend"
+          },
+          {
+            "title": "Tooltip",
+            "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-tooltip"
+          },
+          {
+            "title": "Time-series Components",
+            "children": [
+              {
+                "title": "Time Axis",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-axis"
+              },
+              {
+                "title": "Time Navigator",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-navigator"
+              },
+              {
+                "title": "Standard Range Selector",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/standard-range-selector"
+              },
+              {
+                "title": "Custom Range Selector",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/custom-range-selector"
+              },
+              {
+                "title": "Crossline",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/crossline-in-fcnet"
+              },
+              {
+                "title": "Y-axis",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/y-axis-in-fusiontime"
+              },
+              {
+                "title": "Predictive Data",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/predictive-data-in-fcnet"
+              },
+              {
+                "title": "Reference Lines",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-line-in-fusiontime"
+              },
+              {
+                "title": "Reference Zone",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-zone-in-fcnet"
+              },
+              {
+                "title": "Time Marker",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-marker"
+              },
+              {
+                "title": "Data Marker",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/data-markers"
+              },
+              {
+                "title": "Tooltip",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip"
+              },
+              {
+                "title": "Binning",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Data Engine",
+        "children": [
+          {
+            "title": "Overview",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-overview"
+          },
+          {
+            "title": "Data Source",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-source-data-engine"
+          },
+          {
+            "title": "Select Fields",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/select-fields"
+          },
+          {
+            "title": "Select Top Records",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/select-top-records"
+          },
+          {
+            "title": "Filter Data",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/filter-data"
+          },
+          {
+            "title": "OrderBy",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/order-by"
+          },
+          {
+            "title": "Calculated Column",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/calculated-column"
+          },
+          {
+            "title": "GroupBy",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/group-by"
+          },
+          {
+            "title": "Data Aggregation",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/aggregation"
+          },
+          {
+            "title": "GroupBy with Aggregation",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/group-by-aggregation"
+          },
+          {
+            "title": "Pivot",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/pivot"
+          },
+          {
+            "title": "Pagination",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/pagination"
+          },
+          {
+            "title": "Culture",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/culture"
+          },
+          {
+            "title": "Data Engine APIs",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
+          }
+        ]
+      },
+      {
+        "title": "API Reference",
+        "children": [
+          {
+            "title": "Visualization API",
+            "path": "/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net"
+          },
+          {
+            "title": "Events",
+            "path": "/fusioncharts-aspnet-visualization/api-reference-net/events-net"
+          }
+        ]
+      },
+      {
+        "title": "Version History",
+        "path": "/fusioncharts-aspnet-visualization/version-history-fusioncharts-net"
+      }
+    ]
+  },
+  {
+    "title": "FusionCharts University",
+    "icon": "fc_university",
+    "description": "Learn how to use FusionCharts products for your next dashboard",
+    "longDescription": "",
+    "visibility": false,
+    "children": [
+      {
+        "title": "Overview",
+        "path": "/university"
+      },
+      {
+        "title": "Tutorials",
+        "children": [
+          {
+            "title": "Creating a Real-Time Bitcoin Ticker in JavaScript",
+            "path": "/university/creating-a-realtime-bitcoin-ticker-in-javascript"
+          },
+          {
+            "title": "Building a Sales Dashboard using React Framework",
+            "path": "/university/sales-dashboard-using-react"
+          },
+          {
+            "title": "Learn how to Export a Dashboard using FusionExport",
+            "path": "/university/learn-how-to-export-a-dashboard-fusionexport"
+          },
+          {
+            "title": "Create a Funnel Chart using FusionCharts and ASP.NET Web Form",
+            "path": "/university/create-a-funnel-chart-using-fusioncharts-and-dotnet"
+          },
+          {
+            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
+            "path": "/university/create-funnel-chart-fusioncharts-mvc-dotnet"
+          },
+          {
+            "title": "Create a Column Chart using ASP.NET Framework",
+            "path": "/university/create-a-column-chart-using-fusioncharts-and-dotnet"
+          },
+          {
+            "title": "Render FusionCharts in MVC using .NET",
+            "path": "/university/render-fusioncharts-mvc-using-dotnet"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET MVC",
+            "path": "/university/create-combination-chart-using-fusioncharts-and-dotnetmvc"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
+            "path": "/university/create-combination-chart-dotnet-webform"
+          }
+        ]
       }
     ]
   }
