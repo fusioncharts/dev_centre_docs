@@ -3,6 +3,7 @@
     "title": "FusionCharts",
     "header": "FusionCharts Suite XT",
     "icon": "fc_fusioncharts_xt",
+    "visibility": true,
     "description": "Plot 95+ charts and 1400+ data-driven maps",
     "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
     "children": [
@@ -1910,6 +1911,7 @@
     "description": "Plot high performance time-series visualizations",
     "longDescription": "Learn how to create time-series and stock charts in JavaScript",
     "icon": "fc_fusiontime",
+    "visibility": true,
     "children": [
       {
         "title": "Overview",
@@ -2170,6 +2172,7 @@
     "icon": "fc_fusionexport",
     "description": "Export full Dashboards as PDFs for use in reports and emails",
     "longDescription": "Learn how to export full dashboards in your server",
+    "visibility": true,
     "children": [
       {
         "title": "Overview",
@@ -2351,6 +2354,7 @@
     "icon": "fc_net",
     "description": "Charting library for ASP.NET MVC & ASP.NET WebForms",
     "longDescription": "Learn how to implement FusionCharts in ASP.NET MVC and WebForms using our .NET assembly",
+    "visibility": false,
     "children": [
       {
         "title": "Overview",
