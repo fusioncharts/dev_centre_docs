@@ -13,7 +13,7 @@ heading: Version 3.15.x
 
 <h4>Fixes</h4>
 
-- In Marimekko chart, using `yAxisValueDecimal` now works properly when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled.
+- For cartesian axis charts `yAxisValueDecimal` now works properly when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled.
 
 - Decimal and thousand separator attributes now work properly on Marimekko chart.
 
@@ -32,9 +32,9 @@ heading: Version 3.15.x
 
 <h4>Improvements</h4>
 
-- The spacing between legend items is improved now for IE 11. Previously, the spacing was a little peculiar as white-space was being considered as a line break and '<br>' tags were considered twice.
+- The spacing between legend items is improved now for IE 11. Previously, the spacing was a little peculiar as white-space was being considered as a line break and `<br>` tags were considered twice.
 
-- When exporting spark charts as a CSV file or CSV data using 'getCSVData()' or 'getChartData('csv')' methods, the exported csv now displays column headers. Previously, the column headers were not included.
+- When exporting spark charts as a CSV file or CSV data using `ngetCSVData()` or `getChartData('csv')` methods, the exported csv now displays column headers. Previously, the column headers were not included.
 
 - Plot events and tooltips work properly with CSS 2D transformations like `rotate`, `skew`, `skewX`, `skewY`, `matrix`, or any combination of them.
 
