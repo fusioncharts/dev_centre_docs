@@ -8,9 +8,9 @@ This section is for users who are using the previous version of FusionCharts in 
 
 ## Events support to nodes and links in Chord Diagrams
 
-You can now use the following events in nodes, ribbons and labels:
+Expanded support for click and hover events node, ribbon, and labels; as well as link attributes for node, ribbon, and labels. Refer to [Chord Diagram documentation](/chart-guide/standard-charts/chord-diagram) to know more.
 
-(Chart)
+You can now use the following events in nodes, ribbons and labels:  
 
 | | |
 |---|---|---|
@@ -22,6 +22,7 @@ You can now use the following events in nodes, ribbons and labels:
 |Link | linkRollOut | Rolling out of a link | dominationFlowValue, subservientFlowValue, linked nodes, color, alpha|
 
 
+
 (Chart Example here)
 
-Refer to [Chord Diagram documentation](/chart-guide/standard-charts/chord-diagram) to know more.
+
