@@ -41,7 +41,4 @@ Chart will render here
 </html>
 ```
 
-{% embed_all  css-transform-example.js %}
-
-
 [__Try it yourself__](https://jsfiddle.net/fusioncharts/hzc1rLxa/2/)
