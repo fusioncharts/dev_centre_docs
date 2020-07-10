@@ -14,9 +14,9 @@ heading: Release Notes
 
 - Custom Range Selector (CRS) labels now show time information when data binning happens in time units.
 
-- Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick. For more information see  [Data Binning](fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
+- Improved the logic for calendar-bin to align the plots with the tick marks of the xAxis for unit multiplier. Previously, the anchor for the hour data bin was not aligned with its respective hour tick. For more information see  [Data Binning](/fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning).
 
-- In range series charts, plots that have their entire range inside the reference zone now standout better when you highlight the reference zone. For more information refer to the [reference zone documentation](fusiontime/fusiontime-component/reference-zone-in-fusiontime)
+- In range series charts, plots that have their entire range inside the reference zone now standout better when you highlight the reference zone. For more information refer to the [reference zone documentation](/fusiontime/fusiontime-component/reference-zone-in-fusiontime)
 
 - Improved the density of grid lines on the time navigator, now each grid line has a label. Previously, gridlines number was higher and labeling wasn't clear. For more information refer to the [time navigator documentation](/fusiontime/fusiontime-component/time-navigator).
 

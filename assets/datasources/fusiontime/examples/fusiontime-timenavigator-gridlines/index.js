@@ -24,6 +24,6 @@
           }],
           title: 'Rainfall (in mm)'
         }],
-        data: dataStore.createDataTable(data, schema)
+        data: dataStore
       }
     }

@@ -9,7 +9,7 @@
           theme: "fusion"
 
         },
-        data: dataTable,
+        data: dataStore,
         "xAxis": {
           "plot": "Time",
           "title": "xAxisName",

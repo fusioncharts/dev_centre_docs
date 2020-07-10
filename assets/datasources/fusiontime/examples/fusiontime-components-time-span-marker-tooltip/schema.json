@@ -1,11 +1,8 @@
 [{
-          "name": "Time",
-          "type": "date",
-          "format": "%d/%m/%y"
-        }, {
-          "name": "Value",
-          "type": "number"
-        },{
-  "name": "type",
-  "type": "string"
+  "name": "Time",
+  "type": "date",
+  "format": "%b-%Y"
+}, {
+  "name": "Interest Rate",
+  "type": "number"
 }]

@@ -1,10 +1,11 @@
 {
       type: 'timeseries',
       renderAt: 'container',     
-width: "100%"
+      width: "100%",
       height: 400,
 	 dataSource: {
-        "chart": {
+        data: dataStore,
+		"chart": {
     "paletteColors": "#ff0000, #00ff00, #0000ff",
           "animation": "0",
           "multicanvas": 0
@@ -29,7 +30,6 @@ width: "100%"
             "hour": [3,
 			6]
           }
-        },
-        data: dataStore.createDataTable(data, schema)
+        }
       }
     }
