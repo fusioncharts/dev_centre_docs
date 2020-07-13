@@ -16,11 +16,11 @@ Here is an exmaple, (hover over any chord node or links to see the events in act
 
 You can now use the following events in nodes, ribbons and labels:
 
-|Type | Event Name| Description | Parameters |
+|Type | Event Name| Description | Events Parameters |
 |---|---|---|---|---|
-|Node | `dataPlotClick` | Clicking on a node | Label, value, links (with value), color, alpha|
-|Node | `dataPlotRollOver` | Rolling into a node | Label, value, links (with value), color, alpha|
-|Node | `dataPlotRollout` | Rolling out of a node | Label, value, links (with value), color, alpha|
-|Link | `linkClick` | Clicking on a link | dominationFlowValue, subservientFlowValue, linked nodes, color, alpha|
-|Link | `linkRollOver` | Rolling into a link | dominationFlowValue, subservientFlowValue, linked nodes, color, alpha|
-|Link | `linkRollOut` | Rolling out of a link | dominationFlowValue, subservientFlowValue, linked nodes, color, alpha|
+|Node | `dataPlotClick` | Clicking on a node | `label`, `value`, `links` (with value), `color`, `alpha`|
+|Node | `dataPlotRollOver` | Rolling into a node | `label`, `value`, `links` (with value), `color`, `alpha`|
+|Node | `dataPlotRollout` | Rolling out of a node | `label`, `value`, `links` (with value), `color`, `alpha`|
+|Link | `linkClick` | Clicking on a link | `dominationFlowValue`, `subservientFlowValue`, `linkedNodes`, `color`, `alpha`|
+|Link | `linkRollOver` | Rolling into a link | `dominationFlowValue`, `subservientFlowValue`, `linkedNodes`, `color`, `alpha`|
+|Link | `linkRollOut` | Rolling out of a link | `dominationFlowValue`, `subservientFlowValue`, `linkedNodes`, `color`, `alpha`|
