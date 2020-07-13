@@ -33,7 +33,7 @@ With the introduction of the `isRaw` property `getJSONData()` and `getChartData(
 
 For more information refer to [getChartData](api/fusioncharts/fusioncharts-methods#getChartData) and [getJSONData](api/fusioncharts/fusioncharts-methods#getJSONData).
 
-## Task labels in Gannt Charts
+## Task labels in Gantt Charts
 
 In Gantt charts, the task labels are now displayed properly. Previously, when scrolling horizontally  the task labels overlapped with the vertical scroll bar.
 
