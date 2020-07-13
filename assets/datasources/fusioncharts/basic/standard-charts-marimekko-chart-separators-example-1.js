@@ -1,7 +1,7 @@
 {
   type: "marimekko",
-  width: "100%",
-  height: "100%",
+  width: "680",
+  height: "390",
   renderAt: "chart-container10",
   dataFormat: "json",
   dataSource: {
@@ -17,7 +17,7 @@
       //Hide X-axis percent value
       showxaxispercentvalues: "0",
       showsum: "1",
-      theme: "fint",
+      theme: "fusion",
       formatNumberScale: "0",
       decimals: "2",
       forceDecimals: "1",
