@@ -167,10 +167,10 @@ Separator attributes allow you to set decimal and thousands separators in charts
 * `inDecimalSeparator` Specifies the input decimal separator used in the data source.
 * `inThousandSeparator` Specifies the input thousand separator used in the data source.
 
-Different geographic regions and languages use different characters for separating decimals and thousands, for example using `,` as decimal separator instead of `.`. 
+Different geographic regions and languages use different characters for separating decimals and thousands, for example using `,` as decimal separator instead of `.`.
 
 The following chart shows the use of `,` as a decimal separator and `.` as thousands separator:
 
 {% embed_chart standard-charts-marimekko-chart-separators-example-1.js %}
 
-[Try it yourself](https://jsfiddle.net/fusioncharts/Lque2th6/12/)
+Click [here](https://jsfiddle.net/fusioncharts/Lque2th6/12/) to edit the above chart.
