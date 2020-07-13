@@ -39,4 +39,4 @@ You can apply the transformations on the parent object of a chart.
 ```
 
 Here is an exmaple (refer to the HTML tab to see the source code):
-<iframe width="100%" height="600" src="//jsfiddle.net/fusioncharts/hzc1rLxa/embedded/result,html,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="600" src="//jsfiddle.net/fusioncharts/hzc1rLxa/4/embedded/result,html,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>

@@ -10,7 +10,7 @@ This section is for users who are using the previous version of FusionCharts in 
 
 Expanded support for click and hover events node, ribbon, and labels; as well as link attributes for node, ribbon, and labels. Refer to [Chord Diagram documentation](/chart-guide/standard-charts/chord-diagram) to know more.
 
-Here is an exmaple, (hover over any chord node or links to see the events in action):
+Here is an example, (hover over any chord node or links to see the events in action):
 
 <iframe width="100%" height="530" src="//jsfiddle.net/fusioncharts/xa5thLwo/embedded/result,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
