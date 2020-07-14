@@ -32,6 +32,7 @@ To create a zoom line chart follow the steps given below:
 
 * Specify the thickness of the line on the char using `lineThickness` attribute.
 
+
 > The anchors in the zoom line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomline) page of zoomline chart.
@@ -42,7 +43,7 @@ The zoom line chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoom line chart.
 
-As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. 
+As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart.
 
 At this point, the scrollbar becomes functional, allowing the user to view the data that precedes or follows the selected section of data. To analyze the data in greater detail, the user can repeat the select and zoom process several times over (until further zooming is not possible). The chart can be restored to its original macroscopic display mode by clicking the `Reset Chart` button on the toolbar.
 
@@ -51,6 +52,28 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 > The performance of a zoom line chart is based on the technical capabilities of a browser. A typical zoom line chart can render up to 10,000 data points without any performance issues.
 
 > The anchors in the zoom line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
+
+## Displaying values in tooltips
+
+By default the `useCrossLine` attribute is set to 1, enabled. When `useCrossLine` is enabled the chart displays data values for all the series when hovering a data point, the chart displays these values in tooltips aligned with a vertical line in descending order. When `useCrossLine` is set to 0, disabled, hovering a data point only shows the values for that data point.
+
+To set `useCrossLine` refer to the following code:
+
+```json
+{
+  "chart": {
+    "useCrossLine": "1"
+  },
+}
+```
+
+The following chart has `useCrossLine` set to 1:
+
+{% embed_all standard-charts-zoom-line-charts-crossline-example-1.js %}
+
+The following chart has `useCrossLine` set to 0:
+
+{% embed_all standard-charts-zoom-line-charts-crossline-example-2.js %}
 
 ## Create a Zoom line Dual Y-axis Chart
 
@@ -72,7 +95,7 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Limit the Number of Data Labels
 
-By default, the zoom line chart displays as many data labels as can be accommodated without causing a clutter. 
+By default, the zoom line chart displays as many data labels as can be accommodated without causing a clutter.
 
 However, it is also possible to limit the maximum number of data labels that are visible at any given time by specifying the number in `numVisibleLabels` attribute. In the sample given below, the number of labels rendered on one screen is `12`. To look at the preceding or following labels, you will need to use the scroll bar.
 
@@ -96,7 +119,7 @@ Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoom line c
 
 ## Set the Distance between the Data Plots
 
-In zoom line chart, set the distance (in pixels) between consecutive data plots using the  `pixelsPerPoint` attribute. A greater number of pixels will result in a higher quality display. 
+In zoom line chart, set the distance (in pixels) between consecutive data plots using the  `pixelsPerPoint` attribute. A greater number of pixels will result in a higher quality display.
 
 Refer to the code given below:
 
@@ -118,7 +141,7 @@ Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline ch
 
 ## Set the Criteria for Anchor Display
 
-In order to reduce clutter, you can make anchors visible only when the distance between consecutive data points reaches a certain minimum value. For instance, you can instruct the chart to show anchors only when consecutive data points are `25 pixels` apart. 
+In order to reduce clutter, you can make anchors visible only when the distance between consecutive data points reaches a certain minimum value. For instance, you can instruct the chart to show anchors only when consecutive data points are `25 pixels` apart.
 
 If the chart contains plenty of data, then anchors will not be visible in the macroscopic view, where the distance between consecutive data points is less than 25 pixels. The anchors become visible only when the chart is zoomed, and the distance between consecutive data points increases to 25 pixels or above.
 
@@ -237,7 +260,7 @@ The chart will look like as shown below:
 
 ![ZoomLine chart](/gif/standard-charts-zoomline-gif-2.gif)
 
-The list of attributes to set the zooming mode of the zoomout button are: 
+The list of attributes to set the zooming mode of the zoomout button are:
 
 * Specify the `btnResetChartTooltext` attribute to replace the default tooltext of the **Reset Chart** button with the provided string.
 
@@ -345,7 +368,7 @@ Refer to the code below:
     "chart": {
         ...
         "showPeakData": "1",
-        "minPeakDataLimit": "900"    
+        "minPeakDataLimit": "900"
     },
 }
 ```
@@ -418,4 +441,4 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/) to configure the above attributes.
 
-> In the above chart, all values in the range 900-1000 will be included in the initial display. 
+> In the above chart, all values in the range 900-1000 will be included in the initial display.

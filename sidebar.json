@@ -1698,6 +1698,10 @@
                 "title": "Render Thumbnail Versions of Charts",
                 "path": "/common-use-cases/render-thumbnail-versions-of-chart"
               },
+			  {
+                "title": "CSS Transformations",
+                "path": "/common-use-cases/css-transformations"
+              },
               {
                 "title": "Create Interactive Charts Using PHP and MySQL Database",
                 "path": "/using-with-server-side-languages/tutorials/php-mysql-charts",
