@@ -26,7 +26,6 @@ A chart with custom range selector is shown below:
 
 {% embed_ftChart online-sales-multi-series %}
 
-
 ## Show/Hide Custom Range Selector
 
 By default, the Custom Range Selector is visible in every chart. However, you can turn it off if you want, by setting the value of the `enabled` attribute within the `customRangeSelector` of the `extensions` object to `0`.
@@ -48,11 +47,14 @@ Refer to the code below:
 }
 ```
 
+
 ## Behavior with data binning
 
 The Custom Range Selector displays a complete time spread when binning is defined in time units, this provides users with a better understanding and details at first glance.
 
 ![crs spread sample](/images/crs_spread.png)
+
+Zoom or pan the following example and notice binning values appearing in the custom range selector:
 
 {% embed_ftChart fusiontime-crs-label %}
 
@@ -62,13 +64,10 @@ The Custom Range Selector displays a complete time spread when binning is define
 
 Styling can be applied to following elements of the Custom Range Selector:
 
-* Title
-
-* Container
-
-* Label
-
-* Button
+- Title
+- Container
+- Label
+- Button
 
 You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
 
@@ -96,7 +95,7 @@ new FusionCharts({
                     "button-apply:hover": {}, //Object | String
                     "button-cancel:hover": {}, //Object | String
                     "select": {}, //Object | String
-                    "input": {} //Object | String 
+                    "input": {} //Object | String
                 }
             }
         }
