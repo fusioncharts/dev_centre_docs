@@ -35344,6 +35344,22 @@
 							"optional": "",
 							"nullable": "",
 							"subparams": {}
+						},
+						"isRaw": {
+							"name": "isRaw",
+							"type": ["numeric","string"],
+							"description": "When set to 1 object names return in the same format as they were defined on the data source. Value can range from 0 to 1. Default value is 0. \n [__Try it Yourself!__](https://jsfiddle.net/fusioncharts/8z54mxku/)",
+							"defaultvalue": "0",
+							"optional": true,
+							"nullable": "",
+							"subparams": {},
+							"example" : {
+								"0": {
+								"caption": "",
+								"code": "//Set isRaw to 1 to fetch data as specified in the data source. \n chartObj.getChartData({ format: ‘json’, isRaw: 1 });",
+								"type": "js"
+						}
+								}
 						}
 					}
 				},
@@ -36527,9 +36543,25 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Fetches chart data in the JSON format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `chart` object. \n\n >This function is shorthand for `chart.getChartData('json')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bkhLqh6o/ )",
+					"description": "Fetches chart data in the JSON format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `chart` object. \n\n >This function is shorthand for `chart.getChartData('json')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bkhLqh6o/)",
 					"examples": {},
-					"params": {}
+					"params": {
+						"isRaw": {
+							"name": "isRaw",
+							"type": ["numeric","string"],
+							"description": "When set to 1 object names return in the same format as they were defined on the data source. Value can range from 0 to 1. Default value is 0. \n [__Try it Yourself!__](https://jsfiddle.net/fusioncharts/s3jeh8c0) ",
+							"defaultvalue": "0",
+							"optional": true,
+							"nullable": "",
+							"subparams": {},
+							"examples": {
+								"0": {
+								"caption": "",
+								"code": "//Set isRaw to 1 to fetch data as specified in the data source. \n chartObj.getJSONData({ isRaw: 1});",
+								"type": "js"
+						}}
+						}
+						}
 				},
 				"setJSONData": {
 					"id": "setJSONData",

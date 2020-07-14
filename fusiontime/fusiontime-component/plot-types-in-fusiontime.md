@@ -82,6 +82,10 @@ A time series chart, rendered with area plot is shown below:
 
 {% embed_ftChart online-sales-single-series-area-data-plot %}
 
+You can also use negative values on area plots:
+
+{% embed_ftChart positive-negative-values-area-data-plot %}
+
 ## Stacked Area
 
 To render a time series chart with the stacked area as data plot, set the value of `type` attribute to `area` and the value of the `series` to the y-axis value.
