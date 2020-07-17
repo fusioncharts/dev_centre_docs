@@ -10,10 +10,10 @@ This section is for users who are using previous version of FusionCharts in thei
 
 yAxisValueDecimal now displays the right number of decimal places when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled. Previously, yAxisValueDecimal failed to work  properly with values lower than 3 when `setAdaptiveYMin` was enabled.
 
-**Before the fix** `yAxisValueDecimals` is to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 3 decimal places.
+**Before the fix** `yAxisValueDecimals` is set to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 3 decimal places.
 ![Decimal Issue](/images/Decimal_Issue.png)
 
-**After the fix** `yAxisValueDecimals` is to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 2 decimal places.
+**After the fix** `yAxisValueDecimals` is set to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 2 decimal places.
 ![Decimal Fix](/images/Decimal_Fix.png)
 
 ## Crossline tooltips position
@@ -22,7 +22,7 @@ yAxisValueDecimal now displays the right number of decimal places when `setAdapt
 
 ## Returning property names using getJSONData() and getChartData()
 
-With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned al property names as lowercase regardless of the casing used on the dataSource.
+With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned all property names as lowercase regardless of the casing used on the dataSource.
 
 `getJSONData()` and `getChartData()` can now return all property names as defined on the data source. Here is an example
 
@@ -55,7 +55,7 @@ For more information see [legend](chart-guide/chart-configurations/legend).
 **After the fix**
 ![legend spacing fixed](/images/legend_spacing_update.png)
 
-## The "%" symbol correctly displays in all Stacked Charts
+## The "%" symbol displays correctly in all Stacked Charts
 
 In Stacked bar charts the percentage "%" symbol now displays properly on the numeric axis. Previously, when the `stack100Percent` attribute was set to 1, the "%" symbol did not get applied on the numeric axis
 
