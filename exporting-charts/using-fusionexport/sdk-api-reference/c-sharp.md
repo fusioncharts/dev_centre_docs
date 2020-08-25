@@ -61,7 +61,7 @@ You can get exported output as a stream and can work with it. Based on the confi
 
 **Returns**
 
-- **Promise:** It returns an object with string and stream as dictionary object.
+- **Object:** It returns an object with string and stream as dictionary object.
 
 **Example**
 
@@ -228,6 +228,63 @@ Send HTML template in string format to be used for dashboard export
 
 ```csharp
 exportConfig.Set("template", "<html>...</html>");
+```
+
+#### `templateWidth`
+
+Sets the width of the viewport in which it will get rendered. Throws an exception when the data provided by the user is not a string or when the parse value of the string is NaN.
+
+- **Type:** String/Number
+
+**Example**
+
+```csharp
+// With a number
+exportConfig.Set("templateWidth", 1200);
+
+// With a string
+exportConfig.Set("templateWidth", "1200");
+```
+
+#### `templateHeight`
+
+Sets the height of the viewport in which it will get rendered. Throws an exception when the data provided by the user is not a string or when the parsed value of the string is NaN.
+
+- **Type:** String/Number
+
+**Example**
+
+```csharp
+// With a number
+exportConfig.Set("templateHeight", 3000);
+
+// With a string
+exportConfig.Set("templateHeight", "3000");
+```
+
+#### `templateFormat`
+
+Sets the format of the PDF pages during a PDF export. This option takes priority over templateWidth and templateHeight. Throws an exception when the data provided by the user is not a string or when the format is not in the supported set.
+
+- **Type:** String
+
+**The available options are:**
+
+- `Letter`: 8.5in x 11in
+- `Legal`: 8.5in x 14in
+- `Tabloid`: 11in x 17in
+- `Ledger`: 17in x 11in
+- `A0`: 33.1in x 46.8in
+- `A1`: 23.4in x 33.1in
+- `A2`: 16.5in x 23.4in
+- `A3`: 11.7in x 16.5in
+- `A4`: 8.27in x 11.7in
+- `A5`: 5.83in x 8.27in
+
+**Example**
+
+```csharp
+exportConfig.Set("templateFormat", "A4");
 ```
 
 #### `resourceFilePath`
