@@ -6,21 +6,27 @@ heading: FusionExport Server
 
 FusionExport server is an HTTP server which accepts data in JSON format to export your charts and data to file format you wish to export. Although, you can directly communicate with the server using endpoints but it is recommended to download one of the [FusionExport SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) which will make it easy to implement FusionExport in your infrastructure.
 
-## Installation
-
-To install the FusionExport Server click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server).
-
 ## CLI Options
 
-FusionExport server accepts following command line arguments to configure the server very easily.
+FusionExport server accepts following command line arguments to configure the server very easily. Syntax to get or set the options is:
+
+```bash
+$ ./fusionexport <option>
+```
+
+<p class="alert alert-warning mb-1 mt-1">
+    <strong>Important Note:</strong> After v1.2.3 onwards, if you are running FusionExport in Mac you have to run the command as `$ ./fusionexport -- <option>`. Please notice the additional `--` added in the while running.
+</p>
 
 Option|Alias|Default|Description
 -|-|-|-
-`--host`|-H|127.0.0.1|IP address of the server host.
-`--port`|-P|1337|Port number where you want to run the server.
-`--worker-count`|-W|2|Maximum number of workers to spawn.
-`--library-directory-path`|-L||Custom FusionCharts library directory path. Useful while using licensed version of FusionCharts.
-`--config-file`|-C||Configuration file path.
+`--version`| `-v` | | Returns the current version of FusionExport.
+`--help`| `-h` | | Returns all the available CLI options.
+`--host`| `-H` |`127.0.0.1`|Sets the IP address of the server host.
+`--port`| `-P` |`1337`|Sets the port number where you want to run the server.
+`--worker-count`| `-W` | `2` |Assign maximum number of workers to spawn.
+`--library-directory-path`| `-L` ||Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts.
+`--config-file`| `-C` | |Set configuration file path.
 
 ### Config File Options
 
@@ -32,16 +38,10 @@ Option|Default|Description
 `port`|1337|Port number where you want to run the server.
 `workerCount`|2|Maximum number of workers to spawn.
 `libraryDirectoryPath`||Custom FusionCharts library directory path. Useful while using licensed version of FusionCharts.
-`allowSave (1)`|true|Allow saving of exported images in disk.
-`savePath (1)`|exported_images|Path to save the exported images.
 
-## Docker
+## Docker Config
 
-To run FusionExport server from Docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup.
-
-### Docker Config
-
-Docker takes the following config in it's `.env` file.
+To run FusionExport server from Docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup. Docker takes the following config in it's `.env` file.
 
 Option|Default|Description
 -|-|-
@@ -72,27 +72,3 @@ Param Name|Default|Description
 `inputSVG`|inputSVG.svg|SVG file path inside the payload zip.
 `asyncCapture`|false|Set the async capture flag.
 `maxWaitForCaptureExit`|6000|Timeout in ms for async capture to trigger.
-
-### /api/v1.0/export
-
-Required for supporting export functionality of FusionCharts library.
-
-*  HTTP Method: `POST`
-
-Param Name|Default|Description
---- | --- | ---
-`stream_type`||In this case where charts will be rendered and exported. SVG/IMAGE-DATA
-`stream`|{}|In case of svg, it will contain the svg string. In case of image data, it will contain the base64 string.
-`parameters`|exportfilename=FusionCharts|exportformat=png, exportactionnew=save, This will contain the output filename, format, and the action to be perform.
-`meta_bgColor`|#FFFFFF|Background color to be used.
-`meta_bgAlpha`||Alpha value for the background.
-`meta_DOMId`||DOM Id.
-`meta_width`||Width of the chart.
-`meta_height`||Height of the chart.
-`chart_caption`||Caption or title.
-`chart_sub_caption`||Sub caption or subtitle.
-`is_single_export`||Whether it is bulk, or a single export.
-`is_full_version`||Whether it is a trial, or a paid version.
-`user_time_zone`||User timezone.
-`log_enabled`|true|Whether logging is enabled.
-`version`||Version.
