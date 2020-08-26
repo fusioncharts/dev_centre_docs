@@ -285,7 +285,7 @@ exportConfig.set("maxWaitForCaptureExit", 8000);
 
 #### `type`
 
-Sets the format of the output file. As of now it support `png`, `jpg`, `svg` and `pdf`.
+Sets the format of the output file. As of now it support `png`, `jpeg`, `svg` and `pdf`.
 
 - **Type:** String
 

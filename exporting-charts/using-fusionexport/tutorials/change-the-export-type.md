@@ -12,10 +12,6 @@ FusionExport supports exporting charts to the following file types:
 - JPEG
 - PDF
 - SVG
-- HTML
-- CSV
-- XLSX
-- XLSXX
 
 ## Prerequisites
 
@@ -129,7 +125,7 @@ List<string> results = new List<string>();
                 exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
 
                 // *** ATTENTION - MODIFY THE EXPORT TYPE ***
-                // OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
+                // OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg'
                 exportConfig.Set("type", "jpeg");
 
 
@@ -168,7 +164,7 @@ String configPath = "resources/chart-config-file.json";
         config.set("chartConfig", configPath);
 
         // ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
-        // OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
+        // OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg'
         config.set("type", "jpeg");
 
         // Instantiate the ExportManager class
@@ -193,12 +189,12 @@ String configPath = "resources/chart-config-file.json";
 
 // Instantiate the ExportConfig class and add the required configurations
 $exportConfig = new ExportConfig();
-  // Provide path of the chart configuration which we have defined above.  
+  // Provide path of the chart configuration which we have defined above.
   // You can also pass the same object as serialized JSON.
   $exportConfig->set('chartConfig', realpath('resources/chart-config-file.json'));
 
 // ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
-// OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
+// OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg'
 \$exportConfig->set('type', 'jpeg');
 
 // Instantiate the ExportManager class
@@ -235,8 +231,8 @@ const exportConfig = new ExportConfig();
 exportConfig.set('chartConfig', path.join(\_\_dirname, 'resources', 'chart-config-file.json'));
 
 // ++++++ ATTENTION - MODIFY THE EXPORT QUALITY ++++++
-// OPTIONS ARE: 'good' | 'better' (default) | 'best'
-exportConfig.set('quality', 'best');
+// OPTIONS ARE: 'png (default)' | 'jpeg' | 'svg' | 'pdf'
+exportConfig.set('type', 'jpeg');
 
 // \***\*\*\*\*\*** EXPORT-MANAGER \***\*\*\*\*\*\***
 
@@ -249,10 +245,8 @@ const exportManager = new ExportManager();
 // Optionally, print the exported file names and error messages, if any
 
 exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exportedFiles) => {
-exportedFiles.forEach(file => console.log(file));
-}).catch((err) => {
-console.log(err);
-});
+  exportedFiles.forEach(file => console.log(file));
+}).catch((err) => { console.log(err); });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
@@ -273,8 +267,8 @@ export_config = ExportConfig()
 
 export_config["chartConfig"] = read_file("resources/chart-config-file.json")
 
-// ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
-// OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
+# ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
+# OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg'
 export_config["type"] = "jpeg"
 
 # Provide port and host of FusionExport Service
