@@ -18,35 +18,35 @@ $ ./fusionexport <option>
     <strong>Important Note:</strong> After v1.2.3 onwards, if you are running FusionExport in Mac you have to run the command as `$ ./fusionexport -- <option>`. Please notice the additional `--` added in the while running.
 </p>
 
-Option|Alias|Default|Description
--|-|-|-
-`--version`| `-v` | | Returns the current version of FusionExport.
-`--help`| `-h` | | Returns all the available CLI options.
-`--host`| `-H` |`127.0.0.1`|Sets the IP address of the server host.
-`--port`| `-P` |`1337`|Sets the port number where you want to run the server.
-`--worker-count`| `-W` | `2` |Assign maximum number of workers to spawn.
-`--library-directory-path`| `-L` ||Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts.
-`--config-file`| `-C` | |Set configuration file path.
+| Option                     | Alias | Default     | Description                                                                                          |
+| -------------------------- | ----- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| `--version`                | `-v`  |             | Returns the current version of FusionExport.                                                         |
+| `--help`                   | `-h`  |             | Returns all the available CLI options.                                                               |
+| `--host`                   | `-H`  | `127.0.0.1` | Sets the IP address of the server host.                                                              |
+| `--port`                   | `-P`  | `1337`      | Sets the port number where you want to run the server.                                               |
+| `--worker-count`           | `-W`  | `2`         | Assign maximum number of workers to spawn.                                                           |
+| `--library-directory-path` | `-L`  |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
+| `--config-file`            | `-C`  |             | Set configuration file path.                                                                         |
 
 ### Config File Options
 
 To persist the config every time you start the server or for getting access to more special options or you can pass a config file through the `--config-file` or `-C` option of the CLI. It should be a JSON file having the following properties.
 
-Option|Default|Description
--|-|-
-`host`|127.0.0.1|IP address of the server host.
-`port`|1337|Port number where you want to run the server.
-`workerCount`|2|Maximum number of workers to spawn.
-`libraryDirectoryPath`||Custom FusionCharts library directory path. Useful while using licensed version of FusionCharts.
+| Option                 | Default   | Description                                                                                      |
+| ---------------------- | --------- | ------------------------------------------------------------------------------------------------ |
+| `host`                 | 127.0.0.1 | IP address of the server host.                                                                   |
+| `port`                 | 1337      | Port number where you want to run the server.                                                    |
+| `workerCount`          | 2         | Maximum number of workers to spawn.                                                              |
+| `libraryDirectoryPath` |           | Custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
 
 ## Docker Config
 
 To run FusionExport server from Docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup. Docker takes the following config in it's `.env` file.
 
-Option|Default|Description
--|-|-
-`SERVICE_PORT`|1337|Port number where you want to run the server
-`DATA_SAVE_PATH (1)`|~/.fusionexport|Storage path for saving the exported images
+| Option               | Default         | Description                                  |
+| -------------------- | --------------- | -------------------------------------------- |
+| `SERVICE_PORT`       | 1337            | Port number where you want to run the server |
+| `DATA_SAVE_PATH (1)` | ~/.fusionexport | Storage path for saving the exported images  |
 
 ## HTTP Endpoints
 
@@ -54,21 +54,21 @@ Option|Default|Description
 
 Required for supporting the latest export features of FusionExport.
 
-* HTTP Method: `POST`
+-  HTTP Method: `POST`
 
-Param Name|Default|Description
---- | --- | ---
-`chartConfig`||Array of chart configs to export. These chart configurations are similar to FusionCharts Chart attributes.
-`type`|png|Output file type. Accepts either png, jpg, pdf, svg, csv or html.
-`quality`|better|Output file quality (good / better / best)
-`outputFile`|export--<%= number(1) %>|Output filename
-`payload`||The zipped dependency files which could include resources like HTML templates, images, CSS etc.
-`templateFilePath`|template/template.html|Template file path inside the payload zip.
-`callbackFilePath`|callbackFile.js|Callback file path inside the payload zip. This file will be executed upon successful execution of the export action.
-`outputFileDefinition`||Output file definition file inside the payload zip.
-`dashboardHeading`|FusionCharts|Dashboard heading text.
-`dashboardSubheading`|The best charting library in the world|Dashboard subheading text.
-`dashboardLogo`|dashboardLogo.jpg|Dashboard logo file inside the payload zip.
-`inputSVG`|inputSVG.svg|SVG file path inside the payload zip.
-`asyncCapture`|false|Set the async capture flag.
-`maxWaitForCaptureExit`|6000|Timeout in ms for async capture to trigger.
+| Param Name              | Default                                | Description                                                                                                           |
+| ----------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `chartConfig`           |                                        | Array of chart configs to export. These chart configurations are similar to FusionCharts Chart attributes.            |
+| `type`                  | png                                    | Output file type. Accepts either png, jpg, pdf, svg, csv or html.                                                     |
+| `quality`               | better                                 | Output file quality (good / better / best)                                                                            |
+| `outputFile`            | export--<%= number(1) %>               | Output filename                                                                                                       |
+| `payload`               |                                        | The zipped dependency files which could include resources like HTML templates, images, CSS etc.                       |
+| `templateFilePath`      | template/template.html                 | Template file path inside the payload zip.                                                                            |
+| `callbackFilePath`      | callbackFile.js                        | Callback file path inside the payload zip. This file will be executed upon successful execution of the export action. |
+| `outputFileDefinition`  |                                        | Output file definition file inside the payload zip.                                                                   |
+| `dashboardHeading`      | FusionCharts                           | Dashboard heading text.                                                                                               |
+| `dashboardSubheading`   | The best charting library in the world | Dashboard subheading text.                                                                                            |
+| `dashboardLogo`         | dashboardLogo.jpg                      | Dashboard logo file inside the payload zip.                                                                           |
+| `inputSVG`              | inputSVG.svg                           | SVG file path inside the payload zip.                                                                                 |
+| `asyncCapture`          | false                                  | Set the async capture flag.                                                                                           |
+| `maxWaitForCaptureExit` | 6000                                   | Timeout in ms for async capture to trigger.                                                                           |
