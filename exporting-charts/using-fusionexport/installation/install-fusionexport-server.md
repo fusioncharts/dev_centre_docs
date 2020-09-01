@@ -20,7 +20,7 @@ By default, the FusionExport Server starts on `localhost`, and listens to port `
 
 ## Linux
 
-In case of Linux you need to install a few dependecies listed below. If you are using Linux distribution which support Debian package manager for example Ubuntu, Debian then choose `DEB`. If you are using RPM based distributions like Red Hat, Centos then choose `RPM`. Now open the terminal and run respective commands:
+In case of Linux you need to install a few dependecies listed below. If you are using a Linux distribution which support Debian package manager for example Ubuntu, Debian then choose `DEB`. If you are using RPM based distributions like Red Hat, Centos then choose `RPM`. Now open the terminal and run respective commands:
 
 <div class="code-wrapper">
     <ul class='code-tabs extra-tabs'>

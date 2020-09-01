@@ -8,7 +8,7 @@ FusionExport server is an HTTP server which accepts data in JSON format to expor
 
 ## CLI Options
 
-FusionExport server accepts following command line arguments to configure the server very easily. Syntax to get or set the options is:
+FusionExport server accepts the following command line arguments to configure the server very easily. Syntax to get or set the options is:
 
 ```bash
 $ ./fusionexport <option>

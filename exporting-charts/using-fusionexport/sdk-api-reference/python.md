@@ -269,7 +269,7 @@ export_config.set("templateFormat", "A4")
 
 #### `resourceFilePath`
 
-JSON file having the dependencies of the template when templateFilePath is provided. basePath denotes the base path of the project no local resource should be present outside this directory. include takes one or more glob to specify which files to send to the server. exclude take sone or more glob to specify which files should be excluded.
+JSON file having the dependencies of the template when `templateFilePath` is provided. basePath denotes the base path of the project no local resource should be present outside this directory. `include` takes one or more glob to specify which files to send to the server. `exclude` takes one or more glob to specify which files should be excluded.
 
 - **Type:** String
 
