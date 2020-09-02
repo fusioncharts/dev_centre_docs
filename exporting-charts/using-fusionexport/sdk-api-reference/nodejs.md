@@ -75,23 +75,7 @@ You can get exported output as a stream and can work with it. Based on the confi
 **Example**
 
 ```javascript
-const path = require("path");
-// Require FusionExport
-const { ExportManager, ExportConfig } = require("fusionexport-node-client");
-
-// Instantiate ExportManager and ExportConfig
-const exportManager = new ExportManager();
-const exportConfig = new ExportConfig();
-
-// add the required configurations
-exportConfig.set(
-  "chartConfig",
-  path.join(__dirname, "resources", "single.json")
-);
-exportConfig.set("quality", "best");
-
-exportManager
-  .exportAsStream(exportConfig)
+exportManager.exportAsStream(exportConfig)
   .then(exportedFiles => {
     Object.keys(exportedFiles).forEach(key => {
       console.log(key, exportedFiles[key]);
@@ -116,7 +100,7 @@ This constructor does not take any argument.
 new ExportConfig();
 ```
 
-## **Method:** set()
+### **Method:** `set()`
 
 Takes two argument first one as the key second one as the value. You can find more about the options later on in this guide.
 
@@ -140,7 +124,7 @@ exportConfig.set(
 );
 ```
 
-#### **Method:** get()
+#### **Method:** `get()`
 
 Takes one argument as the key and returns the value.
 
@@ -160,7 +144,7 @@ Takes one argument as the key and returns the value.
 exportConfig.get("chartConfig");
 ```
 
-#### **Method:** has()
+#### **Method:** `has()`
 
 Takes one argument as the key and returns a boolean if it is set or not.
 
@@ -180,7 +164,7 @@ Takes one argument as the key and returns a boolean if it is set or not.
 exportConfig.has("chartConfig");
 ```
 
-#### **Method:** remove()
+#### **Method:** `remove()`
 
 Takes one argument as the key and removes that value if it was set.
 
@@ -200,7 +184,7 @@ Takes one argument as the key and removes that value if it was set.
 exportConfig.remove("chartConfig");
 ```
 
-#### **Method:** clear()
+#### **Method:** `clear()`
 
 Clears all the values that were set earlier.
 
@@ -385,48 +369,9 @@ Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be t
 exportConfig.set("maxWaitForCaptureExit", 8000);
 ```
 
-#### `dashboardLogo`
-
-Sets the path to the logo file
-
-- **Type:** String
-
-**Example**
-
-```javascript
-exportConfig.set("dashboardLogo", "resources/logo.jpg");
-```
-
-#### `dashboardHeading`
-
-Sets the title of the dashboard
-
-- **Type:** String
-
-**Example**
-
-```javascript
-exportConfig.set("dashboardHeading", "FusionCharts");
-```
-
-#### `dashboardSubheading`
-
-Sets the sub-title of the dashboard
-
-- **Type:** String
-
-**Example**
-
-```javascript
-exportConfig.set(
-  "dashboardSubheading",
-  "The best charting library in the world"
-);
-```
-
 #### `type`
 
-Sets the format of the output file
+Sets the format of the output file. As of now we support `png`, `jpeg`, `svg` and `pdf`.
 
 - **Type:** String
 
