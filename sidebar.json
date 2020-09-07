@@ -1802,15 +1802,24 @@
                },
                {
                   "title": "License Activation",
-                  "path": "/upgrading/license-activation"
-               },
-               {
-                  "title": "Changelog",
-                  "path": "/upgrading/change-log"
+                  "path": "/upgrading/license-activation",
+                  "visibility": false
                },
                {
                   "title": "Upgrade to v3.15.x",
                   "children": [
+                     {
+                        "title": "Changelog",
+                        "path": "/upgrading/change-log"
+                     },
+                     {
+                        "title": "What's New",
+                        "path": "/upgrading/whats-new"
+                     },
+                     {
+                        "title": "Changed Behavior",
+                        "path": "/upgrading/changed-behavior"
+                     },
                      {
                         "title": "Maps Improvement",
                         "path": "/upgrading/maps-improvement/maps-improvement-3-15-1",
@@ -1830,14 +1839,6 @@
                         "title": "Maps Improvement",
                         "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
                         "visibility": false
-                     },
-                     {
-                        "title": "What's New",
-                        "path": "/upgrading/whats-new"
-                     },
-                     {
-                        "title": "Changed Behavior",
-                        "path": "/upgrading/changed-behavior"
                      }
                   ]
                },
