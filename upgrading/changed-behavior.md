@@ -6,6 +6,10 @@ heading: Changed Behavior
 
 This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.2.
 
+## Depecrated the creditLabel property
+
+The `creditLabel` property under FusionCharts.options was previously used to hide watermarks from charts. Starting version 3.15.3 users have to activate their license in order to use the new `license` property to hide watermarks. For more information, please refer to this [guide](/dev/upgrading/license-activation). 
+
 ## Setting yAxisValueDecimals when setAdaptiveYMin is enabled.
 
 yAxisValueDecimal now displays the right number of decimal places when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled. Previously, yAxisValueDecimal failed to work  properly with values lower than 3 when `setAdaptiveYMin` was enabled.
