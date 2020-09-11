@@ -4,7 +4,11 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.2.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.3.
+
+## Depecrated the creditLabel property
+
+The `creditLabel` property under FusionCharts.options was previously used to hide watermarks from charts. Starting version 3.15.3 users have to activate their license using the new `license` property to hide watermarks. For more information, please refer to this [guide](/dev/upgrading/license-activation). 
 
 ## Setting yAxisValueDecimals when setAdaptiveYMin is enabled.
 
@@ -22,7 +26,7 @@ yAxisValueDecimal now displays the right number of decimal places when `setAdapt
 
 ## Returning property names using getJSONData() and getChartData()
 
-With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned all property names as lowercase regardless of the casing used on the dataSource.
+With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned all property names as lowercase regardless of the letter casing specified by the user in 'dataSource'.
 
 `getJSONData()` and `getChartData()` can now return all property names as defined on the data source. Here is an example
 
