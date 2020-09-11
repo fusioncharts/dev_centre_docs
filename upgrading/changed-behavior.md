@@ -8,7 +8,7 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Depecrated the creditLabel property
 
-The `creditLabel` property under FusionCharts.options was previously used to hide watermarks from charts. Starting version 3.15.3 users have to activate their license in order to use the new `license` property to hide watermarks. For more information, please refer to this [guide](/dev/upgrading/license-activation). 
+The `creditLabel` property under FusionCharts.options was previously used to hide watermarks from charts. Starting version 3.15.3 users have to activate their license using the new `license` property to hide watermarks. For more information, please refer to this [guide](/dev/upgrading/license-activation). 
 
 ## Setting yAxisValueDecimals when setAdaptiveYMin is enabled.
 
