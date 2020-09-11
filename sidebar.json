@@ -1802,8 +1802,7 @@
                },
                {
                   "title": "License Activation",
-                  "path": "/upgrading/license-activation",
-                  "visibility": false
+                  "path": "/upgrading/license-activation"
                },
                {
                   "title": "Upgrade to v3.15.x",
