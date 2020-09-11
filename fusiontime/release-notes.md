@@ -3,6 +3,13 @@ title: Release Notes | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
+<h2 class="sub-heading">Version 2.3.0</h2>
+
+<p class="release-date">14th September, 2020</p>
+
+<h4>Improvements</h4>
+
+Starting version 2.3.0, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
 
 <h2 class="sub-heading">Version 2.2.0</h2>
 
