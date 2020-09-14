@@ -3,6 +3,13 @@ title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Version 3.15.x
 ---
+<h2 class="sub-heading">Version 3.15.3</h2>
+
+<p class="release-date">14th September 2020</p>
+
+<h4>Improvements</h4>
+
+-  Starting version 3.15.3, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
 
 <h2 class="sub-heading">Version 3.15.2</h2>
 
@@ -18,21 +25,21 @@ heading: Version 3.15.x
 
 -  Decimal and thousand separator attributes now work properly on Marimekko chart.
 
--  For all 2D and 3D column and bar chart variants, the `fontSize` and `labelFontSize` attributes now work properly when set to a string and numeric value. Earlier a JS error was thrown when numeric value was set.
+-  For all 2D and 3D Column and Bar chart variants, the `fontSize` and `labelFontSize` attributes now work properly when set to a string and numeric value. Earlier a JS error was thrown when numeric value was set.
 
--  The task labels are now displayed properly in Gantt chart and are available on further horizontal scrolling. Previously, the task label overlapped with the vertical scroll bar.
+-  The task labels are now displayed properly in Gantt charts and are available on further horizontal scrolling. Previously, the task label overlapped with the vertical scroll bar.
 
 -  The spacing between legend items is improved now for IE 11. Previously, the spacing was a little peculiar as white-space was being considered as a line break and `<br>` tags were considered twice.
 
 -  The event handlers `chartRollOver` and `chartRollOut`are now working properly when multiple charts are present on a web page. Earlier, when multiple charts were present on a web page with 'chartRollOver`and`chartRollOut` events, handled by a common handler function, charts stopped invoking the events and threw a JS error upon multiple instances of hover.
 
--  When using stacked charts, the macros `$sum` and `$unformattedSum` are now working properly for customized tooltips. Previously, the `$sum` and `$unformattedSum` macros were returning an incorrect value for zero-valued data plot.
+-  When using Stacked charts, the macros `$sum` and `$unformattedSum` are now working properly for customized tooltips. Previously, the `$sum` and `$unformattedSum` macros were returning an incorrect value for zero-valued data plot.
 
--  The '%' symbol is now displayed properly in situations where the trendline value coincides with yAxis div line value for 100percent stacked charts. Earlier the '%' symbol was not visible in such situations.
+-  The '%' symbol is now displayed properly in situations where the trendline value coincides with yAxis div line value for 100percent Stacked charts. Earlier the '%' symbol was not visible in such situations.
 
 <h4>Improvements</h4>
 
--  When exporting spark charts as a CSV file or CSV data using `getCSVData()` or `getChartData('csv')` methods, the exported csv now displays column headers. Previously, the column headers were not included.
+-  When exporting Spark charts as a CSV file or CSV data using `getCSVData()` or `getChartData('csv')` methods, the exported csv now displays column headers. Previously, the column headers were not included.
 
 -  Plot events and tooltips work properly with CSS 2D transformations like `rotate`, `skew`, `skewX`, `skewY`, `matrix`, or any combination of them.
 
