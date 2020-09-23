@@ -1,6 +1,6 @@
 ---
 title: Exporting Dashboards in mail body | FusionCharts
-description: This article shows you how to export as stream.
+description: This article shows you how to export as a stream.
 heading: Export a dashboard in the body of an email
 ---
 
@@ -44,11 +44,11 @@ $ cd dashboard-in-mail
 ```bash
 $ npm init
 ```
-When prompted for a project name use `dashboard-in-mail`. You can keep other information blank or enter your own project details.
+When prompted for a project name, use `dashboard-in-mail`. You can keep other information blank or enter your own project details.
 
 ## Install FusionExport Node.js client
 
-Next, to install FusionExport Node.js client run the following command:
+To install FusionExport Node.js client run the following command:
 
 ```bash
 $ npm install fusionexport-node-client --save
@@ -184,7 +184,7 @@ const path = require('path');
 
 ## Configuring nodemailer
 
-Next provide your SMPT settings. For testing purposes you can use https://mailtrap.io.
+Next, provide your SMPT settings. For testing purposes you can use https://mailtrap.io.
 
 ```JavaScript
 const transporter = nodemailer.createTransport({
@@ -223,7 +223,7 @@ const chartConfg = [{
 
 ## Configuring export
 
-After defining a simple chart assign it as the `chartConfig` property  for `exportConfig`. Next, set the path for the template, finally set the export type to `png`. There are many properties which you can define in `exportConfig`. You can get the full list on the [API reference documentation](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs#exportconfig-options).
+After defining a simple chart, assign it as the `chartConfig` property for `exportConfig`. Next, set the path for the template, finally set the export type to `png`. There are many properties which you can define in `exportConfig`. You can get the full list on the [API reference documentation](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs#exportconfig-options).
 
 In case you are curious about FusionCharts and various charts configurations, go through the [chart attributes documentation](https://www.fusioncharts.com/dev/chart-attributes/) on Dev Center.
 
@@ -236,7 +236,7 @@ exportConfig.set('type', 'png');
 
 ## Let's export!
 
-It is to time export your chart. First, let's define `type` to PDF (default type is `PNG`) and export the chart:
+It is time to export your chart. First, let's define `type` to PDF (default type is `PNG`) and then export the chart:
 
 ```JavaScript
 // provide the export config
@@ -293,5 +293,5 @@ exportManager.exportAsStream(exportConfig, '.', true).then((exportedFiles) => {
 });
 ```
 
-To export your chart run this command:
+To export your chart run the following command:
 `$ node first_export.js `
