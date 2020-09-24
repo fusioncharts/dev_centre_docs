@@ -6,7 +6,7 @@ heading: Exporting your first chart
 
 # Welcome to FusionExport
 
-First of all, thank you very much for downloading FusionExport. FusionExport was developed to help our customers to generate charts on servers. Since the inception, we have improved FusionExport to not only help you export charts but also dashboards.
+First of all, thank you very much for downloading FusionExport. FusionExport was developed to help our customers generate charts on servers. Since the inception, we have improved FusionExport to not only help you export charts but also dashboards.
 
 Now that you have downloaded FusionExport, let's get started!
 
@@ -20,13 +20,13 @@ Before starting with the code, ensure that you have:
 
 ## Installation of FusionExport server
 
-Go to the location of the`fusionexport` binary in the downloaded package. To start the server run the following command:
+Go to the location of the`fusionexport` binary in the downloaded package. To start the server, run the following command:
 
 ```bash
 $ ./fusionexport
 ```
 
-Once you execute the command the FusionExport server starts on port 1337. You should see a console log similar to the following:
+Once you execute the command, the FusionExport server starts on port 1337. You should see a console log similar to the following:
 
 _In case you face any issues while starting the server, get in touch with our support team support@fusioncharts.com to resolve the issue._
 
@@ -35,7 +35,7 @@ _In case you face any issues while starting the server, get in touch with our su
 
 Now that our server is running, let's create a sample project in Node.js.
 
-First, create an empty directory for your project. You can create your project directory in any location:
+First, create an empty directory for your project. You can create your project's directory in any location:
 
 ```bash
 $ mkdir fusionexport-hello-world
@@ -52,7 +52,7 @@ For this tutorial use `fusionexport-hello-world` as a name when prompted for pac
 
 ## Install FusionExport Node.js client
 
-Now that we have set up the project skeleton, to install FusionExport Node.js client run the following command:
+Now that we have set up the project skeleton, to install the FusionExport Node.js client, run the following command:
 
 ```bash
 $ npm install fusionexport-node --save
@@ -62,7 +62,7 @@ $ npm install fusionexport-node --save
 
 ## Import dependencies
 
-Let's create an empty file called `first_export.js` and instantiate `ExportManager` and `ExportConfig` modules from FusionExport. These modules help us perform export related operations and set configurations respectively. You can read more about it on the [API reference](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs).
+Let's create an empty file called `first_export.js` and instantiate the `ExportManager` and `ExportConfig` modules from FusionExport. These modules help us perform export related operations and set configurations respectively. You can read more about it on the [API reference](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs).
 
 ```JavaScript
  // Import FusionExport
@@ -73,7 +73,7 @@ Let's create an empty file called `first_export.js` and instantiate `ExportManag
  const exportConfig = new ExportConfig();
 ```
 
-Now that you imported FusionExport in your project, let's add a simple chart configuration for exporting. By default, FusionExport  accepts FusionCharts configurations to render charts (however, it supports almost all the third party JavaScript charting libraries as well). For this example we will export [a simple column chart](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript):
+Now that you imported FusionExport to your project, let's add a simple chart configuration for exporting. By default, FusionExport accepts FusionCharts configurations to render charts (however, it supports almost all the third party JavaScript charting libraries as well). For this example we will export [a simple column chart](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript):
 
 ```JavaScript
 // Import FusionExport
@@ -107,13 +107,13 @@ const chartConfig = [{
 exportConfig.set('chartConfig', chartConfig);
 ```
 
-As you can see above, we defined a simple chart and assigned it `exportConfig` against `chartConfig` property. There are many properties which you can define in `exportConfig`. You can get the full list on the [API reference documentation](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs#exportconfig-options).  
+As you can see above, we defined a simple chart and assigned it `exportConfig` against the `chartConfig` property. There are many properties which you can define in `exportConfig`. You can get the full list on the [API reference documentation](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs#exportconfig-options).  
 
-In case if you are curious about FusionCharts and various charts configurations, go through the [chart attributes documentation](https://www.fusioncharts.com/dev/chart-attributes/) on Dev Center.
+In case you are curious about FusionCharts and the various charts configurations, go through the [chart attributes documentation](https://www.fusioncharts.com/dev/chart-attributes/) on Dev Center.
 
 ## Let's export!
 
-It is to time export our chart. First, let's define `type` to PDF (default type is `PNG`) and export the chart:
+It is time to export our chart. First, let's define `type` to PDF (default type is `PNG`) and export the chart:
 
 ```JavaScript
 // Import FusionExport
@@ -156,13 +156,13 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
   console.log(err);
 });
 ```
-By calling `export` method you start the export against the chart you defined in `exportConfig`. The `export` method returns a `promise` which will give you an array of the exported file path. In this case,  only one export file is generated with the default name `export.pdf` in the same directory.
+By calling the `export` method you start the export against the chart you defined in `exportConfig`. The `export` method returns a `promise` which will give you an array of the exported file path. In this case, only one export file is generated with the default name `export.pdf` in the same directory.
 
-To export your chart run this command:
+To export your chart run the following command:
 `$ node first_export.js `
 
 Once you have exported, your exported file should look like this:
 
 
 
-In case if you have any feedback or if you are stuck anywhere, reach out to product@fusioncharts.com.
+In case you have any feedback or if you are stuck anywhere, reach out to product@fusioncharts.com.
