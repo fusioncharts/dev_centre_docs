@@ -101,7 +101,7 @@ Takes two argument first one as the key second one as the value. You can find mo
 
 ##### Returns
 
--  ExportConfig: The instance of the exportConfig for method chaining.
+-  `ExportConfig`: The instance of the exportConfig for method chaining.
 
 ##### Example
 
@@ -139,9 +139,9 @@ exportConfig.set("type", "pdf");
 
 ### `quality`
 
-Sets the quality of the output file. Provide either good, better or best
+_**Type:** String_
 
--  **Type:** String
+Sets the quality of the output file. Provide either good, better or best
 
 **Example**
 
@@ -303,7 +303,7 @@ Style defined here will be set to all the components provided in either header o
 
 #### Example
 
-```javascript
+```java
 exportConfig.set('headerStyle', "font-family: 'Source Sans Pro', colour:'#000';");
 ```
 
