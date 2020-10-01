@@ -36,9 +36,7 @@ new ExportManager({
 
 #### `export(exportConfig[, outputDirPath, unzipFlag])`
 
-This is the most important method from ExportManager module. Based on the configuration provided, this method exports your charts and dashboards to the given format.
-
-It returns a promise that resolves to the array filenames of the exported files or gets rejected by an error.
+This is the most important method from ExportManager module. Based on the configuration provided, this method exports your charts and dashboards to the given format. It returns a promise that resolves to the array filenames of the exported files or gets rejected by an error.
 
 ##### Parameters
 
