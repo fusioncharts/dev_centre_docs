@@ -375,7 +375,7 @@ exportConfig.set('headerComponents', {
 
 ### `headerStyle` / `footerStyle`
 
-_**Type**: Object_
+_**Type**: String_
 
 Style defined here will be set to all the components provided in either header or footer as a default. You have to provide style in the CSS string format just like the way you define an inline style.
 
