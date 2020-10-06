@@ -10,7 +10,7 @@ ExportManager is the most essential module in order to access actions related to
 
 ### Constructor
 
-The Constructor of ExportManager take parameters that may contains host and port values. These values will be used when connecting to FusionExport Server.
+The constructor of ExportManager take parameters that may contains host and port values. These values will be used when connecting to FusionExport Server.
 
 #### Parameters
 
@@ -19,7 +19,7 @@ The Constructor of ExportManager take parameters that may contains host and port
 | `$host` | String  | 127.0.0.1     | The host which will be used when connecting to FusionExport server |
 | `$port` | Integer | 1337          | The port which will be used when connecting to FusionExport server |
 
-These properties are useful when you are running FusionExport server on the choice of your port and host or running behind a proxy like Nginx. It allows your SDK to send request to the new host and port number where FusionExport is running.
+These properties are useful when you are running FusionExport server on the port and host of your choice or running behind a proxy like Nginx. It allows the SDK to send request to the new host and port number where FusionExport is running.
 
 #### Example
 
@@ -163,7 +163,7 @@ There are plenty of options which you can configure in ExportConfig. These optio
 
 _**Type** : String_
 
-Sets the configuration of a single chart or multiple charts in an array. This configuration should follow [FusionCharts JSON structure](https://www.fusioncharts.com/dev/chart-attributes/). It accepts, file path of the JSON where chart configurations have been stored.
+Sets the configuration of a single chart or multiple charts in an array. This configuration should follow the [FusionCharts JSON structure](https://www.fusioncharts.com/dev/chart-attributes/). It accepts, file path of the JSON file where the chart configurations have been stored.
 
 #### Example
 
@@ -175,7 +175,7 @@ $exportConfig->set("chartConfig", "resources/chart-config-file.json");
 
 _**Type:** String_
 
-Sets the format of the output file
+Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`.
 
 #### Example
 
@@ -278,7 +278,7 @@ $exportConfig->set("templateFilePath", "resources/template.html");
 
 _**Type:** Boolean_
 
-This enables header in the exported PDF file. When the value of this property is set to `true`, following components will be added in the header automatically:
+This enables header in the exported PDF file. When the value of this property is set to `true`, the following components will be added in the header automatically:
 
 1. `title` : Left aligned
 2. `url` : Right aligned
@@ -295,7 +295,7 @@ $exportConfig->set('headerEnabled', true);
 
 _**Type:** Boolean_
 
-This enables footer in the exported PDF file. When the value of this property is set to `true`, following components will be added in the header automatically:
+This enables footers in the exported PDF file. When the value of this property is set to `true`, the following components will be added in the header automatically:
 
 1. `pageNumber` : Left aligned
 2. `date` : Right aligned
@@ -312,7 +312,7 @@ $exportConfig->set('footerEnabled', true);
 
 _**Type:** Object_
 
-These properties will allow you to configure the components which you want to show in the header and footer respectively. As of now five components are supported in both header and footer: `title`, `url`, `date`, `pageNumber` and `logo`. All the properties will have following attributes to configure:
+These properties will allow you to configure the components which you want to show in the header and footer respectively. As of now, the five components are supported in both header and footer: `title`, `url`, `date`, `pageNumber` and `logo`. All the properties will have the following attributes to configure:
 
 | Attributes | Type   | Description                                                                                        |
 | ---------- | ------ | -------------------------------------------------------------------------------------------------- |
@@ -337,7 +337,7 @@ $exportConfig->set('headerComponents', (object)[
 
 _**Type**: String_
 
-Style defined here will be set to all the components provided in either header or footer as a default. You have to provide style in the CSS string format just like the way you define an inline style.
+The style defined here will be set to all the components provided in either the header or footer as a default. You have to provide style in the CSS string format just like the same way you define an inline style.
 
 #### Example
 
@@ -390,7 +390,7 @@ JSON file having the dependencies of the template when templateFilePath is provi
 $exportConfig->set("resourceFilePath", "resources/resource.json");
 ```
 
-The `resource.json` looks like as shown below:
+An example of `resource.json` is shown below:
 
 ```json
 {
@@ -416,7 +416,7 @@ $exportConfig->set("callbackFilePath", "resources/callback.js");
 
 _**Type:** Boolean_
 
-Sets if the export process will wait for CAPTURE_EXIT event
+Is set if the export process waits for the `CAPTURE_EXIT` event
 
 #### Example
 
@@ -426,7 +426,7 @@ $exportConfig->set("asyncCapture", true);
 
 ### `maxWaitForCaptureExit`
 
-Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered
+Sets the maximum time FusionExport would wait for the `CAPTURE_EXIT` event to be triggered
 
 _**Type:** Integer_
 
