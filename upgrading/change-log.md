@@ -1,8 +1,14 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.15.x
+heading: Version 3.16.x
 ---
+<h2 class="sub-heading">Version 3.16.x</h2>
+
+<p class="release-date">14th September 2020</p>
+
+
+
 <h2 class="sub-heading">Version 3.15.3</h2>
 
 <p class="release-date">14th September 2020</p>
