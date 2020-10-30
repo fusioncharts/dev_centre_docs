@@ -19,4 +19,3 @@ heading: Version 3.16.x
 
 
 
-<h4>Improvements</h4>
