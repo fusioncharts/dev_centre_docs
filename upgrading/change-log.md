@@ -5,7 +5,7 @@ heading: Version 3.16.x
 ---
 <h2 class="sub-heading">Version 3.16.x</h2>
 
-<p class="release-date">14th September 2020</p>
+<p class="release-date">November 2020</p>
 
 
 
