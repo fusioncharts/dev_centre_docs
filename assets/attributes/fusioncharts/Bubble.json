@@ -725,13 +725,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -962,7 +962,7 @@
         "name": "xAxisNameFontColor"
       },
       {
-        "description": "Specifies the x-axis font size",
+        "description": "Specifies the x-axis font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "xAxisNameFontSize"
@@ -1070,7 +1070,7 @@
         "name": "yAxisNameFontColor"
       },
       {
-        "description": "Specifies the y-axis (primary / secondary) font size",
+        "description": "Specifies the y-axis (primary / secondary) font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "yAxisNameFontSize"
@@ -2056,7 +2056,7 @@
         "name": "valueFontColor"
       },
       {
-        "description": "Specifies the value font size",
+        "description": "Specifies the value font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "valueFontSize"
@@ -2858,7 +2858,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "baseFontSize"
@@ -2876,7 +2876,7 @@
         "name": "outCnvBaseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "outCnvBaseFontSize"
@@ -3270,7 +3270,7 @@
         "name": "fontColor"
       },
       {
-        "description": "Lets you specify font size for the x-axis data labels.",
+        "description": "Lets you specify font size for the x-axis data labels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "",
         "type": "Number",
         "name": "fontSize"
@@ -3363,7 +3363,7 @@
         "name": "fontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the x-axis label font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",
@@ -3856,7 +3856,7 @@
         "name": "trendValueFont"
       },
       {
-        "description": "Sets the font size for the trend-line display value.",
+        "description": "Sets the font size for the trend-line display value. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": " ",
         "type": "Number",
         "versionsince": "3.8.0",

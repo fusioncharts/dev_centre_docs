@@ -649,13 +649,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -796,7 +796,7 @@
         "name": "xAxisNameFontColor"
       },
       {
-        "description": "Specifies the x-axis font size",
+        "description": "Specifies the x-axis font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "xAxisNameFontSize"
@@ -904,7 +904,7 @@
         "name": "yAxisNameFontColor"
       },
       {
-        "description": "Specifies the y-axis (primary / secondary) font size",
+        "description": "Specifies the y-axis (primary / secondary) font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "yAxisNameFontSize"
@@ -1238,7 +1238,7 @@
         "name": "valueFontColor"
       },
       {
-        "description": "Specifies the value font size",
+        "description": "Specifies the value font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "valueFontSize"
@@ -1355,7 +1355,7 @@
         "name": "yAxisValueFontColor"
       },
       {
-        "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
+        "description": "Sets the font size for the Y-axis value texts in pixels (px). \n\nDefault value: 10 px. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.14.0",
@@ -1670,7 +1670,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Values can be defined in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "baseFontSize"
@@ -1688,7 +1688,7 @@
         "name": "outCnvBaseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font size provided here. Values can be defined in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "outCnvBaseFontSize"
@@ -1965,7 +1965,7 @@
         "name": "labelFontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the x-axis label font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",
@@ -2262,7 +2262,7 @@
         "name": "labelFontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the x-axis label font size in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",
@@ -2606,8 +2606,8 @@
         "name": "trendValueFont"
       },
       {
-        "description": "Sets the font size for the trend-line display value.",
-        "range": " ",
+        "description": "Sets the font size for the trend-line display value in pixels (px). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
+        "range": " ",
         "type": "Number",
         "versionsince": "3.8.0",
         "name": "trendValueFontSize"

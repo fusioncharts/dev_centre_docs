@@ -565,13 +565,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size (in pixels)",
+        "description": "Sets the caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -836,7 +836,7 @@
         "name": "parentLabelLineHeight"
       },
       {
-        "description": "Sets the font size for the node labels.",
+        "description": "Sets the font size for the node labels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "labelFontSize"
@@ -1332,7 +1332,7 @@
         "name": "baseFont"
       },
       {
-        "description": "Sets the base font size for all the text that lies within the chart canvas.",
+        "description": "Sets the base font size for all the text that lies within the chart canvas. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "baseFontSize"
@@ -1350,7 +1350,7 @@
         "name": "outCnvBaseFont"
       },
       {
-        "description": "Sets the base font size for all the text that lies outside the chart canvas.",
+        "description": "Sets the base font size for all the text that lies outside the chart canvas. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "outCnvBaseFontSize"
