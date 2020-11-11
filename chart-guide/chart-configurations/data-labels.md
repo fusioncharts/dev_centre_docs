@@ -266,7 +266,7 @@ To customize the font properties of the data labels, the following attributes ar
 
 * `labelFontColor` - Set the font color for data labels, e.g. `#00ffaa`.
 
-* `labelFontSize` - Specify the data label font size, within a range of `0` to `72`.
+* `labelFontSize` - Specify the data label font size, in `px`, `rem`, `%`, `em` or `vw` .
 
 * `labelFontBold` - Set to `1` to make the label font bold.
 
@@ -294,6 +294,19 @@ The chart will look like as shown below:
 {% embed_chart chart-configurations-data-labels-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/) to edit the above chart.
+
+
+### Relative Font Sizes
+
+The `labelFontSize` attribute can use the following relative font sizes: 
+
+*rem
+*%
+*em
+*vw
+
+Relative font sizes allow you to have charts where data labels can have a size relative to the size of your chart. This is specially useful when scaling text elements across different screen sizes.
+
 
 ### Border properties
 
