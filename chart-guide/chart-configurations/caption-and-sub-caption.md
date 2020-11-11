@@ -41,7 +41,7 @@ Use the following attributes to customize the font color, size, formatting, etc.
 
 * Set the caption font color in hex code using the `captionFontColor` attribute.
 
-* Set the caption font size (between `0` and `72`) using the `captionFontSize` attribute.
+* Set the caption font size (in `px`, `rem`, `%`, `em` or `vw`) using the `captionFontSize` attribute.
 
 * Set caption font to bold by setting the value of the `captionFontBold` attribute to `1`.
 
@@ -64,7 +64,7 @@ To customize the font color, size, formatting, etc., of the subcaption, use the 
 
 * Set the subcaption font color in hex code using the `subCaptionFontColor` attribute.
 
-* Set the subcaption font size (between `0` and `72`) using the `subCaptionFontSize` attribute.
+* Set the subcaption font size (in `px`, `rem`, `%`, `em` or `vw`) using the `subCaptionFontSize` attribute.
 
 * Set subcaption font to bold by setting the value of the `subCaptionFontBold` attribute to `1`.
 
@@ -86,6 +86,19 @@ The chart with customized caption and subcaption looks like as shown below:
 {% embed_chart chart-configurations-titles-and-axis-names-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/o4xhvc0g/) to edit the above chart.
+
+
+### Relative Font Sizes
+
+The `subcaptionFontSize` and `captionFontSize` attributes can use the following relative font sizes: 
+
+*rem
+*%
+*em
+*vw
+
+Relative font sizes allow you to have charts where the Caption and Sub-caption can have a size relative to the size of your chart. This is specially useful when scaling text elements across different screen sizes.
+
 
 ## Configure Caption Alignment
 
