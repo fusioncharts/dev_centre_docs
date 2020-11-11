@@ -142,6 +142,63 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/) to edit the above chart.
 
+## Add pattern fill to Data Plots
+
+Instead of solid colors and gradients, you can also use patterns to fill data plots. You can control different pattern characteristics like type, color, angle, and opacity. In single series charts you can define patterns at a global or local level, in multi-series charts for each series. Defining patterns at local level overwrites global values for a particular data plot or series.
+
+You can use pattern fills in the following charts: All 2D Column and Area charts, Pie2D, Doughnut2d, Multi-level Pie chart, Bubble, Funnel, and Pyramid charts. 
+For 2D Combination charts only for column and area plot.
+
+To use patterns in a chart set the `usePattern` attribute to `1`, refer to the code below:
+
+```json
+{
+  "chart": {
+    "usePattern": "1" 
+    ...  
+  }
+}
+```
+
+To customize your pattern fill you can use the following attributes:
+
+- `patternType` - Sets the type of pattern you want to use, the possible values for this attribute are: `circle`, `square`, and `line`. When you don't set this attribute the default pattern type used is `line`.
+- `patternAngle` - Sets the angle of the pattern fill, it accepts values in degrees. The values can range from 0 to 360, the default value is 40 for lines and 0 for  circle and square.
+- `patternDensity` - Sets the density of pattern fill shapes increasing or decreasing the spacing between them, this attribute accepts values in pixels with a default value of 6.
+- `patternSize` - Sets the size of pattern fill shapes, the behavior of this attribute depends on the type of pattern. 
+  * For Line patterns it sets the thickness of lines, the default value is 2. 
+  * For circle patterns it sets the diameter of circles, the default value is 4.
+  * For square patterns it sets the length of squares, the default value is 4.
+- `color` - Sets the color of pattern shapes, it accepts values in hex color notation (#000000), by default patterns inherit the colors defined in `paletteColors`. you need to specify this attribute for each data plot in single series charts, and for each series in multi-series charts.
+- `patternAlpha` - Sets the opacity of pattern shapes, it accepts values in % with a range of 0 to 100, the default value is 100.
+- `patternBgColor` - Sets the data plot background color were the pattern fill is rendered, it accepts values in hex color notation (#000000), by default the background color is the same as the canvas or chart body. You need to specify this attribute for each data plot in single-series charts or for each series in multi-series charts. 
+
+Refer to the code below:
+
+```json
+{
+  "chart": {
+    "usePattern": "1" 
+    ...  
+  },
+  "data": [
+      {
+      "label": "Canada",
+      "value": "190",
+      "patternType": "square",
+      "patternBgColor": "#1122ee",
+      "patternSize": 2,
+      "patternDensity": 8
+      }    
+  ]
+}
+```
+The chart will look as show below:
+
+
+Click [here](https://jsfiddle.net/fusioncharts/15cfL6yg/) to edit the above chart.
+
+
 ## Show/Hide Plot Border
 
 Every data plot (column, area, or pie) has a border by default. Set the `showPlotBorder` to `0` to hide the plot border.
