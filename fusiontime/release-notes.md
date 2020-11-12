@@ -3,13 +3,31 @@ title: Release Notes | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
+<h2 class="sub-heading">Version 2.4.0</h2>
+
+<p class="release-date">14th November, 2020</p>
+
+<h4>New Features</h4>
+
+- Starting version 2.4.0, FusionTime now allows you to export your charts in XLS or CVS format. 
+
+<h4>Improvements</h4>
+
+- The use of hyphens in a data series name string is now available and no longer causes the chart to render without any data plots. 
+Previously, when a hyphen was used in the data series name string no data plots were shown in the chart.  
+
+<h4>Fixes</h4>
+
+- When using Firefox browser, the Zooming and panning interactions now work properly. 
+Previously these interactions were slow in the Firefox browser compared to other browsers
+
 <h2 class="sub-heading">Version 2.3.0</h2>
 
 <p class="release-date">14th September, 2020</p>
 
 <h4>Improvements</h4>
 
-Starting version 2.3.0, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
+-  Starting version 2.3.0, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
 
 <h2 class="sub-heading">Version 2.2.0</h2>
 
