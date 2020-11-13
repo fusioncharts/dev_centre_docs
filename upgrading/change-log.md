@@ -10,7 +10,7 @@ heading: Version 3.16.x
 <h4>New Features</h4>
 
 * Starting version 3.16.x FusionCharts introduces support for HTML tags across all chart text elements.
-For more a ful list of all the new supported elements refer to (Change Behavior link).
+For a full list of all the new supported elements refer to (Change Behavior link).
 
 * Starting version 3.16.x FusionCharts introduces relative font size support for text elements. The following font sizes are now supported: `rem`, `%`, `em`, and `vw`.
 * You can now set and configure patterns to fill data plots, the following pattern types are available: circle, square, and line. 
