@@ -11,14 +11,15 @@ heading: Version 3.16.x
 
 * Starting version 3.16.x FusionCharts introduces support for HTML tags across all chart text elements.
 For a full list of all the new supported elements refer to (Change Behavior link).
-
 * Starting version 3.16.x FusionCharts introduces relative font size support for text elements. The following font sizes are now supported: `rem`, `%`, `em`, and `vw`.
-* You can now set and configure patterns to fill data plots, the following pattern types are available: circle, square, and line. 
+* You can now set and configure patterns to fill data plots, the following pattern types are available: circle, square, and line. For more details refer to [pattern fill](/dev/chart-guide/chart-configurations/data-plot#add-pattern-fill-to-data-plots)
+
 
 For more details refer to [pattern fill](/dev/chart-guide/chart-configurations/data-plot#add-pattern-fill-to-data-plots)
 
 <h4>Improvements</h4>
 
+* FusionCharts now allows setting custom texts for link and node tooltips in Chord and Sankey.
 * Now, the opacity of Legend items syncs with the opacity of data plot and data series.
 * Both anchor border color and anchor background color inherit values from the palette.
 * Fusioncharts now allows setting custom text for tooltips in Chord and Sankey diagram.
