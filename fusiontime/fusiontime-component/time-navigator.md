@@ -93,6 +93,25 @@ Refer to the code below:
     }
 }
 ```
+
+## Configure Tooltip Output Format
+By default, FusionTime shows Navigator tooltips in the format `%b` `%d` `%Y`, you can change this behavior using the `outputTimeFormat` attribute within the `navigator` object.
+
+Refer to the code below:
+```javascript
+“dataSource”: {
+    "navigator": {
+        "outputTimeFormat": "%B/%Y"
+    }
+}
+```
+For a list of supported formats refer to [Date and Time Formats](/dev/fusiontime/fusiontime-attributes#date-time-format)
+
+{}
+
+[__Try it yourslef!__]()
+
+
 ## Grid Lines
 
 The Time Navigator contains grid lines that visually represent data bin levels, to avoid cluttering and overlapping when there's a lot of data these grid lines adjust automatically and might show labels at different intervals depending on available space.
@@ -221,3 +240,6 @@ In the above code:
 
 - Create a `style` object under `xAxis` object to customize the grid-line.
 - In the `style` object, `grid-line` styles the vertical grid-line of the x-axis in the time navigator.
+
+
+

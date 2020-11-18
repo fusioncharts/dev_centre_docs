@@ -1260,6 +1260,66 @@
 			},
 			"tags": {},
 			"syntax": "// update date\r\n    const getNextRandomDate = d => new Date(new Date(d).getTime() + 1000);\r\n    \r\n    const fd = (d) => {\r\n        var e = new Date(d.getTime()- (d.getTimezoneOffset())*60000).toISOString()\r\n        var f = e.split(\".\")[0]\r\n        var g = f.split(\"T\")\r\n        var h = g.join(\" \")\r\n        return h\r\n    }\r\n    // random data generator\r\n    const randBetween = (min, max) => {\r\n      const ceilMin = Math.ceil(min);\r\n\r\n      return (\r\n        Math.floor(Math.random() * (Math.floor(max) - ceilMin + 1)) + ceilMin\r\n      );\r\n    };\r\n    // Fusioncharts data store\r\n    const dataStore = new FusionCharts.DataStore().createDataTable(data, schema);\r\n    // time series chart instance\r\n    const realtimeChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"chart-container\",\r\n      width: \"100%\",\r\n      height: \"600\",\r\n      dataSource: {\r\n        data: dataStore,\r\n        yAxis: { plottype: \"area\" },\r\n        series: \"City\"\r\n      }\r\n    });\r\n\r\n    let lastTimeStr = data[data.length - 1][0];\r\n\r\n    realtimeChart.addEventListener(\r\n      \"rendered\",\r\n      ({\r\n        sender: realtimeChart\r\n      }) => {\r\n        lastTimeStr = getNextRandomDate(lastTimeStr);\r\n        console.log(\"new lastTimeStr:\",lastTimeStr)\r\n        let newDate = new Date(lastTimeStr);\r\n        console.log(\"newDate without format:\",newDate)\r\n        let formattedNewDate = fd(newDate);\r\n        console.log(\"new Date first time:\",formattedNewDate)\r\n        \r\n        let incrementor = setInterval(() => {\r\n          console.log(\"formattedNewDate before randomizing:\",formattedNewDate);\r\n          newDate = getNextRandomDate(formattedNewDate);\r\n          formattedNewDate =fd(newDate);\r\n\r\n          realtimeChart.feedData([\r\n            [formattedNewDate, randBetween(13, 45), \"Kuala Lumpur\"],\r\n            [formattedNewDate, randBetween(13, 45), \"Panama City\"]\r\n          ]);\r\n        }, 1000);\r\n      });\r\n    realtimeChart.render();"
+		},
+		{
+		  "name": "getYAxis",
+		  "description": "Returns the current y-axis options in use.",
+		  "params": [
+			{
+			  "name": "Name",
+			  "header": "getYAxis Parameters",
+			  "subparams": [
+				{
+				  "name": "data",
+				  "type": [
+					"string",
+					"object"
+				  ],
+				  "description": "y-axis options.",
+				  "defaultvalue": ""
+				}
+			  ]
+			}
+		  ],
+		  "shortDescription": "",
+		  "info": "",
+		  "example": {
+			"header": "Example",
+			"slug": "y-axis-method-getData",
+			"_renderBtn": true
+		  },
+		  "tags": {},
+		  "syntax": "functionupdate() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
+		},
+		{
+		  "name": "setYAxis",
+		  "description": "Sets new options and properties for y-axis.",
+		  "params": [
+			{
+			  "name": "Name",
+			  "header": "setYAxis Parameters",
+			  "subparams": [
+				{
+				  "name": "data",
+				  "type": [
+					"string",
+					"object"
+				  ],
+				  "description": "y-axis options.",
+				  "defaultvalue": ""
+				}
+			  ]
+			}
+		  ],
+		  "shortDescription": "",
+		  "info": "",
+		  "example": {
+			"header": "Example",
+			"slug": "y-axis-method-setData",
+			"_renderBtn": true
+		  },
+		  "tags": {},
+		  "syntax": "functionupdate() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
 		}
-	]
+		]
 }

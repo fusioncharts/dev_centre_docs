@@ -254,6 +254,48 @@ The live chart will look as shown below:
 
 {% embed_ftChart clip-time-axis %}
 
+You can also use the `autoClipNullData` and `autoClipMultiplier` attributes to clip unwanted time durations. You can set these attributes on the x-axis. `autoClipNullData` only clips the time axis when the specified time unit does not contain data, it accepts values as strings like: year, month, day, hour, minute, second, and millisecond. `autoClipMultiplier` takes the multiplier input for `autoClipNullData`.
+
+If you want to clip a particular time interval, for example days, set the value of `autoClipNullData` to "day". Next, set a multiplier in `autoClipMultiplier`, in this example "2". When rendering the chart, if there are two null data points in 2 days that period is clipped in the time axis. If `showClippingCue` is enabled and two consecutive periods have null data, instead of showing two consequent clipping cues they are  joined into a single clipping cue on the time axis.
+
+Refer to the code given below:
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    caption: {
+      text: "Temperature variations - New York 2019"
+    },
+    subcaption: {
+      text:
+        "Daily average temperature of New York City - missing data on Feb 5th"
+    },
+    yaxis: [
+      {
+        columnname: "Daily Visitors",
+        plottype: "column",
+        title: "Daily Visitors"
+      }
+    ],
+    xaxis: {
+      initialinterval: {
+        from: "1/1/2019",
+        to: "30/6/2019"
+      },
+      showclippingcue: "1",
+      autoClipNullData: "day",
+      autoClipMultiplier: 2
+    }
+  }
+});
+```
+
+The live chart will look as shown below:
+
+{}
+
+
 ## Output time format
 
 FusionTime supports the following time units:

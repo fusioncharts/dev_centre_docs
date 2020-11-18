@@ -1063,11 +1063,23 @@
         "name": "showToolTipShadow"
       },
       {
-        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
+        "description": "Specify custom text for node tooltips at global level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
         "range": "",
         "type": "String",
-        "name": "plottooltext"
-      }
+        "name": "plotToolText"
+      },
+      {
+        "description": "Specify custom text for link tooltips at global level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
+        "range": "",
+        "type": "String",
+        "name": "linkToolText"
+      },
+      {
+        "description": "Specify custom text for node or link tooltips at local level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
+        "range": "",
+        "type": "String",
+        "name": "tooltext"
+      }        
     ],
     "description": "These attributes let you control the tooltip. You can set the background color, border color, separator character and few other details. "
   },

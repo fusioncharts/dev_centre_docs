@@ -592,3 +592,95 @@ The chart will look as shown below:
 Click [here](http://jsfiddle.net/fusioncharts/fv8rjxyo/) to edit the above diagram.
 
 In the above chart, you can see the transparency of all the links are set to `20` except for the link from Germany to European Union.
+
+### Customize Tooltips
+
+You can customize tooltips for nodes and links to present more informative messages when users hover nodes or links. To do this you can use the `plotToolText`, `linkToolText`, or `toolText` attributes along with a number of macros. 
+
+#### Using `plotToolText`
+
+The `plotToolText` attribute works at global level, it defines a tooltip template for all the nodes in a chart. The value for the `plotToolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+
+For Sankey diagram, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+
+Refer to the code below:
+
+```javascript
+{
+    "chart": {
+        "plotToolText": '$label exports $nodeDataValue'
+    }
+}
+```
+
+A Sankey diagram using `plotToolText` looks like:
+
+{}
+
+Click [here]() to edit the above diagram.
+
+
+#### Using `linkToolText`
+
+The `linkToolText` attribute works at global level, it defines a tooltip template for all the links in a chart. The value for the `linkToolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+
+For Sankey diagram, `linkToolText` supports the following macros `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+
+Refer to the code below:
+
+```javascript
+{
+    "chart": {
+        "linkToolText": '$from exports $linkValue to $to'
+    }
+}
+```
+
+A Sankey diagram using `linkToolText` looks like:
+
+{}
+
+Click [here]() to edit the above diagram.
+
+
+#### Using `toolText`
+
+The `toolText` attribute works at local level for links and nodes, it defines a tooltip template for individual links or nodes in a chart. The value for the `toolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+
+When using `toolText` in nodes, it uses the following macros: `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+
+
+Refer to the code below:
+
+```javascript
+{
+    "nodes": [{
+        "plotToolText": '$label exports $nodeDataValue'
+    }]
+}
+```
+
+A Sankey diagram using `linkToolText` looks like:
+
+{}
+
+Click [here]() to edit the above diagram.
+
+When using `toolText` in links, it uses the following macros: `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+
+
+Refer to the code below:
+
+```javascript
+{
+    "links": [{
+         "toolText": '$dominantNode exports $dominantFlowDataValue to $subservientNode'
+    }]
+}
+```
+
+A Sankey diagram using `toolText` looks like:
+
+{}
+
+Click [here]() to edit the above diagram.

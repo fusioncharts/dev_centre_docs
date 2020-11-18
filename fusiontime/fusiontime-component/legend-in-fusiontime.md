@@ -49,3 +49,27 @@ legend: {
     }]
 }
 ```
+
+### Configure Legend position
+
+By default the legend box is placed below the chart, you can use the `position` and `alignment` attributes in the `legend` object to set the legend position and alignment.  
+
+* Specify the position of the legend using the `position` attribute, you can set its value to one of the following: `bottom`, `top`, `left`, and `right`. This attribute places the legend in one of four positions around the chart. For example, in the following code sample the legend is placed at the top of the chart.
+
+```javascript
+legend: {
+    enabled: '1',
+    position: 'top'  
+}
+```
+
+* Specify the alignment of the legend using the `alignment` attribute, you can set its value to one of the following: `start`, `middle`, and `end`. This attribute aligns the legend relative to the chart body and legend position, for example in the following code sample the legend is placed at the top-left of the chart. 
+
+```javascript
+legend: {
+    enabled: '1',
+    position: 'top',
+    alignment: 'end'
+}
+```
+
