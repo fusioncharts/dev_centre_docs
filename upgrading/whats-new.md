@@ -6,6 +6,13 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.16.x.
 
+## Custom Text for Sankey and Chord Tooltips
+
+FusionCharts Suite XT introduces support for customizing the text in link and node tooltips on Chord and Sankey; to do this, Chord and Sankey now support the `plotToolText` attribute and also add two new attributes: `linkToolText` and `toolText`. This release also introduces a number of macros specific for Chord and Sankey.
+
+ A chart with custom tooltips looks like as shown below:
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/d6hcoz8g/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 
 ## Settting label icons opacity.
 
