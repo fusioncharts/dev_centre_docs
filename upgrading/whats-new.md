@@ -6,7 +6,7 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.16.x.
 
-## Custom Text for Sankey and Chord Tooltips
+## Text customization for Sankey and Chord Tooltips
 
 FusionCharts Suite XT introduces support for customizing the text in link and node tooltips on Chord and Sankey; to do this, Chord and Sankey now support the `plotToolText` attribute and also add two new attributes: `linkToolText` and `toolText`. This release also introduces a number of macros specific for Chord and Sankey.
 
@@ -36,10 +36,10 @@ Using the `inherit` value looks like as shown below:
 
 FusionCharts Suite XT introduces relative font sizes support for text elements, the following relative font sizes are supported:
 
-_`rem`
-_`%`
-_`em`
-_`vw`
+-  `rem`
+-  `%`
+-  `em`
+-  `vw`
 
 Using relative font sizes text elements resize relative to the size of charts. This provides more responsive charts whose text elements scale properly when displayed in different screen sizes.
 
