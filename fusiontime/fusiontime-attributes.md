@@ -1752,7 +1752,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportEnabled`</td>
 		<td>Boolean</td>
-		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLSX.</td>
+		<td>Whether the chart will allow exporting to images, CSV, PDFs, SVG, XLS or XLSX.</td>
 	</tr>
 	<tr>
 		<td>`exportAction`</td>
