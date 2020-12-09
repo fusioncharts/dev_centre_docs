@@ -128,3 +128,30 @@ The chart will look like as shown below:
 {% embed_chart chart-configurations-titles-and-axis-names-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/bbsmmt84/) to edit the above chart.
+
+## Support for HTML tags across all chart text elements 
+
+FusionCharts Suite XT introduces support for HTML tags across all chart text elements. To define the HTML elements, even for the existing tags, FusionCharts does not support {}. The user must use the valid HTML tags. For example `<strong>`Bold text`</strong>` is supported but {strong}Bold text{/strong} is not. Use inline HTML elements to customize captions and sub-captions.
+
+We included support for the following elements:
+* Abbreviation `<abbr>`
+* Anchor Tag `<a>`
+* Bold Text `<b>`
+* Caption `<caption>`
+* Delete `<del>`
+* Emphasized Text `<em>`
+* Important Text `<strong>` 
+* Italics Text `<i>`  
+* Legend Caption `<legend>`
+* Line Break `<br>`
+* Span `<span>` 
+* Strikethrough `<s>` 
+* Subscript Text `<sub>`
+* Superscript `<sup>` 
+* Underline Text `<u>` 
+
+Note: If any other HTML element is specified apart from the list above, FusionChart displays it as a string on the chart.
+A chart with custom tooltips looks like as shown below:
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="NWrReYa" src="https://codepen.io/chartistdev-the-vuer/embed/NWrReYa?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"> See the Pen <a href='https://codepen.io/chartistdev-the-vuer/pen/NWrReYa'>NWrReYa</a> by ChartistDev (<a href='https://codepen.io/chartistdev-the-vuer'>@chartistdev-the-vuer</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
