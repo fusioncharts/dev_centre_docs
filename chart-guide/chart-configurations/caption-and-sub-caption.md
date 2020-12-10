@@ -153,9 +153,10 @@ We included support for the following elements:
 
 Note: If any other HTML element is specified apart from the list above, it is displayed as a string on the chart.
 
-A chart with caption and sub-caption having inline HTML tags is shown below:
+The chart will look like as shown below:
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Support for HTML tags across all chart text elements" src="https://codepen.io/fusioncharts/embed/gOwwyXz?height=265&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwyXz'>Support for HTML tags across all chart text elements</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+{% embed_chart html-tags-example.js %}
+
+Click [here](http://https://codepen.io/chartistdev-the-vuer/pen/NWrReYa) to edit the above chart.
+
+
