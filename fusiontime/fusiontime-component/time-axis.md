@@ -293,7 +293,7 @@ new FusionCharts({
 
 The live chart will look as shown below:
 
-{}
+{% embed_ftChart clip-time-axis-null %}
 
 
 ## Output time format
