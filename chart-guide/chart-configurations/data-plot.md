@@ -195,6 +195,7 @@ Refer to the code below:
 ```
 The chart will look as show below:
 
+{% embed_chart pattern-fill-chart-example.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/15cfL6yg/) to edit the above chart.
 
