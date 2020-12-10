@@ -3,27 +3,26 @@ title: Release Notes | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
+
 <h2 class="sub-heading">Version 2.4.0</h2>
 
 <p class="release-date">14th November, 2020</p>
 
 <h4>New Features</h4>
 
-- Starting version 2.4.0, FusionTime now allows you to export your charts in XLS or CVS format. 
-- FusionTime now allows you to format the tooltip for time navigator. For more information refer to [time navigator](/dev/fusiontime/fusiontime-component/time-navigator). 
-- Prior to 3.16 the time-axis clipping feature in FusionTime required users to manually specify dates and intervals for clipping, This clipping worked whether there was null data or not. This release introduces an auto time-axis clipping feature, which when enabled clips the time-axis when null data is present for the given time multiplier.
-- Prior to 3.16, the default position for the legend box was on the bottom-left and it was not configurable. This release introduces two new attributes that allow users change the legend position to 12 different positions available. For more information refer to the [Legend documentation](/dev/fusiontime/fusiontime-component/legend-in-fusiontime).
-- Prior to 3.16, There was no direct way to customize `y-axis` and to update `y-axis` or to update the plot type, users had to update the whole chart by passing the complete chart JSON again. Starting v2.4 we have the API methods `setYAxis` and `getYAxis` which can be used to update the y-axis and its properties easily.
+-  Starting version 2.4.0, FusionTime now allows you to export your charts in XLS or CVS format.
+-  FusionTime now allows you to format the tooltip for time navigator. For more information refer to [time navigator](/fusiontime/fusiontime-component/time-navigator).
+-  Prior to 3.16 the time-axis clipping feature in FusionTime required users to manually specify dates and intervals for clipping, This clipping worked whether there was null data or not. This release introduces an auto time-axis clipping feature, which when enabled clips the time-axis when null data is present for the given time multiplier.
+-  Prior to 3.16, the default position for the legend box was on the bottom-left and it was not configurable. This release introduces two new attributes that allow users change the legend position to 12 different positions available. For more information refer to the [Legend documentation](/fusiontime/fusiontime-component/legend-in-fusiontime).
+-  Prior to 3.16, There was no direct way to customize `y-axis` and to update `y-axis` or to update the plot type, users had to update the whole chart by passing the complete chart JSON again. Starting v2.4, users will have the API methods `setYAxis` and `getYAxis` which can be used to update the y-axis and its properties easily.
 
 <h4>Improvements</h4>
 
-- The use of hyphens in a data series name string is now available and no longer causes the chart to render without any data plots. 
-Previously, when a hyphen was used in the data series name string no data plots were shown in the chart.  
+-  The use of hyphens (`-`) in a data series name string is now available and no longer causes the chart to render without any data plots. Previously, when a hyphen was used in the data series name string no data plots were plotted on the chart.
 
 <h4>Fixes</h4>
 
-- When using Firefox browser, the Zooming and panning interactions now work properly. 
-Previously these interactions were slow in the Firefox browser compared to other browsers
+-  When using Firefox browser, the zooming and panning interactions now work properly. Previously these interactions were slow for Firefox browser compared to the other browsers.
 
 <h2 class="sub-heading">Version 2.3.0</h2>
 
