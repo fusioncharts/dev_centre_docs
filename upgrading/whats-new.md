@@ -6,7 +6,7 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.16.x.
 
-## Text customization for Sankey and Chord Tooltips
+## Tooltip customization for Sankey and Chord Tooltips
 
 FusionCharts Suite XT introduces support for customizing the text in link and node tooltips on Chord and Sankey; to do this, Chord and Sankey now support the `plotToolText` attribute and also add two new attributes: `linkToolText` and `toolText`. This release also introduces a number of macros specific for Chord and Sankey.
 
@@ -17,16 +17,15 @@ A chart with custom tooltips looks like as shown below:
   (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+## Setting legend icons opacity
 
-## Settting legend icons opacity
+FusionCharts Suite XT introduces the `inherit` value for the `legendIconAlpha` and `legendIconBgAlpha` attributes. When setting value for these attributes to `inherit` they use the values set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects to configure opacity for legend icons.
 
-FusionCharts Suite XT introduces the `inherit` value for the `legendIconAlpha` and `legendIconBgAlpha`attributes. When setting their attribute to `inherit` they use the value set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects.
+Using the `inherit` value looks like as shown below:
 
-Using the `inherit`value looks like as shown below:
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Legend Alpha" src="https://codepen.io/FCsamples/embed/jOrjWor?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/jOrjWor'>Legend Alpha</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height="500" style="width: 100%;" scrolling="no" title="Setting legend icons opacity" src="https://codepen.io/fusioncharts/embed/gOwwJGN?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwJGN'>Setting legend icons opacity</a> by FusionCharts
+  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ## Setting anchor border color, background color, and alpha value
@@ -49,7 +48,6 @@ Using the `inherit` value looks like as shown below:
   (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
 ## Relative Font Sizes
 
 FusionCharts Suite XT introduces relative font sizes support for text elements, the following relative font sizes are supported:
@@ -63,9 +61,9 @@ Using relative font sizes text elements resize relative to the size of charts. T
 
 Using relative font sizes looks like as shown below:
 
-<iframe height="530" style="width: 100%;" scrolling="no" title="Auto Scaling Text" src="https://codepen.io/FCsamples/embed/WNxqvXp?height=530&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/WNxqvXp'>Auto Scaling Text</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height="500" style="width: 100%;" scrolling="no" title="Relative Font Sizes" src="https://codepen.io/fusioncharts/embed/zYKKQaR?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/fusioncharts/pen/zYKKQaR'>Relative Font Sizes</a> by FusionCharts
+  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 When you scale the chart display area, text elements also scale relative to the chart.
@@ -74,43 +72,47 @@ When you scale the chart display area, text elements also scale relative to the 
 
 FusionCharts Suite now allows you to use patterns for filling data plots, this improves the accessibility of charts and can also help implementing charts on printed media. Currently, the following charts support patterns:
 
--  2D Column and Area charts.
+-  2D Column, Bar and Area charts.
 -  Pie2D, Doughnut2d, and Multi-level Pie chart.
 -  Bubble, Funnel, and Pyramid charts.
--  2D Combination charts (only for column and area plot).
+-  2D Combination charts (only for column, bar and area plot).
 
 Newly introduced attributes allow you configure the look of patterns, you can set type, color, size, density, angle, and alpha values.
 
 Using pattern fills looks like as shown below:
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Pattern Fill" src="https://codepen.io/FCsamples/embed/VwjJeZM?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/VwjJeZM'>Pattern Fill</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height="500" style="width: 100%;" scrolling="no" title="Pattern Fill for Data Plots" src="https://codepen.io/fusioncharts/embed/qBaaGLQ?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/fusioncharts/pen/qBaaGLQ'>Pattern Fill for Data Plots</a> by FusionCharts
+  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-## Support for HTML tags across all chart text elements 
+## Support for HTML tags across all chart text elements
 
-FusionCharts Suite XT introduces support for HTML tags across all chart text elements. To define the HTML elements, even for the existing tags, FusionCharts does not support {}. The user must use the valid HTML tags. For example `<strong>`Bold text`</strong>` is supported but {strong}Bold text{/strong} is not.
+FusionCharts Suite XT introduces support for inline HTML tags across all chart text elements. To define the HTML elements, even for the existing tags, FusionCharts does not support {}. The user must use the valid HTML tags. For example `<strong>`Bold text`</strong>` is supported but {strong}Bold text{/strong} is not.
 
 We included support for the following elements:
-* Abbreviation `<abbr>`
-* Anchor Tag `<a>`
-* Bold Text `<b>`
-* Caption `<caption>`
-* Delete `<del>`
-* Emphasized Text `<em>`
-* Important Text `<strong>` 
-* Italics Text `<i>`  
-* Legend Caption `<legend>`
-* Line Break `<br>`
-* Span `<span>` 
-* Strikethrough `<s>` 
-* Subscript Text `<sub>`
-* Superscript `<sup>` 
-* Underline Text `<u>` 
 
-Note: If any other HTML element is specified apart from the list above, FusionChart displays it as a string on the chart.
-A chart with custom tooltips looks like as shown below:
+-  Abbreviation `<abbr>`
+-  Anchor Tag `<a>`
+-  Bold Text `<b>`
+-  Caption `<caption>`
+-  Delete `<del>`
+-  Emphasized Text `<em>`
+-  Important Text `<strong>`
+-  Italics Text `<i>`
+-  Legend Caption `<legend>`
+-  Line Break `<br>`
+-  Span `<span>`
+-  Strikethrough `<s>`
+-  Subscript Text `<sub>`
+-  Superscript `<sup>`
+-  Underline Text `<u>`
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="NWrReYa" src="https://codepen.io/chartistdev-the-vuer/embed/NWrReYa?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"> See the Pen <a href='https://codepen.io/chartistdev-the-vuer/pen/NWrReYa'>NWrReYa</a> by ChartistDev (<a href='https://codepen.io/chartistdev-the-vuer'>@chartistdev-the-vuer</a>) on <a href='https://codepen.io'>CodePen</a>.
+Note: If any other HTML element is specified apart from the list above, it is displayed as a string on the chart.
+
+A chart with inline HTML tags is shown below:
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Support for HTML tags across all chart text elements" src="https://codepen.io/fusioncharts/embed/gOwwyXz?height=265&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwyXz'>Support for HTML tags across all chart text elements</a> by FusionCharts
+  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

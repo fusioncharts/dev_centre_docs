@@ -12,15 +12,15 @@ Sankey Diagram is a type of flow diagram that depicts the flow of resources (mat
 
 To create a sankey diagram follow the steps given below:
 
-- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+-  In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-- Specify the chart type using the `type` attribute. To render a sankey diagram, set `sankey`.
+-  Specify the chart type using the `type` attribute. To render a sankey diagram, set `sankey`.
 
-- Set the container object using `renderAt` attribute.
+-  Set the container object using `renderAt` attribute.
 
-- Specify the dimension of the chart using `width` and `height` attributes.
+-  Specify the dimension of the chart using `width` and `height` attributes.
 
-- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+-  Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/sankey) page of sankey diagram.
 
@@ -196,9 +196,9 @@ Click [here](http://jsfiddle.net/fusioncharts/r0bcdw8y/) to edit the above diagr
 
 You can position a node label at the start, in the end, or inside a node. To do so, set the value of the `nodeLabelPosition` attribute to one of the following:
 
-- Set it to `start`, to position it to the left side of the node.
+-  Set it to `start`, to position it to the left side of the node.
 
-- Set it to `right`, to position it to the right side of the node.
+-  Set it to `right`, to position it to the right side of the node.
 
 By default, the value of `nodeLabelPosition` is set to `end`.
 
@@ -412,35 +412,35 @@ In the above chart, you can see that all nodes are opaque, except China for whic
 
 You can apply a series of cosmetic modifications to node labels. They are listed below:
 
-- Set the font of the node label text using the `nodeLabelFont` attribute.
+-  Set the font of the node label text using the `nodeLabelFont` attribute.
 
-- Set the color of the node label text using the `nodeLabelFontColor` attribute.
+-  Set the color of the node label text using the `nodeLabelFontColor` attribute.
 
-- Set the transparency (between `0` for transparent and `100` for opaque) of the node label using the `nodeLabelAlpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the node label using the `nodeLabelAlpha` attribute.
 
-- Set the background color of the node label using the `nodeLabelBgColor` attribute.
+-  Set the background color of the node label using the `nodeLabelBgColor` attribute.
 
-- Set the border color of the node label using the `nodeLabelBorderColor` attribute.
+-  Set the border color of the node label using the `nodeLabelBorderColor` attribute.
 
-- Set the border thickness of the node label using the `nodeLabelBorderColor` attribute.
+-  Set the border thickness of the node label using the `nodeLabelBorderColor` attribute.
 
-- Set the font size of the node label text using the `nodeLabelFontSize` attribute.
+-  Set the font size of the node label text using the `nodeLabelFontSize` attribute.
 
-- Set the font style of the node label text to bold using the `nodeLabelFontBold` attribute.
+-  Set the font style of the node label text to bold using the `nodeLabelFontBold` attribute.
 
-- Set the font style of the node label text to italic using the `nodeLabelFontItalic` attribute.
+-  Set the font style of the node label text to italic using the `nodeLabelFontItalic` attribute.
 
-- Set the border radius of the node label using the `nodeLabelBorderRadius` attribute.
+-  Set the border radius of the node label using the `nodeLabelBorderRadius` attribute.
 
-- Set the space between the node label border and the node label using the `nodeLabelBorderPadding` attribute.
+-  Set the space between the node label border and the node label using the `nodeLabelBorderPadding` attribute.
 
-- Set the node label border style to dashed using the `nodeLabelBorderDashed` attribute.
+-  Set the node label border style to dashed using the `nodeLabelBorderDashed` attribute.
 
-- Set the lengths of node label border dashes using the `nodeLabelBorderDashLen` attribute. Note that this attribute only works if you apply the `nodeLabelBorderDashed` attribute to the node.
+-  Set the lengths of node label border dashes using the `nodeLabelBorderDashLen` attribute. Note that this attribute only works if you apply the `nodeLabelBorderDashed` attribute to the node.
 
-- Set the length of the gaps between node label border dashes using the `nodeLabelBorderDashGap` attribute. Note that this attribute only works if you apply the `nodeLabelBorderDashed` attribute to the node.
+-  Set the length of the gaps between node label border dashes using the `nodeLabelBorderDashGap` attribute. Note that this attribute only works if you apply the `nodeLabelBorderDashed` attribute to the node.
 
-- Set the label to inherit its color from the node using the `inheritLabelColorFromNode` attribute.
+-  Set the label to inherit its color from the node using the `inheritLabelColorFromNode` attribute.
 
 Use the code given below to apply the customizations listed above to your chart:
 
@@ -523,13 +523,13 @@ You can apply the following customizations to the appearance of a link.
 
 You can customize the color of a link using the `linkColor`attribute. Set its value to one of the following options:
 
-- Set it to `source` to make the link inherit the color of its source node or the `from` node.
+-  Set it to `source` to make the link inherit the color of its source node or the `from` node.
 
-- Set it to `target` to make the link inherit its color from the target node or the `to` node.
+-  Set it to `target` to make the link inherit its color from the target node or the `to` node.
 
-- Set it to `blend` to combine the colors of the source and target nodes of a link and apply that to the link as a gradient.
+-  Set it to `blend` to combine the colors of the source and target nodes of a link and apply that to the link as a gradient.
 
-- Set it to the hexadecimal value of a color to apply that color to the link.
+-  Set it to the hexadecimal value of a color to apply that color to the link.
 
 You can set the color of all links globally. To do so, set the value of the `linkColor` attribute to one of the options mentioned above, and include it within the `chart` object. However, if you want to set the color of a single link, set the value of the `color` attribute to one of the options given above and include it within the `links` object for that particular link.
 
@@ -595,11 +595,11 @@ In the above chart, you can see the transparency of all the links are set to `20
 
 ### Customize Tooltips
 
-You can customize tooltips for nodes and links to present more informative messages when users hover nodes or links. To do this you can use the `plotToolText`, `linkToolText`, or `toolText` attributes along with a number of macros. 
+You can customize tooltips for nodes and links to show more contextual information when users hover over nodes or links. To do this you can use the `plotToolText`, `linkToolText`, or `toolText` attributes along with a number of supported macros.
 
 #### Using `plotToolText`
 
-The `plotToolText` attribute works at global level, it defines a tooltip template for all the nodes in a chart. The value for the `plotToolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+The `plotToolText` attribute works at global level, it defines a tooltip template for all the nodes in a chart. The value for the `plotToolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
 For Sankey diagram, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
@@ -619,10 +619,9 @@ A Sankey diagram using `plotToolText` looks like:
 
 Click [here]() to edit the above diagram.
 
-
 #### Using `linkToolText`
 
-The `linkToolText` attribute works at global level, it defines a tooltip template for all the links in a chart. The value for the `linkToolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+The `linkToolText` attribute works at global level, it defines a tooltip template for all the links in a chart. The value for the `linkToolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
 For Sankey diagram, `linkToolText` supports the following macros `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
@@ -642,13 +641,11 @@ A Sankey diagram using `linkToolText` looks like:
 
 Click [here]() to edit the above diagram.
 
-
 #### Using `toolText`
 
-The `toolText` attribute works at local level for links and nodes, it defines a tooltip template for individual links or nodes in a chart. The value for the `toolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
+The `toolText` attribute works at local level for links and nodes, it defines a tooltip template for individual links or nodes in a chart. The value for the `toolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
 When using `toolText` in nodes, it uses the following macros: `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
-
 
 Refer to the code below:
 
@@ -667,7 +664,6 @@ A Sankey diagram using `linkToolText` looks like:
 Click [here]() to edit the above diagram.
 
 When using `toolText` in links, it uses the following macros: `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
-
 
 Refer to the code below:
 
