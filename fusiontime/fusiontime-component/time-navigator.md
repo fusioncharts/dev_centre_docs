@@ -111,7 +111,8 @@ Refer to the code below:
 
 For a list of supported formats refer to [Date and Time Formats](/dev/fusiontime/fusiontime-attributes#date-time-format)
 
-{}
+{% embed_ftChart fusiontime-timenavigator-tooltip %}
+
 
 [**Try it yourself!**]()
 
