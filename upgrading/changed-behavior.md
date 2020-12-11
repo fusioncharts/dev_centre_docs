@@ -4,67 +4,40 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.3.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.16.x.
 
-## Depecrated the creditLabel property
+## Configuring legend icons opacity
 
-The `creditLabel` property under FusionCharts.options was previously used to hide watermarks from charts. Starting version 3.15.3 users have to activate their license using the new `license` property to hide watermarks. For more information, please refer to this [guide](/dev/upgrading/license-activation). 
+You can now set the values of `legendIconAlpha` and `legendIconBgAlpha` attributes to `inherit` to inherit the alpha value from the data plot attributes. The default value for `legendIconAlpha` and `legendIconBgAlpha` is now set to `inherit` and they can now work at both global and local level. Previously, `legendIconAlpha` and `legendIconBgAlpha` had a default value of 100% and could only be used at global level.
 
-## Setting yAxisValueDecimals when setAdaptiveYMin is enabled.
+## Configuring anchors and their opacity
 
-yAxisValueDecimal now displays the right number of decimal places when `setAdaptiveYMin` and `forceYAxisValueDecimals` are enabled. Previously, yAxisValueDecimal failed to work  properly with values lower than 3 when `setAdaptiveYMin` was enabled.
+You can set the values of `anchorBorderColor` and `anchorBgColor` attributes to `inherit` so they use the palette color value from data plots. `anchorAlpha`, `anchorBgAlpha`, and `anchorImageAlpha` can use the value `inherit` to use the the alpha value from data plots defined via `plotFillAlpha` or `alpha`. Previously, using a theme or palette color in charts with line/area plot and anchors only affected `anchorBorderColor` anchor background was null/transparent.
 
-**Before the fix** `yAxisValueDecimals` is set to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 3 decimal places.
-![Decimal Issue](/images/Decimal_Issue.png)
+## Support for HTML tags across all chart text elements
 
-**After the fix** `yAxisValueDecimals` is set to 2 and setAdaptiveYMin to 1 (enabled) the chart shows values with 2 decimal places.
-![Decimal Fix](/images/Decimal_Fix.png)
+FusionCharts now uses the standard way for defining all existing and new inline HTML tags. Example: `<br>`. Previously, FusionCharts used the `{br}` template style to define inline HTML tags which is now deprecated.
 
-## Crossline tooltips position
+## Returning column data values when exporting SparkWinLoss charts
 
-`zoomline` and `zoomlineDY` charts now show tooltips values sorted in decreasing order. Previously, tooltip values were displayed in the same order they had on the category object. For further information refer to [Displaying Values in Tooltips](chart-guide/standard-charts/zoom-line-charts#displaying-values-in-tooltips)
+Exporting SparkWinLoss charts as a CSV or Excel file now displays the win, loss and draw column values correctly. Previously, when exporting a SparkWinLoss chart to CVS or Excel, the output was inconsistent.
 
-## Returning property names using getJSONData() and getChartData()
+## TreeMap charts render all data plots with specified colors
 
-With the introduction of the `isRaw` property `getJSONData()` and `getChartData()` now return property names without changing the casing used in the dataSource. Previously, `getJSONData()` and `getChartData()` returned all property names as lowercase regardless of the letter casing specified by the user in 'dataSource'.
+Treemap charts are now improved to handle situations when the secondary value is `0`. Previously, if secondary value was `0` the data plots were not colored properly and appeared as white on the chart.
 
-`getJSONData()` and `getChartData()` can now return all property names as defined on the data source. Here is an example
+**Before the fix** Earlier, if the secondary value was `0` the data plot was not colored properly and appeared as white.
+![TreeMap](/images/2003_BeforeFix.png)
 
-```javascript
-    let jsonData = topStores.getJSONData({ isRaw:1 });
-    let chartData = topStores.getJSONData({ format:'json', isRaw:1 });
-```
+**After the fix** Treemap charts now render all data plots with their specified color.
+![Treemap](/images/2003_AfterFix.PNG)
 
-For more information refer to [getChartData](api/fusioncharts/fusioncharts-methods#getChartData) and [getJSONData](api/fusioncharts/fusioncharts-methods#getJSONData).
+## Multi-series Column charts display all column bars correctly
 
-## Task labels in Gantt Charts
+The Multi-series Column chart now displays all small values column bars correctly. Previously zero values had a fix height of 1px while values higher than zero were not visible.
 
-In Gantt charts, the task labels are now displayed properly. Previously, when scrolling horizontally  the task labels overlapped with the vertical scroll bar.
+**Before the fix** Earlier, 0 values had a fix height of 1px while small values higher then 0 were not visible for scenario when the value difference is huge.
+![0 Value](1937_BeforeFix.png)
 
-**Before the fix**
-![label overlap](/images/LabelOverlap_original.png)
-
-**After the fix**
-![label overlap fixed](/images/LabelOverlap_update.png)
-
-## Legend spacing in all Charts
-
-For an optimal data visualization, the space between legend items has been decreased in order to improve the visual space of the data plot.
-
-For more information see [legend](chart-guide/chart-configurations/legend).
-
-**Before the fix**
-![legend spacing](/images/legend_spacing_original.png)
-
-**After the fix**
-![legend spacing fixed](/images/legend_spacing_update.png)
-
-## The "%" symbol displays correctly in all Stacked Charts
-
-In Stacked bar charts the percentage "%" symbol now displays properly on the numeric axis. Previously, when the `stack100Percent` attribute was set to 1, the "%" symbol did not get applied on the numeric axis
-
-**Before the fix**
-![legend spacing](/images/percentage_original.png)
-
-**After the fix**
-![legend spacing](/images/percentage_update.png)
+**After the fix** The Multi-series Column chart now displays all small value column bars with a fixed height of 1px and all 0 values are now displayed correctly.
+![0 Value](1937_AfterFix.JPG)

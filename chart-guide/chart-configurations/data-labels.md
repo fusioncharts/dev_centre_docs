@@ -1,10 +1,10 @@
 ---
 title: Display Customized Data Labels on Charts & Graphs
-description: Customize the way data labels look like on your Charts and Graphs. Learn how to use the 5 modes of showing labels - Auto, Wrap, Stagger, Rotate and None. 
+description: Customize the way data labels look like on your Charts and Graphs. Learn how to use the 5 modes of showing labels - Auto, Wrap, Stagger, Rotate and None.
 heading: Display Customized Data Labels
 ---
 
-Data labels are the names of the data points that are displayed on the x-axis of a chart. 
+Data labels are the names of the data points that are displayed on the x-axis of a chart.
 
 ![Data Labels](/images/chart-configurations-data-labels-image-1.png)
 
@@ -16,18 +16,18 @@ You can configure the arrangement and display properties for data labels using t
 
 In this mode, the chart automatically chooses the most appropriate display mode for data labels - depending on space availability. If the number of data labels is greater than the available space, then the data labels are either truncated (with ellipses to indicate truncation), wrapped, or rotated. On hovering over a truncated data label, a tooltip showing the full label text is displayed. By default, the auto mode is active, but can be disabled by switching to an alternative label display mode.
 
-In auto mode, you can set whether the long data labels be truncated by adding ellipses using the `useEllipsesWhenOverflow` attribute. By default, this attribute is set to `1` to prevent the long labels from overflowing the chart background. 
+In auto mode, you can set whether the long data labels be truncated by adding ellipses using the `useEllipsesWhenOverflow` attribute. By default, this attribute is set to `1` to prevent the long labels from overflowing the chart background.
 
-Set the `useEllipsesWhenOverflow` to `0` to stop displaying the data labels as ellipses. 
+Set the `useEllipsesWhenOverflow` to `0` to stop displaying the data labels as ellipses.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "labelDisplay": "Auto",
-        "useEllipsesWhenOverflow":"0"
-    }
+   "chart": {
+      "labelDisplay": "Auto",
+      "useEllipsesWhenOverflow": "0"
+   }
 }
 ```
 
@@ -45,12 +45,12 @@ In this mode, you can wrap long x-axis labels into multiple lines. If enough spa
 
 ```json
 {
-    "chart": {
-        "rotateLabels": "0",
-        "labelDisplay": "wrap"
-    }
+   "chart": {
+      "rotateLabels": "0",
+      "labelDisplay": "wrap"
+   }
 }
- ```
+```
 
 The chart with wrapped labels will look like as shown below:
 
@@ -66,11 +66,11 @@ Set the `labelDisplay` attribute as `rotate` to view the data labels in rotate m
 
 ```json
 {
-    "chart": {
-       "labelDisplay": "rotate"
-    }
+   "chart": {
+      "labelDisplay": "rotate"
+   }
 }
- ```
+```
 
 The chart will look like as shown below:
 
@@ -86,10 +86,10 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "labelDisplay": "rotate",
-        "slantLabel": "1"
-    }
+   "chart": {
+      "labelDisplay": "rotate",
+      "slantLabel": "1"
+   }
 }
 ```
 
@@ -107,9 +107,9 @@ In this mode, data labels are distributed on multiple levels (default is 2) to i
 
 ```json
 {
-    "chart": {
-        "labelDisplay": "stagger"
-    }
+   "chart": {
+      "labelDisplay": "stagger"
+   }
 }
 ```
 
@@ -121,12 +121,12 @@ Click [here](http://jsfiddle.net/fusioncharts/z7L18vvh/) to edit the above chart
 
 To change the distribution levels (default is 2) specify the level using the `staggerLines` attribute. Refer to the code below:
 
- ```json
+```json
 {
-    "chart": {
-        "labelDisplay": "stagger",
-        "staggerLines": "4"
-    }
+   "chart": {
+      "labelDisplay": "stagger",
+      "staggerLines": "4"
+   }
 }
 ```
 
@@ -142,9 +142,9 @@ If your data plot consists of values representing continuous quantities such as 
 
 ```json
 {
-    "chart": {
-        "labelStep": "3"
-    }
+   "chart": {
+      "labelStep": "3"
+   }
 }
 ```
 
@@ -160,9 +160,9 @@ To hide the data labels set the `showLabels` attribute to `0` within the `chart`
 
 ```json
 {
-    "chart": {
-        "showLabels": "0"               
-    }
+   "chart": {
+      "showLabels": "0"
+   }
 }
 ```
 
@@ -174,27 +174,30 @@ Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/) to edit the above chart
 
 ## Hide Specific Data Labels
 
-By default, all the data labels are displayed. You can opt to hide specific data values using the `showLabel` attribute within `data` under `chart` object. 
+By default, all the data labels are displayed. You can opt to hide specific data values using the `showLabel` attribute within `data` under `chart` object.
 
 ```json
 {
-    "chart": {
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "theme": "fusion",
-        "showlabels": "0"
-    },
-    "data": [{
-        "label": "January",
-        "value": "420000",
-        "showLabel": "1"
-    }, {
-        "label": "February",
-        "value": "810000"
-    }]
+   "chart": {
+      "caption": "Monthly Revenue",
+      "subCaption": "Last year",
+      "xAxisName": "Month",
+      "yAxisName": "Amount (In USD)",
+      "numberPrefix": "$",
+      "theme": "fusion",
+      "showlabels": "0"
+   },
+   "data": [
+      {
+         "label": "January",
+         "value": "420000",
+         "showLabel": "1"
+      },
+      {
+         "label": "February",
+         "value": "810000"
+      }
+   ]
 }
 ```
 
@@ -220,15 +223,15 @@ Specify the space between the canvas border and first (& last data plots) using 
 
 ```json
 {
-    "chart": {
-        "caption": "Quarterly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Quarter",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "canvasPadding": "30",
-        "theme": "fusison"
-    }
+   "chart": {
+      "caption": "Quarterly Revenue",
+      "subCaption": "Last year",
+      "xAxisName": "Quarter",
+      "yAxisName": "Amount (In USD)",
+      "numberPrefix": "$",
+      "canvasPadding": "30",
+      "theme": "fusison"
+   }
 }
 ```
 
@@ -242,50 +245,50 @@ Click [here](http://jsfiddle.net/fusioncharts/m11nsrja/) to edit the above chart
 
 Advanced x-axis label management has been implemented to achieve the following objectives:
 
-* All x-axis labels should get centrally aligned to the respective data-plots (columns, points on line charts, etc.)
+-  All x-axis labels should get centrally aligned to the respective data-plots (columns, points on line charts, etc.)
 
-* X-axis labels should not overlap each other
+-  X-axis labels should not overlap each other
 
-* X-axis labels should not overlap with other chart objects such as legends or x-axis name
+-  X-axis labels should not overlap with other chart objects such as legends or x-axis name
 
-* Long labels should not go outside the chart
+-  Long labels should not go outside the chart
 
-* Optimized truncation of longer labels and putting ellipses at the end
+-  Optimized truncation of longer labels and putting ellipses at the end
 
 > Advanced label management is not applicable to Bar, Pie, Doughnut, Marimekko, Zoom Line and Multi-series Combination 3D charts.
 
 ## Customize Data Label Properties
 
-You can customize the cosmetic properties of data labels such as font, border, background, and alpha. 
+You can customize the cosmetic properties of data labels such as font, border, background, and alpha.
 
 ### Font Properties
 
 To customize the font properties of the data labels, the following attributes are used:
 
-* `labelFont` - Set the font face for the data labels, e.g. `Arial`.
+-  `labelFont` - Set the font face for the data labels, e.g. `Arial`.
 
-* `labelFontColor` - Set the font color for data labels, e.g. `#00ffaa`.
+-  `labelFontColor` - Set the font color for data labels, e.g. `#00ffaa`.
 
-* `labelFontSize` - Specify the data label font size, within a range of `0` to `72`.
+-  `labelFontSize` - Specify the data label font size, in `px`, `rem`, `%`, `em` or `vw` .
 
-* `labelFontBold` - Set to `1` to make the label font bold.
+-  `labelFontBold` - Set to `1` to make the label font bold.
 
-* `labelFontItalic` - Set to `1` to make the label font italic.
+-  `labelFontItalic` - Set to `1` to make the label font italic.
 
-* `labelAlpha` - Specify the transparency of the label font.
+-  `labelAlpha` - Specify the transparency of the label font.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "labelFont": "Arial",
-        "labelFontColor": "0075c2",
-        "labelFontSize": "15",
-        "labelFontBold":"1",
-        "lableFontItalic":"1",
-        "labelAlpha":"70"
-    }
+   "chart": {
+      "labelFont": "Arial",
+      "labelFontColor": "0075c2",
+      "labelFontSize": "15",
+      "labelFontBold": "1",
+      "lableFontItalic": "1",
+      "labelAlpha": "70"
+   }
 }
 ```
 
@@ -295,40 +298,51 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/) to edit the above chart.
 
+### Relative Font Sizes
+
+The `labelFontSize` attribute can use the following relative font sizes:
+
+-  `rem`
+-  `%`
+-  `em`
+-  `vw`
+
+Relative font sizes allow you to have charts where data labels can have a size relative to the size of your chart. This is specially useful when scaling text elements across different screen sizes.
+
 ### Border properties
 
 To customize the border of the data labels, the following attributes are used:
 
-* `labelBorderColor` - Set the border color for data labels, e.g. `#00ffaa`.
+-  `labelBorderColor` - Set the border color for data labels, e.g. `#00ffaa`.
 
-* `labelBorderAlpha` - Specify the transparency of the border.
+-  `labelBorderAlpha` - Specify the transparency of the border.
 
-* `labelBorderPadding` - Set the padding between data labels and border.
+-  `labelBorderPadding` - Set the padding between data labels and border.
 
-* `labelBorderRadius` - Set the radius of the border around the data labels.
+-  `labelBorderRadius` - Set the radius of the border around the data labels.
 
-* `labelBorderThickness` - Set the thickness of the border.
+-  `labelBorderThickness` - Set the thickness of the border.
 
-* `labelBorderDashed` - Set to `1` to draw label borders using dashed lines.
+-  `labelBorderDashed` - Set to `1` to draw label borders using dashed lines.
 
-* `labelBorderDashGap` - Set the gap between two consecutive dashes of data label border (in pixels).
+-  `labelBorderDashGap` - Set the gap between two consecutive dashes of data label border (in pixels).
 
-* `labelBorderDashLen` - Set the length of each dash in data label border (in pixels).
+-  `labelBorderDashLen` - Set the length of each dash in data label border (in pixels).
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {    
-        "labelBorderPadding": "5",
-        "labelBorderRadius": "2",
-        "labelBorderDashed": "1",
-        "labelBorderDashGap": "2",
-        "labelBorderDashLen": "3",
-        "labelBorderThickness": "2",
-        "labelBorderColor": "#00ffaa",
-        "labelBorderAlpha": "60"
-    }
+   "chart": {
+      "labelBorderPadding": "5",
+      "labelBorderRadius": "2",
+      "labelBorderDashed": "1",
+      "labelBorderDashGap": "2",
+      "labelBorderDashLen": "3",
+      "labelBorderThickness": "2",
+      "labelBorderColor": "#00ffaa",
+      "labelBorderAlpha": "60"
+   }
 }
 ```
 
@@ -342,9 +356,9 @@ Click [here](http://jsfiddle.net/fusioncharts/qvjdz1Lw/) to edit the above chart
 
 To change the background of the data labels, the following attributes are used:
 
-* `labelBgColor` - Set the background color of data labels, e.g. `#00ffaa`.
+-  `labelBgColor` - Set the background color of data labels, e.g. `#00ffaa`.
 
-* `lableBgAlpha` -  Set the transparency of background of the data labels.
+-  `lableBgAlpha` - Set the transparency of background of the data labels.
 
 Refer to the code below:
 
@@ -368,7 +382,7 @@ Click [here](http://jsfiddle.net/fusioncharts/usa7yuo1/) to edit the above chart
 
 Shown below is a chart with some very long data labels, where the data plots are getting reduced to a fraction of the chart.
 
-You can limit the maximum height of the data labels using the `maxLabelHeight` attribute. This will truncate the data labels (add ellipsis) according to the maximum height set. 
+You can limit the maximum height of the data labels using the `maxLabelHeight` attribute. This will truncate the data labels (add ellipsis) according to the maximum height set.
 
 Refer to the code below:
 
@@ -378,7 +392,7 @@ Refer to the code below:
     "chart": {
         "maxLabelHeight": "50"
     }
-}    
+}
 ```
 
 The chart will look like as shown below:
@@ -405,3 +419,33 @@ The chart with data label linked will look like as shown below:
 {% embed_chart chart-configurations-data-labels-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ferd2app/) to edit the above chart.
+
+## Support for HTML tags across all chart text elements
+
+FusionCharts Suite XT introduces support for inline HTML tags across all chart text elements. To define the HTML elements, even for the existing tags, FusionCharts does not support {}. The user must use the valid HTML tags. For example `<strong>`Bold text`</strong>` is supported but {strong}Bold text{/strong} is not. Use inline HTML elements to customize captions and sub-captions.
+
+We included support for the following elements:
+
+-  Abbreviation `<abbr>`
+-  Anchor Tag `<a>`
+-  Bold Text `<b>`
+-  Caption `<caption>`
+-  Delete `<del>`
+-  Emphasized Text `<em>`
+-  Important Text `<strong>`
+-  Italics Text `<i>`
+-  Legend Caption `<legend>`
+-  Line Break `<br>`
+-  Span `<span>`
+-  Strikethrough `<s>`
+-  Subscript Text `<sub>`
+-  Superscript `<sup>`
+-  Underline Text `<u>`
+
+Note: If any other HTML element is specified apart from the list above, it is displayed as a string on the chart.
+
+The chart will look like as shown below:
+
+{% embed_chart html-tags-example.js %}
+
+Click [here](http://https://codepen.io/chartistdev-the-vuer/pen/NWrReYa) to edit the above chart.

@@ -21,14 +21,14 @@
         ],
         xaxis: {
           initialinterval: {
-            from: "1/1/2019",
-            to: "30/6/2019"
+            from: "2018-01-01",
+            to: "2018-04-01"
           },
           showclippingcue: "1",
           clip: [
             {
-              from: "2019 Feb 05",
-              to: "2019 Feb 05",
+              from: "2018 Feb 05",
+              to: "2018 Feb 05",
               format: "%Y %b %d"
             }
           ]

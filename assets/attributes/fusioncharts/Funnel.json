@@ -564,13 +564,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -895,6 +895,62 @@
         "type": "Number",
         "versionsince": "3.14.0",
         "name": "minPlotHeightForValue"
+      },
+      {
+        "description": "Enables the use of pattern fills at global level.",
+        "range": "1/0",
+        "type": "Boolean",
+        "versionsince": "3.16.0",
+        "name": "usePattern"
+      },
+      {
+        "description": "Set the type of pattern, possible values are: `circle`, `square`, and `line`. The default value is `line`",
+        "range": "'circle', 'square', 'line'",
+        "type": "String",
+        "versionsince": "3.16.0",
+        "name": "patternType"
+      },
+      {
+        "description": "Set the angle of the pattern fill in degrees. The default value is 40 for lines and 0 for circle and square.",
+        "range": "0-360",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternAngle"
+      },
+      {
+        "description": "Set the density of pattern fill shapes in pixels. The default value is 6.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternDensity"
+      },
+      {
+        "description": "Set the size of the pattern fill shape.\n\nIt sets the thickness of lines, the default value is 2.\nIt sets the diameter of circles, the default value is 4.\nIt sets the length of squares, the default value is 4.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternSize"
+      },
+      {
+        "description": "Sets the color of pattern shapes in 6-digit hex color notation, by default it inherits values from `paletteColors`.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.16.0",
+        "name": "color"
+      },
+      {
+        "description": "Set the opacity of pattern shapes in %. The default value is 100.",
+        "range": "0-100",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternAlpha"
+      },      
+      {
+        "description": "Set the background color for pattern fills in 6-digit hex color notation.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.16.0",
+        "name": "patternBgColor"
       }
     ],
     "description": "The following attributes are used to customize the appearance of the funnel. "
@@ -1051,7 +1107,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "",
         "type": "Number",
         "name": "baseFontSize"
@@ -1083,7 +1139,7 @@
         "name": "labelFontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the x-axis label font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",
@@ -1796,7 +1852,7 @@
         "name": "labelFontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the x-axis label font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",

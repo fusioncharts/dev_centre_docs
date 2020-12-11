@@ -67,6 +67,15 @@ new FusionCharts({
 		<td>An object to set the initial spread of the active window.</td>
 	</tr>
 	<tr>
+		<td>`autoClipNullData`</td>
+		<td>String</td>
+		<td>Specifies the time unit for auto clipping.</td>
+	</tr>
+	<tr>
+		<td>`autoClipMultiplier`</td>
+		<td>Number</td>
+		<td>Specifies the multiplier for autoclipping.</td>
+	</tr>		
 </table>
 
 ### Style Time Axis
@@ -516,6 +525,11 @@ new FusionCharts({
 		<td>`height`</td>
 		<td>Number</td>
 		<td>An attribute to set the height of the time naviagator. You can also set the ratio with respect height of the canvas using `canvasHeightProportion` attribute where the fourth ratio will represent the height of the time navigator.</td>
+	</tr>
+		<tr>
+		<td>`outputTimeFormat`</td>
+		<td>Object</td>
+		<td>An object to specify the date-time format for the tooltip.</td>
 	</tr>
 </table>
 
@@ -1256,7 +1270,9 @@ new FusionCharts({
 		}, {
 			value: 'Series B'
 			initiallyhidden: 0,
-		}]
+		}],
+		    position: 'bottom', 
+            alignment: 'start'
 	}
   }
 });
@@ -1277,6 +1293,17 @@ new FusionCharts({
 		<td>`initiallyhidden`</td>
 		<td>Object</td>
 		<td>This attribute lets you keep the legend hidden when the chart is initially rendered.</td>
+	</tr>
+	<tr>
+		<td>`position`</td>
+		<td>String</td>
+		<td>This attribute lets you set the position of the legend, possible values are: `bottom`, `top`, `right`, and `left`.</td>
+	</tr>
+	<tr>
+		<td>`alignment`</td>
+		<td>String</td>
+		<td>This attribute lets you set the alignment of the legend, possible values are: `start`, `end`, and `middle`.</td>
+	</tr>	
 </table>
 
 ## Data Markers
@@ -1725,7 +1752,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportEnabled`</td>
 		<td>Boolean</td>
-		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLSX.</td>
+		<td>Whether the chart will allow exporting to images, CSV, PDFs, SVG, XLS or XLSX.</td>
 	</tr>
 	<tr>
 		<td>`exportAction`</td>

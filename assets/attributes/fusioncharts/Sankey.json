@@ -514,13 +514,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -1220,7 +1220,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "baseFontSize"
@@ -1278,7 +1278,25 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showToolTipShadow"
-      }
+      },
+      {
+        "description": "Specify custom text for node tooltips at global level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
+        "range": "",
+        "type": "String",
+        "name": "plotToolText"
+      },
+      {
+        "description": "Specify custom text for link tooltips at global level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
+        "range": "",
+        "type": "String",
+        "name": "linkToolText"
+      },
+      {
+        "description": "Specify custom text for node or link tooltips at local level.\n You can use plain text, macros, and basic html like `br`, `strong`, `em`,and `b`.",
+        "range": "",
+        "type": "String",
+        "name": "tooltext"
+      }           
     ],
     "description": "These attributes let you control the tooltip. You can set the background color, border color, separator character and few other details. "
   },

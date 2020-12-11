@@ -1124,5 +1124,123 @@ By default, the tooltip text for the data plots in a box and whisker chart inclu
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
-
+    <tr>
+        <td> `$nodeValue` </td>
+        <td> Gets the unformatted value from a node.</td>
+        <td> <li>Chord</li> <li>Sankey</li> </td>
+        <td> <li>`chart`: {`plotToolText`}</li> <li>`node`: {`plotToolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$nodeDataValue` </td>
+        <td> Gets the formatted value from a node.</td>
+        <td> <li>Chord</li> <li>Sankey</li> </td>
+        <td> <li>`chart`: {`plotToolText`}</li> <li>`node`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$plotFillColor` </td>
+        <td> Gets the fill color of a node in hex format.</td>
+        <td> <li>Chord</li> <li>Sankey</li> </td>
+        <td> <li>`chart`: {`plotToolText`}</li> <li>`node`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$plotFillAlpha` </td>
+        <td> Gets the fill alpha (transparency) of a node.</td>
+        <td> <li>Chord</li> <li>Sankey</li> </td>
+        <td> <li>`chart`: {`plotToolText`}</li> <li>`node`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$plotIdentifier` </td>
+        <td> Gets the legend icon shape defined in the legend box.</td>
+        <td> <li>Chord</li> <li>Sankey</li> </td>
+        <td> <li>`chart`: {`plotToolText`}</li> <li>`node`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$dominantNode` </td>
+        <td> Gets the label (name) of the dominant node.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>    
+    <tr>
+        <td> `$subservientNode` </td>
+        <td> Gets the label (name) of the subservient node.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$dominantFlowValue` </td>
+        <td> Gets the unformatted value of the dominant flow.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$dominantFlowDataValue` </td>
+        <td> Gets the formatted value of the dominant flow.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$subservientFlowValue` </td>
+        <td> Gets the unformatted value of the subservient flow.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$subservientFlowDataValue` </td>
+        <td> Gets the formatted value of the subservient flow.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$dominantPlotIdentifier` </td>
+        <td> Gets the legend icon shape of the dominant node.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>            
+    <tr>
+        <td> `$subservientPlotIdentifier` </td>
+        <td> Gets the legend icon shape of the subservient node.</td>
+        <td> <li>Chord</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$from` </td>
+        <td> Gets the value of the "from" node label.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$to` </td>
+        <td> Gets the value of the "to" node label.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$linkValue` </td>
+        <td> Gets the unformatted value of the link.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$linkDataValue` </td>
+        <td> Gets the formatted value of the link.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    <tr>
+        <td> `$fromPlotIdentifier` </td>
+        <td> Gets the legend icon shape of the "from" node.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+        <td> `$toPlotIdentifier` </td>
+        <td> Gets the legend icon shape of the "to" node.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>
+    </tr>
+        <td> `$flowDirection` </td>
+        <td> Gets the flow direction, an arrow shape from left to right.</td>
+        <td> <li>Sankey</li></td>
+        <td> <li>`chart`: {`linkToolText`}</li> <li>`link`: {`toolText`}</li></td>
+    </tr>    
 </table>
