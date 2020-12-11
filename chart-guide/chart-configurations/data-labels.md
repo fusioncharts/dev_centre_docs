@@ -302,10 +302,10 @@ Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/) to edit the above chart
 
 The `labelFontSize` attribute can use the following relative font sizes:
 
--  rem
--  %
--  em
--  vw
+-  `rem`
+-  `%`
+-  `em`
+-  `vw`
 
 Relative font sizes allow you to have charts where data labels can have a size relative to the size of your chart. This is specially useful when scaling text elements across different screen sizes.
 
