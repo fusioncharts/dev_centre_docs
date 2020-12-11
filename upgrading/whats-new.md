@@ -12,10 +12,7 @@ FusionCharts Suite XT introduces support for customizing the text in link and no
 
 A chart with custom tooltips looks like as shown below:
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Custom Text on Tooltips" src="https://codepen.io/FCsamples/embed/ZEONemy?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/ZEONemy'>Custom Text on Tooltips</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/fusioncharts/nr8ec62f/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Setting legend icons opacity
 
@@ -25,28 +22,25 @@ Using the `inherit` value looks like as shown below:
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="Setting legend icons opacity" src="https://codepen.io/fusioncharts/embed/gOwwJGN?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwJGN'>Setting legend icons opacity</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
 ## Setting anchor border color, background color, and alpha value
 
-FusionCharts Suite XT introduces the `inherit` value for the `anchorAlpha`, `anchorBgAlpha`, and `anchorImageAlpha` attributes. When setting their attribute to `inherit` they use the value set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects.
+FusionCharts Suite XT introduces the `inherit` value for the `anchorAlpha`, `anchorBgAlpha`, and `anchorImageAlpha` attributes. When setting their value to `inherit` they use the value set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects.
 
 Using the `inherit`value looks like as shown below:
 
 <iframe height="488" style="width: 100%;" scrolling="no" title="Inherit  Anchors Alpha" src="https://codepen.io/FCsamples/embed/NWrZPdZ?height=488&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/FCsamples/pen/NWrZPdZ'>Inherit  Anchors Alpha</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
-FusionCharts Suite XT introduces the `inherit` value for the `anchorBorderColor`, and `anchorBgColor` attributes. When setting their attribute to `inherit` they use the value set in `paletteColors` at global level and `color` at the local level for either data object and data series objects.
+FusionCharts Suite XT introduces the `inherit` value for the `anchorBorderColor`, and `anchorBgColor` attributes. When setting their value to `inherit` they use the value set in `paletteColors` at global level and `color` at the local level for either data object and data series objects.
 
 Using the `inherit` value looks like as shown below:
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="Inherit Colors for Anchors" src="https://codepen.io/FCsamples/embed/LYZKYWG?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/FCsamples/pen/LYZKYWG'>Inherit Colors for Anchors</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
 ## Relative Font Sizes
 
