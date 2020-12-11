@@ -10,17 +10,17 @@ The X-axis of a chart in FusionTime represents the `date` column from the data t
 
 The salient features of the time axis are:
 
-- Intelligently creates a timescale to represent the chart data.
+-  Intelligently creates a timescale to represent the chart data.
 
-- Uses major ticks, minor ticks and the contextual labels to help understand the timescale.
+-  Uses major ticks, minor ticks and the contextual labels to help understand the timescale.
 
-- Each tick is associated with a label. The label is center aligned with the tick and appears right below it.
+-  Each tick is associated with a label. The label is center aligned with the tick and appears right below it.
 
-- The visibility of each label is smartly controlled to reduce clutter and provide better clarity of the timescale.
+-  The visibility of each label is smartly controlled to reduce clutter and provide better clarity of the timescale.
 
-- The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
+-  The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
 
-- The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, and time navigator, or interactions such as zoom/pan from the chart canvas.
+-  The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, and time navigator, or interactions such as zoom/pan from the chart canvas.
 
 A sample chart is shown below:
 
@@ -45,8 +45,8 @@ new FusionCharts({
 
 In th above code:
 
-- Create the `xAxis` object.
-- Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
+-  Create the `xAxis` object.
+-  Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
 
 > If the tabular data has only one date type column, then FT automatically represents it in the `xAxis`.
 
@@ -56,13 +56,13 @@ In th above code:
 
 Binning stages can be defined for the following time units:
 
-- Year
-- Month
-- Day
-- Hour
-- Minute
-- Second
-- Millisecond
+-  Year
+-  Month
+-  Day
+-  Hour
+-  Minute
+-  Second
+-  Millisecond
 
 Default binning happens for each time unit, and if you want to modify it, you can specify the valid multipliers for each time unit.
 
@@ -140,20 +140,20 @@ Refer the code below:
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    xAxis: {
-      binning: {
-        year: [1],
-        month: [],
-        day: [],
-        hour: [],
-        minute: [],
-        second: [],
-        millisecond: []
-      }
-    }
-  }
+   type: 'timeseries',
+   dataSource: {
+      xAxis: {
+         binning: {
+            year: [1],
+            month: [],
+            day: [],
+            hour: [],
+            minute: [],
+            second: [],
+            millisecond: [],
+         },
+      },
+   },
 });
 ```
 
@@ -169,20 +169,20 @@ Refer the code below:
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    xAxis: {
-      binning: {
-        year: [],
-        month: [1],
-        day: [],
-        hour: [],
-        minute: [],
-        second: [],
-        millisecond: []
-      }
-    }
-  }
+   type: 'timeseries',
+   dataSource: {
+      xAxis: {
+         binning: {
+            year: [],
+            month: [1],
+            day: [],
+            hour: [],
+            minute: [],
+            second: [],
+            millisecond: [],
+         },
+      },
+   },
 });
 ```
 
@@ -196,11 +196,11 @@ The time axis offers a clipping feature, which you can use to remove the time pe
 
 Consider the following scenarios:
 
-- You only wish to display data for the business hours of an organization (say, 10 am to 7 pm) and clip sections of the time axis that indicate the time period from 7 pm to 10 am of the next business day.
+-  You only wish to display data for the business hours of an organization (say, 10 am to 7 pm) and clip sections of the time axis that indicate the time period from 7 pm to 10 am of the next business day.
 
-- You wish to remove the section for the holiday season in an organization, i.e., you want to clip sections of the time axis from the second week of December to the first week of January.
+-  You wish to remove the section for the holiday season in an organization, i.e., you want to clip sections of the time axis from the second week of December to the first week of January.
 
-- You only want to display data for weekdays and clip sections for Saturdays and Sundays from the time axis.
+-  You only want to display data for weekdays and clip sections for Saturdays and Sundays from the time axis.
 
 Use the `clip` object (under `xAxis`) to remove time duration which you do not need on the time axis. You can set the value of `clip` using `from`, `to`, and `repeat` parameters inside the **clip** object. The last two values are optional, but clipping will not work if you omit the `from` value.
 
@@ -216,37 +216,36 @@ Refer to the code given below:
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    caption: {
-      text: "Temperature variations - New York 2019"
-    },
-    subcaption: {
-      text:
-        "Daily average temperature of New York City - missing data on Feb 5th"
-    },
-    yaxis: [
-      {
-        columnname: "Daily Visitors",
-        plottype: "column",
-        title: "Daily Visitors"
-      }
-    ],
-    xaxis: {
-      initialinterval: {
-        from: "1/1/2019",
-        to: "30/6/2019"
+   type: 'timeseries',
+   dataSource: {
+      caption: {
+         text: 'Temperature variations - New York 2019',
       },
-      showclippingcue: "1",
-      clip: [
-        {
-          from: "2019 Feb 05",
-          to: "2019 Feb 05",
-          format: "%Y %b %d"
-        }
-      ]
-    }
-  }
+      subcaption: {
+         text: 'Daily average temperature of New York City - missing data on Feb 5th',
+      },
+      yaxis: [
+         {
+            columnname: 'Daily Visitors',
+            plottype: 'column',
+            title: 'Daily Visitors',
+         },
+      ],
+      xaxis: {
+         initialinterval: {
+            from: '2018-01-01',
+            to: '2018-04-01',
+         },
+         showclippingcue: '1',
+         clip: [
+            {
+               from: '2018 Feb 05',
+               to: '2018 Feb 05',
+               format: '%Y %b %d',
+            },
+         ],
+      },
+   },
 });
 ```
 
@@ -254,40 +253,41 @@ The live chart will look as shown below:
 
 {% embed_ftChart clip-time-axis %}
 
+As you can see, data from Feburary 5, 2018 has been clipped in the above example.
+
 You can also use the `autoClipNullData` and `autoClipMultiplier` attributes to clip unwanted time durations. You can set these attributes on the x-axis. `autoClipNullData` only clips the time axis when the specified time unit does not contain data, it accepts values as strings like: year, month, day, hour, minute, second, and millisecond. `autoClipMultiplier` takes the multiplier input for `autoClipNullData`.
 
-If you want to clip a particular time interval, for example days, set the value of `autoClipNullData` to "day". Next, set a multiplier in `autoClipMultiplier`, in this example "2". When rendering the chart, if there are two null data points in 2 days that period is clipped in the time axis. If `showClippingCue` is enabled and two consecutive periods have null data, instead of showing two consequent clipping cues they are  joined into a single clipping cue on the time axis.
+If you want to clip a particular time interval, for example days, set the value of `autoClipNullData` to "day". Next, set a multiplier in `autoClipMultiplier`, in this example "2". When rendering the chart, if there are two null data points in 2 days that period is clipped in the time axis. If `showClippingCue` is enabled and two consecutive periods have null data, instead of showing two consequent clipping cues they are joined into a single clipping cue on the time axis.
 
 Refer to the code given below:
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    caption: {
-      text: "Temperature variations - New York 2019"
-    },
-    subcaption: {
-      text:
-        "Daily average temperature of New York City - missing data on Feb 5th"
-    },
-    yaxis: [
-      {
-        columnname: "Daily Visitors",
-        plottype: "column",
-        title: "Daily Visitors"
-      }
-    ],
-    xaxis: {
-      initialinterval: {
-        from: "1/1/2019",
-        to: "30/6/2019"
+   type: 'timeseries',
+   dataSource: {
+      caption: {
+         text: 'Temperature variations - New York 2019',
       },
-      showclippingcue: "1",
-      autoClipNullData: "day",
-      autoClipMultiplier: 2
-    }
-  }
+      subcaption: {
+         text: 'Daily average temperature of New York City - missing data on Feb 5th',
+      },
+      yaxis: [
+         {
+            columnname: 'Daily Visitors',
+            plottype: 'column',
+            title: 'Daily Visitors',
+         },
+      ],
+      xaxis: {
+         initialinterval: {
+            from: '1/1/2019',
+            to: '30/6/2019',
+         },
+         showclippingcue: '1',
+         autoClipNullData: 'day',
+         autoClipMultiplier: 2,
+      },
+   },
 });
 ```
 
@@ -295,18 +295,17 @@ The live chart will look as shown below:
 
 {% embed_ftChart clip-time-axis-null %}
 
-
 ## Output time format
 
 FusionTime supports the following time units:
 
-- Year
-- Month
-- Day
-- Hour
-- Minute
-- Second
-- Millisecond
+-  Year
+-  Month
+-  Day
+-  Hour
+-  Minute
+-  Second
+-  Millisecond
 
 You can customize the output time format for each time unit by specifying date-time tokens for respective time format.
 
@@ -332,9 +331,9 @@ In the above example, we have tried to specify the output time format on the tim
 
 In the above code:
 
-- Define the `xAxis` object.
-- Create the `outputTimeFormat` object.
-- Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
+-  Define the `xAxis` object.
+-  Create the `outputTimeFormat` object.
+-  Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
 
 > If yo do not set the data-time tokens for any time unit, the default formatting for the particular time unit will apply.
 
@@ -354,9 +353,9 @@ The date-time tokens for respective time formats is given below:
 
 Styling can be applied to three elements of the X-axis:
 
-- Labels
-- Title
-- Tick marks
+-  Labels
+-  Title
+-  Tick marks
 
 FusionTime allows to the style the major and minor ticks individually. The values of the style properties for major and minor tick marks and their labels are derived from the provided style.
 
@@ -380,12 +379,12 @@ The syntax to customize the ticks and labels of the time axis is given below:
 
 In the above code:
 
-- `xAxis` is the object to customize the elements of the x-axis.
-- `style` is the object to apply to style the x-axis.
-- `tick-mark` is used to apply to style to both major and minor ticks.
-- `tick-mark-major` is used to apply to the major ticks of the time axis.
-- `tick-mark-minor` is used to apply to style to the minor ticks of the time axis.
-- `label` is used to set the labels of the ticks.
-- `label-major` is used to set the contextual labels of the major ticks.
-- `label-minor` is used to set the contextual labels of the minor ticks
-- `label-context` is used to set the contextual labels to help understand the timescale.
+-  `xAxis` is the object to customize the elements of the x-axis.
+-  `style` is the object to apply to style the x-axis.
+-  `tick-mark` is used to apply to style to both major and minor ticks.
+-  `tick-mark-major` is used to apply to the major ticks of the time axis.
+-  `tick-mark-minor` is used to apply to style to the minor ticks of the time axis.
+-  `label` is used to set the labels of the ticks.
+-  `label-major` is used to set the contextual labels of the major ticks.
+-  `label-minor` is used to set the contextual labels of the minor ticks
+-  `label-context` is used to set the contextual labels to help understand the timescale.
