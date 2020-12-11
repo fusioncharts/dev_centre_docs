@@ -1275,7 +1275,7 @@
 					"string",
 					"object"
 				  ],
-				  "description": "y-axis options.",
+				  "description": "returns plot type.",
 				  "defaultvalue": ""
 				}
 			  ]
@@ -1289,7 +1289,7 @@
 			"_renderBtn": true
 		  },
 		  "tags": {},
-		  "syntax": "functionupdate() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
+		  "syntax": "function update() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
 		},
 		{
 		  "name": "setYAxis",
@@ -1305,7 +1305,7 @@
 					"string",
 					"object"
 				  ],
-				  "description": "y-axis options.",
+				  "description": "sets plot type.",
 				  "defaultvalue": ""
 				}
 			  ]
@@ -1319,7 +1319,7 @@
 			"_renderBtn": true
 		  },
 		  "tags": {},
-		  "syntax": "functionupdate() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
+		  "syntax": "function update() {\r\n    let data = chart.getYAxis()\r\n    if (data.plottype === 'column') {\r\n       data.plottype = 'area';\r\n    } else {\r\n      data.plottype = 'column';\r\n   }\r\n   chart.setYAxis(data)\r\n }"
 		}
 		]
 }
