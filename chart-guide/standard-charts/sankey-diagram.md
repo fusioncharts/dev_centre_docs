@@ -608,16 +608,10 @@ Refer to the code below:
 ```javascript
 {
     "chart": {
-        "plotToolText": '$label exports $nodeDataValue'
+        "plotToolText": '$plotfillcolor $label'
     }
 }
 ```
-
-A Sankey diagram using `plotToolText` looks like:
-
-{}
-
-Click [here]() to edit the above diagram.
 
 #### Using `linkToolText`
 
@@ -630,16 +624,10 @@ Refer to the code below:
 ```javascript
 {
     "chart": {
-        "linkToolText": '$from exports $linkValue to $to'
+        "linkToolText": '$from To $to $linkValue'
     }
 }
 ```
-
-A Sankey diagram using `linkToolText` looks like:
-
-{}
-
-Click [here]() to edit the above diagram.
 
 #### Using `toolText`
 
@@ -657,11 +645,6 @@ Refer to the code below:
 }
 ```
 
-A Sankey diagram using `linkToolText` looks like:
-
-{}
-
-Click [here]() to edit the above diagram.
 
 When using `toolText` in links, it uses the following macros: `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
@@ -670,13 +653,13 @@ Refer to the code below:
 ```javascript
 {
     "links": [{
-         "toolText": '$dominantNode exports $dominantFlowDataValue to $subservientNode'
+         "toolText": 'From: $from To: $to $linkValue'
     }]
 }
 ```
 
-A Sankey diagram using `toolText` looks like:
+A Sankey diagram using customized tooltips looks like:
 
-{}
+{% embed_chart standard-charts-sankey-diagram-tooltips.js %}
 
-Click [here]() to edit the above diagram.
+Click [here](https://jsfiddle.net/fusioncharts/nr8ec62f/) to edit the above diagram.
