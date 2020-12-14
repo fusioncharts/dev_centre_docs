@@ -583,13 +583,13 @@
         "name": "captionOnRight"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -954,7 +954,7 @@
         "name": "valueFontColor"
       },
       {
-        "description": "Specifies the value font size",
+        "description": "Specifies the value font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "valueFontSize"
@@ -1111,7 +1111,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "",
         "type": "Number",
         "name": "baseFontSize"

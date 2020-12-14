@@ -1805,7 +1805,7 @@
                   "path": "/upgrading/license-activation"
                },
                {
-                  "title": "Upgrade to v3.15.x",
+                  "title": "Upgrade to v3.16.x",
                   "children": [
                      {
                         "title": "Changelog",
@@ -1844,6 +1844,10 @@
                {
                   "title": "Version History",
                   "children": [
+                     {
+                        "title": "v3.15.x",
+                        "path": "/upgrading/version-history/version-3-15-X"
+                     },
                      {
                         "title": "v3.14.x",
                         "path": "/upgrading/version-history/version-3-14-X"

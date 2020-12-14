@@ -582,13 +582,13 @@
         "name": "captionOnTop"
       },
       {
-        "description": "Sets the caption font size in pixels",
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "captionFontSize"
       },
       {
-        "description": "Sets the sub-caption font size (in pixels)",
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "subCaptionFontSize"
@@ -870,7 +870,7 @@
         "name": "valueFontColor"
       },
       {
-        "description": "Specifies the value font size",
+        "description": "Specifies the value font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "valueFontSize"
@@ -1151,7 +1151,7 @@
         "name": "baseFont"
       },
       {
-        "description": "This attribute sets the base font size of the chart, that is, all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here.",
+        "description": "This attribute sets the base font size of the chart, that is, all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
         "range": "6 - 72",
         "type": "Number",
         "name": "baseFontSize"
@@ -1467,7 +1467,6 @@
         "name": "showValue"
       }
     ],
-    "description": "The attributes of the `category` object are used to define and customize individual x-axis labels for multi-series charts.",
     "description": "For a multi-level pie chart, the `category` object is used to define product categories that will be shown on the chart. For defining sub-categories, the `category` object for the sub-category is nested within the `category` object of the main category."
   }
 ]

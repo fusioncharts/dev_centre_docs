@@ -12,19 +12,19 @@ The time navigator component is drawn below the time axis of a FusionTime chart.
 
 The major features of **Time Navigator** include the following:
 
-- Shows the entire underlying data (including all data series) as data plots.
+-  Shows the entire underlying data (including all data series) as data plots.
 
-- Has a scroll bar with scroll buttons at both the ends.
+-  Has a scroll bar with scroll buttons at both the ends.
 
-- Has an active window with a pair of draggable handles which you can use to display the selected time period.
+-  Has an active window with a pair of draggable handles which you can use to display the selected time period.
 
-- You can pan the active window of the time navigator to view the data of a specific section in greater details in the chart shown above.
+-  You can pan the active window of the time navigator to view the data of a specific section in greater details in the chart shown above.
 
-- The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the date/time in the custom range selector, etc.
+-  The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the date/time in the custom range selector, etc.
 
-- The chart canvas updates automatically every time you make a selection using the handles of the Time Navigator.
+-  The chart canvas updates automatically every time you make a selection using the handles of the Time Navigator.
 
-- In case of multivariate charts, there is only one common time navigator for all the canvases.
+-  In case of multivariate charts, there is only one common time navigator for all the canvases.
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
@@ -71,12 +71,13 @@ Refer to the code below:
 
 In the above code:
 
-- Create the `initialInterval` object in the `xaxis` object to specify the spread of time axis on initial loading or rendering.
+-  Create the `initialInterval` object in the `xaxis` object to specify the spread of time axis on initial loading or rendering.
 
-- In the `initialInterval` object:
-  - `from` attribute is used to set the time from where you want your time-series chart to be rendered.
+-  In the `initialInterval` object:
 
-  - `to` attribute is used to set the time up to which you want your time-series chart to be rendered.
+   -  `from` attribute is used to set the time from where you want your time-series chart to be rendered.
+
+   -  `to` attribute is used to set the time up to which you want your time-series chart to be rendered.
 
 > If 'from' is not specified, then the first timestamp of the data will be taken, and if 'to' is not specified, then the last timestamp of data will be considered.
 
@@ -93,6 +94,28 @@ Refer to the code below:
     }
 }
 ```
+
+## Configure Tooltip Output Format
+
+By default, FusionTime shows Navigator tooltips in the format `%b %d, %Y`, you can change this behavior using the `outputTimeFormat` attribute within the `navigator` object.
+
+Refer to the code below:
+
+```javascript
+“dataSource”: {
+    "navigator": {
+        "outputTimeFormat": "%B/%Y"
+    }
+}
+```
+
+For a list of supported formats refer to [Date and Time Formats](/dev/fusiontime/fusiontime-attributes#date-time-format)
+
+{% embed_ftChart fusiontime-timenavigator-tooltip %}
+
+
+[**Try it yourself!**]()
+
 ## Grid Lines
 
 The Time Navigator contains grid lines that visually represent data bin levels, to avoid cluttering and overlapping when there's a lot of data these grid lines adjust automatically and might show labels at different intervals depending on available space.
@@ -101,15 +124,14 @@ The Time Navigator contains grid lines that visually represent data bin levels, 
 
 {% embed_ftChart fusiontime-timenavigator-gridlines %}
 
-[__Try it yourslef!__](https://jsfiddle.net/fusioncharts/wvd08ebq/)
-
+[**Try it yourslef!**](https://jsfiddle.net/fusioncharts/wvd08ebq/)
 
 ## Style Definition
 
 FusionTime allows you to add style to the time navigator of the chart. Time Navigator of a time-series chart can be divided into two sub-sections:
 
-- Window
-- Scroll Bar
+-  Window
+-  Scroll Bar
 
 Refer to the image shown below:
 
@@ -148,12 +170,12 @@ Refer to the code below:
 
 In the above code:
 
-- Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
-- Create a `style` object under the `window` object to add styling to the scroll bar.
-- In the `style` object:
-  - `handle` used to style the **handle** element of the scroll bar window.
-  - `handle-grip` used to style the handle-grip of the handle element.
-  - `mask` is used to style the mask of the scroll bar window.
+-  Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
+-  Create a `style` object under the `window` object to add styling to the scroll bar.
+-  In the `style` object:
+   -  `handle` used to style the **handle** element of the scroll bar window.
+   -  `handle-grip` used to style the handle-grip of the handle element.
+   -  `mask` is used to style the mask of the scroll bar window.
 
 ### Customize the Scrollbar
 
@@ -190,14 +212,14 @@ Refer to the code below:
 
 In the above code:
 
-- Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
-- Create a `style` object under `scrollBar` object to add styling to the scroll bar.
-- In the `style` object:
-  - `button` is used to style the buttons present on the left and right most corner of the scroll bar.
-  - `arrow` is used to style the arrows present inside the buttons of the scroll bar.
-  - `scroller` is used to style the scroller of the scroll bar.
-  - `grip` is used to style the grip of the scroll bar.
-  - `track` is used to style the track of the scroll bar.
+-  Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
+-  Create a `style` object under `scrollBar` object to add styling to the scroll bar.
+-  In the `style` object:
+   -  `button` is used to style the buttons present on the left and right most corner of the scroll bar.
+   -  `arrow` is used to style the arrows present inside the buttons of the scroll bar.
+   -  `scroller` is used to style the scroller of the scroll bar.
+   -  `grip` is used to style the grip of the scroll bar.
+   -  `track` is used to style the track of the scroll bar.
 
 ### Customize the Grid Line
 
@@ -219,5 +241,5 @@ dataSource: {
 
 In the above code:
 
-- Create a `style` object under `xAxis` object to customize the grid-line.
-- In the `style` object, `grid-line` styles the vertical grid-line of the x-axis in the time navigator.
+-  Create a `style` object under `xAxis` object to customize the grid-line.
+-  In the `style` object, `grid-line` styles the vertical grid-line of the x-axis in the time navigator.
