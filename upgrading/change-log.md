@@ -46,18 +46,18 @@ heading: Version 3.16.0
 -  In 3.17 plotting trend line and trend zone render properly and work as expected. Previously, plotting trend line and trend zone worked incorrectly if the endValue is set to 0.
 
 2027: 
--  The Horizontal LED chart now displays the 'lowerLimit' value as expected. Previously, when the 'lowerLimit' value was set to a non-zero value, the Horizontal LED chart rendered 0 as the lower limit.  
+-  The Horizontal LED chart now displays the `lowerLimit` value as expected. Previously, when the `lowerLimit` value was set to a non-zero value, the Horizontal LED chart rendered 0 as the lower limit.  
 
 1075: 
--  In 3.17.0 the 'valueAlpha' attribute now is working as expected. Previously, the 'valueAlpha' attribute was not working properly for Trendlines and trend-zones. 
+-  In 3.17.0 the `valueAlpha` attribute now is working as expected. Previously, the `valueAlpha` attribute was not working properly for Trendlines and trend-zones. 
 
 2076: 
--  The Chord Diagram now generates a proper SVG string when using both the 'getSVGString' method or via the Export menu. Previously, exporting a Chord Diagram using the 'getSVGString' method resulted in an incorrect SVG string which caused an error.   
--  The Chord Diagram now exports successfully when using both the 'getSVGString' method or via the Export menu. Previously, exporting a Chord Diagram using the 'getSVGString' method resulted in an incorrect SVG string which caused an error.   
--  Using the 'getSVGString' method now generates a proper SVG string to successfully export a Chord Diagram to an SVG. Previously, the 'getSVGString' method generated an incorrect SVG string resulting in an error. 
+-  The Chord Diagram now generates a proper SVG string when using both the `getSVGString` method or via the Export menu. Previously, exporting a Chord Diagram using the `getSVGString` method resulted in an incorrect SVG string which caused an error.   
+-  The Chord Diagram now exports successfully when using both the `getSVGString` method or via the Export menu. Previously, exporting a Chord Diagram using the `getSVGString` method resulted in an incorrect SVG string which caused an error.   
+-  Using the `getSVGString` method now generates a proper SVG string to successfully export a Chord Diagram to an SVG. Previously, the `getSVGString` method generated an incorrect SVG string resulting in an error. 
 
 2053: 
--  Updating chart data via the 'setJSONUrl' method updates all chart properties as expected. Previously, when using the 'setJSONUrl' method the chart properties were not updated correctly. 
+-  Updating chart data via the `setJSONUrl` method updates all chart properties as expected. Previously, when using the `setJSONUrl` method the chart properties were not updated correctly. 
 
 2019: 
 -  For mobile devices, the page scrolling behavior now works properly. 
