@@ -553,6 +553,43 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/jjpkt7zt/) to edit the above chart.
 
+### Configure individual labels font configuration
+
+In a heat map chart, you can show multiple labels in different positions, starting version 3.17.0 you can personalize labels with specific colors in order to make labels clearly visible. Use the following attributes to configure labels:
+
+- Sets the font name for the top-left label of a data plot, using the `tlLabelFont` attribute.
+- Sets the font color for the top-left label of a data plot, using the `tlLabelFontColor` attribute.
+- Sets the font size for the top-left label of a data plot, using the `tlLabelFontSize` attribute.
+- Sets the font name for the top-right label of a data plot, using the `trLabelFont` attribute.
+- Sets the font color for the top-right label of a data plot, using the `trLabelFontColor` attribute.
+- Sets the font size for the top-right label of a data plot, using the `trLabelFontSize` attribute.
+- Sets the font name for the bottom-left label of a data plot, using the `blLabelFont` attribute.
+- Sets the font color for the bottom-left label of a data plot, using the `blLabelFontColor` attribute.
+- Sets the font size for the bottom-left label of a data plot, using the `blLabelFontSize` attribute.
+- Sets the font name for the bottom-right label of a data plot, using the `brLabelFont` attribute.
+- Sets the font color for the bottom-right label of a data plot, using the `brLabelFontColor` attribute.
+- Sets the font size for the bottom-right label of a data plot, using the `brLabelFontSize` attribute.
+
+Refer to the code below:
+
+```color: [
+      {
+        code: "#ff9933",
+        maxvalue: "-4",
+        tlLabelFontColor: '#0099aa'
+      },
+      {
+        code: "#FFFFFF",
+        maxvalue: "0"
+      }
+]
+```
+The chart will look as shown below:
+
+{% screenshot needed %}
+
+Click [here](link needed) to edit the above chart.
+
 ### Configure tooltips
 
 By default, a heat map chart configures the tool-tip by including the values assigned to the value, `displayValue`, `trLabel`, `tlLabel`, `brLabel`, `blLabel`, `tlType`, `trType`, `blType`, and `brType` attributes. However, in FusionCharts Suite XT, you can use the `plotToolText` attribute to specify the custom text that will be displayed in the tooltip.
