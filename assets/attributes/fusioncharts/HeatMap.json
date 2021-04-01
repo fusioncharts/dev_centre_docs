@@ -2574,6 +2574,42 @@
         "name": "alpha"
       },
       {
+        "description": "Sets the font name for the bottom left label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "blLabelFont"
+      },
+       {
+        "description": "Sets the font color for the bottom left label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "blLabelFontColor"
+      }, 
+      {
+        "description": "Sets the font size for the bottom left label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "blLabelFontSize"
+      },
+      {
+        "description": "Sets the font name for the bottom right label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "brLabelFont"
+      },
+       {
+        "description": "Sets the font color for the bottom right label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "brLabelFontColor"
+      }, 
+      {
+        "description": "Sets the font size for the bottom right label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "brLabelFontSize"
+      },
+      {
         "description": "Hex code of the color range using which it will be filled.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -2596,6 +2632,42 @@
         "range": "",
         "type": "Number",
         "name": "minValue"
+      },
+      {
+        "description": "Sets the font name for the top left label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "tlLabelFont"
+      },
+      {
+        "description": "Sets the font color for the top left label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "tlLabelFontColor"
+      },
+      {
+        "description": "Sets the font name for the top left label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "tlLabelFontSize"
+      },
+      {
+        "description": "Sets the font name for the top right label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "trLabelFont"
+      },
+      {
+        "description": "Sets the font color for the top right label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "trLabelFontColor"
+      },
+      {
+        "description": "Sets the font name for the top right label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "trLabelFontSize"
       }
     ],
     "description": "The attributes of the `color` object, child of the `colorRange` object, are used to configure individual ranges on the gauge scale."
