@@ -35,7 +35,7 @@ Configure individual color values for every single data point; top left, top rig
 
 ## New tooltipPosition property to configure Tooltip position
 
-FusionCharts Version 3.17 introduces the new `toolPosition` property available for all charts, Users now have the possibility to configure the tooltip in any of the following positions:
+FusionCharts Version 3.17 introduces the new `toolPosition` property available for all charts, users now have the possibility to configure the tooltip's position with any of the following values:
 
 -  Auto - Tooltip position is calculated automatically. Default value. 
 -  Top - Tooltip will display on the top portion of the chart. Users can specify among Top left, Top middle, and, Top Right. 
