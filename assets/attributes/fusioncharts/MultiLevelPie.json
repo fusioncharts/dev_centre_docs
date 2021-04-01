@@ -1023,6 +1023,30 @@
     "description": "The following attributes let you control various functionalities of pie. "
   },
   {
+    "table": "Smart Labels & Lines",
+    "attrs": [
+      {
+        "description": "Automatically rotates data labels to avoid overlapping.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "autoRotateLabels"
+      },
+      {
+        "description": "Whenever there is an overlap of labels this property skips them to avoid the congestion of data labels.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "skipOverlapLabels"
+      },
+      {
+        "description": "Automatically converts text labels on the axis to ellipsis in order to accomodate to the availablle space. This property is 'true' by default.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "useEllipsesWhenOverflow"
+      }
+      ],
+      "description":"In FusionCharts XT, the Multi-level Pie charts can now have smart labels. Smart labels are data connector lines which connect the pie slices to their respective labels without over-lapping even in cases where there are lots of labels congested. You can configure the smart labels properties using the attributes below.."
+  },
+  {
     "table": "Number Formatting",
     "attrs": [
       {
