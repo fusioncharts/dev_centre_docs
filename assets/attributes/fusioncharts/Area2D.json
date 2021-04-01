@@ -1381,7 +1381,7 @@
         "type": "Number",
         "versionsince": "3.16.0",
         "name": "patternAlpha"
-      },      
+      },
       {
         "description": "Set the background color for pattern fills in 6-digit hex color notation.",
         "range": "Hex Color Code",
@@ -2283,6 +2283,12 @@
         "range": "",
         "type": "String",
         "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
       }
     ],
     "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details."
