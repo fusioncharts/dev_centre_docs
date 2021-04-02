@@ -1356,25 +1356,25 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the area plot border would show up.",
+        "description": "Whether the area plot border would show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for area plot border.",
+        "description": "Color for area plot border. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for area plot border.",
+        "description": "Thickness for area plot border. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha area plot border.",
+        "description": "Alpha area plot border. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
@@ -1404,7 +1404,7 @@
         "name": "plotFillAngle"
       },
       {
-        "description": "If you have opted to fill the area plot as gradient, this attribute lets you set the fill alpha for gradient.",
+        "description": "If you have opted to fill the area plot as gradient, this attribute lets you set the fill alpha for gradient. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
@@ -3120,25 +3120,25 @@
         "name": "anchorBgColor"
       },
       {
-        "description": "Whether to show the border of this data-set.",
+        "description": "Whether to show the border of this data-set. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for data plot border of this data-set.",
+        "description": "Color for data plot border of this data-set. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for data plot border of this data-set.",
+        "description": "Thickness for data plot border of this data-set. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for data plot border of this data-set.",
+        "description": "Alpha for data plot border of this data-set. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"

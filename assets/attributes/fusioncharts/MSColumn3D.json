@@ -1202,25 +1202,25 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the column, area, pie etc. border will show up.",
+        "description": "Whether the column, area, pie etc. border will show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for column, area, pie border",
+        "description": "Color for column, area, pie border This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Alpha for column, area, pie border",
+        "description": "Alpha for column, area, pie border This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
+        "description": "If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"

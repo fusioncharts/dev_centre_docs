@@ -113,7 +113,7 @@
         "name": "mapByCategory"
       },
       {
-        "description": "Sets the transparency of all the dataplots in the chart.",
+        "description": "Sets the transparency of all the dataplots in the chart. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Numeric",
         "name": "plotFillAlpha"
@@ -1166,25 +1166,25 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the column, area, pie etc. border would show up.",
+        "description": "Whether the column, area, pie etc. border would show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for column, area, pie border.",
+        "description": "Color for column, area, pie border. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for column, area, pie border.",
+        "description": "Thickness for column, area, pie border. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for column, area, pie border.",
+        "description": "Alpha for column, area, pie border. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"

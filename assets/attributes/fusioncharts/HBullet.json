@@ -930,31 +930,31 @@
         "name": "plotFillColor"
       },
       {
-        "description": "Fill alpha for the plot bar.",
+        "description": "Fill alpha for the plot bar. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
       },
       {
-        "description": "Whether to show border for the bar?",
+        "description": "Whether to show border for the bar? This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Border color for the bar.",
+        "description": "Border color for the bar. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Border thickness for the bar.",
+        "description": "Border thickness for the bar. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "In pixels",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Border alpha for the bar.",
+        "description": "Border alpha for the bar. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
