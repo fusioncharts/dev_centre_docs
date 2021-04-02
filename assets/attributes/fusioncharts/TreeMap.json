@@ -992,6 +992,12 @@
         "range": "",
         "type": "String",
         "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
       }
     ],
     "description": "These attributes let you control the tool tip formatting."
