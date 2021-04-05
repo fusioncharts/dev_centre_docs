@@ -3,6 +3,33 @@ title: Release Notes | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
+<h2 class="sub-heading">Version 2.5.0</h2>
+
+<p class="release-date">14th April, 2021</p>
+
+<h4>New Features</h4>
+
+2034:
+-  FusionTime Version 2.5.0 supports the customization of tooltip content for Time-series charts.
+-  FusionTime Version 2.5.0 supports the customization of tooltip content for Time-series charts. Users can now customize tooltips by specifying the background and border colors and much more.
+
+<h4>Improvements</h4>
+
+2015:
+-  
+
+2061: 
+-  Improved the margin and padding ratio to remain constant and scale accordingly when chart dimensions are changed. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
+-  Improved the space management by making the margin and paddings ratios remain constant when multiple canvases with different dimensions are present. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
+
+2073: 
+-  FusionTImes Version 2.5 improves the time-axis clipping feature to function at all times independent of the time zone. Previously, when time-axis clipping was implemented on a chart containing the same data across different time zones, time-axis clipping did not occur for certain time zones. 
+
+
+<h4>Fixes</h4>
+
+2065: 
+-  
 
 <h2 class="sub-heading">Version 2.4.0</h2>
 
