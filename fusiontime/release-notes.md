@@ -29,7 +29,9 @@ heading: Release Notes
 <h4>Fixes</h4>
 
 2065: 
--  
+-  Resizing a chart with null data now works properly. Previously, upon resizing a chart with null data a JS error was thrown for the `getLogicalSpace` property.
+-  Resizing a chart with null data now works properly and no longer throws and JS error. Previously, upon resizing a chart with null data a JS error was thrown, “Cannot read property `getLogicalSpace`”.
+
 
 <h2 class="sub-heading">Version 2.4.0</h2>
 
