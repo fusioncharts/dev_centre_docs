@@ -16,8 +16,10 @@ heading: Release Notes
 <h4>Improvements</h4>
 
 2015:
--  
-
+-  Improved the zoom function to zoom from both inside and outside the plot area. Previously, when using Microsoft Edge the zoom function was not working properly. 
+-  Zooming in and out from a chart now works properly for all browsers. Previously, when using Microsoft Edge the zoom function was not working properly. 
+-  Zooming from both inside and outside the plot area now works properly for all browsers. Previously, when using Microsoft Edge the zoom function was not working properly. 
+ 
 2061: 
 -  Improved the margin and padding ratio to remain constant and scale accordingly when chart dimensions are changed. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
 -  Improved the space management by making the margin and paddings ratios remain constant when multiple canvases with different dimensions are present. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
