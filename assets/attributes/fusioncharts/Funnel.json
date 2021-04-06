@@ -860,31 +860,31 @@
     "table": "Funnel Cosmetic properties",
     "attrs": [
       {
-        "description": "If you've rendered the funnel chart in 2D mode, you can opt to show or hide the funnel border using this attribute.",
+        "description": "If you've rendered the funnel chart in 2D mode, you can opt to show or hide the funnel border using this attribute. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Border color for funnel (only when rendered in 2D mode).",
+        "description": "Border color for funnel (only when rendered in 2D mode). This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Border thickness for funnel (only when rendered in 2D mode).",
+        "description": "Border thickness for funnel (only when rendered in 2D mode). This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "In pixels",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Border alpha of funnel slices (only when rendered in 2D mode).",
+        "description": "Border alpha of funnel slices (only when rendered in 2D mode). This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "Fill alpha for the funnel slices. This attribute is applicable only in 3D pyramid chart.",
+        "description": "Fill alpha for the funnel slices. This attribute is applicable only in 3D pyramid chart. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"

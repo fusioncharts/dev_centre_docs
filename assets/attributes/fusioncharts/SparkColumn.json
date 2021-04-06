@@ -758,7 +758,7 @@
         "name": "plotFillColor"
       },
       {
-        "description": "Alpha of column.",
+        "description": "Alpha of column. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "In pixels",
         "type": "Number",
         "name": "plotFillAlpha"
