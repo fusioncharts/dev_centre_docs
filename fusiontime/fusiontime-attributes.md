@@ -1188,6 +1188,40 @@ new FusionCharts({
 	</tr>
 </table>
 
+### Customize Tooltip content
+
+You can customize the tooltip's content using `toolText` object under `tooltip` object.
+```
+"dataSource": {
+    "tooltip": {
+        "enabled": "true",
+        "toolText": "<b>$bin</b><br>$series.0.plotIdentifier $series.0.name: $series.0.dataValue<br>$series.1.plotIdentifier $series.1.name: <b>$series.1.dataValue</b>"
+    }
+}
+```
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`xx`</td>
+		<td>xx</td>
+		<td>Description here.</td>
+	</tr>
+	<tr>
+		<td>`xx`</td>
+		<td>xx</td>
+		<td>Description here.</td>
+	</tr>
+	<tr>
+		<td>`xx`</td>
+		<td>xx</td>
+		<td>Description here.</td>
+	</tr>
+</table>
+
 ## Output Time Format
 
 To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
