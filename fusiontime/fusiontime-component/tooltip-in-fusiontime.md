@@ -184,3 +184,45 @@ In the above code:
   - `text` customizes the text of the tooltip.
   - `header` customizes the header at the top of the tooltip.
   - `body` customizes all the text other than the `header` text.
+
+
+## Customise Tooltip content
+
+FusionTImes Version 2.5 added a new attribute property inside `tooltip` object named `toolText`, this attribute throigh the use of macros accepts input to custom tooltip content. The list of supported macros is given below:
+
+-  `$series.plotIndex.name` - Returns the name of data series for respective index.
+
+-  `$series.plotIndex.color` - Returns the palette/fill color of data series for respective index.
+
+-  `$series.plotIndex.plotIdentifier` - Returns the legend/plot icon of data series for respective index. This icon must be in-sync with legend of the chart.
+
+-  `$series.plotIndex.value` - Returns the unformatted value for respective index. In case of OHLC or a candlestick chart, the following 4 macros are used instead:
+
+  -  `$series.plotIndex.openValue` - Returns the unformatted open value.
+
+  -  `$series.plotIndex.highValue` - Returns the unformatted high value.
+
+  -  `$series.plotIndex.lowValue` - Returns the unformatted low value.
+
+  -  `$series.plotIndex.closeValue` - Returns the unformatted close value.
+
+  -  `$series.plotIndex.volumeValue` - Returns the unformatted volume value.
+
+-  `$series.plotIndex.dataValue` - Returns the default formatted value for respective index. In case of OHLC or a candlestick chart, the following 4 macros are used instead:
+
+  -  `$series.plotIndex.openDataValue` - Returns the formatted open value.
+
+  -  `$series.plotIndex.highDataValue` - Returns the formatted high value.
+
+  -  `$series.plotIndex.lowDataValue` - Returns the formatted low value.
+
+  -  `$series.plotIndex.closeDataValue` - Returns the formatted close value.
+
+  -  `$series.plotIndex.volumeDataValue` - Returns the formatted volume value.
+
+-  `$bin` - Returns the time spread in context (from-to). Eg. 12 Jan 2020 - 15 Jan 2020.
+
+-  `$binStart` - Returns the start time of the bin. Eg. 12 Jan 2020.
+
+-  `$binEnd` - Rreturns the end time of the bin. Eg. 15 Jan 2020.
+
