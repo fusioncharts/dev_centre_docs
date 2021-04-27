@@ -11,21 +11,21 @@ This section is for users who are using previous version of FusionCharts in thei
 Exporting the Heat Map charts as a CSV or Excel file now displays complete data, previously the exported files had incomplete data. 
 
 **Before the fix** Earlier, the files exported with missing data.
-![Chart Before] - need to include screenshot
+![HeatMap](/images/HeatMap_Export_Before_FC-2066.png)
 
 **After the fix** Heat Map charts now export CSV and XLS files with complete data. 
-![Chart After] - need to include screenshot
+![HeatMap](/images/HeatMap_Export_After_FC-2066.png)
 
 ## Configuring Alpha attributes in Trend lines/zones working properly
 
 You can now set the `trendLineAlpha` and `trendValueAlpha` attributes to configure opacity as expected. Previously when configuring opacity for trend line/zone, the `trendLineAlpha` attribute overrode both the trend line/zone alpha attributes even if the `trendValueAlpha` was specified.
 
-## Support for HTML tags across all chart text elements
+## Chord Diagram exports to SVG format properly
 
 Export a Chord Diagram to an SVG using the `getSVGString` method or via the Export Menu and see the rendered result in an SVG viewer as expected. Previously using the `getSVGString` method did not get the proper SVG strings and resulted in an error message. 
 
 **Before the fix** Unable to get the proper SVG strings which resulted in an error message when exporting with the `getSVGString` method or via the Export Menu. 
-![Chart Before] - need to include screenshot
+![Chart Before](/images/SVG_error_FC-2076.png)
 
 **After the fix** SVG string is properly generated using both the `getSVGString` method and via the Export Menu. 
 ![Chart After] - need to include screenshot
@@ -45,17 +45,18 @@ Using the `setJSONUrl` method updates all chart data as expected.
 The Box and Whisker chart exports CSV and XLSX files which display all the previously configured data. By default, the properties median, minimum number, and maximum number are always provided. Users can configure whether to display and export the following properties: lower quartile (`showQ1Values`), upper quartile (`showQ3Values`), outliers (`ShowOutlierValues`), mean (`showMean`), mean deviation (`showMD`), and standard deviation (`showSD`). Before the exported CSV or XLSX files consisted of incomplete data
 
 **Before the fix** When exporting the Box and Whisker charts to CSV or XLSX files, the export API was broken and exported incomplete data, only capturing the first values provided for the individual categories.
-![Chart Before] - need to include screenshot
+![Chart](/images/BoxandWhisker_Sample_FC-2052.png)
+![Export Before](/images/BoxandWhisker_Export_Before_FC-2052.png)
 
 **After the fix** The Box and Whiskers chart exports properly, displaying all properties as expected.
-![Chart After] - need to include screenshot
+![Export After](/images/BoxandWhisker_Export_After_FC-2052.png)
 
 ## Bullet graphs display tooltips properly
 
 Bullet graphs are now improved to display tooltips for the target component even if the value property is not configured. 
 
 **Before the fix** Earlier, while plotting Bullet graphs, if the value property was not set, then the tooltip is not shown for the target component.
-![Chart Before] - need to include screenshot
+![Chart Before](/images/Tooltip_BulletGraph_Before_FC-2004.png)
 
 **After the fix** The Bullet graph always displays the tooltip for the target components, even if the property value is not previously defined.
-![Chart After] - need to include screenshot
+![Chart After](/images/Tooltip_BulletGraph_After_FC-2004.png)
