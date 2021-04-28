@@ -586,9 +586,9 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-{% screenshot needed %}
+{% embed_chart standard-charts-heat-map-chart-example- %}
 
-Click [here](link needed) to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/oma9rjzx/) to edit the above chart.
 
 ### Configure tooltips
 
