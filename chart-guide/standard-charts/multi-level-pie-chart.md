@@ -141,12 +141,18 @@ Starting version 3.17.0, you can enable smart label configuration in order to av
 
 Refer to the code below:
 
-```[code 
-sample needed]
+```json
+{
+"chart": {
+      
+        "autoRotateLabels": "1",
+        "skipOverlapLabels": "1"
+        },
+}
 ```
 
 The chart will look like as shown below:
 
-{% need example chart %}
+{% embed_chart multi-level-pie-example-smart-label.js %}
 
-Click [here](need fiddle link) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/n2ycfvas/) to edit the above chart.
