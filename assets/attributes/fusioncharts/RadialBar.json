@@ -1,0 +1,164 @@
+[
+  {
+    "table": "Functional Attributes",
+    "attrs": [
+      {
+        "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "animation"
+      },
+      {
+        "description": "This attribute sets the animation duration of the chart. `animationDuration` attribute is applicable only if animation of the chart is enabled. \n\nDefault value: 1 sec",
+        "range": "In seconds",
+        "type": "Number",
+        "Versionsince": "3.11.0",
+        "name": "animationDuration"
+      },
+      {
+        "description": "FusionCharts XT offers the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
+        "range": "1-5",
+        "type": "Number",
+        "name": "palette"
+      },
+      {
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "range": "List of hex color codes separated by comma",
+        "type": "String",
+        "name": "paletteColors"
+      },
+      {
+        "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showLabels"
+      },
+      {
+        "description": "By default, all the labels are displayed on the chart. However, if you've a set of streaming data (like name of months or days of week), you can opt to show every n-th label for better clarity. This attribute just lets you do so. When a value greater than 1 (n) is set to this attribute, the first label from left and every label at the n-th position from left will be displayed. e.g., a chart showing data for 12 months and set with `labelStep: 3` will show labels for January, April, July, and October. The rest of the labels will be skipped.",
+        "range": "1 or above",
+        "type": "Number",
+        "name": "labelStep"
+      },
+      {
+        "description": "Restricts the maximum length of data labels in terms of percentage of the charts width that the data labels can occupy. If a data label is longer than the specified percentage width then it will either be wrapped or get truncated, subject to availability of vertical space. Unnecessary space is not reserved for the data labels, in case all of them are shorter than the specified maximum width.",
+        "range": "1-100",
+        "type": "Number",
+        "name": "maxLabelWidthPercent"
+      },
+      {
+        "description": "Restricts the minimum length of data labels in terms of percentage of the chart's width that the data labels can occupy. The space thus calculated stays reserved even if the label width is less than the minimum width.",
+        "range": "1-100",
+        "type": "Number",
+        "name": "minLabelWidthPercent"
+      },
+      {
+        "description": "This attribute lets you set whether the overflowing data labels will be truncated by adding ellipses.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2.1",
+        "name": "useEllipsesWhenOverflow"
+      },
+      {
+        "description": "Sets the configuration whether data values will be displayed along with the data plot on chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showValues"
+      },
+      {
+        "description": "If you've opted to show data values, you can show them inside the columns using this attribute. By default, the data values show outside the column.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "placeValuesInside"
+      },
+      {
+        "description": "Whether to show chart limit values.If not specified `showYAxisValues` attribute overrides this value.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showLimits"
+      },
+      {
+        "description": "Whether to show div line values. If not specified `showYAxisValues` attribute overrides this value.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showDivLineValues"
+      },
+      {
+        "description": "Whether to show bar shadows.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showShadow"
+      },
+      {
+        "description": "FusionCharts XT automatically tries to adjust divisional lines and limit values based on the data provided. However, if you want to set your explicit lower and upper limit values and number of divisional lines, first set this attribute to false. That will disable automatic adjustment of divisional lines.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "adjustDiv"
+      },
+      {
+        "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link format.",
+        "range": "",
+        "type": "String",
+        "name": "clickURL"
+      },
+      {
+        "description": "Sets whether the `clickURL` attribute (that sets a link to which the user is directed when the chart is clicked) overrides the `link` attribute (that sets a link to which the user is directed when a data plot is clicked). \n\nDefault value: 0 (`clickURL` does not override `link`)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.7.0",
+        "name": "clickURLOverridesPlotLinks"
+      },
+      {
+        "description": "Sets the maximum allowed bar height.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "maxBarHeight"
+      },
+      {
+        "description": "This attribute lets you set whether the y-axis lower limit will be 0 (in case of all positive values on chart) or should the y-axis lower limit adapt itself to a different figure based on values provided to the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "setAdaptiveYMin"
+      },
+      {
+        "description": "Uses the same data plot color for data labels.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.5.0",
+        "name": "useDataPlotColorForLabels"
+      },
+      {
+        "description": "This attribute, when set to __1__, indicates to the chart that the text (rendered on the chart) may contain RTL characters and the textual display has to be managed accordingly. ",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "hasRTLText"
+      },
+      {
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showPrintMenuItem"
+      },
+      {
+        "description": "This attribute is used to skip the data plot without any change in visualization. When set to `1`, minimum one data plot will be rendered within the width of one pixel. \n\n Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel. For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot will be rendered within the width of one pixel. Data skipping can be disabled by setting this attribute to `0`. \n\n Default value: __0.5__",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.12.0",
+        "name": "plotBinSize"
+      },
+      {
+        "description": "This attribute is used to skip the labels of the data plots. When set to `1`, minimum one label will be displayed within the width of one pixel. To disable this label skipping, set this attribute to `0`. \n\nDefault value: __1__",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.12.0",
+        "name": "labelBinSize"
+      },
+      {
+        "description": "This attribute changes the theme of the chart. There are 7 types of themes which have been made according to the different color combinations.",
+        "range": "'fusion', 'gammel', 'candy', 'ocean', 'zune', 'carbon', 'umber'",
+        "type": "String",
+        "name": "theme"
+      }
+    ],
+    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. "
+  },
