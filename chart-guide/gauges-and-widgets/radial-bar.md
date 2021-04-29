@@ -8,7 +8,7 @@ Radial Charts fix a unique radius for each bar representing each data plot. A Ra
 > This chart type belongs to the FusionWidgets XT.
 
 
-{% embed_chartAnatomy <file-name.js> %}  --> Other notePad
+{% embed_chartAnatomy radial-bar.js %}
 
 
 To create a radial bar chart follow the steps below:
