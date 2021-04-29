@@ -1,5 +1,5 @@
 
-#Radial Bar
+# Radial Bar
 
 Radial Bar charts use ciruclar shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system. 
 The columns are in a circular shape because the xAxis is vertical and the yAxis is circular, as opposed to typical Bar charts. 
@@ -27,11 +27,11 @@ Click [here](fiddle link) to edit the above chart.
 
 [describe the chart above]
 
-##Customizations of a Radial Bar Chart
+## Customizations of a Radial Bar Chart
 
-###Customize Track and Bar
+### Customize Track and Bar
 
-####Configure Outer and Inner Radius
+#### Configure Outer and Inner Radius
 Based on the data values provided, the inner and outer radius are automatically calculated for the color range scale. You can set the radius using the following attributes:
  - Specify the outer radius (in percentage or pixels values) using the `outerRadius` attribute.
  - Specify the inner radius (in percentage or pixels values) using the `innerRadius` attribute.
@@ -51,7 +51,7 @@ The chart will look as shown below:
 click [here](fiddle link) to edit the above chart. 
 
 
-#####Customize start and end angles
+##### Customize start and end angles
 You can set the start and end angles, to specify from where in the circular layout the radial bars should begin and where should they end. To do so, set the value of the `startAngle` and the  `endAngle`  attribute to the desired angle.
 
 Use the code given below:
@@ -69,7 +69,7 @@ The chart will look as shown below:
 click [here](fiddle link) to edit the above chart. 
 
 
-#####Customize margin and padding
+##### Customize margin and padding
 You can introduce white space between a bar and its track to make the chart look cleaner. To do so, set the value of the `trackPadding` attribute to the desired amount.
 
 Use the code given below:
@@ -86,9 +86,9 @@ The chart will look as shown below:
 {% embed_chart name %}
 click [here](fiddle link) to edit the above chart. 
 
-###Customize Label & Values
+### Customize Label & Values
 
-####Hide labels and values
+#### Hide labels and values
 In Radial Bar charts labels are disabled by default, you can choose to show labels using the `showLabels` attribute and set it's value to `1`.
 
 Use the code given below:
@@ -104,7 +104,7 @@ The chart will look as shown below:
 {% embed_chart name %}
 click [here](fiddle link) to edit the above chart. 
 
-####Add Label icons
+#### Add Label icons
 You can choose to display icons in your Radial Bar charts. To do so, use the `showLabelIcon` attribute and set it's value to `1`.  
 To choose the size of the icons, set the value of  the `iconScale` attribute to the desired amount.  
 To choose the position of the icons, set the value of the `iconPosition` attribute and set the value to `start` or `end`. 
@@ -135,7 +135,7 @@ The chart will look as shown below:
 click [here](fiddle link) to edit the above chart. 
 
 
-####Customize Ticks
+#### Customize Ticks
 You can choose to show or hide tick marks by using the `showTickMarks` attribute and set to `1` or `0`. Similarly you can use the `showTickValues` attribute to show the tick mark values. 
 To choose a color for your tick marks use the `tickMarkColor` attribute and set it's value with a hex code.
 To choose the lenght use the `tickMarkLenght` attribute.
@@ -156,7 +156,7 @@ The chart will look as shown below:
 click [here](fiddle link) to edit the above chart. 
 
 
-####Add Context Label
+#### Add Context Label
 You can choose to display the context label when hovering your mouse over a bar. To do so, use the `showContextLabel` attribute and set it's value to `1`. 
 You can also use one of the following macros for the Context Label text:
  - `$label`
