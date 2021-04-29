@@ -198,27 +198,27 @@ FusionTImes Version 2.5 added a new attribute property inside `tooltip` object n
 
 -  `$series.plotIndex.value` - Returns the unformatted value for respective index. In case of OHLC or a candlestick chart, the following 4 macros are used instead:
 
-  -  `$series.plotIndex.openValue` - Returns the unformatted open value.
+-  `$series.plotIndex.openValue` - Returns the unformatted open value.
 
-  -  `$series.plotIndex.highValue` - Returns the unformatted high value.
+-  `$series.plotIndex.highValue` - Returns the unformatted high value.
 
-  -  `$series.plotIndex.lowValue` - Returns the unformatted low value.
+-  `$series.plotIndex.lowValue` - Returns the unformatted low value.
 
-  -  `$series.plotIndex.closeValue` - Returns the unformatted close value.
+-  `$series.plotIndex.closeValue` - Returns the unformatted close value.
 
-  -  `$series.plotIndex.volumeValue` - Returns the unformatted volume value.
+-  `$series.plotIndex.volumeValue` - Returns the unformatted volume value.
 
 -  `$series.plotIndex.dataValue` - Returns the default formatted value for respective index. In case of OHLC or a candlestick chart, the following 4 macros are used instead:
 
-  -  `$series.plotIndex.openDataValue` - Returns the formatted open value.
+-  `$series.plotIndex.openDataValue` - Returns the formatted open value.
 
-  -  `$series.plotIndex.highDataValue` - Returns the formatted high value.
+-  `$series.plotIndex.highDataValue` - Returns the formatted high value.
 
-  -  `$series.plotIndex.lowDataValue` - Returns the formatted low value.
+-  `$series.plotIndex.lowDataValue` - Returns the formatted low value.
 
-  -  `$series.plotIndex.closeDataValue` - Returns the formatted close value.
+-  `$series.plotIndex.closeDataValue` - Returns the formatted close value.
 
-  -  `$series.plotIndex.volumeDataValue` - Returns the formatted volume value.
+-  `$series.plotIndex.volumeDataValue` - Returns the formatted volume value.
 
 -  `$bin` - Returns the time spread in context (from-to). Eg. 12 Jan 2020 - 15 Jan 2020.
 
