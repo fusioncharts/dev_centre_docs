@@ -107,6 +107,7 @@ It renders a variety of gauges and charts including speedometer charts (also cal
 | [Real-time Cylinder](/chart-attributes/cylinder)              | cylinder         |
 | [Real-time Horizontal LED](/chart-attributes/hled)            | hled             |
 | [Real-time Horizontal Linear](/chart-attributes/HLinearGauge) | hlineargauge     |
+| [Real-time Radial Bar](/chart-attributes/RadialBar.json)      | radialBar        |
 | [Real-time Thermometer](/chart-attributes/thermometer)        | thermometer      |
 | [Real-time Vertical LED](/chart-attributes/vled)              | vled             |
 
