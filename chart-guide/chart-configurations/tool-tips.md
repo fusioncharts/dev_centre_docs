@@ -73,15 +73,20 @@ If the `tooltipPosition` value is set to `top` and the tooltips are displayed ou
 
 Refer to the code below:
 
-```
---Need code sample--
+```json
+{
+"chart": {
+          "caption": "Quarterly Sales Summary",
+          "tooltipPosition": "bottom"
+          }
+         }
 ```
 
 The chart will look as shown below:
 
-![Tooltips](--need sample image--)
+{% embed_chart configure-tooltip-position.js %}
 
-Click [here](--need fiddle link--) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
  
 ## Display Multiline Tooltip Text
 
