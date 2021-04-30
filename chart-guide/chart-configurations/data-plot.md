@@ -234,15 +234,24 @@ FusionChart Version 3.71.0 extends the support to add data plot border cosmetics
 
 Refer to the code below:
 
-```
---Need code --
+```json
+{
+   "data": [{
+          "label": "Jan",
+          "showPlotBorder": "1",
+          "plotBorderThickness": "2",
+          "plotBorderColor": "#ff0000",
+          "plotBorderAlpha": "100",
+          "value": "420000"
+   }
+}
 ```
 
 The chart will look like as shown below:
 
-{% --need chart-- %}
+{% embed_chart plot-border-example.js %}
 
-Click [here](--need fiddle--) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the above chart.
 
 ## Top plot border of an area chart
 
