@@ -586,7 +586,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-{% embed_chart standard-charts-heat-map-chart-example- %}
+{% embed_chart heatmap-example-configure-labels.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/oma9rjzx/) to edit the above chart.
 
