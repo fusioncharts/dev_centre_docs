@@ -28,7 +28,7 @@ Export a Chord Diagram to an SVG using the `getSVGString` method or via the Expo
 ![Chart Before](/images/SVG_error_FC-2076.png)
 
 **After the fix** SVG string is properly generated using both the `getSVGString` method and via the Export Menu. 
-![Chart After] - need to include screenshot
+![Chart After](/images/SVG_fix_FC-2076.png) 
 
 ## Configuring data with the setJSONUrl method
 
