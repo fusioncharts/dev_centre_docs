@@ -55,7 +55,7 @@ FusionCharts Version 3.17.0 includes support for the following attributes at bot
 -  `plotBorderThickness` (string/number) - this attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.
 -  `Alpha` - controls the opacity for both the plot border as well as for the plot when defined. To define a different opacity for plot border set the plotBorderAlpha property with a different value. 
 
-[Sample]
+{% embed_chart plot-border-example.js %}
 
 ## Heat Map charts export to CSV and XLS files
 
