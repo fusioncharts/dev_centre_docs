@@ -138,12 +138,12 @@ It renders a variety of gauges and charts including speedometer charts (also cal
 
 ### Other charts
 
-| Chart Type                                 | JavaScript Alias |
-| ------------------------------------------ | ---------------- |
-| [Funnel Chart](/chart-attributes/funnel)   | funnel           |
-| [Pyramid Chart](/chart-attributes/pyramid) | pyramid          |
-| [Radial Bar Chart](/chart-attributes/)     | radialbar        |
-| [Gantt Chart](/chart-attributes/gantt)     | gantt            |
+| Chart Type                                      | JavaScript Alias |
+| ------------------------------------------------| ---------------- |
+| [Funnel Chart](/chart-attributes/funnel)        | funnel           |
+| [Pyramid Chart](/chart-attributes/pyramid)      | pyramid          |
+| [Radial Bar Chart](/chart-attributes/radialbar) | radialbar        |
+| [Gantt Chart](/chart-attributes/gantt)          | gantt            |
 
 ## PowerCharts XT
 
