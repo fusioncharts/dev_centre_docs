@@ -2,7 +2,7 @@
 type: 'line',
       renderAt: 'chart-container',
       id: 'myChart',
-      width: '450',
+      width: '100%',
       height: '300',
       dataFormat: 'json',
       dataSource: {
@@ -18,25 +18,23 @@ type: 'line',
           "toolTipBgAlpha": "80",
           "tooltipPosition": "bottom",
           "showToolTipShadow": "1",
+          "drawCrossLine": 0,
           //Theme
-          "theme": "fusion"
+          "theme": "fusion",
+          "tooltipPosition": "top"
         },
         "data": [{
           "label": "Q1",
           "value": "195000",
-          "toolPosition": "top"
         }, {
           "label": "Q2",
-          "value": "155000",
-          "toolPosition": "top"
+          "value": "155000"
         }, {
           "label": "Q3",
-          "value": "178000",
-          "toolPosition": "bottom"
+          "value": "178000"
         }, {
           "label": "Q4",
-          "value": "192000",
-          "toolPosition": "bottom"
+          "value": "192000"
         }]
       }
     }

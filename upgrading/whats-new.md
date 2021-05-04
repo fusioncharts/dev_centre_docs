@@ -6,6 +6,12 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.17.x.
 
+## Radial Bar chart
+
+FusionCharts Version 3.17.0 introduces the new Radial Bar chart, part of FusionWidgets XT. Similar to a Bar chart but displayed on a polar coordinate system, and can be used for comparisons among categories by using a circular shape.
+
+{% embed_chart radial-bar-example.js %}
+
 ## Smart label management for Multi-level Pie chart
 
 FusionCharts Version 3.17.0 implements smart label management for Multi-level Pie chart which automatically adjusts the data labels inside the plot avoiding labels to overlap with one another. The following attributes are included in the Multi-level Pie chart:
@@ -37,7 +43,7 @@ With FusionCharts 3.17, users now have the possibility to configure quadrant lab
 
 ## New tooltipPosition property to configure Tooltip position
 
-FusionCharts Version 3.17 introduces the new `toolPosition` attribute for all charts, users now have the possibility to configure the tooltip's position with any of the following values:
+FusionCharts Version 3.17 introduces the new `tooltipPosition` attribute for all charts, users now have the possibility to configure the tooltip's position with any of the following values:
 
 -  `auto` - Tooltip position is calculated automatically. Default value.
 -  `top` - Tooltip will display on the top portion of the cursor.
@@ -70,15 +76,3 @@ Exported CSV or XLS files display the complete Heat Map chart data.
 Before exporting the Box and Whisker chart to a CVS or XLS file, users can configure which properties to display. By default the median, minimum number, and, maximum number properties are always displayed, while the following properties can be configured: lower quartile (`showQ1Values`), upper quartile (`showQ3Vales`), mean (`showMean`), mean deviation (`showMD`), standard deviation (`showSD`) and, outliers (`showOutlerValues`).
 
 {% embed_chart box-and-whisker-export-example.js %}
-
-## Radial Bar chart [Incomplete]
-
-FusionCharts Version 3.17.0 introduces the new Radial Bar chart to be part of FusionWidgets XT. Similar to a Bar chart but displayed on a polar coordinate system, and can be used for comparissons among categories by using a circular shape. Click [here](--add link to new page--) for more information.
-
-[Sample]
-
-## Accessibility support for FusionCharts with WCAG 2.1 plugin [Incomplete]
-
-FusionCharts Version 3.17.0 improved the support for accessibility. For more information visit, [https://www.fusioncharts.com/extensions/accessibility]
-
-[Sample]
