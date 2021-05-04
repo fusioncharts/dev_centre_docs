@@ -1,5 +1,5 @@
 {
-type: 'column2d',
+type: 'line',
       renderAt: 'chart-container',
       id: 'myChart',
       width: '450',
@@ -12,7 +12,7 @@ type: 'column2d',
           "xaxisname": "Quarter",
           "yaxisname": "Amount (In USD)",
           "numberprefix": "$",
-          //Tooltip customization        
+          //Tooltip customization
           "toolTipBorderColor": "#666666",
           "toolTipBgColor": "#efefef",
           "toolTipBgAlpha": "80",
@@ -23,16 +23,20 @@ type: 'column2d',
         },
         "data": [{
           "label": "Q1",
-          "value": "195000"
+          "value": "195000",
+          "toolPosition": "top"
         }, {
           "label": "Q2",
-          "value": "155000"
+          "value": "155000",
+          "toolPosition": "top"
         }, {
           "label": "Q3",
-          "value": "178000"
+          "value": "178000",
+          "toolPosition": "bottom"
         }, {
           "label": "Q4",
-          "value": "192000"
+          "value": "192000",
+          "toolPosition": "bottom"
         }]
       }
     }
