@@ -17,7 +17,7 @@ heading: Version 3.17.x
 <h4>Improvements</h4>
 
 -  The Heat map chart now allows users to apply specific font properties to each quadrant label in the individual heat map cells.
--  To improve visualization and interaction on charts, version 3.17 now allows users the ability to configure the tooltip position. For more details refer to [[What’s New]].
+-  To improve visualization and interaction on charts, version 3.17 now allows users the ability to configure the tooltip position.
 -  Starting 3.17.0 FusionCharts allows users to configure plot border cosmetics at data plot (single-series charts) and data-series level (multi-series level).
 -  Exporting a Heatmap chart to a CSV or XLS file now exports all the Heatmap chart data correctly. Previously the files were exported with incomplete data.
 -  Starting 3.17.0, the Box and Whisker chart when exported to a CSV or XLSX file exports data correctly. Previously the CSV or XLSX export was returning incorrect data.
