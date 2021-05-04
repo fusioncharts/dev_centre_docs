@@ -811,13 +811,13 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Sets the border color for the node.",
+        "description": "Sets the border color for the node. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Sets the border thickness for the node.",
+        "description": "Sets the border thickness for the node. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
@@ -992,6 +992,12 @@
         "range": "",
         "type": "String",
         "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
       }
     ],
     "description": "These attributes let you control the tool tip formatting."

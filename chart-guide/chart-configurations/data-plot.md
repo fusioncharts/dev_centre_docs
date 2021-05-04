@@ -220,6 +220,39 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart.
 
+## Cosmetic options for plot border
+
+FusionChart Version 3.71.0 extends the support to add data plot border cosmetics to all single-series and multi-series charts. The Data Plot Border Cosmetics consists of the following attributes:
+
+-  Use `plotBorderAlpha` attribute to specify the opacity for plot border at data plots and data-series levels.
+
+-  Use the `plotBorderColor` attribute to specify the color for plot border. Use the `inherit` value or set any hex code as the value to apply the respective plot color to the data plot and data-series. 
+
+-  Use the `plotBorderThickness`attribute to specify the thickness for plot border at data plots and data-series levels. 
+
+-  Use the `showPlotBorder` attribute to show or hide the plot border. When defined at data plot or data-series level it overwrites the value set at global level.
+
+Refer to the code below:
+
+```json
+{
+   "data": [{
+          "label": "Jan",
+          "showPlotBorder": "1",
+          "plotBorderThickness": "2",
+          "plotBorderColor": "#ff0000",
+          "plotBorderAlpha": "100",
+          "value": "420000"
+   }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart plot-border-example.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the above chart.
+
 ## Top plot border of an area chart
 
 In area charts, you can draw the borders of the data plots either only at the top of an area plot or on all the four sides of the area plot.

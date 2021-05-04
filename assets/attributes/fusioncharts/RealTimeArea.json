@@ -1404,25 +1404,25 @@
         "name": "showShadow"
       },
       {
-        "description": "Whether the area border will show up.",
+        "description": "Whether the area border will show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for border",
+        "description": "Color for border This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Border thickness.",
+        "description": "Border thickness. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "In pixels",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Border alpha.",
+        "description": "Border alpha. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
@@ -1452,7 +1452,7 @@
         "name": "plotFillColor"
       },
       {
-        "description": "Area fill alpha.",
+        "description": "Area fill alpha. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
@@ -2304,6 +2304,12 @@
         "range": "",
         "type": "String",
         "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
       }
     ],
     "description": "These attributes let you control the tooltip. You can set the background color, border color, separator character and few other details. "
@@ -2953,19 +2959,19 @@
         "name": "includeInLegend"
       },
       {
-        "description": "Alpha for data plot border of this dataset.",
+        "description": "Alpha for data plot border of this dataset. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "Color for data plot border of this dataset.",
+        "description": "Color for data plot border of this dataset. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for data plot border of this dataset.",
+        "description": "Thickness for data plot border of this dataset. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "In pixels",
         "type": "Number",
         "name": "plotBorderThickness"
@@ -2977,7 +2983,7 @@
         "name": "seriesName"
       },
       {
-        "description": "Whether to show the border of this dataset?",
+        "description": "Whether to show the border of this dataset? This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"

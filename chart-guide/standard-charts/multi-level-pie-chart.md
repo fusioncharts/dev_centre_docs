@@ -130,3 +130,29 @@ The chart will look like as shown below:
 {% embed_chart standard-charts-multi-level-pie-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/n2ycfvas/) to edit the above chart.
+
+## Smart Label configurations
+
+Starting version 3.17.0, you can enable smart label configuration in order to aviod the congestion of labels difficulting the charts clearness. Smart labels are data connector lines which connect the pie slices to their respective labels without over-lapping even in cases where there are lots of labels congested. Use the the following properties to avoid labels from overlaping:
+
+- Set the value of `useEllipsesWhenOverflow` to automatically convert text labels on the axis to ellipsis in order to accomodate to the availablle space.
+- Set the value of `skipOverlapLabels` whenever there is an overlap of labels to skip them avoiding the congestion of data labels.
+- Set the value of `autoRotateLabels` to automatically rotate data labels to avoid overlapping.
+
+Refer to the code below:
+
+```json
+{
+"chart": {
+      
+        "autoRotateLabels": "1",
+        "skipOverlapLabels": "1"
+        },
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart multi-level-pie-example-smart-label.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/n2ycfvas/) to edit the above chart.

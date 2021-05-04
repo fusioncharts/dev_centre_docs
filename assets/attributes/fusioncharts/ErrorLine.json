@@ -1281,7 +1281,7 @@
         "name": "lineDashGap"
       },
       {
-        "description": "Whether the column, area, pie etc. border will show up.",
+        "description": "Whether the column, area, pie etc. border will show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"

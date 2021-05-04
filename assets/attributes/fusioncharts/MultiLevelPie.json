@@ -786,31 +786,31 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the pie border would show up.",
+        "description": "Whether the pie border would show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for pie border.",
+        "description": "Color for pie border. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for pie border.",
+        "description": "Thickness for pie border. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for pie border.",
+        "description": "Alpha for pie border. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "This attribute lets you set the fill alpha for plot.",
+        "description": "This attribute lets you set the fill alpha for plot. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
@@ -1021,6 +1021,30 @@
       }
     ],
     "description": "The following attributes let you control various functionalities of pie. "
+  },
+  {
+    "table": "Smart Labels & Lines",
+    "attrs": [
+      {
+        "description": "Automatically rotates data labels to avoid overlapping.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "autoRotateLabels"
+      },
+      {
+        "description": "Whenever there is an overlap of labels this property skips them to avoid the congestion of data labels.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "skipOverlapLabels"
+      },
+      {
+        "description": "Automatically converts text labels on the axis to ellipsis in order to accomodate to the availablle space. This property is 'true' by default.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "useEllipsesWhenOverflow"
+      }
+      ],
+      "description":"In FusionCharts XT, the Multi-level Pie charts can now have smart labels. Smart labels are data connector lines which connect the pie slices to their respective labels without over-lapping even in cases where there are lots of labels congested. You can configure the smart labels properties using the attributes below.."
   },
   {
     "table": "Number Formatting",

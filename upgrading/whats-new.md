@@ -4,109 +4,75 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.16.x.
+This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.17.x.
 
-## Tooltip customization for Sankey and Chord Tooltips
+## Radial Bar chart
 
-FusionCharts Suite XT introduces support for customizing the text in link and node tooltips on Chord and Sankey; to do this, Chord and Sankey now support the `plotToolText` attribute and also add two new attributes: `linkToolText` and `toolText`. This release also introduces a number of macros specific for Chord and Sankey.
+FusionCharts Version 3.17.0 introduces the new Radial Bar chart, part of FusionWidgets XT. Similar to a Bar chart but displayed on a polar coordinate system, and can be used for comparisons among categories by using a circular shape.
 
-A chart with custom tooltips looks like as shown below:
+{% embed_chart radial-bar-example.js %}
 
-<iframe width="100%" height="500" src="//jsfiddle.net/fusioncharts/nr8ec62f/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+## Smart label management for Multi-level Pie chart
 
-## Setting legend icons opacity
+FusionCharts Version 3.17.0 implements smart label management for Multi-level Pie chart which automatically adjusts the data labels inside the plot avoiding labels to overlap with one another. The following attributes are included in the Multi-level Pie chart:
 
-FusionCharts Suite XT introduces the `inherit` value for the `legendIconAlpha` and `legendIconBgAlpha` attributes. When setting value for these attributes to `inherit` they use the values set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects to configure opacity for legend icons.
+-  `useEllipsesWhenOverflow` (boolean) - this property converts text labels to ellipsis in order to accommodate labels in available space. The default value is true.
+-  `skipOverlapLabels` (boolean) - whenever there is an overlap of labels, this property skips them to avoid congestion of labels. The default value is false.
+-  `autoRotateLabels` (boolean) - this property rotates the data label text inside the data plot space. The default value is false.
 
-Using the `inherit` value looks like as shown below:
+{% embed_chart multi-level-pie-example-smart-label.js %}
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Setting legend icons opacity" src="https://codepen.io/fusioncharts/embed/gOwwJGN?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwJGN'>Setting legend icons opacity</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+## Individual label configuration for Heat Map chart
 
-## Setting anchor border color, background color, and alpha value
+With FusionCharts 3.17, users now have the possibility to configure quadrant labels cosmetics at color range level in Heat Map Chart. The following attributes are included in the Heat Map chart:
 
-FusionCharts Suite XT introduces the `inherit` value for the `anchorAlpha`, `anchorBgAlpha`, and `anchorImageAlpha` attributes. When setting their value to `inherit` they use the value set in `plotFillAlpha` at global level and `alpha` at the local level for both data object and data series objects.
+-  `tlLabelFont`: Sets font name for the top left label
+-  `tlLabelFontSize`: Sets font size for the top left label
+-  `tlLabelFontColor`: Sets font color for the top left label
+-  `trLabelFont`: Sets font name for the top right label
+-  `trLabelFontSize`: Sets font size for the top right label
+-  `trLabelFontColor`: Sets font color for the top right label
+-  `blLabelFont`: Sets font name for the bottom left label
+-  `blLabelFontSize`: Sets font size for the bottom left label
+-  `blLabelFontColor`: Sets font color for the bottom left label
+-  `brLabelFont`: Sets font name for the bottom right label
+-  `brLabelFontSize`: Sets font size for the bottom right label
+-  `brLabelFontColor`: Sets font color for the bottom right label
 
-Using the `inherit`value looks like as shown below:
+{% embed_chart configure-individual-label-heatmap.js %}
 
-<iframe height="488" style="width: 100%;" scrolling="no" title="Inherit  Anchors Alpha" src="https://codepen.io/FCsamples/embed/NWrZPdZ?height=488&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/NWrZPdZ'>Inherit  Anchors Alpha</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+## New tooltipPosition property to configure Tooltip position
 
-FusionCharts Suite XT introduces the `inherit` value for the `anchorBorderColor`, and `anchorBgColor` attributes. When setting their value to `inherit` they use the value set in `paletteColors` at global level and `color` at the local level for either data object and data series objects.
+FusionCharts Version 3.17 introduces the new `tooltipPosition` attribute for all charts, users now have the possibility to configure the tooltip's position with any of the following values:
 
-Using the `inherit` value looks like as shown below:
+-  `auto` - Tooltip position is calculated automatically. Default value.
+-  `top` - Tooltip will display on the top portion of the cursor.
+-  `bottom` - Tooltip will display on the bottom portion of the cursor.
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Inherit Colors for Anchors" src="https://codepen.io/FCsamples/embed/LYZKYWG?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/FCsamples/pen/LYZKYWG'>Inherit Colors for Anchors</a> by FusionCharts
-  (<a href='https://codepen.io/FCsamples'>@FCsamples</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+If it's not possible to render tooltip from user specified position then chart will revert back to auto position i.e., default value
 
-## Relative Font Sizes
+{% embed_chart configure-tooltip-position.js %}
 
-FusionCharts Suite XT introduces relative font sizes support for text elements, the following relative font sizes are supported:
+## Included support for Plot border attributes at data series and data plot levels
 
--  `rem`
--  `%`
--  `em`
--  `vw`
+FusionCharts Version 3.17.0 includes support for the following attributes at both data plot (single-series charts) and data-series (multi-series charts) levels:
 
-Using relative font sizes text elements resize relative to the size of charts. This provides more responsive charts whose text elements scale properly when displayed in different screen sizes.
+-  `showPlotBorder` (boolean) - this attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels. When defined at data plot or at series-data levels it overwrites the value at the chart instance level.
+-  `plotBorderColor` (string - inherit) - this attribute is used to specify the color for the plot border at the chart instance level. For data plot and data-series levels, users can use the inherit property as the value to be applied.
+-  `plotBorderAlpha` (number) - this attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.
+-  `plotBorderThickness` (string/number) - this attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.
+-  `Alpha` - controls the opacity for both the plot border as well as for the plot when defined. To define a different opacity for plot border set the plotBorderAlpha property with a different value.
 
-Using relative font sizes looks like as shown below:
+{% embed_chart plot-border-example.js %}
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Relative Font Sizes" src="https://codepen.io/fusioncharts/embed/zYKKQaR?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/fusioncharts/pen/zYKKQaR'>Relative Font Sizes</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+## Heat Map charts export to CSV and XLS files
 
-When you scale the chart display area, text elements also scale relative to the chart.
+Exported CSV or XLS files display the complete Heat Map chart data.
 
-## Adding pattern fill to Data Plots
+{% embed_chart heatmap-export-example-2.js %}
 
-FusionCharts Suite now allows you to use patterns for filling data plots, this improves the accessibility of charts and can also help implementing charts on printed media. Currently, the following charts support patterns:
+## Improved export to CSV or XLS files for the Box and Whisker charts
 
--  2D Column, Bar and Area charts.
--  Pie2D, Doughnut2d, and Multi-level Pie chart.
--  Bubble, Funnel, and Pyramid charts.
--  2D Combination charts (only for column, bar and area plot).
+Before exporting the Box and Whisker chart to a CVS or XLS file, users can configure which properties to display. By default the median, minimum number, and, maximum number properties are always displayed, while the following properties can be configured: lower quartile (`showQ1Values`), upper quartile (`showQ3Vales`), mean (`showMean`), mean deviation (`showMD`), standard deviation (`showSD`) and, outliers (`showOutlerValues`).
 
-Newly introduced attributes allow you configure the look of patterns, you can set type, color, size, density, angle, and alpha values.
-
-Using pattern fills looks like as shown below:
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Pattern Fill for Data Plots" src="https://codepen.io/fusioncharts/embed/qBaaGLQ?height=500&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/fusioncharts/pen/qBaaGLQ'>Pattern Fill for Data Plots</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-## Support for HTML tags across all chart text elements
-
-FusionCharts Suite XT introduces support for inline HTML tags across all chart text elements. To define the HTML elements, even for the existing tags, FusionCharts does not support {}. The user must use the valid HTML tags. For example `<strong>`Bold text`</strong>` is supported but {strong}Bold text{/strong} is not.
-
-We included support for the following elements:
-
--  Abbreviation `<abbr>`
--  Anchor Tag `<a>`
--  Bold Text `<b>`
--  Caption `<caption>`
--  Delete `<del>`
--  Emphasized Text `<em>`
--  Important Text `<strong>`
--  Italics Text `<i>`
--  Legend Caption `<legend>`
--  Line Break `<br>`
--  Span `<span>`
--  Strikethrough `<s>`
--  Subscript Text `<sub>`
--  Superscript `<sup>`
--  Underline Text `<u>`
-
-Note: If any other HTML element is specified apart from the list above, it is displayed as a string on the chart.
-
-A chart with inline HTML tags is shown below:
-
-<iframe height="500" style="width: 100%;" scrolling="no" title="Support for HTML tags across all chart text elements" src="https://codepen.io/fusioncharts/embed/gOwwyXz?height=265&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/fusioncharts/pen/gOwwyXz'>Support for HTML tags across all chart text elements</a> by FusionCharts
-  (<a href='https://codepen.io/fusioncharts'>@fusioncharts</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+{% embed_chart box-and-whisker-export-example.js %}
