@@ -107,7 +107,6 @@ It renders a variety of gauges and charts including speedometer charts (also cal
 | [Real-time Cylinder](/chart-attributes/cylinder)              | cylinder         |
 | [Real-time Horizontal LED](/chart-attributes/hled)            | hled             |
 | [Real-time Horizontal Linear](/chart-attributes/HLinearGauge) | hlineargauge     |
-| [Real-time Radial Bar](/chart-attributes/RadialBar)           | radialBar        |
 | [Real-time Thermometer](/chart-attributes/thermometer)        | thermometer      |
 | [Real-time Vertical LED](/chart-attributes/vled)              | vled             |
 
@@ -143,6 +142,7 @@ It renders a variety of gauges and charts including speedometer charts (also cal
 | ------------------------------------------ | ---------------- |
 | [Funnel Chart](/chart-attributes/funnel)   | funnel           |
 | [Pyramid Chart](/chart-attributes/pyramid) | pyramid          |
+| [Radial Bar Chart](/chart-attributes/)     | radialbar        |
 | [Gantt Chart](/chart-attributes/gantt)     | gantt            |
 
 ## PowerCharts XT
