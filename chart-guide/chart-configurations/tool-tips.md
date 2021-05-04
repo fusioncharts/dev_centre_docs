@@ -59,6 +59,35 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
 
+## Customize Tooltip's position
+
+To customize the tooltip's position use the following attributes:
+
+- Tooltip position is calculated automatically when setting `auto` as the value for the `tooltipPosition` property. This value is enabled by default.
+
+- Specify the the tooltip's position to be at top using setting `top` as the value for the `tooltipPosition` property.
+
+- Specify the the tooltip's position to be at bottom using setting `bottom` as the value for the `tooltipPosition` property.
+ 
+If the `tooltipPosition` value is set to `top` and the tooltips are displayed outside of the chart canvas, then `toolPosition`  is set automatically set back to `auto`, rendering the tooltip in the space available.
+
+Refer to the code below:
+
+```json
+{
+"chart": {
+          "caption": "Quarterly Sales Summary",
+          "tooltipPosition": "bottom"
+          }
+         }
+```
+
+The chart will look as shown below:
+
+{% embed_chart configure-tooltip-position.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
+ 
 ## Display Multiline Tooltip Text
 
 By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute `tooltext` to show the text in multiline format.

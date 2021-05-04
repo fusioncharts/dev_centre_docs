@@ -920,31 +920,31 @@
         "name": "is3D"
       },
       {
-        "description": "Whether the node borders would show up.",
+        "description": "Whether the node borders would show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for node borders.",
+        "description": "Color for node borders. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for node borders.",
+        "description": "Thickness for node borders. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5 (Pixels)",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for node borders.",
+        "description": "Alpha for node borders. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0-100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "If you have opted to fill the node as gradient, this attribute lets you set the fill alpha for gradient.",
+        "description": "If you have opted to fill the node as gradient, this attribute lets you set the fill alpha for gradient. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0-100",
         "type": "Number",
         "name": "plotFillAlpha"
@@ -1526,6 +1526,12 @@
         "range": "",
         "type": "String",
         "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
       }
     ],
     "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
@@ -1822,31 +1828,31 @@
         "name": "includeInLegend"
       },
       {
-        "description": "Whether to show the border of this data-set.",
+        "description": "Whether to show the border of this data-set. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for data plot border of this data-set.",
+        "description": "Color for data plot border of this data-set. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for data plot border of this data-set.",
+        "description": "Thickness for data plot border of this data-set. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5 (Pixels)",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for data plot border of this data-set.",
+        "description": "Alpha for data plot border of this data-set. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0-100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "If you have opted to fill the node as gradient, this attribute lets you set the fill alpha for gradient for the data-set.",
+        "description": "If you have opted to fill the node as gradient, this attribute lets you set the fill alpha for gradient for the data-set. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0-100",
         "type": "Number",
         "name": "plotFillAlpha"

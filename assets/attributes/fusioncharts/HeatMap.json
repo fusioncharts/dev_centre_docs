@@ -113,7 +113,7 @@
         "name": "mapByCategory"
       },
       {
-        "description": "Sets the transparency of all the dataplots in the chart.",
+        "description": "Sets the transparency of all the dataplots in the chart. If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Numeric",
         "name": "plotFillAlpha"
@@ -1166,25 +1166,25 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the column, area, pie etc. border would show up.",
+        "description": "Whether the column, area, pie etc. border would show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for column, area, pie border.",
+        "description": "Color for column, area, pie border. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for column, area, pie border.",
+        "description": "Thickness for column, area, pie border. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
       },
       {
-        "description": "Alpha for column, area, pie border.",
+        "description": "Alpha for column, area, pie border. This attribute is used to specify the opacity for the plot border at the chart instance level, data plot, and data-series levels.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
@@ -2574,6 +2574,42 @@
         "name": "alpha"
       },
       {
+        "description": "Sets the font name for the bottom left label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "blLabelFont"
+      },
+       {
+        "description": "Sets the font color for the bottom left label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "blLabelFontColor"
+      }, 
+      {
+        "description": "Sets the font size for the bottom left label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "blLabelFontSize"
+      },
+      {
+        "description": "Sets the font name for the bottom right label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "brLabelFont"
+      },
+       {
+        "description": "Sets the font color for the bottom right label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "brLabelFontColor"
+      }, 
+      {
+        "description": "Sets the font size for the bottom right label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "brLabelFontSize"
+      },
+      {
         "description": "Hex code of the color range using which it will be filled.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -2596,6 +2632,42 @@
         "range": "",
         "type": "Number",
         "name": "minValue"
+      },
+      {
+        "description": "Sets the font name for the top left label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "tlLabelFont"
+      },
+      {
+        "description": "Sets the font color for the top left label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "tlLabelFontColor"
+      },
+      {
+        "description": "Sets the font name for the top left label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "tlLabelFontSize"
+      },
+      {
+        "description": "Sets the font name for the top right label.",
+        "range": "Font name",
+        "type": "String",
+        "name": "trLabelFont"
+      },
+      {
+        "description": "Sets the font color for the top right label.",
+        "range": "Hex color code",
+        "type": "Color",
+        "name": "trLabelFontColor"
+      },
+      {
+        "description": "Sets the font name for the top right label.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "trLabelFontSize"
       }
     ],
     "description": "The attributes of the `color` object, child of the `colorRange` object, are used to configure individual ranges on the gauge scale."
