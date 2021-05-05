@@ -5,34 +5,19 @@ heading: Release Notes
 ---
 <h2 class="sub-heading">Version 2.5.0</h2>
 
-<p class="release-date">14th April, 2021</p>
+<p class="release-date">29th April, 2021</p>
 
 <h4>New Features</h4>
-
-2034:
--  FusionTime Version 2.5.0 supports the customization of tooltip content for Time-series charts.
--  FusionTime Version 2.5.0 supports the customization of tooltip content for Time-series charts. Users can now customize tooltips by specifying the background and border colors and much more.
+-  Starting v2.5, FusionTime now supports the customization of tooltip content for Time-series charts. Users can now customize tooltips by specifying the background and border colors and much more.
 
 <h4>Improvements</h4>
-
-2015:
--  Improved the zoom function to zoom from both inside and outside the plot area. Previously, when using Microsoft Edge the zoom function was not working properly. 
--  Zooming in and out from a chart now works properly for all browsers. Previously, when using Microsoft Edge the zoom function was not working properly. 
 -  Zooming from both inside and outside the plot area now works properly for all browsers. Previously, when using Microsoft Edge the zoom function was not working properly. 
- 
-2061: 
--  Improved the margin and padding ratio to remain constant and scale accordingly when chart dimensions are changed. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
 -  Improved the space management by making the margin and paddings ratios remain constant when multiple canvases with different dimensions are present. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
-
-2073: 
--  FusionTImes Version 2.5 improves the time-axis clipping feature to function at all times independent of the time zone. Previously, when time-axis clipping was implemented on a chart containing the same data across different time zones, time-axis clipping did not occur for certain time zones. 
+-  FusionTime v2.5 improves the auto time-axis clipping feature to function at all times independent of the time zone. Previously, when time-axis clipping was implemented on a chart containing the same data across different time zones, time-axis clipping did not occur for certain time zones. 
 
 
 <h4>Fixes</h4>
-
-2065: 
 -  Resizing a chart with null data now works properly. Previously, upon resizing a chart with null data a JS error was thrown for the `getLogicalSpace` property.
--  Resizing a chart with null data now works properly and no longer throws and JS error. Previously, upon resizing a chart with null data a JS error was thrown, “Cannot read property `getLogicalSpace`”.
 
 
 <h2 class="sub-heading">Version 2.4.0</h2>
