@@ -8,7 +8,7 @@ This section is for users who are using the previous version of FusionCharts in 
 
 ## Radial Bar chart
 
-FusionCharts Version 3.17.0 introduces the new Radial Bar chart, part of FusionWidgets XT. Similar to a Bar chart but displayed on a polar coordinate system, and can be used for comparisons among categories by using a circular shape.
+FusionCharts Version 3.17.0 introduces the new ![Radial Bar](/chart-guide/standard-charts/radial-bar-chart) chart, part of FusionWidgets XT. Similar to a Bar chart but displayed on a polar coordinate system, and can be used for comparisons among categories by using a circular shape.
 
 {% embed_chart radial-bar-example.js %}
 
