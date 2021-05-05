@@ -1,364 +1,368 @@
 {
-   "page": {
+  "page": {
+    "fusioncharts": {
+      "plugins": [
+        {
+          "text": "Front end plugins",
+          "value": "frontend",
+          "toggletext": "Front End Plugins"
+        },
+        {
+          "text": "Back end plugins",
+          "value": "backend",
+          "toggletext": "Back End Plugins"
+        }
+      ],
+      "frontend": [
+        {
+          "value": "Plain JavaScript",
+          "classname": "icon-js",
+          "link": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
+        },
+        {
+          "value": "React",
+          "classname": "icon-react",
+          "link": "/getting-started/react/your-first-chart-using-react"
+        },
+        {
+          "value": "Angular 2+",
+          "classname": "icon-angular2x",
+          "link": "/getting-started/angular/angular/your-first-chart-using-angular"
+        },
+        {
+          "value": "jQuery",
+          "classname": "icon-jQuery",
+          "link": "/getting-started/jquery/your-first-chart-using-jquery"
+        },
+        {
+          "value": "Vue",
+          "classname": "icon-vue",
+          "link": "/getting-started/vue/your-first-chart-using-vuejs"
+        },
+        {
+          "value": "Ember",
+          "classname": "icon-ember",
+          "link": "/getting-started/ember/your-first-chart-using-ember"
+        },
+        {
+          "value": "React Native",
+          "classname": "icon-reactnative",
+          "link": "/getting-started/react-native/your-first-chart-using-react-native"
+        },
+        {
+          "value": "AngularJS",
+          "classname": "icon-angular1x",
+          "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
+        },
+        {
+          "value": "Svelte",
+          "classname": "icon-svelte",
+          "link": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+        },
+        {
+          "value": "Ionic framework",
+          "classname": "icon-ionic",
+          "link": "/getting-started/ionic-framework/ionic-framework-using-angular"
+        }
+      ],
+      "backend": [
+        {
+          "value": "PHP",
+          "classname": "icon-php",
+          "link": "/getting-started/php/your-first-chart-using-php"
+        },
+        {
+          "value": "ASP.NET",
+          "classname": "icon-NET",
+          "link": "/getting-started/aspnet/your-first-chart-using-aspnet"
+        },
+        {
+          "value": "Java",
+          "classname": "icon-java",
+          "link": "/getting-started/java/your-first-chart-using-java"
+        },
+        {
+          "value": "Django",
+          "classname": "icon-django",
+          "link": "/getting-started/django/your-first-chart-using-django"
+        },
+        {
+          "value": "Ruby on Rails",
+          "classname": "icon-RubyOnRails",
+          "link": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
+        }
+      ],
+      "dashboard": [
+        {
+          "value": "Smart Energy Monitoring Dashboard",
+          "imagepath": "/images/landingpage/smart-energy-monitoring-dashboard.png",
+          "attvalue": "smart-energy-monitoring-dashboard",
+          "link": "https://www.fusioncharts.com/dashboards/smart-energy-monitoring-dashboard"
+        },
+        {
+          "value": "Google Analytics Dashboard",
+          "imagepath": "/images/landingpage/thumb-google-analytics-dashboard.jpg",
+          "attvalue": "thumb-google-analytics-dashboard",
+          "link": "https://www.fusioncharts.com/dashboards/google-analytics-web-dashboard"
+        },
+        {
+          "value": "Sales Management Dashboard",
+          "imagepath": "/images/landingpage/thumb-management-dashboard.png",
+          "attvalue": "thumb-management-dashboard",
+          "link": "https://www.fusioncharts.com/dashboards/sales-management-dashboard"
+        }
+      ],
+      "charts": [
+        {
+          "value": "Composition",
+          "imagepath": "/images/landingpage/composition.svg",
+          "attvalue": "composition",
+          "link": "/demos/chart-gallery#intent=1"
+        },
+        {
+          "value": "Distribution",
+          "imagepath": "/images/landingpage/distribution.svg",
+          "attvalue": "distribution",
+          "link": "/demos/chart-gallery#intent=2"
+        },
+        {
+          "value": "Comparison",
+          "imagepath": "/images/landingpage/comparison.svg",
+          "attvalue": "comparison",
+          "link": "/demos/chart-gallery#intent=3"
+        }
+      ]
+    }
+  },
+  "headerLinks": [
+    {
+      "title": "Chart Explorer",
+      "link": "/demos/chart-gallery"
+    },
+    {
+      "title": "FusionCharts",
+      "children": [
+        {
+          "title": "FusionCharts Constructor",
+          "link": "/api/fusioncharts"
+        },
+        {
+          "title": "Events",
+          "link": "/api/fusioncharts/fusioncharts-events"
+        },
+        {
+          "title": "Methods",
+          "link": "/api/fusioncharts/fusioncharts-methods"
+        },
+        {
+          "title": "Properties",
+          "link": "/api/fusioncharts/fusioncharts-properties"
+        },
+        {
+          "title": "Type Definitions",
+          "link": "/api/fusioncharts/fusioncharts-typedefs"
+        }
+      ]
+    },
+    {
       "fusioncharts": {
-         "plugins": [
-            {
-               "text": "Front end plugins",
-               "value": "frontend",
-               "toggletext": "Front End Plugins"
-            },
-            {
-               "text": "Back end plugins",
-               "value": "backend",
-               "toggletext": "Back End Plugins"
-            }
-         ],
-         "frontend": [
-            {
-               "value": "Plain JavaScript",
-               "classname": "icon-js",
-               "link": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
-            },
-            {
-               "value": "React",
-               "classname": "icon-react",
-               "link": "/getting-started/react/your-first-chart-using-react"
-            },
-            {
-               "value": "Angular 2+",
-               "classname": "icon-angular2x",
-               "link": "/getting-started/angular/angular/your-first-chart-using-angular"
-            },
-            {
-               "value": "jQuery",
-               "classname": "icon-jQuery",
-               "link": "/getting-started/jquery/your-first-chart-using-jquery"
-            },
-            {
-               "value": "Vue",
-               "classname": "icon-vue",
-               "link": "/getting-started/vue/your-first-chart-using-vuejs"
-            },
-            {
-               "value": "Ember",
-               "classname": "icon-ember",
-               "link": "/getting-started/ember/your-first-chart-using-ember"
-            },
-            {
-               "value": "React Native",
-               "classname": "icon-reactnative",
-               "link": "/getting-started/react-native/your-first-chart-using-react-native"
-            },
-            {
-               "value": "AngularJS",
-               "classname": "icon-angular1x",
-               "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
-            },
-            {
-               "value": "Svelte",
-               "classname": "icon-svelte",
-               "link": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
-            },
-            {
-               "value": "Ionic framework",
-               "classname": "icon-ionic",
-               "link": "/getting-started/ionic-framework/ionic-framework-using-angular"
-            }
-         ],
-         "backend": [
-            {
-               "value": "PHP",
-               "classname": "icon-php",
-               "link": "/getting-started/php/your-first-chart-using-php"
-            },
-            {
-               "value": "ASP.NET",
-               "classname": "icon-NET",
-               "link": "/getting-started/aspnet/your-first-chart-using-aspnet"
-            },
-            {
-               "value": "Java",
-               "classname": "icon-java",
-               "link": "/getting-started/java/your-first-chart-using-java"
-            },
-            {
-               "value": "Django",
-               "classname": "icon-django",
-               "link": "/getting-started/django/your-first-chart-using-django"
-            },
-            {
-               "value": "Ruby on Rails",
-               "classname": "icon-RubyOnRails",
-               "link": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
-            }
-         ],
-         "dashboard": [
-            {
-               "value": "Smart Energy Monitoring Dashboard",
-               "imagepath": "/images/landingpage/smart-energy-monitoring-dashboard.png",
-               "attvalue": "smart-energy-monitoring-dashboard",
-               "link": "https://www.fusioncharts.com/dashboards/smart-energy-monitoring-dashboard"
-            },
-            {
-               "value": "Google Analytics Dashboard",
-               "imagepath": "/images/landingpage/thumb-google-analytics-dashboard.jpg",
-               "attvalue": "thumb-google-analytics-dashboard",
-               "link": "https://www.fusioncharts.com/dashboards/google-analytics-web-dashboard"
-            },
-            {
-               "value": "Sales Management Dashboard",
-               "imagepath": "/images/landingpage/thumb-management-dashboard.png",
-               "attvalue": "thumb-management-dashboard",
-               "link": "https://www.fusioncharts.com/dashboards/sales-management-dashboard"
-            }
-         ],
-         "charts": [
-            {
-               "value": "Composition",
-               "imagepath": "/images/landingpage/composition.svg",
-               "attvalue": "composition",
-               "link": "/demos/chart-gallery#intent=1"
-            },
-            {
-               "value": "Distribution",
-               "imagepath": "/images/landingpage/distribution.svg",
-               "attvalue": "distribution",
-               "link": "/demos/chart-gallery#intent=2"
-            },
-            {
-               "value": "Comparison",
-               "imagepath": "/images/landingpage/comparison.svg",
-               "attvalue": "comparison",
-               "link": "/demos/chart-gallery#intent=3"
-            }
-         ]
-      }
-   },
-   "headerLinks": [
-      {
-         "title": "Chart Explorer",
-         "link": "/demos/chart-gallery"
+        "title": "v3.17.0",
+        "children": [
+          {
+            "title": "v3.16.0",
+            "link": "https://docs.fusioncharts.com/archive/3.16.0/"
+          },
+          {
+            "title": "v3.15.3",
+            "link": "https://docs.fusioncharts.com/archive/3.15.3/"
+          },
+          {
+            "title": "v3.15.2",
+            "link": "https://docs.fusioncharts.com/archive/3.15.2/"
+          },
+          {
+            "title": "v3.15.1-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.15.1-sr.1/"
+          },
+          {
+            "title": "v3.15.1",
+            "link": "https://docs.fusioncharts.com/archive/3.15.1/"
+          },
+          {
+            "title": "v3.15.0-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.15.0-sr.1/"
+          },
+          {
+            "title": "v3.15.0",
+            "link": "https://docs.fusioncharts.com/archive/3.15.0/"
+          },
+          {
+            "title": "v3.14.1",
+            "link": "https://docs.fusioncharts.com/archive/3.14.1/"
+          },
+          {
+            "title": "v3.14.0-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.14.0-sr.1/"
+          },
+          {
+            "title": "v3.14.0",
+            "link": "https://docs.fusioncharts.com/archive/3.14.0/"
+          },
+          {
+            "title": "v3.13.5-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.13.5-sr.1/"
+          },
+          {
+            "title": "v3.13.5",
+            "link": "https://docs.fusioncharts.com/archive/3.13.5/"
+          },
+          {
+            "title": "v3.13.4",
+            "link": "https://docs.fusioncharts.com/archive/3.13.4/"
+          },
+          {
+            "title": "v3.13.3-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.13.3-sr.1/"
+          },
+          {
+            "title": "v3.13.3",
+            "link": "https://docs.fusioncharts.com/archive/3.13.3/"
+          },
+          {
+            "title": "v3.13.2-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.13.2-sr.1/"
+          },
+          {
+            "title": "v3.13.2",
+            "link": "https://docs.fusioncharts.com/archive/3.13.2/"
+          },
+          {
+            "title": "v3.13.1-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.13.1-sr.1/"
+          },
+          {
+            "title": "v3.13.1",
+            "link": "https://docs.fusioncharts.com/archive/3.13.1/"
+          },
+          {
+            "title": "v3.13.0",
+            "link": "https://docs.fusioncharts.com/archive/3.13.0/"
+          },
+          {
+            "title": "v3.12.2",
+            "link": "https://docs.fusioncharts.com/archive/3.12.2/"
+          },
+          {
+            "title": "v3.12.1",
+            "link": "https://docs.fusioncharts.com/archive/3.12.1/"
+          },
+          {
+            "title": "v3.12.0",
+            "link": "https://docs.fusioncharts.com/archive/3.12.0/"
+          },
+          {
+            "title": "v3.11.3",
+            "link": "https://docs.fusioncharts.com/archive/3.11.3/"
+          },
+          {
+            "title": "v3.11.2",
+            "link": "https://docs.fusioncharts.com/archive/3.11.2/"
+          },
+          {
+            "title": "v3.11.0",
+            "link": "https://docs.fusioncharts.com/archive/3.11.0/"
+          },
+          {
+            "title": "v3.10.1",
+            "link": "https://docs.fusioncharts.com/archive/3.10.1/"
+          },
+          {
+            "title": "v3.10.0",
+            "link": "https://docs.fusioncharts.com/archive/3.10.0/"
+          },
+          {
+            "title": "v3.9.0",
+            "link": "https://docs.fusioncharts.com/archive/3.9.0/"
+          },
+          {
+            "title": "v3.8.0",
+            "link": "https://docs.fusioncharts.com/archive/3.8.0/"
+          },
+          {
+            "title": "v3.7.1",
+            "link": "https://docs.fusioncharts.com/archive/3.7.1/"
+          },
+          {
+            "title": "v3.7.0",
+            "link": "https://docs.fusioncharts.com/archive/3.7.0/"
+          },
+          {
+            "title": "v3.6.0",
+            "link": "https://docs.fusioncharts.com/archive/3.6.0/"
+          },
+          {
+            "title": "v3.5.1",
+            "link": "https://docs.fusioncharts.com/archive/3.5.1/"
+          },
+          {
+            "title": "v3.5.0",
+            "link": "https://docs.fusioncharts.com/archive/3.5.0/"
+          },
+          {
+            "title": "v3.4.1",
+            "link": "https://docs.fusioncharts.com/archive/3.4.1/"
+          },
+          {
+            "title": "v3.4.0",
+            "link": "https://docs.fusioncharts.com/archive/3.4.0/"
+          }
+        ]
       },
-      {
-         "title": "FusionCharts",
-         "children": [
-            {
-               "title": "FusionCharts Constructor",
-               "link": "/api/fusioncharts"
-            },
-            {
-               "title": "Events",
-               "link": "/api/fusioncharts/fusioncharts-events"
-            },
-            {
-               "title": "Methods",
-               "link": "/api/fusioncharts/fusioncharts-methods"
-            },
-            {
-               "title": "Properties",
-               "link": "/api/fusioncharts/fusioncharts-properties"
-            },
-            {
-               "title": "Type Definitions",
-               "link": "/api/fusioncharts/fusioncharts-typedefs"
-            }
-         ]
-      },
-      {
-         "fusioncharts": {
-            "title": "v3.17.0",
-            "children": [
-               {
-                  "title": "v3.16.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.16.0/"
-               },
-               {
-                  "title": "v3.15.3",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.3/"
-               },
-               {
-                  "title": "v3.15.2",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.2/"
-               },
-               {
-                  "title": "v3.15.1-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.1-sr.1/"
-               },
-               {
-                  "title": "v3.15.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.1/"
-               },
-               {
-                  "title": "v3.15.0-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.0-sr.1/"
-               },
-               {
-                  "title": "v3.15.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.0/"
-               },
-               {
-                  "title": "v3.14.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.14.1/"
-               },
-               {
-                  "title": "v3.14.0-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.14.0-sr.1/"
-               },
-               {
-                  "title": "v3.14.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.14.0/"
-               },
-               {
-                  "title": "v3.13.5-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.5-sr.1/"
-               },
-               {
-                  "title": "v3.13.5",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.5/"
-               },
-               {
-                  "title": "v3.13.4",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.4/"
-               },
-               {
-                  "title": "v3.13.3-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.3-sr.1/"
-               },
-               {
-                  "title": "v3.13.3",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.3/"
-               },
-               {
-                  "title": "v3.13.2-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.2-sr.1/"
-               },
-               {
-                  "title": "v3.13.2",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.2/"
-               },
-               {
-                  "title": "v3.13.1-sr.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.1-sr.1/"
-               },
-               {
-                  "title": "v3.13.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.1/"
-               },
-               {
-                  "title": "v3.13.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.0/"
-               },
-               {
-                  "title": "v3.12.2",
-                  "link": "https://docs.fusioncharts.com/archive/3.12.2/"
-               },
-               {
-                  "title": "v3.12.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.12.1/"
-               },
-               {
-                  "title": "v3.12.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.12.0/"
-               },
-               {
-                  "title": "v3.11.3",
-                  "link": "https://docs.fusioncharts.com/archive/3.11.3/"
-               },
-               {
-                  "title": "v3.11.2",
-                  "link": "https://docs.fusioncharts.com/archive/3.11.2/"
-               },
-               {
-                  "title": "v3.11.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.11.0/"
-               },
-               {
-                  "title": "v3.10.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.10.1/"
-               },
-               {
-                  "title": "v3.10.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.10.0/"
-               },
-               {
-                  "title": "v3.9.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.9.0/"
-               },
-               {
-                  "title": "v3.8.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.8.0/"
-               },
-               {
-                  "title": "v3.7.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.7.1/"
-               },
-               {
-                  "title": "v3.7.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.7.0/"
-               },
-               {
-                  "title": "v3.6.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.6.0/"
-               },
-               {
-                  "title": "v3.5.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.5.1/"
-               },
-               {
-                  "title": "v3.5.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.5.0/"
-               },
-               {
-                  "title": "v3.4.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.4.1/"
-               },
-               {
-                  "title": "v3.4.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.4.0/"
-               }
-            ]
-         },
-         "fusiontime": {
+      "fusiontime": {
+        "title": "v2.5.0",
+        "children": [
+          {
             "title": "v2.4.0",
-            "children": [
-               {
-                  "title": "v2.3.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.3/"
-               },
-               {
-                  "title": "v2.2.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.2/"
-               },
-               {
-                  "title": "v2.1.1",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.1-sr.1/"
-               },
-               {
-                  "title": "v2.1.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.1/"
-               },
-               {
-                  "title": "v2.0.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.15.0-sr.1/"
-               },
-               {
-                  "title": "v1.3.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.14.1/"
-               },
-               {
-                  "title": "v1.2.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.14.0/"
-               },
-               {
-                  "title": "v1.1.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.5/"
-               },
-               {
-                  "title": "v1.0.0",
-                  "link": "https://docs.fusioncharts.com/archive/3.13.4/"
-               }
-            ]
-         }
+            "link": "https://docs.fusioncharts.com/archive/3.16.0/"
+          },
+          {
+            "title": "v2.3.0",
+            "link": "https://docs.fusioncharts.com/archive/3.15.3/"
+          },
+          {
+            "title": "v2.2.0",
+            "link": "https://docs.fusioncharts.com/archive/3.15.2/"
+          },
+          {
+            "title": "v2.1.1",
+            "link": "https://docs.fusioncharts.com/archive/3.15.1-sr.1/"
+          },
+          {
+            "title": "v2.1.0",
+            "link": "https://docs.fusioncharts.com/archive/3.15.1/"
+          },
+          {
+            "title": "v2.0.0",
+            "link": "https://docs.fusioncharts.com/archive/3.15.0-sr.1/"
+          },
+          {
+            "title": "v1.3.0",
+            "link": "https://docs.fusioncharts.com/archive/3.14.1/"
+          },
+          {
+            "title": "v1.2.0",
+            "link": "https://docs.fusioncharts.com/archive/3.14.0/"
+          },
+          {
+            "title": "v1.1.0",
+            "link": "https://docs.fusioncharts.com/archive/3.13.5/"
+          },
+          {
+            "title": "v1.0.0",
+            "link": "https://docs.fusioncharts.com/archive/3.13.4/"
+          }
+        ]
       }
-   ]
+    }
+  ]
 }
