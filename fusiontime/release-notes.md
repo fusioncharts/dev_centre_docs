@@ -10,13 +10,13 @@ heading: Release Notes
 
 <h4>New Features</h4>
 
-- Starting v2.5, FusionTime now supports the customization of tooltip content for Time-series charts. Users can now customize tooltips by specifying the background and border colors and much more.
+- Starting version 2.5.0, FusionTime now supports the customization of tooltip content for Time-series charts. Users can now customize tooltips by specifying the background and border colors and much more.
 
 <h4>Improvements</h4>
 
 - Zooming from both inside and outside the plot area now works properly for all browsers. Previously, when using Microsoft Edge the zoom function was not working properly.
 - Improved the space management by making the margin and paddings ratios remain constant when multiple canvases with different dimensions are present. Previously whenever the height of a multi-variate chart was increased an additional top margin was added.
-- FusionTime v2.5 improves the auto time-axis clipping feature to function at all times independent of the time zone. Previously, when time-axis clipping was implemented on a chart containing the same data across different time zones, time-axis clipping did not occur for certain time zones.
+- FusionTime version 2.5.0 improves the auto time-axis clipping feature to function at all times independent of the time zone. Previously, when time-axis clipping was implemented on a chart containing the same data across different time zones, time-axis clipping did not occur for certain time zones.
 
 <h4>Fixes</h4>
 
