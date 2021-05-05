@@ -1247,6 +1247,10 @@
                               "path": "/chart-guide/standard-charts/radar-chart"
                            },
                            {
+                              "title": "Radial Bar Chart",
+                              "path": "/chart-guide/standard-charts/radial-bar-chart"
+                           },
+                           {
                               "title": "Funnel Chart",
                               "path": "/chart-guide/standard-charts/funnel-chart"
                            },
