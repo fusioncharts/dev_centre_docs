@@ -26,6 +26,12 @@ Export a Chord Diagram to an SVG using the `getSVGString` method or via the Expo
 **After the fix** SVG string is properly generated using both the `getSVGString` method and via the Export Menu.
 ![Chart After](/images/SVG_fix_FC-2076.png)
 
+## The `trendLineAlpha` attribute working properly for Trend line/zone values
+
+The attribute `trendLineAlpha` is now working as expected and users can specify a value to configure opacity for trend line/zone values. Previously, attribute had an incorrect behavior and was not taken into account at run time. 
+
+{% embed_chart chart-configurations-trend-value-alpha-example.js %}
+
 ## Box and Whisker chart exports CSV and XLSX files properly
 
 Exporting the Box and Whisker charts as a CSV or Excel file now displays correct and complete data, previously the exported files had incomplete data.
