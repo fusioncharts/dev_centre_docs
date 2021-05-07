@@ -22,10 +22,8 @@ To create a radial bar chart follow the steps below:
 For a detailed list of attributes, refer to the [attributes link] page of chord diagram.
 
 A Radial Bar chart looks as shown below:
-{% embed_chart name %}
-Click [here](fiddle link) to edit the above chart. 
+{% embed_chart radial-bar-example.js %}
 
-[describe the chart above]
 
 ## Customizations of a Radial Bar Chart
 
