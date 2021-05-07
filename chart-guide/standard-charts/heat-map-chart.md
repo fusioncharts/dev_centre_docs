@@ -572,7 +572,8 @@ In a heat map chart, you can show multiple labels in different positions, starti
 
 Refer to the code below:
 
-```color: [
+```json
+color: [
       {
         code: "#ff9933",
         maxvalue: "-4",
