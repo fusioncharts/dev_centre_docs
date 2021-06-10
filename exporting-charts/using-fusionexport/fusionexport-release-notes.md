@@ -3,6 +3,38 @@ title: FusionExport Release Notes | FusionCharts
 description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
+<h2 class="sub-heading">v2.0</h2>
+
+<p class="release-date">21st June 2021</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Support for License Key management:**
+- **Support for CORS:**
+- **Support for Excel:**
+
+<h4>Improvements</h4>
+
+- **Support for HTTPS Server:** This version includes HTTPS support for the FusionExport Server and the FusionExport SDK.
+ 
+- **Renamed FusionExport executable:** To easily find the FusionExport process, we changed the executable name from `service.exe` to `fusionexport-service.exe` for all platforms. 
+
+- **Rendering local fonts:** This version allows you to load and render charts with your local fonts in CSS or HTML files.
+
+- **Support for timeout value:** This version supports a new CLI argument called `--timeout`, or `minifyResource` for SDK. This value allows users to provide a custom timeout.
+
+- **New Dashboard templates:** This version includes new default templates for exporting dashboards. 
+
+- **CLI Improvements:** 
+
+
+<h4>Fixes</h4>
+
+- **Sandox issue:** Linux based environments running FusionExport in RHEL 7.x no longer run into sandbox issues.
+
+- **`workerCount` value working:** Using the CLI argument `workerCount`, to define the number of workers to run, works as expected. 
+
+
 <h2 class="sub-heading">v1.2.3</h2>
 
 <p class="release-date">21st April 2020</p>
