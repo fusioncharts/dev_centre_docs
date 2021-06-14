@@ -10,7 +10,7 @@ heading: FusionExport Release Notes
 <h4 class="sub-heading">New Feature</h4>
 
 - **Support for License Key management:** This version supports license validation system. [need more doc].
-- **Support for CORS:** This version supports a new CLI argument called `--cors` which you can send cross-origin requests ans share resources.
+- **Support for CORS:** This version supports a new CLI argument called `--cors` which you can send cross-origin requests and share resources.
 - **Support for Excel:** This version supports exporting your charts to `xlsx`, `xls` and `cvs` formats. This feature is only available with FusionCharts configurations. 
 
 <h4>Improvements</h4>
