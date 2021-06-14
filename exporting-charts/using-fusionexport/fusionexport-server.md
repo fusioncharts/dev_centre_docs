@@ -25,6 +25,8 @@ $ ./fusionexport <option>
 | `--host`                   | `-H`  | `127.0.0.1` | Sets the IP address of the server host.                                                              |
 | `--port`                   | `-P`  | `1337`      | Sets the port number where you want to run the server.                                               |
 | `--worker-count`           | `-W`  | `2`         | Assign maximum number of workers to spawn.                                                           |
+|
+| `--timeout`                | `-T`  | `2`         | Assign a timeout in ms. The default value is 3000ms.                                                          |
 | `--library-directory-path` | `-L`  |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
 | `--config-file`            | `-C`  |             | Set configuration file path.                                                                         |
 
@@ -37,6 +39,7 @@ To persist the config every time you start the server or for getting access to m
 | `host`                 | 127.0.0.1 | IP address of the server host.                                                                   |
 | `port`                 | 1337      | Port number where you want to run the server.                                                    |
 | `workerCount`          | 2         | Maximum number of workers to spawn.                                                              |
+| `timeout`              | 3000      | Assign a timeout in ms.                                                                          |
 | `libraryDirectoryPath` |           | Custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
 
 ## Docker Config
@@ -47,6 +50,7 @@ To run FusionExport server from Docker, click [here](/exporting-charts/using-fus
 | -------------------- | --------------- | -------------------------------------------- |
 | `SERVICE_PORT`       | 1337            | Port number where you want to run the server |
 | `DATA_SAVE_PATH (1)` | ~/.fusionexport | Storage path for saving the exported images  |
+| `TIMEOUT`            | 3000 ms         |Assign a timeout in ms                        |   
 
 ## HTTP Endpoints
 
