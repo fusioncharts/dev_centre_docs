@@ -79,7 +79,7 @@ By default, the FusionExport Server starts on `localhost`, and listens to port `
 <img src="{% site.BASE_URL %}/images/fusionexport-server-welcome.png" alt="FusionExport welcome message">
 
 <p class="alert alert-warning mb-1 mt-1">
-    <strong>Imporant Note</strong>: When you download FusionExport for Windows, you will find executables like `fusionexport.exe` and `service.exe`. **Do not** run them by double-clicking on the file icons; instead, execute them using either the Command Prompt or the PowerShell.
+    <strong>Imporant Note</strong>: When you download FusionExport for Windows, you will find executables like `fusionexport.exe` and `fusionexport-service.exe`. **Do not** run them by double-clicking on the file icons; instead, execute them using either the Command Prompt or the PowerShell.
 </p>
 
 ## Docker
