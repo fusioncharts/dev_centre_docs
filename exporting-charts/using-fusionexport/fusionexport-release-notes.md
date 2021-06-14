@@ -32,7 +32,7 @@ heading: FusionExport Release Notes
 
 - **Sandox issue:** Linux based environments running FusionExport in RHEL 7.x no longer run into sandbox issues.
 
-- **`workerCount` value working:** Using the CLI argument `workerCount`, to define the number of workers to run, works as expected. 
+- **`--worker-count` value working:** Using the CLI argument `--worker-count`, to define the number of workers to run, works as expected. 
 
 
 <h2 class="sub-heading">v1.2.3</h2>
