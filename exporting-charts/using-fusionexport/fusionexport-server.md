@@ -25,7 +25,6 @@ $ ./fusionexport <option>
 | `--host`                   | `-H`  | `127.0.0.1` | Sets the IP address of the server host.                                                              |
 | `--port`                   | `-P`  | `1337`      | Sets the port number where you want to run the server.                                               |
 | `--worker-count`           | `-W`  | `2`         | Assign maximum number of workers to spawn.                                                           |
-|
 | `--timeout`                | `-T`  | `2`         | Assign a timeout in ms. The default value is 3000ms.                                                          |
 | `--library-directory-path` | `-L`  |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
 | `--config-file`            | `-C`  |             | Set configuration file path.                                                                         |
