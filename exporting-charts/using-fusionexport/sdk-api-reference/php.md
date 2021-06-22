@@ -37,11 +37,13 @@ It returns exporter object which can resolves to the array of filenames of the e
 
 ##### Parameters
 
-| Name             | Type           | Default Value | Required | Description                                                                              |
-| ---------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------------- |
-| `$exportConfig`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations              |
-| `$outputDirPath` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                      |
-| `$unzipFlag`     | `Boolean`      | `false`       | No       | This parameter allows you to compress/decompress your output bundle into separate files. |
+| Name            | Type           | Default Value | Required | Description                                                                        |                 
+| --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------- |
+| `$exportBulk`    | `Boolean`      | `true`        | Yes      | Allows users to export charts into multiple files.                                 |
+| `$exportConfig`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations.       |
+| `$outputDirPath` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                |
+| `$unzipFlag`     | `Boolean`      | `true`        | No       | Allows you to compress/decompress your output bundle into separate files.          |
+
 
 ##### Returns
 
@@ -175,7 +177,7 @@ $exportConfig->set("chartConfig", "resources/chart-config-file.json");
 
 _**Type:** String_
 
-Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`.
+Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`. The default value is `pdf`.
 
 #### Example
 
@@ -272,6 +274,29 @@ Sets the path of the HTML template used for dashboard export
 
 ```php
 $exportConfig->set("templateFilePath", "resources/template.html");
+```
+
+### `header`
+
+_**Type:** String_
+
+Enables users to add a header inside the exported file.
+
+#### Example
+
+```php
+exportConfig.Set("header", "header value");
+```
+### `subheader`
+
+_**Type:** String_
+
+Enables users to add a subheader inside the exported file.
+
+#### Example
+
+```php
+exportConfig.Set("subheader", "subheader value");
 ```
 
 ### `headerEnabled`
