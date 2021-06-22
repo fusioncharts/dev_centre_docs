@@ -42,6 +42,7 @@ This is the most important method from ExportManager module. Based on the config
 | --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------- |
 | `exportBulk`    | `Boolean`      | `true`        | Yes      | Allows users to export charts into multiple files.                                 |
 | `exportConfig`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations.       |
+| `minifyResources`| `Boolean`      | `true`        | No       | Minifies HTML, CSS and JavaScript files before passing it to FusionExport.         |
 | `outputDirPath` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                |
 | `unzipFlag`     | `Boolean`      | `true`        | No       | Allows you to compress/decompress your output bundle into separate files.          |
 
