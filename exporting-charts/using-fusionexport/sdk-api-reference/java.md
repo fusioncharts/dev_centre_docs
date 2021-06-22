@@ -43,11 +43,13 @@ This is the most important method from ExportManager module. Based on the config
 
 ##### Parameters
 
-| Name            | Type           | Default Value | Required | Description                                                                              |
-| --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------------- |
-| `exportConfig`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations              |
-| `outputDirPath` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                      |
-| `unzipFlag`     | `Boolean`      | `false`       | No       | This parameter allows you to compress/decompress your output bundle into separate files. |  |
+| Name            | Type           | Default Value | Required | Description                                                                        |                 
+| --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------- |
+| `exportBulk`    | `Boolean`      | `true`        | Yes      | Allows users to export charts into multiple files.                                 |
+| `exportConfig`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations.       |
+| `outputDirPath` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                |
+| `unzipFlag`     | `Boolean`      | `true`        | No       | Allows you to compress/decompress your output bundle into separate files.          |
+
 
 ##### Returns
 
@@ -129,7 +131,7 @@ exportConfig.set("chartConfig", "resourceschart-config-file.json");
 
 _**Type:** String_
 
-Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`.
+Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`. The default is `pdf`.
 
 #### Example
 
@@ -238,6 +240,29 @@ Sets the format of the PDF pages during a PDF export. This option takes priority
 
 ```java
 exportConfig.set("templateFormat", "A4");
+```
+
+### `header`
+
+_**Type:** String_
+
+Enables users to add a header inside the exported file.
+
+#### Example
+
+```java
+exportConfig.Set("header", "header value");
+```
+### `subheader`
+
+_**Type:** String_
+
+Enables users to add a subheader inside the exported file.
+
+#### Example
+
+```java
+exportConfig.Set("subheader", "subheader value");
 ```
 
 ### `headerEnabled`
