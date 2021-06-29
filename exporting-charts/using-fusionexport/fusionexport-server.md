@@ -8,7 +8,29 @@ FusionExport server is an HTTP server which accepts data in JSON format to expor
 
 ## CLI Options
 
-FusionExport server accepts the following command line arguments to configure the server very easily. Syntax to get or set the options is:
+FusionExport server accepts the following command line arguments to configure the server very easily. 
+
+```bash
+$ ./fusionexport <start>
+$ ./fusionexport <restart>
+$ ./fusionexport <stop>
+$ ./fusionexport <list>
+```
+The command arguments `$ ./fusionexport <restart>` and `$ ./fusionexport <stop>` are only useful when `--startup` and `--background` were used earlier. Otherwise following the following message is shown: `FusionExport is not running. You can start the server by running fusionexport start` or `FusionExport is already stopped`.
+
+The `$ ./fusionexport <list>` list running FusionExport servers in a tabular format which contain the following information: 
+
+* `pid`: Process id.
+
+* `log path`: The absolute path of the log file.
+
+* `running from`: When was the last time it was executed.
+
+* `worker count`: Number of running workers.
+
+* `start up`: Is part of the process manager (Yes or No).
+
+Syntax to get or set the options is:
 
 ```bash
 $ ./fusionexport <option>
@@ -18,20 +40,28 @@ $ ./fusionexport <option>
     <strong>Important Note:</strong> After v1.2.3 onwards, if you are running FusionExport in Mac you have to run the command as `$ ./fusionexport -- <option>`. Please notice the additional `--` added in the while running.
 </p>
 
-| Option                     | Alias | Default     | Description                                                                                          |
-| -------------------------- | ----- | ----------- | ---------------------------------------------------------------------------------------------------- |
-| `--version`                | `-v`  |             | Returns the current version of FusionExport.                                                         |
-| `--help`                   | `-h`  |             | Returns all the available CLI options.                                                               |
-| `--host`                   | `-H`  | `127.0.0.1` | Sets the IP address of the server host.                                                              |
-| `--port`                   | `-P`  | `1337`      | Sets the port number where you want to run the server.                                               |
-| `--worker-count`           | `-W`  | `2`         | Assign maximum number of workers to spawn.                                                           |
-| `--timeout`                | `-T`  |             | Assign a timeout in ms. The default value is 3000ms.                                                          |
-| `--library-directory-path` | `-L`  |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
-| `--config-file`            | `-C`  |             | Set configuration file path.                                                                         |
-| `--ssh-key`                |       |             | Accepts a relative or an absolute path of the private key.              
-    |
-| `--ssh-certificate`        |       |             | Accepts a relative or an absolute path of the certificate 
-    |
+| Option                     | Alias    | Default     | Description                                                                                          |
+| -------------------------- | -------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| `--version`                | `-v`     |             | Returns the current version of FusionExport.                                                         |
+| `--help`                   | `-h`     |             | Returns all the available CLI options.                                                               |
+| `--host`                   | `-H`     | `127.0.0.1` | Sets the IP address of the server host.                                                              |
+| `--port`                   | `-P`     | `1337`      | Sets the port number where you want to run the server.                                               |
+| `--worker-count`           | `-W`     | `2`         | Assign maximum number of workers to spawn.                                                           |
+| `--timeout`                | `-T`     |             | Assign a timeout in ms. The default value is 3000ms.                                                 |     
+| `--library-directory-path` | `-L`     |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
+| `--config-file`            | `-C`     |             | Set configuration file path.                                                                         |
+| `--ssh-key`                |          |             | Accepts a relative or an absolute path of the private key.                                           |
+| `--ssh-certificate`        |          |             | Accepts a relative or an absolute path of the certificate.                                           |
+| `--startup`                |          |             | Runs FusionExport when the server/machine starts.                                                    |
+| `--unstartup`              |          |             | Removes FusionExport process from the process manager.                                               |
+| `--background`             |          |             | Runs FusionExport in the background by providing process id as a response.                           |
+| `--log`                    | `<path>` |             | Allows you to configure the location of the log file.                                                |
+| `--max-log-size`           | `<size>` |             | Allows you to configure the log file size.                                                           |
+
+
+<p class="alert alert-warning mb-1 mt-1">
+    <strong>Important Note:</strong> The command arguments `--background`, `--unstartup`, and `--startup` are not applicable for Windows and Windows Service.
+</p>
 
 ### Config File Options
 
