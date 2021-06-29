@@ -28,6 +28,10 @@ $ ./fusionexport <option>
 | `--timeout`                | `-T`  |             | Assign a timeout in ms. The default value is 3000ms.                                                          |
 | `--library-directory-path` | `-L`  |             | Set custom FusionCharts library directory path. Useful while using licensed version of FusionCharts. |
 | `--config-file`            | `-C`  |             | Set configuration file path.                                                                         |
+| `--ssh-key`                |       |             | Accepts a relative or an absolute path of the private key.              
+    |
+| `--ssh-certificate`        |       |             | Accepts a relative or an absolute path of the certificate 
+    |
 
 ### Config File Options
 
@@ -75,3 +79,34 @@ Required for supporting the latest export features of FusionExport.
 | `inputSVG`              | inputSVG.svg                           | SVG file path inside the payload zip.                                                                                 |
 | `asyncCapture`          | false                                  | Set the async capture flag.                                                                                           |
 | `maxWaitForCaptureExit` | 6000                                   | Timeout in ms for async capture to trigger.                                                                           |
+
+
+### Add HTTP for Windows Service 
+
+If you are looking to serve fusion export in https mode from window service please follow the steps below:
+
+* Stop fusion export window service and open windows registry
+
+* Go to the location computer\HKEY_LOCAL_MACHINE\SOFTWARE\Fusion charts technologies LLP/FusionExport Window service
+
+* Set the ssh key and ssh certificate value of Fusion export using which the FusionExport server will run.
+
+* To provide HTTPS support, you need to configure a private key and certificate in case of both self-signed and certificate.
+
+
+#### Windows, Linux & Mac
+
+* We will be exposing two command-line arguments to support HTTPS:
+`--ssh-key`: Will accept a relative or absolute path of the private key
+`--ssh-certificate`: Will accept a relative or absolute path of the certificate
+
+* Configurations could be provided via a JSON file as well using `-C` or `--config-file` option. We will be providing a new attribute called `ssh` which will accept `key` and `certificate` where absolute or relative file path for private key and certificate will be provided.
+
+#### Docker
+
+* In the case of Docker, `docker-composer.yml` file will accept a new property called `ssh` which will accept the path of the private key and certificate.
+ Location: fusionexport-docker/service/config.json  
+
+* Upon successful implementation, the user should be able to run the server on HTTPS.
+
+
