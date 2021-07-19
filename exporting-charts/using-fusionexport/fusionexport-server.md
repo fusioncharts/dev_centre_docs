@@ -127,11 +127,12 @@ If you are looking to serve fusion export in https mode from window service plea
 
 #### Windows, Linux & Mac
 
--  We will be exposing two command-line arguments to support HTTPS:
-   `--ssh-key`: Will accept a relative or absolute path of the private key
-   `--ssh-certificate`: Will accept a relative or absolute path of the certificate
+-  Command-line arguments to support HTTPS:
 
--  Configurations could be provided via a JSON file as well using `-C` or `--config-file` option. We will be providing a new attribute called `ssh` which will accept `key` and `certificate` where absolute or relative file path for private key and certificate will be provided.
+   -  `--ssh-key`: Accepts a relative or absolute path of the private key
+   -  `--ssh-certificate`: Accepts a relative or absolute path of the certificate
+
+-  Configurations can be provided via a JSON file as well using `-C` or `--config-file` option.
 
 #### Docker
 
