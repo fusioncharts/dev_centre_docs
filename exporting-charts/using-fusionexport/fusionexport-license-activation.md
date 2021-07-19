@@ -1,6 +1,6 @@
 ---
 title: License activation from v2.0 onwards | FusionExport
-description: Learn how to activate your FusionExport license for all the packages
+description: Learn how to activate your FusionExport license.
 heading: License activation from v2.0 onwards
 ---
 
@@ -17,8 +17,8 @@ In case you feel there is any discrepancy in the information, please contact the
 To activate your license follow these steps:
 
 1. Upgrade to the latest version of FusionExport: <https://www.fusioncharts.com/download/fusionexport>
-2. Use the CLI argument `—license-key` (LicenseKey for Windows, `lincenseKey` for JSON, and `license-key` for Docker) to remove the watermark.
-3. Additionally, if you are also using FusionCharts then also use the CLI argument `—fusioncharts-license-key` to remove the watermark from FC charts.
+2. Use the CLI argument `--license-key` (LicenseKey for Windows, `lincenseKey` for JSON, and `license-key` for Docker) to remove the watermark.
+3. Additionally, if you are also using FusionCharts then also use the CLI argument `--fusioncharts-license-key` to remove the watermark from FC charts.
 
 ## Frequently asked questions
 
