@@ -35,11 +35,14 @@ This is the most important method from ExportManager module. Based on the config
 
 #### Parameters
 
-| Name            | Type           | Default Value | Required | Description                                                                              |
-| --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------------- |
-| `export_config` | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations              |
-| `output_dir`    | `String`       | `.`           | No       | Directory where you want to save the exported file.                                      |
-| `unzip`         | `Boolean`      | `false`       | No       | This parameter allows you to compress/decompress your output bundle into separate files. |
+| Name            | Type           | Default Value | Required | Description                                                                        |                 
+| --------------- | -------------- | ------------- | -------- | ---------------------------------------------------------------------------------- |
+| `export_bulk`    | `Boolean`      | `true`        | Yes      | Allows users to export charts into multiple files.                                 |
+| `export_config`  | `ExportConfig` |               | Yes      | Instance of the `ExportConfig` which will include all export configurations.       |
+| `minify_resources`| `Boolean`      | `true`        | No       | Minifies HTML, CSS and JavaScript files before passing it to FusionExport.         |
+| `output_dir` | `String`       | `.`           | No       | Directory where you want to save the exported file.                                |
+| `unzip`     | `Boolean`      | `true`        | No       | Allows you to compress/decompress your output bundle into separate files.          |
+
 
 #### Returns
 
@@ -149,7 +152,7 @@ export_config.set("chartConfig", "resources/chart-config-file.json")
 
 _**Type:** String_
 
-Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`.
+Sets the format of the output file. As of now, it supports `png`, `jpeg`, `svg` and `pdf`. The default value is `pdf`.
 
 #### Example
 
@@ -246,6 +249,28 @@ Sets the format of the PDF pages during a PDF export. This option takes priority
 
 ```python
 export_config.set("templateFormat", "A4")
+```
+### `header`
+
+_**Type:** String_
+
+Enables users to add a header inside the exported file.
+
+#### Example
+
+```python
+export_config.set("header", "header value");
+```
+### `subheader`
+
+_**Type:** String_
+
+Enables users to add a subheader inside the exported file.
+
+#### Example
+
+```python
+export_config.set("subheader", "subheader value");
 ```
 
 ### `headerEnabled`

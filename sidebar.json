@@ -2252,10 +2252,6 @@
                   "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
                },
                {
-                  "title": "Remove watermark from exported files",
-                  "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
-               },
-               {
                   "title": "Custom version of FusionCharts in FusionExport",
                   "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
                },
@@ -2358,6 +2354,10 @@
             "title": "CLI Reference",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/cli-reference"
+         },
+         {
+            "title": "License Activation",
+            "path": "/exporting-charts/using-fusionexport/fusionexport-license-activation"
          },
          {
             "title": "Release Notes",

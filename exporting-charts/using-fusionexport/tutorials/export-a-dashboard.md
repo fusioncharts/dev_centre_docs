@@ -478,7 +478,70 @@ Based on the above styling, the exported dashboard looks like the image below:
 ![Export-A-Dashboard](/images/export-a-dashboard-image-2.png)
 
 > You can use frameworks like [Bootstrap](http://getbootstrap.com/) to style the template and make the exported dashboard look even better.
+	
+## Using custom fonts
 
+You can now export your Dashboards using local fonts, as shown below.
+	
+### Modified HTML template
+
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FusionExport Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+<body>
+<div class="page">
+
+    <h1 text="Title goes here">Title goes here</h1>
+    <!--<p class="small text-muted">-->
+        <!--Confidential: The following report contains confidential information. Do not distribute, email, fax, or transfer via any-->
+        <!--electronic mechanism unless it has been approved by the recipient company's security policy. All copies and backups-->
+        <!--of this document should be saved on protected storage at all times. Do not share any of the information contained-->
+        <!--within this report with anyone unless they are authorized to view the information. Violating any of the previous-->
+        <!--instructions is grounds for termination.-->
+    <!--</p>-->
+    <div class="row" th:each="chartConfig: ${chartConfigs}">
+        <div class="card">
+            <div class="card-body">
+                <h2 th:text="${chartConfig.title}">Column Chart</h2>
+                <div id="column_chart"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+```	
+	
+### style.css
+	
+```CSS
+	@font-face {
+  font-family: "open_sans_condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/opensanscondensed-lightitalic-webfont.woff") format("woff"),
+    url("./fonts/opensanscondensed-lightitalic-webfont") format("woff2"),
+    url("./fonts/OpenSansCondensed-LightItalic.ttf") format("truetype");
+}
+
+.column_chart {
+  border: 1px solid black;
+  width: 98%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: "open_sans_condensed", sans-serif !important;
+}
+```	
+	
+	
 ## Related Resources
 
 * [Add a logo or a heading to the dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
