@@ -4,7 +4,7 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.18.x
 ---
 
-<h2 class="sub-heading">Version 3.17.0</h2>
+<h2 class="sub-heading">Version 3.18.0</h2>
 
 <p class="release-date">September X, 2021</p>
 
