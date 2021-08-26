@@ -1,33 +1,32 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.17.x
+heading: Version 3.18.x
 ---
 
 <h2 class="sub-heading">Version 3.17.0</h2>
 
-<p class="release-date">April 29, 2021</p>
+<p class="release-date">September X, 2021</p>
 
 <h4>New Features</h4>
 
--  FusionCharts Version 3.17.0 implements smart labels for Multi-level pie charts, these labels automatically adjust the data labels inside the plot, making data more readable.
--  FusionCharts Version 3.17.0 introduces the Radial Bar, a new chart type that belongs to the FusionWidgets XT. The Radial Bar allows users to compare categories using a circular shape bar chart.
--  FusionCharts Version 3.17.0 introduces accessibility support making the library 2.1 compliant.
+-  FusionCharts Version 3.18.0 introduces a new Accesible theme for WCAG 2.1. 
 
 <h4>Improvements</h4>
 
--  The Heat map chart now allows users to apply specific font properties to each quadrant label in the individual heat map cells.
--  To improve visualization and interaction on charts, version 3.17 now allows users the ability to configure the tooltip position.
--  Starting 3.17.0 FusionCharts allows users to configure plot border cosmetics at data plot (single-series charts) and data-series level (multi-series level).
--  Exporting a Heatmap chart to a CSV or XLS file now exports all the Heatmap chart data correctly. Previously the files were exported with incomplete data.
--  Starting 3.17.0, the Box and Whisker chart when exported to a CSV or XLSX file exports data correctly. Previously the CSV or XLSX export was returning incorrect data.
+- Starting version 3.18.0 FusionCharts supports both '.XLS' and '.XLSX' chart export file format.  
+- Starting version 3.18.0 FusionCharts improved performance and is now able to handle component update operation on charts with multiple events bound to it. Previously, component update operations on charts with multiple events resulted in a JS error ("TypeError - Cannot read property 'paper' of undefined").
+- Use inline HTML to customize data labels across all Bar charts. Previously inline HTML elements were not rendering correctly for Bar charts. 
+- Starting version 3.18.0 FusionCharts extends support for Angular-fusioncharts component to render charts as expected with NGCC and IVY enabled. Previously, charts did not render when NGCC and IVY are enabled.  
+- Exporting chart data via Excel or CSV allows users to control the number of decimal points displayed both on the chart as well as in the exported file.    
+- Using the ´labelSepChar´ attribute to customize data labels for Funnel and Pyramid charts is now working correctly. Previously, the data labels render incomplete information.  
+- For the Spline chart clicking on the legend icon now allows the data series to be toggled on and off from the chart. Previously, toggeling with the icon legends resulted in a JS error. 
+- For all charts, using the attribute value inherit for legend icon color and opacity is now working correclty. Previously, the attribute value 'inherit' did not work correctly for legend icons. 
+- Starting version 3.18.0 FusionCharts improved the decimal rounding method for both positive and negative values to round to the correct decimal point. Previously, negative decimal values did not round to the correct decimal point.  
 
 <h4>Fixes</h4>
 
--  Starting 3.17.0, trend lines and trend zones render properly. Previously, plotting trend line and trend zone worked incorrectly if the `endValue` is set to `0`.
--  The Horizontal LED chart now displays the `lowerLimit` value as expected. Previously, when the `lowerLimit` value was set to a non-zero value, the Horizontal LED chart rendered 0 as the lower limit.
--  Starting 3.17.0, the `valueAlpha` attribute now is working as expected. Previously, the `valueAlpha` attribute was not working properly for trend lines and trend zones.
--  Using the `getSVGString` method now generates a proper SVG string to successfully export a Chord Diagram to an SVG. Previously, the `getSVGString` method generated an incorrect SVG string resulting in an error.
--  Updating chart data via the `setJSONURL` method updates all chart properties as expected. Previously, when using the `setJSONURL` method the chart properties were not updated correctly.
--  For mobile devices, the page scrolling behavior now works properly.
--  Starting version 3.17.0 the Bullet Graph now displays tooltips for both value and target value as expected. Previously, the tooltip was not shown for the target value.
+- For mobile devices, the legend chart area scrolling behavior now works properly. 
+- Updating the Heat Map chart using the 'setJSONData' method now updates all chart properties correctly. Previously, using the method did not update properties and components did not work correctly. 
+- For Cartesian charts, the attributes 'transposeAxis' and 'transposeAnimation' are working as expected when toggeling with legend items. Previously, the attributes did not respond as expected.  
+- Starting version 3.18.0 the Radar chart renders correctly when only one data point is provided, previously an this operation resulted in a JS error. 
