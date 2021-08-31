@@ -11,6 +11,7 @@ heading: Version 3.18.x
 <h4>New Features</h4>
 
 -  FusionCharts Version 3.18.0 introduces a new Accesible theme for WCAG 2.1. 
+-  FusionCharts Version 3.18.0 updated the 'vue-fusioncharts' component to render charts with Vue 3 applications. 
 
 <h4>Improvements</h4>
 
