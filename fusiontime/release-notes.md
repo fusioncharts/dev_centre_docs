@@ -3,6 +3,19 @@ title: Release Notes | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
+<h2 class="sub-heading">Version 2.6.0</h2>
+
+<p class="release-date">Xth September, 2021</p>
+
+<h4>Improvements</h4>
+
+- For Time-Series charts, now FusionTimes provides the ability to group chart data into Weekly bins by using the new time unit property 'week'. Previously, the binning options did not include a 'week' property.
+
+<h4>Fixes</h4>
+
+- Updating Time-Series charts via the API methods 'setChartData', 'setJSONData', and 'setYAxis' is now working as expected. Previously, using API methods did not update the chart and resulted in a TypeError.
+- Time-Series charts components are working correctly across all time zones, therefore displaying all data correctly. Previously, when Time-Series charts were rendered in different time zones, the chart showed incorrect data for specific data-time values.
+- In the Time Series charts and all charts, the legend scroll is rendering and working as expected. Previously, the scroll action for the legend container did not work correctly.
 
 <h2 class="sub-heading">Version 2.5.0</h2>
 
