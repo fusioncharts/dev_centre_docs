@@ -58,6 +58,7 @@ Binning stages can be defined for the following time units:
 
 -  Year
 -  Month
+-  Week
 -  Day
 -  Hour
 -  Minute
@@ -80,6 +81,10 @@ Valid multipliers for each time unit are:
     <tr>
         <td>`Month`</td>
         <td>1, 2, 3, 4, 6</td>
+    </tr>
+    <tr>
+        <td>`Week`</td>
+        <td>1, 2, 3, 4, 5, 6, 8, 10, 12, 15</td>
     </tr>
     <tr>
         <td>`Day`</td>
@@ -113,6 +118,7 @@ new FusionCharts({
             binning: {
                 "year": [Array of multipliers] // Ex - [1,2,3,5,10]
                 "month": [Array of multipliers] // Ex - [1,2,3,4,6]
+		"week": [Array of multipliers] // Ex - [1,2,3,4,5,6,8,10,12,15]
                 "day": [Array of multipliers] // Ex - [1,2,3,5,6,10,15]
                 "hour": [Array of multipliers] // Ex - [1,2,3,4,6,8,12]
                 "minute": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
@@ -146,6 +152,7 @@ new FusionCharts({
          binning: {
             year: [1],
             month: [],
+	    week: [],
             day: [],
             hour: [],
             minute: [],
@@ -175,6 +182,7 @@ new FusionCharts({
          binning: {
             year: [],
             month: [1],
+	    week: [],
             day: [],
             hour: [],
             minute: [],
@@ -301,6 +309,7 @@ FusionTime supports the following time units:
 
 -  Year
 -  Month
+-  Week
 -  Day
 -  Hour
 -  Minute
@@ -320,6 +329,7 @@ In the above example, we have tried to specify the output time format on the tim
     outputTimeFormat: {
         //year: "",
         month: "%b'%y (%q)",
+	//week: "",
         day: "%d/%m (%a)",
         //hour: "",
         //minute: "",
@@ -343,6 +353,7 @@ The date-time tokens for respective time formats is given below:
 | ----------- | ---------- | ------- |
 | Year        | `%Y`       | 2018    |
 | Month       | `%b`       | Jan     |
+| Week        | `%w`       | 05      |
 | Day         | `%d`       | 04      |
 | Hour        | `%-I` `%p` | 11 PM   |
 | Minute      | `%-M` `m`  | 26 m    |
