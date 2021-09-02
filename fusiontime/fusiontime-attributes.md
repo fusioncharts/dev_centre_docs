@@ -157,6 +157,7 @@ new FusionCharts({
 			binning: {
 				"year": [Array of multipliers] // Ex - [1,2,3,5,10]
 				"month": [Array of multipliers] // Ex - [1,2,3,4,6]
+				"week": [Array of multipliers] // Ex - [1,2,3,4,5,6,8,10,12,15]
 				"day": [Array of multipliers] // Ex - [1,2,3,5,6,10,15]
 				"hour": [Array of multipliers] // Ex - [1,2,3,4,6,8,12]
 				"minute": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
@@ -183,6 +184,11 @@ new FusionCharts({
 		<td>`month`</td>
 		<td>Array</td>
 		<td>An array to specify the month's multipliers. Valid multipliers are: [1, 2, 3, 4, 6].</td>
+	</tr>
+	<tr>
+		<td>`week`</td>
+		<td>Array</td>
+		<td>An array to specify the week's multipliers. Valid multipliers are: [1,2,3,4,5,6,8,10,12,15].</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
@@ -223,6 +229,7 @@ new FusionCharts({
       outputTimeFormat: {
         year: " ", //%Y - 2018
         month: " ", //%B, %Y - September, 2018
+	week: " ", //%w [INFO]
         day: " ", //%B %-d, %Y - November 11, 2018
         hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
         minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
@@ -249,6 +256,11 @@ new FusionCharts({
 		<td>`month`</td>
 		<td>String</td>
 		<td>Sets the format of the data bin where the time unit is month.</td>
+	</tr>
+	<tr>
+		<td>`week`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is week.</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
