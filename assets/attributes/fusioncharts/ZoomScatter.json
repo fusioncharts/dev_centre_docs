@@ -191,12 +191,6 @@
         "name": "hasRTLText"
       },
       {
-        "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
-        "range": "",
-        "type": "String",
-        "name": "plotHighlightEffect"
-      },
-      {
         "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
