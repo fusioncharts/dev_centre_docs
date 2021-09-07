@@ -1058,7 +1058,7 @@
         "name": "bgAngle"
       },
       {
-        "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
+        "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the fully qualified URL for the backgorund image. It should be in the same domain as the chart.",
         "range": "",
         "type": "String",
         "name": "bgImage"
