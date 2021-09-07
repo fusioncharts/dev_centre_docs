@@ -677,6 +677,11 @@ new FusionCharts({
 		<td>This attribute sets the minimum value of the axis. The value of this attribute is ignored when the value is greater than the minimum value of the data plotted against the axis.</td>
 	</tr>
 	<tr>
+		<td>`minSpace`</td>
+		<td>Number</td>
+		<td>This attribute sets the total width taken for Y-axis (names and labels), this removes white space after the "Y axis Title" .</td>
+	</tr>
+	<tr>
 		<td>`max`</td>
 		<td>Number</td>
 		<td>This attribute sets the maximum value of the axis. The value of this attribute is ignored when the value is less than the maximum value of the data plotted against the axis.</td>
