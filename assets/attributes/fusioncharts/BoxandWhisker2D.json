@@ -3918,7 +3918,7 @@
     "path": "data",
     "attrs": [
       {
-        "description": "Numerical value for the data item. This value would be plotted on the chart.",
+        "description": "Numerical value for the data item. This value would be plotted on the chart. A minimum of 3-5 data point values are required to draw a plot",
         "range": "",
         "type": "Number",
         "name": "value"

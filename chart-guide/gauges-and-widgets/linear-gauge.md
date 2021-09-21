@@ -72,7 +72,7 @@ The linear gauge is used to display a specific data point over a horizontal scal
 
 To create a linear gauge, you need to:
 
-- Specify the type using the `type` attribute. To render a horizontal Linear gauge, set `hlinear` and to render a vertical Linear gauge, set `vlinear`.
+- Specify the type using the `type` attribute. To render a horizontal Linear gauge, set `hlinear`.
 
 - Set the container object using `renderAt` attribute.
 

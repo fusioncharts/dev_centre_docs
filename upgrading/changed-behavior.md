@@ -4,45 +4,24 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.17.x.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.18.x.
 
-## Heat Map charts exports CSV and Excel files correctly
+## Radar chart renders properly
 
-Exporting the Heat Map charts as a CSV or Excel file now displays correct and complete data, previously the exported files had incomplete data.
+The Radar chart and all its components now render correctly. Previously, rendering a chart with only one data point provided resulted in a JS error.
 
-**Before the fix** Earlier, the files were exported with missing data.
-![HeatMap](/images/HeatMap_Export_Before_FC-2066.png)
+## Decimal Values Round-off properly
 
-**After the fix** Heat Map charts now export CSV and XLS files with complete data.
-![HeatMap](/images/HeatMap_Export_After_FC-2066.png)
+Starting FusionCharts 3.18.0 both positive and negative decimal values now round off to the nearest whole number correctly. Previously, negative decimal values were rounded off incorrectly. FusionCharts now follows **Round half away from zero** to round-off numbers. Know more [here](https://en.wikipedia.org/wiki/Rounding#Round_half_away_from_zero).
 
-## Chord Diagram exports to SVG format properly
+## Attributes `transposeAxis` and `transposeAnimation` work correctly
 
-Export a Chord Diagram to an SVG using the `getSVGString` method or via the Export Menu and see the rendered result in an SVG viewer as expected. Previously using the `getSVGString` method did not get the proper SVG strings and resulted in an error message.
+For Cartesian charts, the `transposeAxis` and `transposeAnimation` attributes are now working correctly, allowing users the ability to animate the transition of data series when legend items are toggled.
 
-**Before the fix** Unable to get the proper SVG strings which resulted in an error message when exporting with the `getSVGString` method or via the Export Menu.
-![Chart Before](/images/SVG_error_FC-2076.png)
+## Attribute value `inherit` working as expected
 
-**After the fix** SVG string is properly generated using both the `getSVGString` method and via the Export Menu.
-![Chart After](/images/SVG_fix_FC-2076.png)
+The `inherit` value used for attributes like `legendIconAlpha`, `legendIconBgAlpha`, `anchorAlpha`, `anchorBgColor`, `anchorBorderColor`, etc. now works correctly and helps users to sync color and opacity for legend icons.
 
-## Box and Whisker chart exports CSV and XLSX files properly
+## Control decimal points in exported charts
 
-Exporting the Box and Whisker charts as a CSV or Excel file now displays correct and complete data, previously the exported files had incomplete data.
-
-**Before the fix** When exporting the Box and Whisker charts to CSV or XLSX files, the export API was broken and exported incomplete data, only capturing the first values provided for the individual categories.
-![Chart](/images/BoxandWhisker_Sample_FC-2052.png)
-![Export Before](/images/BoxandWhisker_Export_Before_FC-2052.png)
-
-**After the fix** The Box and Whiskers chart exports properly, displaying all properties as expected.
-![Export After](/images/BoxandWhisker_Export_After_FC-2052.png)
-
-## Bullet graphs display tooltips properly
-
-Bullet graphs are now improved to display tooltips for the target component even if the value property is not configured.
-
-**Before the fix** Earlier, while plotting Bullet graphs, if the value property was not set, then the tooltip is not shown for the target component.
-![Chart Before](/images/Tooltip_BulletGraph_Before_FC-2004.png)
-
-**After the fix** The Bullet graph always displays the tooltip for the target components, even if the property value is not previously defined.
-![Chart After](/images/Tooltip_BulletGraph_After_FC-2004.png)
+Using the attribute `decimals` now displays the specified number of decimal points both across the chart as well as for the Excel and CSV export files. Previously, the number of decimal points specified on charts was not shown on exported files.
