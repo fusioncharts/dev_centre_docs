@@ -28,6 +28,6 @@ heading: Version 3.18.x
 
 -  For mobile devices, the legend chart area scrolling behavior now works properly.
 -  Updating the Heat Map chart using the `setJSONData` method now updates all chart properties correctly. Previously, using the method did not update properties and chart components did not work correctly.
--  Starting version 3.18.0 all chart resizes correctly when the container dimension is updated, previously, in version 3.17.0 this operation was not working correctly for few chart types.
+-  Starting version 3.18.0 all charts now resize correctly when the container dimension is updated, previously, in version 3.17.0 this operation was not working correctly for few chart types.
 -  For Cartesian charts, the attributes `transposeAxis` and `transposeAnimation` attributes are working as expected when legend items are clicked/toggled. Previously, the attributes did not respond as expected.
 -  Starting version 3.18.0 the Radar chart renders correctly when only one data point is provided, previously this operation resulted in a JS error.
