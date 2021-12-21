@@ -11,9 +11,11 @@ After downloading, unzip the downloaded package and follow the instructions belo
 
 Once you unzip the file, open the terminal, go to the unzipped FusionGrid directory and run the following command:
 
-[macOS Command here]
+```shell
+$ ./fusiongrid
+```
 
-The FusionGrid Server starts on `localhost` and listens to port `XXX` by default. If there are no issues, then you will get a similar message as shown below:
+The FusionGrid Server starts on `localhost` and listens to port `1337` by default. If there are no issues, then you will get a similar message as shown below:
 
 [image of message here]
 
@@ -30,7 +32,9 @@ Now open the terminal and run the respective commands:
 
 Once you have installed all the dependencies, go to the unzipped FusionExport directory, run the following command:
 
-[Linux Command]
+```shell
+$ ./fusiongrid
+```
 
 The FusionGrid Server starts on `localhost` and listens to port `XXX` by default. If there are no issues, then you will get a similar message as shown below:
 
@@ -47,5 +51,17 @@ On Windows machines, select the command-line interface of your choice, go to the
 The FusionGrid Server starts on `localhost` and listens to port `XXX` by default. If there are no issues, then you will get a similar message as shown below:
 
 [image of message here]
+
+## Docker
+
+Run the following command in the terminal to start the server in docker container:
+
+```Bash
+$ docker-compose up
+```
+
+The above command will complete all the dependencies missing for FusionGrid Server. It will start the server on the `localhost` and listen to port `1337`.
+
+After you have installed FusionCharts Server, install FusionGrid Server SDK for your preferred programming language from [here](link).
 
 
