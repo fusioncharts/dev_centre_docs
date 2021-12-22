@@ -20,3 +20,5 @@ heading: FusionGrid Release Notes
 - **Support for Sorting Rows** - FusionGrid version 1.0 allows users to sort the most relevant information on any column in order to find data quicker.
 - **Support for Search Filter** - FusionGrid version 1.0 allows users to search the information on any of the relevant columns so that they can filter the data quicker.
 - **Row Selection Support** -  FusionGrid version 1.0 allows users to select rows in the grid allowing users to perform secondary actions using Gird events. 
+
+For more information on the features, see the What's New(link).
