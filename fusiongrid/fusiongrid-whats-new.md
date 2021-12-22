@@ -4,11 +4,11 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is to talk about the new features introduced in the lates version.
+This section is to talk about the new features introduced in the lates version. Filter data by specific values, or with conditional 
 
 ## Column Filter
 
-
+This feature allows you to apply filters on specific columns for a better data analysis. Enable the conditional filter to use conditions and logical operations such as; equals, between, greater than , etc. to filter data. 
 
 [demo]
 
@@ -20,13 +20,13 @@ For a better data analysis, FusionGrids allows you to have multiple levels of co
 
 ## Export Data
 
-If you ever need to export your grids, with FusionGrid you can download your grids to CSV, JSON, or XLS formats. Either export the entirity of the grid, or select to export with the 'view' property to only get the data present on the current grid view. Also, you can choose the 'skipColumnHeader' or 'skipColumnHeaderGroups' properties when exporting your grid.  
+If you ever need to export your grids, with FusionGrid you can download your grids to 'CSV', 'JSON', or 'XLS' formats. Either export the entirity of the grid, or select to export with the 'view' property to only get the data present on the current grid view. Also, you can choose the 'skipColumnHeader' or 'skipColumnHeaderGroups' properties when exporting your grid.  
 
 [demo]
 
 ## Integration components
 
-[description]
+FusionGrid version 1.0 allows you to render your grids across different libraries and frameworks such as; Angular, React, and Vue.
 
 [demo]
 
@@ -39,8 +39,9 @@ Users can search by single or multiple Columns, search by words or even by parti
 
 ## Real-time Data Update
 
-Update date in real-time 
+Adding or updating rows and columns now updates the grid in real-time. Choose whether to update the root and child tables renderd on the grid, or only updating data for the grid.
 
+[demo]
 
 ## Row Animation
 
