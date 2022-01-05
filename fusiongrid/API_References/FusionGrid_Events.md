@@ -85,8 +85,8 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
 </table>
     
-  ### Selection Events
-  This are the selection events:
+### Selection Events
+This are the selection events:
     
   <table>
 	<tr>
@@ -99,23 +99,24 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
     <tr>
 		<td>`rowDeselected`</td>
-		<td>A row is deselected</td>
+		<td>A row is deselected.</td>
 	</tr>
     <tr>
 		<td>`allRowsSelected`</td>
-		<td>All rows are selected</td>
+		<td>All rows are selected.</td>
 	</tr>
     <tr>
 		<td>`allRowsDeselected`</td>
-		<td>All rows are deselected</td>
+		<td>All rows are deselected.</td>
 	</tr>
     </table>
     
-   ## Component Events
-    Here we list the different types of component events.
+## Component Events
+Here we list the different types of component events.
    
-   ### Card Layout Events
-    <table>
+### Card Layout Events
+
+  <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
@@ -132,9 +133,11 @@ All the concerned events are listed down below categorized with respect to their
 		<td>`cardLongPressed`</td>
 		<td>Triggers when a card is long pressed.</td>
 	</tr>
-      </table>
-   ### Column Menu Events
-    <table>
+   </table>
+
+### Column Menu Events
+
+   <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
@@ -153,7 +156,8 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
       </table>
     
-   ### Filter Events
+### Filter Events
+
    <table>
 	<tr>
 		<th>Event Name</th>
@@ -165,35 +169,102 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
        <tr>
 		<td>`filterModified`</td>
-		<td>Some filter is changed but apply button is not yet clicked</td>
+		<td>Some filter is changed but apply button is not yet clicked.</td>
 	</tr>
       </table>
       
-   ### Layout Events
-    <table>
+### Layout Events
+
+<table>
+	<tr>
+		<th>Event Name</th>
+		<th>Description</th>
+	</tr>	
+	<tr>
+		<td>`layoutChanged`</td>
+		<td>Triggers when any change occurs in layout - from row to card or vice versa, layout density change, layout fit logic change.</td>
+	</tr>
+	<tr>
+		<td>`layoutTypeChanged`</td>
+		<td>Triggers when layout type is changed from row to card or vice versa.</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>Event Argument</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`layout`</td>
+		<td>Applied layout object.</td>
+	</tr>
+	<tr>
+		<td>`layoutType `</td>
+		<td>Current layout type.</td>
+	</tr>
+	<tr>
+		<td>`prevLayoutType `</td>
+		<td>Previous layout type.</td>
+	</tr>
+	<tr>
+		<td>`viewport `</td>
+		<td>Applied viewport object.</td>
+	</tr>
+</table>
+      
+### Pagination Events
+
+<table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
 	</tr>
-      </table>
-      
-   ### Pagination Events
-    <table>
 	<tr>
-		<th>Event Name</th>
-		<th>Description</th>
+		<td>`pageChanged`</td>
+		<td>Triggers when user navigate to a new page using pagination panel or API.</td>
 	</tr>
-    </table>
+	<tr>
+		<td>`pageSizeChanged`</td>
+		<td>Page size is changed through pagination panel or API.</td>
+	</tr>
+	
+</table>
      
-   ### Scroll Events
-    <table>
+### Scroll Events
+
+<table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
-    </table>
+	</tr>
+	<tr>
+		<td>`scroll`</td>
+		<td>Triggers when scrolling occurs in grid either horizontally or vertically.</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>Event Argument</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`direction`</td>
+		<td>‘horizontal’/’vertical’.</td>
+	</tr>
+	<tr>
+		<td>`left`</td>
+		<td>left px of the scroll.</td>
+	</tr>
+	<tr>
+		<td>`top`</td>
+		<td>top px of the scroll.</td>
+	</tr>
+	
+</table>
     
-   ### Sort Events
-    <table>
+### Sort Events
+
+<table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
@@ -202,14 +273,22 @@ All the concerned events are listed down below categorized with respect to their
 		<td>`sortChanged`</td>
 		<td>A sort has applied or existing sort changed.</td>
 	</tr>
-      </table>
+</table>
       
-   ### United Common Events for Row and Card
-    <table>
+### United Common Events for Row and Card
+
+<table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
 	</tr>
+	<tr>
+		<td>`recordClicked`</td>
+		<td>When a card or row is clicked.</td>
 	</tr>
-      </table>
+	<tr>
+		<td>`recordDoubleClicked`</td>
+		<td>Triggers when a double click occurs on card or record.</td>
+	</tr>
+</table>
     
