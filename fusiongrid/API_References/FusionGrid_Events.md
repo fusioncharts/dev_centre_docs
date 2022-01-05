@@ -65,6 +65,7 @@ All the concerned events are listed down below categorized with respect to their
 		<td>`headerClicked`</td>
 		<td>Triggers when a header is clicked.</td>
 	</tr>
+  </table>
   
   ### Hovering Events
   This are the hovering events:
@@ -82,6 +83,7 @@ All the concerned events are listed down below categorized with respect to their
 		<td>`columnHovered`</td>
 		<td>A column is hovered.</td>
 	</tr>
+</table>
     
   ### Selection Events
   This are the selection events:
@@ -109,10 +111,10 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
     </table>
     
-    ## Component Events
+   ## Component Events
     Here we list the different types of component events.
    
-    ### Card Layout Events
+   ### Card Layout Events
     <table>
 	<tr>
 		<th>Event Name</th>
@@ -131,7 +133,7 @@ All the concerned events are listed down below categorized with respect to their
 		<td>Triggers when a card is long pressed.</td>
 	</tr>
       </table>
-      ### Column Menu Events
+   ### Column Menu Events
     <table>
 	<tr>
 		<th>Event Name</th>
@@ -151,8 +153,8 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
       </table>
     
-      ### Filter Events
-    <table>
+   ### Filter Events
+   <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
@@ -167,27 +169,30 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
       </table>
       
-      ### Layout Events
+   ### Layout Events
     <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
 	</tr>
+      </table>
       
-     ### Pagination Events
+   ### Pagination Events
     <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
 	</tr>
-    
-     ### Scroll Events
+    </table>
+     
+   ### Scroll Events
     <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
+    </table>
     
-    ### Sort Events
+   ### Sort Events
     <table>
 	<tr>
 		<th>Event Name</th>
@@ -199,12 +204,12 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
       </table>
       
-      ### United Common Events for Row and Card
+   ### United Common Events for Row and Card
     <table>
 	<tr>
 		<th>Event Name</th>
 		<th>Description</th>
 	</tr>
 	</tr>
-      
+      </table>
     
