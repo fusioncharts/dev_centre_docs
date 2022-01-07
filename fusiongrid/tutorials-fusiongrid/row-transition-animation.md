@@ -100,25 +100,14 @@ Based on the above configuration, you should see row transition animations on yo
 
 [example]
 
+## Code
 
-WIP
-
+```json
 config = {
     rowOptions: {
         animateRows: true/false,
         animateRowsDuration: 1 // time in seconds
     }
 });
+```
 
-
-<div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-	<li class="active"><a data-toggle="csharp">C#</a></li>
-	<li><a data-toggle="java">Java</a></li>
-	<li><a data-toggle="php">PHP</a></li>
- </ul>
-
-<div class="tab-content extra-tabs">
-
-<div class="tab csharp-tab active">
-<pre><code class="language-csharp">
