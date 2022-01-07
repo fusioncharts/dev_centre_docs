@@ -14,9 +14,9 @@ Before starting with the code, ensure that you have:
 
 - Downloaded and installed FusionGrid Server(link), and the server is running
 
-### Chart Configuration
+### Grid Configuration
 
-The chart configuration files are simple .json files. If you are executing the template code without any changes, the chart configuration file should be in the following path:
+The grid configuration files are simple .json files. Below is an example of how the row transition animations work.
 
 ```json
 var schema = [
@@ -96,9 +96,9 @@ var grid = new FusionGrid(container, dataTable, {
 });
 grid.render();
 ```
-Based on the above configuration, the exported chart will look like the illustration below.
+Based on the above configuration, you should see row transition animations on your grid like the illustration below.
 
-[image here]
+[example]
 
 
 WIP
