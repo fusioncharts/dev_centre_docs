@@ -404,8 +404,14 @@ style : {
 ### Chart Column Type
 
 ## Layout Configurations
+Allows you to define layout-related properties for the grid. It accepts only objects.
 Choose between these four layout configurations for your grid; type, density, template, and autoHeight.
 
+```json
+var gridConfig = {
+ layout : { key_1: 'value_1' }
+}
+```
 ### Layout Type
 Choose your layout type by selecting between `row` or `card`.
 
@@ -416,24 +422,6 @@ config = {
     }
 }
 ```
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`row`</td>
-	<td></td>
-	<td>Arrenges data in a row-column tabular way.</td>
-</tr>
-<tr>
-	<td>`card`</td>
-<td></td>
-	<td>Each record is described in a card.</td>
-</tr>
-</table>
-
 ### Layout Density
 There are three options available to control the density of rows in a grid; default, compact, and comfortable. 
 
@@ -445,30 +433,6 @@ config = {
     }
 }
 ```
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`default`</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>`compact`</td>
-<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>`comfortable`</td>
-<td></td>
-	<td></td>
-</tr>
-
-</table>
-
 ### Layout Template
 This attribute only applies to card layout. Using this attribute, users can define the styling and layout. 
 
@@ -482,21 +446,8 @@ config = {
     }
 }
 ```
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>``</td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
-
 ## Automatic Height
-Users can choose to enable the `autoHeight` attribute. 
+Users can choose to enable the `autoHeight` attribute. If the volume of data is high, then vertical scrollbars appear and if the volume of data is low, then the rest of the space is left blank. To override this behavior, i.e. expand or shrink grid size based on its content, users can choose to enable the flag autoHeight. For example:
 ```json
 config = {
     layout: {
@@ -504,21 +455,9 @@ config = {
     }
 }
 ```
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`autoHeight`</td>
-	<td>boolean</td>
-	<td>When set to true it automatically renders grid in designated space.</td>
-</tr>
-</table>
 
 ## Number of cards in a row
-Use this attribute to configure the number of cards you wish to place in a row.  
+Use this attribute to configure the number of cards you wish to place in a row. Every card will have the same width and if any text cannot be accommodated in the assigned width, then ellipsis will appear unless wrapText is configured for the column. For example:  
 
 ```json
 config = {
@@ -528,16 +467,38 @@ config = {
 }
 ```
 Every card will have same width and if any text can not be accommodated in the assigned width then ellipsis will appear unless `wrapText` is configured for the column.
+
+Here is a list of configurations available under layout:
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
+		<th>Property Name</th>
+		<th>Data Type</th>
+		<th>Description</th>
+</tr>
+<tr>
+	<td>`type`</td>
+	<td>String</td>
+	<td>A layout can be one of two types - `row` or `card` layout. By default the value is always `row`.</td>
+</tr>
+<tr>
+	<td>`density`</td>
+	<td>String</td>
+	<td>Controls the density of rows in a grid, there are two options available: compact, comfortable. This is applicable for row layouts only.</td>
+</tr>
+<tr>
+	<td>`cardTemplate`</td>
+	<td>String</td>
+	<td>By default, FusionGrid arranges card layout according to the default design.</td>
+</tr>
+<tr>
+	<td>`autoHeight`</td>
+	<td>Boolean</td>
+	<td>By default, the grid is configured to render in the space it’s designated for.</td> 
 </tr>
 <tr>
 	<td>`numCards`</td>
-	<td>number</td>
-	<td>Indicates the number of cards to place in a row. </td>
+	<td>Number</td>
+	<td>Users can configure the number of cards to place in a row.</td>
 </tr>
 </table>
 
