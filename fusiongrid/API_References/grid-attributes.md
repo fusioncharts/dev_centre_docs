@@ -867,38 +867,70 @@ config = {
 Here is the list of properties:
 <table>
 <tr>
-	<th>Attribute</th>
-	<th>Type</th>
+	<th>Property Name</th>
+	<th>Data Type</th>
 	<th>Description</th>
 </tr>
 <tr>
 	<td>`rowHeight`</td>
-	<td>numeric</td>
-	<td>Set the height for the row.</td>
+	<td>String, Number</td>
+	<td>Sets the height of rows in pixels.</td>
 </tr>
 <tr>
 	<td>`headerRowHeight`</td>
-	<td>numeric</td>
-	<td>Set the header row height.</td>
+	<td>String, Number</td>
+	<td>Similar to rowHeight but the value gets applied to only the header row.</td>
 </tr>
 <tr>
-	<td>`hover`</td>
-	<td>boolean, array</td>
-	<td>Enables the hover option, user can style it.</td>
+	<td>`class`</td>
+	<td>Array, Function</td>
+	<td>Accepts an array of class names in string which will get assigned to all the rows. For example: 
+
+{ class: ['class-1', 'class-2'] }
+
+Or you could assign a function which should return an array of class names. This function provides a parameter that provides following properties:
+rowIndex: Index of the row.
+values: An object of values for the given rows.</td>
+</tr>
+<tr>
+	<td>`style`</td>
+	<td>Object, Function</td>
+	<td>Helps you customize the appearance of the entire row by passing CSS properties in the form of JSON object like:
+
+style: {
+   'background-color': 'offwhite'
+}
+
+You could also pass a function which should return an object of CSS properties. Similar to the function passed to class, you get an object parameter to access the data of the corresponding cell.</td>
+</tr>
+<tr>
+	<td>`enableHover`</td>
+	<td>Boolean</td>
+	<td>Enables hover state for the entire row.</td>
+</tr>
+<tr>
+	<td>`hoverClass`</td>
+	<td>Array, Function</td>
+	<td>Works exactly like class but the class name will get applied when you hover the row only.</td>
+</tr>
+<tr>
+	<td>`hoverStyle`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like style but the class name will get applied when you hover the row only.</td>
 </tr>
 <tr>
 	<td>`rowSelection`</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables single row selection.</td>
 </tr>
 <tr>
 	<td>`selectedRowStyle`</td>
-	<td>array</td>
+	<td>Array</td>
 	<td>Configure appearance of selected rows.</td>
 </tr>
 <tr>
 	<td>`showSelectionCheckbox`</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables multiple row selection with checkboxes.</td>
 </tr>
 </table>
@@ -983,14 +1015,14 @@ FusionGrid provides fice default viewports with default layouts and default brea
 	<td>0</td>
 	<td>550px</td>
 	<td>card</td>
-	<td>N/A</td>
+	<td></td>
 </tr>
 <tr>
 	<td>tablet-portrait</td>
 	<td>551px</td>
 	<td>1023px</td>
 	<td>card</td>
-	<td>N/A</td>
+	<td></td>
 </tr>
 <tr>
 	<td>tablet-landscape</td>
@@ -1016,6 +1048,13 @@ FusionGrid provides fice default viewports with default layouts and default brea
 </table>
 By default, the ‘row’ layout will appear for desktop and tablet landscape mode, and the ‘card’ layout will appear for mobile and tablet portrait mode.
 
+Here is the syntax to define viewport-specific properties:
+
+```json
+var gridConfig = {
+ viewports : { "mobile": { config: {  } } }
+}
+```
 ### Viewport object structure
 To configure a viewport, users need to mention `minScreenWidth` and `maxScreenWidth` attributes.
 
@@ -1061,22 +1100,29 @@ gridConfig = {
 }
 ```
 Please note - while defining custom viewport, either min or max width should be mentioned. Otherwise, the viewport will not take into effect.
+
+Each viewport is a key value pair, where key denotes the viewport name and value is a JSON object which consists of the following properties: 
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
+	<th>Property Name</th>
+	<th>Data Type</th>
+	<th>Description</th>
 
 </tr>
 <tr>
 	<td>minScreenWidth</td>
-	<td>numeric</td>
-	<td>Defines the minimum width bound.</td>
+	<td>Number</td>
+	<td>Assigns the minimum width of the specified view port.</td>
 </tr>
 <tr>
 	<td>maxScreenWidth</td>
-	<td>numeric</td>
-	<td>Defines the maximum width bound.</td>
+	<td>Number</td>
+	<td>Assigns the maximum width of the specified view port.</td>
+</tr>
+<tr>
+	<td>config</td>
+	<td>Object</td>
+	<td>Defines the configuration for the given viewport. You can set `layout`, `pagination`, `rowOptions` and `columns`.</td>
 </tr>
 </table>
 
@@ -1338,44 +1384,44 @@ config = {
 Each option has two configurations a display text and a filter function.
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
+		<th>Property Name</th>
+<th>Data Type</th>
 <th>Description</th>
 
 </tr>
 <tr>
 	<td>filter</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Applies filter to columns when enabled.</td>
 </tr>
 <tr>
 	<td>conditionalFilter</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables conditional filtering</td>
 </tr>
 <tr>
 	<td>enableMultiFilter</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables multiple filtering per column</td>
 </tr>
 <tr>
 	<td>valueFilter</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables filtering per values</td>
 </tr>
 <tr>
 	<td>enableMultiSelect</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables multiple value selection</td>
 </tr>
 <tr>
 	<td>enableSearch</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables the search bar</td>
 </tr>
 <tr>
 	<td>showApplyCance;</td>
-	<td>boolean</td>
+	<td>Boolean</td>
 	<td>Enables the Apply and Cancel buttonsr</td>
 </tr>
 </table>
@@ -1392,3 +1438,4 @@ config = {
     columns: [{ field: 'Country' },{ 'Continent' },{ 'Revenue' }]
 }
 ```
+The difference between defaultColumnOptions and columns is: columns allow you to configure on an individual column level while defaultColumnOptions allows you to define it on the global level. All the properties available in columns are available in defaultColumnOptions as well with the only exceptions of field and type.
