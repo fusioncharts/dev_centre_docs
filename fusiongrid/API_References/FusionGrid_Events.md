@@ -18,27 +18,42 @@ All the concerned events are listed down below categorized with respect to their
 	</tr>
   <tr>
 		<td>`beforeRender`</td>
-		<td>Grid is configured properly and starting to render.</td>
+		<td>Grid is configured properly and starting to render.</br>
+		Data parameter: type: ‘beforeRender’</td>
 	</tr>
   <tr>
 		<td>`dispose`</td>
-		<td>Grid is disposed.</td>
+		<td>Grid is disposed.</br>
+		Data parameter: </br>
+		type: ‘disposed’</td>
 	</tr>
   <tr>
 		<td>`initialized`</td>
-		<td>Grid initialized by calling the grid constructor but the grid is not yet rendered.</td>
+		<td>Grid initialized by calling the grid constructor but the grid is not yet rendered.</br>
+		Data parameter: </br>
+		type: ‘initialized’</td>
 	</tr>
   <tr>
 		<td>`rendered`</td>
-		<td>Grid rendered.</td>
+		<td>Grid rendered. </br>
+		Data parameter: </br>
+		type: ‘rendered’</td>
 	</tr>
   <tr>
 		<td>`resized`</td>
-		<td>Grid is resized as it’s parent container is resized.</td>
+		<td>Grid is resized as it’s parent container is resized. </br>
+		Data parameter: </br>
+		type: ‘resized’ </br>
+		width: width of the grid </br>
+		height: height of the grid
+	</td>
 	</tr>
   <tr>
-		<td>`update`</td>
-		<td>Grid configuration or data is updated.</td>
+		<td>`updated`</td>
+		<td>Grid configuration or data is updated. </br>
+		Data parameter: </br>
+		type: ‘update’ </br>
+		config: Updated grid configuration.</td>
 	</tr>
   </table>
   
