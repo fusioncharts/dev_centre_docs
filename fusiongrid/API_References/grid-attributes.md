@@ -4,8 +4,6 @@ description: This article talks about FusionGrid features
 heading: Grid Attributes 
 ---
 
-# Grid Attributes
- 
 # Grid Configuration
 Grid configurations are passed as the third argument to the FusionGrid constructor while instantiating it. It contains an object with several properties to configure, like columns, rows, inline charts, etc. Here is the syntax:
 
@@ -503,8 +501,12 @@ Here is a list of configurations available under layout:
 </table>
 
 ## Pagination
-The following are some configurations regarding pagination that you can set to your preferences.
-
+This property allows you to configure the pagination component of the grid. Here is the syntax:
+```json
+var gridConfig = {
+ pagination : { key_1: 'value_1' }
+}
+```
 ### Simple Pagination
 Use only two arrows to navigate between pages, like this:
 ```json
@@ -597,61 +599,68 @@ config = {
     }
 }
 ```
+Here is a list of the available options:
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
+		<th>Property Name</th>
+		<th>Data Type</th>
+		<th>Description</th>
 </tr>
 <tr>
-	<td>`pagination`</td>
-	<td>boolean</td>
-	<td>When enabled, displays navigation arrows.</td>
+	<td>`enable`</td>
+	<td>Boolean</td>
+	<td>Enables pagination in the grid.</td>
 </tr>
 <tr>
 	<td>`showPages`</td>
-	<td>boolean</td>
-	<td>When enabled, shows current page number.</td>
+	<td>Object</td>
+	<td>Enables you to configure page count. It has following properties available:
+enable: Enables page numbers in the pagination.
+showTotal: Show total number of pages available.
+userInput: Allows users to input page number.</td>
 </tr>
-<tr>
-	<td>`showTotal`</td>
-	<td>boolean</td>
-	<td>When enabled, shows total number of pages.</td>
-</tr>
-<tr>
-	<td>`userInput`</td>
-	<td>boolean</td>
-	<td>When set to true, allows user to enter the page number to jump to a specific page. 
-</td>
 <tr>
 	<td>`showRecordCount`</td>
-	<td>boolean</td>
-	<td>When set to true, shows total number of rows.</td>
+	<td>Boolean</td>
+	<td>Shows the total number of rows in the grid. For example:
+
+{ showRecordCount : true }</td>
 </tr>
 <tr>
 	<td>`pageSize`</td>
-	<td>numeric</td>
-	<td>Configure the page size.</td>
+	<td>Object</td>
+	<td>Allows you to configure page size-related controls. It offers the following properties:
+1. default: Default page size. It should be numerical.
+2. options: It accepts both boolean and an array of numbers to show the dropdown for users to configure page size.</td>
 </tr>
 <tr>
 	<td>`showJumpToEndButtons`</td>
-	<td>boolean</td>
-	<td>Navigate to the first or last page.</td>
+	<td>Boolean</td>
+	<td>If this property is set to true, then both jump-to-first and jump-to-last buttons will appear for navigation.</td>
 </tr>
 <tr>
 	<td>`showJumpToFirstPageButton`</td>
-	<td>boolean</td>
-	<td>Choose to enable or not the first page button.</td>
+	<td>Boolean</td>
+	<td>If this property is set to true, then only the jump-to-first button will appear for navigation.</td>
 </tr>
 <tr>
 	<td>`showJumpToLastPageButton`</td>
-	<td>boolean</td>
-	<td>Choose to enable or not the last page button.</td>
+	<td>Boolean</td>
+	<td>If this property is set to true, then only the jump to-last button will appear for navigation.</td>
 </tr>
 </table>
 
 ## Tooltips
-The following are tooltip configurations you can add to your grid.
+This property is part of column configuration. Tooltips for cells or columns should be configured on the individual column level. Here is the syntax:
+```json
+var gridConfig = {
+ columns: [
+   {
+     field: 'value_1',
+     tooltip : { }, // tooltip configs
+   },
+ ]}
+```
 
 ### Enabling Tooltips
 Enable header and column tooltips like this:
@@ -744,46 +753,59 @@ config = {
       }]
 };
 ```
+Here is a list of properties available:
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
+	<th>Property Name</th>
+	<th>Data Type</th>
+	<th>Description</th>
 </tr>
 <tr>
-	<td>`tooltip`</td>
-	<td>boolean</td>
-	<td>Choose to enable tooltips.</td>
+	<td>`enable`</td>
+	<td>Boolean</td>
+	<td>Enables tooltips for the given column. For example:
+
+{ tooltip : { enable: true; } }</td>
 </tr>
 <tr>
 	<td>`enableHeaderTooltip`</td>
-	<td>boolean</td>
-	<td>Choose to enable header tooltips.</td>
+	<td>Boolean</td>
+	<td>Enables tooltips for the column header. By default it will show the column header value in the tooltip.</td>
 </tr>
 <tr>
 	<td>`headerTooltip`</td>
-	<td>string</td>
-	<td>Input text to display as header tooltip.</td>
+	<td>String</td>
+	<td>Text to show when hovered over the header.</td>
 </tr>
 <tr>
 	<td>`enableHeaderHelperIcon`</td>
-	<td>boolean</td>
-	<td>Shows tooltip as an info/help icon.</td>
+	<td>Boolean</td>
+	<td>Enables the helper icon that helps users understand that the column is hoverable.</td>
 </tr>
 <tr>
 	<td>`enableCellTooltip`</td>
-	<td>boolean</td>
-	<td>Enables or disables tooltip for specific cells.</td>
+	<td>Boolean</td>
+	<td>Enables tooltips for a cell. By default, tooltip text will be fetched from the cell value.</td>
+</tr>
+<tr>
+	<td>`cellTooltip`</td>
+	<td>String, Function</td>
+	<td>If you pass a string value, it will be shown for all the cells. However, the passing function will give you the ability to render dynamic data as well. Function will provide you with a parameter that will give you access to cell and row data. You have to return a text value that can consist of HTML elements as well.</td>
 </tr>
 <tr>
 	<td>`enableCellHelperIcon`</td>
-	<td>boolean</td>
-	<td>Enables helper icon for specific cells.</td>
+	<td>Boolean</td>
+	<td>Similar to head enableHeaderHelperIcon, this will enable the helper icon for all the cells.</td>
 </tr>
 </table>
 
 ## Row Configurations
-The following samples show how row-level configurations can be done by setting the rowOptions object in grid config.
+Allows you to configure rows of the grid. It accepts an object of properties explained below. Here is the syntax:
+```json
+var gridConfig = {
+ rowOptions: { key_1: 'value_1' }
+}
+```
 
 ### Setting Row Height
 Row height affects all rows, but if the user specifically wants to define header row heights, then they can do so following the example below:
@@ -842,11 +864,12 @@ config = {
     }
 }
 ```
+Here is the list of properties:
 <table>
 <tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
+	<th>Attribute</th>
+	<th>Type</th>
+	<th>Description</th>
 </tr>
 <tr>
 	<td>`rowHeight`</td>
