@@ -4,9 +4,28 @@ description: This article talks about FusionGrid features
 heading: Grid Attributes 
 ---
 
- # Grid Attributes
+# Grid Attributes
+ 
+# Grid Configuration
+Grid configurations are passed as the third argument to the FusionGrid constructor while instantiating it. It contains an object with several properties to configure, like columns, rows, inline charts, etc. Here is the syntax:
 
+```json
+var grid = new FusionGrid(container, dataTable, gridConfig);
+```
+Let’s explore all possible configurable properties available in the grid configuration.
+ 
 ## Columns and Headers
+Using this property you can configure columns in the grid. It accepts an array of objects. Here is the syntax:
+
+```json
+var gridConfig = {
+ columns: [
+   {
+     key_1: 'value_1,
+     key2_2: 'value_2',
+   },
+ ]}
+```
 
 ### Selecting columns
 By default, all data table columns are rendered in the grid. The user can customize this behavior as follows:
@@ -21,20 +40,6 @@ config = {
 };
 ```
 Here the field is the column name mentioned in the data table schema. 
-
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`field`</td>
-	<td>string</td>
-	<td>Defines the Column name.</td>
-</tr>
-</table>
-
 
 ### Changing Column Header name
 The header text is the same as the corresponding schema field name for a column bound with a schema field. The user can provide the header name explicitly as follows:
@@ -51,24 +56,6 @@ config = {
 };
 ```
 A blank or empty string is also a valid header text if the user wants to render a column without any header name.
-
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`field`</td>
-	<td>string</td>
-	<td>Defines the Column name.</td>
-</tr>
-<tr>
-	<td>`headerText`</td>
-<td>string</td>
-	<td>Defines the Columns Header name</td>
-</tr>
-</table>
 
 ### Changing Column Appearances
 The user can change the appearance of all the cells of a column, including the header cells, as follows: 
@@ -110,29 +97,6 @@ config = {
 };
 ```
 We recommend using class only to style the grid. All class-related attributes are an array type, i.e., more than one class can be provided, and classes are applied in the order mentioned in the array.
-
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`style`</td>
-	<td>array</td>
-	<td>Defines the apperance for all the cells of a column.</td>
-</tr>
-<tr>
-	<td>`headerStyle`</td>
-	<td>array</td>
-<td>Defines apperance for a header cell.</td>
-</tr>
-<tr>
-	<td>`cellStyle`</td>
-	<td>array</td>
-	<td>Defines apperance of a value cell.</td>
-</tr>
-</table>
 
 ### Column Grouping
 To create a multi-column group, the user needs to define group names and then columns as children of the group. Any column which has children is considered as a group. The Group header must not be linked to any field in the schema, if it’s specified, the field attribute will be ignored, and a warning is displayed.
@@ -182,29 +146,6 @@ config = {
 Use the minimum and maximum width to enforce abound, otherwise APIs like sizeColumnsToFit() or sizeColumnsToContent() will resize the column at their will.
 But APIs like sizeColumnsToFit() will override the width value provided by the user.
 
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`width`</td>
-	<td>number</td>
-	<td>Defines the width for the columns.  Acceptable units are: `px`, `em`, `rem`, `pt`, and `%`. </td>
-</tr>
-<tr>
-	<td>`minWidth`</td>
-	<td>number</td>
-<td>Defines the minimum width for the columns.</td>
-</tr>
-<tr>
-	<td>`maxWidth`</td>
-	<td>number</td>
-<td>Defines the maximum width for the columns.</td>
-</tr>
-</table>
-
 ### Text Wrapping
 Users can enable text wrapping as follows:
 ```json
@@ -216,18 +157,6 @@ config: {
     }]
 }
 ```
-<table>
-<tr>
-		<th>Attribute</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-	<td>`wrapText`</td>
-	<td>boolean</td>
-	<td>When set to true, wraps text in the cell. </td>
-</tr>
-</table>
 
 ### Configuring Column Hover
 By default, column hover is not enabled, but the user can enable the setting and also define hover style as follows:
@@ -340,6 +269,138 @@ config = {
       }]
 };
 ```
+Here is a list of properties supported in columns:
+<table>
+<tr>
+		<th>Property Name</th>
+		<th>Data Type</th>
+		<th>Description</th>
+</tr>
+<tr>
+	<td>`field`</td>
+	<td>String</td>
+	<td>Name of the schema field. It should be mapped to a valid property name in FusionDataStore schema. For example: 
+
+{ field: 'Assembly Location' } </td>
+</tr>
+<tr>
+	<td>`type`</td>
+	<td>String</td>
+	<td>Data type of the column. It accepts following values in string format: `string`, `number`, `datetime`, `html`, and `chart`. If this value is not provided, then by default it will take it from the FusionDataStore schema.</td>
+</tr>
+<tr>
+	<td>`headerText`</td>
+	<td>String</td>
+	<td>Name of the column which will appear in the grid. By default it will be the same as field.  For example:
+
+{ headerText: 'Assembly Location in US' }.</td>
+</tr>
+<tr>
+	<td>`class`</td>
+	<td>Array, Function</td>
+	<td>An array of class names in string format which is assigned to the entire column including cells and headers. It is useful to customize the appearance of the column. For example:
+
+{ class: ['class-1', 'class-2'] }
+
+Or you could assign a function which should return an array of class names. This function provides a parameter which provides following properties:
+1. cellValue: Value of the cell
+2. cellIndex: Index of the cell
+3. rowIndex: Index of the row
+4. values: An object of values for the given rows
+
+Here is an example of setting up the function:
+
+{ class: function(params) { } }</td>
+</tr>
+	<tr>
+	<td>`style`</td>
+	<td>Object, Function</td>
+	<td>Helps customize the appearance of the entire column by passing CSS properties in the form of JSON object like:
+
+style : {
+   'background-color': 'offwhite'}</td>
+</tr>
+<tr>
+	<td>`headerClass`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like class but the class name will get applied to the column header only.</td>
+</tr>
+<tr>
+	<td>`headerStyle`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like style but the class name will get applied to the column header only.</td>
+</tr>
+<tr>
+	<td>`cellClass`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like class but the class name will get applied to the cells only.</td>
+</tr>
+<tr>
+	<td>`cellStyle`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like style but the class name will get applied to the cells only.</td>
+</tr>
+<tr>
+	<td>`width`</td>
+	<td>String, Number</td>
+	<td>Width of the column. For example: 
+{ width: '100px' }</td>
+</tr>
+<tr>
+	<td>`minWidth`</td>
+	<td>String, Number</td>
+	<td>Minimum width of the column.</td>
+</tr>	
+<tr>
+	<td>`maxWidth`</td>
+	<td>String, Number</td>
+	<td>Maximum width of the column.</td>
+</tr>
+<tr>
+	<td>`enableHover`</td>
+	<td>boolean</td>
+	<td>Enables hover state for the column.</td>
+</tr>
+<tr>
+	<td>`hoverStyle`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like style but the class name will get applied when you hover the cell only.</td>
+</tr>
+<tr>
+	<td>`hoverClass`</td>
+	<td>Object, Function</td>
+	<td>Works exactly like class but the class name will get applied when you hover the cell only.</td>
+</tr>
+<tr>
+	<td>`wrapText`</td>
+	<td>boolean</td>
+	<td>When set to true, wraps text in the cell.</td>
+</tr>
+<tr>
+	<td>`template`</td>
+	<td>Fuction</td>
+	<td>If type is set to html, then you have to return an HTML string that gets applied to the entire cell. Function provides a parameter which will allow you to read corresponding cell and row values. For example:
+{ template: function (params) {} }.</td>
+</tr>
+<tr>
+	<td>`formatter`</td>
+	<td>Object, Function</td>
+	<td>If you want to add some inline styles, conditional or number formatting on the data, then this function is handy.
+
+{ formatter: function (params) {} }.</td>
+</tr>
+<tr>
+	<td>`tooltip`</td>
+	<td>Object</td>
+	<td>Allows you to configure tooltips appearing on the cell or column.</td>
+</tr>
+<tr>
+	<td>`chartConfig`</td>
+	<td>Object</td>
+	<td>Allows you to configure charts. It is only applicable when the type is set to chart.</td>
+</tr>
+</table>
+
 ### Chart Column Type
 
 ## Layout Configurations
