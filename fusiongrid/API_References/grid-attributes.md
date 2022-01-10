@@ -401,6 +401,136 @@ style : {
 
 ### Chart Column Type
 
+Similar to tooltips, we also have configurations for charts-based columns. Before you implement them, you have to ensure that the field is set to chart. After this, you have to define configurations in chartConfig. Here is the syntax:
+```json
+var gridConfig = {
+ columns: [
+   {
+     field: 'field_1',
+     type: 'chart'
+     chartConfig: { }, // chart configs
+   },
+ ]}
+```
+#### Chart configurations
+
+By default, `min` value and `max` values are picked from the data set and the chart is scaled accordingly. But the user can specify the min and max value themselves. 
+```json
+config = {
+    columns: [{
+        field: 'score',
+        type: 'chart',
+        chartConfig: {
+            type: 'bar',
+            minValue: 60,
+            maxValue: 120,
+	    showValue: false,
+	    showHundredPercentBar: true,
+	    valueTextPosition: 'top'/'bottom'/'left'/'right'/'inside',
+            valueTextAlignment: 'start'/'end'/'middle'
+        }
+    }]
+}
+```
+Or you can also use the following styles to configure your chart; bar color, value label class and style, hundred percent bar color and transparency.
+There are four components you could customize:
+Positive plot: Style of the plot when the value is positive (above 0).
+Negative plot: Style of the plot when the value is negative (below 0).
+Track: Style of the background track.
+Value text: Styles for the value text.
+
+To achieve this, there a few properties provided:
+positiveBarClass: Array of class names in string format when the plot value is positive.
+positiveBarStyle: Object with CSS properties when the plot value is positive.
+negativeBarClass:  Array of class names in string format when the plot value is negative.
+negativeBarStyle:  Object with CSS properties when the plot value is negative.
+hundredPercentBarClass: Array of class name in strings to be assigned to the progress track.
+hundredPercentBarStyle: Object of CSS properties to be assigned to the background.
+valueTextClass: Array of class names in string for value text.
+valueTextStyle: Object of CSS properties for value text.
+
+```json
+config = {
+    columns: [{
+        field: 'score',
+        type: 'chart',
+        chartConfig: {
+            style: {
+                positiveBarClass: ['class1', 'class2'],
+                positiveBarStyle: {style1: 'value1', style2: 'value2'},
+                negativeBarClass: ['class1', 'class2'],
+                negativeBarStyle: {style1: 'value1', style2: 'value2'},
+                hundredPercentBarClass: ['class1', 'class2'],
+                hundredPercentBarStyle: {style1: 'value1', style2: 'value2'},
+                valueTextClass: ['class1', 'class2'],
+                valueTextStyle: {style1: 'value1', style2: 'value2'}
+            }
+        }
+    }]
+}
+```
+Here is the list configurations provided in `chartConfig`:
+<table>
+<tr>
+		<th>Property Name</th>
+		<th>Data Type</th>
+		<th>Description</th>
+</tr>
+<tr>
+	<td>`type`</td>
+	<td>String</td>
+	<td>Type of chart to render. As of now only the bar chart is supported.</td>
+</tr>
+<tr>
+	<td>`minValue`</td>
+	<td>Number</td>
+	<td>Minimum value to be plotted in the chart. If the values which you have provided contain a smaller number than this value, then the minimum value will be overridden automatically.</td>
+</tr>
+<tr>
+	<td>`maxValue`</td>
+	<td>Number</td>
+	<td>Maximum value to be plotted in the chart. If the values which you have provided contain a larger number than this value, then the maximum value is automatically overridden.</td>
+</tr>
+<tr>
+	<td>`showValue`</td>
+	<td>Boolean</td>
+	<td>Show value labels that contain the respective data. By default, this is always true.</td>
+</tr>
+<tr>
+	<td>`showHundredPercentBar`</td>
+	<td>Boolean</td>
+	<td>Enable a background track for the bar chart. It is useful when you want to show progress or you know the expected upper limit. By default, this is set to false.</td>
+</tr>
+<tr>
+	<td>`valueTextPosition`</td>
+	<td>String</td>
+	<td>Defines the position of the value text in the chart. There are five acceptable values:
+1. top
+2. bottom
+3. left
+4. right
+5. inside</td>
+</tr>
+<tr>
+	<td>`valueTextAlignment`</td>
+	<td>String</td>
+	<td>When the valueTextPosition is set to inside, this helps you to define where in the data plot you want to render the value text. It accepts three values:
+1. start
+2. middle
+3. end</td>
+</tr>
+<tr>
+	<td>`barHeight`</td>
+	<td>String, Number</td>
+	<td>Sets the height of the bar chart.</td>
+</tr>
+<tr>
+	<td>`style`</td>
+	<td>Object, Function</td>
+	<td>Used to define styles for the chart.</td>
+</tr>
+</table>	
+
 ## Layout Configurations
 Allows you to define layout-related properties for the grid. It accepts only objects.
 Choose between these four layout configurations for your grid; type, density, template, and autoHeight.
@@ -1385,8 +1515,8 @@ Each option has two configurations a display text and a filter function.
 <table>
 <tr>
 		<th>Property Name</th>
-<th>Data Type</th>
-<th>Description</th>
+		<th>Data Type</th>
+		<th>Description</th>
 
 </tr>
 <tr>
