@@ -1,6 +1,6 @@
 ---
 title: Export chart as image | FusionGrid
-description: This article talks about using row animations
+description: This article talks about using column filters
 heading: Column Filter
 ---
 
