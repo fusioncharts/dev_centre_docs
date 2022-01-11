@@ -17,6 +17,7 @@ Before starting with the code, ensure that you have:
 ### Grid Configuration
 
 The grid configuration files are simple .json files. Below is an example of how the row transition animations work.
+Users can enable/disable the animation and control the animation duration.
 
 ```json
 var schema = [
