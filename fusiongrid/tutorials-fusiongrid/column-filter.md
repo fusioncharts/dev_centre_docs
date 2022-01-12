@@ -6,7 +6,7 @@ heading: Column Filter
 
 For a better data analysis you can apply filters on specific columns to show most relevant data first. There are four types of filters you can apply to your grid.
 
-### Prerequisites
+## Prerequisites
 
 Before starting with the code, ensure that you have:
 
