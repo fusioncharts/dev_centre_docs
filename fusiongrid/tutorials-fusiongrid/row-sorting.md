@@ -16,7 +16,7 @@ Before starting with the code, ensure that you have:
 - Downloaded and installed FusionGrid Server(link), and the server is running
 
 ## Code
-
+```json
 config = {
 	columns: [{
 		field: 'country_name',
@@ -25,3 +25,4 @@ config = {
             }
       }]
 };
+```
