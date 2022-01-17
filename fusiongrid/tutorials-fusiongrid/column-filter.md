@@ -5,7 +5,6 @@ heading: Column Filter
 ---
 
 # Column Filter
-
 For a better data analysis you can apply filters on specific columns to show most relevant data first. There are four types of filters you can apply to your grid.
 Enable the filter option by setting the `defaultColumnOptions` method to true. 
 ```json
@@ -18,8 +17,8 @@ config = {
     }
 };
 ```
-## Prerequisites
 
+## Prerequisites
 Before starting with the code, ensure that you have:
 
 - Downloaded and installed FusionGrid Server(link), and the server is running
@@ -157,6 +156,7 @@ This filter will allow users to select one or multiple values from the column to
 Users can use clear option to clear the selection. Alternatively, they can use Select All option as well.
 
 ### Code
+The following is an example with a value filter configured.
 
 ```json
 var schema = [
@@ -229,4 +229,6 @@ grid.render();
 ```
 Below is how the grid displays:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/azcvfu8e/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+For detailed information on the different methods and events to configure column filters, visit the [Methods](/fusiongrid/API_References/Fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
 
