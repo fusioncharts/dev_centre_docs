@@ -344,7 +344,9 @@ dataTable.getDataStore().appendRows([
 grid.refreshCells();
 ```
 Your grid will look as follows:
+
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/keo8qyx7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 
 Or use the `setRowData` method to update rows only on the grid. 
 ```json
