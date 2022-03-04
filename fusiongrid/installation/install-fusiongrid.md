@@ -23,18 +23,9 @@ Use 'Angular' to create your grids, on this section, we'll see how to install Fu
 ### Installation steps 
 
 1. Install the bundles, 'npm install'
-2. Get fusiongrid and 'angular-fusiongrid' bundles from myGet,
+2. Get fusiongrid and 'angular-fusiongrid' bundles:
 ```shell
--- npm login --registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-    username:- fusioncharts-dev
-    password:- Quantum7;Dreary;Update
-    email: <your email>
-```
-```shell
--- npm config set registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-```
-```shell
--- npm install 'fusiongrid@1.0.0'
+-- npm install 'fusiongrid@1.1.0'
 ```
 ```
 -- npm install 'angular-fusiongrid'
@@ -48,16 +39,9 @@ Use 'React' to create your grids, on this section, we'll see how to install Fusi
 ### Installation steps 
 
 1. Install the bundles, 'npm install'
-2. Get Fusiongrid and 'react-fusiongrid' bundles from myGet,
+2. Get Fusiongrid and 'react-fusiongrid' bundles:
 ```shell
--- npm login --registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-    username:- fusioncharts-dev
-    password:- Quantum7;Dreary;Update
-    email: <your email>
-
--- npm config set registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-  
--- npm install 'fusiongrid@1.0.0'
+-- npm install 'fusiongrid@1.1.0'
 
 -- npm install 'react-fusiongrid'
 ```
@@ -71,16 +55,9 @@ Use 'Vue' to create your grids, on this section, we'll see how to install Fusion
 
 
 1. Install the bundles, 'npm instal'
-2. Get 'fusiongrid' and 'vue-fusiongrid' bundles from myGet,
+2. Get 'fusiongrid' and 'vue-fusiongrid' bundles:
 ```shell
--- npm login --registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-    username:- fusioncharts-dev
-    password:- Quantum7;Dreary;Update
-    email: <your email>
-
--- npm config set registry https://fusioncharts.myget.org/F/fusiongrid/npm/
-
--- npm install 'fusiongrid@1.0.0'
+-- npm install 'fusiongrid@1.1.0'
 
 -- npm install 'vue-fusiongrid'
 ```
