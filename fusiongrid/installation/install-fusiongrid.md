@@ -16,7 +16,7 @@ You can develop the application on any of the supported languages,
 
 [tabular example code for each language]
 
-## Angular
+## Create a Grid in Angular
 
 Use 'Angular' to create your grids, on this section, we'll see how to install FusionGrid and render a chart using the 'angular-fusiongrid' component.
 
