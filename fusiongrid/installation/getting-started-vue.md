@@ -17,7 +17,7 @@ We’ll show you how to install and render a grid using the 'vue-fusiongrid' com
 
 ## Installation 
 
-You can install 'fusiongrid' and the 'vue-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our github repository and follow the respective steps below. 
+You can install 'fusiongrid' and the 'vue-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/vue-fusiongrid) and follow the respective steps below. 
 
 ### Install from NPM
 
@@ -203,4 +203,4 @@ Here's HTML template for the above example:
 ```
 
 ## See your grid
-[codepen sample]
+![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
