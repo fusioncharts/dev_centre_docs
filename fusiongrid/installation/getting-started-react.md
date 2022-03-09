@@ -17,7 +17,7 @@ This page shows you how to install and render a grid using the 'react-fusiongrid
 
 ## Installation 
 
-You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](linkhere) and follow the respective steps below. 
+You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/vue-fusiongrid) and follow the respective steps below. 
 
 ### Install from NPM
 
@@ -155,6 +155,5 @@ Attach the callback to an event through the React-FG component:
 Where the EVENTNAME property is replaced by the event you want to track.
 
 ## See your grid
-
-[codepen here]
+![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
 
