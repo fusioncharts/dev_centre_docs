@@ -23,7 +23,7 @@ FusionGrid is an enterprise-class, JavaScript-based data grid component created 
 * [Search/Quick Filter](/fusiongrid/tutorials-fusiongrid/search-filter.md)
 * [Row Transition](/fusiongrid/tutorials-fusiongrid/row-transition-animation.md)
 
-In this article, we will walk you through the necessary steps to add FusionGrid to an existing JavaScript project. In this tutorial, we will be rendering an automobile ranking.
+In this article, we will walk you through the necessary steps to add FusionGrid to an existing JavaScript project. In this tutorial, we will be rendering an automobile ranking grid.
 
 # Installing FusionGrid
 You can install 'fusiongrid' via the CDN/local directory or using npm.
@@ -81,7 +81,7 @@ Next, let’s add an HTML div along with 'width' and 'height' styles. This div w
 </html>
 ```
 
-FusionGrid uses FusionDataStore, an in-browser tabular data storage. Like most of the grid libraries, instead of asking you to convert your data to ‘our format’, FusionDataStore lets you define your own data schema and pass the data to FusionGrid accordingly. The following is an example of the automobile ranking.
+FusionGrid uses FusionDataStore, an in-browser tabular data storage. Like most of the grid libraries, instead of asking you to convert your data to ‘our format’, FusionDataStore lets you define your own data schema and pass the data to FusionGrid accordingly. The following is an example of the automobile ranking grid.
 
 Let’s start by defining the schema.
 ```json
@@ -206,7 +206,7 @@ var grid = new FusionGrid(container, dataTable, {});
 grid.render();
 ```
 ## See Your Grid
-[Add image]
+![Automobile Ranking](/fusiongrid/images/)
 
 ### Next Steps
 
