@@ -211,6 +211,6 @@ grid.render();
 
 After you have installed FusionGrids Server for the language of your choice, refer to the following tutorials to get started with grids:
 
-- [Get Started with Angular](dev_centre_docs/fusiongrid/installation//getting-started-angular.md)
+- [Get Started with Angular](dev_centre_docs/fusiongrid/installation/getting-started-angular.md)
 - [Get Started with React](link)
 - [Get Started with Vue](link)
