@@ -18,7 +18,7 @@ This page shows you how to install and render a grid using the 'angular-fusiongr
 
 ## Installation 
 
-You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](linkhere) and follow the respective steps below. 
+You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/vue-fusiongrid) and follow the respective steps below. 
 
 ### Install from NPM
 
@@ -152,4 +152,4 @@ You can attach an event as follows:
 ```
  
 ## See your grid
-[codepen here]
+![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
