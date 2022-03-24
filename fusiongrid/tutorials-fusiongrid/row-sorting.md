@@ -4,7 +4,6 @@ description: This article talks about using row sorting
 heading: Row Sorting
 ---
 
-# Row Sorting
 For a faster way of analyzing and grouping relevant data, Fusiongrid allows users to sort columns in ascending and descending order. 
 To enable this feature on your grid include the property 'sortable' and set it to 'true', see the below syntax for reference:
 ```json
@@ -166,5 +165,5 @@ document.getElementById("sort-btn").addEventListener("click", () => {
 Here is how the grid renders:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/v4bup87o/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-For detailed information on the different methods and events to configure row sorting options, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods.md) and [Events](/fusiongrid/API_References/FusionGrid_Events.md) page.
+For detailed information on the different methods and events to configure row sorting options, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
 
