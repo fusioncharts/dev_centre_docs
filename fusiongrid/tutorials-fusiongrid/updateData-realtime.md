@@ -4,7 +4,6 @@ description: This article talks about updating data in real-time
 heading: Real-time Data Update
 ---
 
-# Real-time Data Update
 Update data in real-time using the method `appendRows` that updates all tables in your grid. 
 
 ```json
