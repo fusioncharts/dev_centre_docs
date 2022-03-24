@@ -4,7 +4,6 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-# What´s New
 This section is to talk about the new features introduced in the lates version. Filter data by specific values, or with conditional 
 
 ## Column Filter
