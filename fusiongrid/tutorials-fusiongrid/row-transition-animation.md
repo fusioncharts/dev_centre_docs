@@ -4,7 +4,6 @@ description: This article talks about using row animations
 heading: Row Animation 
 ---
 
-# Row Animation
 Enhance your data by adding transition animations to your rows. In this article, you will learn to add animation to your rows.
 In the 'rowOptions' object include the properties 'animateRows' and 'animateRowsDuration'. 
 Set your 'animateRows' to 'true' and choose a value for the duration of the animation, see the syntax below for reference:
