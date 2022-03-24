@@ -4,7 +4,6 @@ description: This article talks about using column filters
 heading: Column Filter
 ---
 
-# Column Filter
 For a better data analysis you can apply filters on specific columns to show most relevant data first. There are four types of filters you can apply to your grid.
 Enable the filter option by setting the `defaultColumnOptions` method to true. 
 ```json
