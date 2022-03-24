@@ -4,8 +4,6 @@ description: This article talks about using fusiongrid methods
 heading: FusionGrid Methods
 ---
 
-# FusionGrid Methods
-
 FusionGrid offers a wide variety of methods for controlling and styling your grids. Find the comprehensive list of methods below.
 
 ## Layout and Viewport
