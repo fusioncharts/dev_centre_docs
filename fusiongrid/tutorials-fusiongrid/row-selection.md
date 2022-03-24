@@ -4,7 +4,6 @@ description: This article talks about row selection methods.
 heading: Row Selection
 ---
 
-# Row Selection
 Users can enable row selection so upon a click the desired row or rows are selected to highlight the most relevant information.
 To enable selection, FusionGrid introduces the rowSelection property that accepts boolean or JSON object to enable/disable row selection. Below is the syntax reference for the same:
 ```json
