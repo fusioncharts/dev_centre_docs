@@ -14,14 +14,14 @@ It is lightweight and customizable, and it works with both web and mobile applic
 
 FusionGrid is an enterprise-class, JavaScript-based data grid component created to deliver a fast and feature-rich data visualization experience. FusionGrid comes along with some of the following features:
 
-* [Column Filter](/fusiongrid/tutorials-fusiongrid/column-filter.md)
-* [Data Export](/fusiongrid/tutorials-fusiongrid/export-gridData.md)
-* [Row Selection](/fusiongrid/tutorials-fusiongrid/row-selection.md)
-* [Column Grouping](/fusiongrid/tutorials-fusiongrid/column-grouping.md)
-* [Real-time Data Update](/fusiongrid/tutorials-fusiongrid/updateData-realtime.md)
-* [Row Sorting](/fusiongrid/tutorials-fusiongrid/row-sorting.md)
-* [Search/Quick Filter](/fusiongrid/tutorials-fusiongrid/search-filter.md)
-* [Row Transition](/fusiongrid/tutorials-fusiongrid/row-transition-animation.md)
+* [Column Filter](/fusiongrid/tutorials-fusiongrid/column-filter)
+* [Data Export](/fusiongrid/tutorials-fusiongrid/export-gridData)
+* [Row Selection](/fusiongrid/tutorials-fusiongrid/row-selection)
+* [Column Grouping](/fusiongrid/tutorials-fusiongrid/column-grouping)
+* [Real-time Data Update](/fusiongrid/tutorials-fusiongrid/updateData-realtime)
+* [Row Sorting](/fusiongrid/tutorials-fusiongrid/row-sorting)
+* [Search/Quick Filter](/fusiongrid/tutorials-fusiongrid/search-filter)
+* [Row Transition](/fusiongrid/tutorials-fusiongrid/row-transition-animation)
 
 In this article, we will walk you through the necessary steps to add FusionGrid to an existing JavaScript project. In this tutorial, we will be rendering an automobile ranking grid.
 
@@ -212,6 +212,6 @@ grid.render();
 
 After you have installed FusionGrids Server for the language of your choice, refer to the following tutorials to get started with grids:
 
-- [Get Started with Angular](/fusiongrid/installation/getting-started-angular.md)
-- [Get Started with React](/fusiongrid/installation/getting-started-react.md)
-- [Get Started with Vue](/fusiongrid/installation/getting-started-vue.md)
+- [Get Started with Angular](/fusiongrid/installation/getting-started-angular)
+- [Get Started with React](/fusiongrid/installation/getting-started-react)
+- [Get Started with Vue](/fusiongrid/installation/getting-started-vue)
