@@ -3,7 +3,7 @@ title: Export Grid | FusionGrid
 description: This article talks about using grouping columns
 heading: Data Export
 ---
-# Column Grouping
+
 To create a multi-column group, the user need to define the group name and then columns as children of the group, as follows:
 ```json
 config = {
