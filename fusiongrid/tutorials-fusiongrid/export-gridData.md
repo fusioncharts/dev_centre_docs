@@ -19,7 +19,7 @@ gridInstance.export({
 ## Prerequisites
 Before starting with the code, ensure that you have:
 
-- Downloaded and installed FusionGrid Server(link), and the server is running
+- Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
 The following is an example of a grid that enables the different export types.
