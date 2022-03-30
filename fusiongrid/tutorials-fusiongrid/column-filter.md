@@ -20,7 +20,7 @@ config = {
 ## Prerequisites
 Before starting with the code, ensure that you have:
 
-- Downloaded and installed FusionGrid Server(link), and the server is running
+- Downloaded and installed FusionGrid Server, and the server is running
 
 ## Conditional Filter
 Use conditions and logical operations such as, or and and, to filter your data. 
