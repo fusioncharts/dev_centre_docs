@@ -19,7 +19,7 @@ config = {
 ## Prerequisites
 Before starting with the code, ensure that you have:
 
-- Downloaded and installed FusionGrid Server(link), and the server is running
+- Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
 The grid configuration files are simple .json files. Below is an example of how the row transition animations work.
