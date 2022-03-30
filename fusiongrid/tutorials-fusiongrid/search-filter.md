@@ -19,7 +19,7 @@ config = {
 ## Prerequisites
 Before starting with the code, ensure that you have:
 
-- Downloaded and installed FusionGrid Server(link), and the server is running
+- Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
 Enable the `searcheable` method to enable quick search on your grid columns.
