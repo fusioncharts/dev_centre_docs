@@ -2726,7 +2726,7 @@
                },
                {
                   "title": "Get started with React",
-                  "path": "/fusiongrid/installatio/getting-started-react"
+                  "path": "/fusiongrid/installation/getting-started-react"
                },
                {
                   "title": "Get started with Vue",
@@ -2786,7 +2786,7 @@
                },
                {
                   "title": "Methods",
-                  "path": "/fusiongrid/tAPI_References/fusion-methods"
+                  "path": "/fusiongrid/API_References/fusiongrid-methods"
                }
                
             ]
