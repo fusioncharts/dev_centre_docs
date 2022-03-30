@@ -17,7 +17,7 @@ gridInstance.setRowData([[13, "Grand Cherokee - 2021", "Jeep", 245917, "Detroit,
 ## Prerequisites
 Before starting with the code, ensure that you have:
 
-- Downloaded and installed FusionGrid Server(link), and the server is running
+- Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
 Use this method to add new rows or to update existing data.
