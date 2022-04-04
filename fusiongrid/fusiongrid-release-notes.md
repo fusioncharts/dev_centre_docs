@@ -4,7 +4,7 @@ description: This section talks about the change in features and attributes with
 heading: FusionGrid Release Notes
 ---
 
-<h2 class="sub-heading">Version 1.0</h2>
+<h2 class="sub-heading">Version 1.1.1</h2>
 
 <p class="release-date">January 18th, 2022</p>
 
