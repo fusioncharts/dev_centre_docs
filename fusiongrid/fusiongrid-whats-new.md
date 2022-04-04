@@ -30,7 +30,7 @@ If you ever need to export your grids, with FusionGrid you can download your gri
 
 ## Integration components
 
-FusionGrid version 1.0 allows you to render your grids across different libraries and frameworks such as; Angular, React, and Vue.
+FusionGrid version 1.1.1 allows you to render your grids across different libraries and frameworks such as; Angular, React, and Vue.
 
 ## Column Search Filter
 
@@ -68,7 +68,7 @@ Multiple Row Selection
 
 ## Row Sorting 
 
-FusionGrid version 1.0 allows users to sort the information on any column by ascending or descening order. Enable this feature and on your grid simply click on the column header to sort the column in ascending order, click on it again to change the sorting to descending order. To learn more about row sorting options, visit our [tutorial pages](/fusiongrid/tutorials-fusiongrid/row-sorting).
+FusionGrid version 1.1.1 allows users to sort the information on any column by ascending or descening order. Enable this feature and on your grid simply click on the column header to sort the column in ascending order, click on it again to change the sorting to descending order. To learn more about row sorting options, visit our [tutorial pages](/fusiongrid/tutorials-fusiongrid/row-sorting).
 
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/umt8v9o1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
