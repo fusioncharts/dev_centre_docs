@@ -6,7 +6,7 @@ heading: FusionGrid Release Notes
 
 <h2 class="sub-heading">Version 1.1.1</h2>
 
-<p class="release-date">January 18th, 2022</p>
+<p class="release-date">April 28th, 2022</p>
 
 <h4>New Features</h4>
 
