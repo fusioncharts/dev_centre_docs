@@ -74,7 +74,7 @@ FusionGrid version 1.1.1 allows users to sort the information on any column by a
 
 ## Watermak and License Validation System
 
-Render your grids without watermarks by getting and setting up the license key. For more information see, License Activation(/fusiongrid/fusiongrid-license-activation) page.
+Render your grids without watermarks by getting and setting up the license key. For more information see, [License Activation](/fusiongrid/fusiongrid-license-activation) page.
 
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/19a3rgtb/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
