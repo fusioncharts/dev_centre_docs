@@ -665,6 +665,6 @@ grid.refreshCells();
 
 ```
 Your grid will look as follows:
-iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/jc60how1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/jc60how1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 For detailed information on the different methods and events for real-time data update, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
