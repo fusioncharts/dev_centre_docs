@@ -7,8 +7,8 @@ heading: Data Export
 Learn how to export all data rendered on your grid, use the method `export` to download all your grid data into a `CSV`, `JSON`, or `XLS` format file. 
 Users can export their grids in two ways, the `full` mode or the `view` mode. 
 
-`full` - exports all data is exported.
-`view`- exports only the data (rows and columns) present in the current grid instance view. 
+* `full` - exports all data is exported.
+* `view`- exports only the data (rows and columns) present in the current grid instance view. 
 
 ```json
 gridInstance.export({
