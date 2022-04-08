@@ -141,8 +141,8 @@ config = {
     }]
 }
 ```
-Use the minimum and maximum width to enforce abound, otherwise APIs like sizeColumnsToFit() or sizeColumnsToContent() will resize the column at their will.
-But APIs like sizeColumnsToFit() will override the width value provided by the user.
+Use the minimum and maximum width to enforce abound, otherwise APIs like `sizeColumnsToFit()` or `sizeColumnsToContent()` will resize the column at their will.
+But APIs like `sizeColumnsToFit()` will override the width value provided by the user.
 
 ### Text Wrapping
 Users can enable text wrapping as follows:
@@ -179,9 +179,9 @@ Before going into the details of column type, there’s an important attribute c
 formatter: function(params) {}
 ```
 Here `params` contain three major properties -
-`cellValue` - contains the current cell value
-`values` - values of all cells of the current record
-`cellIndex` - index of the cell 
+* `cellValue` - contains the current cell value
+* `values` - values of all cells of the current record
+* `cellIndex` - index of the cell 
 
 There are a total of 5 column types available in the grid; `string`, `number`, `datetime`, `html`, and `chart.`
 
@@ -298,7 +298,7 @@ Here is a list of properties supported in columns:
 	<td>Array, Function</td>
 	<td>An array of class names in string format which is assigned to the entire column including cells and headers. It is useful to customize the appearance of the column. For example:
 
-{ class: ['class-1', 'class-2'] }
+: { class: ['class-1', 'class-2'] }
 
 Or you could assign a function which should return an array of class names. This function provides a parameter which provides following properties:
 1. cellValue: Value of the cell
@@ -308,7 +308,7 @@ Or you could assign a function which should return an array of class names. This
 
 Here is an example of setting up the function:
 
-{ class: function(params) { } }</td>
+: { class: function(params) { } }</td>
 </tr>
 	<tr>
 	<td>`style`</td>
