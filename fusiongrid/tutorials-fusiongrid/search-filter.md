@@ -236,4 +236,4 @@ document.getElementById("reset-btn").addEventListener("click", () => {
 The above code will display as follows:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/tgcs5wup/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-For detailed information on the different methods and events to configure the search filters, visit the [Methods](/fusiongrid/API_References/Fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
+For detailed information on the different methods and events to configure the search filters, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
