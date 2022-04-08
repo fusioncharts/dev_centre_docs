@@ -2710,7 +2710,7 @@
       "title": "Fusiongrid",
       "icon": "fc_university",
       "description": "Learn how to use Fusiongrid",
-      "longDescription": "",
+      "longDescription": "Learn how to use Fusiongrid",
       "visibility": true,
       "children": [
          {
@@ -2767,7 +2767,7 @@
                   "path": "/fusiongrid/tutorials-fusiongrid/search-filter"
                },
                {
-                  "title": "Real-tim Data Update",
+                  "title": "Real-time Data Update",
                   "path": "/fusiongrid/tutorials-fusiongrid/updateData-realtime"
                }
                
