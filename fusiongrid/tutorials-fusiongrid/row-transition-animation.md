@@ -22,8 +22,8 @@ Before starting with the code, ensure that you have:
 - Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
-The grid configuration files are simple .json files. Below is an example of how the row transition animations work.
-Users can enable/disable the animation and control the animation duration.
+The grid configuration files are simple `.json` files. Below is an example of how the row transition animations work.
+Users can enable or disable the animation and control the animation duration.
 
 ```json
 var schema = [
