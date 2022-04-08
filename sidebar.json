@@ -2709,8 +2709,8 @@
    {
       "title": "Fusiongrid",
       "icon": "fc_university",
-      "description": "Learn how to use Fusiongrid",
-      "longDescription": "Learn how to use Fusiongrid",
+      "description": "Render high performance Grids",
+      "longDescription": "Learn how to create powerful grids on your server",
       "visibility": true,
       "children": [
          {
