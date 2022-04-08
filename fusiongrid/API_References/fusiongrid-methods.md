@@ -23,9 +23,9 @@ grid.getLayout('type')
 		<th>Description</th>
 </tr>
 <tr>
-	<td>property</td>
+	<td>`property`</td>
     <td>No</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the property from layout configurations.</td>
 </tr>
 </table>
@@ -47,9 +47,9 @@ grid.setLayout({
 		<th>Description</th>
 </tr>
 <tr>
-	<td>config</td>
+	<td>`config`</td>
     <td>Yes</td>
-	<td>Object</td>
+	<td>`Object`</td>
 	<td>An object containing properties from layout configurations.</td>
 </tr>
 </table>
@@ -83,15 +83,15 @@ grid.addViewport('mobile-landscape', {
 		<th>Description</th>
 </tr>
    <tr>
-	<td>viewPortName</td>
+	<td>`viewPortName`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the new viewport.</td>
 </tr>
 <tr>
-	<td>config</td>
+	<td>`config`</td>
     <td>Yes</td>
-	<td>Object</td>
+	<td>`Object`</td>
 	<td>An object of all the grid configurations to apply on the grid.</td>
 </tr>
 </table>
@@ -124,9 +124,9 @@ grid.getColumns(1); // returns column object with index 1
 		<th>Description</th>
 </tr>
 <tr>
-	<td>index</td>
+	<td>`index`</td>
     <td>No</td>
-	<td>Number</td>
+	<td>`Number`</td>
 	<td>Index of the column.</td>
 </tr>
 </table>
@@ -148,9 +148,9 @@ grid.setColumns(newColumns);
 		<th>Description</th>
 </tr>
 <tr>
-	<td>columns</td>
+	<td>`columns`</td>
     <td>Yes</td>
-	<td>Array</td>
+	<td>`Array`</td>
 	<td>Array of columns configurations.</td>
 </tr>
 </table>
@@ -168,9 +168,9 @@ grid.getRowOptions('rowHeight')
 		<th>Description</th>
 </tr>
 <tr>
-	<td>property</td>
+	<td>`property`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the row property from row configurations.</td>
 </tr>
 </table>
@@ -197,21 +197,21 @@ We recommend the second method to update multiple properties at once.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>key</td>
+	<td>`key`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the row property from row configurations.</td>
 </tr>
    <tr>
-	<td>value</td>
+	<td>`value`</td>
     <td>Yes</td>
-	<td>Any</td>
+	<td>`Any`</td>
 	<td>Respective supported property for the row options.</td>
 </tr>
 <tr>
-	<td>object</td>
+	<td>`object`</td>
     <td>Yes</td>
-	<td>Object</td>
+	<td>`Object`</td>
 	<td>Object configurations row configurations.</td>
 </tr>
 </table>
@@ -231,9 +231,9 @@ Sets the data source of the grid. This data source is essentially a DataTable.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>dataTable</td>
+	<td>`dataTable`</td>
     <td>Yes</td>
-	<td>Object</td>
+	<td>`Object`</td>
 	<td>Instance of DataTable which you want to use in the grid.</td>
 </tr>
 </table>    
@@ -249,9 +249,9 @@ Gets pagination. If users call this method without any set parameters, then the 
 		<th>Description</th>
 </tr>
 <tr>
-	<td>property</td>
+	<td>`property`</td>
     <td>No</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the property which you want to fetch from the pagination configuration.</td>
 </tr>
 </table>
@@ -270,24 +270,25 @@ grid.setPagination({ showTotal: true });
 		<th>Description</th>
 </tr>
 <tr>
-	<td>key</td>
+	<td>`key`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the pagination property from pagination configuration.</td>
 </tr>
 <tr>
-	<td>value</td>
+	<td>`value`</td>
     <td>Yes</td>
-	<td>Any</td>
+	<td>`Any`</td>
 	<td>Respective value for the supported property.</td>
 </tr>
  <tr>
-	<td>object</td>
+	<td>`object`</td>
     <td>Yes</td>
-	<td>Object</td>
+	<td>`Object`</td>
 	<td>Object configurations from pagination configuration.</td>
 </tr>
 </table>
+
 ### grid.getPageSize()
 It shows how many rows are shown per page.
 
@@ -301,9 +302,9 @@ Sets the size of a page.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>pageSize</td>
+	<td>`pageSize`</td>
     <td>Yes</td>
-	<td>Number</td>
+	<td>`Number`</td>
 	<td>Number of rows to render per page.</td>
 </tr>
 </table>
@@ -327,9 +328,9 @@ Jumps to a specific page. Suppose the page number is higher than the total numbe
 		<th>Description</th>
 </tr>
 <tr>
-	<td>pageNumber</td>
+	<td>`pageNumber`</td>
     <td>Yes</td>
-	<td>Number</td>
+	<td>`Number`</td>
 	<td>Index of the page number where you want to jump.</td>
 </tr>
 </table>
@@ -379,15 +380,15 @@ Adds an event listener.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>eventName</td>
+	<td>`eventName`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the supported event.</td>
 </tr>
     <tr>
-	<td>listener</td>
+	<td>`listener`</td>
     <td>Yes</td>
-	<td>Function</td>
+	<td>`Function`</td>
 	<td>Event listener function for the respective event. You can also access event objects via function parameters.</td>
 </tr>
 </table>
@@ -402,15 +403,15 @@ Removes an event listener.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>eventName</td>
+	<td>`eventName`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the supported event.</td>
 </tr>
     <tr>
-	<td>listener</td>
+	<td>`listener`</td>
     <td>Yes</td>
-	<td>Function</td>
+	<td>`Function`</td>
 	<td>Event listener function for the respective event. You can also access event objects via function parameters.</td>
 </tr>
 </table>
@@ -425,9 +426,9 @@ Triggers and event through the grid.
 		<th>Description</th>
 </tr>
 <tr>
-	<td>eventName</td>
+	<td>`eventName`</td>
     <td>Yes</td>
-	<td>String</td>
+	<td>`String`</td>
 	<td>Name of the supported event.</td>
 </tr>
 </table>
