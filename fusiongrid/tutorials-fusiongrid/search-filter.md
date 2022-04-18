@@ -1,5 +1,5 @@
 ---
-title: Export chart as image | FusionGrid
+title: Search Filter | FusionGrid
 description: This article talks about using column search filters
 heading: Search Filter
 ---
