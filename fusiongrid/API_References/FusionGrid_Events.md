@@ -1,5 +1,5 @@
 ---
-title: FusionGrid list of events | FusionGrid list of events
+title: FusionGrid Events | FusionGrid list of events
 description: This article lists the evnts of FusionGrid
 heading: List of Events 
 ---
