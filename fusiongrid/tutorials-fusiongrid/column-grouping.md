@@ -1,5 +1,5 @@
 ---
-title: Export Grid | FusionGrid
+title: Column Grouping | FusionGrid
 description: This article talks about using grouping columns
 heading: Column Grouping
 ---
