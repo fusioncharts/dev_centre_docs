@@ -1,5 +1,5 @@
 ---
-title: Export chart as image | FusionGrid
+title: Attributes | FusionGrid
 description: This article talks about FusionGrid features
 heading: Grid Attributes 
 ---
