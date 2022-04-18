@@ -1,5 +1,5 @@
 ---
-title: Export chart as image | FusionGrid
+title: Row Animation | FusionGrid
 description: This article talks about using row animations
 heading: Row Animation 
 ---
