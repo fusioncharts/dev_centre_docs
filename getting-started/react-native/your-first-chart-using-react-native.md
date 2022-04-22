@@ -247,8 +247,7 @@ That's it! Your first chart using `react-native-fusioncharts` is ready.
 
 ## Create an application using FusionCharts – with React-Native CLI
 
-1. Make sure you have the latest versions of Node and JDK installed in your environment. Dependencies for Android and iOS emulators.
-should also be setup properly. Check the official [React Native documentation](https://reactnative.dev/docs/environment-setup) for more details.
+For users who want to learn how to create an application using React-Native CLI, first make sure you have the latest versions of Node and JDK installed in your environment. The dependencies for Android and iOS emulators should also be setup properly. Check the official [React Native documentation](https://reactnative.dev/docs/environment-setup) for more details.
 
 2. Run the following command in Command Prompt to install the React Native CLI: ```npm install -g react-native-cli```
 
@@ -258,12 +257,14 @@ should also be setup properly. Check the official [React Native documentation](h
 
 5. A new application named ‘My-test-app’ has been created. Update its code to include charts that you need to get displayed. Check [our instructions](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) for details.
 
-6. In order to run your application on a connected Android device or an emulator, execute the following command: npx react-native run-android. It would take a few minutes to run the application.
+To run your application on a connected Android device or an emulator, execute the following command: 
+```npx react-native run-android``` 
 
-7. To run it on an iOS device or simulator, execute the following command: ```npx react-native run-iOS```.
+Or to run it on an iOS device or simulator, execute the following command: 
+```npx react-native run-iOS```.
 
 
-### Run Expo application 
+### Run the Expo Application 
 You can also use React-Native CLI to run an application created with Expo. This is how you do it:
 
 1. Follow steps 1-4 of the Expo guide above.
