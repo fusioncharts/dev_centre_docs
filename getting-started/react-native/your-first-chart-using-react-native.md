@@ -12,23 +12,25 @@ We are assuming that you are having a react-native project up and running. If no
 
 **NOTE:** Install react-native-web if not present already.
 
-## How to create your own application using FusionCharts – with Expo
+## Create an application using FusionCharts – with Expo
 
-1. Make sure you have Node.js and Git installed in your environment. Check the official [Expo’s documentation](https://docs.expo.dev/get-started/installation/) for more details.
+Using FusionCharts with Expo you can create your application. First, make sure you have 'Node.js' and 'Git' installed in your environment. For more details you can check the official [Expo’s documentation](https://docs.expo.dev/get-started/installation/).
 
-2. Run the following command in Command Prompt to create a new application: 
+To get started, open the Command Prompt and run the following command to create a new application: 
 ```
 expo init My-test-app
 ```
 3. Move to the previously created app folder: cd My-test-app 
 
-4. Installation and Including Dependencies
+### Installation and Including Dependencies
 
+To complete the installation including the dependencies by runnig the following code:
 ```javascript
 npm i @unimodules/react-native-adapter
 npm i react-native-fusioncharts --force
 ```
-5. Now create the "metro.config.js" in the root folder of the app and include the following code: 
+
+Now, in the root folder of the application, create the 'metro.config.js' file and include the following code: 
 ```javascript
 const { getDefaultConfig } = require('@expo/metro-config');
 module.exports = (async () => {
@@ -51,7 +53,7 @@ module.exports = (async () => {
     }
   })()
 ```
-5.5 ## Preparing the Data
+### Preparing the Data
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
@@ -107,7 +109,7 @@ const chartData = [
   }
 ];
 ```
-5.6 ## Configure Your Chart
+### Configure Your Chart
 
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
@@ -136,7 +138,7 @@ const chartConfigs = {
 
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
  
-5.7 ## Render the Chart
+### Render the Chart
 
 Finally, get ready to render your first chart using the `react-native-fusioncharts` component. Follow the steps mentioned below:
 
@@ -223,19 +225,17 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('ReactNativeFusionCharts', () => App);
 ```
 
-7. Run the following command: 
+To start the expo application, run the following command: 
 ```expo start```
 Expo should create a QR-code in your Command Prompt window.
 
-8. Open the Expo Go application on your device – you should have installed it in order to run your FusionCharts app on this device.
+Next, open the Expo Go application on your device (this installation is needed in order to run your FusionCharts app on your device) and ensure your device is on the same Wi-Fi network as the machine where you are executing the Expo commands.
 
-9. Make sure your device is on the same Wi-Fi network as the computer where you are executing Expo commands.
-
-10. Scan the QR-code with the Expo Go scanner. The application will run on this device. It should display the charts properly.
+Use the Expo Go scanner to scan the QR-code in your Command Prompt window. The application will start running on your device and display the charts accordingly.
 
 11. You can make changes to your code while running the application on your device: it should automatically reload after you save the changes.
 
-## See Your Chart
+### See Your Chart
 
 You should be able to see the chart as shown below.
 
