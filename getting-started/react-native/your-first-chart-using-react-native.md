@@ -10,210 +10,48 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.<br/>
 
-**NOTE:** Install react-native-webview if not present already.
+**NOTE:** Install react-native-web if not present already.
 
-## Installation and Including Dependencies
+## How to create your own application using FusionCharts – with Expo
 
-Install the react-native-fusioncharts and fusioncharts components via npm.
+1. Make sure you have Node.js and Git installed in your environment. Check the official [Expo’s documentation](https://docs.expo.dev/get-started/installation/) for more details.
+
+2. Run the following command in Command Prompt to create a new application: 
+```
+expo init My-test-app
+```
+3. Move to the previously created app folder: cd My-test-app 
+
+4. Installation and Including Dependencies
 
 ```javascript
-npm install react-native-fusioncharts fusioncharts --save
+npm i @unimodules/react-native-adapter
+npm i react-native-fusioncharts --force
 ```
-
-To include the react-native-fusioncharts component, follow the steps given below:
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='android'>Android</a></li>
-    <li><a data-toggle='ios'>iOS</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab android-tab active'>
-<div>
-  <ul style="margin-left:10px; padding:0">
-    <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
-    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
-    <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
-  </ul>
-</div>
-<div>
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;FusionCharts&lt;/title&gt;
-&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
-    &lt;style type="text/css"&gt;
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-size: 13px;
-        }
-        #chart-container {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-            user-select: none;
-            -webkit-user-select: none;
-            overflow: hidden;
-        }
-        #loading-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            user-select: none;
-            -webkit-user-select: none;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id="chart-container"&gt;
-&lt;div id="loading-text"&gt;
-Chart is loading...
-&lt;/div&gt;
-&lt;/div&gt;
-    &lt;script type='text/javascript'&gt;
-        "use strict";
-        (function() {
-            var a = Promise.resolve(),
-                b = {},
-                c = {};
-            (function d() {
-                var f = function() {
-                    function g() {
-                        return Math.floor(65536 * (1 + Math.random())).toString(16).substring(1)
-                    }
-                    return g() + g() + "-" + g() + "-" + g() + "-" + g() + "-" + g() + g() + g()
-                };
-                window.webViewBridge = {
-                    send: function send(g, h, i, j) {
-                        i = i || function() {}, j = j || function() {};
-                        var k = {
-                                targetFunc: g,
-                                data: h || {},
-                                msgId: f()
-                            },
-                            l = JSON.stringify(k);
-                        a = a.then(function() {
-                            return new Promise(function(m, n) {
-                                b[k.msgId] = {
-                                    resolve: m,
-                                    reject: n
-                                }, c[k.msgId] = {
-                                    onsuccess: i,
-                                    onerror: j
-                                }, window.postMessage(l)
-                            })
-                        }).catch(function() {})
-                    }
-                }, window.document.addEventListener("message", function(g) {
-                    var h;
-                    try {
-                        h = JSON.parse(g.data)
-                    } catch (i) {
-                        return
-                    }
-                    b[h.msgId] && (b[h.msgId].resolve(), delete b[h.msgId]), h.args && c[h.msgId] && (h.isSuccessfull ? c[h.msgId].onsuccess.apply(null, h.args) : c[h.msgId].onerror.apply(null, h.args), delete c[h.msgId])
-                })
-            })()
-        })();
-    &lt;/script&gt;
-    &lt;!-- Include the required FusionCharts modules --&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-
-  <ul style="margin-left:10px; margin-top:10px; padding:0">
-    <li>
-    Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.
-    </li>
-  </ul>
-  <pre>
-    <code class="language-javascript">
-      "scripts": {
-          ......
-          "clean:build:android": "rm -rf android/app/build",
-          "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+5. Now create the "metro.config.js" in the root folder of the app and include the following code: 
+```javascript
+const { getDefaultConfig } = require('@expo/metro-config');
+module.exports = (async () => {
+    const {
+      resolver: { sourceExts, assetExts }
+    } = await getDefaultConfig(__dirname)
+    return {
+      transformer: {
+        defaultConfig: async () => ({
+          transform: {
+            experimentalImportSupport: false,
+            inlineRequires: false
+          }
+        })
       },
-    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-  </pre>
-  <ul style="margin-left:10px; margin-top:10px; padding:0"><li>Run the following command before generating the signed APK:</li></ul>
-  <pre>
-    <code class="language-javascript">
-      npm run prod:android
-    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-  </pre>
-</div>
-
-</div>
-
-<div class='tab ios-tab'>
-<div>
-  <ul style="margin-left:10px; padding:0">
-    <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
-    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    <li>
-        Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.
-    </li>
-  </ul>
-</div>
-<div>
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;!-- Include the required FusionCharts modules --&gt;
-&lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-&lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-
-<ul style="margin-left:10px; margin-top:10px; padding:0"><li>Add a `build:assets` script in Application's package.json file</li></ul>
-
-<pre><code class="language-javascript">
-"scripts": {
-    ......
-    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
-},
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-  <ul style="margin-left:10px; padding:0; margin-top: 10px">
-    <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder.<br/>
-    <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
-    <li>Run the following command before running the application:</li>
-  </ul>
-</div>
-<pre><code class="language-javascript">
-npm run build:assets
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
-
-That completes the installation of FusionCharts and the react-native-fusioncharts component.
-
-## Preparing the Data
+      resolver: {
+        sourceExts,
+        assetExts: [...assetExts, 'fcscript']
+      }
+    }
+  })()
+```
+5.5 ## Preparing the Data
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
@@ -269,8 +107,7 @@ const chartData = [
   }
 ];
 ```
-
-## Configure Your Chart
+5.6 ## Configure Your Chart
 
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
@@ -298,36 +135,37 @@ const chartConfigs = {
 ```
 
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
-
-## Render the Chart
+ 
+5.7 ## Render the Chart
 
 Finally, get ready to render your first chart using the `react-native-fusioncharts` component. Follow the steps mentioned below:
 
 > The JavaScript code to create a chart in Android and iOS is the same.
 
-Copy the following code to app.js file.
+Copy the following code to app.js file. In your "App.js" file replace your entire code with the code sample below, [Example](https://github.com/fusioncharts/react-native-fusioncharts#quick-start).
 
 ```javascript
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import FusionCharts from "react-native-fusioncharts";
-export default class PlainColumn2D extends Component {
+import React, { Component } from 'react';
+import { AppRegistry, StyleSheet, Text, View, Platform } from 'react-native';
+import ReactNativeFusionCharts from 'react-native-fusioncharts';
+
+export default class App extends Component {
   constructor(props) {
     super(props);
     //STEP 2 - Chart Data
     const chartData = [
-      { label: "Venezuela", value: "290" },
+      { label: "Venezuela", value: "250" },
       { label: "Saudi", value: "260" },
       { label: "Canada", value: "180" },
       { label: "Iran", value: "140" },
       { label: "Russia", value: "115" },
       { label: "UAE", value: "100" },
       { label: "US", value: "30" },
-      { label: "China", value: "30" }
+      { label: "China", value: "30" },
     ];
     //STEP 3 - Chart Configurations
     const chartConfig = {
-      type: "column2d",
+      type: "column2D",
       width: "100%",
       height: "400",
       dataFormat: "json",
@@ -338,33 +176,27 @@ export default class PlainColumn2D extends Component {
           xAxisName: "Country",
           yAxisName: "Reserves (MMbbl)",
           numberSuffix: "K",
-          theme: "fusion"
+          theme: "fusion",
+          exportEnabled: 1 // to enable the export chart functionality
         },
         data: chartData
       }
     };
-    this.state = chartConfig;
-    this.libraryPath = Platform.select({
-      // Specify fusioncharts.html file location
-      android: {
-        uri: "file:///android_asset/fusioncharts.html"
-      },
-      ios: require("./assets/fusioncharts.html")
-    });
+
+    this.state = {
+      chartConfig
+    };
   }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>A Column 2D Chart</Text>
-
+        <Text style={styles.heading}>
+          FusionCharts Integration with React Native
+        </Text>
         <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
+          <ReactNativeFusionCharts
+            chartConfig={this.state.chartConfig}
           />
         </View>
       </View>
@@ -375,24 +207,33 @@ export default class PlainColumn2D extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
     padding: 10
   },
-
-  header: {
-    fontWeight: "bold",
+  heading: {
     fontSize: 20,
-    textAlign: "center",
-    paddingBottom: 10
+    textAlign: 'center',
+    marginBottom: 10
   },
-
   chartContainer: {
-    height: 400,
-    borderColor: "#000",
-    borderWidth: 1
+    height: 200
   }
 });
+
+// skip this line if using Create React Native App
+AppRegistry.registerComponent('ReactNativeFusionCharts', () => App);
 ```
+
+7. Run the following command: 
+```expo start```
+Expo should create a QR-code in your Command Prompt window.
+
+8. Open the Expo Go application on your device – you should have installed it in order to run your FusionCharts app on this device.
+
+9. Make sure your device is on the same Wi-Fi network as the computer where you are executing Expo commands.
+
+10. Scan the QR-code with the Expo Go scanner. The application will run on this device. It should display the charts properly.
+
+11. You can make changes to your code while running the application on your device: it should automatically reload after you save the changes.
 
 ## See Your Chart
 
@@ -403,3 +244,6 @@ You should be able to see the chart as shown below.
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
 That's it! Your first chart using `react-native-fusioncharts` is ready.
+
+
+
