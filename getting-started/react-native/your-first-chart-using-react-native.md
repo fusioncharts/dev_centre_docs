@@ -24,7 +24,7 @@ expo init My-test-app
 
 ### Installation and Including Dependencies
 
-To complete the installation including the dependencies by runnig the following code:
+To complete the installation, including the dependencies, run the following code:
 ```javascript
 npm i @unimodules/react-native-adapter
 npm i react-native-fusioncharts --force
@@ -140,11 +140,9 @@ const chartConfigs = {
  
 ### Render the Chart
 
-Finally, get ready to render your first chart using the `react-native-fusioncharts` component. Follow the steps mentioned below:
+Finally, get ready to render your first chart using the `react-native-fusioncharts` component. In your "App.js" file replace your entire code with the code sample below, [Example](https://github.com/fusioncharts/react-native-fusioncharts#quick-start).
 
 > The JavaScript code to create a chart in Android and iOS is the same.
-
-Copy the following code to app.js file. In your "App.js" file replace your entire code with the code sample below, [Example](https://github.com/fusioncharts/react-native-fusioncharts#quick-start).
 
 ```javascript
 import React, { Component } from 'react';
@@ -225,15 +223,13 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('ReactNativeFusionCharts', () => App);
 ```
 
-To start the expo application, run the following command: 
+To start the Expo application, run the following command: 
 ```expo start```
 Expo should create a QR-code in your Command Prompt window.
 
 Next, open the Expo Go application on your device (this installation is needed in order to run your FusionCharts app on your device) and ensure your device is on the same Wi-Fi network as the machine where you are executing the Expo commands.
 
-Use the Expo Go scanner to scan the QR-code in your Command Prompt window. The application will start running on your device and display the charts accordingly.
-
-11. You can make changes to your code while running the application on your device: it should automatically reload after you save the changes.
+Use the Expo Go scanner to scan the QR-code in your Command Prompt window. The application will start running on your device and display the charts accordingly. You can make changes to your code while running the application on your device, it will automatically reload after you save the changes.
 
 ### See Your Chart
 
@@ -245,42 +241,60 @@ If you are getting a JavaScript error on your page, check your browser console f
 
 That's it! Your first chart using `react-native-fusioncharts` is ready.
 
+Visit the [React-Native Features](/getting-started/react-native/react-native-features) page to learn more about working with events, methods and more. 
+
 ## Create an application using FusionCharts – with React-Native CLI
 
 For users who want to learn how to create an application using React-Native CLI, first make sure you have the latest versions of Node and JDK installed in your environment. The dependencies for Android and iOS emulators should also be setup properly. Check the official [React Native documentation](https://reactnative.dev/docs/environment-setup) for more details.
 
-2. Run the following command in Command Prompt to install the React Native CLI: ```npm install -g react-native-cli```
+First, open the Command Prompt and run the following command to install the React Native CLI: 
+```npm install -g react-native-cli```
 
-3. Run the following command in Command Prompt to create a new application: ```react-native init My-test-app```.
+Next, to create the new application, run the following command in Command Prompt: 
+```react-native init My-test-app```
 
-4. Run the command ```cd My-test-app``` to access your app.
+To acces you app, run the command: 
+```cd My-test-app```
 
-5. A new application named ‘My-test-app’ has been created. Update its code to include charts that you need to get displayed. Check [our instructions](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) for details.
+A new application named ‘My-test-app’ is created. 
+Update it's code to include charts that you need to get displayed or Check [our instructions](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime) for more details.
 
-To run your application on a connected Android device or an emulator, execute the following command: 
+Finally, to run your application on a connected Android device or an emulator, execute the following command: 
 ```npx react-native run-android``` 
 
-Or to run it on an iOS device or simulator, execute the following command: 
-```npx react-native run-iOS```.
+Or, to run it on an iOS device or simulator, execute the following command: 
+```npx react-native run-iOS```
 
 
 ### Run the Expo Application 
-You can also use React-Native CLI to run an application created with Expo. This is how you do it:
+You can also use React-Native CLI to run applications created with Expo. This is how you do it:
 
-1. Follow steps 1-4 of the Expo guide above.
+Open the Command Prompt and run the following command: 
+```npm install -g react-native-cli```
 
-2. You have finished updating the code and accessed your application’s folder. Now run the following command: ```expo eject```
+Next, to create the new application, run the following command in Command Prompt: 
+```react-native init My-test-app```
 
-3. Expo will create /Android and /IOs folders in your application allowing you to run it with React-Native CLI
+To acces you app, run the command: 
+```cd My-test-app```
 
-4. Make sure you have configured your environment dependencies for Android and iOS emulators. Check the official React Native documentation for more details.
+You have finished updating the code and accessed your application’s folder. 
+Now run the following command: 
+```expo eject```
 
-5. Now you can use the command npx react-native run-android to run your application on Android or the command npx react-native run-iOS to run it on iOS.
+The Expo application will create an /Android and a /IOs folders in your application; allowing you to run it using 'React-Native CLI'.
 
+Make sure you have configured your environment dependencies for Android and iOS emulators. For more information, check the official [React Native documentation](https://reactnative.dev/docs/environment-setup).
+
+Finally, to run your application on Android, run the command: 
+```npx react-native run-android``` 
+
+Or, to run your application on iOS, us the command:
+```npx react-native run-iOS```
 
 After installing `react-native-fusioncharts`, follow the steps below:
 
-It is required to add the .fcscript into the asset extensions section of metro.config.js file, or create that file within your project, and configure it like below:
+It is required to add the .fcscript into the asset extensions section of the 'metro.config.js' file, or create that file within your project, and configure it as shown below:
 
 ```javascript
 const {getDefaultConfig} = require('metro-config');
