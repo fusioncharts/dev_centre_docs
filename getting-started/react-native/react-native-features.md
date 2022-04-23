@@ -3,7 +3,8 @@ title: React-Native Features | FusionCharts
 description: This article outlines how to work with events, API's and modules.
 heading: React-Native Features
 ---
-[intro]
+
+Achieve more with your charts, explore how to work using events, API's, modules or how to configure your license. 
 
 ## Working with Events
 
@@ -245,7 +246,7 @@ const styles = StyleSheet.create({
 
 ## Working with modules
 
-In this sample we can add the modules dynamically e.g gantt, timeseries, powercharts etc
+In this sample we can add the modules dynamically e.g gantt, timeseries, powercharts, etc.
 
 ```javascript
 import React, { Component } from "react";
@@ -299,7 +300,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-In this sample we can add the theme modules dynamically e.g candy, carbon, gammel etc
+In this sample we can add the theme modules dynamically e.g candy, carbon, gammel, etc.
 
 ```javascript
 import React, { Component } from 'react';
@@ -380,7 +381,7 @@ const styles = StyleSheet.create({
 
 ## License Configuration
 
-If you are using a licensed verison of fusioncharts and have a valid license key, add the license object by either creating a new file with your license configuration inside it and import it in app.js or add ‘global.licenseConfig’ object to the app.js file as shown below
+If you are using a licensed verison of fusioncharts and have a valid license key, add the license object by either creating a new file with your license configuration inside it and import it in app.js or add ‘global.licenseConfig’ object to the app.js file as shown below.
 
 ```javascript
 import React, { Component } from "react";
