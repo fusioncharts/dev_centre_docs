@@ -1,7 +1,7 @@
 ---
-title: React Native Features | FusionCharts
+title: React-Native Features | FusionCharts
 description: This article outlines how to work with events, API's and modules.
-heading: React Native Features
+heading: React-Native Features
 ---
 [intro]
 
