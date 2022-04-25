@@ -241,7 +241,7 @@ If you are getting a JavaScript error on your page, check your browser console f
 
 That's it! Your first chart using `react-native-fusioncharts` is ready.
 
-Visit the [React-Native Features](dev/getting-started/react-native/react-native-features) page to learn more about working with events, methods and more. 
+Visit the [React-Native Features](/getting-started/react-native/react-native-features) page to learn more about working with events, methods and more. 
 
 ## Create an application using FusionCharts – with React-Native CLI
 
@@ -320,3 +320,4 @@ module.exports = (async () => {
 })()
 ```
 
+Visit the [React-Native Features](/getting-started/react-native/react-native-features) page to learn more about working with events, methods and more. 
