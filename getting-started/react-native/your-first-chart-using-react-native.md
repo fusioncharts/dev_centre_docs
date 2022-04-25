@@ -20,7 +20,7 @@ To get started, open the Command Prompt and run the following command to create 
 ```
 expo init My-test-app
 ```
-3. Move to the previously created app folder: cd My-test-app 
+Return to the previously created application folder: 'cd My-test-app' 
 
 ### Installation and Including Dependencies
 
