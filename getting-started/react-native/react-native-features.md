@@ -4,11 +4,11 @@ description: This article outlines how to work with events, API's and modules.
 heading: React-Native Features
 ---
 
-Achieve more with your charts, explore how to work using events, API's, modules or how to configure your license. 
+Achieve more with your charts, explore more React-Native features. Learn how to work using events, API's, modules or how to configure your license. 
 
 ## Working with Events
 
-In this sample we are attaching dataplotclick event in the chart.
+You can add different events to you react-native chart, follow the steps below to learn how to attach a dataplotclick event to a chart.
 
 ```javascript
 import React, { Component } from 'react';
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
 
 ## Working with APIs
 
-In this sample we can change the chart type dynamically using chart APIs.
+You can also enhance your charts by adding some API's, follow these simple steps to lean how to change the chart type dynamically using chart APIs.
 
 ```javascript
 import React, { Component } from 'react';
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
 
 ## Working with modules
 
-In this sample we can add the modules dynamically e.g gantt, timeseries, powercharts, etc.
+Add modules dynamically. Follow these steps to learn how to add modules dynamicalle e.g gantt, timeseries, powercharts, etc.
 
 ```javascript
 import React, { Component } from "react";
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-In this sample we can add the theme modules dynamically e.g candy, carbon, gammel, etc.
+Here is how to add the theme modules dynamically e.g candy, carbon, gammel, etc.
 
 ```javascript
 import React, { Component } from 'react';
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
 
 ## License Configuration
 
-If you are using a licensed verison of fusioncharts and have a valid license key, add the license object by either creating a new file with your license configuration inside it and import it in app.js or add ‘global.licenseConfig’ object to the app.js file as shown below.
+If you are using a licensed verison of FusionCharts and have a valid license key, add the license object by either creating a new file with your license configuration inside it and import it in 'app.js' or add 'global.licenseConfig' object to the 'app.js' file as shown below.
 
 ```javascript
 import React, { Component } from "react";
