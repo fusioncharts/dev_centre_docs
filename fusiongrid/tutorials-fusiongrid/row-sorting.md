@@ -5,7 +5,7 @@ heading: Row Sorting
 ---
 
 For a faster way of analyzing and grouping relevant data, Fusiongrid allows users to sort columns in ascending and descending order. 
-To enable this feature on your grid include the property 'sortable' and set it to 'true', see the below syntax for reference:
+To enable this feature on your grid include the property `sortable` and set it to `true`, see the below syntax for reference:
 ```json
 config = {
 	columns: [{

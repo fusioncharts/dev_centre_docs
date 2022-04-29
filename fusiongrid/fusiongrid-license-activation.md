@@ -1,5 +1,5 @@
 ---
-title: License activation from v1.0 onwards | FusionGrid
+title: License activation from v1.1.1 onwards | FusionGrid
 description: Learn how to activate your FusionGrid license.
 heading: License activation
 ---

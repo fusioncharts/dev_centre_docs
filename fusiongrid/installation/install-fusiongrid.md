@@ -1,5 +1,5 @@
 ---
-title: Install FusionGrid Server SDKs | FusionGrid
+title: Overview | FusionGrid
 description: Installation steps
 heading: Overview and Install FusionGrid
 ---
@@ -206,7 +206,7 @@ var grid = new FusionGrid(container, dataTable, {});
 grid.render();
 ```
 ## See Your Grid
-![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
+![Automobile Ranking](/images/automobile_ranking_sample.png)
 
 ### Next Steps
 

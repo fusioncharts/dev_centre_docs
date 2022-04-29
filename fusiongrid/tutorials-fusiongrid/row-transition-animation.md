@@ -1,12 +1,12 @@
 ---
-title: Export chart as image | FusionGrid
+title: Row Animation | FusionGrid
 description: This article talks about using row animations
 heading: Row Animation 
 ---
 
 Enhance your data by adding transition animations to your rows. In this article, you will learn to add animation to your rows.
-In the 'rowOptions' object include the properties 'animateRows' and 'animateRowsDuration'. 
-Set your 'animateRows' to 'true' and choose a value for the duration of the animation, see the syntax below for reference:
+In the `rowOptions` object include the properties `animateRows` and `animateRowsDuration`. 
+Set your `animateRows` to `true` and choose a value for the duration of the animation, see the syntax below for reference:
 ```json
 config = {
     rowOptions: {
@@ -22,8 +22,8 @@ Before starting with the code, ensure that you have:
 - Downloaded and installed FusionGrid Server, and the server is running
 
 ## Code
-The grid configuration files are simple .json files. Below is an example of how the row transition animations work.
-Users can enable/disable the animation and control the animation duration.
+The grid configuration files are simple `.json` files. Below is an example of how the row transition animations work.
+Users can enable or disable the animation and control the animation duration.
 
 ```json
 var schema = [
@@ -106,4 +106,4 @@ grid.render();
 Based on the above configuration, you should see row transition animations on your grid like the illustration below:
 <iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/9w7badLp/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-For detailed information on the different methods and events to configure row animations, visit the [Methods](/fusiongrid/API_References/Fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
+For detailed information on the different methods and events to configure row animations, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.

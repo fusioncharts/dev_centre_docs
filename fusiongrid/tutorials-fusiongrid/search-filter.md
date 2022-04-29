@@ -1,11 +1,11 @@
 ---
-title: Export chart as image | FusionGrid
+title: Search Filter | FusionGrid
 description: This article talks about using column search filters
 heading: Search Filter
 ---
 
 For a faster way of analyzing and finding the relevant data, Fusiongrid implemented a quick search functuonality. 
-To include a search bar on your grid include the property 'searchable' and set it to 'true', see the below syntax for reference:
+To include a search bar on your grid include the property `searchable` and set it to `true`, see the below syntax for reference:
 ```json
 config = {
     defaultColumnOptions: {
@@ -96,9 +96,9 @@ Users can search for relevant data in their grid using the column search or by c
 There are two ways or searching when using API methods, instant search or pattern search. 
 * Instant Search - search columns based on your text input.
 * Pattern Search - use the `*` sign to help you find information quicker.
-** `*search-text`- displays results where search text is present after the `*` sign.
-** `search-text*`- displays results where search text is present before the `*` sign.
-** `*search-text*`- displays results where search text is present between the `*` signs.
+  * `*search-text`- displays results where search text is present after the `*` sign.
+  * `search-text*`- displays results where search text is present before the `*` sign.
+  * `*search-text*`- displays results where search text is present between the `*` signs.
 
 You can also perform a multiple column search to You can enable the multiple column search to be able to search one column and then search on another column.
 ```json
@@ -173,7 +173,7 @@ The above code will display as follows:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/dqaxpubf/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Or search columns using search methods.
-* `search` - Use this method to searche the grid. By default, the text provided will be used to search across all columns.
+* `search` - Use this method to search the grid. By default, the text provided will be used to search across all columns.
 * `getSearchText`- Use this method to get the search text passed by in the search input box. If this method is called without any argument, then it returns all the search text across all columns.
 * `resetSearch` - Use this method to reset the search applied in the grid. If this method is called without any argument, then it clears the search across all the columns.
 
@@ -236,4 +236,4 @@ document.getElementById("reset-btn").addEventListener("click", () => {
 The above code will display as follows:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/tgcs5wup/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-For detailed information on the different methods and events to configure the search filters, visit the [Methods](/fusiongrid/API_References/Fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
+For detailed information on the different methods and events to configure the search filters, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.

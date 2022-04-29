@@ -7,8 +7,8 @@ heading: Data Export
 Learn how to export all data rendered on your grid, use the method `export` to download all your grid data into a `CSV`, `JSON`, or `XLS` format file. 
 Users can export their grids in two ways, the `full` mode or the `view` mode. 
 
-`full` - exports all data is exported.
-`view`- exports only the data (rows and columns) present in the current grid instance view. 
+* `full` - exports all data is exported.
+* `view`- exports only the data (rows and columns) present in the current grid instance view. 
 
 ```json
 gridInstance.export({
@@ -122,4 +122,4 @@ document.getElementById("no-skip-btn").addEventListener("click", () => {
 Based on the code above the grid will look as follows:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/yes496qj/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-For detailed information on the different methods and events to export your grid, visit the [Methods](/fusiongrid/API_References/Fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
+For detailed information on the different methods and events to export your grid, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
