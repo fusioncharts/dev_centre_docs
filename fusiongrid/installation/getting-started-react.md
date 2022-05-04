@@ -6,7 +6,7 @@ heading: Install FusionGrid with React
 
 # Create a Grid in React
 
-We have built a lightweight and straightforward React component for the FusionGrid JavaScript grid Library. The 'react-fusiongrid' component allows you to include FusionGrid in your VueJS projects easily.
+We have built a lightweight and straightforward React component for the FusionGrid JavaScript grid Library. The 'react-fusiongrid' component allows you to include FusionGrid in your React projects easily.
 
 This page shows you how to install and render a grid using the 'react-fusiongrid' component.
 
@@ -17,19 +17,19 @@ This page shows you how to install and render a grid using the 'react-fusiongrid
 
 ## Installation 
 
-You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/vue-fusiongrid) and follow the respective steps below. 
+You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/react-fusiongrid) and follow the respective steps below. 
 
 ### Install from NPM
 
 Open the terminal and enter:
-```bash
--- npm install 'fusiongrid@1.1.0'
-—- npm install react-fusiongrid
+```json
+npm install fusiongrid
+npm install react-fusiongrid
 ```
 ### Install from Yarn
 
 Open the terminal and enter:
-```bash
+```json
 yarn add react-fusiongrid
 ```
 
@@ -37,16 +37,18 @@ yarn add react-fusiongrid
 
 Create your application using the 'create-react-app' command, and import react, 'react-fusiongrid', and ‘FusionGrid’ to your application. Here is an example:
 
-```bash
+```json
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ReactFusionGrid } from "react-fusiongrid";
 import FusionGrid from "@fusioncharts/fusiongrid";
 
 ReactFusionGrid.fgRoot(FusionGrid);
+```
+
 If you have created your app using tools like ‘webpack’ or ‘parcel’,
 Import ‘React’, ‘react-fusioncharts’ and ‘FusionCharts’  to your application as follows:
- 
+```json 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts/core';
@@ -136,15 +138,18 @@ Write the callback:
 
 As a separate function:
 ```json
-```javascript
 var gridEventCallback  = function (eventObj, dataObj) {
   [Code goes here]
 }
+```
 Or, as a component class method:
+```json
 gridEventCallback (eventObj, dataObj) {
   [Code goes here]
 }
+```
 Attach the callback to an event through the React-FG component:
+```json
 <ReactFC
   width={width}
   height={height}
@@ -152,7 +157,7 @@ Attach the callback to an event through the React-FG component:
   fgEvent-EVENTNAME={this.chartEventCallback}
 />
 ```
-Where the EVENTNAME property is replaced by the event you want to track.
+Where the 'EVENTNAME' property is replaced by the event you want to track.
 
 ## See your grid
 ![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
