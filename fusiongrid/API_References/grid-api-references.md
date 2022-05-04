@@ -60,24 +60,24 @@ The user can change the appearance of all the cells of a column, including the h
 
 ```json
 config = {
-	columns: [{
-		field: 'country_name',
-            class: 'country-class'
+    columns: [{
+        field: 'country_name',
+            class: 'a-css-class'
       }, {
-	      field: 'continent',
-            style: { background-color: '#cccccc', font-weight: 'bold' }
+          field: 'continent',
+            class: 'another-css-class'
       }]
 };
 ```
 Or change the appearance of just header cell like this:
 ```json
 config = {
-	columns: [{
-		field: 'country_name',
-            headerClass: 'country-header-class'
+    columns: [{
+        field: 'country_name',
+            headerClass: 'a-css-class-name'
       }, {
-	      field: 'continent',
-            headerStyle: { background-color: '#cccccc', font-weight: 'bold' }
+          field: 'continent',
+            headerClass: 'another-css-class-name'
       }]
 };
 ```
@@ -85,16 +85,16 @@ Or change the appearance of value cells like this:
 
 ```json
 config = {
-	columns: [{
-		field: 'country_name',
-            cellClass: 'country-header-class'
+    columns: [{
+        field: 'country_name',
+            cellClass: 'a-css-class-name'
       }, {
-	      field: 'continent',
-            cellStyle: { background-color: '#cccccc', font-weight: 'bold' }
+          field: 'continent',
+            cellClass: 'another-css-class-name'
       }]
 };
 ```
-We recommend using class only to style the grid. All class-related attributes are an array type, i.e., more than one class can be provided, and classes are applied in the order mentioned in the array.
+We recommend using class only to style the grid. 
 
 ### Column Grouping
 To create a multi-column group, the user needs to define group names and then columns as children of the group. Any column which has children is considered as a group. The Group header must not be linked to any field in the schema, if it’s specified, the field attribute will be ignored, and a warning is displayed.
@@ -111,50 +111,6 @@ config = {
        }]
 };
 ```
-### Setting Column Width
-By default, width is assigned to all columns, but users can change this to their preferences as follows:
-
-```json
-config = {
-    columns: [{
-        field: 'Age',
-        width: '50px'
-    }, {
-        field: 'Address',
-        width: '300px'
-    }]
-}
-```
-The minimum width and maximum width can also be mentioned for each column like this:
-
-```json
-config = {
-    columns: [{
-        field: 'Age',
-        width: '50px',
-        minWidth: '25px'
-    }, {
-        field: 'Address',
-        width: '300px',
-        minWidth: '50px',
-        maxWidth: '500px'
-    }]
-}
-```
-Use the minimum and maximum width to enforce abound, otherwise APIs like `sizeColumnsToFit()` or `sizeColumnsToContent()` will resize the column at their will.
-But APIs like `sizeColumnsToFit()` will override the width value provided by the user.
-
-### Text Wrapping
-Users can enable text wrapping as follows:
-```json
-config: {
-    columns: [{
-        field: 'Address',
-        width: '300px',
-        wrapText: true
-    }]
-}
-```
 
 ### Configuring Column Hover
 By default, column hover is not enabled, but the user can enable the setting and also define hover style as follows:
@@ -165,8 +121,7 @@ config: {
         width: '300px',
         hover: {
             enable: true,
-            style: style object/func,
-            class: css class name/func
+            class: 'css-class-name'
         }
     }]
 }
@@ -183,7 +138,7 @@ Here `params` contain three major properties -
 * `values` - values of all cells of the current record
 * `cellIndex` - index of the cell 
 
-There are a total of 5 column types available in the grid; `string`, `number`, `datetime`, `html`, and `chart.`
+There are a total of 4 column types available in the grid; `string`, `number`, `datetime`, and `html.`
 
 ### String Column Type
 The most common type, and you can use it as follows:
@@ -228,28 +183,13 @@ Here is how to use the `Datetime` style for your columns:
 
 ```json
 config = {
-	columns: [{
-		field: 'registration_date',
+    columns: [{
+        field: 'registration_date',
             headerText: 'Registration Date & Time',
             type: 'datetime'
       }]
 };
 ```
-You can also use formatters to be more specific with your data, as follows:
-
-```json
-config = {
-	columns: [{
-		field: 'registration_date',
-            headerText: 'Registration Date & Time',
-            type: 'datetime',
-            formatter: function(params) {
-                return FusionDataStore.formatDate(params.cellValue, '%d/%m/%Y %H:%M');
-            }
-      }]
-};
-```
-In the above example, the date is formatted displays like this: 27/10/2019 10:29
 
 ### HTML Column Type
 When custom HTML cells are needed.
@@ -284,7 +224,7 @@ Here is a list of properties supported in columns:
 <tr>
 	<td>`type`</td>
 	<td>String</td>
-	<td>Data type of the column. It accepts following values in string format: `string`, `number`, `datetime`, `html`, and `chart`. If this value is not provided, then by default it will take it from the FusionDataStore schema.</td>
+	<td>Data type of the column. It accepts following values in string format: `string`, `number`, `datetime`, and `html`. If this value is not provided, then by default it will take it from the FusionDataStore schema.</td>
 </tr>
 <tr>
 	<td>`headerText`</td>
@@ -310,23 +250,11 @@ Here is an example of setting up the function:
 
 : { class: function(params) { } }</td>
 </tr>
-	<tr>
-	<td>`style`</td>
-	<td>Object, Function</td>
-	<td>Helps customize the appearance of the entire column by passing CSS properties in the form of JSON object like:
-
-style : {
-   'background-color': 'offwhite'}</td>
-</tr>
+	
 <tr>
 	<td>`headerClass`</td>
 	<td>Object, Function</td>
 	<td>Works exactly like class but the class name will get applied to the column header only.</td>
-</tr>
-<tr>
-	<td>`headerStyle`</td>
-	<td>Object, Function</td>
-	<td>Works exactly like style but the class name will get applied to the column header only.</td>
 </tr>
 <tr>
 	<td>`cellClass`</td>
@@ -339,40 +267,14 @@ style : {
 	<td>Works exactly like style but the class name will get applied to the cells only.</td>
 </tr>
 <tr>
-	<td>`width`</td>
-	<td>String, Number</td>
-	<td>Width of the column. For example: 
-{ width: '100px' }</td>
-</tr>
-<tr>
-	<td>`minWidth`</td>
-	<td>String, Number</td>
-	<td>Minimum width of the column.</td>
-</tr>	
-<tr>
-	<td>`maxWidth`</td>
-	<td>String, Number</td>
-	<td>Maximum width of the column.</td>
-</tr>
-<tr>
 	<td>`enableHover`</td>
 	<td>boolean</td>
 	<td>Enables hover state for the column.</td>
 </tr>
 <tr>
-	<td>`hoverStyle`</td>
-	<td>Object, Function</td>
-	<td>Works exactly like style but the class name will get applied when you hover the cell only.</td>
-</tr>
-<tr>
 	<td>`hoverClass`</td>
 	<td>Object, Function</td>
 	<td>Works exactly like class but the class name will get applied when you hover the cell only.</td>
-</tr>
-<tr>
-	<td>`wrapText`</td>
-	<td>boolean</td>
-	<td>When set to true, wraps text in the cell.</td>
 </tr>
 <tr>
 	<td>`template`</td>
@@ -392,144 +294,7 @@ style : {
 	<td>Object</td>
 	<td>Allows you to configure tooltips appearing on the cell or column.</td>
 </tr>
-<tr>
-	<td>`chartConfig`</td>
-	<td>Object</td>
-	<td>Allows you to configure charts. It is only applicable when the type is set to chart.</td>
-</tr>
 </table>
-
-### Chart Column Type
-
-Similar to tooltips, we also have configurations for charts-based columns. Before you implement them, you have to ensure that the field is set to chart. After this, you have to define configurations in chartConfig. Here is the syntax:
-```json
-var gridConfig = {
- columns: [
-   {
-     field: 'field_1',
-     type: 'chart'
-     chartConfig: { }, // chart configs
-   },
- ]}
-```
-#### Chart configurations
-
-By default, `min` value and `max` values are picked from the data set and the chart is scaled accordingly. But the user can specify the min and max value themselves. 
-```json
-config = {
-    columns: [{
-        field: 'score',
-        type: 'chart',
-        chartConfig: {
-            type: 'bar',
-            minValue: 60,
-            maxValue: 120,
-	    showValue: false,
-	    showHundredPercentBar: true,
-	    valueTextPosition: 'top'/'bottom'/'left'/'right'/'inside',
-            valueTextAlignment: 'start'/'end'/'middle'
-        }
-    }]
-}
-```
-Or you can also use the following styles to configure your chart; bar color, value label class and style, hundred percent bar color and transparency.
-There are four components you could customize:
-Positive plot: Style of the plot when the value is positive (above 0).
-Negative plot: Style of the plot when the value is negative (below 0).
-Track: Style of the background track.
-Value text: Styles for the value text.
-
-To achieve this, there a few properties provided:
-positiveBarClass: Array of class names in string format when the plot value is positive.
-positiveBarStyle: Object with CSS properties when the plot value is positive.
-negativeBarClass:  Array of class names in string format when the plot value is negative.
-negativeBarStyle:  Object with CSS properties when the plot value is negative.
-hundredPercentBarClass: Array of class name in strings to be assigned to the progress track.
-hundredPercentBarStyle: Object of CSS properties to be assigned to the background.
-valueTextClass: Array of class names in string for value text.
-valueTextStyle: Object of CSS properties for value text.
-
-```json
-config = {
-    columns: [{
-        field: 'score',
-        type: 'chart',
-        chartConfig: {
-            style: {
-                positiveBarClass: ['class1', 'class2'],
-                positiveBarStyle: {style1: 'value1', style2: 'value2'},
-                negativeBarClass: ['class1', 'class2'],
-                negativeBarStyle: {style1: 'value1', style2: 'value2'},
-                hundredPercentBarClass: ['class1', 'class2'],
-                hundredPercentBarStyle: {style1: 'value1', style2: 'value2'},
-                valueTextClass: ['class1', 'class2'],
-                valueTextStyle: {style1: 'value1', style2: 'value2'}
-            }
-        }
-    }]
-}
-```
-Here is the list configurations provided in `chartConfig`:
-<table>
-<tr>
-		<th>Property Name</th>
-		<th>Data Type</th>
-		<th>Description</th>
-</tr>
-<tr>
-	<td>`type`</td>
-	<td>String</td>
-	<td>Type of chart to render. As of now only the bar chart is supported.</td>
-</tr>
-<tr>
-	<td>`minValue`</td>
-	<td>Number</td>
-	<td>Minimum value to be plotted in the chart. If the values which you have provided contain a smaller number than this value, then the minimum value will be overridden automatically.</td>
-</tr>
-<tr>
-	<td>`maxValue`</td>
-	<td>Number</td>
-	<td>Maximum value to be plotted in the chart. If the values which you have provided contain a larger number than this value, then the maximum value is automatically overridden.</td>
-</tr>
-<tr>
-	<td>`showValue`</td>
-	<td>Boolean</td>
-	<td>Show value labels that contain the respective data. By default, this is always true.</td>
-</tr>
-<tr>
-	<td>`showHundredPercentBar`</td>
-	<td>Boolean</td>
-	<td>Enable a background track for the bar chart. It is useful when you want to show progress or you know the expected upper limit. By default, this is set to false.</td>
-</tr>
-<tr>
-	<td>`valueTextPosition`</td>
-	<td>String</td>
-	<td>Defines the position of the value text in the chart. There are five acceptable values:
-1. top
-2. bottom
-3. left
-4. right
-5. inside</td>
-</tr>
-<tr>
-	<td>`valueTextAlignment`</td>
-	<td>String</td>
-	<td>When the valueTextPosition is set to inside, this helps you to define where in the data plot you want to render the value text. It accepts three values:
-1. start
-2. middle
-3. end</td>
-</tr>
-<tr>
-	<td>`barHeight`</td>
-	<td>String, Number</td>
-	<td>Sets the height of the bar chart.</td>
-</tr>
-<tr>
-	<td>`style`</td>
-	<td>Object, Function</td>
-	<td>Used to define styles for the chart.</td>
-</tr>
-</table>	
 
 ## Layout Configurations
 Allows you to define layout-related properties for the grid. It accepts only objects.
@@ -561,19 +326,7 @@ config = {
     }
 }
 ```
-### Layout Template
-This attribute only applies to card layout. Using this attribute, users can define the styling and layout. 
 
-```json
-config = {
-    layout: {
-        type: 'card',
-        cardTemplate: function(params) {
-            return '<div class="container"><span class="player-name">' + params.value['player_name'] +'</span>.......more html content.......</div>'
-        }
-    }
-}
-```
 ## Automatic Height
 Users can choose to enable the `autoHeight` attribute. If the volume of data is high, then vertical scrollbars appear and if the volume of data is low, then the rest of the space is left blank. To override this behavior, i.e. expand or shrink grid size based on its content, users can choose to enable the flag autoHeight. For example:
 ```json
@@ -585,7 +338,7 @@ config = {
 ```
 
 ## Number of cards in a row
-Use this attribute to configure the number of cards you wish to place in a row. Every card will have the same width and if any text cannot be accommodated in the assigned width, then ellipsis will appear unless wrapText is configured for the column. For example:  
+Use this attribute to configure the number of cards you wish to place in a row. Every card will have the same width and if any text cannot be accommodated in the assigned width, then an ellipsis will appear. For example:  
 
 ```json
 config = {
@@ -594,7 +347,6 @@ config = {
     }
 }
 ```
-Every card will have same width and if any text can not be accommodated in the assigned width then ellipsis will appear unless `wrapText` is configured for the column.
 
 Here is a list of configurations available under layout:
 <table>
@@ -612,11 +364,6 @@ Here is a list of configurations available under layout:
 	<td>`density`</td>
 	<td>String</td>
 	<td>Controls the density of rows in a grid, there are two options available: compact, comfortable. This is applicable for row layouts only.</td>
-</tr>
-<tr>
-	<td>`cardTemplate`</td>
-	<td>String</td>
-	<td>By default, FusionGrid arranges card layout according to the default design.</td>
 </tr>
 <tr>
 	<td>`autoHeight`</td>
