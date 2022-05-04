@@ -6,7 +6,7 @@ heading: Getting Started with Angular
 
 # Create a Grid in Angular
 
-We have built a lightweight and straightforward Angular component for the FusionGrid JavaScript grid Library. The 'angular-fusiongrid' component allows you to easily include FusionGrid in your VueJS projects.
+We have built a lightweight and straightforward Angular component for the FusionGrid JavaScript grid Library. The 'angular-fusiongrid' component allows you to easily include FusionGrid in your Angular projects.
 
 This page shows you how to install and render a grid using the 'angular-fusiongrid' component.
 
@@ -18,14 +18,14 @@ This page shows you how to install and render a grid using the 'angular-fusiongr
 
 ## Installation 
 
-You can install 'fusiongrid' and the 'react-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/vue-fusiongrid) and follow the respective steps below. 
+You can install 'fusiongrid' and the 'angular-fusiongrid' components via npm or Yarn. First, download directly all binaries files located on our [github repository](https://github.com/fusioncharts/angular-fusiongrid) and follow the respective steps below. 
 
 ### Install from NPM
 
 Open the terminal and enter:
 ```bash
--- npm install 'fusiongrid@1.1.0'
--–npm install angular-fusiongrid
+npm install fusiongrid
+npm install angular-fusiongrid
 ```
 
 ### Install from Yarn
@@ -71,7 +71,7 @@ import FusionGrid from "@fusioncharts/fusiongrid";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   schema = [
     {
         name: 'Rank',
@@ -138,10 +138,11 @@ export class AppComponent {
     });
   }
 }
-
+```
 
 Add the Fusion grid component selector in the app.component.html
 
+```json
 `<fusion-grid style="width: 1000px;height: 1000px;" [dataTable]="dataTable" 
     [gridConfig]="gridConfig">
 </fusion-grid>`;
