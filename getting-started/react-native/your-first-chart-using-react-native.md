@@ -394,7 +394,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-## See Your Chart
+## See Your Chart below
 
 You should be able to see the chart as shown below.
 
