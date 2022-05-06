@@ -234,6 +234,6 @@ var grid = new FusionGrid(container, dataTable, {
 grid.render();
 ```
 And your grid renders like this:
-<iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/3crybks7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/1wq37gc4/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 For detailed information on the different methods and events to configure row selection, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
