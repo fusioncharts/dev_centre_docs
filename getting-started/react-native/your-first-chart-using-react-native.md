@@ -223,15 +223,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('ReactNativeFusionCharts', () => App);
 ```
 
-To start the Expo application, run the following command: 
-```expo start```
-Expo should create a QR-code in your Command Prompt window.
-
-Next, open the Expo Go application on your device (this installation is needed in order to run your FusionCharts app on your device) and ensure your device is on the same Wi-Fi network as the machine where you are executing the Expo commands.
-
-Use the Expo Go scanner to scan the QR-code in your Command Prompt window. The application will start running on your device and display the charts accordingly. You can make changes to your code while running the application on your device, it will automatically reload after you save the changes.
-
-### See Your Chart
+## See Your Chart below
 
 You should be able to see the chart as shown below.
 
