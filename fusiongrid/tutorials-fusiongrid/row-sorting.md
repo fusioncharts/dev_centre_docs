@@ -163,7 +163,7 @@ document.getElementById("sort-btn").addEventListener("click", () => {
 });
 ```
 Here is how the grid renders:
-<iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/v4bup87o/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/umt8v9o1/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 For detailed information on the different methods and events to configure row sorting options, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
 

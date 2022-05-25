@@ -43,40 +43,38 @@ npm install fusiongrid
 ```
 ## Using FusionGrid
 
-After intallation we are ready to start of first grid. Define a schema and gather your data.
+After installation we are ready to start of first grid. Define a schema and gather your data.
 
 ### Grid preparation 
 
 The following is a step by step example on how to start your grid.
-```bash
+```json
 <!doctype html>
 <html>
   <head>
-   	 <!-- FusionGrid JS files -->
-	<script src="fusiongrid.js"></script>
-	<script src="fusiondatastore.js"></script>
-	<link rel="stylesheet" href="fusiongrid.css">
+        <!-- FusionGrid JS files -->
+    <script src="https://cdn.fusioncharts.com/fusiongrid/latest/fusiongrid.js"></script>
+    <link rel="stylesheet" href="https://cdn.fusioncharts.com/fusiongrid/latest/fusiongrid.css">
   </head>
   <body>
-	<h1>Hello from FusionGrid!</h1>
+    <h1>Hello from FusionGrid!</h1>
   </body>
 </html>
 ```
 
-Next, let’s add an HTML div along with 'width' and 'height' styles. This div will be used as a container to render the grid.
+Next, let’s add an 'HTML' div along with 'width' and 'height' styles. This div will be used as a container to render the grid.
 
-```bash
+```json
 <!doctype html>
 <html>
   <head>
-   	 <!-- FusionGrid JS files -->
-	<script src="fusiongrid.js"></script>
-	<script src="fusiondatastore.js"></script>
-	<link rel="stylesheet" href="fusiongrid.css">
+        <!-- FusionGrid JS files -->
+    <script src="https://cdn.fusioncharts.com/fusiongrid/latest/fusiongrid.js"></script>
+    <link rel="stylesheet" href="https://cdn.fusioncharts.com/fusiongrid/latest/fusiongrid.css">
   </head>
   <body>
-	<h1>Hello from FusionGrid!</h1>
-	<div id="grid-container" style="width: 100%; height: 450px;"></div>
+    <h1>Hello from FusionGrid!</h1>
+    <div id="grid-container" style="width: 100%; height: 450px;"></div>
   </body>
 </html>
 ```
@@ -135,7 +133,7 @@ Notice the order of data in the array items. It follows the same order as define
 Now that we have defined the schema and data, let’s pass it to FusionDataStore by creating a data table:
 
 ```json
-var dataStore = new FusionDataStore();
+var dataStore = new FusionGrid.DataStore();
 var dataTable = dataStore.createDataTable(data, schema, {
   enableIndex: false
 });
@@ -145,9 +143,6 @@ var dataTable = dataStore.createDataTable(data, schema, {
 Now, that we have all the dependencies ready, we render our grid as shown below.
 
 ```json
-import FusionGrid from 'fusiongrid';
-import 'fusiongrid/dist/fusiongrid.css';
-
 // Preparing the schema and data
 
 var schema = [
@@ -210,7 +205,7 @@ grid.render();
 
 ### Next Steps
 
-After you have installed FusionGrids Server for the language of your choice, refer to the following tutorials to get started with grids:
+After you have installed FusionGrid for the framework of your choice, refer to the following tutorials to get started with grids:
 
 - [Get Started with Angular](/fusiongrid/installation/getting-started-angular)
 - [Get Started with React](/fusiongrid/installation/getting-started-react)

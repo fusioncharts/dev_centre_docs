@@ -23,8 +23,8 @@ You can install 'fusiongrid' and the 'vue-fusiongrid' components via npm or Yarn
 
 Open the terminal and enter:
 ```bash
--- npm install 'fusiongrid@1.1.0'
-npm install vue-fusiongrid --save
+npm install fusiongrid
+npm install vue-fusiongrid
 ```
 
 ### Install from Yarn
@@ -41,7 +41,7 @@ You can add the vue-fusiongrid component to your project by registering globally
 #### Registering globally as a plugin 
 
 Import the 'createApp', 'vue-fusiongrid', and 'FusionGrid' components in the main app file, as follows:
-```bash
+```json
 import { createApp } from 'vue'
 import App from './App.vue'
 
@@ -54,13 +54,13 @@ Next, register it as plugin in Vue object
 
 const app = createApp(App);
 app.use(VueFusiongrid, FusionGrid);
-This allows the ‘vue-fusiongrid’ component to become available everywhere in your app.
 ```
+This allows the 'vue-fusiongrid' component to become available everywhere in your application.
 
 #### Registering locally in your component 
 
 Import the chart component from the ‘vue-fusiongrid’ package in your component file and register it locally.
-```bash
+```json
 // import FusionGrid modules and resolve dependency
 import FusionGrid from 'fusiongrid';
 import "fusiongrid/dist/fusiongrid.css";
@@ -79,7 +79,7 @@ This allows the 'vue-fusiongrid' component to be present only on specific compon
 ### Working with APIs
 
 To call APIs we need the fusiongrid object. To get the fusiongrid object from the component we can use the props 'getFGInstance', as shown below:
-```bash
+```json
 <vue-fusiongrid
   :width="width"
   :height="height"
@@ -89,7 +89,7 @@ To call APIs we need the fusiongrid object. To get the fusiongrid object from th
 />
 ```
 Now, we can access the fusiongrid object from 'fusiongridObj' and invoke API from the object.
-```bash
+```json
 export default {
   name: 'App',
   components: {
@@ -105,12 +105,12 @@ export default {
     }
   }
 }
-```bash
+```
 
 ### Working with Events
 
 To attach event listeners to FusionGrid, you can use the 'v-on' or '@' operator in the vue-fusiongrid component.
-```bash
+```json
 <vue-fusiongrid
   :width="width"
   :height="height"
@@ -118,7 +118,7 @@ To attach event listeners to FusionGrid, you can use the 'v-on' or '@' operator 
   :config="config"
   @rowClicked="rowClickedHandler"
 />
-```bash
+```
 In this case, the 'rowClickedHandler' component will be invoked when the user clicks on any row from the fusion grid.
 
 ## Configure the Grid
@@ -198,7 +198,7 @@ Here's HTML template for the above example:
     :width="900"
     :height="600"
   />
-  Fusingrid will render here...
+  FusionGrid will render here...
 </div>
 ```
 
