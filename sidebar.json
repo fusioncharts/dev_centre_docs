@@ -2711,12 +2711,11 @@
       ]
    },
    {
-      "title": "Fusiongrid",
-
+    "title": "Fusiongrid",
     "icon": "fc_university",
     "description": "Render high performance Grids",
-   "longDescription": "Learn how to create powerful grids on your server",
-      "visibility": false,
+    "longDescription": "Learn how to create powerful grids on your server",
+      "visibility": true,
       "children": [
          {
             "title": "Overview",
