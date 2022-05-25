@@ -6,7 +6,7 @@ heading: Create a Chart in React Native using FusionCharts
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. The 'react-native-fusioncharts' component allows you to easily add rich and interactive charts to any React-Native project. On this page, we'll see how to install FusionCharts and render a chart using the 'react-native-fusioncharts' component.
 
-## Prerequisite (expo cli /react-native cli) 
+## Prerequisite (expo cli / react-native cli) 
 
 We are assuming that you have a 'react-native project' up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your React-Native project setup.<br/>
 
