@@ -104,6 +104,6 @@ var grid = new FusionGrid(container, dataTable, {
 grid.render();
 ```
 Based on the above configuration, you should see row transition animations on your grid like the illustration below:
-<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/9w7badLp/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/9w7badLp/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 For detailed information on the different methods and events to configure row animations, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.

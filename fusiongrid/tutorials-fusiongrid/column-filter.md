@@ -227,7 +227,7 @@ var grid = new FusionGrid(container, dataTable, {
 grid.render();
 ```
 Below is how the grid displays:
-<iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/azcvfu8e/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/azcvfu8e/3/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 For detailed information on the different methods and events to configure column filters, visit the [Methods](/fusiongrid/API_References/fusiongrid-methods) and [Events](/fusiongrid/API_References/FusionGrid_Events) page.
 
