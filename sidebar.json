@@ -382,6 +382,10 @@
                               "path": "/getting-started/react-native/your-first-chart-using-react-native"
                            },
                            {
+                              "title": "React-Native Features",
+                              "path": "/getting-started/react-native/react-native-features"
+                           },
+                           {
                               "title": "Rendering Different Charts",
                               "path": "/getting-started/react-native/rendering-different-charts-using-react-native"
                            }
@@ -2707,6 +2711,7 @@
       ]
    },
    {
+
       "title": "FusionGrid",
       "icon": "fc_grid",
       "description": "Render high performance grids",
