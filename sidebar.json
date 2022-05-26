@@ -2710,7 +2710,7 @@
       "title": "FusionGrid",
       "icon": "fc_grid",
       "description": "Render high performance grids",
-      "longDescription": "Learn how to create powerful grids in your Dashboards",
+      "longDescription": "Learn how to create powerful grids in your dashboards",
       "visibility": true,
       "children": [
          {
