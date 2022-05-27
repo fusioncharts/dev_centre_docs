@@ -4,7 +4,7 @@ description: This article talks about using column search filters
 heading: Search Filter
 ---
 
-For a faster way of analyzing and finding the relevant data, Fusiongrid implemented a quick search functuonality. 
+For a faster way of analyzing and finding the relevant data, FusionGrid implemented a quick search functuonality. 
 To include a search bar on your grid include the property `searchable` and set it to `true`, see the below syntax for reference:
 ```json
 config = {
