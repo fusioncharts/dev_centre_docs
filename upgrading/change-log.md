@@ -22,10 +22,11 @@ heading: Version 3.19.x
 
 <h4>Fixes</h4>
 
+-  Starting FusionCharts version 3.19, the 'addGroup' method renders annotations correctly. Previously, the 'addGroup' method removed existing Annotations.
 -  Starting FusionCharts version 3.19, Android applications no longer crash when exporting charts using the react-native plugin.
 -  Spline charts now display all datasets correctly. Previously, the data plots did not display correctly if one dataset had zero values. 
 -  Legend items in Timeseries charts are now working correctly. Previously, when toggled, the legend shifted positions upon mouse hovering. 
--  The 'BoxandWhisker2D' chart shows all data correctly when exported in XLSX or CSV format. Previously, the exported chart displayed erroneous null values.
+-  The 'BoxandWhisker2D' chart shows all data correctly when exported in 'XLSX' or 'CSV' format. Previously, the exported chart displayed erroneous null values.
 -  All items in Sankey charts are visible and work as expected. Previously, some tooltips and values were not fully visible when there was a large difference in values.
 -  Using the vline attribute in Line charts now works correctly. Previously, if 'vline' was set to true for the first data plot, the data plot did not display.
 -  The 'Dragnode' chart displays all tooltips correctly when hovering over any part of each node. Previously, some nodes did not display tooltips when hovered over.
