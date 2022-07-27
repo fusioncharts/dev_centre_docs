@@ -38,9 +38,25 @@ Since datasets contain values equal to zero, the data plots fail to render.
 </iframe><br/>
 Data plots render properly. 
 
-## Improved charts readability
+## Improved Legend container
 
-Overlapping and Legend container
+Legend container
+
+## Prevent Overlapping text
+
+FusionCharts version 3.19 improved Multiple Series chart readability by avoiding overlapping of data plots with same or similar values. This improvement allows users to view data more clearly.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/protoEvangelion/7528h4j3/5/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<br/>
+Dataplots overlap when using same or similar values.
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2082) 1" src="https://codepen.io/fusioncharts/embed/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6">
+  (SUPPORT-2082) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<br/>
+Dataplots do not overlap, making the chart more readable.
 
 ## Treemap chart renders properly
 
