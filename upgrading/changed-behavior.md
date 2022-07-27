@@ -10,14 +10,14 @@ This section is for users who are using previous version of FusionCharts in thei
 
 FusionCharts 3.19.0 updated the map of India to showcase Ladakh as a separate entity. The Entity of Ladakh is now shown separated from Jammu and Kashmir, for more details see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
 
-[BeforeImage]
+![Map of India before](/assets/images/IndiaMapBefore.png)<br/>
 Here, Ladakh is part on the Jammu and Kashmir territory.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="India(QE-SUPPORT-2049)-5" src="https://codepen.io/fusioncharts/embed/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9">
   India(QE-SUPPORT-2049)-5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+</iframe><br/>
 Here, Ladakh is shown as a separate entity to Jammu and Kashmir.
 
 ## Fixed tendency to render all data plots properly
