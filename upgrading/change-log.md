@@ -6,12 +6,12 @@ heading: Version 3.19.x
 
 <h2 class="sub-heading">Version 3.19.0</h2>
 
-<p class="release-date">September 21, 2022</p>
+<p class="release-date">August 02, 2022</p>
 
 <h4>New Features</h4>
 
--  FusionCharts Version 3.19.0 introduces 
--  FusionCharts Version 3.19.0 introduces 
+-  FusionCharts Version 3.19.0 introduces the new Grouped Stacked Bar chart called 'MSStackedBar2D' chart. 
+-  FusionCharts version 3.19 added the functionality to show the percentage value with the corresponding legend in 'Doughnut' and 'Pie' chart type. 
 
 <h4>Improvements</h4>
 
