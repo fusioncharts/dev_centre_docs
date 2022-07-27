@@ -24,7 +24,7 @@ heading: Version 3.19.x
 
 -  Starting FusionCharts version 3.19.0, the 'addGroup' method renders annotations correctly. Previously, the 'addGroup' method removed existing Annotations.
 -  Starting FusionCharts version 3.19.0, Android applications no longer crash when exporting charts using the react-native plugin.
--  Spline charts now display all datasets correctly. Previously, the data plots did not display correctly if one dataset had zero values. 
+-  Spline charts now display all datasets correctly. Previously, the data plots did not display correctly if one dataset had zero as a value. 
 -  Legend items in Timeseries charts are now working correctly. Previously, when toggled, the legend shifted positions upon mouse hovering. 
 -  The 'BoxandWhisker2D' chart shows all data correctly when exported in 'XLSX' or 'CSV' format. Previously, the exported chart displayed erroneous null values.
 -  FusionCharts version 3.19.0 updated the license activation mechanism so that once the user adds the license activation code, the charts render without the watermark logo. 
