@@ -8,11 +8,15 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Updated Map of India
 
-[description]
+FusionCharts 3.19.0 updated the map of India to showcase Ladakh as a separate entity. The Entity of Ladakh is now shown separated from Jammu and Kashmir, for more details see [Ladakh map]( https://www.fusioncharts.com/fusionmaps).
+
+[BeforeImage]
+
+[AfterImage]
 
 ## Spline charts render data plots properly
 
-Starting FusionCharts 3.18.0 [description]. Know more [here](https://en.wikipedia.org/wiki/Rounding#Round_half_away_from_zero).
+Starting FusionCharts 3.19.0 [description].
 
 ## Improved charts readability
 
@@ -20,7 +24,11 @@ Overlapping and Legend container
 
 ## Treemap chart renders properly
 
-[description]
+When using 'Treemap' charts, at any point where node's value was zero, the recursion was breaking and nodes were not displaying. FusionCharts version 3.19.0 fixed the issue by allowing all numbers in node's value, including zeros.
+
+[BeforeFix]
+
+[AfterFix]
 
 ## Improved PDF encoding
 
