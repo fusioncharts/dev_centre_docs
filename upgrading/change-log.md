@@ -4,7 +4,7 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.19.x
 ---
 
-<h2 class="sub-heading">Version 3.19.0</h2>
+<h2 class="sub-heading">Version 3.19</h2>
 
 <p class="release-date">August 02, 2022</p>
 
