@@ -4,10 +4,12 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.18.x.
+This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.19.x.
 
-## Accessibility Theme
+## Group Stacked Bar Charts
 
-FusionCharts 3.18 introduces an accessibility theme enabling developers to create WCAG 2.1 compliant charts.
+FusionCharts 3.19 introduces 
 
-{% embed_chart whats-new-accessibility-theme.js %}
+## Added Percentage value to Pie and Doughnut Charts
+
+FusionCharts 3.19 introduces
