@@ -56,6 +56,17 @@ Chart rendered incorrectly
 </iframe><br/>
 Chart renders correctly
 
-## Improved PDF encoding
+## Sankey Charts render correctly
+Sankey charts with significant difference in values render properly. Previously, when Sankey charts had signifincant difference in values, the link between values and the tooltip did not rendered correctly. 
 
-[description]
+<iframe width="100%" height="300" src="//jsfiddle.net/jbx46nmu/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> <br/>
+Before the fix, the chart did not render properly.
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Support-2163-1" src="https://codepen.io/fusioncharts/embed/RwMNKZX/598e3bdb610d060c458ae3d3888b0969?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/RwMNKZX/598e3bdb610d060c458ae3d3888b0969">
+  Support-2163-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe><br/>
+Sankey charts render successfully even when there is a significant difference between values.
+
+
