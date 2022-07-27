@@ -14,9 +14,13 @@ FusionCharts 3.19.0 updated the map of India to showcase Ladakh as a separate en
 
 [AfterImage]
 
-## Spline charts render data plots properly
+## Fixed tendency to render all data plots properly
 
-Starting FusionCharts 3.19.0 [description].
+FusionCharts 3.19.0 updated the value for 'mintendency' in order to fix the tendency issue causing the chart to not plot all datasets properly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
+
+[BeforeFix]
+
+[AftterFix]
 
 ## Improved charts readability
 
