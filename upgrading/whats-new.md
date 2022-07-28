@@ -17,7 +17,15 @@ FusionCharts verifies that the 'React-Native' integration component versions 16,
 
 ## Group Stacked Bar Charts
 
-FusionCharts 3.19 introduces 
+FusionCharts 3.19 introduces the new 'MSStackedBar2D' chart. The Group Stacked Bar chart help users to represent data values as a sum of two or more values. 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="GroupStacked2dChart(QE-SUPPORT-2051)-4" src="https://codepen.io/fusioncharts/embed/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5">
+  GroupStacked2dChart(QE-SUPPORT-2051)-4</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe><br/>
+
+For more information, see our [Stacked Charts](https://www.fusioncharts.com/dev/chart-guide/standard-charts/stacked-charts) documentation.
 
 ## Support Percentage values in Pie and Doughnut Charts
 
@@ -28,3 +36,5 @@ FusionCharts 3.19 introduces the functionality, 'showpercentagrValues' that show
   (SUPPORT-2080) 5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe><br/>
+
+For more information, see our [Attributes](https://www.fusioncharts.com/dev/chart-attributes) documentation.
