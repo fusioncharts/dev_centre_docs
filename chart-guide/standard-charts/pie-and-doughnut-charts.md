@@ -124,9 +124,13 @@ Refer to the code given below:
 
 A pie2D chart configured to show percent values on the chart looks like this:
 
-{% embed_chart standard-charts-pie-and-doughnut-charts-example-5.js %}
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2080) 5" src="https://codepen.io/fusioncharts/embed/qBoEqmj/59b750adb2d81d61befe2bbbf762a29a?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/qBoEqmj/59b750adb2d81d61befe2bbbf762a29a">
+  (SUPPORT-2080) 5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
-Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
+Click [here](https://codepen.io/fusioncharts/pen/qBoEqmj/59b750adb2d81d61befe2bbbf762a29a) to edit the pie 2D chart.
 
 ## Place values inside the Pie/Doughnut chart
 
