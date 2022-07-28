@@ -298,6 +298,44 @@ The list of all the plot types and their respective sub-parts are listed below:
 }
 ```
 
+#### Color individual data plots
+
+You can specify a custom color for each data plot. Specify your custom palette for data plots by providing a list of hex colors using the `paletteColors` attribute.
+
+**Syntax**:
+
+```json
+ {
+    name: "Date",
+    type: "date",
+    format: "%-d/%-m/%Y"
+  },
+  {
+    name: "Low",
+    paletteColor: "#2600EE",
+    type: "number"
+  },
+  {
+    name: "High",
+    paletteColor: "#2632EE",
+    type: "number"
+  },
+  {
+    name: "Mean",
+
+    type: "number"
+  }
+```
+
+Example:
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Support-2145-2" src="https://codepen.io/fusioncharts/embed/ExEaZed/045e884e80f48761d744c0c73d8df3d8?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/ExEaZed/045e884e80f48761d744c0c73d8df3d8">
+  Support-2145-2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+
 ### Y-axis Configuration
 
 In FusionTime, you can also style specific data plots. These styling will be scoped to only the set of plots for which the style has been defined. In the `yAxis` object the `style` object is defined under the `plot` object. The rest of the steps are the same as the plot configuration method.
