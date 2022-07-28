@@ -12,12 +12,12 @@ heading: Version 3.19.x
 
 -  FusionCharts Version 3.19 introduces the new Grouped Stacked Bar chart called 'MSStackedBar2D' chart. 
 -  FusionCharts version 3.19 added the functionality to show the percentage value with the corresponding legend in 'Doughnut' and 'Pie' chart type. 
--  FusionCharts version 3.19 updated support for 'React-Native' and 'Vue' integrations. 
+-  FusionCharts version 3.19 updated the integration support for 'Angular' versions 11, 12, and 13 and 'React-Native' versions 16, 17, and 18. 
 
 <h4>Improvements</h4>
 
 -  FusionCharts version 3.19 improved the PDF encoding allowing users to save and export PDF files on a local server. Previously, saving a PDF resulted in a corrupted file.
--  Starting FusionCharts version 3.19, the FusionMap feature now shows the Indian region of Ladakh as a separate entity. For more information, see [Ladakh map]( https://www.fusioncharts.com/fusionmaps).
+-  Starting FusionCharts version 3.19, the FusionMap feature now shows the Indian region of Ladakh as a separate entity. 
 -  FusionCharts version 3.19 allows users to define the legend container's width.
 -  FusionCharts version 3.19 improved the readability of 'Multiseries' charts by preventing plotted value series from overlapping when using the same or similar values.
 
