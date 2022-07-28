@@ -40,7 +40,17 @@ Data plots render properly.
 
 ## Improved Legend container
 
-Legend container
+FusionCharts version 3.19 imporved chart readability by allowing users to define the width fot the Legend container. This option gives users to posibility to display the legend contianer without any scrollbars, therefore displaying all the information.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/4v8jqwrb/15/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe><br/>
+Legend container requires a scrollbar to show all information.
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT 2099-1" src="https://codepen.io/fusioncharts/embed/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5">
+  SUPPORT 2099-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe><br/>
+Adjusted Legend container to display all information without the need of a scrollbar.
 
 ## Prevent Overlapping text
 
