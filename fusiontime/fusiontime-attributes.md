@@ -907,6 +907,46 @@ new FusionCharts({
 	</tr>
 </table>
 
+### Plot Color Configuration
+
+You can specify a custom color for each data plot. Specify your custom palette for data plots by providing a list of hex colors using the `paletteColors` attribute.
+
+```javascript
+{
+    name: "Date",
+    type: "date",
+    format: "%-d/%-m/%Y"
+  },
+  {
+    name: "Low",
+    paletteColor: "#2600EE",
+    type: "number"
+  },
+  {
+    name: "High",
+    paletteColor: "#2632EE",
+    type: "number"
+  },
+  {
+    name: "Mean",
+
+    type: "number"
+  }
+```
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`paletteColor`</td>
+		<td>Array(String)</td>
+		<td>Allows you to specify your custom list of hex colors for the data items.</td>
+	</tr>
+</table>
+
 ## Crossline
 
 You can add style to the crossline using `style` object under `crossline` object.
