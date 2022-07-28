@@ -4,6 +4,20 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.6.0</h2>
+
+<p class="release-date">August 02, 2021</p>
+
+<h4>Improvements</h4>
+
+-
+
+<h4>Fixes</h4>
+
+- FusionTime version 2.6 corrected the Data Market tooltip behavior to show correct values when hovered over the identifier markers. Previously, the data marker tooltip displayed inaccurate data when hovered over the data plots.
+- 
+
+
 <h2 class="sub-heading">Version 2.5.0</h2>
 
 <p class="release-date">29th April, 2021</p>
