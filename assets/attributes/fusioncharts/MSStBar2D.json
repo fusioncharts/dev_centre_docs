@@ -1,8 +1,8 @@
 [
   {
-   "table": "Functional Attributes",
-   "attrs": [
-   {
+    "table": "Functional Attributes",
+    "attrs": [
+      {
         "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
         "range": "0/1",
         "type": "Boolean",
@@ -1808,7 +1808,7 @@
       },
       {
         "description": "You can add a caption for the entire legend by setting the same here.",
-        "range": " ",
+        "range": " ",
         "type": "String",
         "name": "legendCaption"
       },
@@ -2053,7 +2053,7 @@
       },
       {
         "description": "This option helps you specify the position of the thousand separator.",
-        "range": " ",
+        "range": " ",
         "type": "Number",
         "versionsince": "3.2.2 - SR3",
         "name": "thousandSeparatorPosition"
@@ -2736,7 +2736,7 @@
       },
       {
         "description": "Label for the vertical separator line, if to be shown. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
-        "range": " ",
+        "range": " ",
         "type": "String",
         "name": "label"
       },
@@ -2928,7 +2928,7 @@
       },
       {
         "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
-        "range": " ",
+        "range": " ",
         "type": "String",
         "name": "displayValue"
       },
@@ -3130,7 +3130,7 @@
       },
       {
         "description": "Custom tool-text for this trendline/zone.",
-        "range": " ",
+        "range": " ",
         "type": "String",
         "name": "toolText"
       }
@@ -3187,7 +3187,7 @@
       },
       {
         "description": "Sets the font size for the trend-line display value. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
-        "range": " ",
+        "range": " ",
         "type": "Number",
         "versionsince": "3.8.0",
         "name": "trendValueFontSize"
