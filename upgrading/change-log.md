@@ -10,8 +10,8 @@ heading: Version 3.19.x
 
 <h4>New Features</h4>
 
--  FusionCharts Version 3.19 introduces the new Grouped Stacked Bar chart called 'MSStackedBar2D' chart. 
--  FusionCharts version 3.19 added the functionality to show the percentage value with the corresponding legend in 'Doughnut' and 'Pie' chart type.
+-  FusionCharts Version 3.19 introduces the new Grouped Stacked Bar chart called the 'MSStackedBar2D' chart. 
+-  FusionCharts version 3.19 added the functionality to show the percentage value with the corresponding legend in the 'Doughnut' and 'Pie' chart type.
 -  FusionCharts version 3.19 updated 'Angular' integration to support 'Angular' versions 11, 12, and 13.
 -  FusionCharts version 3.19 updated 'React-Native' integration to support 'React-Native' versions 16, 17, and 18.
 
@@ -31,9 +31,9 @@ heading: Version 3.19.x
 -  The 'BoxandWhisker2D' chart shows all data correctly when exported in 'XLSX' or 'CSV' format. Previously, the exported chart displayed erroneous null values.
 -  FusionCharts version 3.19 updated the license activation mechanism so that once the user adds the license activation code, the charts render without the watermark logo. 
 -  All items in 'Sankey' charts are visible and work as expected. Previously, some tooltips and values were not fully visible when there was a large difference in values.
--  Starting FusionCharts version 3.19, Hovering over legends displays all 'plothighlighteffect' values as expected. Previously, if ‘plotHighlightEffect’ is enabled, then any 'plothighlighteffect' applied at the dataset level did not display upon hovering on the legends.
+-  Starting FusionCharts version 3.19, Hovering over legends displays all 'plothighlighteffect' values as expected. Previously, if ‘plotHighlightEffect’ is enabled, then any 'plothighlighteffect' applied at the dataset level did not display upon hovering over the legends.
 -  Exporting using the ASP.NET private export handler is working correctly. PDFs are readable and exported as expected. Previously, the exported PDF was not readable.
 -  Using the 'vline' attribute in Line charts now works correctly. Previously, if 'vline' was set to true for the first data plot, the data plot did not display.
--  The 'Treemap' chart renders correctly when using the 'sliceanddice' algorithm. Previously, if using the 'sliceanddice' algorithm with 'vertical' and 'horizontal' slicing mode, the chart did not render correctly.
+-  The 'Treemap' chart renders correctly when using the 'sliceanddice' algorithm. Previously, the chart did not render correctly if using the 'sliceanddice' algorithm with 'vertical' and 'horizontal' slicing mode.
 -  The 'Dragnode' chart displays all tooltips correctly when hovering over any part of each node. Previously, some nodes did not display tooltips when hovered over.
--  FusionCharts version 3.19 loads and works as expected with Zkoss library. Previously, loading the library resulted in an error message in the console.
+-  FusionCharts version 3.19 loads and works as expected with theZkoss library. Previously, loading the library resulted in an error message in the console.
