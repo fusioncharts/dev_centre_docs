@@ -10,7 +10,7 @@ heading: Release Notes
 
 <h4>Improvements</h4>
 
-- FusionTime version 2.6 improved chart visualization by allowing users to use the new 'paletteColor' feature to specify a custom color for an individual series at plot level in a column visualization. 
+- FusionTime version 2.6 improves the chart visualization by allowing users to use the new 'paletteColor' feature to specify a custom color for an individual series at plot level in a column visualization. 
 
 <h4>Fixes</h4>
 
