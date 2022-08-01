@@ -4,25 +4,25 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.19.x.
+This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.19.x.
 
 ## Updated Map of India
 
-FusionCharts 3.19 updated the map of India to showcase Ladakh as a separate entity. The Entity of Ladakh is now shown separated from Jammu and Kashmir, for more details see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
+FusionCharts 3.19 updated the map of India to showcase Ladakh as a separate region. The Entity of Ladakh is now shown as a distinct region from Jammu and Kashmir. For more details, see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
 
 ![Map of India before](/assets/images/IndiaMapBefore.png)<br/>
-Here, Ladakh is part on the Jammu and Kashmir territory.
+Here, Ladakh is part of the Jammu and Kashmir territory.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="India(QE-SUPPORT-2049)-5" src="https://codepen.io/fusioncharts/embed/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9">
   India(QE-SUPPORT-2049)-5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe><br/>
-Here, Ladakh is shown as a separate entity to Jammu and Kashmir.
+Here, Ladakh is shown as a separate region from Jammu and Kashmir.
 
 ## Fixed tendency to render all data plots properly
 
-FusionCharts 3.19 updated the value for 'mintendency' in order to fix the tendency issue causing the chart to not plot all datasets properly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
+FusionCharts 3.19 updated the value for 'mintendency' in order to fix the tendency issue, causing the chart not to plot all datasets correctly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="SplineBeforeFix" src="https://codepen.io/fusioncharts/embed/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689">
@@ -36,11 +36,11 @@ Since datasets contain values equal to zero, the data plots fail to render.
   SplineAfterFix</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe><br/>
-Data plots render properly. 
+Data plots render correctly. 
 
 ## Improved Legend container
 
-FusionCharts version 3.19 imporved chart readability by allowing users to define the width fot the Legend container. This option gives users to posibility to display the legend contianer without any scrollbars, therefore displaying all the information.
+FusionCharts version 3.19 improves the chart readability by allowing users to define the width of the Legend container. In addition, this option allows users to display the legend container without any scrollbars, therefore displaying all the information.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/4v8jqwrb/15/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe><br/>
 Legend container requires a scrollbar to show all information.
@@ -50,15 +50,15 @@ Legend container requires a scrollbar to show all information.
   SUPPORT 2099-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe><br/>
-Adjusted Legend container to display all information without the need of a scrollbar.
+Adjusted the Legend container to display all information without needing for a scrollbar.
 
 ## Prevent Overlapping text
 
-FusionCharts version 3.19 improved Multiple Series chart readability by avoiding overlapping of data plots with same or similar values. This improvement allows users to view data more clearly.
+FusionCharts version 3.19 improves the Multiple Series chart readability by avoiding overlapping of data plots with the same or similar values. This improvement allows users to view data more clearly.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/protoEvangelion/7528h4j3/5/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 <br/>
-Dataplots overlap when using same or similar values.
+Data plots overlap when using the same or similar values.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2082) 1" src="https://codepen.io/fusioncharts/embed/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6">
@@ -66,11 +66,11 @@ Dataplots overlap when using same or similar values.
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 <br/>
-Dataplots do not overlap, making the chart more readable.
+Data plots do not overlap, making the chart more readable.
 
 ## Treemap chart renders properly
 
-When using 'Treemap' charts, at any point where node's value was zero, the recursion was breaking and nodes were not displaying. FusionCharts version 3.19 fixed the issue by allowing all numbers in node's value, including zeros.
+When using 'Treemap' charts, at any point where the node's value was zero, the recursion was breaking, and nodes were not displaying. FusionCharts version 3.19 fixed the issue by allowing all numbers in the node's value, including zeros.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/wszkgxh0/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe><br/>
 Chart rendered incorrectly
@@ -83,10 +83,10 @@ Chart rendered incorrectly
 Chart renders correctly
 
 ## Sankey Charts render correctly
-Sankey charts with significant difference in values render properly. Previously, when Sankey charts had signifincant difference in values, the link between values and the tooltip did not rendered correctly. 
+Sankey charts with significant differences in values render correctly. Previously, when Sankey charts had a considerable value difference, the link between values and the tooltip did not render correctly.  
 
 <iframe width="100%" height="300" src="//jsfiddle.net/jbx46nmu/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> <br/>
-Before the fix, the chart did not render properly.
+Before the fix, the chart did not render correctly.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Support-2163-1" src="https://codepen.io/fusioncharts/embed/RwMNKZX/598e3bdb610d060c458ae3d3888b0969?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/RwMNKZX/598e3bdb610d060c458ae3d3888b0969">
