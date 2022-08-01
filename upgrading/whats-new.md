@@ -8,16 +8,16 @@ This section is for users who are using the previous version of FusionCharts in 
 
 ## Updated Support for Angular and React-Native
 
-FusionCharts version 3.19 updated support for the 'Angular'and 'React-Native' integrations. 
+FusionCharts version 3.19 updates support for the 'Angular'and 'React-Native' integrations. 
 
-FusionCharts verifies that the 'Angular' integration component versions 11, 12, and 13 enables you to add JavaScript charts in your Angular application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
+FusionCharts verifies that the 'Angular' integration component versions 11, 12, and 13 enable you to add JavaScript charts to your Angular application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
 
-FusionCharts verifies that the 'React-Native' integration component versions 16, 17, and 18 enables you to add JavaScript charts in your React application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [React-Native](https://www.npmjs.com/package/react-fusioncharts).
+FusionCharts verifies that the 'React-Native' integration component versions 16, 17, and 18 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [React-Native](https://www.npmjs.com/package/react-fusioncharts).
 
 
 ## Group Stacked Bar Charts
 
-FusionCharts 3.19 introduces the new 'MSStackedBar2D' chart. The Group Stacked Bar chart help users to represent data values as a sum of two or more values. 
+FusionCharts 3.19 introduces the new 'MSStackedBar2D' chart. The Group Stacked Bar chart helps users to represent data values as a sum of two or more values. 
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="GroupStacked2dChart(QE-SUPPORT-2051)-4" src="https://codepen.io/fusioncharts/embed/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5">
