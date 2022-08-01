@@ -363,7 +363,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/) to edit the above chart.
 
-## Configure Legend width
+## Configure Legend Width
 
 You can choose the Legend container's width by using the 'legendWidth' attribute.  
 
