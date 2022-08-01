@@ -101,13 +101,13 @@ Click [here](http://jsfiddle.net/fusioncharts/g4bdb3f2/) to edit the above chart
 
 ## Show Percent Values and Actual Values
 
-By default, for a pie chart, the actual data values are shown on the chart as well as in the tool-tips. However, you can choose to show percent values on the chart while retaining the actual values in tool-tips.
+By default, for a pie chart, the actual data values are shown on the chart and in the tooltips. However, you can choose to show percent values on the chart while retaining the actual values in tooltips.
 
 To show percent values and actual values in your chart, follow the steps given below:
 
 - Set the `showPercentValues` attribute to `1` to show percent values as data labels.
 
-- Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
+- Set the `showPercentInTooltip` attribute to `1` to render the tooltip text in percentage values.
 
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 
