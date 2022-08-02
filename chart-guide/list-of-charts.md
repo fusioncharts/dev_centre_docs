@@ -52,6 +52,7 @@ It offers all the general-purpose charts like column, bar, line, area, pie, comb
 | [Stacked Bar 2D](/chart-attributes/stackedbar2d)                      | stackedbar2d      |
 | [Stacked Bar 3D](/chart-attributes/stackedbar3d)                      | stackedbar3d      |
 | [Stacked Area 2D](/chart-attributes/stackedarea2d)                    | stackedarea2d     |
+| [Multi-series Stacked Bar 2D](/chart-attributes/msstackedbar2d)       | msstackedbar2d    |
 | [Multi-series Stacked Column 2D](/chart-attributes/msstackedcolumn2d) | msstackedcolumn2d |
 
 ### Combination Charts

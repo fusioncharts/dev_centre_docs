@@ -329,6 +329,13 @@
 		"xls": false
 	},
 	{
+		"name": "Multi-series Stacked Bar 2D",
+		"json": "MSStBar2D",
+		"code": "xt-attr-msstackedbar2d.js",
+		"alias": "msstackedbar2d",
+		"xls": false
+	},
+		{
 		"name": "Multi-series Stacked Column 2D",
 		"json": "MSStCol",
 		"code": "xt-attr-msstackedcolumn2d.js",

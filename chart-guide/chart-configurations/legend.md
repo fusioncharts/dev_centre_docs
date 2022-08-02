@@ -363,6 +363,42 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/) to edit the above chart.
 
+## Configure Legend Width
+
+You can choose the Legend container's width by using the 'legendWidth' attribute.  
+
+Refer to the code below:
+
+```json
+chart: {
+        caption: "Split of Revenue by Product Categories",
+        subCaption: "Last year",
+        numberPrefix: "$",
+        startingAngle: "310",
+        defaultCenterLabel: "Total revenue: $64.08K",
+        centerLabel: "Revenue from $label: $value",
+        centerLabelBold: "1",
+        showTooltip: "0",
+        showLabels: "0",
+        showlegend: "1",
+        showpercentvalues: "1",
+        legendposition: "right",
+        legendWidth: "300",
+        legendPosition: "right",
+        theme: "fusion"
+      }
+```
+
+The chart will look as shown below:
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT 2099-1" src="https://codepen.io/fusioncharts/embed/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5">
+  SUPPORT 2099-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe><br/>
+
+Click [here](https://codepen.io/fusioncharts/pen/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5) to edit the above chart.
+
 ## Reverse Legend Order
 
 Set the value of `reverseLegend` attribute to `1`, to reverse the order of datasets in the legend.

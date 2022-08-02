@@ -166,8 +166,12 @@
       },
       {
          "fusioncharts": {
-            "title": "v3.18.0",
+            "title": "v3.19.0",
             "children": [
+               {
+                  "title": "v3.18.0",
+                  "link": "https://docs.fusioncharts.com/archive/3.18.0/"
+               },
                {
                   "title": "v3.17.0",
                   "link": "https://docs.fusioncharts.com/archive/3.17.0/"
@@ -323,8 +327,12 @@
             ]
          },
          "fusiontime": {
-            "title": "v2.5.0",
+            "title": "v2.6.0",
             "children": [
+                {
+                  "title": "v2.5.0",
+                  "link": "https://docs.fusioncharts.com/archive/3.18.0/"
+               },
                {
                   "title": "v2.4.0",
                   "link": "https://docs.fusioncharts.com/archive/3.16.0/"
