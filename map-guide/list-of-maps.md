@@ -1030,6 +1030,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Jharkhand](/maps/spec-sheets/jharkhand)                   | maps/jharkhand           |
 | [Karnataka](/maps/spec-sheets/karnataka)                   | maps/karnataka           |
 | [Kerala](/maps/spec-sheets/kerala)                         | maps/kerala              |
+| [Ladakh](/maps/spec-sheets/ladakh)                         | maps/ladakh              |
 | [Lakshadweep](/maps/spec-sheets/lakshadweep)               | maps/lakshadweep         |
 | [Madhya Pradesh](/maps/spec-sheets/madhyapradesh)          | maps/madhyapradesh       |
 | [Maharashtra](/maps/spec-sheets/maharashtra)               | maps/maharashtra         |
