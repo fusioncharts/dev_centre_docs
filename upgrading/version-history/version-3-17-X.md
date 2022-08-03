@@ -6,7 +6,7 @@ heading: Version 3.17.x
 
 <h2 class="sub-heading">Version 3.17.0</h2>
 
-<p class="release-date">April 29, 2021</p>
+<p class="release-date">29th April, 2021</p>
 
 <h4>New Features</h4>
 
