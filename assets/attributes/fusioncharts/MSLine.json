@@ -3470,60 +3470,6 @@
         "name": "displayValue"
       },
       {
-        "description": "Color of the trend line and its associated text",
-        "range": "Hex Color Code",
-        "type": "String",
-        "name": "color"
-      },
-      {
-        "description": "Whether the trend will be displayed as a line or a zone (fill-colored rectangle).",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "isTrendZone"
-      },
-      {
-        "description": "Whether the trend line/zone will be displayed over data plots or under them.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showOnTop"
-      },
-      {
-        "description": "If you've opted to show the trend as a line, this attribute lets you define the thickness of trend line.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "thickness"
-      },
-      {
-        "description": "Alpha of the trend line.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "alpha"
-      },
-      {
-        "description": "Whether the trendline should be rendered as dashed lines. \n\n__Default value__: 0 (trendline rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "dashed"
-      },
-      {
-        "description": "Sets the width of each dash when trendline is rendered as dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "dashLen"
-      },
-      {
-        "description": "Sets the gap between consecutive dashes when trendline is rendered as dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "dashGap"
-      },
-      {
-        "description": "Whether to show the trend line value on left side or right side of chart. This is particularly useful when the trend line display values on the chart are colliding with divisional lines values on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "valueOnRight"
-      },
-      {
         "description": "Custom tool-text for this trendline/zone.",
         "range": " ",
         "type": "String",
@@ -3531,6 +3477,43 @@
       }
     ],
     "description": "Trend-lines are horizontal lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. The `lines` object, child of the `trendlines` object is used to add trend-lines to a chart.\n\nAlthough the `line` object has to be defined within the `trendlines` object, the latter cannot be used to collectively customize trend-lines, because  it does not have any attributes of its own.\n\nThe attributes of the `lines` object, child of the `trendlines` object, are used to create and customize trend-lines for charts."
+  },
+  {
+    "table": "Data Label Attributes",
+    "path": "cleanDataPoints",
+    "attrs": [
+      {
+        "description": "Allows you to choose whether to group the label values to configure them as a group.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "groupingValues"
+      },
+      {
+        "description": "This attribute lets you control the color of a group of labels",
+        "range": "Hex Color Code",
+        "type": "String",
+        "name": "bgGroupColor"
+      },
+      {
+        "description": "This attribute lets you control the space (in pixels) of a group of labels. You can use this attribute to control the space between the value and the edge of the label.",
+        "range": "Numeric Value",
+        "type": "Number",
+        "name": "bgGroupPadding"
+      },
+      {
+        "description": "This attribute lets you control the opacity of a group of labels. You can use this attribute to control the opacity of the labels.",
+        "range": "Numeric Value",
+        "type": "Number",
+        "name": "bgGroupOpacity"
+      },
+      {
+        "description": "Groups label values in a single group.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "singleGroupVal"
+      }     
+    ],
+    "description": "The 'cleanDataPoints' is an object that allows you to customize your label's values. By using this object, the label values automatically avoid overlapping. \n\nWith this object you can group the values, add a background color, hide the group of labels, and add border padding to the labels. \n\nThe `cleanDataPoints` object, child of the `trendlines` object has to be defined within the 'chart' object, otherwise the latter cannot be used on its own. \n\nThe attributes of the 'cleanDataPoints' object, child of the 'chart' object, are used to customize labels and label values for charts."
   },
   {
     "table": "Trend-lines (Chart level attributes)",

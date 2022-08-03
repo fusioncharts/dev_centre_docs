@@ -34,22 +34,23 @@ ID | Short label | Label
 016|JH|Jharkhand
 017|KA|Karnataka
 018|KE|Kerala
-019|LA|Lakshadweep
-020|MP|Madhya Pradesh
-021|MA|Maharashtra
-022|MN|Manipur
-023|ME|Meghalaya
-024|MI|Mizoram
-025|NA|Nagaland
-026|OR|Odisha
-027|PO|Puducherry
-028|PU|Punjab
-029|RA|Rajasthan
-030|SI|Sikkim
-031|TN|Tamil Nadu
-036|TL|Telangana
-032|TR|Tripura
-033|UP|Uttar Pradesh
-034|UT|Uttarakhand
-035|WB|West Bengal
+019|LA|Ladakh
+020|LK|Lakshadweep
+021|MP|Madhya Pradesh
+022|MA|Maharashtra
+023|MN|Manipur
+024|ME|Meghalaya
+025|MI|Mizoram
+026|NA|Nagaland
+027|OR|Odisha
+028|PO|Puducherry
+029|PU|Punjab
+030|RA|Rajasthan
+031|SI|Sikkim
+032|TN|Tamil Nadu
+033|TL|Telangana
+034|TR|Tripura
+035|UP|Uttar Pradesh
+036|UT|Uttarakhand
+037|WB|West Bengal
 
