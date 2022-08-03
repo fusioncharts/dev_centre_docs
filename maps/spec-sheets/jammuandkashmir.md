@@ -22,12 +22,10 @@ IN.JK.BD|BD|Budgam
 IN.JK.DD|DD|Doda
 IN.JK.GA|GA|Ganderbal
 IN.JK.JM|JM|Jammu
-IN.JK.KR|KR|Kargil
 IN.JK.KA|KA|Kathua
 IN.JK.KW|KW|Kishtwar
 IN.JK.KG|KG|Kulgam
 IN.JK.KU|KU|Kupwara
-IN.JK.LE|LE|Leh
 IN.JK.PO|PO|Poonch
 IN.JK.PW|PW|Pulwama
 IN.JK.RA|RA|Rajouri
