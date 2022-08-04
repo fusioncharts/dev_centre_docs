@@ -5369,6 +5369,11 @@
                 "specSheet": "/maps/spec-sheets/kerala"
               },
               {
+                "name": "Ladakh",
+                "alias": "ladakh",
+                "specSheet": "/maps/spec-sheets/ladakh"
+              },
+              {
                 "name": "Lakshadweep",
                 "alias": "lakshadweep",
                 "specSheet": "/maps/spec-sheets/lakshadweep"
