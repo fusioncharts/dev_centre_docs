@@ -34,6 +34,6 @@ heading: Version 3.19.x
 -  Starting FusionCharts version 3.19, Hovering over legends displays all `plothighlighteffect` values as expected. Previously, if `plotHighlightEffect` is enabled, then any `plothighlighteffect` applied at the dataset level did not display upon hovering over the legends.
 -  Exporting using the ASP.NET private export handler is working correctly. PDFs are readable and exported as expected. Previously, the exported PDF was not readable.
 -  Using the `vline` attribute in Line charts now works correctly. Previously, if `vline` was set to true for the first data plot, the data plot did not display.
--  The `Treemap` chart renders correctly when using the 'sliceanddice' algorithm. Previously, the chart did not render correctly if using the `sliceanddice` algorithm with `vertical` and `horizontal` slicing mode.
+-  The `Treemap` chart renders correctly when using the `sliceanddice` algorithm. Previously, the chart did not render correctly if using the `sliceanddice` algorithm with `vertical` and `horizontal` slicing mode.
 -  The `Dragnode` chart displays all tooltips correctly when hovering over any part of each node. Previously, some nodes did not display tooltips when hovered over.
 -  FusionCharts version 3.19 loads and works as expected with the Zkoss library. Previously, loading the library resulted in an error message in the console.
