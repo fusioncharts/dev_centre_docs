@@ -13,7 +13,7 @@ heading: Version 3.19.x
 -  FusionCharts Version 3.19 introduces the new Grouped Stacked Bar chart called the 'MSStackedBar2D' chart. 
 -  FusionCharts version 3.19 added the functionality to show the percentage value with the corresponding legend in the 'Doughnut' and 'Pie' chart type.
 -  FusionCharts version 3.19 updated 'Angular' integration to support 'Angular' versions 11, 12, and 13.
--  FusionCharts version 3.19 updated 'React-Native' integration to support 'React-Native' versions 16, 17, and 18.
+-  FusionCharts version 3.19 updated 'React' integration to support 'React' versions 16, 17, and 18.
 
 <h4>Improvements</h4>
 
