@@ -22,7 +22,7 @@ Here, Ladakh is shown as a separate region from Jammu and Kashmir.
 
 ## Fixed tendency to render all data plots properly
 
-FusionCharts 3.19 updated the value for 'mintendency' in order to fix the tendency issue, causing the chart not to plot all datasets correctly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
+FusionCharts 3.19 updated the value for `mintendency` in order to fix the tendency issue, causing the chart not to plot all datasets correctly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="SplineBeforeFix" src="https://codepen.io/fusioncharts/embed/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689">
