@@ -6,13 +6,13 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.19.x.
 
-## Updated Support for Angular and React-Native
+## Updated Support for Angular and React
 
 FusionCharts version 3.19 updates support for the 'Angular'and 'React-Native' integrations. 
 
 FusionCharts verifies that the 'Angular' integration component versions 11, 12, and 13 enable you to add JavaScript charts to your Angular application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
 
-FusionCharts verifies that the 'React-Native' integration component versions 16, 17, and 18 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [React-Native](https://www.npmjs.com/package/react-fusioncharts).
+FusionCharts verifies that the 'React' integration component versions 16, 17, and 18 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [React](https://www.npmjs.com/package/react-fusioncharts).
 
 
 ## Group Stacked Bar Charts
