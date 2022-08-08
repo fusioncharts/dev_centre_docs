@@ -365,7 +365,7 @@ Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/) to edit the above chart
 
 ## Configure Legend Width
 
-You can choose the Legend container's width by using the 'legendWidth' attribute.  
+You can choose the Legend container's width by using the `legendWidth` attribute.  
 
 Refer to the code below:
 
