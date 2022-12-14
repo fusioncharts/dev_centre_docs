@@ -1344,6 +1344,10 @@
                               "path": "/chart-guide/gauges-and-widgets/linear-gauge"
                            },
                            {
+                              "title": "Radial Bar",
+                              "path": "/chart-guide/gauges-and-widgets/radial-bar"
+                           },
+                           {
                               "title": "Thermometer Gauge",
                               "path": "/chart-guide/gauges-and-widgets/thermometer-gauge"
                            }
