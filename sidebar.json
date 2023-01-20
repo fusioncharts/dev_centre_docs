@@ -419,6 +419,55 @@
                      }
                   ]
                },
+               
+               {
+                  "title": "Flutter",
+                  "children": [
+                     {
+                        "title": "Creating your First Chart",
+                        "children": [
+                           {
+                              "title": "Your First Chart",
+                              "path": "/getting-started/flutter/your-first-chart-using-flutter"
+                           },
+                           {
+                              "title": "React-Native Features",
+                              "path": "/getting-started/flutter/flutter-features"
+                           },
+                           {
+                              "title": "Rendering Different Charts",
+                              "path": "/getting-started/react-native/rendering-different-charts-using-react-native"
+                           }
+                        ]
+                     },
+                     {
+                        "title": "Usage Guide",
+                        "children": [
+                           {
+                              "title": "Adding Drill-Down Charts",
+                              "path": "/getting-started/react-native/add-drill-down-using-react-native"
+                           },
+                           {
+                              "title": "Working with Events",
+                              "children": [
+                                 {
+                                    "title": "Change Chart Type",
+                                    "path": "/getting-started/flutter/change-chart-type-using-flutter"
+                                 },
+                                 {
+                                    "title": "Apply Different Themes",
+                                    "path": "/getting-started/react-native/apply-different-themes-using-react-native"
+                                 },
+                                 {
+                                    "title": "Bind Event Listener",
+                                    "path": "/getting-started/react-native/working-with-events-using-react-native"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               },               
                {
                   "title": "Vue",
                   "children": [
