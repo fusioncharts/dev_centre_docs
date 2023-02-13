@@ -12,8 +12,6 @@ Note that some of the chart types and the maps use data structures that are diff
 - [Real-time Chart](/getting-started/flutter/rendering-different-charts-using-flutter#real-time-charts)
 - [Gauges](/getting-started/flutter/rendering-different-charts-using-flutter#gauges)
 - [Maps](/getting-started/flutter/rendering-different-charts-using-flutter#maps)
-- [Heatmap](/getting-started/flutter/rendering-different-charts-using-flutter#heat-map)
-- [Gantt Chart](/getting-started/flutter/rendering-different-charts-using-flutter#gantt-chart)
 
 ## Multi-series Charts
 
