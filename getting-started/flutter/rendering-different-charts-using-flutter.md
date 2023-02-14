@@ -10,8 +10,6 @@ Note that some of the chart types and the maps use data structures that are diff
 - [Multi-series Charts](/getting-started/flutter/rendering-different-charts-using-flutter#multi-series-charts)
 - [Combination Charts](/getting-started/flutter/rendering-different-charts-using-flutter#combination-charts)
 - [Real-time Chart](/getting-started/flutter/rendering-different-charts-using-flutter#real-time-charts)
-- [Gauges](/getting-started/flutter/rendering-different-charts-using-flutter#gauges)
-- [Maps](/getting-started/flutter/rendering-different-charts-using-flutter#maps)
 
 ## Multi-series Charts
 
