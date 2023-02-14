@@ -10,11 +10,12 @@ This article focuses on how to change the chart type of the chart at runtime usi
 
 * Column 2D
 * Bar 2D
-* Pie 2D
 
-Here is an example of a chart configured to change the chart type.
+Here is an example of a 2D Bar chart configured to change to a 3D Bar chart type.
 
-{%  %}
+![2D Bar](/flutter/images/flutter_chart_bar2d.jpg)
+
+![3D Bar](/flutter/images/flutter_chart_bar3d.jpg)
 
 The complete code of the above sample is given below:
 
