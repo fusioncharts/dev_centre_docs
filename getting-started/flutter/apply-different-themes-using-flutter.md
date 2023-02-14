@@ -17,9 +17,9 @@ FusionCharts Suite XT ships with the following predefined themes:
 
 This article focuses on how to apply different themes to a chart at runtime using the `flutter-fusioncharts` component. 
 
-The following is an example of a chart configured to change the theme. Click any radio button to see how the look and feel of the chart change with each theme.
+The following is an example of a chart configured to change the theme. 
 
-{%  %}
+![2D Column](/flutter/images/flutter_chart_column.jpg)
 
 The complete code of the above sample is given below:
 
