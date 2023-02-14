@@ -290,7 +290,7 @@ AppRegistry.registerComponent('FlutterFusionCharts', () => App);
 
 The chart should look as shown below.
 
-{% chartHere %}
+![column bar chart](flutter/images/flutter_chart_column.jpg)
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you cannot solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
