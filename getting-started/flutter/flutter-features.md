@@ -109,11 +109,22 @@ To unregister from existing events, use the following method
 
 ## Working with APIs
 
-You can also enhance your charts by adding some APIs; follow these simple steps to learn how to change the chart type dynamically using chart APIs.
-
-> Note: Use the ‘globalFusionChart’ JavaScript variable when making API calls in order to target the chart object. 
+You can also enhance your charts by adding some APIs. For example, you can use chartType API, which acts as a getter by calling chartType() and a setter if you provide a chart type as a parameter to chartType method like chartType('column3d'), which will convert existing chart to column3d (as long as the datasource provided can build the column3d chart. Continuing with above example, please note the instance of FusionChartController is being passed to the constructor of FusionChart widget.
 
 ```javascript
+/// To register for new events, simply call method like so
+  fusionChartsController.addEvents('chartClick,dataLabelRollClick');
+/// To unregister existing events, simply call method like so
+  fusionChartsController.removeEvents('chartClick,dataLabelRollClick');
+/// To execute API calls, simply call method like so
+String js =
+  String js= 'globalFusionCharts.chartType() == "doughnut3d" ? globalFusionCharts.chartType("doughnut2d") : globalFusionCharts.chartType("doughnut3d")';
+	fusionChartsController.executeScript(js);
 
+/// Note the js is executed as is; so when you need to pass any String data
+/// then you need to keep such values within "<var>" for example '"doughnut3d"' 
+/// and not "doughnut3d"
 ```
+
+> Note: Use the ‘globalFusionChart’ JavaScript variable when making API calls in order to target the chart object. 
 
