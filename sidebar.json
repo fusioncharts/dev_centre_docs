@@ -419,7 +419,6 @@
                      }
                   ]
                },
-               
                {
                   "title": "Flutter",
                   "children": [
@@ -431,7 +430,7 @@
                               "path": "/getting-started/flutter/your-first-chart-using-flutter"
                            },
                            {
-                              "title": "React-Native Features",
+                              "title": "Flutter Features",
                               "path": "/getting-started/flutter/flutter-features"
                            },
                            {
@@ -444,10 +443,6 @@
                         "title": "Usage Guide",
                         "children": [
                            {
-                              "title": "Adding Drill-Down Charts",
-                              "path": "/getting-started/react-native/add-drill-down-using-react-native"
-                           },
-                           {
                               "title": "Working with Events",
                               "children": [
                                  {
@@ -457,17 +452,13 @@
                                  {
                                     "title": "Apply Different Themes",
                                     "path": "/getting-started/flutter/apply-different-themes-using-flutter"
-                                 },
-                                 {
-                                    "title": "Bind Event Listener",
-                                    "path": "/getting-started/react-native/working-with-events-using-react-native"
                                  }
                               ]
                            }
                         ]
                      }
                   ]
-               },               
+               },                              
                {
                   "title": "Vue",
                   "children": [
