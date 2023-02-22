@@ -8,7 +8,7 @@ Achieve more with your charts, and explore more Flutter features. Learn how to w
 
 ## Working with Events
 
-You can add different events to your flutter chart. Likewise, you can add or remove events, but first, you need to instantiate the ‘FusionChartController’ to support these features.
+You can add different events to your flutter chart. Likewise, you can add or remove events, but first, you need to instantiate the `FusionChartController` to support these features.
 
 ```javascript
 /// Widget which uses flutter_fusioncharts to render column chart
@@ -109,7 +109,7 @@ To unregister from existing events, use the following method
 
 ## Working with APIs
 
-You can also enhance your charts by adding some APIs. For example, you can use chartType API, which acts as a getter by calling chartType() and a setter if you provide a chart type as a parameter to chartType method like chartType('column3d'), which will convert existing chart to column3d (as long as the datasource provided can build the column3d chart. Continuing with above example, please note the instance of FusionChartController is being passed to the constructor of FusionChart widget.
+You can also enhance your charts by adding some APIs. For example, you can use chartType API, which acts as a getter by calling chartType() and a setter if you provide a chart type as a parameter to chartType method like `chartType('column3d')`, which will convert existing chart to column3d (as long as the datasource provided can build the column3d chart. Continuing with above example, please note the instance of 'FusionChartController' is being passed to the constructor of FusionChart widget.
 
 ```javascript
 /// To register for new events, simply call method like so
@@ -126,5 +126,5 @@ String js =
 /// and not "doughnut3d"
 ```
 
-> Note: Use the ‘globalFusionChart’ JavaScript variable when making API calls in order to target the chart object. 
+> Note: Use the `globalFusionChart` JavaScript variable when making API calls in order to target the chart object. 
 
