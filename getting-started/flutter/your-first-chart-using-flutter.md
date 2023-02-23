@@ -4,17 +4,17 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart in Flutter using FusionCharts
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. The 'flutter-fusioncharts' component allows you to easily add rich and interactive charts to any Flutter project. On this page, we'll see how to install FusionCharts and render a chart using the 'flutter-fusioncharts' component.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. The `flutter-fusioncharts` component allows you to easily add rich and interactive charts to any Flutter project. On this page, we'll see how to install FusionCharts and render a chart using the `flutter-fusioncharts` component.
 
 ## Prerequisite 
 
-We assume you have a 'flutter project' up and running. 
+We assume you have a `flutter project` up and running. 
 If not, follow the steps [here](https://docs.flutter.dev/) to get started with your Flutter project setup.<br/>
 
 **IMPORTANT NOTE:** Install Flutter if not present already.
 
 ## Create an application using FusionCharts 
-Using FusionCharts, you can create your application. For starters, ensure you have ‘Node.js’ and ‘Git’ installed in your environment. 
+Using FusionCharts, you can create your application. For starters, ensure you have `Node.js` and `Git` installed in your environment. 
 
 To create a new application:
 
@@ -139,7 +139,7 @@ Check the [Read Me](https://github.com/fusioncharts/flutter-fusioncharts) file f
 
 ### Preparing the Data
 
-Let's create a chart showing the "Countries With Most Oil Reserves". The oil reserves data present in various countries is shown in tabular form below.
+Let's create a chart showing the **"Countries With Most Oil Reserves"**. The oil reserves data present in various countries is shown in tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -197,7 +197,7 @@ Map<String, dynamic> chart = {
 };
 ```
 
-> The 'type' attribute in the chartConfigs object specifies the type of chart being rendered. You can look at different chart types with their aliases [here](/chart-guide/list-of-charts).
+> The `type` attribute in the chartConfigs object specifies the type of chart being rendered. You can look at different chart types with their aliases [here](/chart-guide/list-of-charts).
  
 ### Render the Chart
 
@@ -290,7 +290,7 @@ AppRegistry.registerComponent('FlutterFusionCharts', () => App);
 
 The chart should look as shown below.
 
-![column bar chart](flutter/images/flutter_chart_column.jpg)
+![column bar chart](/images/flutter_chart_column.png)
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you cannot solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 

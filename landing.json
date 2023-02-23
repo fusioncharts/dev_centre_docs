@@ -63,6 +63,11 @@
                "value": "Ionic framework",
                "classname": "icon-ionic",
                "link": "/getting-started/ionic-framework/ionic-framework-using-angular"
+            },
+            {
+               "value": "Flutter",
+               "classname": "flutter-ionic",
+               "link": "/getting-started/flutter/your-first-chart-using-flutter"
             }
          ],
          "backend": [

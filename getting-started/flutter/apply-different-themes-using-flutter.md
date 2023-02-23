@@ -19,7 +19,7 @@ This article focuses on how to apply different themes to a chart at runtime usin
 
 The following is an example of a chart configured to change the theme. 
 
-![2D Column](/flutter/images/flutter_chart_column.jpg)
+![2D Column](/images/flutter_chart_column.png)
 
 The complete code of the above sample is given below:
 
