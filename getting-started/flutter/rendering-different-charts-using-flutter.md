@@ -17,7 +17,7 @@ A Multi-series chart plots data for more than one series of data values. It is u
 
 In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Below is an example of a Multi-series Overlapped Bar 2D Chart.
 
-![Overlap Bar 2D](/flutter/images/flutter_chart_overlapped2d.jpg)
+![Overlap Bar 2D](/images/flutter_chart_overlapped2d.png)
 
 As you can see, a Multi-series Overlapped Bar 2D Chart has horizontally aligned rectangular bars on one axis with discrete values shown on the other. The bar’s length is proportionate to the value it represents.
 
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
 
 Combination charts also allow you to plot multiple datasets on the same chart. However, while in multi-series charts you need to use the same plot type for all datasets, in a combination chart you can use a different plot type for each dataset. For instance, you can show a column, a line, and an area plot on the same chart canvas.
 
-![Combination 2D](/flutter/images/flutter_chart_combination2d.jpg)
+![Combination 2D](/images/flutter_chart_combination2d.png)
 
 As you can see in the 2D Single Y-axis combination chart above, a line, a column, and an area type plot share the same set of X and Y-axis. The line plot displays the projected monthly revenue of Harry’s SuperMart, while the column plot displays the actual revenue earned, and the area plot shows the monthly profit. To build the chart, we will use the data provided in the following table:
 
@@ -446,9 +446,9 @@ Real-time charts are also referred to as data streaming charts, because they can
 
 FusionCharts XT supports various types of Real-time charts - [Line](/chart-guide/standard-charts/real-time-charts#real-time-line-chart), [Area](/chart-guide/standard-charts/real-time-charts#real-time-area-chart), [Column](/chart-guide/standard-charts/real-time-charts#real-time-column-chart), [Stacked Area](/chart-guide/standard-charts/real-time-charts#real-time-stacked-area-chart), [Stacked Column](/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart), and [Line (Dual Y axis)](/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart). In the section below, we will see how to build a real-time area 2D chart.
 
-create a StreamController and pass the reference of the StreamController to the FusionChart widget. Subsequently you can emit data which is consumed by the FusionChart. As and when the data is received over the stream, the FusionChart will get updated accordingly.
+Create a StreamController and pass the reference of the StreamController to the FusionChart widget. Subsequently you can emit data which is consumed by the FusionChart. As and when the data is received over the stream, the FusionChart will get updated accordingly.
 
-![Real-Time Line](/flutter/images/flutter_chart_realtime-line.jpg)
+![Real-Time Line](/images/flutter_chart_realtime-line.png)
 
 As you can see in the real-time 2D line chart above, the data plot is presenting the values present at a given instance. As soon as new values are available in the source data, the chart will update itself with the fresh values, gradually discarding the data plots displayed above.
 
