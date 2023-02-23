@@ -8,14 +8,14 @@ FusionCharts Suite XT includes advanced features that add more context to your c
 
 This article focuses on how to change the chart type of the chart at runtime using the `flutter-fusioncharts` component. The chart types used in the sample are:
 
-* Bar 3D
-* Bar 2D
+* [Bar 3D](/chart-attributes/bar3d)
+* [Bar 2D](/chart-attributes/bar2d)
 
 Here is an example of a 2D Bar chart configured to change to a 3D Bar chart type.
 
-![2D Bar](/flutter/images/flutter_chart_bar2d.jpg)
+![2D Bar](/images/flutter_chart_bar2d.png)
 
-![3D Bar](/flutter/images/flutter_chart_bar3d.jpg)
+![3D Bar](/images/flutter_chart_bar3d.png)
 
 The complete code of the above sample is given below:
 
