@@ -418,7 +418,47 @@
                         ]
                      }
                   ]
-               },
+               },               
+               {
+                  "title": "Flutter",
+                  "children": [
+                     {
+                        "title": "Creating your First Chart",
+                        "children": [
+                           {
+                              "title": "Your First Chart",
+                              "path": "/getting-started/flutter/your-first-chart-using-flutter"
+                           },
+                           {
+                              "title": "Flutter Features",
+                              "path": "/getting-started/flutter/flutter-features"
+                           },
+                           {
+                              "title": "Rendering Different Charts",
+                              "path": "/getting-started/flutter/rendering-different-charts-using-flutter"
+                           }
+                        ]
+                     },
+                     {
+                        "title": "Usage Guide",
+                        "children": [
+                           {
+                              "title": "Working with Events",
+                              "children": [
+                                 {
+                                    "title": "Change Chart Type",
+                                    "path": "/getting-started/flutter/change-chart-type-using-flutter"
+                                 },
+                                 {
+                                    "title": "Apply Different Themes",
+                                    "path": "/getting-started/flutter/apply-different-themes-using-flutter"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               },                              
                {
                   "title": "Vue",
                   "children": [
