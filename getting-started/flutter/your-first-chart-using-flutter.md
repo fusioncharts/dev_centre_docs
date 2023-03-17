@@ -123,7 +123,7 @@ class _ColumnChartState extends State<ColumnChart> {
 Add the following dependency
 ```javascript
 dependencies:
-	flutter_fusioncharts: ^1.0.0
+	flutter_fusioncharts: ^1.0.2
 ```
 
 Now in your Dart code, import the following plugin file:
