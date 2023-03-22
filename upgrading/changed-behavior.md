@@ -4,21 +4,19 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.19.x.
+This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.20.x.
 
-## Updated Map of India
+## Resizing for Gauges
 
 FusionCharts 3.19 updated the map of India to showcase Ladakh as a separate region. The Entity of Ladakh is now shown as a distinct region from Jammu and Kashmir. For more details, see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
 
-![Map of India before](/assets/images/IndiaMapBefore.png)<br/>
-Here, Ladakh is part of the Jammu and Kashmir territory.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="India(QE-SUPPORT-2049)-5" src="https://codepen.io/fusioncharts/embed/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9">
   India(QE-SUPPORT-2049)-5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe><br/>
-Here, Ladakh is shown as a separate region from Jammu and Kashmir.
+
 
 ## Fixed tendency to render all data plots properly
 
