@@ -19,3 +19,10 @@ FusionCharts verifies that the `React Native` integration component versions 0.6
 
 FusionCharts version 3.20 updates support for the `Python`, `C#`, and `Java SDK` wrappers to the latest supported versions.
 
+
+## New property and method to align text.
+
+FusionCharts version 3.20 introduces the new property `orientedTextAlign` that handles the rotation and alignment of text to the axis. You can choose the preferred alignment of the text in reference to the axis. Also, you can use the new method, `_changeXAxisCoordinate`, to change the x-axis label coordinates to automatically centered-aligned upon legend or data interaction. 
+	
+ 
+
