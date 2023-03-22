@@ -14,6 +14,7 @@ heading: Version 3.20.x
 - FusionCharts version 3.20 updated `Angular` integration to support Angular versions 14 and 15.
 - FusionCharts version 3.20 updated `React Native` plugin to support React Native versions 0.68 and 0.69.
 - FusionCharts version 3.20 updated the wrappers for `Python`, `C#`, and `Java SDK` to the latest supported versions. 
+- FusionCharts version 3.20 added the new property `orientedTextAlign` which allows users to align the axis text.
 
 
 <h4>Improvements</h4>
@@ -21,7 +22,6 @@ heading: Version 3.20.x
 - FusionCharts version 3.20 improved the chart’s resizing functionality for gauges. By adding an or condition to the `colorRange` method, resizing the chart container adjusts the chart’s width accordingly.   
 - FusionCharts version 3.20 improved the Time Navigator time format to match the x-axis labels' time format.
 - FusionCharts version 3.20 includes the possibility to configure the width for the legend container with the new `disableLegendScroll` property, which, when set to 1, disables the scrollbar giving the legend container the necessary space. 
-- FusionCharts version 3.20 added the new property `orientedTextAlign` which allows users to align the axis text.
 
 
 <h4>Fixes</h4>
