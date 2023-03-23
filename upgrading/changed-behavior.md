@@ -40,12 +40,14 @@ text
 
 ## Bar Chart supports all events
 
-FusionCharts version 3.19 improves the Multiple Series chart readability by avoiding overlapping of data plots with the same or similar values. This improvement allows users to view data more clearly.
+FusionCharts version 3.20 improved the supported events and methods you can use with the Radial Bar chart. For example, the Radial Bar chart added the `plotEventHandler` method to allow mouse events on the chart. 
 
-[sample before]
+<iframe width="100%" height="300" src="//jsfiddle.net/v394y5kd/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-text
+Before, events such us `dataPlotClick` was not supported.
 
 [sample after]
+
+Now, with the new `plotEventHandler` method, you can use mouse events in the chart.
 
 
