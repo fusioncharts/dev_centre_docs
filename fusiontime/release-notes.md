@@ -4,6 +4,17 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.8.0</h2>
+
+<p class="release-date">24th March, 2023</p>
+
+<h4>Fixes</h4>
+
+- Fixed the issue where the Time Navigator scroller could not be dragged when reduced to short time intervals. In FusionTime version 2.8, the Time Navigator scroller works as expected, regardless of the chosen time interval.
+- Fixed the issue where the start plot changed position when switching the chart’s time zone. In FusionTime version 2.8, changing the chart’s time zone does not affect the plot’s position.
+- Fixed the issue where stacked plots sum values do not update upon legend interactions. In FusionTime version 2.8, the sum values update to show the expected value upon legend interaction. 
+
+
 <h2 class="sub-heading">Version 2.7.0</h2>
 
 <p class="release-date">2nd August, 2022</p>
