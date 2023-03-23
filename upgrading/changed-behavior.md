@@ -43,13 +43,23 @@ In version 3.20, the chart shows equivalent time formats.
 
 ## Remove scrollbar from legend container
 
-FusionCharts version 3.19 improves the chart readability by allowing users to define the width of the Legend container. In addition, this option allows users to display the legend container without any scrollbars, therefore displaying all the information.
+FusionCharts version 3.20 allows users to disable the legend scroll bar, which helps handle the legend container's width on the chart. When the new `disableLegendScroll` attribute is set to 1, the scroll bar on the legend container gets disabled. If the text is too large and the legend shows an ellipsis, hovering over the text shows the tooltip with all the text from the legend. 
 
-[sample before]
+<iframe height="300" style="width: 100%;" scrolling="no" title="Doughnut (SUPPORT 2099)-2" src="https://codepen.io/fusioncharts/embed/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41">
+  Doughnut (SUPPORT 2099)-2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
-text
+Before, the scroll bar could not be disabled for the legend container.
 
-[sample after]
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2099(1)" src="https://codepen.io/fusioncharts/embed/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585">
+  SUPPORT-2099(1)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+In version 3.20, you can disable the scroll bar on the legend.
 
 
 ## Bar Chart supports all events
