@@ -14,7 +14,7 @@ heading: Version 3.20.x
 - FusionCharts version 3.20 updated `Angular` integration to support Angular versions 14 and 15.
 - FusionCharts version 3.20 updated `React Native` plugin to support React Native versions 0.68 and 0.69.
 - FusionCharts version 3.20 updated the wrappers for `Python`, `C#`, and `Java SDK` to the latest supported versions. 
-- FusionCharts version 3.20 added the new property `orientedTextAlign` which allows users to align the axis text.
+- FusionCharts version 3.20 added the new property `orientedTextAlign`, which allows users to align the axis text.
 
 
 <h4>Improvements</h4>
