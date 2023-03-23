@@ -8,23 +8,37 @@ This section is for users using a previous version of FusionCharts in their appl
 
 ## Resizing for Gauges
 
-FusionCharts 3.20 updated the map of India to showcase Ladakh as a separate region. The Entity of Ladakh is now shown as a distinct region from Jammu and Kashmir. For more details, see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
+FusionCharts version 3.20 improves the resizing functionality for Gauges, adjusting the width of the chart container as expected. Before, the resize functionality did not work for the `colorRange` attribute.
 
-[sample before]
+<iframe width="100%" height="300" src="//jsfiddle.net/srishti_fc/wsqux3p4/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-text
+Before, the chart’s container did not adjust accordingly.
 
-[sample after]
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2150" src="https://codepen.io/fusioncharts/embed/QWVvMde/5a4745f916723b609b51a82c4bed00e4?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/QWVvMde/5a4745f916723b609b51a82c4bed00e4">
+  SUPPORT-2150</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+In version 3.20, resizing the chart’s container works as expected.
+
 
 ## Set the time format for the Time Navigator
 
-FusionCharts 3.19 updated the value for `mintendency` in order to fix the tendency issue, causing the chart not to plot all datasets correctly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
+FusionCharts version 3.20 enhanced the calculation of the time format of the x-axis to match the time format of the slider. Before, no calculation was present to sync the time format of the x-axis and the time format of the slider.
 
-[sample before]
+<iframe width="100%" height="300" src="//jsfiddle.net/k7pexwmv/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-text
+Before, the chart showed two different time formats.
 
-[sample after]
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2242(5)" src="https://codepen.io/fusioncharts/embed/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d">
+  SUPPORT-2242(5)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+In version 3.20, the chart shows equivalent time formats. 
  
 
 ## Remove scrollbar from legend container
