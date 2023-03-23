@@ -6,7 +6,7 @@ heading: Version 3.20.x
 
 <h2 class="sub-heading">Version 3.20</h2>
 
-<p class="release-date">23rd March, 2023</p>
+<p class="release-date">24th March, 2023</p>
 
 <h4>New Features</h4>
 
@@ -19,7 +19,8 @@ heading: Version 3.20.x
 
 <h4>Improvements</h4>
 
-- FusionCharts version 3.20 improved the chart’s resizing functionality for gauges. By adding an or condition to the `colorRange` method, resizing the chart container adjusts the chart’s width accordingly.   
+- FusionCharts version 3.20 improved the chart’s resizing functionality for gauges. By adding an or condition to the `colorRange` method, resizing the chart container adjusts the chart’s width accordingly.
+- FusionCharts version 3.20 improved the Radial Bar chart by adding support to mouse click events such as `dataPlotClick`, and `dataPlotRollOver` and includes the new `plotEventHandler` method to bind the mouse events with the chart events.    
 - FusionCharts version 3.20 improved the Time Navigator time format to match the x-axis labels' time format.
 - FusionCharts version 3.20 includes the possibility to configure the width for the legend container with the new `disableLegendScroll` property, which, when set to 1, disables the scrollbar giving the legend container the necessary space. 
 
