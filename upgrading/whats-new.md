@@ -4,37 +4,25 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.19.x.
+This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.20.x.
 
 ## Updated Support for Angular and React
 
-FusionCharts version 3.19 updates support for the `Angular`and `React` integrations. 
+FusionCharts version 3.20 updates support for the `Angular`and `React Native` integrations. 
 
-FusionCharts verifies that the `Angular` integration component versions 11, 12, and 13 enable you to add JavaScript charts to your Angular application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
+FusionCharts verifies that the `Angular` integration component versions 13, 14, and 15 enable you to add JavaScript charts to your Angular application or project when using FusionCharts versions 3.20, 3.19, and 3.18. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
 
-FusionCharts verifies that the `React` integration component versions 16, 17, and 18 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.19, 3.18, and 3.17. For more information, see [React](https://www.npmjs.com/package/react-fusioncharts).
+FusionCharts verifies that the `React Native` integration component versions 0.68 and 0.69 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.20, 3.19, and 3.18. For more information, see [React Native](https://www.npmjs.com/package/react-native-fusioncharts).
 
 
-## Group Stacked Bar Charts
+## Updated Support for Wrappers
 
-FusionCharts 3.19 introduces the new `MSStackedBar2D` chart. The Group Stacked Bar chart helps users to represent data values as a sum of two or more values. 
+FusionCharts version 3.20 updates support for the `Python`, `C#`, and `Java SDK` wrappers to the latest supported versions.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="GroupStacked2dChart(QE-SUPPORT-2051)-4" src="https://codepen.io/fusioncharts/embed/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKyVRO/687c2b6a4d97a2fd3ecdd41538163ca5">
-  GroupStacked2dChart(QE-SUPPORT-2051)-4</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
 
-For more information, see our [Stacked Charts](https://www.fusioncharts.com/dev/chart-guide/standard-charts/stacked-charts) documentation.
+## New property and method to align text.
 
-## Support Percentage values in Pie and Doughnut Charts
+FusionCharts version 3.20 introduces the new property `orientedTextAlign` that handles the rotation and alignment of text to the axis. You can choose the preferred alignment of the text in reference to the axis. Also, you can use the new method, `_changeXAxisCoordinate`, to change the x-axis label coordinates to automatically centered-aligned upon legend or data interaction. 
+	
+ 
 
-FusionCharts 3.19 introduces the functionality, `showpercentagrValues` that shows the percentage values with the corresponding Legend for `Doughnut` and `Pie` charts. 
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2080) 5" src="https://codepen.io/fusioncharts/embed/qBoEqmj/59b750adb2d81d61befe2bbbf762a29a?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/qBoEqmj/59b750adb2d81d61befe2bbbf762a29a">
-  (SUPPORT-2080) 5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-
-For more information, see our [Attributes](https://www.fusioncharts.com/dev/chart-attributes) documentation.

@@ -4,95 +4,81 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.19.x.
+This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.20.x.
 
-## Updated Map of India
+## Resizing for Gauges
 
-FusionCharts 3.19 updated the map of India to showcase Ladakh as a separate region. The Entity of Ladakh is now shown as a distinct region from Jammu and Kashmir. For more details, see [Ladakh map](https://www.fusioncharts.com/fusionmaps).
+FusionCharts version 3.20 improves the resizing functionality for Gauges, adjusting the width of the chart container as expected. Before, the resize functionality did not work for the `colorRange` attribute.
 
-![Map of India before](/assets/images/IndiaMapBefore.png)<br/>
-Here, Ladakh is part of the Jammu and Kashmir territory.
+<iframe width="100%" height="300" src="//jsfiddle.net/srishti_fc/wsqux3p4/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="India(QE-SUPPORT-2049)-5" src="https://codepen.io/fusioncharts/embed/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/Barypxz/eed1eb1d2d4fee304ea535e7c116bac9">
-  India(QE-SUPPORT-2049)-5</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Here, Ladakh is shown as a separate region from Jammu and Kashmir.
+Before, the chart’s container did not adjust accordingly.
 
-## Fixed tendency to render all data plots properly
-
-FusionCharts 3.19 updated the value for `mintendency` in order to fix the tendency issue, causing the chart not to plot all datasets correctly when some datasets contained zero as values. Now, charts display all dataset plots despite the amount and values of the datasets.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="SplineBeforeFix" src="https://codepen.io/fusioncharts/embed/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/yLKzGLY/f1a6bed0f2e2195fd4905e93337fa689">
-  SplineBeforeFix</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Since datasets contain values equal to zero, the data plots fail to render.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="SplineAfterFix" src="https://codepen.io/fusioncharts/embed/ExEwGam/1398fe7c83bfd5605919dc41e9500df2?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/ExEwGam/1398fe7c83bfd5605919dc41e9500df2">
-  SplineAfterFix</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Data plots render correctly. 
-
-## Improved Legend container
-
-FusionCharts version 3.19 improves the chart readability by allowing users to define the width of the Legend container. In addition, this option allows users to display the legend container without any scrollbars, therefore displaying all the information.
-
-<iframe width="100%" height="300" src="//jsfiddle.net/4v8jqwrb/15/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe><br/>
-Legend container requires a scrollbar to show all information.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT 2099-1" src="https://codepen.io/fusioncharts/embed/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/gOebwyv/cfe9372ce06343f59004c6e91c9eacd5">
-  SUPPORT 2099-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Adjusted the Legend container to display all information without needing for a scrollbar.
-
-## Prevent Overlapping text
-
-FusionCharts version 3.19 improves the Multiple Series chart readability by avoiding overlapping of data plots with the same or similar values. This improvement allows users to view data more clearly.
-
-<iframe width="100%" height="300" src="//jsfiddle.net/protoEvangelion/7528h4j3/5/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-<br/>
-Data plots overlap when using the same or similar values.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2082) 1" src="https://codepen.io/fusioncharts/embed/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6">
-  (SUPPORT-2082) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2150" src="https://codepen.io/fusioncharts/embed/QWVvMde/5a4745f916723b609b51a82c4bed00e4?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/QWVvMde/5a4745f916723b609b51a82c4bed00e4">
+  SUPPORT-2150</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-<br/>
-Data plots do not overlap, making the chart more readable.
 
-## Treemap chart renders properly
+In version 3.20, resizing the chart’s container works as expected.
 
-When using 'Treemap' charts, at any point where the node's value was zero, the recursion was breaking, and nodes were not displaying. FusionCharts version 3.19 fixed the issue by allowing all numbers in the node's value, including zeros.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/wszkgxh0/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe><br/>
-Chart rendered incorrectly
+## Set the time format for the Time Navigator
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2089- 1" src="https://codepen.io/fusioncharts/embed/BaryQXB/ca7cd3d37846100f10f6e87ae6834fd8?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/BaryQXB/ca7cd3d37846100f10f6e87ae6834fd8">
-  SUPPORT-2089- 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+FusionCharts version 3.20 enhanced the calculation of the time format of the x-axis to match the time format of the slider. Before, no calculation was present to sync the time format of the x-axis and the time format of the slider.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/k7pexwmv/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+Before, the chart showed two different time formats.
+
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2242(5)" src="https://codepen.io/fusioncharts/embed/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d">
+  SUPPORT-2242(5)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Chart renders correctly
+</iframe>
 
-## Sankey Charts render correctly
-Sankey charts with significant differences in values render correctly. Previously, when Sankey charts had a considerable value difference, the link between values and the tooltip did not render correctly.  
+In version 3.20, the chart shows equivalent time formats. 
+ 
 
-<iframe width="100%" height="300" src="//jsfiddle.net/jbx46nmu/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> <br/>
-Before the fix, the chart did not render correctly.
+## Remove scrollbar from legend container
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Support-2163-1" src="https://codepen.io/fusioncharts/embed/RwMNKZX/598e3bdb610d060c458ae3d3888b0969?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/RwMNKZX/598e3bdb610d060c458ae3d3888b0969">
-  Support-2163-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+FusionCharts version 3.20 allows users to disable the legend scroll bar, which helps handle the legend container's width on the chart. When the new `disableLegendScroll` attribute is set to 1, the scroll bar on the legend container gets disabled. If the text is too large and the legend shows an ellipsis, hovering over the text shows the tooltip with all the text from the legend. 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Doughnut (SUPPORT 2099)-2" src="https://codepen.io/fusioncharts/embed/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41">
+  Doughnut (SUPPORT 2099)-2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe><br/>
-Sankey charts render successfully even when there is a significant difference between values.
+</iframe>
+
+Before, the scroll bar could not be disabled for the legend container.
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2099(1)" src="https://codepen.io/fusioncharts/embed/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585">
+  SUPPORT-2099(1)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+In version 3.20, you can disable the scroll bar on the legend.
+
+
+## Bar Chart supports all events
+
+FusionCharts version 3.20 improved the supported events and methods you can use with the Radial Bar chart. For example, the Radial Bar chart added the `plotEventHandler` method to allow mouse events on the chart. 
+
+<iframe width="100%" height="300" src="//jsfiddle.net/v394y5kd/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+Before, events such us `dataPlotClick` was not supported.
+
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2256(1)" src="https://codepen.io/fusioncharts/embed/jOvmBmN/3cba33973ef236d3a59fad4a28c0a99e?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/jOvmBmN/3cba33973ef236d3a59fad4a28c0a99e">
+  SUPPORT-2256(1)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+
+Now, with the new `plotEventHandler` method, you can use mouse events in the chart.
 
 
