@@ -4,81 +4,110 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users using a previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.20.x.
+This section is for users using a previous version of FusionCharts in their application. Here, we'll talk about the change in behavior of the charts after v3.21.x.
 
-## Resizing for Gauges
 
-FusionCharts version 3.20 improves the resizing functionality for Gauges, adjusting the width of the chart container as expected. Before, the resize functionality did not work for the `colorRange` attribute.
+## Label Improvements for Sunburst Chart 
 
-<iframe width="100%" height="300" src="//jsfiddle.net/srishti_fc/wsqux3p4/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+Starting in version 3.21, users can choose to display labels for each independent node on a ‘Sunburst’ chart. Users have to option to enable the new ‘showLabelValue’ property, which allows them to control the label visibility of the nodes at each level. Previously, the visibility was based on the internal space management algorithm.
 
-Before, the chart’s container did not adjust accordingly.
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2150" src="https://codepen.io/fusioncharts/embed/QWVvMde/5a4745f916723b609b51a82c4bed00e4?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/QWVvMde/5a4745f916723b609b51a82c4bed00e4">
-  SUPPORT-2150</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2294) 2" src="https://codepen.io/fusioncharts/embed/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1">
+  (SUPPORT-2294) 2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-In version 3.20, resizing the chart’s container works as expected.
 
+## Show Percent Values in Pie and Doughnut Charts
 
-## Set the time format for the Time Navigator
+Starting version 3.21, users have more control over displaying the chart and legend values on Pie and Doughnut charts. Users can now control whether to display chart values as percentages or as absolute values. Also, if a user enables the legend’s visibility, the user can choose to display the legend item values as a percentage or as absolute values.   
 
-FusionCharts version 3.20 enhanced the calculation of the time format of the x-axis to match the time format of the slider. Before, no calculation was present to sync the time format of the x-axis and the time format of the slider.
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) 2 " src="https://codepen.io/fusioncharts/embed/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f">
+  (SUPPORT-2304) 2 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+The following is a clarification of each property’s function.  
+‘showPercentValue’ - controls the percentage or absolute value for the chart.
+‘showValueAsPercentInLegend’ - controls the percentage or absolute value for the legend.
+‘showValuesInLegend’ - controls the visibility of the percentage or absolute value displayed in the legend. 
 
-<iframe width="100%" height="300" src="//jsfiddle.net/k7pexwmv/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+## Improved Pattern Styles
 
-Before, the chart showed two different time formats.
+FusionCharts version 3.21 improved the behavior of patterned styles in bars and column charts to remain unchanged whenever the legends are toggled. Previously, selecting a legend replaced the column’s pattern with a solid color. 
 
+Version 3.21.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2242(5)" src="https://codepen.io/fusioncharts/embed/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/KKxmmKN/f528a1998ee5964dcca6bc8e402ebb4d">
-  SUPPORT-2242(5)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2295) 1" src="https://codepen.io/fusioncharts/embed/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc">
+  (SUPPORT-2295) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-In version 3.20, the chart shows equivalent time formats. 
+Example of previous versions where the pattern style switched to a solid color.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/a7pfwLc1/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+## Overlapping values Avoidance
+
+Starting version 3.21, FusionCharts improved the ‘drawcrossline’ property to avoid the overlapping of text labels inside a chart. 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2082) 1" src="https://codepen.io/fusioncharts/embed/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/bGvNwyx/7db967fc7c1c0eacfc7d8eec201a1bf6">
+  (SUPPORT-2082) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+Previously, when multiple series values were plotted in a ‘msline’ chart with the same or similar values, the value’s text labels were getting overlapped. 
  
+[Before fix image]
 
-## Remove scrollbar from legend container
 
-FusionCharts version 3.20 allows users to disable the legend scroll bar, which helps handle the legend container's width on the chart. When the new `disableLegendScroll` attribute is set to 1, the scroll bar on the legend container gets disabled. If the text is too large and the legend shows an ellipsis, hovering over the text shows the tooltip with all the text from the legend. 
+## Number Suffix Improvement
+FusionCharts version 3.21 improved the prefix and suffix positions to work as expected for all languages and characters. Simply enable the ‘hasRtlText’ attribute to switch the suffix and prefix positions.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Doughnut (SUPPORT 2099)-2" src="https://codepen.io/fusioncharts/embed/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/YzYgaMx/1eece64ba02a22f3eafcd54e94349e41">
-  Doughnut (SUPPORT 2099)-2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2292) 2" src="https://codepen.io/fusioncharts/embed/KKrQVRM/9a40f43fd573edcdb8c46ff075345fee?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/KKrQVRM/9a40f43fd573edcdb8c46ff075345fee">
+  (SUPPORT-2292) 2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-Before, the scroll bar could not be disabled for the legend container.
+Previously, using numbers as a suffix did not work when using Arabic or any RTL characters. Instead, the chart displayed the numbers as a prefix. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2099(1)" src="https://codepen.io/fusioncharts/embed/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/zYJwPxb/3cff964d5500a4f2a70ade0dbc823585">
-  SUPPORT-2099(1)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/a7pfwLc1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+## Legend Item Improvement
+
+FusionCharts version 3.21 improved the legend items' behavior by configuring the correct font size and line-height values, and now the legend items stay static when toggled over them. 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="TimeSeries (SUPPORT 2130)-1" src="https://codepen.io/fusioncharts/embed/LYevVXv/1ea0269993acc305ed0f8809b42258d3?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/LYevVXv/1ea0269993acc305ed0f8809b42258d3">
+  TimeSeries (SUPPORT 2130)-1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-In version 3.20, you can disable the scroll bar on the legend.
+Previously, upon selecting a legend item, the other items moved positions when hovering over them.
+
+<iframe src="https://codesandbox.io/embed/fc-react-4-forked-y7qj4?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="fc-react-4 (forked)"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 
-## Bar Chart supports all events
+## Improved Plot border for Bar chart
 
-FusionCharts version 3.20 improved the supported events and methods you can use with the Radial Bar chart. For example, the Radial Bar chart added the `plotEventHandler` method to allow mouse events on the chart. 
+FusionCharts version 3.21 improved the border of the 2D Bar charts to display smooth borders for all bars and graphs. Previously, when the bar plot border was a non-zero value, each bar displayed was separated from the graph’s canvas border. 
 
-<iframe width="100%" height="300" src="//jsfiddle.net/v394y5kd/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-
-Before, events such us `dataPlotClick` was not supported.
-
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="SUPPORT-2256(1)" src="https://codepen.io/fusioncharts/embed/jOvmBmN/3cba33973ef236d3a59fad4a28c0a99e?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/jOvmBmN/3cba33973ef236d3a59fad4a28c0a99e">
-  SUPPORT-2256(1)</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2255) 1" src="https://codepen.io/fusioncharts/embed/YzRvMmE/562440f4dc86d31c944173d21c0ef8eb?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/YzRvMmE/562440f4dc86d31c944173d21c0ef8eb">
+  (SUPPORT-2255) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+Before version 3.21, the bar’s border was displayed separately.
 
-Now, with the new `plotEventHandler` method, you can use mouse events in the chart.
-
-
+<iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/a7pfwLc1/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
