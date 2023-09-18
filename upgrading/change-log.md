@@ -39,9 +39,13 @@ heading: Version 3.21.x
 - Fixed the issue where the `mspline` chart compared the `max` and `min` values with the incorrect opposite variables. As a result, the `mspline` chart did not display data plots that exceeded the max value on the y-axis. Now, the `mspline` chart displays all data plots correctly.
 - Resolved the issue where the subscript and superscript functions were not working correctly when using Firefox. 
 - Resolved the issue where the Scatter chart did not show the tooltip for the values in the 0th position on the x-axis. 
-- Fixed the issue where the `vline` property was not properly enabled, thus displaying vline data plots incorrectly.  
+- Fixed the issue where the `vline` property was not properly enabled, thus displaying `vline` data plots incorrectly.  
 - Resolved the issue where license keys did not work for the FusionMaps USA (usmsa) maps.
 - Resolved the issue of license keys not working for the FusionMaps Indonesia (westjava) maps.
 - Fixed the issue where the `Bar2Dchart` rendered the plot border above the canvas border. Now, all the chart’s borders are rendered as expected.
-- Resolved the issue where `vline` labels override the x-axis labels of the chart.  
+- Resolved the issue where `vline` labels override the x-axis labels of the chart.
+- Fixed the issue where certain data points were rendering erroneous values at particular date-time values in different timezones. 
+When inputting time in any time zone that has DayLight Saving mode, set the value of `enableUTC` to `1` in the Schema.
+- Data markers are now shown when the chart loads in PST timezone. Previously, data markers were not showing when the charts were loaded for the first time in the PST timezone.
+  
 
