@@ -20,7 +20,7 @@ Starting in version 3.21, users can choose to display labels for each independen
 
 ## Show Percent Values in Pie and Doughnut Charts
 
-Starting version 3.21, users have more control over displaying the chart and legend values on Pie and Doughnut charts. Users can now control whether to display chart values as percentages or as absolute values. Also, if a user enables the legend’s visibility, the user can choose to display the legend item values as a percentage or as absolute values.   
+Starting version 3.21, users have more control over displaying the chart and legend values on `Pie` and `Doughnut` charts. Users can now control whether to display chart values as percentages or as absolute values. Also, if a user enables the legend’s visibility, the user can choose to display the legend item values as a percentage or as absolute values.   
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) 2 " src="https://codepen.io/fusioncharts/embed/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f">
