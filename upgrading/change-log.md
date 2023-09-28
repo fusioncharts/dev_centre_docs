@@ -13,7 +13,7 @@ heading: Version 3.21.x
 
 - FusionCharts version 3.21 updated the `Ramda` dependency package version to the latest version, version 0.29. 
 - FusionCharts version 3.21 introduces the new function that removes any cross-site scripting that might be causing errors in your code.
-- FusionCharts version 3.21 introduces new maps for all 24 Argentinian provinces, all 26 Peruvian provinces, and all 7 provinces from Costa Rica. Previously Costa Rican provinces were accessed trough a different file.
+- FusionCharts version 3.21 introduces new maps for all 24 Argentinian provinces, all 26 Peruvian provinces, and all 7 provinces from Costa Rica. Previously Costa Rican provinces were accessed through a different file.
 
 
 <h4>Improvements</h4>
@@ -22,7 +22,6 @@ heading: Version 3.21.x
 - Improved the `numberSuffix` attribute to work as expected when using numeric and Arabic characters. Previously, the characters were displayed in an incorrect order. Now, enabling the `hasRtlText` attribute corrects the suffix and prefix positions, showing the characters in the correct order. 
 - Improved the `Sunburst` chart by adding the `showLabelValue` property that allows users to control label visibility for each node at all levels in the chart. 
 - Improved the `dataLabelstyles` function to handle the properties, attributes, and conditions for the data label styles. Previously, when `plotHighlightEffect` was set, and if value-related cosmetics were applied at the dataset level, the value-related cosmetics did not display as expected upon hovering on the legends.
-- Improved the accessibility feature where now users can add the `accessibility` property in the chart configurations to access the accessibility features. 
 - Improved the `Doughnut` and `Pie` charts by allowing users to display legend and data values as percentages or as absolute values. 
 
 
@@ -46,6 +45,6 @@ heading: Version 3.21.x
 - Resolved the issue where `vline` labels override the x-axis labels of the chart.
 - Fixed the issue where certain data points were rendering erroneous values at particular date-time values in different timezones. 
 When inputting time in any time zone that has DayLight Saving mode, set the value of `enableUTC` to `1` in the Schema.
-- Data markers are now shown when the chart loads in PST timezone. Previously, data markers were not showing when the charts were loaded for the first time in the PST timezone.
+- Data markers are now shown when the chart loads in the PST timezone. Previously, data markers were not showing when the charts were loaded for the first time in the PST timezone.
   
 
