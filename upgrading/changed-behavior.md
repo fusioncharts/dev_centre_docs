@@ -27,22 +27,25 @@ Starting version 3.21, users have more control over displaying the chart and leg
   (SUPPORT-2304) 2 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
 The following is a clarification of each property’s function.  
-`showPercentValue`- controls the percentage or absolute value for the chart.
-`showValueAsPercentInLegend` - controls the percentage or absolute value for the legend.
-`showValuesInLegend` - controls the visibility of the percentage or absolute value displayed in the legend. 
+* `showPercentValue`- controls the percentage or absolute value for the chart.
+* `showValueAsPercentInLegend` - controls the percentage or absolute value for the legend.
+* `showValuesInLegend` - controls the visibility of the percentage or absolute value displayed in the legend. 
+
 
 ## Improved Pattern Styles
 
 FusionCharts version 3.21 improved the behavior of patterned styles in bars and column charts to remain unchanged whenever the legends are toggled. Previously, selecting a legend replaced the column’s pattern with a solid color. 
-
+</br>
 Version 3.21.
-
+</br>
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2295) 1" src="https://codepen.io/fusioncharts/embed/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc">
   (SUPPORT-2295) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
 
 Example of previous versions where the pattern style switched to a solid color.
 
@@ -59,6 +62,7 @@ Starting version 3.21, FusionCharts improved the `drawcrossline` property to avo
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+
 Previously, when multiple series values were plotted in a `msline` chart with the same or similar values, the value’s text labels were getting overlapped. 
  
 ![Before Fix](/assets/images/2082_BeforeFix.png)<br/>
@@ -72,6 +76,7 @@ FusionCharts version 3.21 improved the prefix and suffix positions to work as ex
   (SUPPORT-2292) 2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
 
 Previously, using numbers as a suffix did not work when using Arabic or any RTL characters. Instead, the chart displayed the numbers as a prefix. 
 
@@ -88,7 +93,9 @@ FusionCharts version 3.21 improved the legend items' behavior by configuring the
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+
 Previously, upon selecting a legend item, the other items moved positions when hovering over them.
+
 
 <iframe src="https://codesandbox.io/embed/fc-react-4-forked-y7qj4?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -108,6 +115,8 @@ FusionCharts version 3.21 improved the border of the 2D Bar charts to display sm
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+
 Before version 3.21, the bar’s border was displayed separately.
+
 
 <iframe width="100%" height="300" src="//jsfiddle.net/fusioncharts/a7pfwLc1/1/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
