@@ -14,7 +14,7 @@ To improve our security, FusionCharts release 3.21 updated the `Ramda` dependenc
 
 ## Cross-Site Scripting
 
-FusionCharts version 3.21 implemented the new function to eliminate any JavaScript functions in your code that may cause an error. The new function removes any HTML-based predefined javascript functions (like `onError`, `onClick`, `onChange`, etc.) from the code and lets the charts and images display smoothly.  
+FusionCharts version 3.21 implemented the new function to eliminate any JavaScript functions in your code that may cause an error. The new function removes any HTML-based predefined JavaScript functions (like `onError`, `onClick`, `onChange`, etc.) from the code and lets the charts and images display smoothly.  
 
 
 ## New Maps
