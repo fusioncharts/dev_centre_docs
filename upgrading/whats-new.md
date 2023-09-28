@@ -1,28 +1,22 @@
 ---
 title: What's New | FusionCharts
-description: This section talks about the new features introduced in latest version.
+description: This section discusses the new features introduced in the latest version.
 heading: What's New
 ---
 
-This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.20.x.
-
-## Updated Support for Angular and React
-
-FusionCharts version 3.20 updates support for the `Angular`and `React Native` integrations. 
-
-FusionCharts verifies that the `Angular` integration component versions 13, 14, and 15 enable you to add JavaScript charts to your Angular application or project when using FusionCharts versions 3.20, 3.19, and 3.18. For more information, see [Angular-FusionChart](https://www.npmjs.com/package/angular-fusioncharts).
-
-FusionCharts verifies that the `React Native` integration component versions 0.68 and 0.69 enable you to add JavaScript charts to your React application or project when using FusionCharts versions 3.20, 3.19, and 3.18. For more information, see [React Native](https://www.npmjs.com/package/react-native-fusioncharts).
+This section is for users who are using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.21.x.
 
 
-## Updated Support for Wrappers
+## Update for Ramda Support
 
-FusionCharts version 3.20 updates support for the `Python`, `C#`, and `Java SDK` wrappers to the latest supported versions.
+To improve our security, FusionCharts release 3.21 updated the `Ramda` dependency package from version 0.25.0 to version 0.29.0. 
 
 
-## New property and method to align text.
+## Cross-Site Scripting
 
-FusionCharts version 3.20 introduces the new property `orientedTextAlign` that handles the rotation and alignment of text to the axis. You can choose the preferred alignment of the text in reference to the axis. Also, you can use the new method, `_changeXAxisCoordinate`, to change the x-axis label coordinates to automatically centered-aligned upon legend or data interaction. 
-	
- 
+FusionCharts version 3.21 implemented the new function to eliminate any JavaScript functions in your code that may cause an error. The new function removes any HTML-based predefined JavaScript functions (like `onError`, `onClick`, `onChange`, etc.) from the code and lets the charts and images display smoothly.  
 
+
+## New Maps
+
+FusionCharts version 3.21 introduces new maps for Argentina, Peru, and Costa Rica. With a total of 58 new maps, you can now drill down to each specific department within those countries. This version added all 27 Peruvian provinces, all 24 Argentinian provinces, and all seven Costa Rican provinces. 

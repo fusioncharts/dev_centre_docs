@@ -17,7 +17,7 @@ Dimensions (Width x Height): 340x690
 | 04  | CH          | Chubut              |
 | 06  | CN          | Corrientes          |
 | 05  | CB          | Córdoba             |
-| 07  | DF          | Distrito Federal    |
+| 07  | DF          | Ciudad Autónoma de Buenos Aires    |
 | 08  | ER          | Entre Rios          |
 | 09  | FM          | Formosa             |
 | 10  | JY          | Jujuy               |
@@ -26,7 +26,7 @@ Dimensions (Width x Height): 340x690
 | 13  | MZ          | Mendoza             |
 | 14  | MN          | Misiones            |
 | 15  | NQ          | Neuquén             |
-| 16  | RN          | Rio Negro           |
+| 16  | RN          | Río Negro           |
 | 17  | SA          | Salta               |
 | 18  | SJ          | San Juan            |
 | 19  | SL          | San Luis            |
