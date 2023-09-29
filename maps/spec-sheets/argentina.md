@@ -33,5 +33,5 @@ Dimensions (Width x Height): 340x690
 | 20  | SC          | Santa Cruz          |
 | 21  | SF          | Santa Fe            |
 | 22  | SE          | Santiago del Estero |
-| 23  | TF          | Tierra del Feugo    |
+| 23  | TF          | Tierra del Fuego    |
 | 24  | TM          | Tucumán             |
