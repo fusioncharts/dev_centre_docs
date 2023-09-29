@@ -15,30 +15,30 @@ Dimensions (Width x Height): 370x520
 
 ID | Short label | Label
 ---|---|---|
-01|AMA|Amazonas
-02|ANC|Ancash
-03|APU|Apurímac
-04|ARE|Arequipa
-05|AYA|Ayacucho
-06|CAJ|Cajamarca
-07|CAL|Callao
-08|CUS|Cusco
-09|HUV|Huancavelica
-10|HUC|Huánuco
-11|ICA|Ica
-12|JUN|Junín
-13|LAL|La Libertad
-14|LAM|Lambayeque
-15|LIM|Lima
+01|AM|Amazonas
+02|AN|Ancash
+03|AP|Apurímac
+04|AR|Arequipa
+05|AY|Ayacucho
+06|CJ|Cajamarca
+07|CL|Callao
+08|CS|Cusco
+09|HV|Huancavelica
+10|HC|Huánuco
+11|IC|Ica
+12|JU|Junín
+13|LL|La Libertad
+14|LB|Lambayeque
+15|LR|Lima
 26|LP|Lima Province
-16|LOR|Loreto
-17|MDD|Madre de Dios
-18|MOQ|Moquegua
-19|PAS|Pasco
-20|PIU|Piura
-21|PUN|Puno
-22|SAM|San Martín
-23|TAC|Tacna
-24|TUM|Tumbes
-25|UCA|Ucayali
+16|LO|Loreto
+17|MD|Madre de Dios
+18|MQ|Moquegua
+19|PA|Pasco
+20|PI|Piura
+21|PU|Puno
+22|SM|San Martín
+23|TA|Tacna
+24|TU|Tumbes
+25|UC|Ucayali
 
