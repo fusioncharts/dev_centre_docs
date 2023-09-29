@@ -12,14 +12,14 @@ Dimensions (Width x Height): 788x968
 
 ID | Short label | Label   | 
 ---|---|---|
-01| AB | Abangares  |
-02| BA | Bagaces    |
-03| CN | Cañas      | 
-04| CR | Carrillo   |
-05| HO | Hojancha   |
-06| LC | La Cruz    |
-07| LI | Liberia    |
-08| NA | Nandayure  |
-09| NI | Nicoya     |
-10| SC | Santa Cruz |
-11| TI | Tilarán    | 
+CR.GU.AB| AB | Abangares  |
+CR.GU.BA| BA | Bagaces    |
+CR.GU.CN| CN | Cañas      | 
+CR.GU.CR| CR | Carrillo   |
+CR.GU.HO| HO | Hojancha   |
+CR.GU.LC| LC | La Cruz    |
+CR.GU.LI| LI | Liberia    |
+CR.GU.NA| NA | Nandayure  |
+CR.GU.NI| NI | Nicoya     |
+CR.GU.SC| SC | Santa Cruz |
+CR.GU.TI| TI | Tilarán    | 
