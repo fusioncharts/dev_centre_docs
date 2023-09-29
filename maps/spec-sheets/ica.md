@@ -12,8 +12,8 @@ Dimensions (Width x Height): 362x505
 
 ID | Short label | Label
 ---|---|---|
-01| CN | Chincha
-02| IC | Ica
-03| NA | Nazca
-04| PP | Palpa
-05| PO | Pisco
+PE.IC.CN| CN | Chincha
+PE.IC.IC| IC | Ica
+PE.IC.NA| NA | Nazca
+PE.IC.PP| PP | Palpa
+PE.IC.PO| PO | Pisco
