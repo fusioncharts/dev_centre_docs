@@ -12,6 +12,6 @@ Dimensions (Width x Height): 600x566
 
 ID | Short label | Label
 ---|---|---|
-01| MU | Manu
-02| TH | Tahuamanu
-03| TP | Tambopata
+PE.MD.MU| MU | Manu
+PE.MD.TH| TH | Tahuamanu
+PE.MD.TP| TP | Tambopata
