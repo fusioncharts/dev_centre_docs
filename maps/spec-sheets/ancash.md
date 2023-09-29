@@ -12,23 +12,23 @@ Dimensions (Width x Height): 589x832
 
 ID | Short label | Label
 ---|---|---|
-01| AJ | Aija
-02| AR | Antonio Raymondi
-03| AI | Asunción
-04| BO | Bolognesi
-05| CZ | Carhuaz
-06| CF | Carlos F. Fitzcarrald
-07| CA | Casma
-08| CG | Corongo
-09| HZ | Huaraz
-10| HI | Huari
-11| HA | Huarmey
-12| HY | Huaylas
-13| ML | Mariscal Luzuriaga
-14| OC | Ocros
-15| PL | Pallasca
-26| PB | Pomabamba
-16| RE | Recuay
-17| ST | Santa
-18| SH | Sihuas
-19| YN | Yungay
+PE.AN.AJ| AJ | Aija
+PE.AN.AR| AR | Antonio Raymondi
+PE.AN.AI| AI | Asunción
+PE.AN.BO| BO | Bolognesi
+PE.AN.CZ| CZ | Carhuaz
+PE.AN.CF| CF | Carlos F. Fitzcarrald
+PE.AN.CA| CA | Casma
+PE.AN.CG| CG | Corongo
+PE.AN.HZ| HZ | Huaraz
+PE.AN.HI| HI | Huari
+PE.AN.HA| HA | Huarmey
+PE.AN.HY| HY | Huaylas
+PE.AN.ML| ML | Mariscal Luzuriaga
+PE.AN.OC| OC | Ocros
+PE.AN.PL| PL | Pallasca
+PE.AN.PB| PB | Pomabamba
+PE.AN.RE| RE | Recuay
+PE.AN.ST| ST | Santa
+PE.AN.SH| SH | Sihuas
+PE.AN.YN| YN | Yungay
