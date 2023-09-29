@@ -12,10 +12,10 @@ Dimensions (Width x Height): 565x783
 
 ID | Short label | Label
 ---|---|---|
-01| AC | Acobamba
-02| AG | Angaraes
-03| CV | Castrovirreyna
-04| CR | Churcampa
-05| HV | Huancavelica
-06| HT | Huaytará
-07| TY | Tayacaja
+PE.HV.AC| AC | Acobamba
+PE.HV.AG| AG | Angaraes
+PE.HV.CV| CV | Castrovirreyna
+PE.HV.CR| CR | Churcampa
+PE.HV.HV| HV | Huancavelica
+PE.HV.HT| HT | Huaytará
+PE.HV.TY| TY | Tayacaja
