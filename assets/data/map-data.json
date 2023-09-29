@@ -4180,7 +4180,7 @@
             "name": "San José",
             "alias": "sanjose",
             "specSheet": "/maps/spec-sheets/sanjose"
-          },  
+          }  
          ]
        },  
           {
@@ -4359,7 +4359,7 @@
             "name": "Tucumán",
             "alias": "tucuman",
             "specSheet": "/maps/spec-sheets/tucuman"
-          },  
+          }  
         ]
       },
       {
@@ -5004,7 +5004,7 @@
             "name": "Ucayali",
             "alias": "ucayali",
             "specSheet": "/maps/spec-sheets/ucayali"
-          },
+          }
         ]
       },
       {
