@@ -12,13 +12,13 @@ Dimensions (Width x Height): 500x750
 
 ID | Short label | Label
 ---|---|---|
-01| BV | Bellavista
-02| ED | El Dorado
-03| HL | Huallaga
-04| LS | Lamas
-05| MC | Mariscal Cáceres
-06| MB | Moyobamba
-07| PC | Picota
-08| RI | Rioja
-09| SM | San Martín
-10| TO | Tocache
+PE.SM.BV| BV | Bellavista
+PE.SM.ED| ED | El Dorado
+PE.SM.HL| HL | Huallaga
+PE.SM.LS| LS | Lamas
+PE.SM.MC| MC | Mariscal Cáceres
+PE.SM.MB| MB | Moyobamba
+PE.SM.PC| PC | Picota
+PE.SM.RI| RI | Rioja
+PE.SM.SM| SM | San Martín
+PE.SM.TO| TO | Tocache
