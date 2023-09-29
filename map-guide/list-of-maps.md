@@ -114,9 +114,11 @@ To render these maps, you need to download the map definition files from [here](
 | [Cyprus](/maps/spec-sheets/cyprus)                              | maps/cyprus              |
 | [Cyprus (Regions)](/maps/spec-sheets/cyprus2)                   | maps/cyprus2             |
 | [Czech Republic](/maps/spec-sheets/czechrepublic)               | maps/czechrepublic       |
+| [Czech Republic (Districs)](/maps/spec-sheets/czechrepublicdistricts) | maps/czechrepublicdistricts   |
 | [Denmark](/maps/spec-sheets/denmark)                            | maps/denmark             |
 | [Denmark (Regions)](/maps/spec-sheets/denmarkregion)            | maps/denmarkregion       |
 | [England](/maps/spec-sheets/england)                            | maps/england             |
+| [England (Regions)](/maps/spec-sheets/englandregion)            | maps/englandregion       |
 | [Estonia](/maps/spec-sheets/estonia)                            | maps/estonia             |
 | [Finland](/maps/spec-sheets/finland)                            | maps/finland             |
 | [France](/maps/spec-sheets/france)                              | maps/france              |
@@ -128,6 +130,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Iceland](/maps/spec-sheets/iceland)                            | maps/iceland             |
 | [Ireland](/maps/spec-sheets/ireland)                            | maps/ireland             |
 | [Italy](/maps/spec-sheets/italy)                                | maps/italy               |
+| [Italy Provinces](/maps/spec-sheets/italyprovince)              | maps/italyprovince       |
 | [Kosovo Districts](/maps/spec-sheets/kosovodistricts)           | maps/kosovodistricts     |
 | [Latvia](/maps/spec-sheets/latvia)                              | maps/latvia              |
 | [Liechtenstein](/maps/spec-sheets/liechtenstein)                | maps/liechtenstein       |
@@ -139,10 +142,11 @@ To render these maps, you need to download the map definition files from [here](
 | [Monaco](/maps/spec-sheets/monaco)                              | maps/monaco              |
 | [Montenegro](/maps/spec-sheets/montenegro)                      | maps/montenegro          |
 | [Netherlands](/maps/spec-sheets/netherlands)                    | maps/netherlands         |
+| [Northern Ireland](/maps/spec-sheets/northernireland)           | maps/northernireland     |
 | [Norway](/maps/spec-sheets/norway)                              | maps/norway              |
 | [Norway (Regions)](/maps/spec-sheets/norwayregion)              | maps/norwayregion        |
-| [Poland (Counties)](/maps/spec-sheets/polandcounties)           | maps/polandcounties      |
 | [Poland](/maps/spec-sheets/poland)                              | maps/poland              |
+| [Poland (Counties)](/maps/spec-sheets/polandcounties)           | maps/polandcounties      |
 | [Portugal](/maps/spec-sheets/portugal)                          | maps/portugal            |
 | [Romania](/maps/spec-sheets/romania)                            | maps/romania             |
 | [San Marino](/maps/spec-sheets/sanmarino)                       | maps/sanmarino           |
@@ -159,6 +163,7 @@ To render these maps, you need to download the map definition files from [here](
 | [UK](/maps/spec-sheets/uk)                                      | maps/uk                  |
 | [Ukraine](/maps/spec-sheets/ukraine)                            | maps/ukraine             |
 | [Vatican City](/maps/spec-sheets/vaticancity)                   | maps/vaticancity         |
+| [Wales](/maps/spec-sheets/wales)                                | maps/wales               |
 
 ## Europe (Regions)
 
@@ -204,6 +209,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Saint Lucia](/maps/spec-sheets/uk7)                                               | maps/saintlucia                   |
 | [Saint Vincent and The Grenadines](/maps/spec-sheets/saintvincentandthegrenadines) | maps/saintvincentandthegrenadines |
 | [Trinidad and Tobago](/maps/spec-sheets/trinidadandtobago)                         | maps/trinidadandtobago            |
+| [USA](/maps/spec-sheets/usa)                                                       | maps/usa                          |
 
 ## South America
 
@@ -789,7 +795,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vratsa](/maps/spec-sheets/vratsa)                    | maps/vratsa          |
 | [Yambol](/maps/spec-sheets/yambol)                    | maps/yambol          |
 
-## Denmark (5 Regions)
+## Denmark (Regions)
 
 | Chart Type                                    | JavaScript Alias |
 | --------------------------------------------- | ---------------- |
@@ -799,7 +805,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Sjaelland (ac)](/maps/spec-sheets/sjaelland) | maps/sjaelland   |
 | [Syddanmark](/maps/spec-sheets/syddanmark)    | maps/syddanmark  |
 
-## Hungary (7 Regions)
+## Hungary (Regions)
 
 | Chart Type                                                      | JavaScript Alias          |
 | --------------------------------------------------------------- | ------------------------- |
@@ -834,7 +840,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Tirana](/maps/spec-sheets/tirana)           | maps/tirana      |
 | [Vlore](/maps/spec-sheets/vlore)             | maps/vlore       |
 
-## Estonia (Countries)
+## Estonia (Counties)
 
 | Chart Type                                      | JavaScript Alias  |
 | ----------------------------------------------- | ----------------- |
