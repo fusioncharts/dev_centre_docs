@@ -13,14 +13,14 @@ Dimensions (Width x Height): 793x710
 
 ID | Short label | Label   | 
 ---|---|---|
-01| BA | Buenos Aires  |
-02| CO | Corredores    |
-03| CB | Coto Brus     |  
-04| ES | Esparza       |
-05| GA | Garabito      |
-06| GO | Golfito       |
-07| MO | Montes de Oro |
-08| OS | Osa           |
-09| PA | Parrita       |
-10| PU | Puntarenas    |
-11| AG | Quepos        | 
+CR.PU.BA| BA | Buenos Aires  |
+CR.PU.CO| CO | Corredores    |
+CR.PU.CB| CB | Coto Brus     |  
+CR.PU.ES| ES | Esparza       |
+CR.PU.GA| GA | Garabito      |
+CR.PU.GO| GO | Golfito       |
+CR.PU.MO| MO | Montes de Oro |
+CR.PU.OS| OS | Osa           |
+CR.PU.PA| PA | Parrita       |
+CR.PU.PU| PU | Puntarenas    |
+CR.PU.AG| AG | Quepos        | 
