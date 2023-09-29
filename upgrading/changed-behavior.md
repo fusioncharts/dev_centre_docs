@@ -10,7 +10,7 @@ This section is for users using a previous version of FusionCharts in their appl
 ## Label Improvements for Sunburst Chart 
 
 Starting in version 3.21, users can choose to display labels for each independent node on a `Sunburst` chart. Users have to option to enable the new `showLabelValue` property, which allows them to control the label visibility of the nodes at each level. Previously, the visibility was based on the internal space management algorithm.
-
+</br>
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2294) 2" src="https://codepen.io/fusioncharts/embed/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1">
   (SUPPORT-2294) 2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
@@ -21,7 +21,7 @@ Starting in version 3.21, users can choose to display labels for each independen
 ## Show Percent Values in Pie and Doughnut Charts
 
 Starting version 3.21, users have more control over displaying the chart and legend values on `Pie` and `Doughnut` charts. Users can now control whether to display chart values as percentages or as absolute values. Also, if a user enables the legend’s visibility, the user can choose to display the legend item values as a percentage or as absolute values.   
-
+</br>
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) 2 " src="https://codepen.io/fusioncharts/embed/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f">
   (SUPPORT-2304) 2 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
@@ -39,7 +39,7 @@ The following is a clarification of each property’s function.
 FusionCharts version 3.21 improved the behavior of patterned styles in bars and column charts to remain unchanged whenever the legends are toggled. Previously, selecting a legend replaced the column’s pattern with a solid color. 
 </br>
 Version 3.21.
-</br>
+
 <iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2295) 1" src="https://codepen.io/fusioncharts/embed/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/fusioncharts/pen/GRwGLPQ/cf586404b1bf030eb3607ccabe3d0ffc">
   (SUPPORT-2295) 1</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
@@ -97,7 +97,7 @@ FusionCharts version 3.21 improved the legend items' behavior by configuring the
 Previously, upon selecting a legend item, the other items moved positions when hovering over them.
 
 
-<iframe src="https://codesandbox.io/embed/fc-react-4-forked-y7qj4?fontsize=14&hidenavigation=1&theme=dark"
+<iframe src="https://codesandbox.io/embed/fc-react-4-forked-y7qj4?fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="fc-react-4 (forked)"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
