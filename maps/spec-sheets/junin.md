@@ -12,12 +12,12 @@ Dimensions (Width x Height): 803x523
 
 ID | Short label | Label
 ---|---|---|
-01| CM | Chanchamayo
-02| CC | Chupaca
-03| CN | Concepción
-04| HO | Huancayo
-05| JJ | Jauja
-06| JN | Junín
-07| SO | Satipo
-08| TR | Tarma
-09| YL | Yauli
+PE.JU.CM| CM | Chanchamayo
+PE.JU.CC| CC | Chupaca
+PE.JU.CN| CN | Concepción
+PE.JU.HO| HO | Huancayo
+PE.JU.JJ| JJ | Jauja
+PE.JU.JN| JN | Junín
+PE.JU.SO| SO | Satipo
+PE.JU.TR| TR | Tarma
+PE.JU.YL| YL | Yauli
