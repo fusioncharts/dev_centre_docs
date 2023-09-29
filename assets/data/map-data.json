@@ -4143,6 +4143,47 @@
             "markerData": "/maps/marker-data/costarica"
           },
           {
+            "name": "Costa Rica (Provinces)",
+            "maker": false,
+            "members": [
+           {
+            "name": "Alajuela",
+            "alias": "alajuela",
+            "specSheet": "/maps/spec-sheets/alajuela"
+           },
+           {
+            "name": "Cartago",
+            "alias": "cartago",
+            "specSheet": "/maps/spec-sheets/cartago"
+           },
+           {
+            "name": "Guanacaste",
+            "alias": "guanacaste",
+            "specSheet": "/maps/spec-sheets/guanacaste"
+          },
+            {
+            "name": "Heredia",
+            "alias": "heredia",
+            "specSheet": "/maps/spec-sheets/heredia"
+          },
+            {
+            "name": "Limón",
+            "alias": "limon",
+            "specSheet": "/maps/spec-sheets/limon"
+          },
+            {
+            "name": "Puntarenas",
+            "alias": "puntarenas",
+            "specSheet": "/maps/spec-sheets/puntarenas"
+          },  
+           {
+            "name": "San José",
+            "alias": "sanjose",
+            "specSheet": "/maps/spec-sheets/sanjose"
+          },  
+         ]
+       },  
+          {
             "name": "El Salvador",
             "alias": "elsalvador",
             "specSheet": "/maps/spec-sheets/elsalvador",
@@ -4189,6 +4230,137 @@
         "alias": "argentina",
         "specSheet": "/maps/spec-sheets/argentina",
         "markerData": "/maps/marker-data/argentina"
+      },
+      {
+        "name": "Argentina (Provinces)",
+        "maker": false,
+        "members": [
+          {
+            "name": "Ciudad Autónoma de Buenos Aires",
+            "alias": "ciudadbuenosaires",
+            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
+          },
+          {
+            "name": "Ciudad Autónoma de Buenos Aires",
+            "alias": "ciudadbuenosaires",
+            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
+          },
+          {
+            "name": "Buenos Aires",
+            "alias": "ciudadbuenosaires",
+            "specSheet": "/maps/spec-sheets/buenosaires"
+          },
+          {
+            "name": "Catamarca",
+            "alias": "catamarca",
+            "specSheet": "/maps/spec-sheets/catamarca"
+          },
+          {
+            "name": "Chaco",
+            "alias": "chaco",
+            "specSheet": "/maps/spec-sheets/chaco"
+          },
+          {
+            "name": "Chubut",
+            "alias": "chubut",
+            "specSheet": "/maps/spec-sheets/chubut"
+          },
+          {
+            "name": "Córdoba",
+            "alias": "cordoba",
+            "specSheet": "/maps/spec-sheets/cordoba_arg"
+          },
+          {
+            "name": "Corrientes",
+            "alias": "corrientes",
+            "specSheet": "/maps/spec-sheets/corrientes"
+          },
+          {
+            "name": "Entre Rios",
+            "alias": "entrerios",
+            "specSheet": "/maps/spec-sheets/entrerios"
+          },
+          {
+            "name": "Formosa",
+            "alias": "formosa",
+            "specSheet": "/maps/spec-sheets/formosa"
+          },
+          {
+            "name": "Jujuy",
+            "alias": "jujuy",
+            "specSheet": "/maps/spec-sheets/jujuy"
+          },
+          {
+            "name": "La Pampa",
+            "alias": "lapampa",
+            "specSheet": "/maps/spec-sheets/lapampa"
+          },
+          {
+            "name": "La Rioja",
+            "alias": "larioja",
+            "specSheet": "/maps/spec-sheets/larioja"
+          },
+          {
+            "name": "Mendoza",
+            "alias": "mendoza",
+            "specSheet": "/maps/spec-sheets/mendoza"
+          },
+          {
+            "name": "Misiones",
+            "alias": "misiones",
+            "specSheet": "/maps/spec-sheets/misiones"
+          },
+          {
+            "name": "Neuquén",
+            "alias": "neuquen",
+            "specSheet": "/maps/spec-sheets/neuquen"
+          },
+          {
+            "name": "Río Negro",
+            "alias": "rionegro",
+            "specSheet": "/maps/spec-sheets/rionegro"
+          },
+          {
+            "name": "Salta",
+            "alias": "salta",
+            "specSheet": "/maps/spec-sheets/salta"
+          },
+          {
+            "name": "San Juan",
+            "alias": "sanjuan",
+            "specSheet": "/maps/spec-sheets/sanjuan"
+          },
+          {
+            "name": "San Luis",
+            "alias": "sanluis",
+            "specSheet": "/maps/spec-sheets/sanluis"
+          },
+          {
+            "name": "Santa Cruz",
+            "alias": "santacruz",
+            "specSheet": "/maps/spec-sheets/santacruz_arg"
+          },
+          {
+            "name": "Santa Fe",
+            "alias": "santafe",
+            "specSheet": "/maps/spec-sheets/santafe"
+          },
+          {
+            "name": "Santiago del Estero",
+            "alias": "santiagodelestero",
+            "specSheet": "/maps/spec-sheets/santiagodelestero"
+          },
+          {
+            "name": "Tierra del Fuego",
+            "alias": "tierradelfuego",
+            "specSheet": "/maps/spec-sheets/tierradelfuego"
+          },
+          {
+            "name": "Tucumán",
+            "alias": "tucuman",
+            "specSheet": "/maps/spec-sheets/tucuman"
+          },  
+        ]
       },
       {
         "name": "Bolivia",
@@ -4698,6 +4870,142 @@
         "alias": "peru",
         "specSheet": "/maps/spec-sheets/peru",
         "markerData": "/maps/marker-data/peru"
+      },
+      {
+        "name": "Peru (Provinces)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Amazonas",
+            "alias": "amazonas",
+            "specSheet": "/maps/spec-sheets/peruamazonas"
+          },
+          {
+            "name": "Ancash",
+            "alias": "ancash",
+            "specSheet": "/maps/spec-sheets/ancash"
+          },
+          {
+            "name": "Apurímac",
+            "alias": "apurimac",
+            "specSheet": "/maps/spec-sheets/apurimac"
+          },
+          {
+            "name": "Arequipa",
+            "alias": "arequipa",
+            "specSheet": "/maps/spec-sheets/arequipa"
+          },
+          {
+            "name": "Ayacucho",
+            "alias": "ayacucho",
+            "specSheet": "/maps/spec-sheets/ayacucho"
+          },
+          {
+            "name": "Cajamarca",
+            "alias": "cajamrca",
+            "specSheet": "/maps/spec-sheets/cajamarca"
+          },
+          {
+            "name": "Callao",
+            "alias": "callao",
+            "specSheet": "/maps/spec-sheets/callao"
+          },
+          {
+            "name": "Cusco",
+            "alias": "cusco",
+            "specSheet": "/maps/spec-sheets/cusco"
+          },
+          {
+            "name": "Huancavelica",
+            "alias": "huancavelica",
+            "specSheet": "/maps/spec-sheets/huancavelica"
+          },
+          {
+            "name": "Huánuco",
+            "alias": "huanuco",
+            "specSheet": "/maps/spec-sheets/huanuco"
+          },
+          {
+            "name": "Ica",
+            "alias": "ica",
+            "specSheet": "/maps/spec-sheets/ica"
+          },
+          {
+            "name": "Junín",
+            "alias": "junin",
+            "specSheet": "/maps/spec-sheets/junin"
+          },
+          {
+            "name": "La Libertad",
+            "alias": "lalibertad",
+            "specSheet": "/maps/spec-sheets/lalibertad"
+          },
+          {
+            "name": "Lambayeque",
+            "alias": "lambayeque",
+            "specSheet": "/maps/spec-sheets/lambayeque"
+          },
+          {
+            "name": "Lima",
+            "alias": "lima",
+            "specSheet": "/maps/spec-sheets/lima"
+          },
+          {
+            "name": "Lima Province",
+            "alias": "limaprovince",
+            "specSheet": "/maps/spec-sheets/limaprovince"
+          },
+          {
+            "name": "Loreto",
+            "alias": "loreto",
+            "specSheet": "/maps/spec-sheets/loreto"
+          },
+          {
+            "name": "Madre de Dios",
+            "alias": "madrededios",
+            "specSheet": "/maps/spec-sheets/madrededios"
+          },
+          {
+            "name": "Moquegua",
+            "alias": "moquegua",
+            "specSheet": "/maps/spec-sheets/moquegua"
+          },
+          {
+            "name": "Pasco",
+            "alias": "pasco",
+            "specSheet": "/maps/spec-sheets/pasco"
+          },
+          {
+            "name": "Piura",
+            "alias": "piura",
+            "specSheet": "/maps/spec-sheets/piura"
+          },
+          {
+            "name": "Puno",
+            "alias": "puno",
+            "specSheet": "/maps/spec-sheets/puno"
+          },
+          {
+            "name": "San Martín",
+            "alias": "sanmartin",
+            "specSheet": "/maps/spec-sheets/sanmartin"
+          },
+          {
+            "name": "Tacna",
+            "alias": "tacna",
+            "specSheet": "/maps/spec-sheets/tacna"
+          },
+          {
+            "name": "Tumbes",
+            "alias": "tumbes",
+            "specSheet": "/maps/spec-sheets/tumbes"
+          },
+          {
+            "name": "Ucayali",
+            "alias": "ucayali",
+            "specSheet": "/maps/spec-sheets/ucayali"
+          },
+        ]
       },
       {
         "name": "Suriname",
