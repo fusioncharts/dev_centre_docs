@@ -987,6 +987,20 @@ To render these maps, you need to download the map definition files from [here](
 | [Sergipe](/maps/spec-sheets/sergipe)                      | maps/sergipe          |
 | [Tocantins](/maps/spec-sheets/tocantins)                  | maps/tocantins        |
 
+### Bolivia (Departments)
+
+| Chart Type                                                | JavaScript Alias      |
+| --------------------------------------------------------- | --------------------- |
+| [Chuquisaca](/maps/spec-sheets/chuquisaca)                | maps/chuquisaca       |
+| [Cochabamba](/maps/spec-sheets/cochabamba)                | maps/cochabamba       |
+| [Beni](/maps/spec-sheets/beni)                            | maps/beni             |
+| [La Paz](/maps/spec-sheets/lapaz)                         | maps/lapaz            |
+| [Oruro](/maps/spec-sheets/oruro)                          | maps/oruro            |
+| [Pando](/maps/spec-sheets/pando)                          | maps/pando            |
+| [Potosi](/maps/spec-sheets/potosi)                        | maps/potosi           |
+| [Santa Cruz](/maps/spec-sheets/santacruz)                 | maps/santacruz        |
+| [Tarija](/maps/spec-sheets/tarija)                        | maps/tarija           |
+
 ### Caribbeans (Islands)
 
 | Chart Type                                                     | JavaScript Alias         |
