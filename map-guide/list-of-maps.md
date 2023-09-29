@@ -4,7 +4,7 @@ description: FusionMaps XT offers interactive maps to plot geographical data lik
 heading: List of Maps
 ---
 
-FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and all the US states.
+FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps, including all continents, major countries, and all the US states.
 
 To render these maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/map-definition-files) and copy-paste the maps folder within your fusioncharts directory.
 
@@ -1019,6 +1019,27 @@ To render these maps, you need to download the map definition files from [here](
 | [San Martin](/maps/spec-sheets/saintmartin)                    | maps/saintmartin         |
 | [Turks and Caicos](/maps/spec-sheets/turksandcaicos)           | maps/turksandcaicos      |
 | [US Virgin Island](/maps/spec-sheets/usvirginisland)           | maps/usvirginisland      |
+
+### Chile (Regions)
+
+| Chart Type                                                     | JavaScript Alias         |
+| -------------------------------------------------------------- | ------------------------ |
+| [Antofagasta](/maps/spec-sheets/antofagasta)                   | maps/antofagasta         |
+| [Araucania](/maps/spec-sheets/araucania)                       | maps/araucania           |
+| [Aricay Parinacota](/maps/spec-sheets/aricayparinacota)        | maps/aricayparinacota    |
+| [Atacama](/maps/spec-sheets/atacama)                           | maps/atacama             |
+| [Aysendel General Carlos Ibanez del Campo](/maps/spec-sheets/aysendelgeneralcarlosibanezdelcampo)  | maps/aysendelgeneralcarlosibanezdelcampo    |
+| [Biobio](/maps/spec-sheets/biobio)                             | maps/biobio              |
+| [Coquimbo](/maps/spec-sheets/coquimbo)                         | maps/coquimbo            |
+| [Libertador General Bernardo O Higgins](/maps/spec-sheets/libertadorgeneralbernardoohiggins)  | maps/libertadorgeneralbernardoohiggins    |
+| [Los Lagos](/maps/spec-sheets/loslagos)                        | maps/loslagos            |
+| [Los Rios](/maps/spec-sheets/losrios)                          | maps/losrios             |
+| [Magallanesy de la Antartica Chilena](/maps/spec-sheets/magallanesydelaantarticachilena)  | maps/magallanesydelaantarticachilena |
+| [Maule](/maps/spec-sheets/maule)                               | maps/maule               |
+| [Metropolitana de Santiago](/maps/spec-sheets/metropolitanadesantiago)   | maps/metropolitanadesantiago  |
+| [Nuble](/maps/spec-sheets/nuble)                               | maps/nuble               |
+| [Tarapaca](/maps/spec-sheets/taracapa)                         | maps/taracapa            |
+| [Val Paraiso](/maps/spec-sheets/valparaiso)                    | maps/valparaiso          |
 
 ## Asia
 
