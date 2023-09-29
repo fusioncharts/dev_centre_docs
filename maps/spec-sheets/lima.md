@@ -12,12 +12,12 @@ Dimensions (Width x Height): 550x700
 
 ID | Short label | Label
 ---|---|---|
-01| BR | Barranca
-02| CJ | Cajatambo
-03| CT | Cañete
-04| CA | Canta
-05| HR | Huaral
-06| HH | Huarochirí
-07| HU | Huaura
-08| OY | Oyón
-09| YY | Yauyos
+PE.LR.BR| BR | Barranca
+PE.LR.CJ| CJ | Cajatambo
+PE.LR.CT| CT | Cañete
+PE.LR.CA| CA | Canta
+PE.LR.HR| HR | Huaral
+PE.LR.HH| HH | Huarochirí
+PE.LR.HU| HU | Huaura
+PE.LR.OY| OY | Oyón
+PE.LR.YY| YY | Yauyos
