@@ -9,14 +9,15 @@ Dimensions (Width x Height): 600x555
 
 ### List of Entities
 
-| ID  | Short label | Label        |
-| 01  | BE          | Bermejo      |
-| 02  | FO          | Formosa      |
-| 03  | LA          | Laishi       |
-| 04  | MA          | Matacos      |
-| 05  | PA          | Patiño       |
-| 06  | PG          | Pilagás      |
-| 07  | PM          | Pilcomayo    |
-| 08  | PR          | Pirané       |
-| 09  | RL          | Rámon Lista  |
+ID  | Short label | Label
+---|---|---|
+AR.FM.BE  | BE          | Bermejo      
+AR.FM.FO  | FO          | Formosa      
+AR.FM.LA  | LA          | Laishi       
+AR.FM.MA  | MA          | Matacos      
+AR.FM.PA  | PA          | Patiño       
+AR.FM.PG  | PG          | Pilagás      
+AR.FM.PM  | PM          | Pilcomayo    
+AR.FM.PR  | PR          | Pirané       
+AR.FM.PL  | RL          | Rámon Lista  
 
