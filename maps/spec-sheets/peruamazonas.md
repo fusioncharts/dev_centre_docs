@@ -12,10 +12,10 @@ Dimensions (Width x Height): 325x847
 
 ID | Short label | Label
 ---|---|---|
-01| BG | Bagua
-02| BN | Bongará
-03| CP | Chachapoyas
-04| CQ | Condorcanqui
-05| LY | Luya
-06| RM | Rodríguez de Mendoza
-07| UT | Utcubamba
+PE.AM.BG| BG | Bagua
+PE.AM.BN| BN | Bongará
+PE.AM.CP| CP | Chachapoyas
+PE.AM.CQ| CQ | Condorcanqui
+PE.AM.LY| LY | Luya
+PE.AM.RM| RM | Rodríguez de Mendoza
+PE.AM.UT| UT | Utcubamba

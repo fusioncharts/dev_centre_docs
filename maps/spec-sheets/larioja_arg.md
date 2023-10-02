@@ -2,29 +2,30 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/larioja
+#### JavaScript Alias: maps/larioja_arg
 
 Map Name: LaRioja
 Dimensions (Width x Height): 600x608
 
 ### List of Entities
 
-| ID  | Short label | Label                          |
-| 01  | AR          | Arauco                         |
-| 02  | LR          | Capital                        |
-| 03  | CB          | Castro Barros                  |
-| 04  | CM          | Chamical                       |
-| 05  | CL          | Chilecito                      |
-| 06  | CV          | Coronel Felipe Varela          |
-| 07  | FA          | Famatina                       |
-| 08  | GP          | General Ángel Vicente Peñaloza |
-| 09  | GB          | General Belgrano               |
-| 10  | GQ          | General Juan Facundo Quiroga   |
-| 11  | GL          | General Lamadrid               |
-| 12  | GO          | General Ocampo                 |
-| 13  | GM          | General San Martín             |
-| 14  | IN          | Independencia                  |
-| 15  | RP          | Rosario Vera Peñaloza          |
-| 16  | SS          | San Blas                       |
-| 17  | SA          | Sanagasta                      |
-| 18  | VI          | Vinchina                       |
+ID  | Short label | Label
+---|---|---|
+AR.LR.AR  | AR          | Arauco                         
+AR.LR.LR  | LR          | Capital                        
+AR.LR.CB  | CB          | Castro Barros                  
+AR.LR.CM  | CM          | Chamical                       
+AR.LR.CL  | CL          | Chilecito                      
+AR.LR.CV  | CV          | Coronel Felipe Varela          
+AR.LR.FA  | FA          | Famatina                       
+AR.LR.GP  | GP          | General Ángel Vicente Peñaloza 
+AR.LR.GB  | GB          | General Belgrano               
+AR.LR.GQ  | GQ          | General Juan Facundo Quiroga   
+AR.LR.GL  | GL          | General Lamadrid               
+AR.LR.GO  | GO          | General Ocampo                 
+AR.LR.GM  | GM          | General San Martín             
+AR.LR.IN  | IN          | Independencia                  
+AR.LR.RP  | RP          | Rosario Vera Peñaloza          
+AR.LR.SS  | SS          | San Blas                       
+AR.LR.SA  | SA          | Sanagasta                      
+AR.LR.VI  | VI          | Vinchina                       

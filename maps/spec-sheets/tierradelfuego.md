@@ -9,7 +9,8 @@ Dimensions (Width x Height): 726x361
 
 ### List of Entities
 
-| ID  | Short label | Label      |
-| 01  | US          | Ushuaia    |
-| 02  | RG          | Río Grande |
-| 03  | TL          | Tolhuin    |
+ID  | Short label | Label
+---|---|---|
+AR.TF.US  | US          | Ushuaia    
+AR.TF.RG  | RG          | Río Grande 
+AR.TF.TL  | TL          | Tolhuin    

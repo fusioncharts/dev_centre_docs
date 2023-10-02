@@ -12,10 +12,10 @@ Dimensions (Width x Height): 522x503
 
 ID | Short label | Label
 ---|---|---|
-01| AB | Abancay
-02| AH | Andahuaylas
-03| AN | Antabamba
-04| AE | Aymaraes
-05| CH | Chincheros
-06| CO | Cotabambas
-07| GR | Grau
+PE.AP.AB| AB | Abancay
+PE.AP.AH| AH | Andahuaylas
+PE.AP.AN| AN | Antabamba
+PE.AP.AE| AE | Aymaraes
+PE.AP.CH| CH | Chincheros
+PE.AP.CO| CO | Cotabambas
+PE.AP.GR| GR | Grau

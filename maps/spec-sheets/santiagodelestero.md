@@ -9,32 +9,33 @@ Dimensions (Width x Height): 407x559
 
 ### List of Entities
 
-| ID  | Short label | Label              |
-| 01  | AG          | Aguirre            |
-| 02  | AL          | Alberdi            |
-| 03  | AT          | Atamisqui          |
-| 04  | AV          | Avellaneda         |
-| 05  | BA          | Banda              |
-| 06  | BE          | Belgrano           |
-| 07  | SE          | Capital            |
-| 08  | CH          | Choya              |
-| 09  | CO          | Copo               |
-| 10  | FI          | Figueroa           |
-| 11  | GT          | General Taboada    |
-| 12  | GU          | Guasayán           |
-| 13  | JM          | Jiménez            |
-| 14  | JI          | Juan Felipe Ibarra |
-| 15  | LO          | Loreto             |
-| 16  | MI          | Mitre              |
-| 17  | MO          | Moreno             |
-| 18  | OJ          | Ojo de Agua        |
-| 19  | PE          | Pellegrini         |
-| 20  | QU          | Quebrachos         |
-| 21  | RH          | Río Hondo          |
-| 22  | RI          | Rivadavia          |
-| 23  | RO          | Robles             |
-| 24  | SV          | Salavina           |
-| 25  | SM          | San Martín         |
-| 26  | SR          | Sarmiento          |
-| 27  | SI          | Silípica           |
+ID  | Short label | Label
+---|---|---|
+AR.SE.AG  | AG          | Aguirre            
+AR.SE.AL  | AL          | Alberdi            
+AR.SE.AT  | AT          | Atamisqui          
+AR.SE.AV  | AV          | Avellaneda         
+AR.SE.BA  | BA          | Banda              
+AR.SE.BE  | BE          | Belgrano           
+AR.SE.SE  | SE          | Capital            
+AR.SE.CH  | CH          | Choya              
+AR.SE.CO  | CO          | Copo               
+AR.SE.FI  | FI          | Figueroa           
+AR.SE.GT  | GT          | General Taboada    
+AR.SE.GU  | GU          | Guasayán           
+AR.SE.JM  | JM          | Jiménez            
+AR.SE.JI  | JI          | Juan Felipe Ibarra 
+AR.SE.LO  | LO          | Loreto             
+AR.SE.MI  | MI          | Mitre              
+AR.SE.MO  | MO          | Moreno             
+AR.SE.OJ  | OJ          | Ojo de Agua        
+AR.SE.PE  | PE          | Pellegrini         
+AR.SE.QU  | QU          | Quebrachos         
+AR.SE.RH  | RH          | Río Hondo          
+AR.SE.RI  | RI          | Rivadavia          
+AR.SE.RO  | RO          | Robles             
+AR.SE.SV  | SV          | Salavina           
+AR.SE.SM  | SM          | San Martín         
+AR.SE.SR  | SR          | Sarmiento          
+AR.SE.SI  | SI          | Silípica           
 

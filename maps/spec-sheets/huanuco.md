@@ -12,14 +12,14 @@ Dimensions (Width x Height): 852x664
 
 ID | Short label | Label
 ---|---|---|
-01| AO | Ambo
-02| DM | Dos de Mayo
-03| HC | Huacaybamba
-04| HE | Huamalíes
-05| HN | Huánuco
-06| LR | Lauricocha
-07| LP | Leoncio Prado
-08| MA | Marañón
-09| PE | Pachitea
-10| PI | Puerto Inca
-11| YW | Yarowilca
+PE.HN.AO| AO | Ambo
+PE.HN.DM| DM | Dos de Mayo
+PE.HN.HC| HC | Huacaybamba
+PE.HN.HE| HE | Huamalíes
+PE.HN.HN| HN | Huánuco
+PE.HN.LR| LR | Lauricocha
+PE.HN.LP| LP | Leoncio Prado
+PE.HN.MA| MA | Marañón
+PE.HN.PE| PE | Pachitea
+PE.HN.PI| PI | Puerto Inca
+PE.HN.YW| YW | Yarowilca

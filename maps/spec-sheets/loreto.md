@@ -12,11 +12,11 @@ Dimensions (Width x Height): 544x600
 
 ID | Short label | Label
 ---|---|---|
-01| AA | Alto Amazonas
-02| DM | Datem del Marañon
-03| LO | Loreto
-04| MR | Mariscal Ramón Castilla
-05| MY | Maynas
-06| RQ | Requena
-07| UC | Ucayali
-08| PU | Putumayo
+PE.LO.AA| AA | Alto Amazonas
+PE.LO.DM| DM | Datem del Marañon
+PE.LO.LO| LO | Loreto
+PE.LO.MR| MR | Mariscal Ramón Castilla
+PE.LO.MY| MY | Maynas
+PE.LO.RQ| RQ | Requena
+PE.LO.UC| UC | Ucayali
+PE.LO.PU| PU | Putumayo

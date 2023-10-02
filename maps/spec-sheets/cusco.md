@@ -12,16 +12,16 @@ Dimensions (Width x Height): 560x679
 
 ID | Short label | Label
 ---|---|---|
-01| AM | Acomayo
-02| AT | Anta
-03| CC | Calca
-04| CA | Canas
-05| CN | Canchis
-06| CI | Chumbivilcas
-07| CS | Cusco
-08| ES | Espinar
-09| LC | La Convención
-10| PR | Paruro
-11| PM | Paucartambo
-12| QC | Quispicanchi
-13| UR | Urubamba
+PE.CS.AM| AM | Acomayo
+PE.CS.AT| AT | Anta
+PE.CS.CC| CC | Calca
+PE.CS.CA| CA | Canas
+PE.CS.CN| CN | Canchis
+PE.CS.CI| CI | Chumbivilcas
+PE.CS.CS| CS | Cusco
+PE.CS.ES| ES | Espinar
+PE.CS.LC| LC | La Convención
+PE.CS.PR| PR | Paruro
+PE.CS.PM| PM | Paucartambo
+PE.CS.QC| QC | Quispicanchi
+PE.CS.UR| UR | Urubamba

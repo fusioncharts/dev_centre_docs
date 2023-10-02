@@ -9,17 +9,18 @@ Dimensions (Width x Height): 839x410
 
 ### List of Entities
 
-| ID  | Short label | Label         |
-| 01  | AA          | Adolfo Alsina |
-| 02  | AV          | Avellaneda    |
-| 03  | BA          | Bariloche     |
-| 04  | CO          | Conesa        |
-| 05  | EC          | El Cuy        |
-| 06  | GR          | General Roca  |
-| 07  | NJ          | 9 de Julio    |
-| 08  | NO          | Ñorquinco     |
-| 09  | PM          | Pichi Mahuida |
-| 10  | PI          | Pilcaniyeu    |
-| 11  | SA          | San Antonio   |
-| 12  | VA          | Valcheta      |
-| 13  | VM          | 25 de Mayo    |
+ID  | Short label | Label
+---|---|---|
+AR.RN.AA  | AA          | Adolfo Alsina 
+AR.RN.AV  | AV          | Avellaneda    
+AR.RN.BA  | BA          | Bariloche     
+AR.RN.CO  | CO          | Conesa        
+AR.RN.EC  | EC          | El Cuy        
+AR.RN.GR  | GR          | General Roca  
+AR.RN.NJ  | NJ          | 9 de Julio    
+AR.RN.NO  | NO          | Ñorquinco     
+AR.RN.PM  | PM          | Pichi Mahuida 
+AR.RN.PI  | PI          | Pilcaniyeu    
+AR.RN.SA  | SA          | San Antonio   
+AR.RN.VA  | VA          | Valcheta      
+AR.RN.VM  | VM          | 25 de Mayo    

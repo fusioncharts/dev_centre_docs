@@ -12,7 +12,7 @@ Dimensions (Width x Height): 600x564
 
 ID | Short label | Label
 ---|---|---|
-01| CD | Candarave
-02| JB | Jorge Basadre 
-03| TC | Tacna
-04| TA | Tarata
+PE.TA.CD| CD | Candarave
+PE.TA.JB| JB | Jorge Basadre 
+PE.TA.TC| TC | Tacna
+PE.TA.TA| TA | Tarata

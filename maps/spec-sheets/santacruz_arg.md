@@ -2,18 +2,19 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santacruz
+#### JavaScript Alias: maps/santacruz_arg
 
 Map Name: SantaCruz
 Dimensions (Width x Height): 468x581
 
 ### List of Entities
 
-| ID  | Short label | Label              |
-| 01  | CA          | Corpen Aike        |
-| 02  | DE          | Deseado            |
-| 03  | GA          | Güer Aike          |
-| 04  | LA          | Lago Argentino     |
-| 05  | LB          | Lago Buenos Aires  |
-| 06  | MA          | Magallanes         |
-| 07  | RC          | Río Chico          |
+ID  | Short label | Label
+---|---|---|
+AR.SC.CA  | CA          | Corpen Aike        
+AR.SC.DE  | DE          | Deseado            
+AR.SC.GA  | GA          | Güer Aike          
+AR.SC.LA  | LA          | Lago Argentino     
+AR.SC.LB  | LB          | Lago Buenos Aires  
+AR.SC.MA  | MA          | Magallanes         
+AR.SC.RC  | RC          | Río Chico          

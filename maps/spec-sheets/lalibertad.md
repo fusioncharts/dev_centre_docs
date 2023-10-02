@@ -12,15 +12,15 @@ Dimensions (Width x Height): 704x517
 
 ID | Short label | Label
 ---|---|---|
-01| AS | Ascope
-02| BL | Bolívar
-03| CP | Chepén
-04| GC | Gran Chimú
-05| JU | Julcán
-06| OT | Otuzco
-07| PY | Pacasmayo
-08| PZ | Pataz
-09| SC | Sánchez Carrión
-10| SD | Santiago de Chuco
-11| TJ | Trujillo
-12| VI | Virú
+PE.LL.AS| AS | Ascope
+PE.LL.BL| BL | Bolívar
+PE.LL.CP| CP | Chepén
+PE.LL.GC| GC | Gran Chimú
+PE.LL.JU| JU | Julcán
+PE.LL.OT| OT | Otuzco
+PE.LL.PY| PY | Pacasmayo
+PE.LL.PZ| PZ | Pataz
+PE.LL.SC| SC | Sánchez Carrión
+PE.LL.SD| SD | Santiago de Chuco
+PE.LL.TJ| TJ | Trujillo
+PE.LL.VI| VI | Virú

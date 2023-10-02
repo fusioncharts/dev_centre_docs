@@ -9,21 +9,22 @@ Dimensions (Width x Height): 472x548
 
 ### List of Entities
 
-| ID  | Short label | Label                |
-| 01  | AM     |  Ambato                   |
-| 02  | AC     |  Ancasti                  |
-| 03  | AG     |  Andalgalá                |
-| 04  | AS     |  Antofagasta de la Sierra |
-| 05  | BE     |  Belén                    |
-| 06  | CA     |  Capayán                  |
-| 07  | CT     |  Capital                  |
-| 08  | EA     |  El Alto                  |
-| 09  | FE     |  Fray Mamerto Esquiú      |
-| 10  | LP     |  La Paz                   |
-| 11  | PA     |  Paclín                   |
-| 12  | PO     |  Pomán                    |
-| 13  | SM     |  Santa María              |
-| 14  | SR     |  Santa Rosa               |
-| 15  | TI     |  Tinogasta                |
-| 16  |  VV    |  Valle Viejo              |
+ID  | Short label | Label  
+---|---|---|
+AR.CT.AM  | AM     |  Ambato
+AR.CT.AC  | AC     |  Ancasti
+AR.CT.AG  | AG     |  Andalgalá
+AR.CT.AS  | AS     |  Antofagasta de la Sierra
+AR.CT.BE  | BE     |  Belén
+AR.CT.CA  | CA     |  Capayán
+AR.CT.CT  | CT     |  Capital
+AR.CT.CA  | EA     |  El Alto
+AR.CT.FE  | FE     |  Fray Mamerto Esquiú
+AR.CT.LP  | LP     |  La Paz
+AR.CT.PA  | PA     |  Paclín
+AR.CT.PO  | PO     |  Pomán
+AR.CT.SM  | SM     |  Santa María 
+AR.CT.SR  | SR     |  Santa Rosa  
+AR.CT.TTI  | TI     |  Tinogasta 
+AR.CT.VV  |  VV    |  Valle Viejo 
 

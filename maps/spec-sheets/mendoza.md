@@ -9,22 +9,23 @@ Dimensions (Width x Height): 421x699
 
 ### List of Entities
 
-| ID  | Short label | Label          |
-| 01  | MZ          | Capital        |
-| 02  | GA          | General Alvear |
-| 03  | GC          | Godoy Cruz     |
-| 04  | GU          | Guaymallén     |
-| 05  | JU          | Junín          |
-| 06  | LP          | La Paz         |
-| 07  | LH          | Las Heras      |
-| 08  | LA          | Lavalle        |
-| 09  | LC          | Luján de Cuyo  |
-| 10  | MP          | Maipú          |
-| 11  | ML          | Malarguë       |
-| 12  | RI          | Rivadavia      |
-| 13  | SC          | San Carlos     |
-| 14  | SM          | San Martín     |
-| 15  | SR          | San Rafael     |
-| 16  | ST          | Santa Rosa     |
-| 17  | TN          | Tunuyán        |
-| 18  | TP          | Tupungato      |
+ID  | Short label | Label
+---|---|---|
+AR.MZ.MZ  | MZ          | Capital        
+AR.MZ.GA  | GA          | General Alvear 
+AR.MZ.GC  | GC          | Godoy Cruz     
+AR.MZ.GU  | GU          | Guaymallén     
+AR.MZ.JU  | JU          | Junín          
+AR.MZ.LP  | LP          | La Paz         
+AR.MZ.LH  | LH          | Las Heras      
+AR.MZ.LA  | LA          | Lavalle        
+AR.MZ.LC  | LC          | Luján de Cuyo  
+AR.MZ.MP  | MP          | Maipú          
+AR.MZ.ML  | ML          | Malarguë       
+AR.MZ.RI  | RI          | Rivadavia      
+AR.MZ.SC  | SC          | San Carlos     
+AR.MZ.SM  | SM          | San Martín     
+AR.MZ.SR  | SR          | San Rafael     
+AR.MZ.ST  | ST          | Santa Rosa     
+AR.MZ.TN  | TN          | Tunuyán        
+AR.MZ.TP  | TP          | Tupungato      

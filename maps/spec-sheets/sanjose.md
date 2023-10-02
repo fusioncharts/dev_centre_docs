@@ -15,23 +15,23 @@ Dimensions (Width x Height): 706x686
 
 ID | Short label | Label   | 
 ---|---|---|
-01| AC | Acosta              |
-02| AL | Alajuelita          |
-03| AS | Aserrí              | 
-04| CU | Curridabat          |
-05| DE | Desamparados        |
-06| DO | Dota                |
-07| ES | Escazú              |
-08| GO | Goicoechea          |
-09| LC | León Cortés         |
-10| MO | Montes de Oca       |
-11| MR | Mora                | 
-12| MV | Moravia             |
-13| PZ | Pérez Zeledón       |
-14| PU | Puriscal            | 
-15| SJ | San José            |
-16| SA | Santa Ana           |
-17| TA | Tarrazú             |
-18| TI | Tibás               |
-19| TU | Turrubares          |
-20| VC | Vásquez de Coronado |
+CR.SJ.AC| AC | Acosta              |
+CR.SJ.AL| AL | Alajuelita          |
+CR.SJ.AS| AS | Aserrí              | 
+CR.SJ.CU| CU | Curridabat          |
+CR.SJ.DE| DE | Desamparados        |
+CR.SJ.DO| DO | Dota                |
+CR.SJ.ES| ES | Escazú              |
+CR.SJ.GO| GO | Goicoechea          |
+CR.SJ.LC| LC | León Cortés         |
+CR.SJ.MO| MO | Montes de Oca       |
+CR.SJ.MR| MR | Mora                | 
+CR.SJ.MV| MV | Moravia             |
+CR.SJ.PZ| PZ | Pérez Zeledón       |
+CR.SJ.PU| PU | Puriscal            | 
+CR.SJ.SJ| SJ | San José            |
+CR.SJ.SA| SA | Santa Ana           |
+CR.SJ.TA| TA | Tarrazú             |
+CR.SJ.TI| TI | Tibás               |
+CR.SJ.TU| TU | Turrubares          |
+CR.SJ.VC| VC | Vásquez de Coronado |

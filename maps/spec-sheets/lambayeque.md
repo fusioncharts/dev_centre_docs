@@ -12,6 +12,6 @@ Dimensions (Width x Height): 540x600
 
 ID | Short label | Label
 ---|---|---|
-01| CL | Chiclayo
-02| FE | Ferreñafe
-03| LQ | Lambayeque
+PE.LB.CL| CL | Chiclayo
+PE.LB.FE| FE | Ferreñafe
+PE.LB.LQ| LQ | Lambayeque

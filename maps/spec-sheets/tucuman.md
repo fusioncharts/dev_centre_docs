@@ -9,21 +9,22 @@ Dimensions (Width x Height): 464x531
 
 ### List of Entities
 
-| ID  | Short label | Label                 |
-| 01  | BU          | Burruyacú             |
-| 02  | TM          | Capital               |
-| 03  | CH          | Chicligasta           |
-| 04  | CA          | Cruz Alta             |
-| 05  | FA          | Famaillá              |
-| 06  | GR          | Graneros              |
-| 07  | JA          | Juan Bautista Alberdi |
-| 08  | LC          | La Cocha              |
-| 09  | LE          | Leales                |
-| 10  | LU          | Lules                 |
-| 11  | MO          | Monteros              |
-| 12  | RC          | Río Chico             |
-| 13  | SI          | Simoca                |
-| 14  | TD          | Tafí del Valle        |
-| 15  | TV          | Tafí Viejo            |
-| 16  | TR          | Trancas               |
-| 17  | YB          | Yerba Buena           |
+ID  | Short label | Label
+---|---|---|
+AR.TM.BU  | BU          | Burruyacú             
+AR.TM.TM  | TM          | Capital               
+AR.TM.CH  | CH          | Chicligasta           
+AR.TM.CA  | CA          | Cruz Alta             
+AR.TM.FA  | FA          | Famaillá              
+AR.TM.GR  | GR          | Graneros              
+AR.TM.JA  | JA          | Juan Bautista Alberdi 
+AR.TM.LC  | LC          | La Cocha              
+AR.TM.LE  | LE          | Leales                
+AR.TM.LU  | LU          | Lules                 
+AR.TM.MO  | MO          | Monteros              
+AR.TM.RC  | RC          | Río Chico             
+AR.TM.SI  | SI          | Simoca                
+AR.TM.TD  | TD          | Tafí del Valle        
+AR.TM.TV  | TV          | Tafí Viejo            
+AR.TM.TR  | TR          | Trancas               
+AR.TM.YB  | YB          | Yerba Buena           

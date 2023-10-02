@@ -9,13 +9,14 @@ Dimensions (Width x Height): 351x576
 
 ### List of Entities
 
-| ID  | Short label | Label                         |
-| 01  | AY          | Ayacucho                      |
-| 02  | BE          | Belgrano                      |
-| 03  | LC          | La Capital                    |
-| 04  | CH          | Chacabuco                     |
-| 05  | CP          | Coronel Pringles              |
-| 06  | GP          | General Pedernera             |
-| 07  | GD          | Gobernador Dupuy              |
-| 08  | JU          | Junín                         |
-| 09  | LM          | Libertador General San Martín |
+ID  | Short label | Label
+---|---|---|
+AR.SL.AY  | AY          | Ayacucho                      
+AR.SL.BE  | BE          | Belgrano                      
+AR.SL.LC  | LC          | La Capital                    
+AR.SL.CH  | CH          | Chacabuco                     
+AR.SL.CP  | CP          | Coronel Pringles              
+AR.SL.GP  | GP          | General Pedernera             
+AR.SL.GD  | GD          | Gobernador Dupuy              
+AR.SL.JU  | JU          | Junín                         
+AR.SL.LM  | LM          | Libertador General San Martín 

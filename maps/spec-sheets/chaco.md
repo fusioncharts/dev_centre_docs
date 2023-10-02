@@ -9,29 +9,30 @@ Dimensions (Width x Height): 709x549
 
 ### List of Entities
 
-| ID  | Short label | Label                     |
-| 01  | AB     | Almirante Brown                |
-| 02  | BE     | Bermejo                        |
-| 03  | CH     | Chacabuco                      |
-| 04  | CF     | Comandante Fernández           |
-| 05  | DC     | 12 de Octubre                  |
-| 06  | DA     | 2 de Abril                     |
-| 07  | FJ     | Fray Justo Santa María del Oro |
-| 08  | GB     | General Belgrano               |
-| 09  | GD     | General Donovan                |
-| 10  | GG     | General Güemes                 |
-| 11  | IN     | Independencia                  |
-| 12  | LI     | Libertad                       |
-| 13  | LM     | Libertador General San Martín  |
-| 14  | MA     | Maipú                          |
-| 15  | MF     | Mayor Luis J. Fontana          |
-| 16  | NJ     | 9 de Julio                     |
-| 17  | OH     | O\'Higgins                     |
-| 18  | PP     | Presidencia de la Plaza        |
-| 19  | PM     | Primero de Mayo                |
-| 20  | QU     | Quitilipi                      |
-| 21  | SF     | San Fernando                   |
-| 22  | SL     | San Lorenzo                    |
-| 23  | SC     | Sargento Cabral                |
-| 24  | TA     | Tapenagá                       |
-| 25  | VM     | 25 de Mayo                     |
+ID  | Short label | Label
+---|---|---|
+AR.CC.AB  | AB     | Almirante Brown                
+AR.CC.BE  | BE     | Bermejo                        
+AR.CC.CH  | CH     | Chacabuco                      
+AR.CC.CF  | CF     | Comandante Fernández           
+AR.CC.DC  | DC     | 12 de Octubre                  
+AR.CC.DA  | DA     | 2 de Abril                     
+AR.CC.FJ  | FJ     | Fray Justo Santa María del Oro 
+AR.CC.GB  | GB     | General Belgrano               
+AR.CC.GD  | GD     | General Donovan                
+AR.CC.GG  | GG     | General Güemes                 
+AR.CC.IN  | IN     | Independencia                  
+AR.CC.LI  | LI     | Libertad                       
+AR.CC.LM  | LM     | Libertador General San Martín  
+AR.CC.MA  | MA     | Maipú                          
+AR.CC.MF  | MF     | Mayor Luis J. Fontana          
+AR.CC.NJ  | NJ     | 9 de Julio                     
+AR.CC.OH  | OH     | O\'Higgins                     
+AR.CC.PP  | PP     | Presidencia de la Plaza        
+AR.CC.PM  | PM     | Primero de Mayo                
+AR.CC.QU  | QU     | Quitilipi                      
+AR.CC.SF  | SF     | San Fernando                   
+AR.CC.SL  | SL     | San Lorenzo                    
+AR.CC.SC  | SC     | Sargento Cabral                
+AR.CC.TA  | TA     | Tapenagá                       
+AR.CC.VM  | VM     | 25 de Mayo                     
