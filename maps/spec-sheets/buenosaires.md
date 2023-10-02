@@ -11,138 +11,138 @@ Dimensions (Width x Height): 674x800
 
 | ID  | Short label | Label               |
 | --- | ----------- | ------------------- |
-| 01  | AA          | Adolfo Alsina       |
-| 02  | AC          | Adolfo Gonzáles Chaves |
-| 03  | AL          | Alberti                |
-| 04  | AB          | Almirante Brown        |
-| 05  | BM          | Arrecifes              |
-| 06  | AV          | Avellaneda             |
-| 07  | AY          | Ayacucho               |
-| 08  | AZ          | Azul                   |
-| 09  | BB          | Bahía Blanca           |
-| 10  | BC          | Balcarce               |
-| 11  | BD          | Baradero               |
-| 12  | BJ          | Benito Juárez          |
-| 13  | BZ          | Berazategui            |
-| 14  | BS          | Berisso                |
-| 15  | BO          | Bolívar                |
-| 16  | BG          | Bragado                |
-| 17  | BR          | Brandsen               |
-| 18  | CM          | Campana                |
-| 19  | CL          | Cañuelas               |
-| 20  | CS          | Capitán Sarmiento      |
-| 21  | CC          | Carlos Casares         |
-| 22  | CT          | Carlos Tejedor         |
-| 23  | CA          | Carmen de Areco        |
-| 24  | CI          | Castelli               |
-| 25  | CB          | Chacabuco              |
-| 26  | CH          | Chascomús              |
-| 27  | CV          | Chivilcoy              |
-| 28  | CO          | Colón                  |
-| 29  | CD          | Coronel Dorrego        |
-| 30  | CP          | Coronel Pringles       |
-| 31  | CR          | Coronel Rosales        |
-| 32  | CE          | Coronel Suárez         |
-| 33  | DA          | Daireaux               |
-| 34  | DO          | Dolores                |
-| 35  | EN          | Ensenada               |
-| 36  | ES          | Escobar                |
-| 37  | EB          | Esteban Echeverría     |
-| 38  | EC          | Exaltación de la Cruz  |
-| 39  | EZ          | Ezeiza                 |
-| 40  | FC          | Florencio Varela       |
-| 41  | FA          | Florentino Ameghino    |
-| 42  | GD          | General Alvarado       |
-| 43  | GA          | General Alvear         |
-| 44  | GE          | General Arenales       |
-| 45  | GB          | General Belgrano       |
-| 46  | GG          | General Guido          |
-| 47  | GM          | General La Madrid      |
-| 48  | GH          | General Las Heras      |
-| 49  | GL          | General Lavalle        |
-| 50  | GJ          | General Madariaga      |
-| 51  | GZ          | General Paz            |
-| 52  | GI          | General Pinto          |
-| 53  | GP          | General Pueyrredón     |
-| 54  | GR          | General Rodríguez      |
-| 55  | GN          | General San Martín     |
-| 56  | GT          | General Viamonte       |
-| 57  | GV          | General Villegas       |
-| 58  | GU          | Guaminí                |
-| 59  | HY          | Hipólito Yrigoyen      |
-| 60  | HU          | Hurlingham             |
-| 61  | IT          | Ituzaingó              |
-| 62  | JP          | José C. Paz            |
-| 63  | JU          | Junín                  |
-| 64  | LC          | La Costa               |
-| 65  | LM          | La Matanza             |
-| 66  | LT          | La Plata               |
-| 67  | LS          | Lanús                  |
-| 68  | LR          | Laprida                |
-| 69  | LF          | Las Flores             |
-| 70  | LA          | Leandro N. Alem        |
-| 71  | LE          | Lezama                 |
-| 72  | LI          | Lincoln                |
-| 73  | LO          | Lobería                |
-| 74  | LB          | Lobos                  |
-| 75  | LZ          | Lomas de Zamora        |
-| 76  | LU          | Luján                  |
-| 77  | ML          | Magdalena              |
-| 78  | MA          | Maipú                  |
-| 79  | MV          | Malvinas Argentinas    |
-| 80  | MC          | Mar Chiquita           |
-| 81  | MP          | Marcos Paz             |
-| 82  | MD          | Mercedes               |
-| 83  | ME          | Merlo                  |
-| 84  | MH          | Monte Hermoso          |
-| 85  | MR          | Moreno                 |
-| 86  | MN          | Morón                  |
-| 87  | NA          | Navarro                |
-| 88  | NE          | Necochea               |
-| 89  | NJ          | Nueve de Julio         |
-| 90  | OL          | Olavarría              |
-| 91  | PA          | Patagones              |
-| 92  | PJ          | Pehuajó                |
-| 93  | PE          | Pellegrini             |
-| 94  | PG          | Pergamino              |
-| 95  | PL          | Pila                   |
-| 96  | PX          | Pilar                  |
-| 97  | PI          | Pinamar                |
-| 98  | PP          | Presidente Perón       |
-| 99  | PU          | Puán                   |
-| 100 | PT          | Punta Indio            |
-| 101 | QU          | Quilmes                |
-| 102 | RM          | Ramallo                |
-| 103 | RU          | Rauch                  |
-| 104 | RI          | Rivadavia              |
-| 105 | RO          | Rojas                  |
-| 106 | RP          | Roque Pérez            |
-| 107 | SD          | Saavedra               |
-| 108 | SL          | Saladillo              |
-| 109 | ST          | Salto                  |
-| 110 | SQ          | Salliqueló             |
-| 111 | SG          | San Andrés de Giles    |
-| 112 | SA          | San Antonio de Areco   |
-| 113 | SC          | San Cayetano           |
-| 114 | SF          | San Fernando           |
-| 115 | SI          | San Isidro             |
-| 116 | SM          | San Miguel             |
-| 117 | MT          | San Miguel del Monte   |  
-| 118 | SN          | San Nicolás            |
-| 119 | SP          | San Pedro              |
-| 120 | SE          | San Vicente            |
-| 121 | SU          | Suipacha               |
-| 122 | TD          | Tandil                 |
-| 123 | TP          | Tapalqué               |
-| 124 | TI          | Tigre                  |
-| 125 | TO          | Tordillo               |
-| 126 | TQ          | Tornquist              |
-| 127 | TR          | Trenque Lauquen        |
-| 128 | TA          | Tres Arroyos           |
-| 129 | TF          | Tres de Febrero        |
-| 130 | TL          | Tres Lomas             |
-| 131 | VM          | Veinticinco de Mayo    |
-| 132 | VL          | Vicente López          |
-| 133 | VG          | Villa Gesell           |
-| 134 | VI          | Villarino              |
-| 135 | ZA          | Zárate                 |
+AR.DF.AA | AA          | Adolfo Alsina       
+AR.DF.AC | AC          | Adolfo Gonzáles Chaves 
+AR.DF.AL | AL          | Alberti                
+AR.DF.AB | AB          | Almirante Brown        
+AR.DF.BM | BM          | Arrecifes              
+AR.DF.AV | AV          | Avellaneda             
+AR.DF.AY | AY          | Ayacucho               
+AR.DF.AZ | AZ          | Azul                   
+AR.DF.BB | BB          | Bahía Blanca           
+AR.DF.BC | BC          | Balcarce               
+AR.DF.BD | BD          | Baradero               
+AR.DF.BJ | BJ          | Benito Juárez          
+AR.DF.BZ | BZ          | Berazategui            
+AR.DF.BS | BS          | Berisso                
+AR.DF.BO | BO          | Bolívar                
+AR.DF.BG | BG          | Bragado                
+AR.DF.BR | BR          | Brandsen               
+AR.DF.CM | CM          | Campana                
+AR.DF.CL | CL          | Cañuelas               
+AR.DF.CS | CS          | Capitán Sarmiento      
+AR.DF.CC | CC          | Carlos Casares         
+AR.DF.CT | CT          | Carlos Tejedor         
+AR.DF.CA | CA          | Carmen de Areco        
+AR.DF.CI | CI          | Castelli               
+AR.DF.CB | CB          | Chacabuco              
+AR.DF.CH | CH          | Chascomús              
+AR.DF.CV | CV          | Chivilcoy              
+AR.DF.CO | CO          | Colón                  
+AR.DF.CD | CD          | Coronel Dorrego        
+AR.DF.CP | CP          | Coronel Pringles       
+AR.DF.CR | CR          | Coronel Rosales        
+AR.DF.CE | CE          | Coronel Suárez         
+AR.DF.DA | DA          | Daireaux               
+AR.DF.DO | DO          | Dolores                
+AR.DF.EN | EN          | Ensenada               
+AR.DF.ES | ES          | Escobar                
+AR.DF.EB | EB          | Esteban Echeverría     
+AR.DF.EC | EC          | Exaltación de la Cruz  
+AR.DF.EZ | EZ          | Ezeiza                 
+AR.DF.FC | FC          | Florencio Varela       
+AR.DF.FA | FA          | Florentino Ameghino    
+AR.DF.GD | GD          | General Alvarado       
+AR.DF.GA | GA          | General Alvear         
+AR.DF.GE | GE          | General Arenales       
+AR.DF.GB | GB          | General Belgrano       
+AR.DF.GG | GG          | General Guido          
+AR.DF.GM | GM          | General La Madrid      
+AR.DF.GH | GH          | General Las Heras      
+AR.DF.GL | GL          | General Lavalle        
+AR.DF.GJ | GJ          | General Madariaga      
+AR.DF.GZ | GZ          | General Paz            
+AR.DF.GI | GI          | General Pinto          
+AR.DF.GP | GP          | General Pueyrredón     
+AR.DF.GR | GR          | General Rodríguez      
+AR.DF.GN | GN          | General San Martín     
+AR.DF.GT | GT          | General Viamonte       
+AR.DF.GV | GV          | General Villegas       
+AR.DF.GU | GU          | Guaminí                
+AR.DF.HY | HY          | Hipólito Yrigoyen      
+AR.DF.HU | HU          | Hurlingham             
+AR.DF.IT | IT          | Ituzaingó              
+AR.DF.JP | JP          | José C. Paz            
+AR.DF.JU | JU          | Junín                  
+AR.DF.LC | LC          | La Costa               
+AR.DF.LM | LM          | La Matanza             
+AR.DF.LT | LT          | La Plata               
+AR.DF.LS | LS          | Lanús                  
+AR.DF.LR | LR          | Laprida                
+AR.DF.LF | LF          | Las Flores             
+AR.DF.LA | LA          | Leandro N. Alem        
+AR.DF.LE | LE          | Lezama                 
+AR.DF.LI | LI          | Lincoln                
+AR.DF.LO | LO          | Lobería                
+AR.DF.LB | LB          | Lobos                  
+AR.DF.LZ | LZ          | Lomas de Zamora        
+AR.DF.LU | LU          | Luján                  
+AR.DF.ML | ML          | Magdalena              
+AR.DF.MA | MA          | Maipú                  
+AR.DF.MV | MV          | Malvinas Argentinas    
+AR.DF.MC | MC          | Mar Chiquita           
+AR.DF.MP | MP          | Marcos Paz             
+AR.DF.MD | MD          | Mercedes               
+AR.DF.ME | ME          | Merlo                  
+AR.DF.MH | MH          | Monte Hermoso          
+AR.DF.MR | MR          | Moreno                 
+AR.DF.MN | MN          | Morón                  
+AR.DF.NA | NA          | Navarro                
+AR.DF.NE | NE          | Necochea               
+AR.DF.NJ | NJ          | Nueve de Julio         
+AR.DF.OL | OL          | Olavarría              
+AR.DF.PA | PA          | Patagones              
+AR.DF.PJ | PJ          | Pehuajó                
+AR.DF.PE | PE          | Pellegrini             
+AR.DF.PG | PG          | Pergamino              
+AR.DF.PL | PL          | Pila                   
+AR.DF.PX | PX          | Pilar                  
+AR.DF.PI | PI          | Pinamar                
+AR.DF.PP | PP          | Presidente Perón       
+AR.DF.PU | PU          | Puán                   
+AR.DF.PT | PT          | Punta Indio            
+AR.DF.QU | QU          | Quilmes                
+AR.DF.RM | RM          | Ramallo                
+AR.DF.RU | RU          | Rauch                  
+AR.DF.RI | RI          | Rivadavia              
+AR.DF.RO | RO          | Rojas                  
+AR.DF.RP | RP          | Roque Pérez            
+AR.DF.SD | SD          | Saavedra               
+AR.DF.SL | SL          | Saladillo              
+AR.DF.ST | ST          | Salto                  
+AR.DF.SQ | SQ          | Salliqueló             
+AR.DF.SG | SG          | San Andrés de Giles    
+AR.DF.SA | SA          | San Antonio de Areco   
+AR.DF.SC | SC          | San Cayetano           
+AR.DF.SF | SF          | San Fernando           
+AR.DF.SI | SI          | San Isidro             
+AR.DF.SM | SM          | San Miguel             
+AR.DF.MT | MT          | San Miguel del Monte     
+AR.DF.SN | SN          | San Nicolás            
+AR.DF.SP | SP          | San Pedro              
+AR.DF.SE | SE          | San Vicente            
+AR.DF.SU | SU          | Suipacha               
+AR.DF.TD | TD          | Tandil                 
+AR.DF.TP | TP          | Tapalqué               
+AR.DF.TI | TI          | Tigre                  
+AR.DF.TO | TO          | Tordillo               
+AR.DF.TQ | TQ          | Tornquist              
+AR.DF.TR | TR          | Trenque Lauquen        
+AR.DF.TA | TA          | Tres Arroyos           
+AR.DF.TF | TF          | Tres de Febrero        
+AR.DF.TL | TL          | Tres Lomas             
+AR.DF.VM | VM          | Veinticinco de Mayo    
+AR.DF.VL | VL          | Vicente López          
+AR.DF.VG | VG          | Villa Gesell           
+AR.DF.VI | VI          | Villarino              
+AR.DF.ZA | ZA          | Zárate                 
