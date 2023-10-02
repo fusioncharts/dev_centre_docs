@@ -13,13 +13,13 @@ Dimensions (Width x Height): 365x614
 
 ID | Short label | Label   | 
 ---|---|---|
-01| BA | Barva         |
-02| AT | Belén         |
-03| FL | Flores        | 
-04| HE | Heredia       |
-05| SI | San Isidro    |
-06| SP | San Pablo     |
-07| SR | San Rafael    |
-08| SB | Santa Bárbara |
-09| SD | Santo Domingo |
-10| SA | SarapiquÍ     |
+CR.HE.BA| BA | Barva         |
+CR.HE.AT| AT | Belén         |
+CR.HE.FL| FL | Flores        | 
+CR.HE.HE| HE | Heredia       |
+CR.HE.SI| SI | San Isidro    |
+CR.HE.SP| SP | San Pablo     |
+CR.HE.SR| SR | San Rafael    |
+CR.HE.SB| SB | Santa Bárbara |
+CR.HE.SD| SD | Santo Domingo |
+CR.HE.SA| SA | SarapiquÍ     |

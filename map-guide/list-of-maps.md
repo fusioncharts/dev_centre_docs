@@ -4,7 +4,7 @@ description: FusionMaps XT offers interactive maps to plot geographical data lik
 heading: List of Maps
 ---
 
-FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and all the US states.
+FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps, including all continents, major countries, and all the US states.
 
 To render these maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/map-definition-files) and copy-paste the maps folder within your fusioncharts directory.
 
@@ -117,6 +117,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Denmark](/maps/spec-sheets/denmark)                            | maps/denmark             |
 | [Denmark (Regions)](/maps/spec-sheets/denmarkregion)            | maps/denmarkregion       |
 | [England](/maps/spec-sheets/england)                            | maps/england             |
+| [England (Regions)](/maps/spec-sheets/englandregion)            | maps/englandregion       |
 | [Estonia](/maps/spec-sheets/estonia)                            | maps/estonia             |
 | [Finland](/maps/spec-sheets/finland)                            | maps/finland             |
 | [France](/maps/spec-sheets/france)                              | maps/france              |
@@ -128,6 +129,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Iceland](/maps/spec-sheets/iceland)                            | maps/iceland             |
 | [Ireland](/maps/spec-sheets/ireland)                            | maps/ireland             |
 | [Italy](/maps/spec-sheets/italy)                                | maps/italy               |
+| [Italy Provinces](/maps/spec-sheets/italyprovince)              | maps/italyprovince       |
 | [Kosovo Districts](/maps/spec-sheets/kosovodistricts)           | maps/kosovodistricts     |
 | [Latvia](/maps/spec-sheets/latvia)                              | maps/latvia              |
 | [Liechtenstein](/maps/spec-sheets/liechtenstein)                | maps/liechtenstein       |
@@ -139,10 +141,11 @@ To render these maps, you need to download the map definition files from [here](
 | [Monaco](/maps/spec-sheets/monaco)                              | maps/monaco              |
 | [Montenegro](/maps/spec-sheets/montenegro)                      | maps/montenegro          |
 | [Netherlands](/maps/spec-sheets/netherlands)                    | maps/netherlands         |
+| [Northern Ireland](/maps/spec-sheets/northernireland)           | maps/northernireland     |
 | [Norway](/maps/spec-sheets/norway)                              | maps/norway              |
 | [Norway (Regions)](/maps/spec-sheets/norwayregion)              | maps/norwayregion        |
-| [Poland (Counties)](/maps/spec-sheets/polandcounties)           | maps/polandcounties      |
 | [Poland](/maps/spec-sheets/poland)                              | maps/poland              |
+| [Poland (Counties)](/maps/spec-sheets/polandcounties)           | maps/polandcounties      |
 | [Portugal](/maps/spec-sheets/portugal)                          | maps/portugal            |
 | [Romania](/maps/spec-sheets/romania)                            | maps/romania             |
 | [San Marino](/maps/spec-sheets/sanmarino)                       | maps/sanmarino           |
@@ -159,6 +162,7 @@ To render these maps, you need to download the map definition files from [here](
 | [UK](/maps/spec-sheets/uk)                                      | maps/uk                  |
 | [Ukraine](/maps/spec-sheets/ukraine)                            | maps/ukraine             |
 | [Vatican City](/maps/spec-sheets/vaticancity)                   | maps/vaticancity         |
+| [Wales](/maps/spec-sheets/wales)                                | maps/wales               |
 
 ## Europe (Regions)
 
@@ -204,6 +208,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Saint Lucia](/maps/spec-sheets/uk7)                                               | maps/saintlucia                   |
 | [Saint Vincent and The Grenadines](/maps/spec-sheets/saintvincentandthegrenadines) | maps/saintvincentandthegrenadines |
 | [Trinidad and Tobago](/maps/spec-sheets/trinidadandtobago)                         | maps/trinidadandtobago            |
+| [USA](/maps/spec-sheets/usa)                                                       | maps/usa                          |
 
 ## South America
 
@@ -238,24 +243,6 @@ To render these maps, you need to download the map definition files from [here](
 | [Honduras](/maps/spec-sheets/honduras)                                            | maps/honduras                    |
 | [Nicaragua](/maps/spec-sheets/nicaragua)                                          | maps/nicaragua                   |
 | [Panama](/maps/spec-sheets/panama)                                                | maps/panama                      |
-
-## Canada Provinces & Territories
-
-| Chart Type                                                             | JavaScript Alias             |
-| ---------------------------------------------------------------------- | ---------------------------- |
-| [Alberta](/maps/spec-sheets/alberta)                                   | maps/alberta                 |
-| [British Columbia](/maps/spec-sheets/britishcolumbia)                  | maps/britishcolumbia         |
-| [Manitoba](/maps/spec-sheets/manitoba)                                 | maps/manitoba                |
-| [New Brunswick](/maps/spec-sheets/newbrunswick)                        | maps/newbrunswick            |
-| [Newfoundland and Labrador](/maps/spec-sheets/newfoundlandandlabrador) | maps/newfoundlandandlabrador |
-| [Northwest Territories](/maps/spec-sheets/northwestterritories)        | maps/northwestterritories    |
-| [Nova Scotia](/maps/spec-sheets/novascotia)                            | maps/novascotia              |
-| [Nunavut](/maps/spec-sheets/nunavut)                                   | maps/nunavut                 |
-| [Ontario](/maps/spec-sheets/ontario)                                   | maps/ontario                 |
-| [Prince Edward Island](/maps/spec-sheets/princeedwardisland)           | maps/princeedwardisland      |
-| [Quebec](/maps/spec-sheets/quebec)                                     | maps/quebec                  |
-| [Saskatchewan](/maps/spec-sheets/saskatchewan)                         | maps/saskatchewan            |
-| [Yukon Territory](/maps/spec-sheets/yukonterritory)                    | maps/yukonterritory          |
 
 ## Asia
 
@@ -685,7 +672,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vastmanland](/maps/spec-sheets/vastmanland)        | maps/vastmanland    |
 | [Vastra Gotaland](/maps/spec-sheets/vastragotaland) | maps/vastragotaland |
 
-## Switzerland (Cantons)
+### Switzerland (Cantons)
 
 | Chart Type                                                        | JavaScript Alias           |
 | ----------------------------------------------------------------- | -------------------------- |
@@ -712,14 +699,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Valais](/maps/spec-sheets/valais)                                | maps/valais                |
 | [Vaud](/maps/spec-sheets/vaud)                                    | maps/vaud                  |
 
-## Romania
-
-| Chart Type                                           | JavaScript Alias   |
-| ---------------------------------------------------- | ------------------ |
-| [Romania](/maps/spec-sheets/romania)                 | maps/romania       |
-| [Romania (Regions)](/maps/spec-sheets/romaniaregion) | maps/romaniaregion |
-
-## Austria (States)
+### Austria (States)
 
 | Chart Type                                             | JavaScript Alias      |
 | ------------------------------------------------------ | --------------------- |
@@ -733,7 +713,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vorarlberg](/maps/spec-sheets/vorarlberg)             | maps/vorarlberg       |
 | [Wien (Vienna)](/maps/spec-sheets/wien)                | maps/wien             |
 
-## Portugal (Districts)
+### Portugal (Districts)
 
 | Chart Type                                          | JavaScript Alias    |
 | --------------------------------------------------- | ------------------- |
@@ -756,7 +736,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vila Real](/maps/spec-sheets/vilareal)             | maps/vilareal       |
 | [Viseu](/maps/spec-sheets/viseu)                    | maps/viseu          |
 
-## Bulgaria (Provinces)
+### Bulgaria (Provinces)
 
 | Chart Type                                            | JavaScript Alias     |
 | ----------------------------------------------------- | -------------------- |
@@ -789,7 +769,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vratsa](/maps/spec-sheets/vratsa)                    | maps/vratsa          |
 | [Yambol](/maps/spec-sheets/yambol)                    | maps/yambol          |
 
-## Denmark (5 Regions)
+### Denmark (Regions)
 
 | Chart Type                                    | JavaScript Alias |
 | --------------------------------------------- | ---------------- |
@@ -799,7 +779,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Sjaelland (ac)](/maps/spec-sheets/sjaelland) | maps/sjaelland   |
 | [Syddanmark](/maps/spec-sheets/syddanmark)    | maps/syddanmark  |
 
-## Hungary (7 Regions)
+### Hungary (Regions)
 
 | Chart Type                                                      | JavaScript Alias          |
 | --------------------------------------------------------------- | ------------------------- |
@@ -811,13 +791,13 @@ To render these maps, you need to download the map definition files from [here](
 | [Southern Transdanubia](/maps/spec-sheets/southerntransdanubia) | maps/southerntransdanubia |
 | [Western Transdanubia](/maps/spec-sheets/westerntransdanubia)   | maps/westerntransdanubia  |
 
-## Czech Republic (Main Districts)
+### Czech Republic (Main Districts)
 
 | Chart Type                                                           | JavaScript Alias            |
 | -------------------------------------------------------------------- | --------------------------- |
 | [Czech Republic Districts](/maps/spec-sheets/czechrepublicdistricts) | maps/czechrepublicdistricts |
 
-## Albania (Counties)
+### Albania (Counties)
 
 | Chart Type                                   | JavaScript Alias |
 | -------------------------------------------- | ---------------- |
@@ -834,7 +814,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Tirana](/maps/spec-sheets/tirana)           | maps/tirana      |
 | [Vlore](/maps/spec-sheets/vlore)             | maps/vlore       |
 
-## Estonia (Countries)
+### Estonia (Counties)
 
 | Chart Type                                      | JavaScript Alias  |
 | ----------------------------------------------- | ----------------- |
@@ -854,7 +834,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Viljandimaa](/maps/spec-sheets/viljandimaa)    | maps/viljandimaa  |
 | [Vorumaa](/maps/spec-sheets/vorumaa)            | maps/vorumaa      |
 
-## Romania (Regions)
+### Romania (Regions)
 
 | Chart Type                                           | JavaScript Alias    |
 | ---------------------------------------------------- | ------------------- |
@@ -867,7 +847,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Sud-Vest Oltenia](/maps/spec-sheets/sudvestoltenia) | maps/sudvestoltenia |
 | [Vest](/maps/spec-sheets/vest)                       | maps/vest           |
 
-## Poland (Voivodeships)
+### Poland (Voivodeships)
 
 | Chart Type                                                  | JavaScript Alias        |
 | ----------------------------------------------------------- | ----------------------- |
@@ -898,7 +878,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Trondelag](/maps/spec-sheets/trondelag)            | maps/trondelag      |
 | [Western Norway](/maps/spec-sheets/westernnorway)   | maps/westernnorway  |
 
-### Norway (Countries)
+### Norway (Counties)
 
 | Chart Type                                           | JavaScript Alias    |
 | ---------------------------------------------------- | ------------------- |
@@ -936,6 +916,24 @@ To render these maps, you need to download the map definition files from [here](
 | [Zilina](/maps/spec-sheets/zilina)                  | maps/zilina         |
 
 ## Americas
+
+### Canada Provinces & Territories
+
+| Chart Type                                                             | JavaScript Alias             |
+| ---------------------------------------------------------------------- | ---------------------------- |
+| [Alberta](/maps/spec-sheets/alberta)                                   | maps/alberta                 |
+| [British Columbia](/maps/spec-sheets/britishcolumbia)                  | maps/britishcolumbia         |
+| [Manitoba](/maps/spec-sheets/manitoba)                                 | maps/manitoba                |
+| [New Brunswick](/maps/spec-sheets/newbrunswick)                        | maps/newbrunswick            |
+| [Newfoundland and Labrador](/maps/spec-sheets/newfoundlandandlabrador) | maps/newfoundlandandlabrador |
+| [Northwest Territories](/maps/spec-sheets/northwestterritories)        | maps/northwestterritories    |
+| [Nova Scotia](/maps/spec-sheets/novascotia)                            | maps/novascotia              |
+| [Nunavut](/maps/spec-sheets/nunavut)                                   | maps/nunavut                 |
+| [Ontario](/maps/spec-sheets/ontario)                                   | maps/ontario                 |
+| [Prince Edward Island](/maps/spec-sheets/princeedwardisland)           | maps/princeedwardisland      |
+| [Quebec](/maps/spec-sheets/quebec)                                     | maps/quebec                  |
+| [Saskatchewan](/maps/spec-sheets/saskatchewan)                         | maps/saskatchewan            |
+| [Yukon Territory](/maps/spec-sheets/yukonterritory)                    | maps/yukonterritory          |
 
 ### Mexico
 
@@ -1019,6 +1017,27 @@ To render these maps, you need to download the map definition files from [here](
 | [San Martin](/maps/spec-sheets/saintmartin)                    | maps/saintmartin         |
 | [Turks and Caicos](/maps/spec-sheets/turksandcaicos)           | maps/turksandcaicos      |
 | [US Virgin Island](/maps/spec-sheets/usvirginisland)           | maps/usvirginisland      |
+
+### Chile (Regions)
+
+| Chart Type                                                     | JavaScript Alias         |
+| -------------------------------------------------------------- | ------------------------ |
+| [Antofagasta](/maps/spec-sheets/antofagasta)                   | maps/antofagasta         |
+| [Araucania](/maps/spec-sheets/araucania)                       | maps/araucania           |
+| [Aricay Parinacota](/maps/spec-sheets/aricayparinacota)        | maps/aricayparinacota    |
+| [Atacama](/maps/spec-sheets/atacama)                           | maps/atacama             |
+| [Aysendel General Carlos Ibanez del Campo](/maps/spec-sheets/aysendelgeneralcarlosibanezdelcampo)  | maps/aysendelgeneralcarlosibanezdelcampo    |
+| [Biobio](/maps/spec-sheets/biobio)                             | maps/biobio              |
+| [Coquimbo](/maps/spec-sheets/coquimbo)                         | maps/coquimbo            |
+| [Libertador General Bernardo O Higgins](/maps/spec-sheets/libertadorgeneralbernardoohiggins)  | maps/libertadorgeneralbernardoohiggins    |
+| [Los Lagos](/maps/spec-sheets/loslagos)                        | maps/loslagos            |
+| [Los Rios](/maps/spec-sheets/losrios)                          | maps/losrios             |
+| [Magallanesy de la Antartica Chilena](/maps/spec-sheets/magallanesydelaantarticachilena)  | maps/magallanesydelaantarticachilena |
+| [Maule](/maps/spec-sheets/maule)                               | maps/maule               |
+| [Metropolitana de Santiago](/maps/spec-sheets/metropolitanadesantiago)   | maps/metropolitanadesantiago  |
+| [Nuble](/maps/spec-sheets/nuble)                               | maps/nuble               |
+| [Tarapaca](/maps/spec-sheets/taracapa)                         | maps/taracapa            |
+| [Val Paraiso](/maps/spec-sheets/valparaiso)                    | maps/valparaiso          |
 
 ## Asia
 

@@ -12,6 +12,6 @@ Dimensions (Width x Height): 567x700
 
 ID | Short label | Label
 ---|---|---|
-01| GS | General Sánchez Cerro
-02| IL | Ilo
-03| MN | Mariscal Nieto
+PE.MQ.GS| GS | General Sánchez Cerro
+PE.MQ.IL| IL | Ilo
+PE.MQ.MN| MN | Mariscal Nieto

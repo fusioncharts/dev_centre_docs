@@ -12,6 +12,6 @@ Dimensions (Width x Height): 600x398
 
 ID | Short label | Label
 ---|---|---|
-01| DA | Daniel Alcídes Carrión
-02| OX | Oxapampa
-03| PC | Pasco
+PE.PA.DA| DA | Daniel Alcídes Carrión
+PE.PA.OX| OX | Oxapampa
+PE.PA.PC| PC | Pasco

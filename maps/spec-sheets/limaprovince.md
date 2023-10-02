@@ -12,4 +12,4 @@ Dimensions (Width x Height): 410x600
 
 ID | Short label | Label
 ---|---|---|
-01| LI | Lima Province
+PE.LP.LI| LI | Lima Province

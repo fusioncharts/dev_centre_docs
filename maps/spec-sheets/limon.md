@@ -13,9 +13,9 @@ Dimensions (Width x Height): 444x586
 
 ID | Short label | Label   | 
 ---|---|---|
-01| GU | Guácimo   |
-02| LI | Limón     |
-03| MA | Matina    | 
-04| PO | Pococí    |
-05| SI | Siquirres |
-06| TA | Talamanca |
+CR.LI.GU| GU | Guácimo   |
+CR.LI.LI| LI | Limón     |
+CR.LI.MA| MA | Matina    | 
+CR.LI.PO| PO | Pococí    |
+CR.LI.SI| SI | Siquirres |
+CR.LI.TA| TA | Talamanca |

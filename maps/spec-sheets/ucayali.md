@@ -12,7 +12,7 @@ Dimensions (Width x Height): 700x532
 
 ID | Short label | Label
 ---|---|---|
-01| AL | Atalaya
-02| CP | Coronel Portillo
-03| PA | Padre Abad
-04| PU | Purús
+PE.UC.AL| AL | Atalaya
+PE.UC.CP| CP | Coronel Portillo
+PE.UC.PA| PA | Padre Abad
+PE.UC.PU| PU | Purús

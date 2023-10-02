@@ -15,11 +15,11 @@ Dimensions (Width x Height): 798x681
 
 ID | Short label | Label   | 
 ---|---|---|
-01| AL | Alvarado  |
-02| CA | Cartago   |
-03| EG | El Guarco | 
-04| JI | Jiménez   |
-05| LU | La Unión  |
-06| OR | Oreamuno  |
-07| PA | Paraíso   |
-08| TU | Turrialba |
+CR.CA.AL| AL | Alvarado  |
+CR.CA.CA| CA | Cartago   |
+CR.CA.EG| EG | El Guarco | 
+CR.CA.JI| JI | Jiménez   |
+CR.CA.LU| LU | La Unión  |
+CR.CA.OR| OR | Oreamuno  |
+CR.CA.PA| PA | Paraíso   |
+CR.CA.TU| TU | Turrialba |

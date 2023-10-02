@@ -12,14 +12,14 @@ Dimensions (Width x Height): 391x628
 
 ID | Short label | Label
 ---|---|---|
-01| CG | Cangallo
-02| HM | Huamanga
-03| HS | Huanca Sancos
-04| HN | Huanta
-05| LM | La Mar
-06| LN | Lucanas
-07| PH | Parinacochas
-08| PS | Paucar del Sara Sara
-09| SU | Sucre
-10| VF | Víctor Fajardo
-11| VH | Vilcas Huamán
+PE.AY.CG| CG | Cangallo
+PE.AY.HM| HM | Huamanga
+PE.AY.HS| HS | Huanca Sancos
+PE.AY.HN| HN | Huanta
+PE.AY.LM| LM | La Mar
+PE.AY.LN| LN | Lucanas
+PE.AY.PH| PH | Parinacochas
+PE.AY.PS| PS | Paucar del Sara Sara
+PE.AY.SU| SU | Sucre
+PE.AY.VF| VF | Víctor Fajardo
+PE.AY.VH| VH | Vilcas Huamán

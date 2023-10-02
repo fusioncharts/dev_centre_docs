@@ -12,6 +12,6 @@ Dimensions (Width x Height): 600x558
 
 ID | Short label | Label
 ---|---|---|
-01| CV | Contralmirante Villar
-02| TU | Tumbes
-03| ZA | Zarumilla
+PE.TU.CV| CV | Contralmirante Villar
+PE.TU.TU| TU | Tumbes
+PE.TU.ZA| ZA | Zarumilla

@@ -12,16 +12,16 @@ Dimensions (Width x Height): 365x665
 
 ID | Short label | Label
 ---|---|---|
-01| CJ | Cajabamba
-02| CM | Cajamarca
-03| CE | Celendín
-04| CH | Chota
-05| CO | Contumazá
-06| CU | Cutervo
-07| HG | Hualgayoc
-08| JA | Jaén
-09| SI | San Ignacio
-10| SS | San Marcos
-11| SG | San Miguel
-12| SP | San Pablo
-13| SZ | Santa Cruz
+PE.CJ.CJ| CJ | Cajabamba
+PE.CJ.CM| CM | Cajamarca
+PE.CJ.CE| CE | Celendín
+PE.CJ.CH| CH | Chota
+PE.CJ.CO| CO | Contumazá
+PE.CJ.CU| CU | Cutervo
+PE.CJ.HG| HG | Hualgayoc
+PE.CJ.JA| JA | Jaén
+PE.CJ.SI| SI | San Ignacio
+PE.CJ.SS| SS | San Marcos
+PE.CJ.SG| SG | San Miguel
+PE.CJ.SP| SP | San Pablo
+PE.CJ.SZ| SZ | Santa Cruz

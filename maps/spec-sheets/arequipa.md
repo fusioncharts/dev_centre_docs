@@ -12,11 +12,11 @@ Dimensions (Width x Height): 791x512
 
 ID | Short label | Label
 ---|---|---|
-01| AQ | Arequipa
-02| CM | Camaná
-03| CR | Caravelí
-04| CT | Castilla
-05| CY | Caylloma
-06| CS | Condesuyos
-07| IS | Islay
-08| LU | La Unión
+PE.AR.AQ| AQ | Arequipa
+PE.AR.CM| CM | Camaná
+PE.AR.CR| CR | Caravelí
+PE.AR.CT| CT | Castilla
+PE.AR.CY| CY | Caylloma
+PE.AR.CS| CS | Condesuyos
+PE.AR.IS| IS | Islay
+PE.AR.LU| LU | La Unión
