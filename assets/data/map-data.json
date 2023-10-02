@@ -4238,16 +4238,11 @@
           {
             "name": "Ciudad Autónoma de Buenos Aires",
             "alias": "ciudadbuenosaires",
-            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
-          },
-          {
-            "name": "Ciudad Autónoma de Buenos Aires",
-            "alias": "ciudadbuenosaires",
-            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
+            "specSheet": "/maps/spec-sheets/ciudadautonomadebuenosaires"
           },
           {
             "name": "Buenos Aires",
-            "alias": "ciudadbuenosaires",
+            "alias": "buenosaires",
             "specSheet": "/maps/spec-sheets/buenosaires"
           },
           {
