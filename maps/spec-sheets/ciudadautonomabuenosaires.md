@@ -11,51 +11,51 @@ Dimensions (Width x Height): 563x594
 
 | ID  | Short label | Label               |
 | --- | ----------- | ------------------- |
-| 01  | AG     | Agronomía             |
-| 02  | AL     | Almagro               |
-| 03  | BA     | Balvanera             |
-| 04  | BR     | Barracas              |
-| 05  | BE     | Belgrano              |
-| 06  | BO     | Boedo                 |
-| 07  | CB     | Caballito             |
-| 08  | CC     | Chacarita             |
-| 09  | CG     | Coghlan               |
-| 10  | CL     | Colegiales            |
-| 11  | CT     | Constitución          |
-| 12  | FL     | Flores                |
-| 13  | FR     | Floresta              |
-| 14  | LB     | La Boca               |
-| 15  | LP     | La Paternal           |
-| 16  | LI     | Liniers               |
-| 17  | MD     | Mataderos             |
-| 18  | MS     | Monserrat             |
-| 19  | MC     | Monte Castro          |
-| 20  | NP     | Nueva Pompeya         |
-| 21  | NN     | Núñez                 |
-| 22  | PM     | Palermo               |
-| 23  | PA     | Parque Avellaneda     |
-| 24  | PC     | Parque Chacabuco      |
-| 25  | PQ     | Parque Chas           |
-| 26  | PP     | Parque Patricios      |
-| 27  | PT     | Puerto Madero         |
-| 28  | RC     | Recoleta              |
-| 29  | RT     | Retiro                |
-| 30  | SV     | Saavedra              |
-| 31  | SC     | San Cristóbal         |
-| 32  | SN     | San Nicolás           |
-| 33  | ST     | San Telmo             |
-| 34  | VS     | Vélez Sárfield        |
-| 35  | VE     | Versalles             |
-| 36  | VC     | Villa Crespo          |
-| 37  | VP     | Villa del Parque      |
-| 38  | VD     | Villa Devoto          |
-| 39  | VM     | Villa General Mitre   |
-| 40  | VL     | Villa Lugano          |
-| 41  | VU     | Villa Luro            |
-| 42  | VO     | Villa Ortúzar         |
-| 43  | VN     | Villa Pueyrredón      |
-| 44  | VR     | Villa Real            |
-| 45  | VI     | Villa Riachuelo       |
-| 46  | VT     | Villa Santa Rita      |
-| 47  | VA     | Villa Soldati         |
-| 48  | VQ     | Villa Urquiza         |
+AR.BA.AG| AG | Agronomía             
+AR.BA.AL| AL | Almagro               
+AR.BA.BA| BA | Balvanera             
+AR.BA.BR| BR | Barracas              
+AR.BA.BE| BE | Belgrano              
+AR.BA.BO| BO | Boedo                 
+AR.BA.CB| CB | Caballito             
+AR.BA.CC| CC | Chacarita             
+AR.BA.CG| CG | Coghlan               
+AR.BA.CL| CL | Colegiales            
+AR.BA.CT| CT | Constitución          
+AR.BA.FL| FL | Flores                
+AR.BA.FR| FR | Floresta              
+AR.BA.LB| LB | La Boca               
+AR.BA.LP| LP | La Paternal           
+AR.BA.LI| LI | Liniers               
+AR.BA.MD| MD | Mataderos             
+AR.BA.MS| MS | Monserrat             
+AR.BA.MC| MC | Monte Castro          
+AR.BA.NP| NP | Nueva Pompeya         
+AR.BA.NN| NN | Núñez                 
+AR.BA.PM| PM | Palermo               
+AR.BA.PA| PA | Parque Avellaneda     
+AR.BA.PC| PC | Parque Chacabuco      
+AR.BA.PQ| PQ | Parque Chas           
+AR.BA.PP| PP | Parque Patricios      
+AR.BA.PT| PT | Puerto Madero         
+AR.BA.RC| RC | Recoleta              
+AR.BA.RT| RT | Retiro                
+AR.BA.SV| SV | Saavedra              
+AR.BA.SC| SC | San Cristóbal         
+AR.BA.SN| SN | San Nicolás           
+AR.BA.ST| ST | San Telmo             
+AR.BA.VS| VS | Vélez Sárfield        
+AR.BA.VE| VE | Versalles             
+AR.BA.VC| VC | Villa Crespo          
+AR.BA.VP| VP | Villa del Parque      
+AR.BA.VD| VD | Villa Devoto          
+AR.BA.VM| VM | Villa General Mitre   
+AR.BA.VL| VL | Villa Lugano         
+AR.BA.VU| VU | Villa Luro            
+AR.BA.VO| VO | Villa Ortúzar         
+AR.BA.VN| VN | Villa Pueyrredón      
+AR.BA.VR| VR | Villa Real            
+AR.BA.VI| VI | Villa Riachuelo       
+AR.BA.VT| VT | Villa Santa Rita      
+AR.BA.VA| VA | Villa Soldati         
+AR.BA.VQ| VQ | Villa Urquiza         
