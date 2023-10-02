@@ -9,21 +9,22 @@ Dimensions (Width x Height): 576x750
 
 ### List of Entities
 
-| ID  | Short label | Label                 |
-| 01  | CO          | Colón                 |
-| 02  | CC          | Concordia             |
-| 03  | DI          | Diamante              |
-| 04  | FC          | Federación            |
-| 05  | FE          | Federal               |
-| 06  | GG          | Gualeguay             |
-| 07  | GC          | Gualeguaychú          |
-| 08  | II          | Islas del Ibicuy      |
-| 09  | LP          | La Paz                |
-| 10  | NO          | Nogoyá                |
-| 11  | PA          | Paraná                |
-| 12  | FL          | San José de Feliciano |
-| 13  | SS          | San Salvador          |
-| 14  | TA          | Tala                  |
-| 15  | UR          | Uruguay               |
-| 16  | VC          | Victoria              |
-| 17  | VG          | Villaguay             |
+ID  | Short label | Label
+---|---|---|
+AR.ER.CO  | CO          | Colón                 
+AR.ER.CC  | CC          | Concordia             
+AR.ER.DI  | DI          | Diamante              
+AR.ER.FC  | FC          | Federación            
+AR.ER.FE  | FE          | Federal               
+AR.ER.GG  | GG          | Gualeguay             
+AR.ER.GC  | GC          | Gualeguaychú          
+AR.ER.II  | II          | Islas del Ibicuy      
+AR.ER.LP  | LP          | La Paz                
+AR.ER.NO  | NO          | Nogoyá                
+AR.ER.PA  | PA          | Paraná                
+AR.ER.FL  | FL          | San José de Feliciano 
+AR.ER.SS  | SS          | San Salvador          
+AR.ER.TA  | TA          | Tala                  
+AR.ER.UR  | UR          | Uruguay               
+AR.ER.VC  | VC          | Victoria              
+AR.ER.VG  | VG          | Villaguay             
