@@ -9,8 +9,8 @@ Dimensions (Width x Height): 732x346
 
 ### List of Entities
 
-ID  | Short label | Label
----|---|---|             
+**ID  | Short label | Label**
+---|---|---|      
 AR.CH.BI  | BI          | Biedma              
 AR.CH.CU  | CU          | Cushamen            
 AR.CH.ES  | ES          | Escalante           
