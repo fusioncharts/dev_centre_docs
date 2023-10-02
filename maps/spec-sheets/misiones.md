@@ -9,21 +9,22 @@ Dimensions (Width x Height): 594x669
 
 ### List of Entities
 
-| ID  | Short label | Label                         |
-| 01  | AP          | Apóstoles                     |
-| 02  | CG          | Cainguás                      |
-| 03  | CD          | Candelaria                    |
-| 04  | MI          | Capital                       |
-| 05  | CO          | Concepción de la Sierra       |
-| 06  | ED          | Eldorado                      |
-| 07  | GB          | General Manuel Belgrano       |
-| 08  | GU          | Guaraní                       |
-| 09  | IG          | Iguazú                        |
-| 10  | LA          | Leandro N. Alem               |
-| 11  | LM          | Libertador General San Martín |
-| 12  | MO          | Montecarlo                    |
-| 13  | OB          | Oberá                         |
-| 14  | SI          | San Ignacio                   |
-| 15  | SJ          | San Javier                    |
-| 16  | SP          | San Pedro                     |
-| 17  | VM          | Veinticinco de Mayo           |
+ID  | Short label | Label
+---|---|---|
+AR.MN.AP  | AP          | Apóstoles                     
+AR.MN.CG  | CG          | Cainguás                      
+AR.MN.CD  | CD          | Candelaria                    
+AR.MN.MI  | MI          | Capital                       
+AR.MN.CO  | CO          | Concepción de la Sierra       
+AR.MN.ED  | ED          | Eldorado                      
+AR.MN.GB  | GB          | General Manuel Belgrano       
+AR.MN.GU  | GU          | Guaraní                       
+AR.MN.IG  | IG          | Iguazú                        
+AR.MN.LA  | LA          | Leandro N. Alem               
+AR.MN.LM  | LM          | Libertador General San Martín 
+AR.MN.MO  | MO          | Montecarlo                    
+AR.MN.OB  | OB          | Oberá                         
+AR.MN.SI  | SI          | San Ignacio                   
+AR.MN.SJ  | SJ          | San Javier                    
+AR.MN.SP  | SP          | San Pedro                     
+AR.MN.VM  | VM          | Veinticinco de Mayo           
