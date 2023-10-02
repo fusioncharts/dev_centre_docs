@@ -9,27 +9,28 @@ Dimensions (Width x Height): 652x501
 
 ### List of Entities
 
-| ID  | Short label | Label                  |
-| 01  | AN          | Anta                   |
-| 02  | CA          | Cachi                  |
-| 03  | CF          | Cafayate               |
-| 04  | SA          | Capital                |
-| 05  | CE          | de Cerrillos           |
-| 06  | CH          | Chicoana               |
-| 07  | GG          | General Güemes         |
-| 08  | GM          | General San Martín     |
-| 09  | GU          | Guachipas              |
-| 10  | IR          | Iruya                  |
-| 11  | LC          | La Caldera             |
-| 12  | LD          | La Candelaria          |
-| 13  | LP          | La Poma                |
-| 14  | LV          | La Viña                |
-| 15  | LA          | Los Andes              |
-| 16  | ME          | Metán                  |
-| 17  | MO          | Molinos                |
-| 18  | OR          | Orán                   |
-| 19  | RI          | Rivadavia              |
-| 20  | RF          | Rosario de la Frontera |
-| 21  | RL          | Rosario de Lerma       |
-| 22  | SC          | San Carlos             |
-| 23  | SV          | Santa Victoria         |
+ID  | Short label | Label
+---|---|---|
+AR.SA.AN  | AN          | Anta                   
+AR.SA.CA  | CA          | Cachi                  
+AR.SA.CF  | CF          | Cafayate               
+AR.SA.SA  | SA          | Capital                
+AR.SA.CE  | CE          | de Cerrillos           
+AR.SA.CH  | CH          | Chicoana               
+AR.SA.GG  | GG          | General Güemes         
+AR.SA.GM  | GM          | General San Martín     
+AR.SA.GU  | GU          | Guachipas              
+AR.SA.IR  | IR          | Iruya                  
+AR.SA.LC  | LC          | La Caldera             
+AR.SA.LD  | LD          | La Candelaria          
+AR.SA.LP  | LP          | La Poma                
+AR.SA.LV  | LV          | La Viña                
+AR.SA.LA  | LA          | Los Andes              
+AR.SA.ME  | ME          | Metán                  
+AR.SA.MO  | MO          | Molinos                
+AR.SA.OR  | OR          | Orán                   
+AR.SA.RI  | RI          | Rivadavia              
+AR.SA.RF  | RF          | Rosario de la Frontera 
+AR.SA.RL  | RL          | Rosario de Lerma       
+AR.SA.SC  | SC          | San Carlos             
+AR.SA.SV  | SV          | Santa Victoria         
