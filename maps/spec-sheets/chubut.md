@@ -8,20 +8,20 @@ Map Name: Chubut
 Dimensions (Width x Height): 732x346
 
 ### List of Entities
-
-| ID  | Short label | Label               |
-| 01  | BI          | Biedma              |
-| 02  | CU          | Cushamen            |
-| 03  | ES          | Escalante           |
-| 04  | FA          | Florentino Ameghino |
-| 05  | FU          | Futaleufú           |
-| 06  | GM          | Gaiman              |
-| 07  | GS          | Gastre              |
-| 08  | LA          | Languiñeo           |
-| 09  | MA          | Mártires            |
-| 10  | PI          | Paso de Indios      |
-| 11  | RA          | Rawson              |
-| 12  | RS          | Río Senguer         |
-| 13  | SA          | Sarmiento           |
-| 14  | TH          | Tehuelches          |
-| 15  | TN          | Telsen              |
+---|---|---|
+ID  | Short label | Label               
+AR.CH.BI  | BI          | Biedma              
+AR.CH.CU  | CU          | Cushamen            
+AR.CH.ES  | ES          | Escalante           
+AR.CH.FA  | FA          | Florentino Ameghino 
+AR.CH.FU  | FU          | Futaleufú           
+AR.CH.GM  | GM          | Gaiman              
+AR.CH.GS  | GS          | Gastre              
+AR.CH.LA  | LA          | Languiñeo           
+AR.CH.MA  | MA          | Mártires            
+AR.CH.PI  | PI          | Paso de Indios      
+AR.CH.RA  | RA          | Rawson              
+AR.CH.RS  | RS          | Río Senguer         
+AR.CH.SA  | SA          | Sarmiento           
+AR.CH.TH  | TH          | Tehuelches          
+AR.CH.TN  | TN          | Telsen              
