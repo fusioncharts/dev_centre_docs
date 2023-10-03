@@ -4237,17 +4237,12 @@
         "members": [
           {
             "name": "Ciudad Autónoma de Buenos Aires",
-            "alias": "ciudadbuenosaires",
-            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
-          },
-          {
-            "name": "Ciudad Autónoma de Buenos Aires",
-            "alias": "ciudadbuenosaires",
+            "alias": "ciudadautonomadebuenosaires",
             "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
           },
           {
             "name": "Buenos Aires",
-            "alias": "ciudadbuenosaires",
+            "alias": "buenosaires",
             "specSheet": "/maps/spec-sheets/buenosaires"
           },
           {
@@ -4267,7 +4262,7 @@
           },
           {
             "name": "Córdoba",
-            "alias": "cordoba",
+            "alias": "cordoba_arg",
             "specSheet": "/maps/spec-sheets/cordoba_arg"
           },
           {
@@ -4297,8 +4292,8 @@
           },
           {
             "name": "La Rioja",
-            "alias": "larioja",
-            "specSheet": "/maps/spec-sheets/larioja"
+            "alias": "larioja_arg",
+            "specSheet": "/maps/spec-sheets/larioja_arg"
           },
           {
             "name": "Mendoza",
@@ -4337,7 +4332,7 @@
           },
           {
             "name": "Santa Cruz",
-            "alias": "santacruz",
+            "alias": "santacruz_arg",
             "specSheet": "/maps/spec-sheets/santacruz_arg"
           },
           {
@@ -4877,7 +4872,7 @@
         "members": [
           {
             "name": "Amazonas",
-            "alias": "amazonas",
+            "alias": "peruamazonas",
             "specSheet": "/maps/spec-sheets/peruamazonas"
           },
           {
@@ -4902,7 +4897,7 @@
           },
           {
             "name": "Cajamarca",
-            "alias": "cajamrca",
+            "alias": "cajamarca",
             "specSheet": "/maps/spec-sheets/cajamarca"
           },
           {
