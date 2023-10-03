@@ -9,10 +9,10 @@ Dimensions (Width x Height): 674x800
 
 ### List of Entities
 
-| ID  | Short label | Label               |
-| --- | ----------- | ------------------- |
+| ID     | Short label | Label                  |
+| ------ | ----------- | ---------------------- |
 AR.DF.AA | AA          | Adolfo Alsina       
-AR.DF.AC | AC          | Adolfo Gonzáles Chaves 
+AR.DF.AC | AC          | Adolfo Gonzáles Chaves
 AR.DF.AL | AL          | Alberti                
 AR.DF.AB | AB          | Almirante Brown        
 AR.DF.BM | BM          | Arrecifes              
