@@ -1,7 +1,7 @@
 ---
 title: Flutter Features | FusionCharts
 description: This article outlines how to work with events, APIs, and modules.
-heading: React-Native Features
+heading: Flutter Features
 ---
 
 Achieve more with your charts, and explore more Flutter features. Learn how to work using events, APIs, modules, or how to configure your license. 
