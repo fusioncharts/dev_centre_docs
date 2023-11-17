@@ -85,6 +85,25 @@ if (args.length > 0 && args[0].type === CALLBACK) {
   }
 ```
 
+### Cancel Events
+Blazor implements the functionality to cancel events, which disposes the event already triggered on the chart. In the ‘Index.razor’ file, the functionality of the event to cancel is as follows:
+
+```javascript
+myEvent.dataPlotClick = "function() {DotNet.invokeMethodAsync('BlazorApp2TestQA2', 'ChangeData')}";
+myEvent.beforeDispose = "function(e) { console.log(e); e.preventDefault() }"; 
+myEvent.disposeCancelled = "function() { console.log('dispose cancelled') }";
+``` 
+
+The event can be cancelled by invoking the ‘callDispose()’ method, as follows:
+
+```javascript
+private async Task callDispose(){
+        await fusionChartsService.CallFusionChartsFunction("dispose", "demoId");
+}
+``` 
+
+Check an event cancellation example [here](https://github.com/fusioncharts/blazor-fusioncharts/blob/feature/examples/examples/demo/Pages/Adding-Blazor-and-JS-functions-to-events-By-Sanskar).
+
 ## Working with APIs
 
 You can also enhance your charts by adding some APIs. The first step needed is to write the logic to render FusionCharts inside the Index.razor file. Below is the code sample for a time chart: 
