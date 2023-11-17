@@ -176,8 +176,12 @@
       },
       {
          "fusioncharts": {
-            "title": "v3.21.1",
+            "title": "v3.22.0",
             "children": [
+               {
+                  "title": "v3.21.0",
+                  "link": "https://docs.fusioncharts.com/archive/3.21.0/"
+               },
                {
                   "title": "v3.20.0",
                   "link": "https://docs.fusioncharts.com/archive/3.20.0/"
