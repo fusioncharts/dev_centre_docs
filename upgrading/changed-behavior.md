@@ -4,7 +4,7 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users using a previous version of FusionCharts in their application. Here, we'll talk about the change in behavior of the charts after v3.21.x.
+This section is for users using a previous version of FusionCharts in their application. Here, we'll talk about the change in behavior of the charts after v3.22.x.
 
 
 ## Label Improvements for Sunburst Chart 
