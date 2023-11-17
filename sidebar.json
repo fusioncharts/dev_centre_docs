@@ -487,11 +487,11 @@
                               "children": [
                                  {
                                     "title": "Change Chart Type",
-                                    "path": "/getting-started/flutter/change-chart-type-using-flutter"
+                                    "path": "/getting-started/blazor/change-chart-type-using-blazor"
                                  },
                                  {
                                     "title": "Apply Different Themes",
-                                    "path": "/getting-started/flutter/apply-different-themes-using-flutter"
+                                    "path": "/getting-started/blazor/apply-different-themes-using-blazor"
                                  }
                               ]
                            }
@@ -1893,7 +1893,7 @@
                   "path": "/upgrading/license-activation"
                },
                {
-                  "title": "Upgrade to v3.21.1",
+                  "title": "Upgrade to v3.22.0",
                   "children": [
                      {
                         "title": "Changelog",
@@ -1932,6 +1932,10 @@
                {
                   "title": "Version History",
                   "children": [
+                     {
+                        "title": "v3.21.x",
+                        "path": "/upgrading/version-history/version-3-21-X"
+                     },
                      {
                         "title": "v3.20.x",
                         "path": "/upgrading/version-history/version-3-20-X"
