@@ -11,7 +11,7 @@ heading: Version 3.22.x
 
 <h4>New Features</h4>
 
-- FusionCharts version 3.22 introduces Blazor integration.
+- The FusionCharts version 3.22 release introduces the integration of FusionCharts with Blazor. For more information, read the [Blazor blog post](link_to_blog) announcement or explore the Blazor [documentation](/getting-started/your-first-chart-using-blazor). 
 
 
   
