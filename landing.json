@@ -68,6 +68,11 @@
                "value": "Flutter",
                "classname": "flutter-ionic",
                "link": "/getting-started/flutter/your-first-chart-using-flutter"
+            },
+            {
+               "value": "Blazor",
+               "classname": "blazor-ionic",
+               "link": "/getting-started/blazor/your-first-chart-using-blazor"
             }
          ],
          "backend": [
