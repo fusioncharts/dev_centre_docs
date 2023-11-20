@@ -10,6 +10,6 @@ This section is for users using the previous version of FusionCharts in their ap
 ## Blazor Integration
 
 FusionCharts release version 3.22 introduces the Blazor integration with FusionCharts, which integrates with the FusionCharts Core JavaScript library using webview. Opening up new possibilities for dynamic and interactive charting within Blazor applications.
-For more information, read the [Blazor blog post](link_to_blog) announcement or explore the Blazor [documentation](/getting-started/your-first-chart-using-blazor). 
+For more information, read the [Blazor blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration) announcement or explore the Blazor [documentation](/getting-started/your-first-chart-using-blazor). 
  
  
