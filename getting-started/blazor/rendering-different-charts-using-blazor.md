@@ -4,7 +4,7 @@ description: This article outlines some of the popular charts and the way to ren
 heading: Rendering Different Charts
 ---
 
-In the [Getting Started](/getting-started/flutter/your-first-chart-using-flutter) section, we discussed building a single series chart using FusionCharts Suite XT. In this section, you can see how to create different charts and maps using FusionCharts and Blazor.
+In the [Getting Started](/getting-started/blazor/your-first-chart-using-blazor) section, we discussed building a single series chart using FusionCharts Suite XT. In this section, you can see how to create different charts and maps using FusionCharts and Blazor.
 
 Note that some of the chart types and the maps use data structures different from the ones you use in a single-series chart. Those are highlighted in the sections below:
 
