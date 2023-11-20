@@ -488,10 +488,6 @@
                                  {
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/blazor/change-chart-type-using-blazor"
-                                 },
-                                 {
-                                    "title": "Apply Different Themes",
-                                    "path": "/getting-started/blazor/apply-different-themes-using-blazor"
                                  }
                               ]
                            }
