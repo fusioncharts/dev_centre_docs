@@ -73,11 +73,78 @@ dotnet run
 ## Create an application using FusionCharts
 Using FusionCharts, you can create your application. For starters, ensure you have `Node.js` and `Git` installed in your environment.
 
-Next, open the Command Prompt and create an instance of the FusionCharts widget as follows:
+To create a basic `column 2D` chart in your cshtml file, open your cshtml file and add the following code:
 
 ```javascript
-missing-blazor-code-sample
+<script src="~/fusioncharts/fusioncharts.js"></script>
+<script src="~/blazor-fusionCharts.js"></script>
 ```
+
+Next, in the respective razor file, expose a code as follows:
+```javascript
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {}
+        else
+        {}
+    }
+}
+```
+
+Now create a function in the code block as follows:
+```javascript
+@code {
+    private async Task renderColumnChart()
+    {
+        dynamic myChartConfig = new System.Dynamic.ExpandoObject();
+        dynamic myDataSource = new System.Dynamic.ExpandoObject();
+        dynamic myChart = new System.Dynamic.ExpandoObject();
+        dynamic myEvent = new System.Dynamic.ExpandoObject();
+        myEvent.dataPlotClick = "function() { console.log('dataPlotClick')}";
+
+        myChartConfig.type = "column2D";
+        myChartConfig.width = 1000;
+        myChartConfig.height = 600;
+        myChartConfig.dataFormat = "json";
+        myChartConfig.renderAt = "demoID";
+
+        myChart.caption = "Monthly Sales";
+        myChart.subCaption = "Last year";
+        myChart.xAxisName = "Month";
+        myChart.yAxisName = "Sales (in USD)";
+        myChart.theme = "fusion";
+
+        myDataSource.data = new[] {
+            new { label = "X0", value = "380000" },
+            new { label = "X1", value = "340000" },
+            new { label = "X2", value = "740000" },
+            new { label = "X3", value = "800000" },
+            new { label = "X4", value = "400000" },
+            new { label = "X5", value = "620000" },
+            new { label = "X6", value = "870000" },
+            new { label = "X7", value = "60000" },
+            new { label = "X8", value = "720000" },
+            new { label = "X9", value = "10000" },
+            new { label = "X10", value = "40000" }
+    };
+        myDataSource.chart = myChart;
+        myChartConfig.events = myEvent;
+        myChartConfig.dataSource = myDataSource;
+
+        String chartConfig = System.Text.Json.JsonSerializer.Serialize(myChartConfig);
+        await fusionChartsService.renderChart(chartConfig);  
+    }
+```
+
+The function above uses dynamic data type to create a JSON object of the chart’s configurations. Later on, once the object is created, it is serialized and then sent to the service file. 
+
+```javascript
+String chartConfig = System.Text.Json.JsonSerializer.Serialize(myChartConfig);
+await fusionChartsService.renderChart(chartConfig); 
+```
+
 
 ### Installation and Including Dependencies
 To create a new Blazor application:
