@@ -15,7 +15,7 @@ Use the JS method to invoke a JavaScript file within an event trigger by followi
 
 1. Generate a JavaScript file within the wwwroot directory that implements the event handler method. 
 
-2. Include the recently created file as a script tag in the ‘_Hosts.cshtml‘. The created file name is ‘custom.js‘ and is present in the wwwroot folder.
+2. Include the recently created file as a script tag in the `_Hosts.cshtml`. The created file name is ‘custom.js‘ and is in the wwwroot folder.
 ```javascript
 <script src="~/custom.js"></script>
 ```
@@ -23,7 +23,7 @@ Use the JS method to invoke a JavaScript file within an event trigger by followi
 
 4. Execute an anonymous function to invoke the JS method upon event trigger.
 
-Use the ‘function()‘ format for the function definition in JavaScript. The arrow function is not included, but users can add it by extending the regex in the ‘blazor-fusioncharts‘.  
+Use the ‘function()‘ format for the function definition in JavaScript. The arrow function is not included, but users can add it by extending the regex in the ‘blazor-fusioncharts‘ file.  
 
 ```javascript
    myEvent.dataPlotClick = "function() { randomF();}";
@@ -31,7 +31,7 @@ Use the ‘function()‘ format for the function definition in JavaScript. The a
 
 ### Blazor method
 To invoke a Blazor method upon an event trigger, follow the steps below:
-1. Inside the ‘Index.razor‘ file, create an instance as shown below:
+1. Inside the `Index.razor` file, create an instance as shown below:
 ```javascript
     public static Index _instance;
 ```
@@ -44,7 +44,7 @@ To invoke a Blazor method upon an event trigger, follow the steps below:
     }
 ```
 
-3. Implement a JSInvokable static method to invoke a non-static method using the instance. 
+3. Implement a `JSInvokable` static method to invoke a non-static method using the instance. 
 ```javascript
     [JSInvokable("ChangeData")]
     public static async Task ChangeData()
@@ -65,28 +65,9 @@ To invoke a Blazor method upon an event trigger, follow the steps below:
 ```javascript
     myEvent.dataPlotClick = "function() { DotNet.invokeMethodAsync('BlazorApp1', 'ChangeData') }";
 ```
-### Custom Event Handler
-The ‘addEventListener‘ method, listens to events across all FusionCharts instances on a page and executes customs functions when an event is triggered.
-
-The generic method implemented in the section above can be used to add a custom event listener that invokes a callback method as follows:
-```javascript
-var jsonData = new { type="callback", eventname = "dataPlotClick", fn = "function() {console.log('I am a callback function')}" };
-await fusionChartsService.CallFusionChartsFunction("addEventListener", "CHART_ID", jsonData);
-```
-The code snipped below demonstrates the callback method implementation upon the event trigger. 
-
-```javascript
-if (args.length > 0 && args[0].type === CALLBACK) {
-    let { event, fn } = args[0];
-    let callbackFn = parseFunction(null, fn);
-    result = currentChart[functionName].call(currentChart, event, callbackFn);
-
-    return String(result);
-  }
-```
 
 ### Cancel Events
-Blazor implements the functionality to cancel events, which disposes the event already triggered on the chart. In the ‘Index.razor’ file, the functionality of the event to cancel is as follows:
+Blazor implements the functionality to cancel events, which disposes of the event already triggered on the chart. In the `Index.razor` file, the functionality of the event to cancel is as follows:
 
 ```javascript
 myEvent.dataPlotClick = "function() {DotNet.invokeMethodAsync('BlazorApp2TestQA2', 'ChangeData')}";
@@ -94,7 +75,7 @@ myEvent.beforeDispose = "function(e) { console.log(e); e.preventDefault() }";
 myEvent.disposeCancelled = "function() { console.log('dispose cancelled') }";
 ``` 
 
-The event can be canceled by invoking the ‘callDispose()’ method, as follows:
+The event can be canceled by invoking the `callDispose()` method, as follows:
 
 ```javascript
 private async Task callDispose(){
@@ -105,9 +86,10 @@ private async Task callDispose(){
 
 Check an event cancellation example [here](https://github.com/fusioncharts/blazor-fusioncharts/blob/feature/examples/examples/demo/Pages/Adding-Blazor-and-JS-functions-to-events-By-Sanskar).
 
+
 ## Working with APIs
 
-You can also enhance your charts by adding some APIs. The first step needed is to write the logic to render FusionCharts inside the Index.razor file. Below is the code sample for a time chart: 
+You can also enhance your charts by adding some APIs. The first step is to write the logic to render FusionCharts inside the `Index.razor` file. Below is the code sample for a time chart: 
 
 ```javascript
 private async Task renderTimeCharts()
@@ -152,13 +134,13 @@ private async Task renderTimeCharts()
     }
 ```
 
-To invoke the generic method from the ‘Index.razor‘ file us the following mehthod:
+To invoke the generic method from the `Index.razor` file use the following method:
 
 ```javascript
 await fusionChartsService.CallFusionChartsFunction("chartType", "CHART_ID");
 ```
 
-The method’s call is directed to the ‘FusionChartsService.cs‘ file, which is a generic method calling another generic method written in ‘blazor-fusioncharts.js‘, and its implementation is as follows:
+The method’s call is directed to the `FusionChartsService.cs` file, which is a generic method calling another generic method written in `blazor-fusioncharts.js`, and its implementation is as follows:
 
   ```javascript
 public async Task<String> CallFusionChartsFunction(String functionName, String chartId, params object[] args)
@@ -168,7 +150,7 @@ public async Task<String> CallFusionChartsFunction(String functionName, String c
         }
 ```
 
-The generic method above, which calls any FusionCharts methods, is embedded inside the ‘blazor-fusioncharts.js‘ as shown below:
+The generic method above, which calls any FusionCharts methods, is embedded inside the `blazor-fusioncharts.js` as shown below:
 
   ```javascript
 window.FusionCharts.invokeChartFunction = (functionName, chartID, ...args) => {
@@ -191,8 +173,96 @@ window.FusionCharts.invokeChartFunction = (functionName, chartID, ...args) => {
         console.log(error);
       }
     }
+   return String(result);
+  }
+};
+```
+
+## Methods
+
+### Custom Event Handler
+The `addEventListener` method listens to events across all FusionCharts instances on a page and executes customs functions when an event is triggered.
+
+The generic method implemented in the section above can be used to add a custom event listener that invokes a callback method as follows:
+```javascript
+var jsonData = new { type="callback", eventname = "dataPlotClick", fn = "function() {console.log('I am a callback function')}" };
+await fusionChartsService.CallFusionChartsFunction("addEventListener", "CHART_ID", jsonData);
+```
+The code snipped below demonstrates the callback method implementation upon the event trigger. 
+
+```javascript
+if (args.length > 0 && args[0].type === CALLBACK) {
+    let { event, fn } = args[0];
+    let callbackFn = parseFunction(null, fn);
+    result = currentChart[functionName].call(currentChart, event, callbackFn);
 
     return String(result);
   }
+```
+
+### Time-Series Method
+The `setDataStore()` method is used in TimeSeries and FusionGrid to take data and schema as input from the external files and create a data source and data table to render the chart.
+
+Initially, an empty data source is created in the `Index.razor` file as shown:
+```javascript
+myDataSource.data = new {};
+```
+
+To read the contents of the external data and schema files, use the snippet below:
+```javascript
+String dataFilePath = "./data.json";
+String schemeFilePath = "./schema.json";
+String dataContent = File.ReadAllText(dataFilePath);
+String schemaContent = File.ReadAllText(schemeFilePath);
+
+await fusionChartsService.setDataStore("chartId", dataContent, schemaContent);
+```
+
+Upon invoking the `setDataStore()` method, it leads to the below code snippet in the `FusionChartsService.cs` file, which in turn invokes another user-defined method in the `blazor-fusioncharts.js`:
+```javascript
+public async Task setDataStore(String id, params object[] args){
+  await _jsruntime.InvokeVoidAsync("FusionCharts.setDataStore", id, args);
+}
+```
+
+Finally, the functionality of `setDataStore` is implemented in the `blazor-fusioncharts.js` file.
+The code includes creating a new data store and parsing data and schema to json. A new data table is created with the data and schema and rendered to the chart.
+```javascript
+window.FusionCharts.setDataStore = (id, args) =>  {
+
+    let currentChart = FusionCharts(id);
+    let fusionDataStore = new FusionCharts.DataStore();
+
+    let data = JSON.parse(args[0]);
+    let schema = JSON.parse(args[1]);
+
+    let fusionTable = fusionDataStore.createDataTable(data, schema);
+
+    currentChart.setChartData({data: fusionTable});
+};
+```
+
+### Resize Method
+The `resizeTo()` method resizes the chart to the specified width and height. While invoking the method, there is a circular json object exception due to which it will throw an error inside the generic method.
+
+In order to mitigate the issue of circular deps in the FusionCharts, you can add the method definition where no data is returned back to the JS environment. This is caused because certain methods return JSON, which contain circular deps in FusionCharts, and serializing a circular deps JSON is not possible.
+
+This method is invoked in the `Index.razor` file directly as below: 
+```javascript 
+await fusionChartsService.resizeTo("chartId", 450, 500);
+```
+
+It then leads to the `FusionChartsService.cs` file, invoking the method that will not return anything as the returned object json has circular references.
+```javascript 
+public async Task resizeTo(String id, params object[] args){
+            await _jsruntime.InvokeVoidAsync("FusionCharts.resizeTo", id, args);
+        }
+```
+
+The actual implementation is in the `blazor-fusioncharts.js` file, which invokes the resizeTo method with the height and width parameters.
+```javascript 
+window.FusionCharts.resizeTo = (id, args) => {
+  let currentChart = FusionCharts(id);
+  currentChart.resizeTo(args[0], args[1]);
 };
 ```
