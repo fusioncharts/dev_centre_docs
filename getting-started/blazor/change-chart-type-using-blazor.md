@@ -6,7 +6,7 @@ heading: Change Chart Type at Runtime
 
 FusionCharts Suite XT includes advanced features that add more context to your chart and simplify data visualization. These features include chart updates, update chart type at runtime, and events.
 
-This article focuses on how to change the chart type of the chart at runtime using the `blazor-fusioncharts` component. The chart types used in the sample are:
+This article focuses on how to change the chart type of the chart at runtime using the `BlazorFusionCharts` component. The chart types used in the sample are:
 
 * [Bar 3D](/chart-attributes/bar3d)
 * [Bar 2D](/chart-attributes/bar2d)
