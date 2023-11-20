@@ -123,7 +123,7 @@ These are the steps to follow to render the sample chart above.
 1. Include the necessary libraries and components using `import`. For example, `flutter-fusioncharts`, `fusioncharts`, etc.
 
 2. Define the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `bar2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
