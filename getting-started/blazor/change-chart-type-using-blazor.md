@@ -14,8 +14,11 @@ This article focuses on changing the chart type at runtime using the `BlazorFusi
 
 A chart configured to change the chart type is shown below:
 
-[CODE PEN SAMPLE OR IMAGE]
-
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) - 1 " src="https://codepen.io/fusioncharts/embed/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825">
+  (SUPPORT-2304) - 1 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 These are the steps to follow to render the sample chart above.
 
@@ -57,7 +60,9 @@ Now, in the code block add the `SimpleBarChart()` function for configuring and r
         myChart.theme = "candy";
         
         myDataSource.data = new[] {
-            new { label = "Travel & Leisure", value = "41" },
+        new { label = "Sport Agencies", value = "21" },
+        new { label = "Digital Marketing", value = "12" },
+        new { label = "Travel & Leisure", value = "41" },
         };
         myDataSource.chart = myChart;
         myChartConfig.events = myEvent;
