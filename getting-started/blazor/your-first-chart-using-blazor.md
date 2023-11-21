@@ -1,6 +1,6 @@
 ---
 title: Your First Chart in Blazor using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first chart using the blazor-fusioncharts component.
+description: This article outlines the steps to be executed for creating your first chart using the BlazorFusionCharts component.
 heading: Create a Chart in Blazor using FusionCharts
 ---
 
@@ -12,7 +12,7 @@ Integrating FusionCharts into Blazor applications can help users create visually
 
 Please ensure you have the following items installed or updated before starting.
 * Visual Studio (Used Community Edition 2022 - 17.6.1) on Windows or Mac.
-* Alternatively, you can install [.NET for MacOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos) or [.NET () for Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux).
+* Alternatively, you can install [.NET for MacOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos) or [.NET for Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux).
 
 **IMPORTANT NOTE:** Install Blazor if not present already.
 
@@ -30,20 +30,16 @@ To create a new Blazor application:
 - For Windows: `C:\Users\XXX.nuget\packages`
 - For macOS and Linux: `~/.nuget/packages`
 
-2. Remove any fusionCharts package from the local at the following locations:
-- For Windows: `C:\Users\XXX.nuget\packages`
-- For macOS and Linux: `~/.nuget/packages`
+2. Install the latest package from [Nuget.org](https://www.nuget.org/).
 
-3. Install the latest package from [Nuget.org](https://www.nuget.org/).
+3. Upon successful installation, manually add the `blazor-fusionCharts.js` file from the “C:\Users\XXX.nuget\packages\blazorfusioncharts\1.0.0\staticwebassets” address to the wwwroot folder. Or from the address "~/.nuget/packages/blazorfusioncharts/1.0.0/staticwebassets/" to your app's wwwroot folder.
 
-4. Upon successful installation, manually add the `blazor-fusioncharts.js` file from the “C:\Users\XXX.nuget\packages\blazorfusioncharts\1.0.0\staticwebassets” address to the wwwroot folder. 
-
-5. In the `Hosts.cshtml` file, add the following script tags:
+4. In the `_Host.cshtml` file, add the following script tags:
 ```javascript
 <script type=”text/javascript” src=”https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js”></script>
 <script src=”~/blazor-fusionCharts.js”></script>
 ```
-In the `_Import.razor` file, add the FusionChartsInterop as follows:
+In the `_Imports.razor` file, add the FusionChartsInterop as follows:
 ```javascript
 <script type=”text/javascript” src=”https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js”></script>
 <script src=”~/blazor-fusionCharts.js”></script>
@@ -54,10 +50,10 @@ builder.Services.AddScoped<FusionCharts.FusionChartsInterop.FusionChartsService>
 builder.Services.AddHttpClient();
 ```
 
-### Steps to run the charts
+### Steps to run examples
 Start by referring to the Blazor documentation link for a detailed guide on setting up and installing the necessary dependencies. 
 
-Clone the code repository to your local machine from [blazor-fusioncharts](https://github.com/fusioncharts/blazor-fusioncharts) and follow these simple steps to install Blazor.
+Clone the code repository to your local machine from [blazor-fusionCharts](https://github.com/fusioncharts/blazor-fusioncharts) and follow these simple steps to install Blazor.
 
 **For Windows**: 
 1. Ensure the following workloads are selected during the Visual Studio installation:
@@ -67,7 +63,7 @@ Clone the code repository to your local machine from [blazor-fusioncharts](https
 
 2. After installation, open the Visual Studio application and select the "Open a project solution" option. 
 
-3. Navigate to "examples" and open the `demo.sln` file.
+3. Navigate to "examples" directory and open the `demo.sln` file.
 
 4. Run the `demo` by clicking the "Run" button in the toolbar.
 
@@ -79,7 +75,7 @@ Clone the code repository to your local machine from [blazor-fusioncharts](https
 2. Open your preferred web browser and navigate to the appropriate address to view and interact with your Blazor app.
 
 ## Create an application using FusionCharts
-Using FusionCharts, you can create your application. For starters, ensure you install `Node.js` and `.Net` in your environment.
+Using FusionCharts, you can create your application. For starters, ensure you install `Node.js` and `.NET` in your environment.
 
 To create a basic `column 2D` chart, open your cshtml file and add the following code:
 
@@ -241,7 +237,9 @@ Now that the data is ready let's work on the styling, positioning, and giving yo
  
 ### Render the Chart
 
-Finally, prepare to render your first chart using the `BlazorFusionCharts` component. In your "App.js" file, replace your entire code with the code sample below, [Example](https://github.com/fusioncharts/blazor-fusioncharts#quick-start).
+Finally, prepare to render your first chart using the `BlazorFusionCharts` component. In your "Index.razor" file, replace your entire code with the following code sample below.
+
+For this example, let's use the following examples. Copy the full code here from this [file](https://github.com/fusioncharts/blazor-fusioncharts/blob/master/examples/demo/Pages/BarIn2D.razor).
 
 ```javascript
 // STEP 1: Include the dependencies
@@ -268,7 +266,7 @@ Finally, prepare to render your first chart using the `BlazorFusionCharts` compo
         dynamic myEvent = new System.Dynamic.ExpandoObject();
         myEvent.dataPlotClick = "function() { console.log('dataPlotClick')}";
 
-        myChartConfig.type = "column2D";
+        myChartConfig.type = "bar2D";
         myChartConfig.width = 1000;
         myChartConfig.height = 600;
         myChartConfig.dataFormat = "json";
