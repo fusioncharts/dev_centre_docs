@@ -460,6 +460,42 @@
                   ]
                },                              
                {
+                  "title": "Blazor",
+                  "children": [
+                     {
+                        "title": "Creating your First Chart",
+                        "children": [
+                           {
+                              "title": "Your First Chart",
+                              "path": "/getting-started/blazor/your-first-chart-using-blazor"
+                           },
+                           {
+                              "title": "Blazor Features",
+                              "path": "/getting-started/blazor/blazor-features"
+                           },
+                           {
+                              "title": "Rendering Different Charts",
+                              "path": "/getting-started/blazor/rendering-different-charts-using-blazor"
+                           }
+                        ]
+                     },
+                     {
+                        "title": "Usage Guide",
+                        "children": [
+                           {
+                              "title": "Working with Events",
+                              "children": [
+                                 {
+                                    "title": "Change Chart Type",
+                                    "path": "/getting-started/blazor/change-chart-type-using-blazor"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               },  
+               {
                   "title": "Vue",
                   "children": [
                      {
@@ -1853,7 +1889,7 @@
                   "path": "/upgrading/license-activation"
                },
                {
-                  "title": "Upgrade to v3.21.1",
+                  "title": "Upgrade to v3.22.0",
                   "children": [
                      {
                         "title": "Changelog",
@@ -1892,6 +1928,10 @@
                {
                   "title": "Version History",
                   "children": [
+                     {
+                        "title": "v3.21.x",
+                        "path": "/upgrading/version-history/version-3-21-X"
+                     },
                      {
                         "title": "v3.20.x",
                         "path": "/upgrading/version-history/version-3-20-X"
