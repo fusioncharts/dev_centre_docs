@@ -360,7 +360,11 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
 
 The chart should look as shown below.
 
--[Missing Image](/images/)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2294) 2" src="https://codepen.io/fusioncharts/embed/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/VwVdOPX/f5d3c5a75c43bfc34b00d072e6ee1fe1">
+  (SUPPORT-2294) 2</a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 If you get a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you cannot solve it, click [here](mailto:support@fusioncharts.com) to contact our support team.
 
