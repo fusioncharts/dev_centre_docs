@@ -472,10 +472,6 @@
                            {
                               "title": "Blazor Features",
                               "path": "/getting-started/blazor/blazor-features"
-                           },
-                           {
-                              "title": "Rendering Different Charts",
-                              "path": "/getting-started/blazor/rendering-different-charts-using-blazor"
                            }
                         ]
                      },
@@ -486,8 +482,8 @@
                               "title": "Working with Events",
                               "children": [
                                  {
-                                    "title": "Change Chart Type",
-                                    "path": "/getting-started/blazor/change-chart-type-using-blazor"
+                                    "title": "Rendering Different Charts",
+                                    "path": "/getting-started/blazor/rendering-different-charts-using-blazor"
                                  }
                               ]
                            }
