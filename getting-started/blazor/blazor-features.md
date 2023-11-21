@@ -150,28 +150,6 @@ public async Task<String> CallFusionChartsFunction(String functionName, String c
         }
 ```
 
-The generic method above, which calls any FusionCharts methods, is embedded inside the `blazor-fusionCharts.js` as shown below:
-
-  ```javascript
-window.FusionCharts.invokeChartFunction = (functionName, chartID, ...args) => {
-  let currentChart = FusionCharts(chartID),
-    result;
-
-  else {
-    result = currentChart[functionName].apply(currentChart, ...args);
-
-    if (typeof result === "object") {
-      try {
-        result = JSON.stringify(result);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-   return String(result);
-  }
-};
-```
-
 ## Methods
 ### Custom Event Handler
 The `addEventListener` method listens to events across all FusionCharts instances on a page and executes customs functions when an event is triggered.
