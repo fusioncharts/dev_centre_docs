@@ -103,6 +103,8 @@ await fusionChartsService.renderChart(chartConfig);
 
 Now let’s look at how to render a time-series chart. The time-series chart can deal with very large sets of data, In this example, the data and schema(structure) of the data are available as external JSON files. The method `setDataStore` is invoked to create a new data store using the data and schema provided, thereby rendering a FusionCharts time series chart.
 
+[Example Here]
+
 The consolidated code for rendering the chart is given below:
 
 ```javascript
@@ -146,6 +148,8 @@ The consolidated code for rendering the chart is given below:
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by region, population by state, survey, and election results. The example below shows how to render Maps using the Blazor application. 
 
 The example here demonstrates the Growth of the Population World Wide. The JSON data is provided from the external file in the form of the relative path which is then converted to an absolute URL. It finally invokes the generic method to call the `setJSONUrl` method with the URL of the data as an argument for effectively setting the data source to the chart.
+
+[Example Here]
 
 The data in the JSON format for the above map looks as follows:
 ```javascript
