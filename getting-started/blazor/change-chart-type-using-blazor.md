@@ -28,7 +28,7 @@ Next, add the dependency injection. Here, the code injects the `FusionChartsServ
 @inject FusionChartsService fusionChartsService;
 ```
 
-In the code block, add the `SimpleBarChart()` function for configuring and rendering the bar chart. This function sets up the chart configuration, event handling, data, and properties. Finally, it serializes the chart configuration to JSON and renders it using the `fusionChartsService.renderChart()` method.
+Add the `SimpleBarChart()` function to configure and render the bar chart in the code block. This function sets up the chart configuration, event handling, data, and properties. Finally, it serializes the chart configuration to JSON and renders it using the `fusionChartsService.renderChart()` method.
 ```javascript
 @code {
     public async void SimpleBarChart()
