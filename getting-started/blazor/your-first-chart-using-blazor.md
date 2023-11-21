@@ -239,7 +239,7 @@ Now that the data is ready let's work on the styling, positioning, and giving yo
 
 Finally, prepare to render your first chart using the `BlazorFusionCharts` component. In your "Index.razor" file, replace your entire code with the following code sample below.
 
-For this example, let's use the following "examples", which you can copy the full code here from this [file](https://github.com/fusioncharts/blazor-fusioncharts/blob/master/examples/demo/Pages/BarIn2D.razor).
+For this example, let's use the "examples" directory. Copy the full code here from this [file](https://github.com/fusioncharts/blazor-fusioncharts/blob/master/examples/demo/Pages/BarIn2D.razor).
 
 ```javascript
 // STEP 1: Include the dependencies
