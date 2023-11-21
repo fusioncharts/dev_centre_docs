@@ -13,4 +13,4 @@ FusionCharts release version 3.22 introduces the Blazor integration with FusionC
 
 This integration combines the strengths of FusionCharts in data visualization and interactivity with Blazor's server-side and client-side capabilities, making it an ideal choice for building modern, data-centric web applications.
 
-For more information, read the [Blazor blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration) announcement or explore the Blazor [documentation](/getting-started/your-first-chart-using-blazor). 
+For more information, read the [Blazor blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration) announcement or explore the Blazor [documentation](/getting-started/blazor/your-first-chart-using-blazor). 
