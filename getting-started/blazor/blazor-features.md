@@ -23,7 +23,7 @@ Use the JS method to invoke a JavaScript file within an event trigger by followi
 
 4. Execute an anonymous function to invoke the JS method upon event trigger.
 
-Use the ‘function()‘ format for the function definition in JavaScript. The arrow function is not included, but users can add it by extending the regex in the ‘blazor-fusioncharts‘ file.  
+Use the ‘function()‘ format for the function definition in JavaScript. The arrow function is not included, but users can add it by extending the regex in the ‘blazor-fusionCharts‘ file.  
 
 ```javascript
    myEvent.dataPlotClick = "function() { randomF();}";
@@ -140,7 +140,7 @@ To invoke the generic method from the `Index.razor` file use the following metho
 await fusionChartsService.CallFusionChartsFunction("chartType", "CHART_ID");
 ```
 
-The method’s call is directed to the `FusionChartsService.cs` file, which is a generic method calling another generic method written in `blazor-fusioncharts.js`, and its implementation is as follows:
+The method’s call is directed to the `FusionChartsService.cs` file, which is a generic method calling another generic method written in `blazor-fusionCharts.js`, and its implementation is as follows:
 
   ```javascript
 public async Task<String> CallFusionChartsFunction(String functionName, String chartId, params object[] args)
@@ -150,20 +150,14 @@ public async Task<String> CallFusionChartsFunction(String functionName, String c
         }
 ```
 
-The generic method above, which calls any FusionCharts methods, is embedded inside the `blazor-fusioncharts.js` as shown below:
+The generic method above, which calls any FusionCharts methods, is embedded inside the `blazor-fusionCharts.js` as shown below:
 
   ```javascript
 window.FusionCharts.invokeChartFunction = (functionName, chartID, ...args) => {
   let currentChart = FusionCharts(chartID),
     result;
 
-  if (args.length > 0 && args[0].type === CALLBACK) {
-    let { event, fn } = args[0];
-    let callbackFn = parseFunction(null, fn);
-    result = currentChart[functionName].call(currentChart, event, callbackFn);
-
-    return String(result);
-  } else {
+  else {
     result = currentChart[functionName].apply(currentChart, ...args);
 
     if (typeof result === "object") {
@@ -217,14 +211,14 @@ String schemaContent = File.ReadAllText(schemeFilePath);
 await fusionChartsService.setDataStore("chartId", dataContent, schemaContent);
 ```
 
-Upon invoking the `setDataStore()` method, it leads to the below code snippet in the `FusionChartsService.cs` file, which in turn invokes another user-defined method in the `blazor-fusioncharts.js`:
+Upon invoking the `setDataStore()` method, it leads to the below code snippet in the `FusionChartsService.cs` file, which in turn invokes another user-defined method in the `blazor-fusionCharts.js`:
 ```javascript
 public async Task setDataStore(String id, params object[] args){
   await _jsruntime.InvokeVoidAsync("FusionCharts.setDataStore", id, args);
 }
 ```
 
-Finally, the functionality of `setDataStore` is implemented in the `blazor-fusioncharts.js` file.
+Finally, the functionality of `setDataStore` is implemented in the `blazor-fusionCharts.js` file.
 The code includes creating a new data store and parsing data and schema to json. A new data table is created with the data and schema and rendered to the chart.
 ```javascript
 window.FusionCharts.setDataStore = (id, args) =>  {
@@ -258,7 +252,7 @@ public async Task resizeTo(String id, params object[] args){
         }
 ```
 
-The actual implementation is in the `blazor-fusioncharts.js` file, which invokes the resizeTo method with the height and width parameters.
+The actual implementation is in the `blazor-fusionCharts.js` file, which invokes the resizeTo method with the height and width parameters.
 ```javascript 
 window.FusionCharts.resizeTo = (id, args) => {
   let currentChart = FusionCharts(id);
