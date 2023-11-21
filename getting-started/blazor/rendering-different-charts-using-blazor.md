@@ -13,11 +13,15 @@ Note that some of the chart types and the maps use data structures different fro
 * [Maps](/getting-started/blazor/rendering-different-charts-using-blazor#maps)
 
 ## Pie 2D Chart
-A Pie chart is a circular data visualization tool that represents data as slices of a pie. Each slice corresponds to a category or data point, with its size proportionate to the value it represents relative to the whole. Pie charts are effective for displaying the distribution of data across categories or illustrating the contributions of different parts to a whole, often using color coding and labels for clarity. 
+A Pie chart is a circular data visualization tool representing data as pie slices. Each slice corresponds to a category or data point, with its size proportionate to the value it represents relative to the whole. Pie charts are effective for displaying data distribution across categories or illustrating the contributions of different parts to a whole, often using color coding and labels for clarity. 
 
 Pie charts are frequently used for showcasing percentages, budget allocations, or market share. Below is an example of a Pie 2D chart.
 
-[Example Here]
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) - 1 " src="https://codepen.io/fusioncharts/embed/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825">
+  (SUPPORT-2304) - 1 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 The following table shows the data used to build the charts shown above.
 
@@ -88,7 +92,7 @@ myDataSource.data = new[] {
 new { label = "Apache", value = "32647479" },
 new { label = "Microsoft", value = "22100932" },
 new { label = "Zeus", value = "14376" },
-new { label = "Other", value = "18674221" },
+new { label = "Nginx", value = "18674221" },
 };
 
 myDataSource.chart = myChart;
