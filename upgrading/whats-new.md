@@ -6,7 +6,6 @@ heading: What's New
 
 This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.22.x.
 
-
 ## Blazor Integration
 
 FusionCharts release version 3.22 introduces the Blazor integration with FusionCharts. Integrating FusionCharts with Blazor allows you to leverage the power of both technologies to create dynamic, data-driven, and highly customizable charts within your Blazor applications.
