@@ -45,20 +45,20 @@ Follow these steps to install Blazor using the NuGet Package.
 
 2. On the Settings icon, select “Options”.
 
-3. Find the NuGet Package Manager, and select Package Sources from the left panel of the Options window.
+3. Find the NuGet Package Manager and select Package Sources from the left panel of the Options window.
 
-4. To add a package, click the “+” symbol in the top-right corner.
-- For the Name field, add the name of the package source as ‘myget.org’.
+4. click the `+` symbol in the top-right corner to add a package.
+- For the Name field, add the name of the package source as `myget.org`.
 - For the Source field, paste the myGet Package link.
 - Click “Update”, and then click “OK”.
 
 5. Under Tools, click the “NuGet Package Manager” option and select Manage NuGet Packages for Solution.   
 
-6. Next, change the project source to “myget.org” in the top-right corner. 
+6. Change the project source to “myget.org” in the top-right corner. 
 
-7. Finally, move the browser tab of the same window, enter the credentials, and install the package BlazorApp1.
+7. Finally, move the browser tab of the same window, enter the credentials, and install the package "BlazorApp1".
 
-> Note: For Linux and macOS, installing the Nuget package using CLI from the private feed of MyGet requires an additional file, `nuget.config` on the root of the package. This file can be generated using the command `dotnet new nugetconfig`.
+> Note: For Linux and macOS, installing the Nuget package using CLI from the private feed of MyGet requires an additional file, `nuget.config`, on the package's root. This file can be generated using the command `dotnet new nugetconfig`.
 
 
 **Setup using CLI**:
@@ -77,12 +77,12 @@ dotnet run
 
 **Steps to Upload Nuget Package**:
 1. In Visual Studio, ensure the mode is set to "Release" and click on "Build".
-2. Next, click the Blazor Application, in this case named "BlazzorApp1".
+2. Next, click the Blazor Application named "BlazzorApp1".
 3. In the `bin/release` folder, the nupkg file should be visible.
 4. Now, go to the myget site, sign in, and click on the new feed to configure it with the package name.
 5. the "NuGet package" option should appear in the "Add Package" dropdown menu once configured.
 6. Select the NuGet package and add it from your local folder.
-7. Once uploaded, users can select the package and install it using the steps [above](/getting-started/blazor/your-first-chart-using-blazor#setup-using-nuget-package).
+7. Once uploaded, users can select and install the package using the steps [above](/getting-started/blazor/your-first-chart-using-blazor#setup-using-nuget-package).
 
 More information on creating NuGet packages can be found [here](https://docs.myget.org/docs/walkthrough/getting-started-with-nuget). 
 
@@ -96,7 +96,7 @@ To create a basic `column 2D` chart, open your cshtml file and add the following
 <script src="~/blazor-fusionCharts.js"></script>
 ```
 
-Next, in the respective razor file, expose a code as follows:
+Next, in the respective razor file, expose a code block as follows:
 ```javascript
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -109,7 +109,7 @@ Next, in the respective razor file, expose a code as follows:
 }
 ```
 
-Now create a function in the code block as follows:
+Now, create the `renderColumnChart()` function in the code block as follows:
 ```javascript
 @code {
     private async Task renderColumnChart()
@@ -133,17 +133,16 @@ Now create a function in the code block as follows:
         myChart.theme = "fusion";
 
         myDataSource.data = new[] {
-            new { label = "X0", value = "380000" },
-            new { label = "X1", value = "340000" },
-            new { label = "X2", value = "740000" },
-            new { label = "X3", value = "800000" },
-            new { label = "X4", value = "400000" },
-            new { label = "X5", value = "620000" },
-            new { label = "X6", value = "870000" },
-            new { label = "X7", value = "60000" },
-            new { label = "X8", value = "720000" },
-            new { label = "X9", value = "10000" },
-            new { label = "X10", value = "40000" }
+            new { label = "February", value = "340000" },
+            new { label = "March", value = "740000" },
+            new { label = "April", value = "800000" },
+            new { label = "May", value = "400000" },
+            new { label = "June", value = "620000" },
+            new { label = "July", value = "870000" },
+            new { label = "August", value = "60000" },
+            new { label = "September", value = "720000" },
+            new { label = "October", value = "10000" },
+            new { label = "November", value = "40000" }
     };
         myDataSource.chart = myChart;
         myChartConfig.events = myEvent;
@@ -159,6 +158,21 @@ The function above uses dynamic data type to create a JSON object of the chart�
 ```javascript
 String chartConfig = System.Text.Json.JsonSerializer.Serialize(myChartConfig);
 await fusionChartsService.renderChart(chartConfig); 
+```
+
+Finally, call the `demo()` function from `OnAfterRenderAsync` as follows:
+```javascript
+protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+        if (firstRender)
+        {
+            await demo();
+        }
+        else
+        {
+
+        }
+}
 ```
 
 
@@ -191,60 +205,71 @@ In the `Program.cs` file, add the FusionCharts service as follows:
 builder.Services.AddScoped<FusionCharts.FusionChartsInterop.FusionChartsService>();
 builder.Services.AddHttpClient();
 ```
+
 ### Preparing the Data
 
-Let's create a chart showing the **"Countries With Most Oil Reserves"**. The oil reserves data present in various countries is shown in tabular form below.
+Let's create a chart showing the **"Last year's Monthly Sales"**. The oil reserves data present in various countries is shown in tabular form below.
 
-| Country   | No. of Oil Reserves |
-| --------- | ------------------- |
-| Venezuela | 290K            	|
-| Saudi 	| 260K            	|
-| Canada	| 180K            	|
-| Iran  	| 140K            	|
-| Russia	| 115K            	|
-| UAE   	| 100K            	|
-| US    	| 30K             	|
-| China 	| 30K             	|
+| Month      | Sales (in USD) |
+| ---------- | -------------- |
+| January    | 380000         |
+| February   | 340000         |
+| March	     | 740000         |
+| April      | 800000         |
+| May	     | 400000         |
+| June       | 620000         |
+| July       | 870000         |
+| August     | 60000          |
+| September  | 720000         |
+| October    | 10000          |
+| November   | 40000          |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along the y-axis. Then, let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'month' as **data labels** along the x-axis and 'Sales (in USD)' as **data values** along the y-axis. Then, let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will look as shown below:
 
 ```javascript
 /// Preparing the chart data
 List<dynamic> chartData = [
-  	{"label": "Venezuela", "value": "290"},
-  	{"label": "Saudi", "value": "260"},
-  	{"label": "Canada", "value": "180"},
-  	{"label": "Iran", "value": "140"},
-  	{"label": "Russia", "value": "115"},
-  	{"label": "UAE", "value": "100"},
-  	{"label": "US", "value": "30"},
-  	{"label": "China", "value": "30"}
+  	 new { label = "January", value = "380000" },
+            new { label = "February", value = "340000" },
+            new { label = "March", value = "740000" },
+            new { label = "April", value = "800000" },
+            new { label = "May", value = "400000" },
+            new { label = "June", value = "620000" },
+            new { label = "July", value = "870000" },
+            new { label = "August", value = "60000" },
+            new { label = "September", value = "720000" },
+            new { label = "October", value = "10000" },
+            new { label = "November", value = "40000" }
 	];
 ```
 ### Configure Your Chart
 
-Now that the data is ready, let's work on the styling, positioning, and giving your chart context.
+Now that the data is ready let's work on the styling, positioning, and giving your chart context.
 
 ```javascript
 /// Create a JSON object to store the chart configurations
-Map<String, dynamic> chart = {
-  	"caption": "Countries With Most Oil Reserves [2017-18]",
-  	"subCaption": "In MMbbl = One Million barrels",
-  	"logoURL":
-  	"https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
-  	"logoAlpha": "100",
-  	"logoScale": "110",
-  	"logoPosition": "TL",
-  	"xAxisName": "Country",
-  	"yAxisName": "Reserves (MMbbl)",
-  	"numberSuffix": "K",
-  	"theme": "carbon",
-  	"baseFontSize": "35px",
-  	"captionFontSize": "35px",
-  	"subCaptionFontSize": "30px"
-	};
+@code {
+    private async Task renderColumnChart()
+    {
+        dynamic myChartConfig = new System.Dynamic.ExpandoObject();
+        dynamic myDataSource = new System.Dynamic.ExpandoObject();
+        dynamic myChart = new System.Dynamic.ExpandoObject();
+        dynamic myEvent = new System.Dynamic.ExpandoObject();
+        myEvent.dataPlotClick = "function() { console.log('dataPlotClick')}";
+
+        myChartConfig.type = "column2D";
+        myChartConfig.width = 1000;
+        myChartConfig.height = 600;
+        myChartConfig.dataFormat = "json";
+        myChartConfig.renderAt = "demoID";
+
+        myChart.caption = "Monthly Sales";
+        myChart.subCaption = "Last year";
+        myChart.xAxisName = "Month";
+        myChart.yAxisName = "Sales (in USD)";
+        myChart.theme = "fusion";
 	/// Chart Data - from step 2
 	data: chartData
   }
@@ -260,7 +285,75 @@ Finally, prepare to render your first chart using the `BlazorFusionCharts` compo
 > The JavaScript code to create a chart in Android and iOS is the same.
 
 ```javascript
-missing-blazor-code-sample
+// STEP 1: Include the dependencies
+<script src="~/fusioncharts/fusioncharts.js"></script>
+<script src="~/blazor-fusionCharts.js"></script>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {}
+        else
+        {}
+    }
+}
+
+// STEP 2 and 3: Prepare the data and Configure your chart
+@code {
+    private async Task renderColumnChart()
+    {
+        dynamic myChartConfig = new System.Dynamic.ExpandoObject();
+        dynamic myDataSource = new System.Dynamic.ExpandoObject();
+        dynamic myChart = new System.Dynamic.ExpandoObject();
+        dynamic myEvent = new System.Dynamic.ExpandoObject();
+        myEvent.dataPlotClick = "function() { console.log('dataPlotClick')}";
+
+        myChartConfig.type = "column2D";
+        myChartConfig.width = 1000;
+        myChartConfig.height = 600;
+        myChartConfig.dataFormat = "json";
+        myChartConfig.renderAt = "demoID";
+
+        myChart.caption = "Monthly Sales";
+        myChart.subCaption = "Last year";
+        myChart.xAxisName = "Month";
+        myChart.yAxisName = "Sales (in USD)";
+        myChart.theme = "fusion";
+
+        myDataSource.data = new[] {
+            new { label = "January", value = "380000" },
+            new { label = "February", value = "340000" },
+            new { label = "March", value = "740000" },
+            new { label = "April", value = "800000" },
+            new { label = "May", value = "400000" },
+            new { label = "June", value = "620000" },
+            new { label = "July", value = "870000" },
+            new { label = "August", value = "60000" },
+            new { label = "September", value = "720000" },
+            new { label = "October", value = "10000" },
+            new { label = "November", value = "40000" }
+    };
+        myDataSource.chart = myChart;
+        myChartConfig.events = myEvent;
+        myChartConfig.dataSource = myDataSource;
+        String chartConfig = System.Text.Json.JsonSerializer.Serialize(myChartConfig);
+        await fusionChartsService.renderChart(chartConfig);  
+    }
+
+// STEP 4: Render the chart
+protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+        if (firstRender)
+        {
+            await demo();
+        }
+        else
+        {
+
+        }
+}
+ 
 ```
 
 ## See Your Chart below
@@ -269,7 +362,7 @@ The chart should look as shown below.
 
 -[Missing Image](/images/)
 
-If you get a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you cannot solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+If you get a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you cannot solve it, click [here](mailto:support@fusioncharts.com) to contact our support team.
 
 That's it! Your first chart using `BlazorFusionCharts` is ready.
 
