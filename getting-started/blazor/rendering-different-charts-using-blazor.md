@@ -59,7 +59,11 @@ const dataset = [
 
 ```
 
-Now that the data is ready let us dive in directly to render the chart. The consolidated code is given below:
+Now that the data is ready let us dive in directly to render the chart. 
+
+For this example, let's use the "examples" directory. Copy the full code here from this [file](https://github.com/fusioncharts/blazor-fusioncharts/blob/master/examples/demo/Pages/BarIn2D.razor).
+
+The consolidated code is given below:
 
 ```javascript
 dynamic myChartConfig = new System.Dynamic.ExpandoObject();
