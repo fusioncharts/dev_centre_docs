@@ -17,9 +17,9 @@ A Pie chart is a circular data visualization tool representing data as pie slice
 
 Pie charts are frequently used for showcasing percentages, budget allocations, or market share. Below is an example of a Pie 2D chart.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) - 1 " src="https://codepen.io/fusioncharts/embed/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825">
-  (SUPPORT-2304) - 1 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) 2 " src="https://codepen.io/fusioncharts/embed/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/fusioncharts/pen/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f">
+  (SUPPORT-2304) 2 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
