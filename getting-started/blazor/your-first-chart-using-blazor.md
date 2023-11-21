@@ -41,8 +41,7 @@ To create a new Blazor application:
 ```
 In the `_Imports.razor` file, add the FusionChartsInterop as follows:
 ```javascript
-<script type=”text/javascript” src=”https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js”></script>
-<script src=”~/blazor-fusionCharts.js”></script>
+@using FusionCharts.FusionChartsInterop
 ```
 In the `Program.cs` file, add the FusionCharts service as follows:
 ```javascript
@@ -53,7 +52,7 @@ builder.Services.AddHttpClient();
 ### Steps to run examples
 Start by referring to the Blazor documentation link for a detailed guide on setting up and installing the necessary dependencies. 
 
-Clone the code repository to your local machine from [blazor-fusionCharts](https://github.com/fusioncharts/blazor-fusioncharts) and follow these simple steps to install Blazor.
+Clone the code repository to your local machine from [blazor-fusioncharts](https://github.com/fusioncharts/blazor-fusioncharts) and follow these simple steps to install Blazor.
 
 **For Windows**: 
 1. Ensure the following workloads are selected during the Visual Studio installation:
