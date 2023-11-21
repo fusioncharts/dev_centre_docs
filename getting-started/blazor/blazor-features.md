@@ -179,7 +179,6 @@ window.FusionCharts.invokeChartFunction = (functionName, chartID, ...args) => {
 ```
 
 ## Methods
-
 ### Custom Event Handler
 The `addEventListener` method listens to events across all FusionCharts instances on a page and executes customs functions when an event is triggered.
 
