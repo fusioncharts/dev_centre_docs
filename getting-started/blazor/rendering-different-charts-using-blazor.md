@@ -17,11 +17,7 @@ A Pie chart is a circular data visualization tool representing data as pie slice
 
 Pie charts are frequently used for showcasing percentages, budget allocations, or market share. Below is an example of a Pie 2D chart.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) 2 " src="https://codepen.io/fusioncharts/embed/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/ZEmRZyZ/011aea050a543fd3a3ae7316680ede6f">
-  (SUPPORT-2304) 2 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+![Blazor Pie 2D](/assets/images/blazor-chart-pie2d.png)
 
 The following table shows the data used to build the charts shown above.
 
@@ -63,7 +59,11 @@ const dataset = [
 
 ```
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now that the data is ready let us dive in directly to render the chart. 
+
+For this example, let's use the "examples" directory. Copy the full code here from this [file](https://github.com/fusioncharts/blazor-fusioncharts/blob/master/examples/demo/Pages/BarIn2D.razor).
+
+The consolidated code is given below:
 
 ```javascript
 dynamic myChartConfig = new System.Dynamic.ExpandoObject();
@@ -105,7 +105,9 @@ await fusionChartsService.renderChart(chartConfig);
 
 ## Time-Series Chart
 
-Now, let’s look at how to render a time-series chart. The time-series chart can deal with very large sets of data, In this example, the data and schema(structure) of the data are available as external JSON files. The method `setDataStore` is invoked to create a new data store using the data and schema provided, thereby rendering a FusionCharts time series chart.
+Now, let’s look at how to render a time-series chart. The time-series chart can deal with very large sets of data. In this example, the data and schema(structure) of the data are available as external JSON files. The method `setDataStore` is invoked to create a new data store using the data and schema provided, thereby rendering a FusionCharts time series chart.
+
+![Blazor Time-Series](/assets/images/blazor-chart-time-series.png)
 
 The consolidated code for rendering the chart is given below:
 
@@ -149,11 +151,9 @@ The consolidated code for rendering the chart is given below:
 ## Maps
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by region, population by state, survey, and election results. The example below shows how to render Maps using the Blazor application. 
 
-The example here demonstrates the Growth of the Population World Wide. The JSON data is provided from the external file in the form of the relative path which is then converted to an absolute URL. It finally invokes the generic method to call the `setJSONUrl` method with the URL of the data as an argument for effectively setting the data source to the chart.
+The example here demonstrates the Growth of the Population World Wide. The JSON data is provided from the external file as the relative path and then converted to an absolute URL. It finally invokes the generic method to call the `setJSONUrl` method with the URL of the data as an argument for effectively setting the data source to the chart.
 
-{% embed_chart getting-started-your-first-map.js %}
-
-The data in the JSON format for the above map looks as follows:
+The data in the JSON format for rendering a map looks as follows:
 ```javascript
  private async Task renderMap()
     {
