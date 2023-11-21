@@ -101,7 +101,7 @@ await fusionChartsService.renderChart(chartConfig);
 
 ## Time-Series Chart
 
-Now, let’s look at how to render a time-series chart. The time-series chart can deal with very large sets of data, In this example, the data and schema(structure) of the data are available as external JSON files. The method `setDataStore` is invoked to create a new data store using the data and schema provided, thereby rendering a FusionCharts time series chart.
+Now, let’s look at how to render a time-series chart. The time-series chart can deal with very large sets of data. In this example, the data and schema(structure) of the data are available as external JSON files. The method `setDataStore` is invoked to create a new data store using the data and schema provided, thereby rendering a FusionCharts time series chart.
 
 ![Blazor Time-Series](/assets/images/blazor-chart-time-series.png)
 
