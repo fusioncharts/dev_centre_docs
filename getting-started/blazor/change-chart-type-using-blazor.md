@@ -6,30 +6,135 @@ heading: Change Chart Type at Runtime
 
 FusionCharts Suite XT includes advanced features that add more context to your chart and simplify data visualization. These features include chart updates, update chart type at runtime, and events.
 
-This article focuses on how to change the chart type of the chart at runtime using the `BlazorFusionCharts` component. The chart types used in the sample are:
+This article focuses on changing the chart type at runtime using the `BlazorFusionCharts` component. The chart types used in the sample are:
 
-* [Bar 3D](/chart-attributes/bar3d)
-* [Bar 2D](/chart-attributes/bar2d)
+* Bar 2D
+* Column 2D
+* Pie 2D
 
-Here is an example of a 2D Bar chart configured to change to a 3D Bar chart type.
+A chart configured to change the chart type is shown below:
 
-[MISSING IMAGE](/images/)
+[CODE PEN SAMPLE OR IMAGE]
 
-[MISSING IMAGE](/images/)
-
-The complete code of the above sample is given below:
-
-```javascript
-missing-blazor-code
-
-```
 
 These are the steps to follow to render the sample chart above.
+
+Set up a Razor Page to define a Razor page accessible at the URL `/SimpleBar`.
+```javascript
+@page "/SimpleBar"
+<h1>Simple bar 2D</h1>
+<div id="Simple bar"></div>
+``` 
+
+The code above displays a heading "Simple bar 2D" and an empty `<div>` with the ID "Simple bar" where the bar chart will render. 
+
+Next, add the dependency injection. Here, the code injects the `FusionChartsService` into the Razor component. This service is likely responsible for rendering FusionCharts.
+```javascript
+@inject FusionChartsService fusionChartsService;
+```
+
+Now, in the code block add the `SimpleBarChart()` function for configuring and rendering the bar chart. This function sets up the chart configuration, event handling, data, and properties. Finally, it serializes the chart configuration to JSON and renders it using the `fusionChartsService.renderChart()` method.
+```javascript
+@code {
+    public async void SimpleBarChart()
+    {
+        dynamic myChartConfig = new System.Dynamic.ExpandoObject();
+        dynamic myDataSource = new System.Dynamic.ExpandoObject();
+        dynamic myChart = new System.Dynamic.ExpandoObject();
+        dynamic myEvent = new System.Dynamic.ExpandoObject();
+
+        myEvent.chartClick = "function() { console.log('chartClick successfull')}";
+        
+        myChartConfig.type = "bar2d";
+        myChartConfig.width = 600;
+        myChartConfig.height = 300;
+        myChartConfig.dataFormat = "json";
+        myChartConfig.renderAt = "Simple bar";
+        myChart.caption = "Lead sources by industry";
+        myChart.yAxisName = "Number of Leads";
+        myChart.aligncaptionwithcanvas = "0";
+        myChart.plottooltext = "<b>$dataValue</b> leads received";
+        myChart.theme = "candy";
+        
+        myDataSource.data = new[] {
+            new { label = "Travel & Leisure", value = "41" },
+        };
+        myDataSource.chart = myChart;
+        myChartConfig.events = myEvent;
+        myChartConfig.dataSource = myDataSource;
+
+        String chartConfig = System.Text.Json.JsonSerializer.Serialize(myChartConfig);
+        await fusionChartsService.renderChart(chartConfig);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            SimpleBarChart();
+        }
+else
+        {
+        }
+      }
+}
+```
+
+The code snippet below creates a navigation link allowing users to navigate the page with the bar chart.
+```javascript
+<div class="nav-item px-3">
+    <NavLink class="nav-link" href="SimpleBar">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> SimpleBar
+    </NavLink>
+</div>
+```
+
+Finally, use the chart Instance API `chartType` to change the chart type after render, as follows:
+```javascript
+ methods:{
+        // uses the chartInstance API 'chartType' to change the chart type after render
+        onChartTypeChange: function (e) {
+            const chart = this.$refs.fc.chartObj,
+                type = e.target.value.toLowerCase();
+            chart.chartType(type);
+        }
+    }
+```
+
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+```javascript
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ref="fc"
+    ></fusioncharts>
+    <div>
+        <div>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Column2d" checked/>
+            <label>Column 2D Chart</label>
+            </div>
+            <div>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Bar2d" />
+            <label>Bar 2D Chart</label>
+            </div>
+            <div>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Pie2d" />
+            <label>Pie 2D Chart</label>
+            </div>
+    </div>
+</div>
+```
+
+The above chart was created using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `blazor-fusioncharts`, `fusioncharts`, etc.
 
 2. Define the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `bar2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
