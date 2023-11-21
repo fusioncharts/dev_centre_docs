@@ -12,15 +12,7 @@ This article focuses on changing the chart type at runtime using the `BlazorFusi
 * Column 2D
 * Pie 2D
 
-A chart configured to change the chart type is shown below:
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="(SUPPORT-2304) - 1 " src="https://codepen.io/fusioncharts/embed/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/fusioncharts/pen/eYQKoNx/b8c7f63a1c732b5f0d168ca81eaec825">
-  (SUPPORT-2304) - 1 </a> by FusionCharts (<a href="https://codepen.io/fusioncharts">@fusioncharts</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
-
-These are the steps to follow to render the sample chart above.
+These are the steps to follow to render the sample chart.
 
 Set up a Razor Page to define a Razor page accessible at the URL `/SimpleBar`.
 ```javascript
@@ -36,7 +28,7 @@ Next, add the dependency injection. Here, the code injects the `FusionChartsServ
 @inject FusionChartsService fusionChartsService;
 ```
 
-Now, in the code block add the `SimpleBarChart()` function for configuring and rendering the bar chart. This function sets up the chart configuration, event handling, data, and properties. Finally, it serializes the chart configuration to JSON and renders it using the `fusionChartsService.renderChart()` method.
+In the code block, add the `SimpleBarChart()` function for configuring and rendering the bar chart. This function sets up the chart configuration, event handling, data, and properties. Finally, it serializes the chart configuration to JSON and renders it using the `fusionChartsService.renderChart()` method.
 ```javascript
 @code {
     public async void SimpleBarChart()
@@ -94,7 +86,7 @@ The code snippet below creates a navigation link allowing users to navigate the 
 </div>
 ```
 
-Finally, use the chart Instance API `chartType` to change the chart type after render, as follows:
+Finally, use the chart Instance API `chartType` to change the chart type after rendering, as follows:
 ```javascript
  methods:{
         // uses the chartInstance API 'chartType' to change the chart type after render
