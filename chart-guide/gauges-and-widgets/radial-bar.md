@@ -1,7 +1,10 @@
+---
+title: Thermometer Gauge | FusionCharts
+description: Radial Bar charts use circular shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system.
+heading: Radial Bar
+---
 
-# Radial Bar
-
-Radial Bar charts use ciruclar shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system. 
+Radial Bar charts use circular shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system.
 The columns are in a circular shape because the xAxis is vertical and the yAxis is circular, as opposed to typical Bar charts. 
 Radial Charts fix a unique radius for each bar representing each data plot. A Radial bar is best fitted to compare among categories by using circularly shaped bars.  
 
