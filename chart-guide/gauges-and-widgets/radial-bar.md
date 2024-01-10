@@ -1,5 +1,5 @@
 ---
-title: Thermometer Gauge | FusionCharts
+title: Radial Bar | FusionCharts
 description: Radial Bar charts use circular shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system.
 heading: Radial Bar
 ---
