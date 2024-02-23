@@ -180,4 +180,4 @@ The image of a chart rendered with different types of annotation items is shown 
 
 ## Try Out Annotations Now!
 
-Unlock the power of annotations and transform your charts into insightful visual representations. With annotations, you can add custom notes, images, and shapes, enhancing clarity and engagement. Sign up with our [free trial](/(https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react)) and unlock the full potential of annotations to revolutionize your data interpretation!
+Unlock the power of annotations and transform your charts into insightful visual representations. With annotations, you can add custom notes, images, and shapes, enhancing clarity and engagement. Sign up with our [free trial](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react/) and unlock the full potential of annotations to revolutionize your data interpretation!
