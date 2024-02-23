@@ -1,5 +1,5 @@
 ---
-title: Chart Annotations 101: Essential Techniques for Devs
+title: Chart Annotations 101 - Essential Techniques for Devs
 description: Discover the art of chart annotation in data visualization. Learn effective techniques to enhance clarity, credibility, and storytelling in your charts.
 heading: How to effectively annotate your data visualizations
 ---
