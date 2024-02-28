@@ -21,7 +21,7 @@ Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
-Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/sales-and-collaboration-dashboard/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are **shaped** annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the chart annotations work!
+Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/sales-and-collaboration-dashboard/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are **shaped** annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the **chart annotations** work!
 
 In addition to creating annotations, you can:
 
@@ -33,7 +33,7 @@ In addition to creating annotations, you can:
 
 - Customize the response to user actions using annotation events
 
-Now that you have seen what annotations look like and how useful they can be in making your charts informative go ahead and see how you can create chart annotations.
+Now that you have seen what annotations look like and how useful they can be in making your charts informative go ahead and see how you can create **chart annotations**.
 
 ## How Annotation Works
 
@@ -74,7 +74,7 @@ Organizing annotations in groups is useful when you manipulate multiple annotati
 
 ## Use Objects to Create Annotations
 
-Use the following objects to create chart annotations:
+Use the following objects to create **chart annotations**:
 
 * `annotations` is an object that encompasses all the code for generating annotations.
 
@@ -102,7 +102,7 @@ A little box will appear where you can type in your annotation. Write what you w
 Decide how long you want your annotation to hang around. You can set it for specific dates and times or choose a range from a calendar.
 
 ### Hit Save
-Once everything looks just right, hit that "Save" button. Your chart **annotations** are all done.
+Once everything looks just right, hit that "Save" button. Your **chart annotations** are all done.
 
 ### Double-Check and Tweak
 If you spot anything you want to change or fix, head back to the menu, find your annotation, and tweak it until it's perfect.
@@ -128,7 +128,7 @@ You can add the following types of annotations to your chart:
 
 - [Path](/chart-guide/chart-configurations/annotations/creating-annotations/create-path-annotations)
 
-Refer to the basic JSON structure to create chart annotations, given below:
+Refer to the basic JSON structure to create **chart annotations**, given below:
 
 ```json
 {
