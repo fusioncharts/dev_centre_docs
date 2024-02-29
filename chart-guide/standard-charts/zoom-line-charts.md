@@ -1,16 +1,18 @@
 ---
-title: Zoom Line Chart | FusionCharts
-description: The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels.
-heading: Zoom Line Chart
+title: Zoom Line Charts for Developers: A Complete Guide | FusionCharts
+description: Create interactive Zoom line charts with zooming capabilities for your Web & Mobile apps using FusionCharts. Enhance data exploration & user engagement today!
+heading: Zoom Line Charts: Interactive Charts for your Web & Mobile Apps
 ---
 
 > These chart types belong to **FusionCharts XT**.
 
-The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
+## Introduction
+
+The FusionCharts Suite XT zoom line chart is a multi-series line chart enabling analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
 
 ## Create a Zoom Line Chart
 
-As an example, we will create a zoom line chart that plots the number of unique website visits to the harrysfoodmart.com and the harrysfashion.com websites for every day of the last year.
+To give a better understanding, we will make a Zoom line chart showing daily unique website visits for harrysfoodmart.com and harrysfashion.com over the past year.
 
 To create a zoom line chart follow the steps given below:
 
@@ -43,11 +45,11 @@ The zoom line chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoom line chart.
 
-As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart.
+As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When users drag the mouse across the canvas to select a segment, the chosen part expands to fill the chart's width.
 
-At this point, the scrollbar becomes functional, allowing the user to view the data that precedes or follows the selected section of data. To analyze the data in greater detail, the user can repeat the select and zoom process several times over (until further zooming is not possible). The chart can be restored to its original macroscopic display mode by clicking the `Reset Chart` button on the toolbar.
+At this point, the scrollbar becomes functional, enabling users to view preceding or following data sections. To analyze the data in greater detail, the user can repeat the select and zoom process several times over (until further zooming is not possible). The chart can be restored to its original macroscopic display mode by clicking the `Reset Chart` button on the toolbar.
 
-The chart can be switched to pin mode, in pin mode - a ghost of the selected line segment gets imprinted on the canvas, thus enabling the user to compare the pinned segment with the rest of the chart simply by scrolling through. The pinned segment can be dragged to any part of the canvas.
+The chart can be switched to pin mode, and - a ghost of the selected line segment gets imprinted on the canvas. Thus enabling the user to compare the pinned segment with the rest of the chart simply by scrolling through. The pinned segment can be dragged to any part of the canvas.
 
 > The performance of a zoom line chart is based on the technical capabilities of a browser. A typical zoom line chart can render up to 10,000 data points without any performance issues.
 
@@ -55,7 +57,7 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 
 ## Displaying values in tooltips
 
-By default the `useCrossLine` attribute is set to 1, enabled. When `useCrossLine` is enabled the chart displays data values for all the series when hovering a data point, the chart displays these values in tooltips aligned with a vertical line in descending order. When `useCrossLine` is set to 0, disabled, hovering a data point only shows the values for that data point.
+By default, the `useCrossLine` attribute is set to 1, enabled. When `useCrossLine` is enabled, the chart displays data values for all the series when hovering over a data point. The chart displays these values in tooltips aligned with a vertical line in descending order. When `useCrossLine` is set to 0 disabled, hovering a data point only shows the values for that data point.
 
 To set `useCrossLine` refer to the following code:
 
@@ -75,11 +77,11 @@ The following chart has `useCrossLine` set to 0:
 
 {% embed_all standard-charts-zoom-line-charts-crossline-example-2.js %}
 
-## Create a Zoom line Dual Y-axis Chart
+## Create a Zoom Line Dual Y-axis Chart
 
 The FusionCharts Suite XT **zoom line dual y-axis** chart, like the zoom line chart, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart.
 
-Another advantage of using the zoom line dual y-axis chart is when you want to compare two datasets where the values of one dataset are spread over a smaller interval, while the values of another have large intervals between them. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.
+Another advantage of using the zoom line dual y-axis chart is for comparing two datasets with different value intervals effectively. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.
 
 To create a zoom line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
@@ -442,3 +444,5 @@ The chart will look as shown below:
 Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/) to configure the above attributes.
 
 > In the above chart, all values in the range 900-1000 will be included in the initial display.
+
+FusionCharts offers a 14-day [free trial](https://www.fusioncharts.com/download), so you have to pay only once satisfied. 
