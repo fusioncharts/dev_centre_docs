@@ -1,5 +1,5 @@
 ---
-title: Zoom Line Charts for Developers - A Complete Guide | FusionCharts
+title: Zoom Line Charts for Developers : A Complete Guide | FusionCharts
 description: Create interactive Zoom line charts with zooming capabilities for your Web & Mobile apps using FusionCharts. Enhance data exploration & user engagement today!
 heading: Zoom Line Charts - Interactive Charts for your Web & Mobile Apps
 ---
