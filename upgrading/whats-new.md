@@ -4,14 +4,17 @@ description: This section discusses the new features introduced in the latest ve
 heading: What's New
 ---
 
-This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.22.x.
+This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.23.x.
 
-## Blazor Integration
+## Draggable task bars in Gantt Chart
 
-FusionCharts release version 3.22 introduces the Blazor integration with FusionCharts. Integrating FusionCharts with Blazor allows you to leverage the power of both technologies to create dynamic, data-driven, and highly customizable charts within your Blazor applications.
+FusionCharts release 3.23 implemented the new function to enhance interactivity and streamline project scheduling with draggable taskbars in the FusionCharts `Gantt` chart.
 
-This integration combines the strengths of FusionCharts in data visualization and interactivity with Blazor's server-side and client-side capabilities, making it an ideal choice for building modern, data-centric web applications.
+The newly implemented feature includes `dragMove` and `dragStar`t methods, allowing users to drag individual tasks and their parent tasks which adjusts the children's task accordingly across the x-axis ticks. 
 
-For more information, read the [Blazor blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration) announcement or explore the Blazor [documentation](/getting-started/blazor/your-first-chart-using-blazor). 
+The `onUpdate` event in the Gantt chart triggers whenever a drag operation occurs, providing the updated state.
+
+The `draggable` attribute should be used to enable this feature.
+ 
  
  
