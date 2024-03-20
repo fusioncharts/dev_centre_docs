@@ -12,7 +12,7 @@ heading: Version 3.23.x
 <h4>New Features</h4>
 
 - FusionCharts enhanced interactivity with draggable taskbars in the FusionCharts Gantt chart. Users can use `allowDrag` attribute to enable the draggable feature and `dataplotdragmove` event to track the previous and new positional values of the taskbar.
-- An attribute called `markerLabelOffset` was introduced. This attribute allows for controlling the position of the marker labels on `AngularGauge` trend points, aiming to address the problem of overlap that occurs with small differences in values.
+- An attribute called `markerLabelOffset` was introduced. This attribute allows to control the position of the marker labels on `AngularGauge` trend points, aiming to address the problem of overlap that occurs with small differences in values.
 - Added an attribute `showValues` to the `StackedBar2DCharts `which would enable the users to auto-hide or show the chart if the text overflows the bar subsection.
 
 <h4>Improvements</h4>
