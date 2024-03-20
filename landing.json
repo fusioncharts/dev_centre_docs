@@ -176,43 +176,47 @@
       },
       {
          "fusioncharts": {
-            "title": "v3.22.0",
+            "title": "v3.23.0",
             "children": [
                {
+                  "title": "v3.22.x",
+                  "link": "https://docs.fusioncharts.com/archive/3.22.0/upgrading/change-log"
+               },
+               {
                   "title": "v3.21.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-21-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.21.0/upgrading/change-log"
                },
                {
                   "title": "v3.20.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-20-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.20.0/upgrading/change-log"
                },
                {
                   "title": "v3.19.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-19-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.19.0/upgrading/change-log"
                },
                {
                   "title": "v3.18.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-18-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.18/upgrading/change-log"
                },
                {
                   "title": "v3.17.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-17-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.17.0/upgrading/change-log"
                },
                {
                   "title": "v3.16.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-16-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.16.0/upgrading/change-log"
                },
                {
                   "title": "v3.15.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-15-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.15.0/upgrading/change-log"
                },
                {
                   "title": "v3.14.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-14-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.14.0/upgrading/change-log"
                },
                {
                   "title": "v3.13.x",
-                  "link": "https://www.fusioncharts.com/dev/upgrading/version-history/version-3-13-X"
+                  "link": "https://docs.fusioncharts.com/archive/3.13.0/upgrading/change-log"
                },
                {
                   "title": "v3.12.x",
@@ -269,8 +273,12 @@
             ]
          },
          "fusiontime": {
-            "title": "v2.8.0",
+            "title": "v2.9.0",
             "children": [
+               {
+                  "title": "v2.8.0",
+                  "link": "https://docs.fusioncharts.com/archive/3.22.0/"
+               }, 
                {
                   "title": "v2.7.0",
                   "link": "https://docs.fusioncharts.com/archive/3.19.0/"

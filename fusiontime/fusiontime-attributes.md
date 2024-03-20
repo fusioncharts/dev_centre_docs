@@ -335,6 +335,7 @@ new FusionCharts({
                     unit: ' ', //Defines the time unit for the time marker.
                     multiplier: ' ', //Defines the multiplier of the time unit.
                     type: ' ' //Renders the time marker from top to bottom of the canvas
+                    enableUTC: ' ' //Takes care of the data points showing incorrectly when DayLightSaving impacts the dataset
                 }
             }]
         }
@@ -382,6 +383,11 @@ new FusionCharts({
 		<td>`type`</td>
 		<td>String</td>
 		<td>Setting this attribute to <strong>full</strong> will render the time marker (instance & band) from top to bottom (vertically) of the canvas.</td>
+	</tr>
+	<tr>
+		<td>`enableUTC`</td>
+		<td>Boolean</td>
+		<td>Enable this attribute to take care of the data points showing incorrectly when DayLightSaving impacts the dataset</td>
 	</tr>
 </table>
 
