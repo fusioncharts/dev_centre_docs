@@ -16,6 +16,14 @@ The `onUpdate` event in the Gantt chart triggers whenever a drag operation occur
 
 The `draggable` attribute should be used to enable this feature.
 
+```js
+events:{
+    dataplotdragmove:(event, data) => {
+    console.log(data)
+    }
+}
+```
+
 
 ## Introducing markerLabelOffset attribute: Enhancing `AngularGauge` Precision and Clarity (2303)
 
