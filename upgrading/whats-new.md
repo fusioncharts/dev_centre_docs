@@ -15,6 +15,16 @@ The newly implemented feature includes `dragMove` and `dragStar`t methods, allow
 The `onUpdate` event in the Gantt chart triggers whenever a drag operation occurs, providing the updated state.
 
 The `draggable` attribute should be used to enable this feature.
+
+
+## Introducing markerLabelOffset attribute: Enhancing AngularGauge Precision and Clarity (2303)
+
+The newly implemented offset property attribute `markerLabelOffset`, allows users to manually set the position on `AngularGauge` trend points labels aiming to address the problem of overlap that occurs with small differences in values.
+
+
+## Enhanced Clarity: Introducing `showValues` Attribute for StackedBar2DCharts
+ (2331)
+The recently adopted `showValues` attribute for StackedBar2DCharts, enables users to auto-hide or show the chart if the text overflows the bar subsection.
  
  
  
