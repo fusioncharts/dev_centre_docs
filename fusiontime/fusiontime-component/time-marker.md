@@ -245,3 +245,5 @@ In the above code:
   - `marker-notch:hover` is used to style the notch of the time marker when hovered.
   - `text` is used to style the text of the time marker.
   - `text:hover` is used to style the text of the time marker when hovered.
+ 
+> Don't forget to enable `enableUTC` attribute when DayLightSaving impacts the dataset.
