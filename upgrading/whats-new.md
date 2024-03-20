@@ -6,7 +6,7 @@ heading: What's New
 
 This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.23.x.
 
-## Draggable task bars in Gantt Chart
+## Draggable task bars in `Gantt` Chart
 
 FusionCharts release 3.23 implemented the new function to enhance interactivity and streamline project scheduling with draggable taskbars in the FusionCharts `Gantt` chart.
 
@@ -17,12 +17,12 @@ The `onUpdate` event in the Gantt chart triggers whenever a drag operation occur
 The `draggable` attribute should be used to enable this feature.
 
 
-## Introducing markerLabelOffset attribute: Enhancing AngularGauge Precision and Clarity (2303)
+## Introducing markerLabelOffset attribute: Enhancing `AngularGauge` Precision and Clarity (2303)
 
 The newly implemented offset property attribute `markerLabelOffset`, allows users to manually set the position on `AngularGauge` trend points labels aiming to address the problem of overlap that occurs with small differences in values.
 
 
-## Enhanced Clarity: Introducing `showValues` Attribute for StackedBar2DCharts
+## Enhanced Clarity: Introducing `showValues` attribute for `StackedBar2DCharts`
  (2331)
 The recently adopted `showValues` attribute for StackedBar2DCharts, enables users to auto-hide or show the chart if the text overflows the bar subsection.
  
