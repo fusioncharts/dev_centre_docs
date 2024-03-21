@@ -36,6 +36,8 @@ timeSeries.TimeAxis.TimeMarker.AddMarker("label").EndDate(new DateTime(2010, 12,
 
 > The code given above will create a time marker for a period of time. To create a time marker for a specific point, simply omit the `EndDate()` instance method.
 
+> Don't forget to enable `enableUTC` attribute when DayLightSaving impacts the dataset.
+
 A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-time-marker %}

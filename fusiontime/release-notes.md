@@ -4,6 +4,16 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.9.0</h2>
+
+<p class="release-date">26th March, 2024</p>
+
+<h4>Fixes</h4>
+
+- FusionTime 2.9 enhanced accessibility and global reach for your data visualization projects with multi-lingual support in FusionTime SRS components supporting English, Spanish, French, German, Italian, and Portuguese.
+- FusionTime 2.9 added support for `%W` or `%WW` in `Time-series` chart schema to add week format through `Schema` itself without using the binning.
+
+
 <h2 class="sub-heading">Version 2.8.0</h2>
 
 <p class="release-date">24th March, 2023</p>

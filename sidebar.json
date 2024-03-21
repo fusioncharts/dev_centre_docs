@@ -1885,7 +1885,7 @@
                   "path": "/upgrading/license-activation"
                },
                {
-                  "title": "Upgrade to v3.22.0",
+                  "title": "Upgrade to v3.23.0",
                   "children": [
                      {
                         "title": "Changelog",
@@ -1924,6 +1924,10 @@
                {
                   "title": "Version History",
                   "children": [
+                     {
+                        "title": "v3.22.x",
+                        "path": "/upgrading/version-history/version-3-22-X"
+                     },
                      {
                         "title": "v3.21.x",
                         "path": "/upgrading/version-history/version-3-21-X"
