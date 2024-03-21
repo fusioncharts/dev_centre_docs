@@ -10,4 +10,4 @@ A standout feature in this release is the redefined Watermark text for License E
 
 Key improvements include fixing inline styling functionality, resolving broken link attribute issues in zoom charts, and addressing scrolling problems with `setjsondata` or `setchartdata`. Additionally, we've incorporated 16 Japanese provinces and resolved an accessibility concern regarding Microsoft Narrator's inability to read chart plot details in specific configurations of Windows 10 and Chrome.
 
-For additional details, kindly refer to our [changelog]([https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration](https://docs.fusioncharts.com/archive/3.23.0/upgrading/change-log)) and [blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration). 
+For additional details, kindly refer to our [changelog](https://docs.fusioncharts.com/archive/3.23.0/upgrading/change-log) and [blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-22-elevating-data-visualization-with-blazor-integration). 
