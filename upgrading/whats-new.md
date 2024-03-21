@@ -8,7 +8,7 @@ This section is for users using the previous version of FusionCharts in their ap
 
 ## Draggable task bars in `Gantt` Chart
 
-FusionCharts release 3.23 implemented the new function to enhance interactivity and streamline project scheduling with draggable taskbars in the FusionCharts `Gantt` chart.
+FusionCharts release 3.23.0 implemented the new function to enhance interactivity and streamline project scheduling with draggable taskbars in the FusionCharts `Gantt` chart.
 
 The newly implemented feature includes `dragMove` and `dragStar`t methods, allowing users to drag individual tasks and their parent tasks which adjusts the children's task accordingly across the x-axis ticks. 
 
