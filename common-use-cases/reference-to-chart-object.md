@@ -1,7 +1,6 @@
 ---
 permalink: api/tutorials/reference-to-chart-object.html
-title: Get Reference to Chart Object | FusionCharts
-description: FusionCharts Suite XT supports 3 ways of getting references to the chart object at runtime. This reference comes in handy if you want to perform operations on the chart
+title: Check out the comprehensive guide to FusionCharts' charts, providing detailed documentation on every aspect, from configuration options to customizations.
 heading: Get Reference to Chart Object
 chartPresent: true
 layout: page
