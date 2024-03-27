@@ -1,6 +1,6 @@
 ---
 title: Sunburst Chart | FusionCharts
-description: A Sunburst chart is used to visualize relationships within hierarchical data. It shows hierarchy through a series of concentric rings, where each ring corresponds to a level in the hierarchy.
+description: Visualize hierarchical data with a Sunburst chart. Effective and space-filling, it's perfect for understanding breakdowns in a radial layout. Discover now!
 heading: Sunburst Chart
 ---
 
