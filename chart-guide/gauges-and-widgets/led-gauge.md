@@ -1,6 +1,6 @@
 ---
 title: LED Gauge | FusionCharts
-description: An LED gauge has a horizontal/vertical scale. It uses bars that change color. This section talks about basics of LED gauges along with their useful elements
+description: Explore FusionCharts' LED Gauge to add sleek, customizable, and interactive LED-style gauges to your web and mobile applications. Learn now on FusionCharts!
 heading: LED Gauge
 ---
 
