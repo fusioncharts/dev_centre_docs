@@ -1,6 +1,6 @@
 ---
 title: Configure Tick Marks in a Gauge| FusionCharts
-description: FusionCharts XT gauge: control display, position, and visuals. Customize ticks, show/hide values, set padding, and enhance with color and transparency.
+description: "FusionCharts XT gauge: control display, position, and visuals. Customize ticks, show/hide values, set padding, and enhance with color and transparency."
 heading: Tick Marks
 ---
 
