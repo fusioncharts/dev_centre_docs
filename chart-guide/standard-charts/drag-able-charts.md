@@ -1,6 +1,6 @@
 ---
 title: Learn to create Drag-able Charts for Web & Mobile
-description: Drag-able Charts are used to visually manipulate the data on a chart in Real-Time. Learn how to make interactive drag charts with customized axis limits, divisional lines, data retrieval and much more.
+description: Take your data visualization game to the next level! Build drag-able column & line 2D charts. Get in touch with FusionCharts & create dynamic charts today.
 heading: Drag-able Charts
 ---
 
