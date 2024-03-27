@@ -1,6 +1,6 @@
 ---
 title: Add Drill Down to Maps | FusionCharts
-description: Maps as part of FusionCharts Suite XT support two types of drill down. This section will walk you through setting up drill down functionality for your maps.
+description: Enhance your maps with FusionCharts! Learn how to add drill-down functionality to your maps for a more interactive user experience. Get started now!
 heading: Add Drill Down to Maps
 ---
 

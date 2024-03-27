@@ -1,6 +1,6 @@
 ---
 title: Box and Whisker Chart | FusionCharts
-description: In this section, you will be introduced to the basics of a box and whisker chart, features of a box and whisker chart and five-number summary principle for plotting data on the box and whisker chart.
+description: Access data insights with a Box and Whisker chart, a powerful statistical tool revealing mean, median, quartiles, and deviations. Best for vast data sets.
 heading: Box and Whisker Chart
 ---
 

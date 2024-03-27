@@ -1,6 +1,6 @@
 ---
 title: Multi-series Charts | FusionCharts
-description: FusionCharts Suite XT includes multi-series charts that allow to plot data for multiple datasets. For example, you can plot the revenue collected each month for the last two years using a multi-series chart.
+description: Explore data insights with FusionCharts XT's multi-series charts! Compare trends & visualize multiple datasets using 2D & 3D chart types. Learn more!
 heading: Multi-series Charts
 ---
 

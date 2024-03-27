@@ -1,6 +1,6 @@
 ---
 title: Learn to create Pie & Doughnut Charts for Web & Mobile
-description: Pie and Donut Charts are great tools for visualizing Part-to-whole relationships in a dataset. This handy guide teaches all about making pie and doughnut charts with custom attributes like labels, lines, radius, angles and much more.
+description: Create pie and doughnut charts for web pages. Learn how to create visually stunning & informative data rep for your projects. Customize their look & feel.
 heading: Pie and Doughnut Charts
 ---
 

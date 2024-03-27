@@ -1,6 +1,6 @@
 ---
 title: Drag Node Chart | FusionCharts
-description: The drag node chart is a spescialized type of chart where each data set is shown on the chart as a drag-able node. Perfect for network diagrams, hierarchy structures, etc., this chart provides a highly intuitive interface for end users to visually adjust related entities, link them, and even add new ones.
+description: Check-out FusionCharts' Drag Node Chart for real-time data interactions. Learn to add, edit, and delete nodes, connectors, and text labels at runtime.
 heading: Drag Node Chart
 ---
 

@@ -1,7 +1,7 @@
 ---
 permalink: exporting-charts/using-fc-export-server/logging-export-statistics.html
 title: Logging Export Statistics | FusionCharts
-description: FusionCharts Suite XT lets you export your charts and chart data by using one from its three modes of export-server-side export, client-side export, and auto export.
+description: Learn how to use FusionCharts. Export Server to log export statistics, ensuring your charts are efficiently exported and tracked. Start optimizing today!
 heading: Logging Export Statistics
 chartPresent: True
 ---

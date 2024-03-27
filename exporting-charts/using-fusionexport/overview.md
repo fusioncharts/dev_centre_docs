@@ -1,6 +1,6 @@
 ---
 title: Overview | FusionCharts
-description: FusionExport__, allows you to export JavaScript chart as a static image and export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents.
+description: Export your dashboards to various formats like PNG, JPG, SVG & PDF using FusionExport. Send them as attachments, printable documents & email them. Try now!
 heading: Overview
 ---
 

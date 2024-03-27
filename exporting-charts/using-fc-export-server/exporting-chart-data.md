@@ -1,6 +1,6 @@
 ---
 title: Exporting Chart Data | FusionCharts
-description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. FusionCharts also allows you to export chart data in XLSX & CSV format.
+description: Gain deeper insights from your charts. Export your data to Excel (XLSX) or CSV format for further analysis with FusionCharts Export Server. Click to discover!
 heading: Exporting Chart Data
 ---
 

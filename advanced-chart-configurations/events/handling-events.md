@@ -1,7 +1,7 @@
 ---
 permalink: advanced-chart-configurations/events/handling-events.html
 title: Handling Events | FusionCharts
-description: To configure events for charts, you need to, decide the event you want to configure and the response you want when it is triggered and create an event listener that listens for the event being triggered and executes the required response.
+description: Level up chart engagement. Master events with FusionCharts XT. Find guide & examples included. Unlock interactive charts & level up your engagement now!
 heading: Handling Events
 chartPresent: true
 ---
