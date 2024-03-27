@@ -1,6 +1,6 @@
 ---
 title: Learn to change Borders & Backgrounds in your Charts & Graphs 
-description: Background and Borders have a big impact on how the user perceives a chart. Learn to control border thickness, transparency, color and customize backgrounds with solid colors, gradients or images.
+description: Customize your charts border & background in FusionCharts blog. Learn how to show or hide chart borders, its color, gradient, thickness & transparency now.
 heading: Borders and Backgrounds
 ---
 

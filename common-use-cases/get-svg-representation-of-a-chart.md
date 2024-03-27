@@ -1,7 +1,7 @@
 ---
 permalink: api/tutorials/get-svg-representation-of-a-chart.html
 title: Get SVG Representation of a Chart | FusionCharts
-description: Using FusionCharts Suite XT you can easily get the SVG string of any chart using the getSVGString method. Shown below is a chart that displays the SVG string of a chart
+description: Transform any chart into an SVG image with ease using our tutorial! By leveraging native browser support for SVG, you can embed charts into web pages.
 heading: Get SVG Representation of a Chart
 chartPresent: true
 layout: page

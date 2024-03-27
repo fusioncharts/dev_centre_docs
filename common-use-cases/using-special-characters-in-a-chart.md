@@ -1,7 +1,7 @@
 ---
 permalink: api/tutorials/using-special-characters-in-a-chart.html
 title: Using Special Characters | FusionCharts
-description: FusionCharts Suite supports all unicode characters as part of charts. You can use Multi Lingual text, Currency symbols as well as special characters as part of your charts.
+description: Learn how to perfectly integrate special characters into your charts using our Developer Guide! Let us help you improve your visual analytics capabilities!
 heading: Using Special Characters
 chartPresent: true
 layout: page

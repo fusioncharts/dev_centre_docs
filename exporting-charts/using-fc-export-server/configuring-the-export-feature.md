@@ -1,6 +1,6 @@
 ---
 title: Configuring the Export Feature | FusionCharts
-description: FusionCharts Suite XT lets you export your charts and chart data by using one from its three modes of export- server-side export, client-side export, and auto export.
+description: Stop wasting time! Set up FusionCharts Export Server for effortless exports. Check out our list of attributes used for exporting charts. Export today!
 heading: Configuring the Export Feature
 ---
 

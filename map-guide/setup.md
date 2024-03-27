@@ -1,6 +1,6 @@
 ---
 title: Setup to Install Maps | FusionCharts
-description: Maps are installed as a part of FusionCharts Suite XT package. Once installed, ensure that fusioncharts.js and fusioncharts.maps.js files are present in folder
+description: Master setting up FusionCharts maps effortlessly with our comprehensive guide. Learn step-by-step instructions for seamless integration. Dive in now!
 heading: Setup
 ---
 

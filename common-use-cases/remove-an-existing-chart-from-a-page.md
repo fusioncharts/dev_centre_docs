@@ -1,7 +1,7 @@
 ---
 permalink: api/tutorials/remove-an-existing-chart-from-a-page.html
 title: Remove an Existing Chart from a Page | FusionCharts
-description: Chart objects created as part of FusionCharts Suite XT support the dispose method, this completely cleans the memory space and all references to the chart and its data are removed.
+description: Need to remove a chart from your web page? With simple JS commands, you can easily delete any unwanted charts. Give it a try and streamline your development.
 heading: Remove an Existing Chart from a Page
 chartPresent: true
 layout: page

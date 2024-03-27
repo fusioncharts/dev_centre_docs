@@ -1,6 +1,6 @@
 ---
 title: Treemap | FusionCharts
-description: Treemapping is a visual representation of an information tree created using the tree data structure displayed as 2D nested rectangles,representing the nodes
+description: Master the art of data exploration with our Treemap chart guide! Learn the details of this tool offered by FusionCharts. Enhance your dashboards today!
 heading: Treemap
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Angular Gauge | FusionCharts
-description: Angular gauges are essentially like the speedometer or the fuel gauge. They use a radial scale to display the data range & a dial to indicate the data value.
+description: Start with our custom Angular Gauge & create data plots, tooltips, etc. Seamlessly integrated for dynamic web app visualization. Explore more attributes here.
 heading: Angular Gauge
 ---
 

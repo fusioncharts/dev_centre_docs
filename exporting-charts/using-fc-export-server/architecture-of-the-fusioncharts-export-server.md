@@ -1,6 +1,6 @@
 ---
 title: Architecture of the FusionCharts Export Server | FusionCharts
-description: FusionCharts Suite XT lets you export your charts and chart data by using one from its three modes of export- server-side export, client-side export and auto export.
+description: Know about the architecture of the FusionCharts Export Server. Learn how it enables exporting charts to various formats with ease. Read now on our site!
 heading: Architecture of the FusionCharts Export Server
 chartPresent: False
 ---
