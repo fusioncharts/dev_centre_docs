@@ -1,6 +1,6 @@
 ---
 title: Special Events using React | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Build interactive charts in a flash! Drag columns to see updated values instantly using React. See results instantly. Build compelling dashboards now!
 heading: Special Events using React
 ---
 
