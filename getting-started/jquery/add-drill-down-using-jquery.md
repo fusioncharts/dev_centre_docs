@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using jQuery | FusionCharts
-description: This article focuses on drill down charts.
+description: Dive into dynamic data exploration! Seamlessly integrate captivating drill-down features with jQuery & FusionCharts. Start your journey now!
 heading: Adding Drill Down using jQuery
 ---
 
