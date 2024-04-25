@@ -1,6 +1,6 @@
 ---
 title: Filter Data | FusionCharts
-description: This article outlines the steps how to filter data
+description: Explore the power of the Filter operation in generating a new DataModel with filtered data from a large dataset. Dive into the article for more details.
 heading: Filter Data
 ---
 
