@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using react.
+description: Read article to discover the power of exporting charts in JPG, PNG, SVG, & PDF formats, along with exporting chart data, using FusionCharts Suite XT and React.
 heading: Exporting Charts
 ---
 
