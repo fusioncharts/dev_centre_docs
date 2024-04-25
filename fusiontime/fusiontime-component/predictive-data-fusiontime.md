@@ -1,6 +1,6 @@
 ---
 title: Predictive data representation | FusionCharts
-description: This article defines how to set predictive data.
+description: Unlock the potential of predictive data representation with FusionTime. Check out article to customize your data plots and visualize forecasts with ease.
 heading: Predictive data representation
 ---
 
