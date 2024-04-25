@@ -1,6 +1,6 @@
 ---
 title: Export a Dashboard | FusionCharts
-description: This article talks about the SDKs used for exporting a dashboard.
+description: Master exporting dashboards with multiple charts using FusionExport effortlessly. Dive into our comprehensive article for detailed guidance on exporting.
 heading: Export a Dashboard
 ---
 
