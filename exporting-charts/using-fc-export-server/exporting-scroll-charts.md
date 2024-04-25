@@ -1,6 +1,6 @@
 ---
 title: Exporting Scroll Charts | FusionCharts
-description: Scroll charts work great when you need to plot large datasets.
+description: Export scroll charts effortlessly and overcome the hassle of exporting large datasets in one go. Check our comprehensive article for more information.
 heading: Exporting Scroll Charts
 ---
 
