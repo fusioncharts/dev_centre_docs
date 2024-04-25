@@ -1,6 +1,6 @@
 ---
 title: Events | FusionCharts
-description: This article provides the list of Events
+description: Discover the power of events in executing actions & manipulating the DOM with our comprehensive guide on event triggers for chart rendering and interaction.
 heading: Events
 ---
 
