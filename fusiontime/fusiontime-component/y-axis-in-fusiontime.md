@@ -1,6 +1,6 @@
 ---
 title: Y-Axis | FusionCharts
-description: This article defines the y-axis.
+description: Enhance your data visualization with a timeseries chart featuring one or more Y-axes for multi-series or multivariate analysis. Click to read the article!
 heading: Y-Axis
 ---
 
