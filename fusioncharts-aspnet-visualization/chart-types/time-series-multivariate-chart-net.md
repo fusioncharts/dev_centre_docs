@@ -1,6 +1,6 @@
 ---
 title: Create Multivariate chart | FusionCharts
-description: This article outlines the steps to create multivariate chart.
+description: Read article to discover how to create a multivariate chart in FusionCharts, showcasing the Global SuperStore database with separate canvases for each measure.
 heading: Create Multivariate chart
 ---
 
