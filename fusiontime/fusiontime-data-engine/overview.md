@@ -1,6 +1,6 @@
 ---
 title: Overview | FusionCharts
-description: This article outlines the DataStore and DataTable.
+description: Transform your data management experience with DataStore. Effortlessly manage, transform, & visualize tabular data. Revolutionize your workflow today!
 heading: Overview
 ---
 
