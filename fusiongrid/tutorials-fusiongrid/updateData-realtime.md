@@ -1,6 +1,6 @@
 ---
 title: Update data in real-time| FusionGrid
-description: This article talks about updating data in real-time
+description: Achieve real-time data updates with the appendRows method and seamlessly update all tables in your grid. Read our article to keep your data current & accurate.
 heading: Real-time Data Update
 ---
 
