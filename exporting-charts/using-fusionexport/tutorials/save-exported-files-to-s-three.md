@@ -1,6 +1,6 @@
 ---
 title: Save exported files to S3 | FusionCharts
-description: This article talks about the SDKs used to save exported files to s3.
+description: Streamline your data mgt. process by effortlessly saving exported files to Amazon S3 with FusionCharts.Get started now to experience seamless data handling!
 heading: Save exported files to S3
 ---
 
