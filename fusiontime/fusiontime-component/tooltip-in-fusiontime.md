@@ -1,6 +1,6 @@
 ---
 title: Tooltip | FusionCharts
-description: This article defines the tooltips.
+description: Explore FusionTime's interactive tooltip feature for in-depth data insights. Customize tooltips for a richer data visualization experience. Learn more!
 heading: Tooltips
 ---
 
