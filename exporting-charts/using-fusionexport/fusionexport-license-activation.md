@@ -1,6 +1,6 @@
 ---
 title: License activation from v2.0 onwards | FusionExport
-description: Learn how to activate your FusionExport license.
+description: Need to remove the watermark? Activate your license from v2.0 onwards. Read our comprehensive article for more information regarding license activation.
 heading: License activation from v2.0 onwards
 ---
 
