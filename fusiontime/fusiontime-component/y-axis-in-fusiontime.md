@@ -1,6 +1,6 @@
 ---
 title: Y-Axis | FusionCharts
-description: Enhance your data visualization with a timeseries chart featuring one or more Y-axes for multi-series or multivariate analysis. Click to read the article!
+description: Learn how the Y-Axis object can be specified within the dataSource object of the FusionCharts constructor. Tap into our article to gain in-depth insights!
 heading: Y-Axis
 ---
 
