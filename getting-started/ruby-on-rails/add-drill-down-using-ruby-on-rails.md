@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Vue | FusionCharts
-description: This article focuses on drill down charts.
+description: Explore unlimited drill-down capabilities using Vue with FusionCharts. It allows you to seamlessly navigate through multiple levels of data visualization.
 heading: Adding Drill Down using Vue
 chartPresent: true
 ---
