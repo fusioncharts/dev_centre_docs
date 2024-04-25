@@ -1,6 +1,6 @@
 ---
 title: Column and Bar charts | FusionCharts
-description: This article outlines the steps to create column and Bar charts
+description: Present data in a visually appealing way using a Column 2D chart, highlighting the "Most popular programming language". Get started with our article today!
 heading: Column and Bar charts
 ---
 
