@@ -1,6 +1,6 @@
 ---
 title: Order By | FusionCharts
-description: This article outlines the steps how apply order by to the data
+description: Discover essential sorting techniques for large datasets in our comprehensive article! Learn to arrange data in ascending or descending order with Order By.
 heading: Order By
 ---
 
