@@ -1,6 +1,6 @@
 ---
 title: FusionTime JSON structure | FusionCharts
-description: This article elaborates on the FusionTime JSON structure.
+description: Explore FusionTime's JSON structure for setting functional and cosmetic properties separately. Read our article & learn how data is handled by the data layer.
 heading: FusionTime JSON structure
 ---
 

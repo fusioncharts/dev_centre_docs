@@ -1,6 +1,6 @@
 ---
 title: Reference Line | FusionCharts
-description: This article defines the reference line.
+description: Check versatility of FusionTime's Reference Line component with our detailed guide for ASP.NET Visualization. Improve your data visualizations effortlessly!
 heading: Reference Line
 ---
 

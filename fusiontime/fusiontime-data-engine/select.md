@@ -1,6 +1,6 @@
 ---
 title: Select | FusionCharts
-description: This article outlines the steps to add select operation.
+description: Utilize the Select operation to display specific columns of the DataTable. Explore our article and discover more about the Select operation on the Data Table.
 heading: Select
 ---
 

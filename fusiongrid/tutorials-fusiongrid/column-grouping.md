@@ -1,6 +1,6 @@
 ---
 title: Column Grouping | FusionGrid
-description: This article talks about using grouping columns
+description: Unleash hidden insights in your data with FusionChart's column grouping! Organize complex info for a clearer, more impactful visualization. Create one now.
 heading: Column Grouping
 ---
 

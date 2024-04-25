@@ -1,6 +1,6 @@
 ---
 title: Create Time-series chart | FusionCharts
-description: This article outlines the steps to create time-series chart.
+description: Browse about creating time-series charts with FusionCharts. It discusses how to create a chart to show online sales over a four-year period. Learn more!
 heading: Create Time-series chart
 ---
 

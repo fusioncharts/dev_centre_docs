@@ -1,6 +1,6 @@
 ---
 title: Data Plot | FusionCharts
-description: This article outlines the steps of how to configure the data plots.
+description: Enhance your charts with customized data plots using FusionCharts. Customize colors, transparency, borders, & more for impactful insights. Explore now!
 heading: Data Plot
 ---
 

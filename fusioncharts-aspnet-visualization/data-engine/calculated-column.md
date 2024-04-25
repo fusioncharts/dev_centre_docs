@@ -1,6 +1,6 @@
 ---
 title: Calculated Column | FusionCharts
-description: This article outlines the steps how to render calculated column.
+description: Discover the power of calculated columns in a DataModel and expand your understanding of mathematical expressions. Dive into our article to learn more.
 heading: Calculated Column
 ---
 

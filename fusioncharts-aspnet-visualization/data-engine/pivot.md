@@ -1,6 +1,6 @@
 ---
 title: Pivot | FusionCharts.NET
-description: This article outlines the steps how apply pivot to the data.
+description: Explore & learn how to effectively use Pivot, an operation that converts data into aggregated tables by rotating around unique values of a specific column. 
 heading: Pivot
 ---
 

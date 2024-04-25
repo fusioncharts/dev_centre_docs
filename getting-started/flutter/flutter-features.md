@@ -1,6 +1,6 @@
 ---
 title: Flutter Features | FusionCharts
-description: This article outlines how to work with events, APIs, and modules.
+description: Unleash the potential of Flutter features and enhance your charts with events, APIs, modules, and license configurations. Click here to read our article.
 heading: Flutter Features
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Working with Events | FusionCharts
-description: This article talks about the Events using VueJS.
+description: Learn how to effectively work with events in VueJS to manipulate the DOM, send data to the server, & more. Get informed with our comprehensive article now!
 heading: Working with Events
 ---
 

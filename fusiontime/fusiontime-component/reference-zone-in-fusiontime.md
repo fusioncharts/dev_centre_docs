@@ -1,6 +1,6 @@
 ---
 title: Reference Zone | FusionCharts
-description: This article defines the reference zone.
+description: Read the article to discover the power of reference zones in FusionTime! It visually highlights data plots within marked zones for improved data analysis.
 heading: Reference Zone
 ---
 

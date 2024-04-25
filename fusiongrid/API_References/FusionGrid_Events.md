@@ -1,6 +1,6 @@
 ---
 title: FusionGrid Events | FusionGrid list of events
-description: This article lists the evnts of FusionGrid
+description: Unlock the potential of your grid with FusionCharts comprehensive list of events. Manage interactions effortlessly at every stage of your grid's life cycle!
 heading: List of Events 
 ---
 

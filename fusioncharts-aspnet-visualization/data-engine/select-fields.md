@@ -1,6 +1,6 @@
 ---
 title: Select Fields | FusionCharts
-description: This article outlines the steps how to select fields in data engine
+description: Optimize your data analysis by selecting specific columns from tabular data with the Select operation in DataModel. Check out the article to discover more!
 heading: Select Fields
 ---
 

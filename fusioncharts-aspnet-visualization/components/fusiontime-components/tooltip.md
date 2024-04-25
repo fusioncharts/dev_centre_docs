@@ -1,6 +1,6 @@
 ---
 title: Tooltip | FusionCharts
-description: This article talks about the tooltip.
+description: Read the article & discover the power of tooltips - how they enhance your understanding of chart elements with context-sensitive information and data values.
 heading: Tooltip
 ---
 

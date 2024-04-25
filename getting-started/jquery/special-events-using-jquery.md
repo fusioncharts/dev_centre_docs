@@ -1,6 +1,6 @@
 ---
 title: Special Events using Jquery | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Experience the thrill of dragging columns and instantly seeing modified values with our Jquery-fusioncharts component. Engage with our blog for understanding.
 heading: Special Events using Jquery
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Legend | FusionCharts
-description: This article outlines the steps of how to configure the legend
+description: Enhance your data visualization with FusionCharts customizable legends. Tailor legend titles, positions & font properties effortlessly. Find more info here.
 heading: Legend
 ---
 

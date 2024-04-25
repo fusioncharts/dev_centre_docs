@@ -1,6 +1,6 @@
 ---
 title: React-Native Features | FusionCharts
-description: This article outlines how to work with events, API's and modules.
+description: Elevate your charting capabilities with React-Native features. Dive into the world of events, APIs, and modules to unlock endless possibilities in our article.
 heading: React-Native Features
 ---
 

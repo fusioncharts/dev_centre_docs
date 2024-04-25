@@ -1,6 +1,6 @@
 ---
 title: FusionTime Attributes | FusionChartsgit
-description: This article contains the list of fusion time attributes.
+description: Explore the distinct attributes of FusionTime components through this detailed compilation that offers a comprehensive overview of the website's offerings.
 heading: Attributes
 ---
 

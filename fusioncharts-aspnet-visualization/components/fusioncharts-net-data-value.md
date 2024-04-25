@@ -1,6 +1,6 @@
 ---
 title: Data Value | FusionCharts
-description: This article outlines the steps of how to configure the data values.
+description: Enhance your understanding of data values and their configuration process for different chart plots. Click here to learn more in our comprehensive article!
 heading: Data Value
 ---
 

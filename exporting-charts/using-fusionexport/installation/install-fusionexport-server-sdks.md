@@ -1,6 +1,6 @@
 ---
 title: Install FusionExport Server SDKs | FusionCharts
-description: This section is a language SDK installation guide
+description: Simplify the installation of FusionExport Server SDKs for C#, Java, PHP, Node.js, & Python with our step-by-step instructions in our comprehensive article.
 heading: Install FusionExport Server SDKs
 ---
 

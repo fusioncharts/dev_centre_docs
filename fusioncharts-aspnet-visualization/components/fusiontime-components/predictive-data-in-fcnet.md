@@ -1,6 +1,6 @@
 ---
 title: Predictive data representation | FusionCharts
-description: This article defines how to set predictive data.
+description: Read our blog now and enhance your time-series data representation with FusionCharts.NET v1.0.7 and unlock the potential of predictive data visualization.
 heading: Predictive data representation
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Filters | FusionCharts
-description: This article outlines the steps to add filter operations.
+description: Effortlessly filter data in your large dataset with DataStore's operations. Read the article to generate new child tables with filtered data from DataTable.
 heading: Filters
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Combination Charts | FusionCharts
-description: This article outlines the steps to create combination charts
+description: Explore the versatility of combination charts, whether in 2D or 3D, with single or dual y-axes, and scrollable features. Read to create various combinations.
 heading: Combination Charts
 ---
 

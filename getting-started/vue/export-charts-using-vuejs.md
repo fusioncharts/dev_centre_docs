@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using vuejs.
+description: Experience the versatility of FusionCharts Suite XT, a JavaScript-powered suite that renders charts using SVG and VML. Dive into the article to explore more!
 heading: Exporting Charts
 ---
 

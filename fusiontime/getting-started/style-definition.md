@@ -1,6 +1,6 @@
 ---
 title: Style Definition | FusionCharts
-description: This article elaborates on the style definition of FusionTime.
+description: Learn to style chart elements in FusionTime using defined CSS and create visually appealing charts. Engage with our article for comprehensive understanding.
 heading: Style Definition
 ---
 

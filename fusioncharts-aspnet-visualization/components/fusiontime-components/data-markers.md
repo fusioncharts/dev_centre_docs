@@ -1,6 +1,6 @@
 ---
 title: Data Markers | FusionCharts
-description: This article outlines the steps to configure Data Markers.
+description: Unlock new insights in your data with FusionCharts data markers. Highlight key trends & anomalies, make your charts more informative & actionable. Try now!
 heading: Data Markers
 ---
 

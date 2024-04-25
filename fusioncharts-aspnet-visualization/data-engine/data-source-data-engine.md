@@ -1,6 +1,6 @@
 ---
 title: Data Source | FusionCharts
-description: This article provides the list of Data Sources available.
+description: Learn to configure data sources like Static Source, MSSQL, CSV, & JSON files in FusionCharts for better data visualization.Explore features & tutorials here.
 heading: Data Source
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Create Your First Chart | FusionCharts
-description: This article outlines the steps to create your first chart
+description: Create your first chart easily with FusionCharts.NET. Customize data, set titles, and render charts seamlessly. Elevate your data visualization game now!
 heading: Create Your First Chart
 ---
 

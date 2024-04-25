@@ -1,6 +1,6 @@
 ---
 title: Custom Range Selector | FusionCharts
-description: This article outlines the steps to set custom range selector.
+description: Optimize your data exploration with the Custom Range Selector within a specific time period by selecting the start & end points. Click now to explore more.
 heading: Custom Range Selector
 ---
 

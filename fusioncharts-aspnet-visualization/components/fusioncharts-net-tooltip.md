@@ -1,6 +1,6 @@
 ---
 title: Tooltip | FusionCharts
-description: This article outlines the steps of how to configure the tooltip
+description: FusionCharts ASP.NET Tooltip component enriches data visualizations with interactive tooltips. Enhance user engagement & data comprehension with our tool!
 heading: Tooltip
 ---
 

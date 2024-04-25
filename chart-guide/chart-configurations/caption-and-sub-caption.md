@@ -1,6 +1,6 @@
 ---
 title: Caption and Sub-caption | FusionCharts
-description: This section talks about the caption and sub-cation on the chart.
+description: Enhance your charts with captivating captions and sub-captions! Dive into FusionCharts' guide now for expert tips. Optimize your data visualization. 
 heading: Caption and sub-caption
 ---
 

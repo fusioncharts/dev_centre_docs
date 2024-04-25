@@ -1,6 +1,6 @@
 ---
 title: Data Aggregation | FusionCharts
-description: This article outlines the steps how apply data aggregation
+description: Discover data aggregation and its functions for comprehensive data analysis and insights. Unlock the power of aggregation for your data processing needs.
 heading: Data Aggregation
 ---
 

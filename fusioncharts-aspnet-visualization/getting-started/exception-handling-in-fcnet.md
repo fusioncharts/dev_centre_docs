@@ -1,6 +1,6 @@
 ---
 title: Exception Handling in FusionCharts.NET | FusionCharts
-description: This article tells about the exception handling in FusionCharts.NET.
+description: FusionCharts.NET simplifies exception handling in ASP.NET by introducing the Exceptions class in Visualization Engine. Read in-depth article to know more.
 heading: Exception Handling
 ---
 

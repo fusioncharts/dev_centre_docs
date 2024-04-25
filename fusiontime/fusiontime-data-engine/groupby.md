@@ -1,6 +1,6 @@
 ---
 title: GroupBy | FusionCharts
-description: This article outlines the steps to groupby.
+description: Master the GroupBy method in FusionTime to efficiently group and aggregate your time-series data. Upgrade your data analysis and visualization skills today!
 heading: GroupBy
 ---
 

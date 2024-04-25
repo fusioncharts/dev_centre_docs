@@ -1,6 +1,6 @@
 ---
 title: Install FusionGrid React| FusionGrid
-description: Installation steps for React
+description: Gain in-depth knowledge on installing FusionGrid with React through our comprehensive article and ensure a smooth integration process by creating a grid.
 heading: Install FusionGrid with React
 ---
 

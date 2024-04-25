@@ -1,6 +1,6 @@
 ---
 title: Pivot | FusionCharts
-description: This article outlines the steps to add pivot.
+description: Discover the power of Pivot in transforming tabular expressions from rows to columns with step-by-step instructions. Uncover insights in our article today!
 heading: Pivot
 ---
 

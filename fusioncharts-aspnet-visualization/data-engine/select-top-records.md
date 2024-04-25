@@ -1,6 +1,6 @@
 ---
 title: Select Top Records | FusionCharts
-description: This article outlines the steps how to select the top rows
+description: Utilize the TopRecords operation to extract a specific number of rows from the top of the data in the DataModel. Read our comprehensive article for details.
 heading: Select Top Records
 ---
 

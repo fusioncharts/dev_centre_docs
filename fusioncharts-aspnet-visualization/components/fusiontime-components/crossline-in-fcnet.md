@@ -1,6 +1,6 @@
 ---
 title: Crossline | FusionCharts
-description: This article defines the crossline of a time-series chart.
+description: Read our article to gain quick context of your data with Crosslines - vertical and horizontal lines that appear on the chart when you interact with it.
 heading: Crossline
 ---
 

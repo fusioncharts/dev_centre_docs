@@ -1,6 +1,6 @@
 ---
 title: Y-Axis | FusionCharts
-description: This article defines the y-axis.
+description: Learn how the Y-Axis object can be specified within the dataSource object of the FusionCharts constructor. Tap into our article to gain in-depth insights!
 heading: Y-Axis
 ---
 

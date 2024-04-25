@@ -1,6 +1,6 @@
 ---
 title: Create a chart using Razor Page | FusionCharts
-description: This article outlines the steps to create a chart using razor page
+description: Start building dynamic data visualizations with FusionCharts.NET using Razor syntax. Elevate your ASP.NET applications effortlessly! Start exploring today.
 heading: Create a chart using Razor Page
 ---
 

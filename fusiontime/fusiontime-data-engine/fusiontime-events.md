@@ -1,6 +1,6 @@
 ---
 title: FusionTime Events | FusionCharts
-description: This article contains the list of fusion time events.
+description: Unleash the power of events in executing actions and manipulating the DOM for your website's events. Explore our comprehensive article for further insights.
 heading: Events
 ---
 

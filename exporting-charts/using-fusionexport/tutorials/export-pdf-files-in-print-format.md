@@ -1,6 +1,6 @@
 ---
 title: Export PDF files in Print Format | FusionCharts
-description: This article talks about how to export PDF files in print format.
+description: Read article & master the art of exporting PDF files in print format! Follow step-by-step process to achieve a perfectly formatted print-friendly document.
 heading: Export PDF files in print format
 ---
 
