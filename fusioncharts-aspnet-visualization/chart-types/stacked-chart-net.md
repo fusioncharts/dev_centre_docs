@@ -1,6 +1,6 @@
 ---
 title: Stacked charts | FusionCharts
-description: This article outlines the steps to create stacked charts
+description: Learn how to craft a Stacked Chart to showcase revenue distribution across quarters of the current year by product category. Read article for more information.
 heading: Stacked charts
 ---
 
