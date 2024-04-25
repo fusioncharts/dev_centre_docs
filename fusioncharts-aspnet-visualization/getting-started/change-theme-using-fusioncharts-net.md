@@ -1,6 +1,6 @@
 ---
 title: Change Theme | FusionCharts
-description: This article outlines the steps to set common theme in a single page
+description: Explore the convenience of changing themes in FusionCharts.NET for setting chart appearance and behavior. Read the article to change the theme of a chart.
 heading: Change Theme
 ---
 
