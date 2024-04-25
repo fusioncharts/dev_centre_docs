@@ -1,6 +1,6 @@
 ---
 title: Special Events using Ember | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Explore the potential of Special Events with Ember using the FusionCharts Suite XT API. Delve into our comprehensive article to uncover more insights on Ember.
 heading: Special Events using Ember
 ---
 
