@@ -1,6 +1,6 @@
 ---
 title: Data Marker | FusionCharts
-description: This article outlines the steps to configure Data Markers.
+description: Discover the significance of data markers in a chart and how they represent important events on specific data points. Read the article for more information.
 heading: Data Marker
 ---
 
