@@ -1,6 +1,6 @@
 ---
 title: Special Events using AngularJS | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Discover the power of Special Events with AngularJS - Experience dynamic chart interactions and modified values with the angularjs-fusioncharts component.
 heading: Special Events using AngularJS
 ---
 
