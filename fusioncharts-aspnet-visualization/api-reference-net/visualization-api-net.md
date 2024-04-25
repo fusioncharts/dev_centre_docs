@@ -1,6 +1,6 @@
 ---
 title: Visualization API | FusionCharts
-description: This article provides the list of APIs available
+description: Enhance your ASP.NET applications with our ASP.NET Visualization API Reference. Dive into detailed documentation and start creating charts & dashboards!
 heading: Visualization API
 ---
 
