@@ -1,6 +1,6 @@
 ---
 title: Data Engine API | FusionCharts
-description: This article provides the list of Data Engine APIs available.
+description: Enhance data operations with the seamless integration of Data Engine API. Click to explore our comprehensive article and discover a deeper understanding.
 heading: Data Engine API
 ---
 
