@@ -1,6 +1,6 @@
 ---
 title: Sort data | FusionCharts
-description: This article outlines the steps to sort data.
+description: Sort your data effortlessly in FusionTime with ascending, descending, or custom comparator function options. Elevate your data analysis seamlessly now.
 heading: Sort data
 ---
 
