@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Angular | FusionCharts
-description:  Discover the potential of drill-down functionality in Angular with FusionCharts and effortlessly navigate through multiple levels of data visualization.
+description: Discover the potential of drill-down functionality in Angular with FusionCharts and effortlessly navigate through multiple levels of data visualization.
 heading: Adding Drill Down using Angular
 ---
 
