@@ -1,6 +1,6 @@
 ---
 title: Time Axis | FusionCharts
-description: This article defines the time axis.
+description: Read the article to learn more about the Time Axis displaying time-based data on a timeseries chart - how it creates a timescale for chart data display.
 heading: Time Axis
 ---
 
