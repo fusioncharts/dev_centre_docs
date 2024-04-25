@@ -1,6 +1,6 @@
 ---
 title: Special Events using Plain JS | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Make your charts interactive! Learn to use special events in FusionCharts to create a drag-gable column chart. Lift your data visualization skills today!
 heading: Special Events using Plain JS
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Export Grid | FusionGrid
-description: This article talks about using column filters
+description: Export data seamlessly from FusionGrid to CSV, Excel & PDF formats with our user-friendly tutorial. Ideal for easy integration & data management. Check now!
 heading: Data Export
 ---
 # Export your Grid

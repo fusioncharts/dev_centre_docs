@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using jquery.
+description: Discover the power of FusionCharts Suite XT, a JavaScript-based website rendering charts in the browser using SVG & VML. Explore its feature in our article!
 heading: Exporting Charts
 ---
 

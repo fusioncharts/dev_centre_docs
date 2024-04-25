@@ -1,6 +1,6 @@
 ---
 title: Join Operations using Pipe | FusionCharts
-description: This article outlines the steps to use Pipe.
+description: Read article to optimize your data operations with FusionGrid's Pipe operation! It enables sequential execution of multiple operations to simplify workflow.
 heading: Join Operations using Pipe
 ---
 

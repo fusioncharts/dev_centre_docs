@@ -1,6 +1,6 @@
 ---
 title: Download FusionCharts.NET | FusionCharts
-description: This article outlines the steps of how to install FusionCharts.NET
+description: Dive into our comprehensive article & learn to download & install FusionCharts.NET & all the other dependencies on your system. Engage for more information!
 heading: Download
 formPresent: top
 formDescription: In this section, we will show you how to download and install **FusionCharts.NET** and all the other dependencies on your system. You can install directly from NuGet or by downloading and using local files. To download locally fill up the form and click the download button.

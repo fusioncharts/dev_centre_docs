@@ -1,6 +1,6 @@
 ---
 title: Axes | FusionCharts
-description: This section talks about the x-axis and y-axis on the chart.
+description: Configure axes & enhance your FusionCharts experience by positioning the X-axis and Y-axis in vertical and horizontal charts. Read the article to gain insights.
 heading: Configure axes
 ---
 

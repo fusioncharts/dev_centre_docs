@@ -1,6 +1,6 @@
 ---
 title: Bind Event Listener | FusionCharts
-description: This article talks about the Events using plain JS.
+description: Discover how to bind event listeners & execute specific actions using plain JavaScript for various interactions & updates on a chart. Click to learn more!
 heading: Bind Event Listener
 ---
 

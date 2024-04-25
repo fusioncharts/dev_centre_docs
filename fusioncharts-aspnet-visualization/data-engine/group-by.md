@@ -1,6 +1,6 @@
 ---
 title: Group By | FusionCharts
-description: This article outlines the steps how apply group by to the data
+description: GroupBy operation in FusionGrid groups identical rows of tabular data based on specified criteria. Check our article to know more about groupBy operation.
 heading: Group By
 ---
 

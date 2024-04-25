@@ -1,6 +1,6 @@
 ---
 title: Export charts in bulk | FusionCharts
-description: This article talks about the SDKs used for exporting charts in bulk.
+description: Read on to discover exporting multiple charts simultaneously with FusionExport. Simplify configuration with a single JSON file & enhance app performance.
 heading: Export charts in bulk
 ---
 

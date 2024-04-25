@@ -1,6 +1,6 @@
 ---
 title: Working with Events Using AngularJS | FusionCharts
-description: This article talks about working with events using AngularJS.
+description: Read the article to discover the power of working with events in AngularJS to execute specific actions & manipulate the DOM, send data to the server, & more.
 heading: Working with Events Using AngularJS
 ---
 Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update for a chart. For example, you can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.

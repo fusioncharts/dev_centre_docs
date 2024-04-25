@@ -1,6 +1,6 @@
 ---
 title: Row Animation | FusionGrid
-description: This article talks about using row animations
+description: Learn to elevate your data presentation with row transition animations. Explore how to implement animations using rowOptions. Read on for detailed guidance.
 heading: Row Animation 
 ---
 

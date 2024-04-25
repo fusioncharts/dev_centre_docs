@@ -1,6 +1,6 @@
 ---
 title: Change Plot Type | FusionCharts
-description: This article outlines the steps to change the plot type.
+description: Find versatile plot types & enhance visualization. Transform your charts effortlessly with FusionCharts. Click here to explore more such tactics.
 heading: Change Plot Type
 ---
 

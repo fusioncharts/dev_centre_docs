@@ -1,6 +1,6 @@
 ---
 title: Overview | FusionGrid
-description: Installation steps
+description: Enhance your website or mobile application with FusionGrid's versatile data grid component & get insights into functionalities - filtering, sorting, & grouping.
 heading: Overview and Install FusionGrid
 ---
 

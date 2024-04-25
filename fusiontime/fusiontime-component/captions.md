@@ -1,6 +1,6 @@
 ---
 title: Caption and Sub-caption | FusionCharts
-description: This article talks about the caption and sub-caption of the chart.
+description: Discover detailed chart insights with informative captions and sub-captions! Explore further regarding the subject matter of the chart in our in-depth article.
 heading: Caption and Sub-caption
 ---
 

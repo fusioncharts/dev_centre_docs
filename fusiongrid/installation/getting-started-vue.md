@@ -1,6 +1,6 @@
 ---
 title: Install FusionGrid Vue | FusionGrid
-description: Installation steps for Vue
+description: With FusionCharts, you can easily integrate FusionGrid with Vue.js using our step-by-step guide. Build powerful data grids for Vue apps effortlessly now!
 heading: Install FusionGrid with Vue
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Methods | FusionGrid
-description: This article talks about using fusiongrid methods
+description: Enhance your grid's functionality with FusionGrid's methods, offering unparalleled control & effortless styling. Access our article instantly to learn more!
 heading: FusionGrid Methods
 ---
 

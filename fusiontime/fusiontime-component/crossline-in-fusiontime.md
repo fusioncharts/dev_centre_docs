@@ -1,6 +1,6 @@
 ---
 title: Crossline | FusionCharts
-description: This article defines the crossline.
+description: Discover the power of Crosslines - vertical & horizontal lines to gain quick context of the data. Check out the comprehensive article for more details.
 heading: Crossline
 ---
 

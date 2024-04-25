@@ -1,6 +1,6 @@
 ---
 title: Overview | FusionCharts
-description: This article is the overview of the FusionCharts.NET Data Engine.
+description: Gain in-depth insights into FusionCharts DataEngine's data source store and discover the ease of data integration from DataTable with the StaticSource class.
 heading: Overview
 ---
 

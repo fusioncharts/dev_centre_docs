@@ -1,6 +1,6 @@
 ---
 title: Time Marker | FusionCharts
-description: This article defines the time markers.
+description: Easily mark events on the time axis with FusionTime. Dive into our comprehensive article to learn more about Time instance marker and Time band marker.
 heading: Time Marker
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Time Navigator | FusionCharts
-description: This article defines the time navigator.
+description: Time navigators in FusionCharts help users explore timelines. They allow users to zoom in, out and pan to specific timeframes. Start exploring our tool now!
 heading: Time Navigator
 ---
 

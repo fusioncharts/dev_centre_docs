@@ -1,6 +1,6 @@
 ---
 title: FusionTime Methods | FusionCharts
-description: This article contains the list of fusion time methods.
+description: Discover the DataStore methods for efficient data management and manipulation. Unlock the potential of DataStore by reading our comprehensive article now.
 heading: Methods
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Standard Range Selector | FusionCharts
-description: This article defines the standard range selector.
+description: With FusionCharts' Standard Range Selector, effortlessly select and focus on data within standard time periods. Take control of your data visualization now!
 heading: Standard Range Selector
 ---
 

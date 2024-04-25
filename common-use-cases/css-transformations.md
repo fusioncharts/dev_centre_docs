@@ -1,6 +1,6 @@
 ---
 title: CSS Transformations | FusionCharts
-description: Using CSS transformations in charts.
+description: Elevate your charts to new heights with CSS Transformations! Explore the article to integrate seamlessly with other visuals for a truly immersive experience.
 heading: CSS Transformations
 ---
 

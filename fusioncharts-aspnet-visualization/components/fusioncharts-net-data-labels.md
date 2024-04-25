@@ -1,6 +1,6 @@
 ---
 title: Data Labels | FusionCharts
-description: This article outlines the steps of how to configure the data labels.
+description: Discover the power of data labels in FusionCharts.NET and learn how to assign names to data points on the X-axis while applying various formatting options.
 heading: Data Labels
 ---
 

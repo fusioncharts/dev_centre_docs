@@ -1,6 +1,6 @@
 ---
 title: Install FusionExport CLI | FusionCharts
-description: This article focuses on how you can install the FusionExport CLI.
+description: Unlock the power of FusionExport CLI, a command line interface for seamless communication with the FusionExport Server across different operating systems.
 heading: Install FusionExport CLI
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Search Filter | FusionGrid
-description: This article talks about using column search filters
+description: Unlock the potential of efficient data analysis with FusionGrid's quick Search filter. Read the article and locate relevant data using a searchable grid.
 heading: Search Filter
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Standard Range Selector | FusionCharts
-description: This article defines the standard range selector.
+description: Discover more about the Standard Range Selector, an extension enabling selection of standard time periods like ALL, YTD, QTD, MTD, & contextual time periods.
 heading: Standard Range Selector
 ---
 

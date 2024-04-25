@@ -1,6 +1,6 @@
 ---
 title: Data Binning | FusionCharts
-description: This article talks about the Binning.
+description: Uncover data binning's essence, utilizing time's hierarchy to group units. Explore its application in time series charts & customize bins. Read for insights.
 heading: Data Binning
 ---
 

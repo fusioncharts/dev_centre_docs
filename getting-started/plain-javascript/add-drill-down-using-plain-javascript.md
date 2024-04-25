@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down | FusionCharts
-description: This article focuses on drill down charts.
+description: Discover the effortless way to implement multi-level drill-downs with FusionCharts & navigate through your data from parent to child and grandchild charts.
 heading: Adding Drill Down
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: FusionExport Release Notes | FusionCharts
-description: List of changes made in recent release.
+description: Stay up-to-date with the newest FusionExport release notes! Click now to enrich your understanding and make the most of the latest features and improvements.
 heading: FusionExport Release Notes
 ---
 

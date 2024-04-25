@@ -1,6 +1,6 @@
 ---
 title: Change output time format | FusionCharts
-description: This article defines how to change the output time format.
+description: Customize the output time format in time series charts with FusionCharts v1.2.0. Explore our comprehensive article to control the display of output time.
 heading: Change output time format
 ---
 

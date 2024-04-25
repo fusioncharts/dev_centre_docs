@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using ASP.NET | FusionCharts
-description: This article focuses on drill down charts.
+description: Explore our comprehensive article & learn to implement drill down capabilities in ASP.NET! It empowers your users with a deeper understanding of your data. 
 heading: Adding Drill Down using ASP.NET
 chartPresent: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: Attributes | FusionGrid
-description: This article talks about FusionGrid features
+description: Dive into the world of grid configuration with the FusionGrid constructor and customize columns, rows, and inline charts using the syntax and properties.
 heading: Grid Attributes 
 ---
 

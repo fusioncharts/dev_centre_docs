@@ -1,6 +1,6 @@
 ---
 title: Special Events using Angular | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Discover leveraging Special Events in Angular with FusionCharts Suite XT API. Trigger actions during chart lifecycle stages for enhanced functionality.
 heading: Special Events using Angular
 ---
 

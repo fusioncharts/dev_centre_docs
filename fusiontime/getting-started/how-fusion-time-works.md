@@ -1,6 +1,6 @@
 ---
 title: How FusionTime Works | FusionCharts
-description: This article defines the flow of FusionTime.
+description: Explore time-series data effortlessly with FusionTime, a JavaScript library offering a range of features. Expand your understanding by reading our article.
 heading: How FusionTime Works
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using PHP | FusionCharts
-description: This article focuses on drill down charts.
+description: Learn how to implement drill-down functionality using PHP. Dive into our article for step-by-step instructions and enhance your data visualization capabilities.
 heading: Adding Drill Down using PHP
 ---
 

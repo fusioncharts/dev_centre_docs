@@ -1,6 +1,6 @@
 ---
 title: Time Markers | FusionCharts
-description: This article defines the time markers.
+description: Utilize Time Markers to highlight events on the Time Axis. The overlays provide tooltip information when hovered over or tapped. Visit the article to learn more.
 heading: Time Markers
 ---
 

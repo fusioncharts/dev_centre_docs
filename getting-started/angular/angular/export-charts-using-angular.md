@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using angular.
+description: Dive into our comprehensive article and learn how to export charts in various formats using the angular-fusioncharts component with FusionCharts Suite XT.
 heading: Exporting Charts
 ---
 

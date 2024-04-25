@@ -1,6 +1,6 @@
 ---
 title: Special Events using Vue | FusionCharts
-description: This article showcases a draggable column chart with special events.
+description: Discover the power of Special Events with Vue using the Vue-FusionCharts component for dynamic column chart interactions. Click now to explore our article!
 heading: Special Events using Vue
 ---
 

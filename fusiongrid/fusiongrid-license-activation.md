@@ -1,6 +1,6 @@
 ---
 title: License activation from v1.1.1 onwards | FusionGrid
-description: Learn how to activate your FusionGrid license.
+description: Learn how to activate your license and eliminate watermarks with FusionGrid's license activation mechanism. Take a peek at our comprehensive article now!
 heading: License activation
 ---
 

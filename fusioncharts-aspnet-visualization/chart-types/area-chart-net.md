@@ -1,6 +1,6 @@
 ---
 title: Area chart | FusionCharts
-description: This article outlines the steps of how to create the area chart.
+description: Uncover the steps to create an Area Chart illustrating "Weekly Liquor Sales" in our comprehensive article and enhance your understanding of the data.
 heading: Area chart
 ---
 

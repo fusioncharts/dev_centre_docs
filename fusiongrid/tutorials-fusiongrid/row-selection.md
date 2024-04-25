@@ -1,6 +1,6 @@
 ---
 title: Row Selection| FusionGrid
-description: This article talks about row selection methods.
+description: Explore FusionGrid's row selection property & enable/disable row selection via boolean or JSON object. Visit our article for more insights on Row Selection.
 heading: Row Selection
 ---
 
