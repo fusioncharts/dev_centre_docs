@@ -94,7 +94,7 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 ## Enhance Charts with Text Annotations in FusionCharts XT
 Start enhancing your charts with text annotations today to provide valuable context and insights to your users. Utilize FusionCharts Suite XT to create visually appealing charts enriched with annotations. Dive into the documentation and begin annotating your charts for enhanced clarity and comprehension.
 
-Enrich your charts with valuable insights using FusionCharts Suite XT's **annotate anchor chart** today!
+_Enrich your charts with valuable insights using FusionCharts Suite XT's **annotate anchor chart** today!_
 
 ## FAQs
 ### What are the benefits of using text annotations in charts?
