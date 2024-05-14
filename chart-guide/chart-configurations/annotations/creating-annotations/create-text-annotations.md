@@ -1,5 +1,5 @@
 ---
-title: How to Annotate an Anchor Chart with FusionCharts
+title: A Complete Guide on Annotate Anchor Chart
 description: Want to add context and insights to your anchor charts?  Learn how to easily annotate them with FusionCharts. Explore customization options and FAQs.
 heading: Create Text Annotations
 ---
@@ -94,14 +94,14 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 ## Enhance Charts with Text Annotations in FusionCharts XT
 Start enhancing your charts with text annotations today to provide valuable context and insights to your users. Utilize FusionCharts Suite XT to create visually appealing charts enriched with annotations. Dive into the documentation and begin annotating your charts for enhanced clarity and comprehension.
 
-Enrich your charts with valuable insights using FusionCharts Suite XT's **annotated anchor chart** today!
+Enrich your charts with valuable insights using FusionCharts Suite XT's **annotate anchor chart** today!
 
 ## FAQs
 ### What are the benefits of using text annotations in charts?
 Text annotations enrich charts by providing additional context and insights, making them easier to understand for users. Annotations can highlight key points, provide explanations, or label specific data points, enhancing the overall clarity of the chart.
 
 ### Can I add multiple text annotations to a single chart?
-Yes, you can add multiple text annotations to a chart. These annotations can be notes, labels, or any other contextual information that adds value to the visualization. Each **annotated anchor chart** can have its own unique properties and styling.
+Yes, you can add multiple text annotations to a chart. These annotations can be notes, labels, or any other contextual information that adds value to the visualization. Each **annotate anchor chart** can have its own unique properties and styling.
 
 ### How do I customize the appearance of text annotations in FusionCharts?
 Text annotations can be customized extensively using various attributes such as font family, font size, alignment, color, and background color. You can also apply formatting styles like bold or italic to the text, adjust transparency, and enable text wrapping for better presentation.
@@ -110,4 +110,4 @@ Text annotations can be customized extensively using various attributes such as 
 Yes, you can dynamically update or modify text annotations on the chart. By assigning a unique identification (ID) to each annotation, you can easily target and manipulate specific annotations as needed, either through direct interaction or programmatically.
 
 ### Are there any limitations to text annotations in FusionCharts Suite XT?
-While **annotated anchor chart** offers great flexibility and customization options, it's important to note any limitations regarding performance or compatibility with certain chart types or configurations. Refer to the documentation for detailed information on best practices and potential constraints.
+While **annotate anchor chart** offers great flexibility and customization options, it's important to note any limitations regarding performance or compatibility with certain chart types or configurations. Refer to the documentation for detailed information on best practices and potential constraints.
