@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aktobe
+## JavaScript Alias: maps/aktobe
 
 Map Name: Aktobe
 Dimensions (Width x Height): 421x391
