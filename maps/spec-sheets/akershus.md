@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/akershus
+## JavaScript Alias: maps/akershus
 
 Map Name: Akershus
 Dimensions (Width x Height): 420x588
