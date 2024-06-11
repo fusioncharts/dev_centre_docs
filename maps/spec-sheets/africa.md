@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/africa
+## JavaScript Alias: maps/africa
 
 Map Name: Africa
 Dimensions (Width x Height): 660x610
