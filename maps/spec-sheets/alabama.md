@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alabama
+## JavaScript Alias: maps/alabama
 
 Map Name: Alabama
 Dimensions (Width x Height): 550x865
