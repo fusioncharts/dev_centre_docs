@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/abra
+## JavaScript Alias: maps/abra
 
 Map Name: Abra
 Dimensions (Width x Height): 610x570
