@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lebanon
+## JavaScript Alias: maps/lebanon
 
 Map Name: Lebanon Map
 Dimensions (Width x Height): 440x590

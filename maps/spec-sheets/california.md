@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/california
+## JavaScript Alias: maps/california
 
 Map Name: California
 Dimensions (Width x Height): 605x700

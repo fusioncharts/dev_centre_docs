@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oregon
+## JavaScript Alias: maps/oregon
 
 Map Name: Oregon
 Dimensions (Width x Height): 760x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tianjin
+## JavaScript Alias: maps/tianjin
 
 Map Name: Tianjin
 Dimensions (Width x Height): 386x612

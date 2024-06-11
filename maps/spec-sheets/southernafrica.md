@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southernafrica
+## JavaScript Alias: maps/southernafrica
 
 Map Name: Southernafrica
 Dimensions (Width x Height): 505x466

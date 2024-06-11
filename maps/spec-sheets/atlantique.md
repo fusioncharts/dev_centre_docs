@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atlantique
+## JavaScript Alias: maps/atlantique
 
 Map Name: Atlantique
 Dimensions (Width x Height): 600x460

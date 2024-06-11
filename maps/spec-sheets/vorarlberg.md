@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vorarlberg
+## JavaScript Alias: maps/vorarlberg
 
 Map Name: Vorarlberg
 Dimensions (Width x Height): 320x500

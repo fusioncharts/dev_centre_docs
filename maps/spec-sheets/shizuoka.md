@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shizuoka
+## JavaScript Alias: maps/shizuoka
 
 Map Name: Shizuoka
 Dimensions (Width x Height): 520x400

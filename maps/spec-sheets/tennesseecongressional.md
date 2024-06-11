@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tennesseecongressional
+## JavaScript Alias: maps/tennesseecongressional
 
 Map Name: Tennesseecongressional
 Dimensions (Width x Height): 700x180

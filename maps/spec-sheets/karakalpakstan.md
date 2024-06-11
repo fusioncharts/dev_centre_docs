@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karakalpakstan
+## JavaScript Alias: maps/karakalpakstan
 
 Map Name: Karakalpakstan
 Dimensions (Width x Height): 480x330

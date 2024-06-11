@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/montserrat
+## JavaScript Alias: maps/montserrat
 
 Map Name: Montserrat
 Dimensions (Width x Height): 200x310

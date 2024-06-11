@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Sejong
+## JavaScript Alias: maps/Sejong
 
 Map Name: Sejong
 Dimensions (Width x Height): 540x560

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/minnesota
+## JavaScript Alias: maps/minnesota
 
 Map Name: Minnesota
 Dimensions (Width x Height): 610x670

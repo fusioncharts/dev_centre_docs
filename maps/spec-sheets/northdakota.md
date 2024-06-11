@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northdakota
+## JavaScript Alias: maps/northdakota
 
 Map Name: Northdakota
 Dimensions (Width x Height): 761x471

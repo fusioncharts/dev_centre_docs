@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/norway
+## JavaScript Alias: maps/norway
 
 Map Name: Norway
 Dimensions (Width x Height): 590x640

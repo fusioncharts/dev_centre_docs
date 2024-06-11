@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/espaillat
+## JavaScript Alias: maps/espaillat
 
 Map Name: Espaillat
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guanajuato
+## JavaScript Alias: maps/guanajuato
 
 Map Name: Guanajuato
 Dimensions (Width x Height): 770x620

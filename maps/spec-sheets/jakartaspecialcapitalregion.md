@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jakartaspecialcapitalregion
+## JavaScript Alias: maps/jakartaspecialcapitalregion
 
 Map Name: Jakarta Special Capital Region
 Dimensions (Width x Height): 270x410

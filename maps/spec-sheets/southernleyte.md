@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southernleyte
+## JavaScript Alias: maps/southernleyte
 
 Map Name: Southern Leyte
 Dimensions (Width x Height): 610x570

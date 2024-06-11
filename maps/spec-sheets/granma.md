@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/granma
+## JavaScript Alias: maps/granma
 
 Map Name: Granma
 Dimensions (Width x Height): 510x400

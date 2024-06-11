@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/singapore
+## JavaScript Alias: maps/singapore
 
 Map Name: Singapore
 Dimensions (Width x Height): 560x340

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/govisumber
+## JavaScript Alias: maps/govisumber
 
 Map Name: Govisümber
 Dimensions (Width x Height): 610x570

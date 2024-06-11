@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pavlodar
+## JavaScript Alias: maps/pavlodar
 
 Map Name: Pavlodar
 Dimensions (Width x Height): 421x391

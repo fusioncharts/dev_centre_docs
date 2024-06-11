@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phatthalung
+## JavaScript Alias: maps/phatthalung
 
 Map Name: Phatthalung
 Dimensions (Width x Height): 545x974

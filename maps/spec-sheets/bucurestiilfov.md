@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bucurestiilfov
+## JavaScript Alias: maps/bucurestiilfov
 
 Map Name: Bucurestiilfov
 Dimensions (Width x Height): 110x133

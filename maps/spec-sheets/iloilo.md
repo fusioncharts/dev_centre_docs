@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iloilo
+## JavaScript Alias: maps/iloilo
 
 Map Name: Iloilo
 Dimensions (Width x Height): 610x570

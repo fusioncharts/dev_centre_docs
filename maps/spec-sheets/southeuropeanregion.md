@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southeuropeanregion
+## JavaScript Alias: maps/southeuropeanregion
 
 Map Name: Southeuropeanregion
 Dimensions (Width x Height): 381x136

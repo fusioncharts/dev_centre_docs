@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/orientalmindoro
+## JavaScript Alias: maps/orientalmindoro
 
 Map Name: Oriental Mindoro
 Dimensions (Width x Height): 610x570

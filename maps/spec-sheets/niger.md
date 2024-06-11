@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/niger
+## JavaScript Alias: maps/niger
 
 Map Name: Niger
 Dimensions (Width x Height): 560x450

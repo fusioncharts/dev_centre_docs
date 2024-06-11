@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bahamas
+## JavaScript Alias: maps/bahamas
 
 Map Name: Bahamas
 Dimensions (Width x Height): 521x560

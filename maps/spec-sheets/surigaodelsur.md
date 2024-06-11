@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/surigaodelsur
+## JavaScript Alias: maps/surigaodelsur
 
 Map Name: Surigaodel Sur
 Dimensions (Width x Height): 610x570

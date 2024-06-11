@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phongsali
+## JavaScript Alias: maps/phongsali
 
 Map Name: Phongsali
 Dimensions (Width x Height): 440x590

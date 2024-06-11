@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/europewithcountries2
+## JavaScript Alias: maps/europewithcountries2
 
 Map Name: Europewithcountries2
 Dimensions (Width x Height): 351x592

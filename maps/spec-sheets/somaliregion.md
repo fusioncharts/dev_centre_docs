@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/somaliregion
+## JavaScript Alias: maps/somaliregion
 
 Map Name: Somali Region
 Dimensions (Width x Height): 610x570

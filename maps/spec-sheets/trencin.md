@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trencin
+## JavaScript Alias: maps/trencin
 
 Map Name: Trencin
 Dimensions (Width x Height): 600x516

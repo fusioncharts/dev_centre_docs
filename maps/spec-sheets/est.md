@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/est
+## JavaScript Alias: maps/est
 
 Map Name: Est
 Dimensions (Width x Height): 600x460

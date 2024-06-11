@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/okayama
+## JavaScript Alias: maps/okayama
 
 Map Name: Okayama
 Dimensions (Width x Height): 540x490

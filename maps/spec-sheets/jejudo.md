@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jejudo
+## JavaScript Alias: maps/jejudo
 
 Map Name: Jejudo
 Dimensions (Width x Height): 306x190

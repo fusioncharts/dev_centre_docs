@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/belize
+## JavaScript Alias: maps/belize
 
 Map Name: Belize
 Dimensions (Width x Height): 150x250

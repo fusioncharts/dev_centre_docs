@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/valverde
+## JavaScript Alias: maps/valverde
 
 Map Name: Valverde
 Dimensions (Width x Height): 610x570

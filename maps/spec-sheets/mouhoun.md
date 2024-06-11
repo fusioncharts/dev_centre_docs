@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mouhoun
+## JavaScript Alias: maps/mouhoun
 
 Map Name: Mouhoun
 Dimensions (Width x Height): 600x460

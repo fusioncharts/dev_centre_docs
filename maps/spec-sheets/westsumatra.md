@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westsumatra
+## JavaScript Alias: maps/westsumatra
 
 Map Name: West Sumantra
 Dimensions (Width x Height): 270x410

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanchezramirez
+## JavaScript Alias: maps/sanchezramirez
 
 Map Name: Sanchez Ramirez
 Dimensions (Width x Height): 610x570

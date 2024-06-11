@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/selenge
+## JavaScript Alias: maps/selenge
 
 Map Name: Selenge
 Dimensions (Width x Height): 610x570

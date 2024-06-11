@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/corrientes
+## JavaScript Alias: maps/corrientes
 
 Map Name: Corrientes
 Dimensions (Width x Height): 637x552

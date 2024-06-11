@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centre
+## JavaScript Alias: maps/centre
 
 Map Name: Centre
 Dimensions (Width x Height): 600x460

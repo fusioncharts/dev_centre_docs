@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usadma
+## JavaScript Alias: maps/usadma
 
 Map Name: Usadma
 Dimensions (Width x Height): 1021x594

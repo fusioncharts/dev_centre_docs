@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samsun
+## JavaScript Alias: maps/samsun
 
 Map Name: Samsun
 Dimensions (Width x Height): 610x570

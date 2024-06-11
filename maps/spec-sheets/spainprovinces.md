@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/spainprovinces
+## JavaScript Alias: maps/spainprovinces
 
 Map Name: Spainprovinces
 Dimensions (Width x Height): 810x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gabu
+## JavaScript Alias: maps/gabu
 
 Map Name: Gabu
 Dimensions (Width x Height): 680x420

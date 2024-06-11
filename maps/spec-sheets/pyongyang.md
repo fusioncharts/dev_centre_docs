@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Pyongyang
+## JavaScript Alias: maps/Pyongyang
 
 Map Name: Pyongyang
 Dimensions (Width x Height): 610x570

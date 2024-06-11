@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/independencia
+## JavaScript Alias: maps/independencia
 
 Map Name: Independencia
 Dimensions (Width x Height): 610x570

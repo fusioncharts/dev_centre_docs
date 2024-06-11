@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northsumatra
+## JavaScript Alias: maps/northsumatra
 
 Map Name: North Sumatra
 Dimensions (Width x Height): 270x410

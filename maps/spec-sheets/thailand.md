@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/thailand
+## JavaScript Alias: maps/thailand
 
 Map Name: Thailand
 Dimensions (Width x Height): 545x974

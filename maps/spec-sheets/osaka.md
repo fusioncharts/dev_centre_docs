@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/osaka
+## JavaScript Alias: maps/osaka
 
 Map Name: Osaka
 Dimensions (Width x Height): 380x530

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lesotho
+## JavaScript Alias: maps/lesotho
 
 Map Name: Lesotho
 Dimensions (Width x Height): 610x530

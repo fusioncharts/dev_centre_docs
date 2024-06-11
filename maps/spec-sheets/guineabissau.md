@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guineabissau
+## JavaScript Alias: maps/guineabissau
 
 Map Name: Guineabissau
 Dimensions (Width x Height): 680x420

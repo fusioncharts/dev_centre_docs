@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hawaiicongressional
+## JavaScript Alias: maps/hawaiicongressional
 
 Map Name: Hawaiicongressional
 Dimensions (Width x Height): 630x410

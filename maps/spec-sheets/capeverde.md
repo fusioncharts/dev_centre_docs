@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/capeverde
+## JavaScript Alias: maps/capeverde
 
 Map Name: Capeverde
 Dimensions (Width x Height): 700x620

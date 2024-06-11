@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintlouis
+## JavaScript Alias: maps/saintlouis
 
 Map Name: Saint Louis
 Dimensions (Width x Height): 600x460

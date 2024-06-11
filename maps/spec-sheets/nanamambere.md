@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nanamambere
+## JavaScript Alias: maps/nanamambere
 
 Map Name: Nana Mambere
 Dimensions (Width x Height): 600x460

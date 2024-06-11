@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/surigaodelnorte
+## JavaScript Alias: maps/surigaodelnorte
 
 Map Name: Surigaodel Norte
 Dimensions (Width x Height): 610x570

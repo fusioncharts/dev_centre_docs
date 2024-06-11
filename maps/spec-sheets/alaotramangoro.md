@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alaotramangoro
+## JavaScript Alias: maps/alaotramangoro
 
 Map Name: Alaotra Mangoro
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zonguldak
+## JavaScript Alias: maps/zonguldak
 
 Map Name: Zonguldak
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samangan
+## JavaScript Alias: maps/samangan
 
 Map Name: Samangan
 Dimensions (Width x Height): 610x570

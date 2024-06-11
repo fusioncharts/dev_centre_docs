@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/finnmark
+## JavaScript Alias: maps/finnmark
 
 Map Name: Finnmark
 Dimensions (Width x Height): 675x518

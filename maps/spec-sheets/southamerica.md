@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southamerica
+## JavaScript Alias: maps/southamerica
 
 Map Name: Southamerica
 Dimensions (Width x Height): 268x329

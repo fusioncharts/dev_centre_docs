@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/friuliveneziagiulia
+## JavaScript Alias: maps/friuliveneziagiulia
 
 Map Name: Friuliveneziagiulia
 Dimensions (Width x Height): 450x420

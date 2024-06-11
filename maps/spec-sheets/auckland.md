@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/auckland
+## JavaScript Alias: maps/auckland
 
 Map Name: Auckland
 Dimensions (Width x Height): 554x600

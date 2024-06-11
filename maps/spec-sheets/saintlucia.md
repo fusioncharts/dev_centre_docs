@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintlucia
+## JavaScript Alias: maps/saintlucia
 
 Map Name: Saintlucia
 Dimensions (Width x Height): 270x520

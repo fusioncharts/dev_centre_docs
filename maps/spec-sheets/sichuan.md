@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sichuan
+## JavaScript Alias: maps/sichuan
 
 Map Name: Sichuan
 Dimensions (Width x Height): 412x385

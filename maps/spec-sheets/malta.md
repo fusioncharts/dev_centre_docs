@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/malta
+## JavaScript Alias: maps/malta
 
 Map Name: Malta
 Dimensions (Width x Height): 355x313

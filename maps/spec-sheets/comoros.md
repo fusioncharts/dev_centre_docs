@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/comoros
+## JavaScript Alias: maps/comoros
 
 Map Name: Comoros
 Dimensions (Width x Height): 610x540

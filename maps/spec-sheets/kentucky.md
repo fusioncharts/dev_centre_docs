@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kentucky
+## JavaScript Alias: maps/kentucky
 
 Map Name: Kentucky
 Dimensions (Width x Height): 901x421

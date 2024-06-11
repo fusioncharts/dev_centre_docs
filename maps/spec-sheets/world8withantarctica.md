@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/world8withantarctica
+## JavaScript Alias: maps/world8withantarctica
 
 Map Name: world (8 regions) with Antarctica
 Dimensions (Width x Height): 895x498

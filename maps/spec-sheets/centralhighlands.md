@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralhighlands
+## JavaScript Alias: maps/centralhighlands
 
 Map Name: Central Highlands
 Dimensions (Width x Height): 610x570

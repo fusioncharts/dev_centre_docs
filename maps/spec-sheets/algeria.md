@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/algeria
+## JavaScript Alias: maps/algeria
 
 Map Name: Algeria
 Dimensions (Width x Height): 320x320

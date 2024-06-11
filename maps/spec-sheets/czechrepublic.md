@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/czechrepublic
+## JavaScript Alias: maps/czechrepublic
 
 Map Name: Czechrepublic
 Dimensions (Width x Height): 800x460

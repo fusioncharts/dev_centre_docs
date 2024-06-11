@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southjeolla
+## JavaScript Alias: maps/southjeolla
 
 Map Name: Southjeolla
 Dimensions (Width x Height): 295x192

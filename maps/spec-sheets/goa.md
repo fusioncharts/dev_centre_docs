@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/goa
+## JavaScript Alias: maps/goa
 
 Map Name: Goa
 Dimensions (Width x Height): 301x411

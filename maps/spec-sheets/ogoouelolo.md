@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ogoouelolo
+## JavaScript Alias: maps/ogoouelolo
 
 Map Name: Ogooué-Lolo (Koulamoutou)
 Dimensions (Width x Height): 310x340

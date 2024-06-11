@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uk7
+## JavaScript Alias: maps/uk7
 
 Map Name: Uk7
 Dimensions (Width x Height): 351x592

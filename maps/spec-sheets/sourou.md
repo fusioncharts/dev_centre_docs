@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sourou
+## JavaScript Alias: maps/sourou
 
 Map Name: Sourou
 Dimensions (Width x Height): 600x460

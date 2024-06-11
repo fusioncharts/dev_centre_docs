@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aomori
+## JavaScript Alias: maps/aomori
 
 Map Name: Aomori
 Dimensions (Width x Height): 530x480

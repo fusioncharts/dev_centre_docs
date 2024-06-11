@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/riodejaneiro
+## JavaScript Alias: maps/riodejaneiro
 
 Map Name: Riodejaneiro
 Dimensions (Width x Height): 540x359

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bohol
+## JavaScript Alias: maps/bohol
 
 Map Name: Bohol
 Dimensions (Width x Height): 610x570

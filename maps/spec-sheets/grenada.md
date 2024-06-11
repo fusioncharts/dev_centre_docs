@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/grenada
+## JavaScript Alias: maps/grenada
 
 Map Name: Grenada
 Dimensions (Width x Height): 260x290

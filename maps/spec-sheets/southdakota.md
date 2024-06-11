@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southdakota
+## JavaScript Alias: maps/southdakota
 
 Map Name: Southdakota
 Dimensions (Width x Height): 760x490

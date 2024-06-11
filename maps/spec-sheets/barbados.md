@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/barbados
+## JavaScript Alias: maps/barbados
 
 Map Name: Barbados
 Dimensions (Width x Height): 200x260

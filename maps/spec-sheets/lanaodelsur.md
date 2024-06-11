@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lanaodelsur
+## JavaScript Alias: maps/lanaodelsur
 
 Map Name: Lanaodel Sur
 Dimensions (Width x Height): 610x570

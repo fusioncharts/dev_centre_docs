@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/emiliaromagna
+## JavaScript Alias: maps/emiliaromagna
 
 Map Name: Emiliaromagna
 Dimensions (Width x Height): 662x371

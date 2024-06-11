@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tunisia
+## JavaScript Alias: maps/tunisia
 
 Map Name: Tunisia
 Dimensions (Width x Height): 361x621

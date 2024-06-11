@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saraburi
+## JavaScript Alias: maps/saraburi
 
 Map Name: Saraburi
 Dimensions (Width x Height): 545x974

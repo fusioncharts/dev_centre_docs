@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easteuropeanregion
+## JavaScript Alias: maps/easteuropeanregion
 
 Map Name: Easteuropeanregion
 Dimensions (Width x Height): 210x310

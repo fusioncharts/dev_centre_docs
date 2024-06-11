@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/presov
+## JavaScript Alias: maps/presov
 
 Map Name: Presov
 Dimensions (Width x Height): 900x365

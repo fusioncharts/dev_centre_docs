@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northrhinewestphalia
+## JavaScript Alias: maps/northrhinewestphalia
 
 Map Name: Northrhinewestphalia
 Dimensions (Width x Height): 400x370

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/metropolitanadesantiago
+## JavaScript Alias: maps/metropolitanadesantiago
 
 Map Name: Metropolitana de Santiago
 Dimensions (Width x Height): 600x460

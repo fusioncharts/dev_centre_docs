@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/faro
+## JavaScript Alias: maps/faro
 
 Map Name: Faro
 Dimensions (Width x Height): 500x230

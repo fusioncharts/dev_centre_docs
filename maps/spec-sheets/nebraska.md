@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nebraska
+## JavaScript Alias: maps/nebraska
 
 Map Name: Nebraska
 Dimensions (Width x Height): 760x360

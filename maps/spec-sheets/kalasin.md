@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kalasin
+## JavaScript Alias: maps/kalasin
 
 Map Name: Kalasin
 Dimensions (Width x Height): 545x974

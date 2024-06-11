@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saudiarabia
+## JavaScript Alias: maps/saudiarabia
 
 Map Name: Saudiarabia
 Dimensions (Width x Height): 420x360

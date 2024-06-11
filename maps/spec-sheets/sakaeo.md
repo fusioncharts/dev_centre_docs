@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sakaeo
+## JavaScript Alias: maps/sakaeo
 
 Map Name: SaKaeo
 Dimensions (Width x Height): 545x974

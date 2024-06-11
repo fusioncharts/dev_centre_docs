@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/himachalpradesh
+## JavaScript Alias: maps/himachalpradesh
 
 Map Name: Himachalpradesh
 Dimensions (Width x Height): 420x410

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westvirginiaareacode
+## JavaScript Alias: maps/westvirginiaareacode
 
 Map Name: Westvirginiaareacode
 Dimensions (Width x Height): 480x420

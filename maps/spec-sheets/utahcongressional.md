@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/utahcongressional
+## JavaScript Alias: maps/utahcongressional
 
 Map Name: Utahcongressional
 Dimensions (Width x Height): 480x600

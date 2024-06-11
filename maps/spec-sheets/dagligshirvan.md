@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dagligshirvan
+## JavaScript Alias: maps/dagligshirvan
 
 Map Name: Dagligshirvan
 Dimensions (Width x Height): 310x460

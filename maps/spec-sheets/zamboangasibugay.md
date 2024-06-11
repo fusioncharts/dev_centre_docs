@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zamboangasibugay
+## JavaScript Alias: maps/zamboangasibugay
 
 Map Name: Zamboanga Sibugay
 Dimensions (Width x Height): 440x590

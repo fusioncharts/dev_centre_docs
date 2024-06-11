@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/matabelelandnorth
+## JavaScript Alias: maps/matabelelandnorth
 
 Map Name: Matabeleland North
 Dimensions (Width x Height): 801x391

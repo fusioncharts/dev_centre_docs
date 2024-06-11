@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kansasareacode
+## JavaScript Alias: maps/kansasareacode
 
 Map Name: Kansasareacode
 Dimensions (Width x Height): 470x245

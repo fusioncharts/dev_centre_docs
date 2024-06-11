@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernsahara
+## JavaScript Alias: maps/westernsahara
 
 Map Name: Westernsahara
 Dimensions (Width x Height): 330x300

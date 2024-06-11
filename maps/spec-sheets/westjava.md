@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westjava
+## JavaScript Alias: maps/westjava
 
 Map Name: West java
 Dimensions (Width x Height): 270x410

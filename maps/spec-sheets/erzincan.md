@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/erzincan
+## JavaScript Alias: maps/erzincan
 
 Map Name: Erzincan
 Dimensions (Width x Height): 610x570

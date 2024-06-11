@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/burma
+## JavaScript Alias: maps/burma
 
 Map Name: Burma
 Dimensions (Width x Height): 590x1190

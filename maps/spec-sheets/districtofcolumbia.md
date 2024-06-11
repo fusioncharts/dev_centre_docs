@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/districtofcolumbia
+## JavaScript Alias: maps/districtofcolumbia
 
 Map Name: Districtofcolumbia
 Dimensions (Width x Height): 630x740

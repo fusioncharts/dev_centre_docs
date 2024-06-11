@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hyogo
+## JavaScript Alias: maps/hyogo
 
 Map Name: Hyogo
 Dimensions (Width x Height): 410x590

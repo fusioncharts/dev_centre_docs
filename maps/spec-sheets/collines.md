@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/collines
+## JavaScript Alias: maps/collines
 
 Map Name: Collines
 Dimensions (Width x Height): 600x460

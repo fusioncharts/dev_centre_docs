@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/viljandimaa
+## JavaScript Alias: maps/viljandimaa
 
 Map Name: Viljandimaa
 Dimensions (Width x Height): 524x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sofia
+## JavaScript Alias: maps/sofia
 
 Map Name: Sofia
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newsouthwales
+## JavaScript Alias: maps/newsouthwales
 
 Map Name: Newsouthwales
 Dimensions (Width x Height): 722x600

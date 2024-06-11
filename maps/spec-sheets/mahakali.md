@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mahakali
+## JavaScript Alias: maps/mahakali
 
 Map Name: mahakali
 Dimensions (Width x Height): 421x391

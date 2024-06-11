@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centraldarfur
+## JavaScript Alias: maps/centraldarfur
 
 Map Name: CentralDarfur
 Dimensions (Width x Height): 1120x1240

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/velikotarnovo
+## JavaScript Alias: maps/velikotarnovo
 
 Map Name: Velikotarnovo
 Dimensions (Width x Height): 572x600

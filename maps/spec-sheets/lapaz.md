@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lapaz
+## JavaScript Alias: maps/lapaz
 
 Map Name: La Paz
 Dimensions (Width x Height): 300x340

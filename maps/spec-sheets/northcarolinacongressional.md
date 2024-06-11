@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northcarolinacongressional
+## JavaScript Alias: maps/northcarolinacongressional
 
 Map Name: Northcarolinacongressional
 Dimensions (Width x Height): 1000x400

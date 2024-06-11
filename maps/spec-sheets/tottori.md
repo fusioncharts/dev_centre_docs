@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tottori
+## JavaScript Alias: maps/tottori
 
 Map Name: Tottori
 Dimensions (Width x Height): 530x310

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/menabe
+## JavaScript Alias: maps/menabe
 
 Map Name: Menabe
 Dimensions (Width x Height): 600x460

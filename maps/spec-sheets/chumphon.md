@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chumphon
+## JavaScript Alias: maps/chumphon
 
 Map Name: Chumphon
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oregonareacode
+## JavaScript Alias: maps/oregonareacode
 
 Map Name: Oregonareacode
 Dimensions (Width x Height): 450x330

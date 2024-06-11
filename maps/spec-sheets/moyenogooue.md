@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/moyenogooue
+## JavaScript Alias: maps/moyenogooue
 
 Map Name: Moyen-Ogooué (Lambaréné)
 Dimensions (Width x Height): 310x340

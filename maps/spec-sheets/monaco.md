@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/monaco
+## JavaScript Alias: maps/monaco
 
 Map Name: Monaco
 Dimensions (Width x Height): 260x340

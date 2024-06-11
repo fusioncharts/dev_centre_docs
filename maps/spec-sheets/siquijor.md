@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/siquijor
+## JavaScript Alias: maps/siquijor
 
 Map Name: Siquijor
 Dimensions (Width x Height): 610x570

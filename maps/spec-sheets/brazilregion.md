@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/brazilregion
+## JavaScript Alias: maps/brazilregion
 
 Map Name: Brazilregion
 Dimensions (Width x Height): 370x370

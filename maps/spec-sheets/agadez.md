@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/agadez
+## JavaScript Alias: maps/agadez
 
 Map Name: Agadez
 Dimensions (Width x Height): 560x450

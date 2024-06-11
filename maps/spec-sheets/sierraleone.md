@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sierraleone
+## JavaScript Alias: maps/sierraleone
 
 Map Name: Sierraleone
 Dimensions (Width x Height): 530x490

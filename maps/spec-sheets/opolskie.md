@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/opolskie
+## JavaScript Alias: maps/opolskie
 
 Map Name: Opolskie
 Dimensions (Width x Height): 559x613

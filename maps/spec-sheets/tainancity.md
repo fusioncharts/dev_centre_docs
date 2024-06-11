@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tainancity
+## JavaScript Alias: maps/tainancity
 
 Map Name: Tainan City
 Dimensions (Width x Height): 610x570

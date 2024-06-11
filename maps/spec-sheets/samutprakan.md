@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samutprakan
+## JavaScript Alias: maps/samutprakan
 
 Map Name: SamutPrakan
 Dimensions (Width x Height): 545x974

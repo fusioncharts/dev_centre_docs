@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tagant
+## JavaScript Alias: maps/tagant
 
 Map Name: Tagant
 Dimensions (Width x Height): 600x625

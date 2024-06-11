@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lusaka
+## JavaScript Alias: maps/lusaka
 
 Map Name: Lusaka
 Dimensions (Width x Height): 610x570

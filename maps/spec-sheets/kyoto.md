@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kyoto
+## JavaScript Alias: maps/kyoto
 
 Map Name: Kyoto
 Dimensions (Width x Height): 500x570

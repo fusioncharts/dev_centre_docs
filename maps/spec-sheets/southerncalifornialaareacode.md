@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southerncalifornialaareacode
+## JavaScript Alias: maps/southerncalifornialaareacode
 
 Map Name: Southern California LA Area Code
 Dimensions (Width x Height): 480x310

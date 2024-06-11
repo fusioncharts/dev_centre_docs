@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sliven
+## JavaScript Alias: maps/sliven
 
 Map Name: Sliven
 Dimensions (Width x Height): 540x592

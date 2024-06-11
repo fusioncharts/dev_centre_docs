@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samar
+## JavaScript Alias: maps/samar
 
 Map Name: Samar
 Dimensions (Width x Height): 610x570

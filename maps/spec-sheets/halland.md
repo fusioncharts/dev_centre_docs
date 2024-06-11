@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/halland
+## JavaScript Alias: maps/halland
 
 Map Name: Halland
 Dimensions (Width x Height): 370x500

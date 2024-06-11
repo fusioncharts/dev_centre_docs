@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nuble
+## JavaScript Alias: maps/nuble
 
 Map Name: Nuble
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tartumaa
+## JavaScript Alias: maps/tartumaa
 
 Map Name: Tartumaa
 Dimensions (Width x Height): 601x452

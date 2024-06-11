@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mus
+## JavaScript Alias: maps/mus
 
 Map Name: Mus
 Dimensions (Width x Height): 610x570

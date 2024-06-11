@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/redsea
+## JavaScript Alias: maps/redsea
 
 Map Name: RedSea
 Dimensions (Width x Height): 1120x1240

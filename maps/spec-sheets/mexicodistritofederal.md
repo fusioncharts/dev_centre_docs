@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mexicodistritofederal
+## JavaScript Alias: maps/mexicodistritofederal
 
 Map Name: Mexicodistritofederal
 Dimensions (Width x Height): 146x203

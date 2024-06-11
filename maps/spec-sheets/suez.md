@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/suez
+## JavaScript Alias: maps/suez
 
 Map Name: Suez
 Dimensions (Width x Height): 459x594

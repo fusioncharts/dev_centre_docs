@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/akmola
+## JavaScript Alias: maps/akmola
 
 Map Name: Akmola
 Dimensions (Width x Height): 421x391

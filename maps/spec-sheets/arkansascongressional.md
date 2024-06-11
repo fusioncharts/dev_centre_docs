@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arkansascongressional
+## JavaScript Alias: maps/arkansascongressional
 
 Map Name: Arkansascongressional
 Dimensions (Width x Height): 550x480

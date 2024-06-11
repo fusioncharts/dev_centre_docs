@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sabaragamuwasrilankaprovince
+## JavaScript Alias: maps/sabaragamuwasrilankaprovince
 
 Map Name: Sabaragamuwa SriLanka Province
 Dimensions (Width x Height): 600x1040

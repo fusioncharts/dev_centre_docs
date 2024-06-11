@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uttaradit
+## JavaScript Alias: maps/uttaradit
 
 Map Name: Uttaradit
 Dimensions (Width x Height): 545x974

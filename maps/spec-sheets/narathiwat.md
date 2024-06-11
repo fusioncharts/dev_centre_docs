@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/narathiwat
+## JavaScript Alias: maps/narathiwat
 
 Map Name: Narathiwat
 Dimensions (Width x Height): 545x974

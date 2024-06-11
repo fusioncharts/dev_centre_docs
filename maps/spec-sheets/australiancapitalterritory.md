@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/australiancapitalterritory
+## JavaScript Alias: maps/australiancapitalterritory
 
 Map Name: Australiancapitalterritory
 Dimensions (Width x Height): 478x593

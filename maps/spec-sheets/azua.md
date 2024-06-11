@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/azua
+## JavaScript Alias: maps/azua
 
 Map Name: Azua
 Dimensions (Width x Height): 610x570

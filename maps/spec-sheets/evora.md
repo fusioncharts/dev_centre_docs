@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/evora
+## JavaScript Alias: maps/evora
 
 Map Name: Evora
 Dimensions (Width x Height): 510x320

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tuvalu
+## JavaScript Alias: maps/tuvalu
 
 Map Name: Tuvalu
 Dimensions (Width x Height): 350x380

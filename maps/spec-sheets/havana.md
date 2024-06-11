@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/havana
+## JavaScript Alias: maps/havana
 
 Map Name: Havana
 Dimensions (Width x Height): 510x400

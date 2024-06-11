@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centraljava
+## JavaScript Alias: maps/centraljava
 
 Map Name: Central Java
 Dimensions (Width x Height): 270x410

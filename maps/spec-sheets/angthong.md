@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/angthong
+## JavaScript Alias: maps/angthong
 
 Map Name: AngThong
 Dimensions (Width x Height): 545x974

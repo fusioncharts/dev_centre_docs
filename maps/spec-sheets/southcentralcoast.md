@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southcentralcoast
+## JavaScript Alias: maps/southcentralcoast
 
 Map Name: South Central Coast
 Dimensions (Width x Height): 610x570

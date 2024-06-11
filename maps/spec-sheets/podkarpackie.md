@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/podkarpackie
+## JavaScript Alias: maps/podkarpackie
 
 Map Name: Podkarpackie
 Dimensions (Width x Height): 528x622

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/normandy
+## JavaScript Alias: maps/normandy
 
 Map Name: Normandy
 Dimensions (Width x Height): 610x570

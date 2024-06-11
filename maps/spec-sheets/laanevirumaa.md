@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/laanevirumaa
+## JavaScript Alias: maps/laanevirumaa
 
 Map Name: Laanevirumaa
 Dimensions (Width x Height): 444x464

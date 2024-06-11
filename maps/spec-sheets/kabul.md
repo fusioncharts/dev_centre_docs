@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kabul
+## JavaScript Alias: maps/kabul
 
 Map Name: Kabul
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/thuringia
+## JavaScript Alias: maps/thuringia
 
 Map Name: Thuringia
 Dimensions (Width x Height): 451x371

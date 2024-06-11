@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/louisiana
+## JavaScript Alias: maps/louisiana
 
 Map Name: Louisiana
 Dimensions (Width x Height): 701x601

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/colombia
+## JavaScript Alias: maps/colombia
 
 Map Name: Colombia
 Dimensions (Width x Height): 420x580

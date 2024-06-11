@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westvirginia
+## JavaScript Alias: maps/westvirginia
 
 Map Name: Westvirginia
 Dimensions (Width x Height): 700x600

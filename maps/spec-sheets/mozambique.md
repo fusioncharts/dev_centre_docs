@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mozambique
+## JavaScript Alias: maps/mozambique
 
 Map Name: Mozambique
 Dimensions (Width x Height): 300x500

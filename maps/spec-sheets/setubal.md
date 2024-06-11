@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/setubal
+## JavaScript Alias: maps/setubal
 
 Map Name: Setubal
 Dimensions (Width x Height): 290x350

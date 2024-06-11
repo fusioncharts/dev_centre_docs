@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/norrbotten
+## JavaScript Alias: maps/norrbotten
 
 Map Name: Norrbotten
 Dimensions (Width x Height): 451x461

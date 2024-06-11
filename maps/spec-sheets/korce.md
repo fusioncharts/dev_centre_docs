@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/korce
+## JavaScript Alias: maps/korce
 
 Map Name: Korce
 Dimensions (Width x Height): 422x599

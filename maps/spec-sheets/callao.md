@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/callao
+## JavaScript Alias: maps/callao
 
 Map Name: Callao
 Dimensions (Width x Height): 266x614

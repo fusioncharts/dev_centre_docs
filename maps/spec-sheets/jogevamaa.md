@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jogevamaa
+## JavaScript Alias: maps/jogevamaa
 
 Map Name: Jogevamaa
 Dimensions (Width x Height): 647x443

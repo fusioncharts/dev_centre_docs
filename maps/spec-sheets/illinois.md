@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/illinois
+## JavaScript Alias: maps/illinois
 
 Map Name: Illinois
 Dimensions (Width x Height): 520x915

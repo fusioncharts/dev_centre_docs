@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khovsgol
+## JavaScript Alias: maps/khovsgol
 
 Map Name: Khovsgol
 Dimensions (Width x Height): 610x570

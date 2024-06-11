@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/austagder
+## JavaScript Alias: maps/austagder
 
 Map Name: Austagder
 Dimensions (Width x Height): 472x600

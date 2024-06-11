@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/democraticrepublicofcongo
+## JavaScript Alias: maps/democraticrepublicofcongo
 
 Map Name: Democraticrepublicofcongo
 Dimensions (Width x Height): 430x430

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nara
+## JavaScript Alias: maps/nara
 
 Map Name: Nara
 Dimensions (Width x Height): 320x594

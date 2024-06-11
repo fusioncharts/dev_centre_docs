@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alsharqeyah
+## JavaScript Alias: maps/alsharqeyah
 
 Map Name: Alsharqeyah
 Dimensions (Width x Height): 618x593

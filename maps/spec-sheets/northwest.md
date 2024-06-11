@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northwest
+## JavaScript Alias: maps/northwest
 
 Map Name: North West
 Dimensions (Width x Height): 610x570

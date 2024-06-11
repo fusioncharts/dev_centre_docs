@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ioba
+## JavaScript Alias: maps/ioba
 
 Map Name: Ioba
 Dimensions (Width x Height): 600x460

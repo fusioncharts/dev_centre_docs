@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/smolyan
+## JavaScript Alias: maps/smolyan
 
 Map Name: Smolyan
 Dimensions (Width x Height): 641x490

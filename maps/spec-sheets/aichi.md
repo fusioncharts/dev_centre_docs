@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aichi
+## JavaScript Alias: maps/aichi
 
 Map Name: Aichi
 Dimensions (Width x Height): 535x420

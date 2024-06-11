@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dili
+## JavaScript Alias: maps/dili
 
 Map Name: Dili
 Dimensions (Width x Height): 480x330

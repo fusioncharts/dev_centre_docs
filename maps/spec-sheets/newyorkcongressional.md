@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newyorkcongressional
+## JavaScript Alias: maps/newyorkcongressional
 
 Map Name: Newyorkcongressional
 Dimensions (Width x Height): 750x650

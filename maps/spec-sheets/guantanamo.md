@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guantanamo
+## JavaScript Alias: maps/guantanamo
 
 Map Name: Guantanamo
 Dimensions (Width x Height): 510x400

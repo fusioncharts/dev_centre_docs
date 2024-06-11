@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sognogfjordane
+## JavaScript Alias: maps/sognogfjordane
 
 Map Name: Sognogfjordane
 Dimensions (Width x Height): 600x533

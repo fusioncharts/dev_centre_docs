@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rhinelandpalatinate
+## JavaScript Alias: maps/rhinelandpalatinate
 
 Map Name: Rhinelandpalatinate
 Dimensions (Width x Height): 290x370

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liberia
+## JavaScript Alias: maps/liberia
 
 Map Name: Liberia
 Dimensions (Width x Height): 430x440

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ratchaburi
+## JavaScript Alias: maps/ratchaburi
 
 Map Name: Ratchaburi
 Dimensions (Width x Height): 545x974

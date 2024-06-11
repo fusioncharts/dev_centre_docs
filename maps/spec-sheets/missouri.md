@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/missouri
+## JavaScript Alias: maps/missouri
 
 Map Name: Missouri
 Dimensions (Width x Height): 678x597

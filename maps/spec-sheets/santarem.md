@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santarem
+## JavaScript Alias: maps/santarem
 
 Map Name: Santarem
 Dimensions (Width x Height): 300x360

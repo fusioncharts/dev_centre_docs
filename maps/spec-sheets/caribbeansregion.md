@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/caribbeansregion
+## JavaScript Alias: maps/caribbeansregion
 
 Map Name: Caribbeansregion
 Dimensions (Width x Height): 400x410

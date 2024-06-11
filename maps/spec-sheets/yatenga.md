@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yatenga
+## JavaScript Alias: maps/yatenga
 
 Map Name: Yatenga
 Dimensions (Width x Height): 600x460

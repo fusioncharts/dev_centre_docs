@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kayes
+## JavaScript Alias: maps/kayes
 
 Map Name: Kayes
 Dimensions (Width x Height): 470x470

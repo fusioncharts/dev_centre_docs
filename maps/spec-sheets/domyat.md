@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/domyat
+## JavaScript Alias: maps/domyat
 
 Map Name: Domyat
 Dimensions (Width x Height): 837x524

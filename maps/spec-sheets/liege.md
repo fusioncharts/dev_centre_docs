@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liege
+## JavaScript Alias: maps/liege
 
 Map Name: Liege
 Dimensions (Width x Height): 601x451

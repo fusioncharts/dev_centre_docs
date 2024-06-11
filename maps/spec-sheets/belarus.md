@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/belarus
+## JavaScript Alias: maps/belarus
 
 Map Name: Belarus
 Dimensions (Width x Height): 310x250

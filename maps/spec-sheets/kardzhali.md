@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kardzhali
+## JavaScript Alias: maps/kardzhali
 
 Map Name: Kardzhali
 Dimensions (Width x Height): 593x577

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santacatarina
+## JavaScript Alias: maps/santacatarina
 
 Map Name: Santacatarina
 Dimensions (Width x Height): 1100x760

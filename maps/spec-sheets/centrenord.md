@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centrenord
+## JavaScript Alias: maps/centrenord
 
 Map Name: Centre-Nord
 Dimensions (Width x Height): 600x460

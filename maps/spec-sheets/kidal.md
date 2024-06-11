@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kidal
+## JavaScript Alias: maps/kidal
 
 Map Name: Kidal
 Dimensions (Width x Height): 470x470

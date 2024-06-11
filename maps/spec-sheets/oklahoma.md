@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oklahoma
+## JavaScript Alias: maps/oklahoma
 
 Map Name: Oklahoma
 Dimensions (Width x Height): 771x372

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pando
+## JavaScript Alias: maps/pando
 
 Map Name: Pando
 Dimensions (Width x Height): 300x340

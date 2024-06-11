@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zamboangadelnorte
+## JavaScript Alias: maps/zamboangadelnorte
 
 Map Name: Zamboanga del Norte
 Dimensions (Width x Height): 610x570

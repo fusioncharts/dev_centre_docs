@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ukcountries
+## JavaScript Alias: maps/ukcountries
 
 Map Name: Ukcountries
 Dimensions (Width x Height): 351x592

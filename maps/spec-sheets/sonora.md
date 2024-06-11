@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sonora
+## JavaScript Alias: maps/sonora
 
 Map Name: Sonora
 Dimensions (Width x Height): 420x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/molise
+## JavaScript Alias: maps/molise
 
 Map Name: Molise
 Dimensions (Width x Height): 590x470

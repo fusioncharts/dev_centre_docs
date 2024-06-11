@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santiago
+## JavaScript Alias: maps/santiago
 
 Map Name: Santiago
 Dimensions (Width x Height): 610x570

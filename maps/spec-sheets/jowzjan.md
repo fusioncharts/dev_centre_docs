@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jowzjan
+## JavaScript Alias: maps/jowzjan
 
 Map Name: Jowzjan
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shanxi
+## JavaScript Alias: maps/shanxi
 
 Map Name: Shanxi
 Dimensions (Width x Height): 235x432

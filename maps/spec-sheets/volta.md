@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/volta
+## JavaScript Alias: maps/volta
 
 Map Name: Volta
 Dimensions (Width x Height): 261x371

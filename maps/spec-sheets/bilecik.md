@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bilecik
+## JavaScript Alias: maps/bilecik
 
 Map Name: Bilecik
 Dimensions (Width x Height): 610x570

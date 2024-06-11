@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saaremaa
+## JavaScript Alias: maps/saaremaa
 
 Map Name: Saaremaa
 Dimensions (Width x Height): 590x600

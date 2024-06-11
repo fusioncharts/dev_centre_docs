@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nagano
+## JavaScript Alias: maps/nagano
 
 Map Name: Nagano
 Dimensions (Width x Height): 300x470

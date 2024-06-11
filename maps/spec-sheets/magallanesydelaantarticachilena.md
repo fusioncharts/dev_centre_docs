@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/magallanesydelaantarticachilena
+## JavaScript Alias: maps/magallanesydelaantarticachilena
 
 Map Name: Magallanesy de la Antartica Chilena
 Dimensions (Width x Height): 600x460

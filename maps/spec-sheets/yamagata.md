@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yamagata
+## JavaScript Alias: maps/yamagata
 
 Map Name: Yamagata
 Dimensions (Width x Height): 360x590

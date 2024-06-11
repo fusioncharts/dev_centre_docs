@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/roraima
+## JavaScript Alias: maps/roraima
 
 Map Name: Roraima
 Dimensions (Width x Height): 1150x1300

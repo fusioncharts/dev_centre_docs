@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vermont
+## JavaScript Alias: maps/vermont
 
 Map Name: Vermont
 Dimensions (Width x Height): 560x890

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/putumayo
+## JavaScript Alias: maps/putumayo
 
 Map Name: Putumayo
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernuganda
+## JavaScript Alias: maps/northernuganda
 
 Map Name: Northern Uganda
 Dimensions (Width x Height): 600x625

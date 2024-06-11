@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/krabi
+## JavaScript Alias: maps/krabi
 
 Map Name: Krabi
 Dimensions (Width x Height): 545x974

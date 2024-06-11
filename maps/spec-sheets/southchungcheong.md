@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southchungcheong
+## JavaScript Alias: maps/southchungcheong
 
 Map Name: Southchungcheong
 Dimensions (Width x Height): 297x214

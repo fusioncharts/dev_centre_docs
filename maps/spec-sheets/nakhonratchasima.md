@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nakhonratchasima
+## JavaScript Alias: maps/nakhonratchasima
 
 Map Name: NakhonRatchasima
 Dimensions (Width x Height): 545x974

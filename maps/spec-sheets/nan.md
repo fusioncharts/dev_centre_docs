@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nan
+## JavaScript Alias: maps/nan
 
 Map Name: Nan
 Dimensions (Width x Height): 545x974

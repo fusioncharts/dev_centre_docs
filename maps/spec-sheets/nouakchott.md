@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nouakchott
+## JavaScript Alias: maps/nouakchott
 
 Map Name: Nouakchott
 Dimensions (Width x Height): 600x625

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hermanasmirabal
+## JavaScript Alias: maps/hermanasmirabal
 
 Map Name: Hermanas Mirabal
 Dimensions (Width x Height): 610x570

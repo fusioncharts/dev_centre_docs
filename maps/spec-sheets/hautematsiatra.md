@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautematsiatra
+## JavaScript Alias: maps/hautematsiatra
 
 Map Name: Haute Matsiatra
 Dimensions (Width x Height): 600x460

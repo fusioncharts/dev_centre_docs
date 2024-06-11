@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dhaulagiri
+## JavaScript Alias: maps/dhaulagiri
 
 Map Name: Dhaulagiri
 Dimensions (Width x Height): 421x391

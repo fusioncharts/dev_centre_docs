@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oudomxay
+## JavaScript Alias: maps/oudomxay
 
 Map Name: Oudomxay
 Dimensions (Width x Height): 440x590

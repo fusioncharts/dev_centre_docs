@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernnorway
+## JavaScript Alias: maps/westernnorway
 
 Map Name: Westernnorway
 Dimensions (Width x Height): 300x502

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/salavan
+## JavaScript Alias: maps/salavan
 
 Map Name: Salavan
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pampanga
+## JavaScript Alias: maps/pampanga
 
 Map Name: Pampanga
 Dimensions (Width x Height): 440x590

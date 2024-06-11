@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trashigang
+## JavaScript Alias: maps/trashigang
 
 Map Name: Trashigang
 Dimensions (Width x Height): 440x590

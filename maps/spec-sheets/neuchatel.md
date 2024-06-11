@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/neuchatel
+## JavaScript Alias: maps/neuchatel
 
 Map Name: Neuchatel
 Dimensions (Width x Height): 690x490

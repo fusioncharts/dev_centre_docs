@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kapisa
+## JavaScript Alias: maps/kapisa
 
 Map Name: Kapisa
 Dimensions (Width x Height): 610x570

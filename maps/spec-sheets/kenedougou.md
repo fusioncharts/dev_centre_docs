@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kenedougou
+## JavaScript Alias: maps/kenedougou
 
 Map Name: Kenedougou
 Dimensions (Width x Height): 600x460

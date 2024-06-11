@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/miyazaki
+## JavaScript Alias: maps/miyazaki
 
 Map Name: Miyazaki
 Dimensions (Width x Height): 410x590

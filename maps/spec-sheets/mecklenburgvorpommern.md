@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mecklenburgvorpommern
+## JavaScript Alias: maps/mecklenburgvorpommern
 
 Map Name: Mecklenburgvorpommern
 Dimensions (Width x Height): 630x450

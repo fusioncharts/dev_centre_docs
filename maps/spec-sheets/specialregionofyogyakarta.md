@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/specialregionofyogyakarta
+## JavaScript Alias: maps/specialregionofyogyakarta
 
 Map Name: Special Region of Yogyakarta
 Dimensions (Width x Height): 270x410

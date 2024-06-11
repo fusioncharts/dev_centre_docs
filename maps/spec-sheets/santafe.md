@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santafe
+## JavaScript Alias: maps/santafe
 
 Map Name: SantaFe
 Dimensions (Width x Height): 386x703

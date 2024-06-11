@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southcameroon
+## JavaScript Alias: maps/southcameroon
 
 Map Name: South Cameroon
 Dimensions (Width x Height): 440x590

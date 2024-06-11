@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/varmland
+## JavaScript Alias: maps/varmland
 
 Map Name: Varmland
 Dimensions (Width x Height): 350x510

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/basquecountry
+## JavaScript Alias: maps/basquecountry
 
 Map Name: Basque Country
 Dimensions (Width x Height): 610x570

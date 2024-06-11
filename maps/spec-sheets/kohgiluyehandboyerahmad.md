@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kohgiluyehandboyerahmad
+## JavaScript Alias: maps/kohgiluyehandboyerahmad
 
 Map Name: Kohgiluyeh And Boyer Ahmad
 Dimensions (Width x Height): 610x570

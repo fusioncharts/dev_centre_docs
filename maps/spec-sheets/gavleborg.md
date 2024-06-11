@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gavleborg
+## JavaScript Alias: maps/gavleborg
 
 Map Name: Gavleborg
 Dimensions (Width x Height): 391x581

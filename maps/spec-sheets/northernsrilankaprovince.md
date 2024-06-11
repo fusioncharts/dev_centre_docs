@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northsriLankaprovince
+## JavaScript Alias: maps/northsriLankaprovince
 
 Map Name: North SriLanka Province
 Dimensions (Width x Height): 600x1040

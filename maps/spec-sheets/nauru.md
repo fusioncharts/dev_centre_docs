@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nauru
+## JavaScript Alias: maps/nauru
 
 Map Name: Nauru
 Dimensions (Width x Height): 500x510

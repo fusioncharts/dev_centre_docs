@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ashanti
+## JavaScript Alias: maps/ashanti
 
 Map Name: Ashanti
 Dimensions (Width x Height): 261x371

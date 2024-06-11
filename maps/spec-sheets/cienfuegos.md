@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cienfuegos
+## JavaScript Alias: maps/cienfuegos
 
 Map Name: Cienfuegos
 Dimensions (Width x Height): 510x400

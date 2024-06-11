@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northcameroon
+## JavaScript Alias: maps/northcameroon
 
 Map Name: North Cameroon
 Dimensions (Width x Height): 440x590

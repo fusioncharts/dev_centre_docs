@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nationalcapitalregion
+## JavaScript Alias: maps/nationalcapitalregion
 
 Map Name: National Capital Region
 Dimensions (Width x Height): 610x570

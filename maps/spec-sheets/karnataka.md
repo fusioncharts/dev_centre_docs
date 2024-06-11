@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karnataka
+## JavaScript Alias: maps/karnataka
 
 Map Name: Karnataka
 Dimensions (Width x Height): 350x450

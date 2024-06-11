@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uruguay
+## JavaScript Alias: maps/uruguay
 
 Map Name: Uruguay
 Dimensions (Width x Height): 300x350

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tambacounda
+## JavaScript Alias: maps/tambacounda
 
 Map Name: Tambacounda
 Dimensions (Width x Height): 600x460

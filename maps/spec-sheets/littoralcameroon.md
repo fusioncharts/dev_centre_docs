@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/littoralcameroon
+## JavaScript Alias: maps/littoralcameroon
 
 Map Name: Littoral Cameroon
 Dimensions (Width x Height): 440x590

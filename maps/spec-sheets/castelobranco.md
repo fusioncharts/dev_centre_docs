@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/castelobranco
+## JavaScript Alias: maps/castelobranco
 
 Map Name: Castelobranco
 Dimensions (Width x Height): 430x340

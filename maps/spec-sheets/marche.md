@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marche
+## JavaScript Alias: maps/marche
 
 Map Name: Marche
 Dimensions (Width x Height): 450x440

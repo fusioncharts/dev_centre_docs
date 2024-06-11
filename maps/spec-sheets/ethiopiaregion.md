@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ethiopiaregion
+## JavaScript Alias: maps/ethiopiaregion
 
 Map Name: Ethiopia Region
 Dimensions (Width x Height): 610x570

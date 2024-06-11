@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/paro
+## JavaScript Alias: maps/paro
 
 Map Name: Paro
 Dimensions (Width x Height): 440x590

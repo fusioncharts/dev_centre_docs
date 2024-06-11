@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fayoum
+## JavaScript Alias: maps/fayoum
 
 Map Name: Fayoum
 Dimensions (Width x Height): 838x530

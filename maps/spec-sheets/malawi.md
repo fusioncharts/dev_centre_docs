@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/malawi
+## JavaScript Alias: maps/malawi
 
 Map Name: Malawi
 Dimensions (Width x Height): 270x610

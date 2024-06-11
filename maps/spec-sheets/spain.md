@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/spain
+## JavaScript Alias: maps/spain
 
 Map Name: Spain
 Dimensions (Width x Height): 550x391

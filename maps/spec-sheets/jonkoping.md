@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jonkoping
+## JavaScript Alias: maps/jonkoping
 
 Map Name: Jonkoping
 Dimensions (Width x Height): 450x420

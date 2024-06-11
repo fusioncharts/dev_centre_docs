@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/togo
+## JavaScript Alias: maps/togo
 
 Map Name: Togo
 Dimensions (Width x Height): 171x391

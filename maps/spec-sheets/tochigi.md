@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tochigi
+## JavaScript Alias: maps/tochigi
 
 Map Name: Tochigi
 Dimensions (Width x Height): 510x590

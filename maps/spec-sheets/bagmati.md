@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bagmati
+## JavaScript Alias: maps/bagmati
 
 Map Name: Bagmati
 Dimensions (Width x Height): 750x400

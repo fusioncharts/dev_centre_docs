@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mugla
+## JavaScript Alias: maps/mugla
 
 Map Name: Mugla
 Dimensions (Width x Height): 610x570

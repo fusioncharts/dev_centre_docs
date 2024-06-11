@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernzambia
+## JavaScript Alias: maps/westernzambia
 
 Map Name: Western Zambia
 Dimensions (Width x Height): 610x570

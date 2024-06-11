@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nagasaki
+## JavaScript Alias: maps/nagasaki
 
 Map Name: Nagasaki
 Dimensions (Width x Height): 540x450

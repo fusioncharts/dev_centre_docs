@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guidimaka
+## JavaScript Alias: maps/guidimaka
 
 Map Name: Guidimaka
 Dimensions (Width x Height): 600x625

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/englandregion
+## JavaScript Alias: maps/englandregion
 
 Map Name: Englandregion
 Dimensions (Width x Height): 400x460

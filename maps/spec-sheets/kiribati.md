@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kiribati
+## JavaScript Alias: maps/kiribati
 
 Map Name: Kiribati
 Dimensions (Width x Height): 320x160

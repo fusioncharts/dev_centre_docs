@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wien
+## JavaScript Alias: maps/wien
 
 Map Name: Wien
 Dimensions (Width x Height): 500x390

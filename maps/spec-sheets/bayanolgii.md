@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bayanolgii
+## JavaScript Alias: maps/bayanolgii
 
 Map Name: Bayan-Ölgii
 Dimensions (Width x Height): 610x570

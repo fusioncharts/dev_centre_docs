@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kalinga
+## JavaScript Alias: maps/kalinga
 
 Map Name: Kalinga
 Dimensions (Width x Height): 610x570

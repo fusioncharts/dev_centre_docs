@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/warminskomazurskie
+## JavaScript Alias: maps/warminskomazurskie
 
 Map Name: Warminskomazurskie
 Dimensions (Width x Height): 626x404

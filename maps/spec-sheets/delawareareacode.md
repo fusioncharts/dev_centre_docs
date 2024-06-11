@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/delawareareacode
+## JavaScript Alias: maps/delawareareacode
 
 Map Name: Delawareareacode
 Dimensions (Width x Height): 180x425

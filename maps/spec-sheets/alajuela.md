@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alajuela
+## JavaScript Alias: maps/alajuela
 
 Map Name: Alajuela
 Dimensions (Width x Height): 629x607

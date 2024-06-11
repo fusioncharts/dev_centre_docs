@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/montana
+## JavaScript Alias: maps/montana
 
 Map Name: Montana
 Dimensions (Width x Height): 760x432

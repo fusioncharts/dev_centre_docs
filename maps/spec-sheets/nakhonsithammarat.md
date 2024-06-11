@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nakhonsithammarat
+## JavaScript Alias: maps/nakhonsithammarat
 
 Map Name: NakhonSiThammarat
 Dimensions (Width x Height): 545x974

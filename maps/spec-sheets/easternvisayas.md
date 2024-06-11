@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternvisayas
+## JavaScript Alias: maps/easternvisayas
 
 Map Name: Eastern Visayas
 Dimensions (Width x Height): 610x570

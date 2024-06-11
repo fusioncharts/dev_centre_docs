@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/britishvirginisland
+## JavaScript Alias: maps/britishvirginisland
 
 Map Name: Britishvirginisland
 Dimensions (Width x Height): 480x460

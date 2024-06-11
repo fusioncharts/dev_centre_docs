@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/quirino
+## JavaScript Alias: maps/quirino
 
 Map Name: Quirino
 Dimensions (Width x Height): 610x570

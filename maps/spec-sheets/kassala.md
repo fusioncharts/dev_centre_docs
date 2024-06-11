@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kassala
+## JavaScript Alias: maps/kassala
 
 Map Name: Kassala
 Dimensions (Width x Height): 1120x1240

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/xiengkhouang
+## JavaScript Alias: maps/xiengkhouang
 
 Map Name: XiengKhouang
 Dimensions (Width x Height): 440x590

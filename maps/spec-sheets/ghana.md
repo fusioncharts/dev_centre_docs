@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ghana
+## JavaScript Alias: maps/ghana
 
 Map Name: Ghana
 Dimensions (Width x Height): 261x371

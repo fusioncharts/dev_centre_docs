@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mashonalandcentral
+## JavaScript Alias: maps/mashonalandcentral
 
 Map Name: Mashonaland Central
 Dimensions (Width x Height): 801x391

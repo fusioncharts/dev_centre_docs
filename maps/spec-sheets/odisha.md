@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/odisha
+## JavaScript Alias: maps/odisha
 
 Map Name: Odisha
 Dimensions (Width x Height): 471x402

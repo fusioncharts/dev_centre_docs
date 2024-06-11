@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rhodeislandcongressional
+## JavaScript Alias: maps/rhodeislandcongressional
 
 Map Name: Rhodeislandcongressional
 Dimensions (Width x Height): 400x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/solothurn
+## JavaScript Alias: maps/solothurn
 
 Map Name: Solothurn
 Dimensions (Width x Height): 820x730

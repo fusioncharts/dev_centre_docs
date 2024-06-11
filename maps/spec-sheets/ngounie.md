@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ngounie
+## JavaScript Alias: maps/ngounie
 
 Map Name: Ngounié (Mouila)
 Dimensions (Width x Height): 310x340

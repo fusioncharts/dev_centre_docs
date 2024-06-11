@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hradeckralove
+## JavaScript Alias: maps/hradeckralove
 
 Map Name: Hradeckralove
 Dimensions (Width x Height): 750x610

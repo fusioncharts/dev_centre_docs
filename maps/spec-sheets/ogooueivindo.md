@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ogooueivindo
+## JavaScript Alias: maps/ogooueivindo
 
 Map Name: Ogooué-Ivindo (Makokou)
 Dimensions (Width x Height): 310x340

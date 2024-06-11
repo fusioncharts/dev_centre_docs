@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mukdahan
+## JavaScript Alias: maps/mukdahan
 
 Map Name: Mukdahan
 Dimensions (Width x Height): 545x974

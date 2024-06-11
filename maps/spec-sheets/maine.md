@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maine
+## JavaScript Alias: maps/maine
 
 Map Name: Maine
 Dimensions (Width x Height): 590x866

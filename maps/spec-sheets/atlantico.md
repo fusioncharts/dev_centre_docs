@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atlantico
+## JavaScript Alias: maps/atlantico
 
 Map Name: Atlantico
 Dimensions (Width x Height): 510x400

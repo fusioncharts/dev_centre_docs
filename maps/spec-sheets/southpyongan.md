@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southpyongan 
+## JavaScript Alias: maps/southpyongan 
 
 Map Name: South Pyongan 
 Dimensions (Width x Height): 610x570

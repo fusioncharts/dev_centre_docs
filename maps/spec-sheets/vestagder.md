@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vestagder
+## JavaScript Alias: maps/vestagder
 
 Map Name: Vestagder
 Dimensions (Width x Height): 458x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/norwayregion
+## JavaScript Alias: maps/norwayregion
 
 Map Name: Norwayregion
 Dimensions (Width x Height): 558x600

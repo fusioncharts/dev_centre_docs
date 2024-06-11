@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fribourg
+## JavaScript Alias: maps/fribourg
 
 Map Name: Fribourg
 Dimensions (Width x Height): 450x560

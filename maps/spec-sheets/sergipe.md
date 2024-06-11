@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sergipe
+## JavaScript Alias: maps/sergipe
 
 Map Name: Sergipe
 Dimensions (Width x Height): 900x1000

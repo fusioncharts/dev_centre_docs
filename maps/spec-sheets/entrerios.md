@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/entrerios
+## JavaScript Alias: maps/entrerios
 
 Map Name: EntreRios
 Dimensions (Width x Height): 576x750

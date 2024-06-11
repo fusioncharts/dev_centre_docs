@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pedernales
+## JavaScript Alias: maps/pedernales
 
 Map Name: Pedernales
 Dimensions (Width x Height): 610x570

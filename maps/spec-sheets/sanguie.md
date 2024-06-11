@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanguie
+## JavaScript Alias: maps/sanguie
 
 Map Name: Sanguie
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gorontalo
+## JavaScript Alias: maps/gorontalo
 
 Map Name: Gorontalo
 Dimensions (Width x Height): 270x410

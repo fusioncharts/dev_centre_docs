@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/macau
+## JavaScript Alias: maps/macau
 
 Map Name: Macau
 Dimensions (Width x Height): 480x770

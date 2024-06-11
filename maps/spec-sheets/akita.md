@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/akita
+## JavaScript Alias: maps/akita
 
 Map Name: Akita
 Dimensions (Width x Height): 370x590

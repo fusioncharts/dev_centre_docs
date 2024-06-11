@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manipur
+## JavaScript Alias: maps/manipur
 
 Map Name: Manipur
 Dimensions (Width x Height): 371x441

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kukes
+## JavaScript Alias: maps/kukes
 
 Map Name: Kukes
 Dimensions (Width x Height): 486x540

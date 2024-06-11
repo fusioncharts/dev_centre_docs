@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phetchabun
+## JavaScript Alias: maps/phetchabun
 
 Map Name: Phetchabun
 Dimensions (Width x Height): 545x974

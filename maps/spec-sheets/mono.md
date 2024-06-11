@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mono
+## JavaScript Alias: maps/mono
 
 Map Name: Mono
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marylandareacode
+## JavaScript Alias: maps/marylandareacode
 
 Map Name: Marylandareacode
 Dimensions (Width x Height): 470x250

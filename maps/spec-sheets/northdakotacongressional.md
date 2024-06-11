@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northdakotacongressional
+## JavaScript Alias: maps/northdakotacongressional
 
 Map Name: Northdakotacongressional
 Dimensions (Width x Height): 500x300

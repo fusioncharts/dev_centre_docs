@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/falklandisland
+## JavaScript Alias: maps/falklandisland
 
 Map Name: Falklandisland
 Dimensions (Width x Height): 380x300

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/netherlands
+## JavaScript Alias: maps/netherlands
 
 Map Name: Netherlands
 Dimensions (Width x Height): 472x561

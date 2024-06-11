@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dalarna
+## JavaScript Alias: maps/dalarna
 
 Map Name: Dalarna
 Dimensions (Width x Height): 470x520

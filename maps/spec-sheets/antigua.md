@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/antigua
+## JavaScript Alias: maps/antigua
 
 Map Name: Antigua
 Dimensions (Width x Height): 500x370

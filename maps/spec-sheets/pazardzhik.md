@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pazardzhik
+## JavaScript Alias: maps/pazardzhik
 
 Map Name: Pazardzhik
 Dimensions (Width x Height): 377x600

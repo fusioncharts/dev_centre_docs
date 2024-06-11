@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yamaguchi
+## JavaScript Alias: maps/yamaguchi
 
 Map Name: Yamaguchi
 Dimensions (Width x Height): 530x360

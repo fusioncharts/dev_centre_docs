@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/asturias
+## JavaScript Alias: maps/asturias
 
 Map Name: Asturias
 Dimensions (Width x Height): 610x570

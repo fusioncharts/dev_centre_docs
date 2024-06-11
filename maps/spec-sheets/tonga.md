@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tonga
+## JavaScript Alias: maps/tonga
 
 Map Name: Tonga Map
 Dimensions (Width x Height): 440x590

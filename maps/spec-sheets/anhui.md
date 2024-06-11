@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/anhui
+## JavaScript Alias: maps/anhui
 
 Map Name: Anhui
 Dimensions (Width x Height): 405x517

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/muchinga
+## JavaScript Alias: maps/muchinga
 
 Map Name: Muchinga
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/occitanie
+## JavaScript Alias: maps/occitanie
 
 Map Name: Occitanie
 Dimensions (Width x Height): 610x570

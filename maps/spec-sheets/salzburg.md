@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/salzburg
+## JavaScript Alias: maps/salzburg
 
 Map Name: Salzburg
 Dimensions (Width x Height): 300x250

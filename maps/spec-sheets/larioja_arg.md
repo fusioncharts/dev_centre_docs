@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/larioja_arg
+## JavaScript Alias: maps/larioja_arg
 
 Map Name: LaRioja
 Dimensions (Width x Height): 600x608

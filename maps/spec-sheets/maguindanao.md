@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maguindanao
+## JavaScript Alias: maps/maguindanao
 
 Map Name: Maguindanao
 Dimensions (Width x Height): 610x570

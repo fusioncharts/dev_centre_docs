@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sachsenanhalt
+## JavaScript Alias: maps/sachsenanhalt
 
 Map Name: Sachsenanhalt
 Dimensions (Width x Height): 390x490

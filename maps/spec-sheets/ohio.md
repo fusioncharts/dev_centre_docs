@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ohio
+## JavaScript Alias: maps/ohio
 
 Map Name: Ohio
 Dimensions (Width x Height): 610x660

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hungaryregions
+## JavaScript Alias: maps/hungaryregions
 
 Map Name: Hungaryregions
 Dimensions (Width x Height): 770x490

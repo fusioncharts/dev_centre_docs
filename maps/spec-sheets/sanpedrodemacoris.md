@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanpedrodemacoris
+## JavaScript Alias: maps/sanpedrodemacoris
 
 Map Name: San Pedro de Macoris
 Dimensions (Width x Height): 610x570

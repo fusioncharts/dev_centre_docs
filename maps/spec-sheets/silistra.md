@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/silistra
+## JavaScript Alias: maps/silistra
 
 Map Name: Silistra
 Dimensions (Width x Height): 739x374

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atyrau
+## JavaScript Alias: maps/atyrau
 
 Map Name: Atyrau
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/portalegre
+## JavaScript Alias: maps/portalegre
 
 Map Name: Portalegre
 Dimensions (Width x Height): 430x360

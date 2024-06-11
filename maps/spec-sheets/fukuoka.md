@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fukuoka
+## JavaScript Alias: maps/fukuoka
 
 Map Name: Fukuoka
 Dimensions (Width x Height): 450x500

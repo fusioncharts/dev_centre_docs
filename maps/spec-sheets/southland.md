@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southland
+## JavaScript Alias: maps/southland
 
 Map Name: Southland
 Dimensions (Width x Height): 398x600

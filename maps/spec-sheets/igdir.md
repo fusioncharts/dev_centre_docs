@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/igdir
+## JavaScript Alias: maps/igdir
 
 Map Name: Igdir
 Dimensions (Width x Height): 610x570

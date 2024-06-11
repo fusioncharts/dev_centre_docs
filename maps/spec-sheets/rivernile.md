@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rivernile
+## JavaScript Alias: maps/rivernile
 
 Map Name: RiverNile
 Dimensions (Width x Height): 1120x1240

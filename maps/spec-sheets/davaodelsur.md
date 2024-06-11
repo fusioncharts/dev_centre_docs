@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/davaodelsur
+## JavaScript Alias: maps/davaodelsur
 
 Map Name: Davaodel Sur
 Dimensions (Width x Height): 610x570

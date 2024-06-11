@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/swaziland
+## JavaScript Alias: maps/swaziland
 
 Map Name: Swaziland
 Dimensions (Width x Height): 170x210

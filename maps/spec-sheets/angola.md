@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/angola
+## JavaScript Alias: maps/angola
 
 Map Name: Angola
 Dimensions (Width x Height): 320x360

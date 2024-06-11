@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/helwan
+## JavaScript Alias: maps/helwan
 
 Map Name: Helwan
 Dimensions (Width x Height): 322x594

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bali
+## JavaScript Alias: maps/bali
 
 Map Name: Bali
 Dimensions (Width x Height): 270x410

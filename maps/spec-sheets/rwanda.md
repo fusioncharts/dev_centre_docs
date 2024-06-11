@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rwanda
+## JavaScript Alias: maps/rwanda
 
 Map Name: Rwanda
 Dimensions (Width x Height): 471x421

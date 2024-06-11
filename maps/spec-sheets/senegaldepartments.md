@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/senegaldepartments
+## JavaScript Alias: maps/senegaldepartments
 
 Map Name: Senegal Departments
 Dimensions (Width x Height): 600x460

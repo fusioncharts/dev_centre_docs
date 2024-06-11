@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/braganca
+## JavaScript Alias: maps/braganca
 
 Map Name: Braganca
 Dimensions (Width x Height): 370x390

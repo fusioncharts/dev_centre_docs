@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/montanaareacode
+## JavaScript Alias: maps/montanaareacode
 
 Map Name: Montanaareacode
 Dimensions (Width x Height): 430x250

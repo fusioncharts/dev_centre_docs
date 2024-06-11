@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/valais
+## JavaScript Alias: maps/valais
 
 Map Name: Valais
 Dimensions (Width x Height): 970x710

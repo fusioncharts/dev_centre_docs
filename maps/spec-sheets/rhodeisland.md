@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rhodeisland
+## JavaScript Alias: maps/rhodeisland
 
 Map Name: Rhodeisland
 Dimensions (Width x Height): 601x901

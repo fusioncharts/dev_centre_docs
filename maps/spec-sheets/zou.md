@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zou
+## JavaScript Alias: maps/zou
 
 Map Name: Zou
 Dimensions (Width x Height): 600x460

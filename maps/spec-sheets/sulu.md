@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sulu
+## JavaScript Alias: maps/sulu
 
 Map Name: Sulu
 Dimensions (Width x Height): 440x590

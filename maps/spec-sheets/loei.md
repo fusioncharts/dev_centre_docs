@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/loei
+## JavaScript Alias: maps/loei
 
 Map Name: Loei
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bulawayo
+## JavaScript Alias: maps/bulawayo
 
 Map Name: Bulawayo
 Dimensions (Width x Height): 801x391

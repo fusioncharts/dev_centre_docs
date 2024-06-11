@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gwangju
+## JavaScript Alias: maps/gwangju
 
 Map Name: Gwangju
 Dimensions (Width x Height): 610x570

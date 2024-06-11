@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ostfold
+## JavaScript Alias: maps/ostfold
 
 Map Name: Ostfold
 Dimensions (Width x Height): 453x600

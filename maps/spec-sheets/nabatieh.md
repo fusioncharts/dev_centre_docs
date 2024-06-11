@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nabatieh
+## JavaScript Alias: maps/nabatieh
 
 Map Name: Nabatieh
 Dimensions (Width x Height): 421x391

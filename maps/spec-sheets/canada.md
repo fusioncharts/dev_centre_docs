@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/canada
+## JavaScript Alias: maps/canada
 
 Map Name: Canada
 Dimensions (Width x Height): 635x535

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/qatar
+## JavaScript Alias: maps/qatar
 
 Map Name: Qatar
 Dimensions (Width x Height): 221x431

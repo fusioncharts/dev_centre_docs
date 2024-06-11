@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/potosi
+## JavaScript Alias: maps/potosi
 
 Map Name: Potosi
 Dimensions (Width x Height): 300x340

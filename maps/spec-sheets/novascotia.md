@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/novascotia
+## JavaScript Alias: maps/novascotia
 
 Map Name: Novascotia
 Dimensions (Width x Height): 450x340
