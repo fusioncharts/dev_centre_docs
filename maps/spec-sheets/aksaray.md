@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aksaray
+## JavaScript Alias: maps/aksaray
 
 Map Name: Aksaray
 Dimensions (Width x Height): 610x570
