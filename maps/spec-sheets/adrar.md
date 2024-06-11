@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/adrar
+## JavaScript Alias: maps/adrar
 
 Map Name: Adrar
 Dimensions (Width x Height): 600x625
