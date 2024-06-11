@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/adamawa
+## JavaScript Alias: maps/adamawa
 
 Map Name: Adamawa
 Dimensions (Width x Height): 440x590
