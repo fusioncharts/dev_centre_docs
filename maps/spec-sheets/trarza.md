@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trarza
+## JavaScript Alias: maps/trarza
 
 Map Name: Trarza
 Dimensions (Width x Height): 600x625

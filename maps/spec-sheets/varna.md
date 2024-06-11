@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/varna
+## JavaScript Alias: maps/varna
 
 Map Name: Varna
 Dimensions (Width x Height): 600x600

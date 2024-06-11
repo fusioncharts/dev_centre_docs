@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/italyprovince
+## JavaScript Alias: maps/italyprovince
 
 Map Name: Italian Provinces Map
 Dimensions (Width x Height): 440x590

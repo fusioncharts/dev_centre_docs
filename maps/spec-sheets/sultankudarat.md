@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sultankudarat
+## JavaScript Alias: maps/sultankudarat
 
 Map Name: Sultan Kudarat
 Dimensions (Width x Height): 610x570

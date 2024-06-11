@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ubonratchathani
+## JavaScript Alias: maps/ubonratchathani
 
 Map Name: UbonRatchathani
 Dimensions (Width x Height): 545x974

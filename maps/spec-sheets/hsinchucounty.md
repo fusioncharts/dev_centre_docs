@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hsinchucounty
+## JavaScript Alias: maps/hsinchucounty
 
 Map Name: Hsinchu County
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternasia
+## JavaScript Alias: maps/easternasia
 
 Map Name: Easternasia
 Dimensions (Width x Height): 750x430

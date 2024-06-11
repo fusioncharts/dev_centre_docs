@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nyanga
+## JavaScript Alias: maps/nyanga
 
 Map Name: Nyanga (Tchibanga)
 Dimensions (Width x Height): 310x340

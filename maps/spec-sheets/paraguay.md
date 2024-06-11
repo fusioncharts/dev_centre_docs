@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/paraguay
+## JavaScript Alias: maps/paraguay
 
 Map Name: Paraguay
 Dimensions (Width x Height): 300x320

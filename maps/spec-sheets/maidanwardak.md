@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maidanwardak
+## JavaScript Alias: maps/maidanwardak
 
 Map Name: Maidanwardak
 Dimensions (Width x Height): 610x570

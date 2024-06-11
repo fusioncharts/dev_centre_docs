@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lumbini
+## JavaScript Alias: maps/lumbini
 
 Map Name: Lumbini
 Dimensions (Width x Height): 421x391

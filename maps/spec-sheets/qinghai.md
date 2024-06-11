@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/qinghai
+## JavaScript Alias: maps/qinghai
 
 Map Name: Qinghai
 Dimensions (Width x Height): 372x272

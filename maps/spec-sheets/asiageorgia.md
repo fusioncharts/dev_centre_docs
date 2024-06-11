@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/asiageorgia
+## JavaScript Alias: maps/asiageorgia
 
 Map Name: Asiageorgia
 Dimensions (Width x Height): 570x290

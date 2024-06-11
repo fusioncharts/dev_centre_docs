@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanmartin
+## JavaScript Alias: maps/sanmartin
 
 Map Name: SanMartín
 Dimensions (Width x Height): 500x750

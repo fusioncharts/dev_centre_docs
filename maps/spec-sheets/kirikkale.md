@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kirikkale
+## JavaScript Alias: maps/kirikkale
 
 Map Name: Kirikkale
 Dimensions (Width x Height): 421x391

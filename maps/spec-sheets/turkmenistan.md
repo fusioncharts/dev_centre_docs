@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/turkmenistan
+## JavaScript Alias: maps/turkmenistan
 
 Map Name: Turkmenistan
 Dimensions (Width x Height): 320x230

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/minnesotacongressional
+## JavaScript Alias: maps/minnesotacongressional
 
 Map Name: Minnesotacongressional
 Dimensions (Width x Height): 630x650

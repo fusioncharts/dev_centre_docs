@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/salta
+## JavaScript Alias: maps/salta
 
 Map Name: Salta
 Dimensions (Width x Height): 652x501

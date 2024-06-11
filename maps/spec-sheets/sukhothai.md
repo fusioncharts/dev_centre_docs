@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sukhothai
+## JavaScript Alias: maps/sukhothai
 
 Map Name: Sukhothai
 Dimensions (Width x Height): 545x974

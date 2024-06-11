@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kentuckyareacode
+## JavaScript Alias: maps/kentuckyareacode
 
 Map Name: Kentuckyareacode
 Dimensions (Width x Height): 459x210

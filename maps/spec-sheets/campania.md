@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/campania
+## JavaScript Alias: maps/campania
 
 Map Name: Campania
 Dimensions (Width x Height): 460x440

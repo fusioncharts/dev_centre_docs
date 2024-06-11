@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alqadarif
+## JavaScript Alias: maps/alqadarif
 
 Map Name: AlQadarif
 Dimensions (Width x Height): 1120x1240

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wisconsinareacode
+## JavaScript Alias: maps/wisconsinareacode
 
 Map Name: Wisconsinareacode
 Dimensions (Width x Height): 460x480

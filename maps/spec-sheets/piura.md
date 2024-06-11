@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/piura
+## JavaScript Alias: maps/piura
 
 Map Name: Piura
 Dimensions (Width x Height): 557x600

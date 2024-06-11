@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lyon
+## JavaScript Alias: maps/lyon
 
 Map Name: Lyon
 Dimensions (Width x Height): 320x360

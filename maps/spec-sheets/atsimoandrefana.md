@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atsimoandrefana
+## JavaScript Alias: maps/atsimoandrefana
 
 Map Name: AtsimoAndrefana
 Dimensions (Width x Height): 600x460

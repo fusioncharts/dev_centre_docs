@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nongbualamphu
+## JavaScript Alias: maps/nongbualamphu
 
 Map Name: NongBuaLamPhu
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanmatenga
+## JavaScript Alias: maps/sanmatenga
 
 Map Name: Sanmatenga
 Dimensions (Width x Height): 600x460

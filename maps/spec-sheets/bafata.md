@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bafata
+## JavaScript Alias: maps/bafata
 
 Map Name: Bafata
 Dimensions (Width x Height): 680x420

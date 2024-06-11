@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/indiana
+## JavaScript Alias: maps/indiana
 
 Map Name: Indiana
 Dimensions (Width x Height): 564x890

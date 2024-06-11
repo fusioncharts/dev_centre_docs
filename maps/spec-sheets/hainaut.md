@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hainaut
+## JavaScript Alias: maps/hainaut
 
 Map Name: Hainaut
 Dimensions (Width x Height): 481x353

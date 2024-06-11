@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/huanuco
+## JavaScript Alias: maps/huanuco
 
 Map Name: Huanuco
 Dimensions (Width x Height): 852x664

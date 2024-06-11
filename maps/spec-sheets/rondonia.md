@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rondonia
+## JavaScript Alias: maps/rondonia
 
 Map Name: Rondonia
 Dimensions (Width x Height): 1202x1000

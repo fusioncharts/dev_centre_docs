@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/xinjiang
+## JavaScript Alias: maps/xinjiang
 
 Map Name: Xinjiang
 Dimensions (Width x Height): 558x445

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dolnoslaskie
+## JavaScript Alias: maps/dolnoslaskie
 
 Map Name: Dolnoslaskie
 Dimensions (Width x Height): 512x482

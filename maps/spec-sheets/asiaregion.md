@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/asiaregion
+## JavaScript Alias: maps/asiaregion
 
 Map Name: Asiaregion
 Dimensions (Width x Height): 741x582

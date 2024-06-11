@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kuntaur
+## JavaScript Alias: maps/kuntaur
 
 Map Name: Kuntaur
 Dimensions (Width x Height): 600x460

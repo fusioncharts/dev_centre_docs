@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cambodia
+## JavaScript Alias: maps/cambodia
 
 Map Name: Cambodia
 Dimensions (Width x Height): 440x590

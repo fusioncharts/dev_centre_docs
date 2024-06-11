@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cesar
+## JavaScript Alias: maps/cesar
 
 Map Name: Cesar
 Dimensions (Width x Height): 510x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kyustendil
+## JavaScript Alias: maps/kyustendil
 
 Map Name: Kyustendil
 Dimensions (Width x Height): 688x486

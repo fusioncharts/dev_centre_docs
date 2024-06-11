@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/israel
+## JavaScript Alias: maps/israel
 
 Map Name: Israel
 Dimensions (Width x Height): 173x485

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bobonaro
+## JavaScript Alias: maps/bobonaro
 
 Map Name: Bobonaro
 Dimensions (Width x Height): 480x330

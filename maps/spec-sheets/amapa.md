@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/amapa
+## JavaScript Alias: maps/amapa
 
 Map Name: Amapa
 Dimensions (Width x Height): 1120x1240

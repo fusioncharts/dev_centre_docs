@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kochi
+## JavaScript Alias: maps/kochi
 
 Map Name: Kochi
 Dimensions (Width x Height): 540x450

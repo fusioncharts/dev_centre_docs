@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralasia
+## JavaScript Alias: maps/centralasia
 
 Map Name: Centralasia
 Dimensions (Width x Height): 686x427

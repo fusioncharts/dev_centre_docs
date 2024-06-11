@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/middleatlanticdma
+## JavaScript Alias: maps/middleatlanticdma
 
 Map Name: Middleatlanticdma
 Dimensions (Width x Height): 600x541

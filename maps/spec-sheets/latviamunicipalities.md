@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/latviamunicipalities
+## JavaScript Alias: maps/latviamunicipalities
 
 Map Name: Latvia Municipalities Map
 Dimensions (Width x Height): 440x590

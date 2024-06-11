@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ceara
+## JavaScript Alias: maps/ceara
 
 Map Name: Ceara
 Dimensions (Width x Height): 1050x1273

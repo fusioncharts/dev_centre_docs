@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanliurfa
+## JavaScript Alias: maps/sanliurfa
 
 Map Name: Sanliurfa
 Dimensions (Width x Height): 610x570

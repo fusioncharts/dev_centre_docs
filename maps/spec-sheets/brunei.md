@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/brunei
+## JavaScript Alias: maps/brunei
 
 Map Name: Brunei
 Dimensions (Width x Height): 520x440

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/meta
+## JavaScript Alias: maps/meta
 
 Map Name: Meta
 Dimensions (Width x Height): 610x570

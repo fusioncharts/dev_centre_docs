@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernmalawiregion
+## JavaScript Alias: maps/northernmalawiregion
 
 Map Name: Northern Malawi Region
 Dimensions (Width x Height): 270x610

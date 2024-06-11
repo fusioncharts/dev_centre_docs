@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/frenchguiana
+## JavaScript Alias: maps/frenchguiana
 
 Map Name: French Guiana
 Dimensions (Width x Height): 610x570

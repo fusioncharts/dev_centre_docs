@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sardinia
+## JavaScript Alias: maps/sardinia
 
 Map Name: Sardinia
 Dimensions (Width x Height): 280x500

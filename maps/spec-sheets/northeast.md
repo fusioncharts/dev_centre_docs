@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northeast
+## JavaScript Alias: maps/northeast
 
 Map Name: North East
 Dimensions (Width x Height): 610x570

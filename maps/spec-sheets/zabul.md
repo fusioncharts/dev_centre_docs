@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zabul
+## JavaScript Alias: maps/zabul
 
 Map Name: Zabul
 Dimensions (Width x Height): 610x570

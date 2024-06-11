@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aydin
+## JavaScript Alias: maps/aydin
 
 Map Name: Aydin
 Dimensions (Width x Height): 610x570

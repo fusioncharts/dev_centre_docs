@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sarangani
+## JavaScript Alias: maps/sarangani
 
 Map Name: Sarangani
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mendoza
+## JavaScript Alias: maps/mendoza
 
 Map Name: Mendoza
 Dimensions (Width x Height): 421x699

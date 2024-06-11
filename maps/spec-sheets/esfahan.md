@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/esfahan
+## JavaScript Alias: maps/esfahan
 
 Map Name: Esfahan
 Dimensions (Width x Height): 420x390

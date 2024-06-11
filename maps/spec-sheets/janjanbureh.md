@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/janjanbureh
+## JavaScript Alias: maps/janjanbureh
 
 Map Name: Janjanbureh
 Dimensions (Width x Height): 600x460

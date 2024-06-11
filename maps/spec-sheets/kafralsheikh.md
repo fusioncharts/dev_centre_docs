@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kafralsheikh
+## JavaScript Alias: maps/kafralsheikh
 
 Map Name: Kafralsheikh
 Dimensions (Width x Height): 838x535

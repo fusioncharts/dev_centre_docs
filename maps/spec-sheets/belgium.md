@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/belgium
+## JavaScript Alias: maps/belgium
 
 Map Name: Belgium
 Dimensions (Width x Height): 390x320

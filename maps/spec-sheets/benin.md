@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/benin
+## JavaScript Alias: maps/benin
 
 Map Name: Benin
 Dimensions (Width x Height): 600x460

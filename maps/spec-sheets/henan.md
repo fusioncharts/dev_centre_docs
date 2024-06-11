@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/henan
+## JavaScript Alias: maps/henan
 
 Map Name: Henan
 Dimensions (Width x Height): 525x508

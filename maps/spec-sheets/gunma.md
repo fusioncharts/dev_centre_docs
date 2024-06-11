@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gunma
+## JavaScript Alias: maps/gunma
 
 Map Name: Gunma
 Dimensions (Width x Height): 530x570

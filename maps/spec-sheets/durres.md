@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/durres
+## JavaScript Alias: maps/durres
 
 Map Name: Durres
 Dimensions (Width x Height): 572x517

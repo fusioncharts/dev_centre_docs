@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fiji
+## JavaScript Alias: maps/fiji
 
 Map Name: Fiji
 Dimensions (Width x Height): 601x592

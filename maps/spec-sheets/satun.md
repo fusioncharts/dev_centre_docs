@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/satun
+## JavaScript Alias: maps/satun
 
 Map Name: Satun
 Dimensions (Width x Height): 545x974

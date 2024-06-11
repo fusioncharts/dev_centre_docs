@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southatlanticdma
+## JavaScript Alias: maps/southatlanticdma
 
 Map Name: Southatlanticdma
 Dimensions (Width x Height): 470x600

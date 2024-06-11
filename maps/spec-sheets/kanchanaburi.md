@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kanchanaburi
+## JavaScript Alias: maps/kanchanaburi
 
 Map Name: Kanchanaburi
 Dimensions (Width x Height): 545x974

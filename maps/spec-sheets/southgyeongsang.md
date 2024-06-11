@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southgyeongsang
+## JavaScript Alias: maps/southgyeongsang
 
 Map Name: Southgyeongsang
 Dimensions (Width x Height): 246x180

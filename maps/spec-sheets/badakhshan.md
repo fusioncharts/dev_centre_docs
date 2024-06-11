@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/badakhshan
+## JavaScript Alias: maps/badakhshan
 
 Map Name: Badakhshan
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernghana
+## JavaScript Alias: maps/northernghana
 
 Map Name: Northern Ghana
 Dimensions (Width x Height): 261x371

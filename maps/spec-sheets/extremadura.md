@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/extremadura
+## JavaScript Alias: maps/extremadura
 
 Map Name: Extremadura
 Dimensions (Width x Height): 610x570

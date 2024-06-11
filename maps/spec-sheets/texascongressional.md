@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/texascongressional
+## JavaScript Alias: maps/texascongressional
 
 Map Name: Texascongressional
 Dimensions (Width x Height): 970x900

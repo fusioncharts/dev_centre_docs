@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pomorskie
+## JavaScript Alias: maps/pomorskie
 
 Map Name: Pomorskie
 Dimensions (Width x Height): 632x503

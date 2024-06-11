@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rapti
+## JavaScript Alias: maps/rapti
 
 Map Name: Rapti
 Dimensions (Width x Height): 421x391

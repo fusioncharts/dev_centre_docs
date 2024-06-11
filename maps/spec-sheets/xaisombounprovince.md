@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/xaisombounprovince
+## JavaScript Alias: maps/xaisombounprovince
 
 Map Name: Xaisomboun Province
 Dimensions (Width x Height): 440x590

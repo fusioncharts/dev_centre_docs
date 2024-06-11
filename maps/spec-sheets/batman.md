@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/batman
+## JavaScript Alias: maps/batman
 
 Map Name: Batman
 Dimensions (Width x Height): 610x570

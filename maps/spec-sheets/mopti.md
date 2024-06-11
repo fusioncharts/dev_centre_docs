@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mopti
+## JavaScript Alias: maps/mopti
 
 Map Name: Mopti
 Dimensions (Width x Height): 470x470

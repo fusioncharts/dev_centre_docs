@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kumgangsan
+## JavaScript Alias: maps/kumgangsan
 
 Map Name: Kumgangsan
 Dimensions (Width x Height): 232x285

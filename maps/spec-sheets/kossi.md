@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kossi
+## JavaScript Alias: maps/kossi
 
 Map Name: Kossi
 Dimensions (Width x Height): 600x460

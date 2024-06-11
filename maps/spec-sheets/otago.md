@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/otago
+## JavaScript Alias: maps/otago
 
 Map Name: Otago
 Dimensions (Width x Height): 483x600

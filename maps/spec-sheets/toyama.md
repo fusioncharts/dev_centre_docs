@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/toyama
+## JavaScript Alias: maps/toyama
 
 Map Name: Toyama
 Dimensions (Width x Height): 430x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/virginia
+## JavaScript Alias: maps/virginia
 
 Map Name: Virginia
 Dimensions (Width x Height): 883x482

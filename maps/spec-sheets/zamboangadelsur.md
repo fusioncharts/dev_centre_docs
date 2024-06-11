@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zamboangadelsur
+## JavaScript Alias: maps/zamboangadelsur
 
 Map Name: Zamboanga del Sur
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southdakotacongressional
+## JavaScript Alias: maps/southdakotacongressional
 
 Map Name: Southdakotacongressional
 Dimensions (Width x Height): 390x250

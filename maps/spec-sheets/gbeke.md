@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gbeke
+## JavaScript Alias: maps/gbeke
 
 Map Name: Gbeke
 Dimensions (Width x Height): 600x460

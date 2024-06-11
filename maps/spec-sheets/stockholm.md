@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/stockholm
+## JavaScript Alias: maps/stockholm
 
 Map Name: Stockholm
 Dimensions (Width x Height): 550x580

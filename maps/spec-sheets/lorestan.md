@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lorestan
+## JavaScript Alias: maps/lorestan
 
 Map Name: Lorestan
 Dimensions (Width x Height): 610x570

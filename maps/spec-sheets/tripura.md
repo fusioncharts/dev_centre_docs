@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tripura
+## JavaScript Alias: maps/tripura
 
 Map Name: Tripura
 Dimensions (Width x Height): 300x430

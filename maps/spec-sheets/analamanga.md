@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/analamanga
+## JavaScript Alias: maps/analamanga
 
 Map Name: Analamanga
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/luangprabang
+## JavaScript Alias: maps/luangprabang
 
 Map Name: Luang Prabang
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vasterbotten
+## JavaScript Alias: maps/vasterbotten
 
 Map Name: Vasterbotten
 Dimensions (Width x Height): 500x430

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westkurdufan
+## JavaScript Alias: maps/westkurdufan
 
 Map Name: West Kurdufan
 Dimensions (Width x Height): 563x500

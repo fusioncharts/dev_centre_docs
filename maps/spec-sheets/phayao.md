@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phayao
+## JavaScript Alias: maps/phayao
 
 Map Name: Phayao
 Dimensions (Width x Height): 545x974

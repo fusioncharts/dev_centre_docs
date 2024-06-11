@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northamericawcaribbean
+## JavaScript Alias: maps/northamericawcaribbean
 
 Map Name: North America with Carribean
 Dimensions (Width x Height): 650x650

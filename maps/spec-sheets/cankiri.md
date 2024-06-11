@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cankiri
+## JavaScript Alias: maps/cankiri
 
 Map Name: Cankiri
 Dimensions (Width x Height): 610x570

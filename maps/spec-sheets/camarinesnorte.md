@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/camarinesnorte
+## JavaScript Alias: maps/camarinesnorte
 
 Map Name: Camarines Norte
 Dimensions (Width x Height): 610x570

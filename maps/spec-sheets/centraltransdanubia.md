@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centraltransdanubia
+## JavaScript Alias: maps/centraltransdanubia
 
 Map Name: Centraltransdanubia
 Dimensions (Width x Height): 600x552

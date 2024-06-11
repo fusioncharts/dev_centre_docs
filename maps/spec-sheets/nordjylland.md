@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nordjylland
+## JavaScript Alias: maps/nordjylland
 
 Map Name: Nordjylland
 Dimensions (Width x Height): 757x530

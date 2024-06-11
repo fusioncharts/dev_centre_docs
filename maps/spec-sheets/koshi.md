@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/koshi
+## JavaScript Alias: maps/koshi
 
 Map Name: Koshi
 Dimensions (Width x Height): 421x391

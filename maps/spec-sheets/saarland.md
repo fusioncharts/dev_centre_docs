@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saarland
+## JavaScript Alias: maps/saarland
 
 Map Name: Saarland
 Dimensions (Width x Height): 340x270

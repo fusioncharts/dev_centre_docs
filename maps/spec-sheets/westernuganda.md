@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernuganda
+## JavaScript Alias: maps/westernuganda
 
 Map Name: Western Uganda
 Dimensions (Width x Height): 600x625

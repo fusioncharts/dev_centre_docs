@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northlebanon
+## JavaScript Alias: maps/northlebanon
 
 Map Name: North Map
 Dimensions (Width x Height): 421x391

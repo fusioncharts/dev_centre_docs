@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/louisianacongressional
+## JavaScript Alias: maps/louisianacongressional
 
 Map Name: Louisianacongressional
 Dimensions (Width x Height): 690x630

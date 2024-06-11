@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kostanay
+## JavaScript Alias: maps/kostanay
 
 Map Name: Kostanay
 Dimensions (Width x Height): 421x391

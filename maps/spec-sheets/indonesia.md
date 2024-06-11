@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/indonesia
+## JavaScript Alias: maps/indonesia
 
 Map Name: Indonesia
 Dimensions (Width x Height): 790x290

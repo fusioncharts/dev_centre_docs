@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kujawskopomorskie
+## JavaScript Alias: maps/kujawskopomorskie
 
 Map Name: Kujawskopomorskie
 Dimensions (Width x Height): 639x592

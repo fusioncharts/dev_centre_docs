@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northland
+## JavaScript Alias: maps/northland
 
 Map Name: Northland
 Dimensions (Width x Height): 483x600

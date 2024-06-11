@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oceania
+## JavaScript Alias: maps/oceania
 
 Map Name: Oceania
 Dimensions (Width x Height): 646x512

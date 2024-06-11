@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centreest
+## JavaScript Alias: maps/centreest
 
 Map Name: Centre-Est
 Dimensions (Width x Height): 600x460

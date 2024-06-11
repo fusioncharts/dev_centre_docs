@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/daejeon
+## JavaScript Alias: maps/daejeon
 
 Map Name: Daejeon
 Dimensions (Width x Height): 610x570

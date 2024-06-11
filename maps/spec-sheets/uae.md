@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uae
+## JavaScript Alias: maps/uae
 
 Map Name: Uae
 Dimensions (Width x Height): 570x470

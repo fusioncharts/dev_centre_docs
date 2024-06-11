@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nyanza
+## JavaScript Alias: maps/nyanza
 
 Map Name: Nyanza
 Dimensions (Width x Height): 440x590

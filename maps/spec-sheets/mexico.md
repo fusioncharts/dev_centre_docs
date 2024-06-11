@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mexico
+## JavaScript Alias: maps/mexico
 
 Map Name: Mexico
 Dimensions (Width x Height): 405x235

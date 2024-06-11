@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/luxembourg
+## JavaScript Alias: maps/luxembourg
 
 Map Name: Luxembourg
 Dimensions (Width x Height): 540x770

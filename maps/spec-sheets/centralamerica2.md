@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralamerica2
+## JavaScript Alias: maps/centralamerica2
 
 Map Name: Centralamerica2
 Dimensions (Width x Height): 901x781

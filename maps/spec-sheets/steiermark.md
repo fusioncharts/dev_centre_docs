@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/steiermark
+## JavaScript Alias: maps/steiermark
 
 Map Name: Steiermark
 Dimensions (Width x Height): 950x630

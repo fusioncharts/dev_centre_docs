@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/quinara
+## JavaScript Alias: maps/quinara
 
 Map Name: Quinara
 Dimensions (Width x Height): 680x420

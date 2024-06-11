@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/apulia
+## JavaScript Alias: maps/apulia
 
 Map Name: Apulia
 Dimensions (Width x Height): 570x460

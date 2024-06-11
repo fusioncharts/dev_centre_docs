@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/canaryislands
+## JavaScript Alias: maps/canaryislands
 
 Map Name: Canary Islands
 Dimensions (Width x Height): 610x570

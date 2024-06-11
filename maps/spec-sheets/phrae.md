@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phrae
+## JavaScript Alias: maps/phrae
 
 Map Name: Phrae
 Dimensions (Width x Height): 545x974

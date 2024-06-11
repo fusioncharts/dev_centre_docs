@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/croatia
+## JavaScript Alias: maps/croatia
 
 Map Name: Croatia
 Dimensions (Width x Height): 510x510

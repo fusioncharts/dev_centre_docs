@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newyork
+## JavaScript Alias: maps/newyork
 
 Map Name: Newyork
 Dimensions (Width x Height): 745x580

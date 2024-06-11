@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/changhuacounty
+## JavaScript Alias: maps/changhuacounty
 
 Map Name: Changhua County
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marahoue
+## JavaScript Alias: maps/marahoue
 
 Map Name: Marahoue
 Dimensions (Width x Height): 600x460

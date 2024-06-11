@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/russia
+## JavaScript Alias: maps/russia
 
 Map Name: Russia
 Dimensions (Width x Height): 925x534

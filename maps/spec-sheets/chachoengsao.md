@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chachoengsao
+## JavaScript Alias: maps/chachoengsao
 
 Map Name: Chachoengsao
 Dimensions (Width x Height): 545x974

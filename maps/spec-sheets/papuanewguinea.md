@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/papuanewguinea
+## JavaScript Alias: maps/papuanewguinea
 
 Map Name: Papua New Guinea
 Dimensions (Width x Height): 800x560

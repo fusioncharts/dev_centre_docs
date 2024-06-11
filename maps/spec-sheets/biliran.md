@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/biliran
+## JavaScript Alias: maps/biliran
 
 Map Name: Biliran
 Dimensions (Width x Height): 610x570

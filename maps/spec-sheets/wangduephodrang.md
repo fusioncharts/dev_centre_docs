@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wangduephodrang
+## JavaScript Alias: maps/wangduephodrang
 
 Map Name: Wangdue Phodrang
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/portugal
+## JavaScript Alias: maps/portugal
 
 Map Name: Portugal
 Dimensions (Width x Height): 250x510

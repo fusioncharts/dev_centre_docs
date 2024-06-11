@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kyzylorda
+## JavaScript Alias: maps/kyzylorda
 
 Map Name: Kyzylorda
 Dimensions (Width x Height): 421x391

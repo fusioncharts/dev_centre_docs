@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/honduras
+## JavaScript Alias: maps/honduras
 
 Map Name: Honduras
 Dimensions (Width x Height): 410x256

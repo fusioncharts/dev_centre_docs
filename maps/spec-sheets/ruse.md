@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ruse
+## JavaScript Alias: maps/ruse
 
 Map Name: Ruse
 Dimensions (Width x Height): 595x575

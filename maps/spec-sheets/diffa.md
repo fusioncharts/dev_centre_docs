@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/diffa
+## JavaScript Alias: maps/diffa
 
 Map Name: Diffa
 Dimensions (Width x Height): 560x450

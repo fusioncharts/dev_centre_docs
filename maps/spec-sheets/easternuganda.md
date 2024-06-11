@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternuganda
+## JavaScript Alias: maps/easternuganda
 
 Map Name: Eastern Uganda
 Dimensions (Width x Height): 600x625

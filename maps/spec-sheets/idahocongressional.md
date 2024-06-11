@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/idahocongressional
+## JavaScript Alias: maps/idahocongressional
 
 Map Name: Idahocongressional
 Dimensions (Width x Height): 380x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kirklareli
+## JavaScript Alias: maps/kirklareli
 
 Map Name: Kirklareli
 Dimensions (Width x Height): 421x391

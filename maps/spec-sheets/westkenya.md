@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westkenya
+## JavaScript Alias: maps/westkenya
 
 Map Name: West Kenya
 Dimensions (Width x Height): 440x590

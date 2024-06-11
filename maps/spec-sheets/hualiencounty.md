@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hualiencounty
+## JavaScript Alias: maps/hualiencounty
 
 Map Name: Hualien County
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maineareacode
+## JavaScript Alias: maps/maineareacode
 
 Map Name: Maineareacode
 Dimensions (Width x Height): 315x480

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lame
+## JavaScript Alias: maps/lame
 
 Map Name: La Me
 Dimensions (Width x Height): 600x460

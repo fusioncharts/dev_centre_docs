@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/princeedwardisland
+## JavaScript Alias: maps/princeedwardisland
 
 Map Name: Princeedwardisland
 Dimensions (Width x Height): 460x310

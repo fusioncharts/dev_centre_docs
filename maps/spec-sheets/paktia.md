@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/paktia
+## JavaScript Alias: maps/paktia
 
 Map Name: Paktia
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/assam
+## JavaScript Alias: maps/assam
 
 Map Name: Assam
 Dimensions (Width x Height): 450x340

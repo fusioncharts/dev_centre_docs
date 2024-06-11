@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vidin
+## JavaScript Alias: maps/vidin
 
 Map Name: Vidin
 Dimensions (Width x Height): 400x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arequipa
+## JavaScript Alias: maps/arequipa
 
 Map Name: Arequipa
 Dimensions (Width x Height): 791x512

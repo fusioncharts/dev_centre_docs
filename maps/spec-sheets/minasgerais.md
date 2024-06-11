@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/minasgerais
+## JavaScript Alias: maps/minasgerais
 
 Map Name: Minasgerais
 Dimensions (Width x Height): 1400x1150

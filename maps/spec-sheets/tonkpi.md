@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tonkpi
+## JavaScript Alias: maps/tonkpi
 
 Map Name: Tonkpi
 Dimensions (Width x Height): 600x460

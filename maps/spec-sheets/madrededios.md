@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/madrededios
+## JavaScript Alias: maps/madrededios
 
 Map Name: MadreDeDios
 Dimensions (Width x Height): 600x566

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/antananarivo
+## JavaScript Alias: maps/antananarivo
 
 Map Name: Antananarivo
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sicily
+## JavaScript Alias: maps/sicily
 
 Map Name: Sicily
 Dimensions (Width x Height): 710x550

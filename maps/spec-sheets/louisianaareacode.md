@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/louisianaareacode
+## JavaScript Alias: maps/louisianaareacode
 
 Map Name: Louisianaareacode
 Dimensions (Width x Height): 429x400

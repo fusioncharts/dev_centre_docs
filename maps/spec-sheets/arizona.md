@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arizona
+## JavaScript Alias: maps/arizona
 
 Map Name: Arizona
 Dimensions (Width x Height): 576x681

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vratsa
+## JavaScript Alias: maps/vratsa
 
 Map Name: Vratsa
 Dimensions (Width x Height): 567x594

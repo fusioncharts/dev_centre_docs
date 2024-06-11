@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usvirginisland
+## JavaScript Alias: maps/usvirginisland
 
 Map Name: Usvirginisland
 Dimensions (Width x Height): 330x300

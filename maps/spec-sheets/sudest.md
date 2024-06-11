@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sudest
+## JavaScript Alias: maps/sudest
 
 Map Name: Sudest
 Dimensions (Width x Height): 307x292

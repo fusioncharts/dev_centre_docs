@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mongolia
+## JavaScript Alias: maps/mongolia
 
 Map Name: Mongolia
 Dimensions (Width x Height): 820x420

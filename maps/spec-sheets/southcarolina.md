@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southcarolina
+## JavaScript Alias: maps/southcarolina
 
 Map Name: Southcarolina
 Dimensions (Width x Height): 751x585

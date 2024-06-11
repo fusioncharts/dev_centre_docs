@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/osh
+## JavaScript Alias: maps/osh
 
 Map Name: Osh Map
 Dimensions (Width x Height): 440x590

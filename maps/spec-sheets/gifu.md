@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gifu
+## JavaScript Alias: maps/gifu
 
 Map Name: Gifu
 Dimensions (Width x Height): 420x500

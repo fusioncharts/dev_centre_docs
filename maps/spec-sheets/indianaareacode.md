@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/indianaareacode
+## JavaScript Alias: maps/indianaareacode
 
 Map Name: Indianaareacode
 Dimensions (Width x Height): 310x480

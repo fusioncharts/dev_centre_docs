@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/colima
+## JavaScript Alias: maps/colima
 
 Map Name: Colima
 Dimensions (Width x Height): 740x490

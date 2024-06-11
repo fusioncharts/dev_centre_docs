@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oruro
+## JavaScript Alias: maps/oruro
 
 Map Name: Oruro
 Dimensions (Width x Height): 300x340

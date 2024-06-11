@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cajamarca
+## JavaScript Alias: maps/cajamarca
 
 Map Name: Cajamarca
 Dimensions (Width x Height): 365x665

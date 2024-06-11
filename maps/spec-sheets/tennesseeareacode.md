@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tennesseeareacode
+## JavaScript Alias: maps/tennesseeareacode
 
 Map Name: Tennesseeareacode
 Dimensions (Width x Height): 580x140

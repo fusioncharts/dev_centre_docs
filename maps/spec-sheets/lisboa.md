@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lisboa
+## JavaScript Alias: maps/lisboa
 
 Map Name: Lisboa
 Dimensions (Width x Height): 300x340

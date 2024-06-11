@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/albania
+## JavaScript Alias: maps/albania
 
 Map Name: Albania
 Dimensions (Width x Height): 190x400

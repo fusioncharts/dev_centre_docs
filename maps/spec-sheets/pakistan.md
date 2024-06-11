@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pakistan
+## JavaScript Alias: maps/pakistan
 
 Map Name: Pakistan
 Dimensions (Width x Height): 220x210

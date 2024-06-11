@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dornogovi
+## JavaScript Alias: maps/dornogovi
 
 Map Name: Dornogovi
 Dimensions (Width x Height): 610x570

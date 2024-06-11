@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/naryn
+## JavaScript Alias: maps/naryn
 
 Map Name: Naryn Map
 Dimensions (Width x Height): 440x590

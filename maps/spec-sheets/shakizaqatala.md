@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shakizaqatala
+## JavaScript Alias: maps/shakizaqatala
 
 Map Name: Shakizaqatala
 Dimensions (Width x Height): 310x460

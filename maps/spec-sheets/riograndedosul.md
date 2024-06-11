@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/riograndedosul
+## JavaScript Alias: maps/riograndedosul
 
 Map Name: Riograndedosul
 Dimensions (Width x Height): 1250x1200

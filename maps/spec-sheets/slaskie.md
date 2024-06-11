@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/slaskie
+## JavaScript Alias: maps/slaskie
 
 Map Name: Slaskie
 Dimensions (Width x Height): 449x607

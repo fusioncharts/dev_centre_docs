@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shanghai
+## JavaScript Alias: maps/shanghai
 
 Map Name: Shanghai
 Dimensions (Width x Height): 505x645

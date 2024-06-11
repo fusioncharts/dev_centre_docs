@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gjirokaster
+## JavaScript Alias: maps/gjirokaster
 
 Map Name: Gjirokaster
 Dimensions (Width x Height): 576x600

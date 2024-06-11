@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/china2
+## JavaScript Alias: maps/china2
 
 Map Name: China2
 Dimensions (Width x Height): 880x720

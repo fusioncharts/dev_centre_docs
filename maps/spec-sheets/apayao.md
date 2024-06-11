@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/apayao
+## JavaScript Alias: maps/apayao
 
 Map Name: Apayao
 Dimensions (Width x Height): 610x570

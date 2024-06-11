@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hambol
+## JavaScript Alias: maps/hambol
 
 Map Name: Hambol
 Dimensions (Width x Height): 600x460

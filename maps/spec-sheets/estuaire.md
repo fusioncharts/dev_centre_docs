@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/estuaire
+## JavaScript Alias: maps/estuaire
 
 Map Name: Estuaire
 Dimensions (Width x Height): 310x340

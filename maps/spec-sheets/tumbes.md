@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tumbes
+## JavaScript Alias: maps/tumbes
 
 Map Name: Tumbes
 Dimensions (Width x Height): 600x558

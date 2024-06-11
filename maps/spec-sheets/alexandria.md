@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alexandria
+## JavaScript Alias: maps/alexandria
 
 Map Name: Alexandria
 Dimensions (Width x Height): 606x790

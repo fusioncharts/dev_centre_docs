@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kuwait
+## JavaScript Alias: maps/kuwait
 
 Map Name: Kuwait
 Dimensions (Width x Height): 520x500

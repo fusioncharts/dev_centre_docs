@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/venezuela
+## JavaScript Alias: maps/venezuela
 
 Map Name: Venezuela
 Dimensions (Width x Height): 550x495

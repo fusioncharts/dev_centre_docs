@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ordu
+## JavaScript Alias: maps/ordu
 
 Map Name: Ordu
 Dimensions (Width x Height): 610x570

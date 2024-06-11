@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/botswana
+## JavaScript Alias: maps/botswana
 
 Map Name: Botswana
 Dimensions (Width x Height): 590x570

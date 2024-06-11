@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kolda
+## JavaScript Alias: maps/kolda
 
 Map Name: Kolda
 Dimensions (Width x Height): 600x460

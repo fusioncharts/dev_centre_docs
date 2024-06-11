@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/massachusetts
+## JavaScript Alias: maps/massachusetts
 
 Map Name: Massachusetts
 Dimensions (Width x Height): 760x480

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/busan
+## JavaScript Alias: maps/busan
 
 Map Name: Busan
 Dimensions (Width x Height): 447x342

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/apurimac
+## JavaScript Alias: maps/apurimac
 
 Map Name: Apurimac
 Dimensions (Width x Height): 522x503

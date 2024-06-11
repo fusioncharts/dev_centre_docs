@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wyoming
+## JavaScript Alias: maps/wyoming
 
 Map Name: Wyoming
 Dimensions (Width x Height): 761x601

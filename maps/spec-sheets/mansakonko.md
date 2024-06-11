@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mansakonko
+## JavaScript Alias: maps/mansakonko
 
 Map Name: Mansakonko
 Dimensions (Width x Height): 600x460

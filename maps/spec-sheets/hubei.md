@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hubei
+## JavaScript Alias: maps/hubei
 
 Map Name: Hubei
 Dimensions (Width x Height): 710x450

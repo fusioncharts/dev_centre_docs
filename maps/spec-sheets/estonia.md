@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/estonia
+## JavaScript Alias: maps/estonia
 
 Map Name: Estonia
 Dimensions (Width x Height): 590x390

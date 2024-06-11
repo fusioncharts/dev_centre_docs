@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zinder
+## JavaScript Alias: maps/zinder
 
 Map Name: Zinder
 Dimensions (Width x Height): 560x450

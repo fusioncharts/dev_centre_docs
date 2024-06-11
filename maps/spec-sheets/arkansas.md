@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arkansas
+## JavaScript Alias: maps/arkansas
 
 Map Name: Arkansas
 Dimensions (Width x Height): 701x611

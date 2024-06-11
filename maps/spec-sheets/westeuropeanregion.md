@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westeuropeanregion
+## JavaScript Alias: maps/westeuropeanregion
 
 Map Name: Westeuropeanregion
 Dimensions (Width x Height): 130x150

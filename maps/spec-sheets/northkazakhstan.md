@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northkazakhstan
+## JavaScript Alias: maps/northkazakhstan
 
 Map Name: North Kazakhstan
 Dimensions (Width x Height): 421x391

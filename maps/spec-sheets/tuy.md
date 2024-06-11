@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tuy
+## JavaScript Alias: maps/tuy
 
 Map Name: Tuy
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khentii
+## JavaScript Alias: maps/khentii
 
 Map Name: Khentii
 Dimensions (Width x Height): 610x570

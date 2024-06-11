@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/schleswigholstein
+## JavaScript Alias: maps/schleswigholstein
 
 Map Name: Schleswigholstein
 Dimensions (Width x Height): 430x410

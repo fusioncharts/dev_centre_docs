@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/haiti
+## JavaScript Alias: maps/haiti
 
 Map Name: Haiti
 Dimensions (Width x Height): 350x280

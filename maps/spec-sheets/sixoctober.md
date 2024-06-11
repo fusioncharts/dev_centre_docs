@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sixoctober
+## JavaScript Alias: maps/sixoctober
 
 Map Name: Sixoctober
 Dimensions (Width x Height): 699x471

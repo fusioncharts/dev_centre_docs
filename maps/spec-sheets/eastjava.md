@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/eastjava
+## JavaScript Alias: maps/eastjava
 
 Map Name: East Java
 Dimensions (Width x Height): 270x410

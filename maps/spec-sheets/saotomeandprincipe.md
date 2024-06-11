@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saotomeandprincipe
+## JavaScript Alias: maps/saotomeandprincipe
 
 Map Name: Saotomeandprincipe
 Dimensions (Width x Height): 260x370

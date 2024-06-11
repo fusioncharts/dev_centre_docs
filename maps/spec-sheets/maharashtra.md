@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maharashtra
+## JavaScript Alias: maps/maharashtra
 
 Map Name: Maharashtra
 Dimensions (Width x Height): 450x350

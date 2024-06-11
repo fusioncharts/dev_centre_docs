@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernmindanao
+## JavaScript Alias: maps/northernmindanao
 
 Map Name: Northern Mindanao
 Dimensions (Width x Height): 610x570

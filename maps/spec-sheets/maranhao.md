@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maranhao
+## JavaScript Alias: maps/maranhao
 
 Map Name: Maranhao
 Dimensions (Width x Height): 740x980

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ohioareacode
+## JavaScript Alias: maps/ohioareacode
 
 Map Name: Ohioareacode
 Dimensions (Width x Height): 440x480

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tashkentcity
+## JavaScript Alias: maps/tashkentcity
 
 Map Name: Tashkent City
 Dimensions (Width x Height): 480x330

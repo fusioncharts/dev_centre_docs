@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sikasso
+## JavaScript Alias: maps/sikasso
 
 Map Name: Sikasso
 Dimensions (Width x Height): 470x470

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lampang
+## JavaScript Alias: maps/lampang
 
 Map Name: Lampang
 Dimensions (Width x Height): 545x974

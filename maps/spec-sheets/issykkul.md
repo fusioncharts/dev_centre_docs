@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/issykkul
+## JavaScript Alias: maps/issykkul
 
 Map Name: IssykKul Map
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/berlin
+## JavaScript Alias: maps/berlin
 
 Map Name: Berlin
 Dimensions (Width x Height): 810x610

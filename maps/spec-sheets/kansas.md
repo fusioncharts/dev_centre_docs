@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kansas
+## JavaScript Alias: maps/kansas
 
 Map Name: Kansas
 Dimensions (Width x Height): 735x380

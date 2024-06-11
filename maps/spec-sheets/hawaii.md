@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hawaii
+## JavaScript Alias: maps/hawaii
 
 Map Name: Hawaii
 Dimensions (Width x Height): 761x481

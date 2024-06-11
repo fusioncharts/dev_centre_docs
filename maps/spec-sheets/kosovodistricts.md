@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kosovodistricts
+## JavaScript Alias: maps/kosovodistricts
 
 Map Name: Kosovodistricts
 Dimensions (Width x Height): 550x600

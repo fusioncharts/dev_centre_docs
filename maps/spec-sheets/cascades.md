@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cascades
+## JavaScript Alias: maps/cascades
 
 Map Name: Cascades
 Dimensions (Width x Height): 600x460

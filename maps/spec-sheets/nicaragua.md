@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nicaragua
+## JavaScript Alias: maps/nicaragua
 
 Map Name: Nicaragua
 Dimensions (Width x Height): 407x370

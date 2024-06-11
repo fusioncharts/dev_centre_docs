@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/czechrepublicdistrict
+## JavaScript Alias: maps/czechrepublicdistrict
 
 Map Name: CzechRepublicDistrict Map
 Dimensions (Width x Height): 440x590

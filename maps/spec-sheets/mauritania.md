@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mauritania
+## JavaScript Alias: maps/mauritania
 
 Map Name: Mauritania
 Dimensions (Width x Height): 320x350

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atsimoatsinanana
+## JavaScript Alias: maps/atsimoatsinanana
 
 Map Name: AtsimoAtsinanana
 Dimensions (Width x Height): 600x460

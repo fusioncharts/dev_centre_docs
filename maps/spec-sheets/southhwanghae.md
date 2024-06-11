@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southhwanghae
+## JavaScript Alias: maps/southhwanghae
 
 Map Name: South Hwanghae
 Dimensions (Width x Height): 610x570

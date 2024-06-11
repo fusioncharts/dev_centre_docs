@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/okinawa
+## JavaScript Alias: maps/okinawa
 
 Map Name: Okinawa
 Dimensions (Width x Height): 540x350

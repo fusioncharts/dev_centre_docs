@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alibori
+## JavaScript Alias: maps/alibori
 
 Map Name: Alibori
 Dimensions (Width x Height): 600x460

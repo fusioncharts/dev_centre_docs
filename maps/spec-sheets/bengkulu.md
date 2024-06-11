@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bengkulu
+## JavaScript Alias: maps/bengkulu
 
 Map Name: Bengkulu
 Dimensions (Width x Height): 270x410

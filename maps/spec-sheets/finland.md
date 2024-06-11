@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/finland
+## JavaScript Alias: maps/finland
 
 Map Name: Finland
 Dimensions (Width x Height): 270x470

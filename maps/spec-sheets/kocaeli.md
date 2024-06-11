@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kocaeli
+## JavaScript Alias: maps/kocaeli
 
 Map Name: Kocaeli
 Dimensions (Width x Height): 610x570

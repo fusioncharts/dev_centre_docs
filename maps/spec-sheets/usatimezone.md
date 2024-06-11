@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usatimezone
+## JavaScript Alias: maps/usatimezone
 
 Map Name: Usatimezone
 Dimensions (Width x Height): 900x600

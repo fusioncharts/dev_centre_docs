@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rogaland
+## JavaScript Alias: maps/rogaland
 
 Map Name: Rogaland
 Dimensions (Width x Height): 458x600

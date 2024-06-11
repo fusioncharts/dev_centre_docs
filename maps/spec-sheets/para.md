@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/para
+## JavaScript Alias: maps/para
 
 Map Name: Para
 Dimensions (Width x Height): 1210x1170

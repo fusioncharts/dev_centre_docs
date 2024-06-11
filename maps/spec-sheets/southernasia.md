@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southernasia
+## JavaScript Alias: maps/southernasia
 
 Map Name: Southernasia
 Dimensions (Width x Height): 640x439

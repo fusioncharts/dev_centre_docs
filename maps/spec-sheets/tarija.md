@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tarija
+## JavaScript Alias: maps/tarija
 
 Map Name: Tarija
 Dimensions (Width x Height): 300x340

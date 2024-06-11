@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rionegro
+## JavaScript Alias: maps/rionegro
 
 Map Name: RíoNegro
 Dimensions (Width x Height): 839x410

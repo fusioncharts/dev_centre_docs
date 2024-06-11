@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/caymanislands
+## JavaScript Alias: maps/caymanislands
 
 Map Name: Caymanislands
 Dimensions (Width x Height): 910x440

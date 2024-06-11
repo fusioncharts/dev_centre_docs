@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/niamey
+## JavaScript Alias: maps/niamey
 
 Map Name: Niamey
 Dimensions (Width x Height): 560x450

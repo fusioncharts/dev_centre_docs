@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gharbiya
+## JavaScript Alias: maps/gharbiya
 
 Map Name: Gharbiya
 Dimensions (Width x Height): 574x595

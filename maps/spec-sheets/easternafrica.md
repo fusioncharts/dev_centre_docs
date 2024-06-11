@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternafrica
+## JavaScript Alias: maps/easternafrica
 
 Map Name: Easternafrica
 Dimensions (Width x Height): 520x570

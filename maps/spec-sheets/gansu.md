@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gansu
+## JavaScript Alias: maps/gansu
 
 Map Name: Gansu
 Dimensions (Width x Height): 692x503

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/beja
+## JavaScript Alias: maps/beja
 
 Map Name: Beja
 Dimensions (Width x Height): 400x280

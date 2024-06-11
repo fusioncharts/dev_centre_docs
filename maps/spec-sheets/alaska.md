@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alaska
+## JavaScript Alias: maps/alaska
 
 Map Name: Alaska
 Dimensions (Width x Height): 656x501

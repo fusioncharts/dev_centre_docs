@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chuy
+## JavaScript Alias: maps/chuy
 
 Map Name: Chuy Map
 Dimensions (Width x Height): 440x590

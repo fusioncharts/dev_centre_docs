@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chiayicity
+## JavaScript Alias: maps/chiayicity
 
 Map Name: Chiayi City
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bartin
+## JavaScript Alias: maps/bartin
 
 Map Name: Bartin
 Dimensions (Width x Height): 610x570

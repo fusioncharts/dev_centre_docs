@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vest
+## JavaScript Alias: maps/vest
 
 Map Name: Vest
 Dimensions (Width x Height): 305x280

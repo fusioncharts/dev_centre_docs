@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newmexicocongressional
+## JavaScript Alias: maps/newmexicocongressional
 
 Map Name: Newmexicocongressional
 Dimensions (Width x Height): 527x588

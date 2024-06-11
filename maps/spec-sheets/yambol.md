@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yambol
+## JavaScript Alias: maps/yambol
 
 Map Name: Yambol
 Dimensions (Width x Height): 590x600

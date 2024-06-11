@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ermera
+## JavaScript Alias: maps/ermera
 
 Map Name: Ermera
 Dimensions (Width x Height): 480x330

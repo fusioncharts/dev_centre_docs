@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bagoue
+## JavaScript Alias: maps/bagoue
 
 Map Name: Bagoue
 Dimensions (Width x Height): 600x460

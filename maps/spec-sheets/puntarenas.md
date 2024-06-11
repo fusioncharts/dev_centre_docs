@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/puntarenas
+## JavaScript Alias: maps/puntarenas
 
 Map Name: Puntarenas
 Dimensions (Width x Height): 793x710

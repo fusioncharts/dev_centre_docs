@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/heilongjiang
+## JavaScript Alias: maps/heilongjiang
 
 Map Name: Heilongjiang
 Dimensions (Width x Height): 445x503

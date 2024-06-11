@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northwestcameroon
+## JavaScript Alias: maps/northwestcameroon
 
 Map Name: North West Cameroon
 Dimensions (Width x Height): 440x590

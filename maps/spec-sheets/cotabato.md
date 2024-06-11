@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cotabato
+## JavaScript Alias: maps/cotabato
 
 Map Name: Cotabato
 Dimensions (Width x Height): 610x570

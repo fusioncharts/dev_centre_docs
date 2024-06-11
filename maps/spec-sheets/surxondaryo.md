@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/surxondaryo
+## JavaScript Alias: maps/surxondaryo
 
 Map Name: Surxondaryo
 Dimensions (Width x Height): 421x391

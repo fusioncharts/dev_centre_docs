@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trabzon
+## JavaScript Alias: maps/trabzon
 
 Map Name: Trabzon
 Dimensions (Width x Height): 610x570

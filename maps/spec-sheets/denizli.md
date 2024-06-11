@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/denizli
+## JavaScript Alias: maps/denizli
 
 Map Name: Denizli
 Dimensions (Width x Height): 610x570

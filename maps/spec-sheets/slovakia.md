@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/slovakia
+## JavaScript Alias: maps/slovakia
 
 Map Name: Slovakia
 Dimensions (Width x Height): 610x310

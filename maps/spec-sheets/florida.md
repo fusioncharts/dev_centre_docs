@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/florida
+## JavaScript Alias: maps/florida
 
 Map Name: Florida
 Dimensions (Width x Height): 631x601

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hatay
+## JavaScript Alias: maps/hatay
 
 Map Name: Hatay
 Dimensions (Width x Height): 610x570

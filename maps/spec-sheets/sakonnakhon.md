@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sakonnakhon
+## JavaScript Alias: maps/sakonnakhon
 
 Map Name: SakonNakhon
 Dimensions (Width x Height): 545x974

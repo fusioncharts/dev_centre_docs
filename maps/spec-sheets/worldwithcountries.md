@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/worldwithcountries
+## JavaScript Alias: maps/worldwithcountries
 
 Map Name: World with Countries
 Dimensions (Width x Height): 440x590

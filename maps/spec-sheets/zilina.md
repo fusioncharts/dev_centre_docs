@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zilina
+## JavaScript Alias: maps/zilina
 
 Map Name: Zilina
 Dimensions (Width x Height): 600x476

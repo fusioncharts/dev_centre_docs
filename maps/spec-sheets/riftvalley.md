@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/riftvalley
+## JavaScript Alias: maps/riftvalley
 
 Map Name: Rift Valley
 Dimensions (Width x Height): 440x590

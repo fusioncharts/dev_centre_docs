@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/isabela
+## JavaScript Alias: maps/isabela
 
 Map Name: Isabela
 Dimensions (Width x Height): 610x570

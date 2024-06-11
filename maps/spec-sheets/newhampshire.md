@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newhampshire
+## JavaScript Alias: maps/newhampshire
 
 Map Name: Newhampshire
 Dimensions (Width x Height): 481x901

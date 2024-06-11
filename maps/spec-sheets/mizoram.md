@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mizoram
+## JavaScript Alias: maps/mizoram
 
 Map Name: Mizoram
 Dimensions (Width x Height): 200x420

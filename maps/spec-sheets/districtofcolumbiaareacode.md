@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/districtofcolumbiaareacode
+## JavaScript Alias: maps/districtofcolumbiaareacode
 
 Map Name: Districtofcolumbiaareacode
 Dimensions (Width x Height): 300x350

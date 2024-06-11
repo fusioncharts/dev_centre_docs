@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralamericawithcaribbean
+## JavaScript Alias: maps/centralamericawithcaribbean
 
 Map Name: Centralamericawithcaribbean
 Dimensions (Width x Height): 650x550

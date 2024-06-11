@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/puducherry
+## JavaScript Alias: maps/puducherry
 
 Map Name: Puducherry
 Dimensions (Width x Height): 420x420

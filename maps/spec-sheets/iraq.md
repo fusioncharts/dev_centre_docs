@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iraq
+## JavaScript Alias: maps/iraq
 
 Map Name: Iraq
 Dimensions (Width x Height): 310x320

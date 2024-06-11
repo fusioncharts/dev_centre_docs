@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tierradelfuego
+## JavaScript Alias: maps/tierradelfuego
 
 Map Name: TierraDelFuego
 Dimensions (Width x Height): 726x361

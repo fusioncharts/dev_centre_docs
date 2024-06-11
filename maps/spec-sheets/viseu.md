@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/viseu
+## JavaScript Alias: maps/viseu
 
 Map Name: Viseu
 Dimensions (Width x Height): 420x450

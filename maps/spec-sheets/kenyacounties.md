@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kenyacounties
+## JavaScript Alias: maps/kenyacounties
 
 Map Name: Kenya Counties
 Dimensions (Width x Height): 440x590

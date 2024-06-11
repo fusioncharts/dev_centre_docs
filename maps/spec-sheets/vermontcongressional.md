@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vermontcongressional
+## JavaScript Alias: maps/vermontcongressional
 
 Map Name: Vermontcongressional
 Dimensions (Width x Height): 330x550

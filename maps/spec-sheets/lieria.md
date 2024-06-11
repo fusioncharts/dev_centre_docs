@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lieria
+## JavaScript Alias: maps/lieria
 
 Map Name: Lieria
 Dimensions (Width x Height): 350x300

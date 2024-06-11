@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atakora
+## JavaScript Alias: maps/atakora
 
 Map Name: Atakora
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/denmark
+## JavaScript Alias: maps/denmark
 
 Map Name: Denmark
 Dimensions (Width x Height): 683x536

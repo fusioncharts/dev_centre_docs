@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westkazakhstan
+## JavaScript Alias: maps/westkazakhstan
 
 Map Name: West Kazakhstan
 Dimensions (Width x Height): 421x391

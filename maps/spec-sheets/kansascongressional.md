@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kansascongressional
+## JavaScript Alias: maps/kansascongressional
 
 Map Name: Kansascongressional
 Dimensions (Width x Height): 670x360

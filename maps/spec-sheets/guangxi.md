@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guangxi
+## JavaScript Alias: maps/guangxi
 
 Map Name: Guangxi
 Dimensions (Width x Height): 705x514

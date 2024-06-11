@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zoundweogo
+## JavaScript Alias: maps/zoundweogo
 
 Map Name: Zoundweogo
 Dimensions (Width x Height): 600x460

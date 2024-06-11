@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vietnamregion
+## JavaScript Alias: maps/vietnamregion
 
 Map Name: Vietnam Region
 Dimensions (Width x Height): 610x570

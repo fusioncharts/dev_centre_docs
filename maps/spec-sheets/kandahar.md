@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kandahar
+## JavaScript Alias: maps/kandahar
 
 Map Name: Kandahar
 Dimensions (Width x Height): 610x570

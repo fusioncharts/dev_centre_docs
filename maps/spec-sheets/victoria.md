@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/victoria
+## JavaScript Alias: maps/victoria
 
 Map Name: Victoria
 Dimensions (Width x Height): 715x500

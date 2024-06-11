@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/buriram
+## JavaScript Alias: maps/buriram
 
 Map Name: Buriram
 Dimensions (Width x Height): 545x974

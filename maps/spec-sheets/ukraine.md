@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ukraine
+## JavaScript Alias: maps/ukraine
 
 Map Name: Ukraine Map
 Dimensions (Width x Height): 440x590

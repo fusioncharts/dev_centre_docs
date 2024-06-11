@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oklahomacongressional
+## JavaScript Alias: maps/oklahomacongressional
 
 Map Name: Oklahomacongressional
 Dimensions (Width x Height): 880x460

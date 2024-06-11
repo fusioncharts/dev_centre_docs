@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shimane
+## JavaScript Alias: maps/shimane
 
 Map Name: Shimane
 Dimensions (Width x Height): 540x500

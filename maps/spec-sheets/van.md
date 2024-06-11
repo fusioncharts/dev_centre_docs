@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/van
+## JavaScript Alias: maps/van
 
 Map Name: Van
 Dimensions (Width x Height): 610x570

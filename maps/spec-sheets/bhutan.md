@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bhutan
+## JavaScript Alias: maps/bhutan
 
 Map Name: Bhutan
 Dimensions (Width x Height): 780x440

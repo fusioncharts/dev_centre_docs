@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/autonomousregion
+## JavaScript Alias: maps/autonomousregion
 
 Map Name: Autonomous Region
 Dimensions (Width x Height): 610x570

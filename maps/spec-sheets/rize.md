@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rize
+## JavaScript Alias: maps/rize
 
 Map Name: Rize
 Dimensions (Width x Height): 610x570

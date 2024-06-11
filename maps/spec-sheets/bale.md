@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bale
+## JavaScript Alias: maps/bale
 
 Map Name: Bale
 Dimensions (Width x Height): 600x460

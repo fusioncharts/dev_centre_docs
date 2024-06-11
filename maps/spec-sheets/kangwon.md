@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Kangwon
+## JavaScript Alias: maps/Kangwon
 
 Map Name: Kangwon
 Dimensions (Width x Height): 610x570

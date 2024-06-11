@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lakshadweep
+## JavaScript Alias: maps/lakshadweep
 
 Map Name: Lakshadweep
 Dimensions (Width x Height): 270x500

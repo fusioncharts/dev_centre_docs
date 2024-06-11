@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/burkinafaso
+## JavaScript Alias: maps/burkinafaso
 
 Map Name: Burkina Faso
 Dimensions (Width x Height): 600x460

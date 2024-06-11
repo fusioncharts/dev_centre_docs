@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/graubunden
+## JavaScript Alias: maps/graubunden
 
 Map Name: Graubunden
 Dimensions (Width x Height): 770x540

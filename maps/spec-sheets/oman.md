@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oman
+## JavaScript Alias: maps/oman
 
 Map Name: Oman
 Dimensions (Width x Height): 450x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautekotto
+## JavaScript Alias: maps/hautekotto
 
 Map Name: HauteKotto
 Dimensions (Width x Height): 600x460

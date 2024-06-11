@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yukonterritory
+## JavaScript Alias: maps/yukonterritory
 
 Map Name: Yukonterritory
 Dimensions (Width x Height): 506x740

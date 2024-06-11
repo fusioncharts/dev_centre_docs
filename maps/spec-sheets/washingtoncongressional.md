@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/washingtoncongressional
+## JavaScript Alias: maps/washingtoncongressional
 
 Map Name: Washingtoncongressional
 Dimensions (Width x Height): 750x490

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/brandenburg
+## JavaScript Alias: maps/brandenburg
 
 Map Name: Brandenburg
 Dimensions (Width x Height): 411x381

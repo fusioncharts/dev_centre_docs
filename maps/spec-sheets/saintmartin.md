@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintmartin
+## JavaScript Alias: maps/saintmartin
 
 Map Name: Saintmartin
 Dimensions (Width x Height): 490x430

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/malatya
+## JavaScript Alias: maps/malatya
 
 Map Name: Malatya
 Dimensions (Width x Height): 610x570

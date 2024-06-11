@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nepalprovincesone
+## JavaScript Alias: maps/nepalprovincesone
 
 Map Name: Nepalprovincesone
 Dimensions (Width x Height): 750x400

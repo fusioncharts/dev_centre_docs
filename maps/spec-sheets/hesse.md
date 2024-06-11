@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hesse
+## JavaScript Alias: maps/hesse
 
 Map Name: Hesse
 Dimensions (Width x Height): 430x570

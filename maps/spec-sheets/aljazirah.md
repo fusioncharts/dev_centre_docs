@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aljazirah
+## JavaScript Alias: maps/aljazirah
 
 Map Name: AlJazirah
 Dimensions (Width x Height): 1120x1240

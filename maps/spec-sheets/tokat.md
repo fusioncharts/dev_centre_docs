@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tokat
+## JavaScript Alias: maps/tokat
 
 Map Name: Tokat
 Dimensions (Width x Height): 610x570

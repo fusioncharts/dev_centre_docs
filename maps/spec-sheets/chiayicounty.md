@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chiayicounty
+## JavaScript Alias: maps/chiayicounty
 
 Map Name: Chiayi County
 Dimensions (Width x Height): 610x570

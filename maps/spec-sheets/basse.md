@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/basse
+## JavaScript Alias: maps/basse
 
 Map Name: Basse
 Dimensions (Width x Height): 600x460

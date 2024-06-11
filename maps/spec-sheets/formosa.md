@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/formosa
+## JavaScript Alias: maps/formosa
 
 Map Name: Formosa
 Dimensions (Width x Height): 600x555

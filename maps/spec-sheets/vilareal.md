@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vilareal
+## JavaScript Alias: maps/vilareal
 
 Map Name: Vilareal
 Dimensions (Width x Height): 400x450

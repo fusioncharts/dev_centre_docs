@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uganda
+## JavaScript Alias: maps/uganda
 
 Map Name: Uganda
 Dimensions (Width x Height): 600x625

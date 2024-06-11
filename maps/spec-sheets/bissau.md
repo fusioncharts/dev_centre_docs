@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bissau
+## JavaScript Alias: maps/bissau
 
 Map Name: Bissau
 Dimensions (Width x Height): 680x420

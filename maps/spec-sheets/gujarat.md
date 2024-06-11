@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gujarat
+## JavaScript Alias: maps/gujarat
 
 Map Name: Gujarat
 Dimensions (Width x Height): 460x380

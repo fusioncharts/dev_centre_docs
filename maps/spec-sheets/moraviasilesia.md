@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/moravia-silesia
+## JavaScript Alias: maps/moravia-silesia
 
 Map Name: Moraviasilesia
 Dimensions (Width x Height): 770x650

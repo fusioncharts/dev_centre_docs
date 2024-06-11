@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/egypt
+## JavaScript Alias: maps/egypt
 
 Map Name: Egypt
 Dimensions (Width x Height): 795x795

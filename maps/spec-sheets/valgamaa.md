@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/valgamaa
+## JavaScript Alias: maps/valgamaa
 
 Map Name: Valgamaa
 Dimensions (Width x Height): 562x600

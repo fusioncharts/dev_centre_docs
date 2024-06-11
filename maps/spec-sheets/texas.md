@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/texas
+## JavaScript Alias: maps/texas
 
 Map Name: Texas
 Dimensions (Width x Height): 970x910

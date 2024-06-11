@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bangkok
+## JavaScript Alias: maps/bangkok
 
 Map Name: Bangkok
 Dimensions (Width x Height): 545x974

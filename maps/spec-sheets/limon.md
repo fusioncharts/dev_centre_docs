@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/limon
+## JavaScript Alias: maps/limon
 
 Map Name: Limon
 Dimensions (Width x Height): 444x586

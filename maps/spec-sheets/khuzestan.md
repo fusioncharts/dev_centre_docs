@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khuzestan
+## JavaScript Alias: maps/khuzestan
 
 Map Name: Khuzestan
 Dimensions (Width x Height): 610x570

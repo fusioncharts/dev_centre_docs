@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guanacaste
+## JavaScript Alias: maps/guanacaste
 
 Map Name: Guanacaste
 Dimensions (Width x Height): 788x968

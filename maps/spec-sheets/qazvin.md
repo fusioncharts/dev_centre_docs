@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/qazvin
+## JavaScript Alias: maps/qazvin
 
 Map Name: Qazvin
 Dimensions (Width x Height): 610x570

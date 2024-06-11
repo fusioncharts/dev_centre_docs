@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/talas
+## JavaScript Alias: maps/talas
 
 Map Name: Talas Map
 Dimensions (Width x Height): 440x590

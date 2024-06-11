@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westnorthcentraldma
+## JavaScript Alias: maps/westnorthcentraldma
 
 Map Name: Westnorthcentraldma
 Dimensions (Width x Height): 574x600

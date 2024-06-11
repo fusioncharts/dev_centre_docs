@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/heredia
+## JavaScript Alias: maps/heredia
 
 Map Name: Heredia
 Dimensions (Width x Height): 365x614

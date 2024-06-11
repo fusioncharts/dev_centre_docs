@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bulgaria
+## JavaScript Alias: maps/bulgaria
 
 Map Name: Bulgaria
 Dimensions (Width x Height): 565x401

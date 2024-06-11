@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/barisal
+## JavaScript Alias: maps/barisal
 
 Map Name: Barisal
 Dimensions (Width x Height): 431x600

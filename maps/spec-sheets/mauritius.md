@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mauritius
+## JavaScript Alias: maps/mauritius
 
 Map Name: Mauritius
 Dimensions (Width x Height): 321x351

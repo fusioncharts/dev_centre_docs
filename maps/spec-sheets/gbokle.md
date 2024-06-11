@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gbokle
+## JavaScript Alias: maps/gbokle
 
 Map Name: Gbokle
 Dimensions (Width x Height): 600x460

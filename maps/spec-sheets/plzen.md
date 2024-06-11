@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/plzen
+## JavaScript Alias: maps/plzen
 
 Map Name: Plzen
 Dimensions (Width x Height): 370x430

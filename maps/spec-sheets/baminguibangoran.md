@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/baminguibangoran
+## JavaScript Alias: maps/baminguibangoran
 
 Map Name: Bamingui Bangoran
 Dimensions (Width x Height): 600x460

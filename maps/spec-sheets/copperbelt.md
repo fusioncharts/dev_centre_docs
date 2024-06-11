@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/copperbelt
+## JavaScript Alias: maps/copperbelt
 
 Map Name: Copperbelt
 Dimensions (Width x Height): 610x570

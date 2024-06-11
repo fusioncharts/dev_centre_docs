@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/segou
+## JavaScript Alias: maps/segou
 
 Map Name: Ségou
 Dimensions (Width x Height): 470x470

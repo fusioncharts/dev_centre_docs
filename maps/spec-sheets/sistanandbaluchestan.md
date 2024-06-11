@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sistanandbaluchestan
+## JavaScript Alias: maps/sistanandbaluchestan
 
 Map Name: Sistan and Baluchestan
 Dimensions (Width x Height): 610x570

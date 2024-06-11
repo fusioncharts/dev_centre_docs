@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/quebec
+## JavaScript Alias: maps/quebec
 
 Map Name: Quebec
 Dimensions (Width x Height): 350x425

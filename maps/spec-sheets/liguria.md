@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liguria
+## JavaScript Alias: maps/liguria
 
 Map Name: Liguria
 Dimensions (Width x Height): 610x310

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arauca
+## JavaScript Alias: maps/arauca
 
 Map Name: Arauca
 Dimensions (Width x Height): 510x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mbomou
+## JavaScript Alias: maps/mbomou
 
 Map Name: Mbomou
 Dimensions (Width x Height): 600x460

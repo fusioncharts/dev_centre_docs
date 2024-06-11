@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rajasthan
+## JavaScript Alias: maps/rajasthan
 
 Map Name: Rajasthan
 Dimensions (Width x Height): 421x391

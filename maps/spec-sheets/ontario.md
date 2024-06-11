@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ontario
+## JavaScript Alias: maps/ontario
 
 Map Name: Ontario
 Dimensions (Width x Height): 410x400

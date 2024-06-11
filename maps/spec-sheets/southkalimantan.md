@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southkalimantan
+## JavaScript Alias: maps/southkalimantan
 
 Map Name: South Kalimantan
 Dimensions (Width x Height): 270x410

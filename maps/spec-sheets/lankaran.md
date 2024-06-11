@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lankaran
+## JavaScript Alias: maps/lankaran
 
 Map Name: Lankaran
 Dimensions (Width x Height): 310x460

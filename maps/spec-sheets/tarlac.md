@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tarlac
+## JavaScript Alias: maps/tarlac
 
 Map Name: Tarlac
 Dimensions (Width x Height): 610x570
