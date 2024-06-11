@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alabamaareacode
+## JavaScript Alias: maps/alabamaareacode
 
 Map Name: Alabamaareacode
 Dimensions (Width x Height): 400x600
