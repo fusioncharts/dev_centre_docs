@@ -1,12 +1,12 @@
 ---
 title: Changelog | FusionCharts
 description: This section discusses the change in features and attributes with the latest released version.
-heading: Version 3.23.x
+heading: Version 4.0.x
 ---
 
-<h2 class="sub-heading">Version 3.23.0</h2>
+<h2 class="sub-heading">Version 4.0.0</h2>
 
-<p class="release-date">26th March, 2024</p>
+<p class="release-date">21st June, 2024</p>
 
 
 <h4>New Features</h4>
