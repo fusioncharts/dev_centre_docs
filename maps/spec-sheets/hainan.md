@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hainan
+## JavaScript Alias: maps/hainan
 
 Map Name: Hainan
 Dimensions (Width x Height): 632x548

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manawatuwanganui
+## JavaScript Alias: maps/manawatuwanganui
 
 Map Name: Manawatuwanganui
 Dimensions (Width x Height): 386x600

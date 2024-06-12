@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/romania
+## JavaScript Alias: maps/romania
 
 Map Name: Romania
 Dimensions (Width x Height): 470x350

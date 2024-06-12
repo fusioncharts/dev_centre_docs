@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/campeche
+## JavaScript Alias: maps/campeche
 
 Map Name: Campeche
 Dimensions (Width x Height): 410x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bostonareacode
+## JavaScript Alias: maps/bostonareacode
 
 Map Name: Bostonareacode
 Dimensions (Width x Height): 388x300

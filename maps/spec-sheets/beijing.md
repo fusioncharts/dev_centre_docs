@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/beijing
+## JavaScript Alias: maps/beijing
 
 Map Name: Beijing
 Dimensions (Width x Height): 515x515

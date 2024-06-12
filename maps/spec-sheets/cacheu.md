@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cacheu
+## JavaScript Alias: maps/cacheu
 
 Map Name: Cacheu
 Dimensions (Width x Height): 680x420

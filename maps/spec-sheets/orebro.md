@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/orebro
+## JavaScript Alias: maps/orebro
 
 Map Name: Orebro
 Dimensions (Width x Height): 280x480

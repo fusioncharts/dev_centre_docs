@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sissili
+## JavaScript Alias: maps/sissili
 
 Map Name: Sissili
 Dimensions (Width x Height): 600x460

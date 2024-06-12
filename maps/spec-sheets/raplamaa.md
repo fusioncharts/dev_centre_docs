@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/raplamaa
+## JavaScript Alias: maps/raplamaa
 
 Map Name: Raplamaa
 Dimensions (Width x Height): 600x527

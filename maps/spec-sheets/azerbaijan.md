@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/azerbaijan
+## JavaScript Alias: maps/azerbaijan
 
 Map Name: Azerbaijan
 Dimensions (Width x Height): 590x470

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/daykundi
+## JavaScript Alias: maps/daykundi
 
 Map Name: Daykundi
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanmarino
+## JavaScript Alias: maps/sanmarino
 
 Map Name: Sanmarino
 Dimensions (Width x Height): 320x400

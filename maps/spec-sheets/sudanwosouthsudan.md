@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sudanwosouthsudan
+## JavaScript Alias: maps/sudanwosouthsudan
 
 Map Name: Sudanwosouthsudan
 Dimensions (Width x Height): 563x500

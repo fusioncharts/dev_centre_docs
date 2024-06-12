@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/passore
+## JavaScript Alias: maps/passore
 
 Map Name: Passore
 Dimensions (Width x Height): 600x460

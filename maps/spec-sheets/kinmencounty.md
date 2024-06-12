@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kinmencounty
+## JavaScript Alias: maps/kinmencounty
 
 Map Name: Kinmen County
 Dimensions (Width x Height): 610x570

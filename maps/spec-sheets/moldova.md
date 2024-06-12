@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/moldova
+## JavaScript Alias: maps/moldova
 
 Map Name: Moldova
 Dimensions (Width x Height): 341x431

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/worldwithantarctica
+## JavaScript Alias: maps/worldwithantarctica
 
 Map Name: Worldwithantarctica
 Dimensions (Width x Height): 879x500

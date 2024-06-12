@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gabon
+## JavaScript Alias: maps/gabon
 
 Map Name: Gabon
 Dimensions (Width x Height): 310x340

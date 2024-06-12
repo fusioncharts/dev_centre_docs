@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lucerne
+## JavaScript Alias: maps/lucerne
 
 Map Name: Lucerne
 Dimensions (Width x Height): 510x560

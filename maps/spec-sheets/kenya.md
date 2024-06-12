@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kenya
+## JavaScript Alias: maps/kenya
 
 Map Name: Kenya
 Dimensions (Width x Height): 290x330

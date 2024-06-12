@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/magdalena
+## JavaScript Alias: maps/magdalena
 
 Map Name: Magdalena
 Dimensions (Width x Height): 610x570

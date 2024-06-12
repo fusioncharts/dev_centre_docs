@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bokeo
+## JavaScript Alias: maps/bokeo
 
 Map Name: Bokeo
 Dimensions (Width x Height): 440x590

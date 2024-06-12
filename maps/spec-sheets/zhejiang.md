@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zhejiang
+## JavaScript Alias: maps/zhejiang
 
 Map Name: Zhejiang
 Dimensions (Width x Height): 353x374

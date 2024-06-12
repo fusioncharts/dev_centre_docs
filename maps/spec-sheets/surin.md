@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/surin
+## JavaScript Alias: maps/surin
 
 Map Name: Surin
 Dimensions (Width x Height): 545x974

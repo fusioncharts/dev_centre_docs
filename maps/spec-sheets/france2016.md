@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/france2016
+## JavaScript Alias: maps/france2016
 
 Map Name: France 2016 
 Dimensions (Width x Height): 610x570

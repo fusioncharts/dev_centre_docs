@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernterritory
+## JavaScript Alias: maps/northernterritory
 
 Map Name: Northernterritory
 Dimensions (Width x Height): 361x594

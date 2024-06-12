@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southhamgyong
+## JavaScript Alias: maps/southhamgyong
 
 Map Name: South Hamgyong
 Dimensions (Width x Height): 610x570

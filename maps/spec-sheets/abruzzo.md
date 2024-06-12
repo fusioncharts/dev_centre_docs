@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/abruzzo
+## JavaScript Alias: maps/abruzzo
 
 Map Name: Abruzzo
 Dimensions (Width x Height): 460x430

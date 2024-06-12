@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jiangxi
+## JavaScript Alias: maps/jiangxi
 
 Map Name: Jiangxi
 Dimensions (Width x Height): 408x512

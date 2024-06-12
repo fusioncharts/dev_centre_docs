@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zamboangapeninsula
+## JavaScript Alias: maps/zamboangapeninsula
 
 Map Name: Zamboanga Peninsula
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/californiaareacode
+## JavaScript Alias: maps/californiaareacode
 
 Map Name: Californiaareacode
 Dimensions (Width x Height): 490x490

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vastragotaland
+## JavaScript Alias: maps/vastragotaland
 
 Map Name: Vastragotaland
 Dimensions (Width x Height): 490x570

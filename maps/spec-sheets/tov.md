@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tov
+## JavaScript Alias: maps/tov
 
 Map Name: Töv
 Dimensions (Width x Height): 610x570

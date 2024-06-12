@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southmoravia
+## JavaScript Alias: maps/southmoravia
 
 Map Name: Southmoravia
 Dimensions (Width x Height): 700x520

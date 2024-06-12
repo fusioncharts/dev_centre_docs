@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/buengkan
+## JavaScript Alias: maps/buengkan
 
 Map Name: BuengKan
 Dimensions (Width x Height): 545x974

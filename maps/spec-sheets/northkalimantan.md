@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northkalimantan
+## JavaScript Alias: maps/northkalimantan
 
 Map Name: North Kalimantan
 Dimensions (Width x Height): 270x410

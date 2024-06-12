@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newyorkareacode
+## JavaScript Alias: maps/newyorkareacode
 
 Map Name: Newyorkareacode
 Dimensions (Width x Height): 480x365

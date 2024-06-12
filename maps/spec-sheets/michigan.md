@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/michigan
+## JavaScript Alias: maps/michigan
 
 Map Name: Michigan
 Dimensions (Width x Height): 601x701

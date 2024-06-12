@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/laghman
+## JavaScript Alias: maps/laghman
 
 Map Name: Laghman
 Dimensions (Width x Height): 610x570

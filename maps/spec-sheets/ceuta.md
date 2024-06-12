@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ceuta
+## JavaScript Alias: maps/ceuta
 
 Map Name: Ceuta
 Dimensions (Width x Height): 610x570

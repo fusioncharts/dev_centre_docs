@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ghor
+## JavaScript Alias: maps/ghor
 
 Map Name: Ghor
 Dimensions (Width x Height): 610x570

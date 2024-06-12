@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/france
+## JavaScript Alias: maps/france
 
 Map Name: France
 Dimensions (Width x Height): 567x561

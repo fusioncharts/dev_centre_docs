@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usak
+## JavaScript Alias: maps/usak
 
 Map Name: Usak
 Dimensions (Width x Height): 610x570

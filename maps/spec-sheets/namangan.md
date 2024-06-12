@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/namangan
+## JavaScript Alias: maps/namangan
 
 Map Name: Namangan
 Dimensions (Width x Height): 480x330

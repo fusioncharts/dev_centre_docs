@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fianarantsoa
+## JavaScript Alias: maps/fianarantsoa
 
 Map Name: Fianarantsoa
 Dimensions (Width x Height): 600x460

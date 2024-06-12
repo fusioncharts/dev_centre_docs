@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/koulikoro
+## JavaScript Alias: maps/koulikoro
 
 Map Name: Koulikoro
 Dimensions (Width x Height): 470x470

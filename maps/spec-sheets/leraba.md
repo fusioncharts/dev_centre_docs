@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/leraba
+## JavaScript Alias: maps/leraba
 
 Map Name: Leraba
 Dimensions (Width x Height): 600x460

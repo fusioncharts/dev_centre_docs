@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nzi
+## JavaScript Alias: maps/nzi
 
 Map Name: NZi
 Dimensions (Width x Height): 600x460

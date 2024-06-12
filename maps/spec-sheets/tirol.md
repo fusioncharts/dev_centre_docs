@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tirol
+## JavaScript Alias: maps/tirol
 
 Map Name: Tirol
 Dimensions (Width x Height): 530x300

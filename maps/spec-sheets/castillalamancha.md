@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/castillalamancha
+## JavaScript Alias: maps/castillalamancha
 
 Map Name: Castilla La Mancha
 Dimensions (Width x Height): 610x570

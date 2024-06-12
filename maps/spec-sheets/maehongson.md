@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maehongson
+## JavaScript Alias: maps/maehongson
 
 Map Name: MaeHongSon
 Dimensions (Width x Height): 545x974

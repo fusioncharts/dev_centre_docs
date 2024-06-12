@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chukha
+## JavaScript Alias: maps/chukha
 
 Map Name: Chukha
 Dimensions (Width x Height): 440x590

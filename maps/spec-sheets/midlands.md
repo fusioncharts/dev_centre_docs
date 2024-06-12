@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/midlands
+## JavaScript Alias: maps/midlands
 
 Map Name: Midlands
 Dimensions (Width x Height): 801x391

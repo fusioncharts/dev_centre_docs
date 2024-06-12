@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jambyl
+## JavaScript Alias: maps/jambyl
 
 Map Name: Jambyl
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alborz
+## JavaScript Alias: maps/alborz
 
 Map Name: Alborz
 Dimensions (Width x Height): 610x570

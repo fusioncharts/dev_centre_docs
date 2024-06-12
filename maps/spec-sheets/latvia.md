@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/latvia
+## JavaScript Alias: maps/latvia
 
 Map Name: Latvia
 Dimensions (Width x Height): 545x320

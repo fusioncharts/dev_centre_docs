@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northpyongan
+## JavaScript Alias: maps/northpyongan
 
 Map Name: North Pyongan
 Dimensions (Width x Height): 610x570

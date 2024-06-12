@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wales
+## JavaScript Alias: maps/wales
 
 Map Name: Wales
 Dimensions (Width x Height): 440x530

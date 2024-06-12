@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hongkong
+## JavaScript Alias: maps/hongkong
 
 Map Name: Hongkong
 Dimensions (Width x Height): 750x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fujian
+## JavaScript Alias: maps/fujian
 
 Map Name: Fujian
 Dimensions (Width x Height): 445x500

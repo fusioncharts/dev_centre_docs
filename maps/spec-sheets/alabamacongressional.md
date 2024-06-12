@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alabamacongressional
+## JavaScript Alias: maps/alabamacongressional
 
 Map Name: Alabamacongressional
 Dimensions (Width x Height): 500x770

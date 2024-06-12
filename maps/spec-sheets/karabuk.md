@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karabuk
+## JavaScript Alias: maps/karabuk
 
 Map Name: Karabuk
 Dimensions (Width x Height): 610x570

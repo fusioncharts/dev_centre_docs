@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/misiones
+## JavaScript Alias: maps/misiones
 
 Map Name: Misiones
 Dimensions (Width x Height): 594x669

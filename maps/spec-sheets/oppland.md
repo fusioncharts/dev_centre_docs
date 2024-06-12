@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oppland
+## JavaScript Alias: maps/oppland
 
 Map Name: Oppland
 Dimensions (Width x Height): 492x600

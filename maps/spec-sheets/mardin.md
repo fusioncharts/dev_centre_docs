@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mardin
+## JavaScript Alias: maps/mardin
 
 Map Name: Mardin
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northwesternzambia
+## JavaScript Alias: maps/northwesternzambia
 
 Map Name: North Western Zambia
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rajshahi
+## JavaScript Alias: maps/rajshahi
 
 Map Name: Rajshahi
 Dimensions (Width x Height): 431x600

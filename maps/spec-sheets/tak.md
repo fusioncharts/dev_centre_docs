@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tak
+## JavaScript Alias: maps/tak
 
 Map Name: Tak
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trat
+## JavaScript Alias: maps/trat
 
 Map Name: Trat
 Dimensions (Width x Height): 545x974

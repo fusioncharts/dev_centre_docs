@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bavaria
+## JavaScript Alias: maps/bavaria
 
 Map Name: Bavaria
 Dimensions (Width x Height): 350x360

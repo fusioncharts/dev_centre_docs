@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yala
+## JavaScript Alias: maps/yala
 
 Map Name: Yala
 Dimensions (Width x Height): 545x974

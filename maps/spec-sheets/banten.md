@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bangkabelitungislands
+## JavaScript Alias: maps/bangkabelitungislands
 
 Map Name: Bangka Belitung Islands
 Dimensions (Width x Height): 270x410

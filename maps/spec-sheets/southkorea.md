@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southkorea
+## JavaScript Alias: maps/southkorea
 
 Map Name: Southkorea
 Dimensions (Width x Height): 540x560

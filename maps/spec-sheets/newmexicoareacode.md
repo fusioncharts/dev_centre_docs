@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newmexicoareacode
+## JavaScript Alias: maps/newmexicoareacode
 
 Map Name: Newmexicoareacode
 Dimensions (Width x Height): 355x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/connecticutareacode
+## JavaScript Alias: maps/connecticutareacode
 
 Map Name: Connecticutareacode
 Dimensions (Width x Height): 442x320

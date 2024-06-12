@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ilam
+## JavaScript Alias: maps/ilam
 
 Map Name: Ilam
 Dimensions (Width x Height): 610x570

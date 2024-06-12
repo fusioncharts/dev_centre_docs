@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/isparta
+## JavaScript Alias: maps/isparta
 
 Map Name: Isparta
 Dimensions (Width x Height): 610x570

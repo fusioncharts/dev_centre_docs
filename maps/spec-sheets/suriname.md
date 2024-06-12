@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/suriname
+## JavaScript Alias: maps/suriname
 
 Map Name: Suriname
 Dimensions (Width x Height): 400x420

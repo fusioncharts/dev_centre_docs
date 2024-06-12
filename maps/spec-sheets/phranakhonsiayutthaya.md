@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phranakhonsiayutthaya
+## JavaScript Alias: maps/phranakhonsiayutthaya
 
 Map Name: PhraNakhonSiAyutthaya
 Dimensions (Width x Height): 545x974

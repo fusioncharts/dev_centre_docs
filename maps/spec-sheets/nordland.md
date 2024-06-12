@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nordland
+## JavaScript Alias: maps/nordland
 
 Map Name: Nordland
 Dimensions (Width x Height): 349x600

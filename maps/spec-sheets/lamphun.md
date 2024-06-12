@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lamphun
+## JavaScript Alias: maps/lamphun
 
 Map Name: Lamphun
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cantabria
+## JavaScript Alias: maps/cantabria
 
 Map Name: Cantabria
 Dimensions (Width x Height): 610x570

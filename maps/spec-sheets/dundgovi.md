@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dundgovi
+## JavaScript Alias: maps/dundgovi
 
 Map Name: Dundgovi
 Dimensions (Width x Height): 610x570

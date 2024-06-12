@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lima
+## JavaScript Alias: maps/lima
 
 Map Name: Lima
 Dimensions (Width x Height): 550x700

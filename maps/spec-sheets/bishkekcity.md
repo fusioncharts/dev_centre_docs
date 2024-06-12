@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bishkekcity
+## JavaScript Alias: maps/bishkekcity
 
 Map Name: BishkekCity Map
 Dimensions (Width x Height): 440x590

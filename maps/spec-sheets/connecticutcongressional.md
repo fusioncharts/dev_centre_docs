@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/connecticutcongressional
+## JavaScript Alias: maps/connecticutcongressional
 
 Map Name: Connecticutcongressional
 Dimensions (Width x Height): 700x520

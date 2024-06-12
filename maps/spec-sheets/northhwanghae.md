@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northhwanghae
+## JavaScript Alias: maps/northhwanghae
 
 Map Name: North Hwanghae
 Dimensions (Width x Height): 610x570

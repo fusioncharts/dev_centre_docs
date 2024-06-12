@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/daegu
+## JavaScript Alias: maps/daegu
 
 Map Name: Daegu
 Dimensions (Width x Height): 230x226

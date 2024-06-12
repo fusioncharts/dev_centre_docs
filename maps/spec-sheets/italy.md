@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/italy
+## JavaScript Alias: maps/italy
 
 Map Name: Italy
 Dimensions (Width x Height): 480x560

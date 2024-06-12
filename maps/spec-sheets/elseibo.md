@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/elseibo
+## JavaScript Alias: maps/elseibo
 
 Map Name: ElSeibo
 Dimensions (Width x Height): 610x570

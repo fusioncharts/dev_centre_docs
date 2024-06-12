@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kirsehir
+## JavaScript Alias: maps/kirsehir
 
 Map Name: Kirsehir
 Dimensions (Width x Height): 421x391

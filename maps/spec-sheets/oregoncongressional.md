@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oregoncongressional
+## JavaScript Alias: maps/oregoncongressional
 
 Map Name: Oregoncongressional
 Dimensions (Width x Height): 700x530

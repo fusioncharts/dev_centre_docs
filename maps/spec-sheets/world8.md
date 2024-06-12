@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/world8
+## JavaScript Alias: maps/world8
 
 Map Name: World8
 Dimensions (Width x Height): 715x405

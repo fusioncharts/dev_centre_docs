@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/neuquen
+## JavaScript Alias: maps/neuquen
 
 Map Name: Neuquén
 Dimensions (Width x Height): 419x686

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hodhelgharbi
+## JavaScript Alias: maps/hodhelgharbi
 
 Map Name: Hodh El Gharbi
 Dimensions (Width x Height): 600x625

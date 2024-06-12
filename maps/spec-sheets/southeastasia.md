@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southeastasia
+## JavaScript Alias: maps/southeastasia
 
 Map Name: Southeastasia
 Dimensions (Width x Height): 534x439

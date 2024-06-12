@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hebei
+## JavaScript Alias: maps/hebei
 
 Map Name: Hebei
 Dimensions (Width x Height): 484x622

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/solomonisland
+## JavaScript Alias: maps/solomonisland
 
 Map Name: Solomonisland
 Dimensions (Width x Height): 580x276

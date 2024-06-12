@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bam
+## JavaScript Alias: maps/bam
 
 Map Name: Bam
 Dimensions (Width x Height): 600x460

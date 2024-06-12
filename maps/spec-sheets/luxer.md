@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/luxer
+## JavaScript Alias: maps/luxer
 
 Map Name: Luxer
 Dimensions (Width x Height): 569x594

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/baniswaif
+## JavaScript Alias: maps/baniswaif
 
 Map Name: Baniswaif
 Dimensions (Width x Height): 839x489

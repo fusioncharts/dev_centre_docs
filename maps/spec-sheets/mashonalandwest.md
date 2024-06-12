@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mashonalandwest
+## JavaScript Alias: maps/mashonalandwest
 
 Map Name: Mashonaland West
 Dimensions (Width x Height): 801x391

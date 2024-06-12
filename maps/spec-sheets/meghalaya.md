@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/meghalaya
+## JavaScript Alias: maps/meghalaya
 
 Map Name: Meghalaya
 Dimensions (Width x Height): 440x190

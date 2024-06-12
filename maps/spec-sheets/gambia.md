@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gambia
+## JavaScript Alias: maps/gambia
 
 Map Name: Gambia
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karnten
+## JavaScript Alias: maps/karnten
 
 Map Name: Karnten
 Dimensions (Width x Height): 390x180

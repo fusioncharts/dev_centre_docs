@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/miaolicounty
+## JavaScript Alias: maps/miaolicounty
 
 Map Name: Miaoli County
 Dimensions (Width x Height): 610x570

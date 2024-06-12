@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phitsanulok
+## JavaScript Alias: maps/phitsanulok
 
 Map Name: Phitsanulok
 Dimensions (Width x Height): 545x974

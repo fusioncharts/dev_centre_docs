@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/misamisoriental
+## JavaScript Alias: maps/misamisoriental
 
 Map Name: Misamis Oriental
 Dimensions (Width x Height): 610x570

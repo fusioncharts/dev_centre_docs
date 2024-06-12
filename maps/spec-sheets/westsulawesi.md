@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westsulawesi
+## JavaScript Alias: maps/westsulawesi
 
 Map Name: West Sulawesi
 Dimensions (Width x Height): 270x410

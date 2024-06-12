@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sarepol
+## JavaScript Alias: maps/sarepol
 
 Map Name: Sar-e-Pol
 Dimensions (Width x Height): 610x570

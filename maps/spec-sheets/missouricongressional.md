@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/missouricongressional
+## JavaScript Alias: maps/missouricongressional
 
 Map Name: Missouricongressional
 Dimensions (Width x Height): 650x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernafrica
+## JavaScript Alias: maps/northernafrica
 
 Map Name: Northernafrica
 Dimensions (Width x Height): 740x478

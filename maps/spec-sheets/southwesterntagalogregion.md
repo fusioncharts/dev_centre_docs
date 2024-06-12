@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southwesterntagalogregion
+## JavaScript Alias: maps/southwesterntagalogregion
 
 Map Name: Southwestern Tagalog Region
 Dimensions (Width x Height): 610x570

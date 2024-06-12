@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bihar
+## JavaScript Alias: maps/bihar
 
 Map Name: Bihar
 Dimensions (Width x Height): 450x330

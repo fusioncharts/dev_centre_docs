@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kalmar
+## JavaScript Alias: maps/kalmar
 
 Map Name: Kalmar
 Dimensions (Width x Height): 230x440

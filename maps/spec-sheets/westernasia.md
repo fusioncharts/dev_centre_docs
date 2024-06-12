@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernasia
+## JavaScript Alias: maps/westernasia
 
 Map Name: Westernasia
 Dimensions (Width x Height): 435x441

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/plateaucentral
+## JavaScript Alias: maps/plateaucentral
 
 Map Name: Plateau-Central
 Dimensions (Width x Height): 600x460

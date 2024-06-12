@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nayarit
+## JavaScript Alias: maps/nayarit
 
 Map Name: Nayarit
 Dimensions (Width x Height): 550x750

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralkalimantan
+## JavaScript Alias: maps/centralkalimantan
 
 Map Name: Central Kalimantan
 Dimensions (Width x Height): 270x410

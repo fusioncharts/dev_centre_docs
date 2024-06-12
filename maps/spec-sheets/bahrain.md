@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bahrain
+## JavaScript Alias: maps/bahrain
 
 Map Name: Bahrain
 Dimensions (Width x Height): 150x220

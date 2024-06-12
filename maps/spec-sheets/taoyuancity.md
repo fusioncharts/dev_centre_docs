@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/taoyuancity
+## JavaScript Alias: maps/taoyuancity
 
 Map Name: Taoyuan City
 Dimensions (Width x Height): 610x570

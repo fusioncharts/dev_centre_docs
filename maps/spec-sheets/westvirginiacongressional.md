@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westvirginiacongressional
+## JavaScript Alias: maps/westvirginiacongressional
 
 Map Name: Westvirginiacongressional
 Dimensions (Width x Height): 600x550

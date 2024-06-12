@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/prague
+## JavaScript Alias: maps/prague
 
 Map Name: Prague
 Dimensions (Width x Height): 700x550

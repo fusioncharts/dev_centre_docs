@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lovech
+## JavaScript Alias: maps/lovech
 
 Map Name: Lovech
 Dimensions (Width x Height): 596x497

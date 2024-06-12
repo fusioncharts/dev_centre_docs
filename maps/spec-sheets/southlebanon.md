@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southlebanon
+## JavaScript Alias: maps/southlebanon
 
 Map Name: South Map
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vientianecapital
+## JavaScript Alias: maps/vientianecapital
 
 Map Name: Vientiane Capital
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jiangsu
+## JavaScript Alias: maps/jiangsu
 
 Map Name: Jiangsu
 Dimensions (Width x Height): 530x505

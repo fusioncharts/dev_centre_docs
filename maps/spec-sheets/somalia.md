@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/somalia
+## JavaScript Alias: maps/somalia
 
 Map Name: Somalia
 Dimensions (Width x Height): 451x611

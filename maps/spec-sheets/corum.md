@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/corum
+## JavaScript Alias: maps/corum
 
 Map Name: Corum
 Dimensions (Width x Height): 610x570

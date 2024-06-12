@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guimaras
+## JavaScript Alias: maps/guimaras
 
 Map Name: Guimaras
 Dimensions (Width x Height): 610x570

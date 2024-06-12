@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/world
+## JavaScript Alias: maps/world
 
 Map Name: World
 Dimensions (Width x Height): 715x405

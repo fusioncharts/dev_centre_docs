@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/rangpur
+## JavaScript Alias: maps/rangpur
 
 Map Name: Rangpur
 Dimensions (Width x Height): 431x600

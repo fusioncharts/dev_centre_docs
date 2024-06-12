@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/georgiaareacode
+## JavaScript Alias: maps/georgiaareacode
 
 Map Name: Georgiaareacode
 Dimensions (Width x Height): 415x480

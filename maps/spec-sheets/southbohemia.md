@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southbohemia
+## JavaScript Alias: maps/southbohemia
 
 Map Name: Southbohemia
 Dimensions (Width x Height): 730x570

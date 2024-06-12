@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cundinamarca
+## JavaScript Alias: maps/cundinamarca
 
 Map Name: Cundinamarca
 Dimensions (Width x Height): 420x580

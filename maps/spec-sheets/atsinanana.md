@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/atsinanana
+## JavaScript Alias: maps/atsinanana
 
 Map Name: Atsinanana
 Dimensions (Width x Height): 600x460

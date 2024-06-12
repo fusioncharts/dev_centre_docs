@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/parana
+## JavaScript Alias: maps/parana
 
 Map Name: Parana
 Dimensions (Width x Height): 1330x930

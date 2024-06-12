@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lazio
+## JavaScript Alias: maps/lazio
 
 Map Name: Lazio
 Dimensions (Width x Height): 520x460

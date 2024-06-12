@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southeast
+## JavaScript Alias: maps/southeast
 
 Map Name: South East
 Dimensions (Width x Height): 610x570

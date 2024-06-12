@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nangarhar
+## JavaScript Alias: maps/nangarhar
 
 Map Name: Nangarhar
 Dimensions (Width x Height): 610x570

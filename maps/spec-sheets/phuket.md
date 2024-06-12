@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phuket
+## JavaScript Alias: maps/phuket
 
 Map Name: Phuket
 Dimensions (Width x Height): 545x974

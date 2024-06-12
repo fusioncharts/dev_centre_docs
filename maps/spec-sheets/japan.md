@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/japan
+## JavaScript Alias: maps/japan
 
 Map Name: Japan
 Dimensions (Width x Height): 541x595

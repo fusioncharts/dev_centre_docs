@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mississippiareacode
+## JavaScript Alias: maps/mississippiareacode
 
 Map Name: Mississippiareacode
 Dimensions (Width x Height): 310x490

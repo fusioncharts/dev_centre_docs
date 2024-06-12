@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bajacalifornia
+## JavaScript Alias: maps/bajacalifornia
 
 Map Name: Bajacalifornia
 Dimensions (Width x Height): 450x540

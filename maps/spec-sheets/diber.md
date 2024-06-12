@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/diber
+## JavaScript Alias: maps/diber
 
 Map Name: Diber
 Dimensions (Width x Height): 572x567

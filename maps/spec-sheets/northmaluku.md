@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northmaluku
+## JavaScript Alias: maps/northmaluku
 
 Map Name: North Maluku
 Dimensions (Width x Height): 270x410

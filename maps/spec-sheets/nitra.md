@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nitra
+## JavaScript Alias: maps/nitra
 
 Map Name: Nitra
 Dimensions (Width x Height): 572x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/banskabystrica
+## JavaScript Alias: maps/banskabystrica
 
 Map Name: Banskabystrica
 Dimensions (Width x Height): 600x402

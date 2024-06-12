@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trnava
+## JavaScript Alias: maps/trnava
 
 Map Name: Trnava
 Dimensions (Width x Height): 369x600

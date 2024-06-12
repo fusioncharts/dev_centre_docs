@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/coquimbo
+## JavaScript Alias: maps/coquimbo
 
 Map Name: Coquimbo
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hodhechchargui
+## JavaScript Alias: maps/hodhechchargui
 
 Map Name: Hodh Ech Chargui
 Dimensions (Width x Height): 600x625

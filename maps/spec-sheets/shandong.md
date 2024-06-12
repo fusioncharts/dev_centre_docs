@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shandong
+## JavaScript Alias: maps/shandong
 
 Map Name: Shandong
 Dimensions (Width x Height): 494x307

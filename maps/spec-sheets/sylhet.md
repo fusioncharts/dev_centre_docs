@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sylhet
+## JavaScript Alias: maps/sylhet
 
 Map Name: Sylhet
 Dimensions (Width x Height): 431x600

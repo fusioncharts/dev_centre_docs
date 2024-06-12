@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/geneva
+## JavaScript Alias: maps/geneva
 
 Map Name: Geneva
 Dimensions (Width x Height): 860x850

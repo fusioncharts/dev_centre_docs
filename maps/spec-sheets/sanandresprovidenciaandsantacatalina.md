@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanandresprovidenciaandsantacatalina
+## JavaScript Alias: maps/sanandresprovidenciaandsantacatalina
 
 Map Name: San Andres Providencia and Santa Catalina
 Dimensions (Width x Height): 610x570

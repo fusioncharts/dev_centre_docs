@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lapampa
+## JavaScript Alias: maps/lapampa
 
 Map Name: LaPampa
 Dimensions (Width x Height): 600x530

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jeju
+## JavaScript Alias: maps/jeju
 
 Map Name: Jeju
 Dimensions (Width x Height): 610x570

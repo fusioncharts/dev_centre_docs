@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aveiro
+## JavaScript Alias: maps/aveiro
 
 Map Name: Aveiro
 Dimensions (Width x Height): 400x600

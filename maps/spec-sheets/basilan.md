@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/basilan
+## JavaScript Alias: maps/basilan
 
 Map Name: Basilan
 Dimensions (Width x Height): 610x570

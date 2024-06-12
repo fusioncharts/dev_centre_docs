@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ningxiahui
+## JavaScript Alias: maps/ningxiahui
 
 Map Name: Ningxiahui
 Dimensions (Width x Height): 335x482

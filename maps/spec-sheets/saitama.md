@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saitama
+## JavaScript Alias: maps/saitama
 
 Map Name: Saitama
 Dimensions (Width x Height): 540x280

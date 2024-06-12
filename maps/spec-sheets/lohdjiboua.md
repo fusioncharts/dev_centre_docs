@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lohdjiboua
+## JavaScript Alias: maps/lohdjiboua
 
 Map Name: Loh Djiboua
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sweden
+## JavaScript Alias: maps/sweden
 
 Map Name: Sweden
 Dimensions (Width x Height): 270x560

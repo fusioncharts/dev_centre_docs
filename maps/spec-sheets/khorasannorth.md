@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khorasannorth
+## JavaScript Alias: maps/khorasannorth
 
 Map Name: Khorasan North
 Dimensions (Width x Height): 610x570

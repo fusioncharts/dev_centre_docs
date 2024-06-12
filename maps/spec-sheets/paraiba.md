@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/paraiba
+## JavaScript Alias: maps/paraiba
 
 Map Name: Paraiba
 Dimensions (Width x Height): 1510x860

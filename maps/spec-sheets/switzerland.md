@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/switzerland
+## JavaScript Alias: maps/switzerland
 
 Map Name: Switzerland
 Dimensions (Width x Height): 510x341

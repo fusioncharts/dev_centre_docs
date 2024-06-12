@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/udonthani
+## JavaScript Alias: maps/udonthani
 
 Map Name: UdonThani
 Dimensions (Width x Height): 545x974

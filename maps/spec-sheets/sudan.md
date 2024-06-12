@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sudan
+## JavaScript Alias: maps/sudan
 
 Map Name: Sudan
 Dimensions (Width x Height): 600x760

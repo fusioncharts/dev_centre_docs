@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vysocina
+## JavaScript Alias: maps/vysocina
 
 Map Name: Vysocina
 Dimensions (Width x Height): 640x600

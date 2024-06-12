@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pacificdma
+## JavaScript Alias: maps/pacificdma
 
 Map Name: Pacificdma
 Dimensions (Width x Height): 470x600

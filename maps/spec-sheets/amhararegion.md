@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/amhararegion
+## JavaScript Alias: maps/amhararegion
 
 Map Name: Amhara Region
 Dimensions (Width x Height): 610x570

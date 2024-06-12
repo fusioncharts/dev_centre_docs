@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khost
+## JavaScript Alias: maps/khost
 
 Map Name: Khost
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/brakna
+## JavaScript Alias: maps/brakna
 
 Map Name: Brakna
 Dimensions (Width x Height): 600x625

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gyeongsangbukdo
+## JavaScript Alias: maps/gyeongsangbukdo
 
 Map Name: Gyeongsangbukdo
 Dimensions (Width x Height): 300x225

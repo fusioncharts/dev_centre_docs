@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aargau
+## JavaScript Alias: maps/aargau
 
 Map Name: Aargau
 Dimensions (Width x Height): 610x570

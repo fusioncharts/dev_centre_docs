@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nepalzones
+## JavaScript Alias: maps/nepalzones
 
 Map Name: Nepal Zones
 Dimensions (Width x Height): 750x400

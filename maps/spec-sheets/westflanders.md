@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westflanders
+## JavaScript Alias: maps/westflanders
 
 Map Name: Westflanders
 Dimensions (Width x Height): 550x580

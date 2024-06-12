@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/specialregionofaceh
+## JavaScript Alias: maps/specialregionofaceh
 
 Map Name: Special Region of Aceh
 Dimensions (Width x Height): 270x410

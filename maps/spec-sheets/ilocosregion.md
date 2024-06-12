@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ilocosregion
+## JavaScript Alias: maps/ilocosregion
 
 Map Name: Ilocos Region
 Dimensions (Width x Height): 610x570

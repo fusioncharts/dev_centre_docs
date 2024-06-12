@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marylandcongressional
+## JavaScript Alias: maps/marylandcongressional
 
 Map Name: Marylandcongressional
 Dimensions (Width x Height): 900x490

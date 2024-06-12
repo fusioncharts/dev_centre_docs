@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kyrgyzstan
+## JavaScript Alias: maps/kyrgyzstan
 
 Map Name: Kyrgyzstan Map
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/brazil
+## JavaScript Alias: maps/brazil
 
 Map Name: Brazil
 Dimensions (Width x Height): 300x270

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newfoundlandandlabrador
+## JavaScript Alias: maps/newfoundlandandlabrador
 
 Map Name: Newfoundlandandlabrador
 Dimensions (Width x Height): 440x340

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/plovdiv
+## JavaScript Alias: maps/plovdiv
 
 Map Name: Plovdiv
 Dimensions (Width x Height): 384x590

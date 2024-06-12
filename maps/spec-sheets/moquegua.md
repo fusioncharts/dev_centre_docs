@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/moquegua
+## JavaScript Alias: maps/moquegua
 
 Map Name: Moquegua
 Dimensions (Width x Height): 567x700

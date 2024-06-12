@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/andijan
+## JavaScript Alias: maps/andijan
 
 Map Name: Andijan
 Dimensions (Width x Height): 480x330

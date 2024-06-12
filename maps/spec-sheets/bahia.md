@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bahia
+## JavaScript Alias: maps/bahia
 
 Map Name: Bahia
 Dimensions (Width x Height): 910x980

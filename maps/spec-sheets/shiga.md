@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shiga
+## JavaScript Alias: maps/shiga
 
 Map Name: Shiga
 Dimensions (Width x Height): 400x594

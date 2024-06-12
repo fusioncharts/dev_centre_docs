@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sahel
+## JavaScript Alias: maps/sahel
 
 Map Name: Sahel
 Dimensions (Width x Height): 600x460

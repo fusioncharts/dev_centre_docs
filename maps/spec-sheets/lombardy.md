@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lombardy
+## JavaScript Alias: maps/lombardy
 
 Map Name: Lombardy
 Dimensions (Width x Height): 540x510

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/beni
+## JavaScript Alias: maps/beni
 
 Map Name: Beni
 Dimensions (Width x Height): 300x340

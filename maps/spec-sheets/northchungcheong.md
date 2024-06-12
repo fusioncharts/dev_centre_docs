@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northchungcheong
+## JavaScript Alias: maps/northchungcheong
 
 Map Name: Northchungcheong
 Dimensions (Width x Height): 294x265

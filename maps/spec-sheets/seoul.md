@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/seoul
+## JavaScript Alias: maps/seoul
 
 Map Name: Seoul
 Dimensions (Width x Height): 610x570

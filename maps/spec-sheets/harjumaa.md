@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/harjumaa
+## JavaScript Alias: maps/harjumaa
 
 Map Name: Harjumaa
 Dimensions (Width x Height): 759x470

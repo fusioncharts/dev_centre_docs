@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/amazonas
+## JavaScript Alias: maps/amazonas
 
 Map Name: Amazonas
 Dimensions (Width x Height): 510x400

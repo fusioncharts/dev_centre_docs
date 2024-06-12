@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vestfold
+## JavaScript Alias: maps/vestfold
 
 Map Name: Vestfold
 Dimensions (Width x Height): 355x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karlovyvaryregion
+## JavaScript Alias: maps/karlovyvaryregion
 
 Map Name: Karlovyvaryregion
 Dimensions (Width x Height): 420x350

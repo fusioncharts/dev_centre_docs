@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/valparaiso
+## JavaScript Alias: maps/valparaiso
 
 Map Name: Val Paraiso
 Dimensions (Width x Height): 600x460

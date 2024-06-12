@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/namentenga
+## JavaScript Alias: maps/namentenga
 
 Map Name: Namentenga
 Dimensions (Width x Height): 600x460

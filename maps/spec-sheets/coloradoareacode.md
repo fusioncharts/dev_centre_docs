@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/coloradoareacode
+## JavaScript Alias: maps/coloradoareacode
 
 Map Name: Coloradoareacode
 Dimensions (Width x Height): 470x350

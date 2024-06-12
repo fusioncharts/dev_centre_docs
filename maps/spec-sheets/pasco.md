@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pasco
+## JavaScript Alias: maps/pasco
 
 Map Name: Pasco
 Dimensions (Width x Height): 600x398

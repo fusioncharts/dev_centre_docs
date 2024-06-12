@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southdarfur
+## JavaScript Alias: maps/southdarfur
 
 Map Name: SouthDarfur
 Dimensions (Width x Height): 1120x1240

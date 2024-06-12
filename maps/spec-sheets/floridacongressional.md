@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/floridacongressional
+## JavaScript Alias: maps/floridacongressional
 
 Map Name: Floridacongressional
 Dimensions (Width x Height): 1050x1030

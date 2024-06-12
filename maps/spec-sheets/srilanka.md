@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/srilanka
+## JavaScript Alias: maps/srilanka
 
 Map Name: Srilanka
 Dimensions (Width x Height): 600x1040

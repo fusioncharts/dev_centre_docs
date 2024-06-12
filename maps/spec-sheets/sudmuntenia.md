@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sudmuntenia
+## JavaScript Alias: maps/sudmuntenia
 
 Map Name: Sudmuntenia
 Dimensions (Width x Height): 314x232

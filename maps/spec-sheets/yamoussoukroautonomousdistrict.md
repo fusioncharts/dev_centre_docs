@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yamoussoukroautonomousdistrict
+## JavaScript Alias: maps/yamoussoukroautonomousdistrict
 
 Map Name: Yamoussoukro Autonomous District
 Dimensions (Width x Height): 600x460

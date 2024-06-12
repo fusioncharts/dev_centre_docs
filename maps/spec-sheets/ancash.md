@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ancash
+## JavaScript Alias: maps/ancash
 
 Map Name: Ancash
 Dimensions (Width x Height): 589x832

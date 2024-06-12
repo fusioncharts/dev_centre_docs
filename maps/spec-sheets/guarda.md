@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guarda
+## JavaScript Alias: maps/guarda
 
 Map Name: Guarda
 Dimensions (Width x Height): 280x320

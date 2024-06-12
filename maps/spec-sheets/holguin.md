@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/holguin
+## JavaScript Alias: maps/holguin
 
 Map Name: Holguin
 Dimensions (Width x Height): 510x400

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/micronesia
+## JavaScript Alias: maps/micronesia
 
 Map Name: Micronesia
 Dimensions (Width x Height): 750x330

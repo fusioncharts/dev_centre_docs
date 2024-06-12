@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/morocco
+## JavaScript Alias: maps/morocco
 
 Map Name: Morocco
 Dimensions (Width x Height): 370x370

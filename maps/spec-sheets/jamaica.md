@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jamaica
+## JavaScript Alias: maps/jamaica
 
 Map Name: Jamaica
 Dimensions (Width x Height): 411x170

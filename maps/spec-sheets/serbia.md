@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/serbia
+## JavaScript Alias: maps/serbia
 
 Map Name: Serbia
 Dimensions (Width x Height): 350x490

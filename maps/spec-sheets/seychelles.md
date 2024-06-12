@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/seychelles
+## JavaScript Alias: maps/seychelles
 
 Map Name: Seychelles
 Dimensions (Width x Height): 260x310

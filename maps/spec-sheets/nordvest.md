@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nordvest
+## JavaScript Alias: maps/nordvest
 
 Map Name: Nordvest
 Dimensions (Width x Height): 307x202

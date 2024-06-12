@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tamaulipas
+## JavaScript Alias: maps/tamaulipas
 
 Map Name: Tamaulipas
 Dimensions (Width x Height): 450x720

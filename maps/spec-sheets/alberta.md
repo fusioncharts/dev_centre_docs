@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alberta
+## JavaScript Alias: maps/alberta
 
 Map Name: Alberta
 Dimensions (Width x Height): 280x480

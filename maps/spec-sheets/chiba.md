@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chiba
+## JavaScript Alias: maps/chiba
 
 Map Name: Chiba
 Dimensions (Width x Height): 520x590

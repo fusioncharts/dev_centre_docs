@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cagayanvalley
+## JavaScript Alias: maps/cagayanvalley
 
 Map Name: Cagayan Valley
 Dimensions (Width x Height): 610x570

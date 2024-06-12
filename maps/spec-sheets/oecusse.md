@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oecusse
+## JavaScript Alias: maps/oecusse
 
 Map Name: Oecusse
 Dimensions (Width x Height): 480x330

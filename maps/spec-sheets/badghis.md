@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/badghis
+## JavaScript Alias: maps/badghis
 
 Map Name: Badghis
 Dimensions (Width x Height): 610x570

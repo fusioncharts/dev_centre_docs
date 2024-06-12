@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southsudan
+## JavaScript Alias: maps/southsudan
 
 Map Name: Southsudan
 Dimensions (Width x Height): 417x314

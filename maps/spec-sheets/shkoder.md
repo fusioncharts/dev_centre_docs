@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shkoder
+## JavaScript Alias: maps/shkoder
 
 Map Name: Shkoder
 Dimensions (Width x Height): 500x600

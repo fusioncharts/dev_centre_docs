@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ciudadautonomadebuenosaires
+## JavaScript Alias: maps/ciudadautonomadebuenosaires
 
 Map Name: CiudadAutonomadeBuenosAires
 Dimensions (Width x Height): 563x594

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bluenile
+## JavaScript Alias: maps/bluenile
 
 Map Name: BlueNile
 Dimensions (Width x Height): 1120x1240

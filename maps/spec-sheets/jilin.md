@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jilin
+## JavaScript Alias: maps/jilin
 
 Map Name: Jilin
 Dimensions (Width x Height): 465x376

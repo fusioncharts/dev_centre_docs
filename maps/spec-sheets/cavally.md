@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cavally
+## JavaScript Alias: maps/cavally
 
 Map Name: Cavally
 Dimensions (Width x Height): 600x460

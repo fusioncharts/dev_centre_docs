@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/toliara
+## JavaScript Alias: maps/toliara
 
 Map Name: Toliara
 Dimensions (Width x Height): 600x460

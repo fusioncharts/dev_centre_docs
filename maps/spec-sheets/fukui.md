@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fukui
+## JavaScript Alias: maps/fukui
 
 Map Name: Fukui
 Dimensions (Width x Height): 540x530

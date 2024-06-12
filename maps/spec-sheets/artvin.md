@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/artvin
+## JavaScript Alias: maps/artvin
 
 Map Name: Artvin
 Dimensions (Width x Height): 610x570

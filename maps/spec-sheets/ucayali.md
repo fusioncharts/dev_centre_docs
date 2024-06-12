@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ucayali
+## JavaScript Alias: maps/ucayali
 
 Map Name: Ucayali
 Dimensions (Width x Height): 700x532

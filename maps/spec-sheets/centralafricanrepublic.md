@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralafricanrepublic
+## JavaScript Alias: maps/centralafricanrepublic
 
 Map Name: Central African Republic
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tennessee
+## JavaScript Alias: maps/tennessee
 
 Map Name: Tennessee
 Dimensions (Width x Height): 760x207

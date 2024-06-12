@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lhuntse
+## JavaScript Alias: maps/lhuntse
 
 Map Name: Lhuntse
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sarpang
+## JavaScript Alias: maps/sarpang
 
 Map Name: Sarpang
 Dimensions (Width x Height): 440x590

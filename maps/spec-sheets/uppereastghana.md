@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uppereastghana
+## JavaScript Alias: maps/uppereastghana
 
 Map Name: Upper East Ghana
 Dimensions (Width x Height): 261x371

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mamberekadei
+## JavaScript Alias: maps/mamberekadei
 
 Map Name: Mambere Kadei
 Dimensions (Width x Height): 600x460

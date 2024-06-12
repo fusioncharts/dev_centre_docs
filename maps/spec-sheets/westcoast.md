@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westcoast
+## JavaScript Alias: maps/westcoast
 
 Map Name: Westcoast
 Dimensions (Width x Height): 526x600

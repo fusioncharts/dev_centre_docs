@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/huancavelica
+## JavaScript Alias: maps/huancavelica
 
 Map Name: Huancavelica
 Dimensions (Width x Height): 565x783

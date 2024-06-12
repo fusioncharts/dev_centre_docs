@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jujuy
+## JavaScript Alias: maps/jujuy
 
 Map Name: Jujuy
 Dimensions (Width x Height): 600x555

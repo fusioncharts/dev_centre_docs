@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kaolack
+## JavaScript Alias: maps/kaolack
 
 Map Name: Kaolack
 Dimensions (Width x Height): 600x460

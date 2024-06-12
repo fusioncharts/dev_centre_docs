@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cyprus
+## JavaScript Alias: maps/cyprus
 
 Map Name: Cyprus
 Dimensions (Width x Height): 620x380

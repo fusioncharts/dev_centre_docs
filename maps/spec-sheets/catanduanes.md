@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/catanduanes
+## JavaScript Alias: maps/catanduanes
 
 Map Name: Catanduanes
 Dimensions (Width x Height): 610x570

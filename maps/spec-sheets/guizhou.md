@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guizhou
+## JavaScript Alias: maps/guizhou
 
 Map Name: Guizhou
 Dimensions (Width x Height): 590x510

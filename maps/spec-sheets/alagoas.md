@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/alagoas
+## JavaScript Alias: maps/alagoas
 
 Map Name: Alagoas
 Dimensions (Width x Height): 1500x830

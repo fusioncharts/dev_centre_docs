@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cameroon
+## JavaScript Alias: maps/cameroon
 
 Map Name: Cameroon
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nonthaburi
+## JavaScript Alias: maps/nonthaburi
 
 Map Name: Nonthaburi
 Dimensions (Width x Height): 545x974

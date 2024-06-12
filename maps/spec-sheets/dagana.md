@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dagana
+## JavaScript Alias: maps/dagana
 
 Map Name: Dagana
 Dimensions (Width x Height): 440x590

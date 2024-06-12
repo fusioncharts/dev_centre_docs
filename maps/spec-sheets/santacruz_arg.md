@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santacruz_arg
+## JavaScript Alias: maps/santacruz_arg
 
 Map Name: SantaCruz
 Dimensions (Width x Height): 468x581

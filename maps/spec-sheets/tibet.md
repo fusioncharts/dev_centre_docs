@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tibet
+## JavaScript Alias: maps/tibet
 
 Map Name: Tibet
 Dimensions (Width x Height): 500x330

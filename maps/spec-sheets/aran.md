@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aran
+## JavaScript Alias: maps/aran
 
 Map Name: Aran
 Dimensions (Width x Height): 310x460

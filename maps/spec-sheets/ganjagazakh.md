@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ganjagazakh
+## JavaScript Alias: maps/ganjagazakh
 
 Map Name: Ganjagazakh
 Dimensions (Width x Height): 310x460

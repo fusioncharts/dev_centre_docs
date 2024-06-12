@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hamadan
+## JavaScript Alias: maps/hamadan
 
 Map Name: Hamadan
 Dimensions (Width x Height): 610x570

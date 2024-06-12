@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/redriverdelta
+## JavaScript Alias: maps/redriverdelta
 
 Map Name: Red River Delta
 Dimensions (Width x Height): 610x570

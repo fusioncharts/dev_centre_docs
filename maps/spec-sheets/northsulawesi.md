@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northsulawesi
+## JavaScript Alias: maps/northsulawesi
 
 Map Name: North Sulawesi
 Dimensions (Width x Height): 270x410

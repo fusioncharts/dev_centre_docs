@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southernzambia
+## JavaScript Alias: maps/southernzambia
 
 Map Name: Southern Zambia
 Dimensions (Width x Height): 610x570

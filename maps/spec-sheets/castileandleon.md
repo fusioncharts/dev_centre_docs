@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/castileandleon
+## JavaScript Alias: maps/castileandleon
 
 Map Name: Castile And Leon
 Dimensions (Width x Height): 610x570

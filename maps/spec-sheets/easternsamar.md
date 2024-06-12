@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternsamar
+## JavaScript Alias: maps/easternsamar
 
 Map Name: Eastern Samar
 Dimensions (Width x Height): 610x570

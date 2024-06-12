@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uttarpradesh
+## JavaScript Alias: maps/uttarpradesh
 
 Map Name: Uttar Pradesh
 Dimensions (Width x Height): 600x550

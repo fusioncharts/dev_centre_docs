@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ulaanbaatar
+## JavaScript Alias: maps/ulaanbaatar
 
 Map Name: Ulaanbaatar
 Dimensions (Width x Height): 610x570

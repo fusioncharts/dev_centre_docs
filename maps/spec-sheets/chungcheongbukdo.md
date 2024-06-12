@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chungcheongbukdo
+## JavaScript Alias: maps/chungcheongbukdo
 
 Map Name: Chungcheongbukdo
 Dimensions (Width x Height): 294x265

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chaiyaphum
+## JavaScript Alias: maps/chaiyaphum
 
 Map Name: Chaiyaphum
 Dimensions (Width x Height): 545x974

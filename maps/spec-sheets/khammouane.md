@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khammouane
+## JavaScript Alias: maps/khammouane
 Khammouane
 Map Name: Khammouane
 Dimensions (Width x Height): 440x590

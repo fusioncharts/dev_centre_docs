@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lienchiangcounty
+## JavaScript Alias: maps/lienchiangcounty
 
 Map Name: Lienchiang County
 Dimensions (Width x Height): 610x570

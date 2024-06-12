@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manicaland
+## JavaScript Alias: maps/manicaland
 
 Map Name: Manicaland
 Dimensions (Width x Height): 801x391

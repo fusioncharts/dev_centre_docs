@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nebraskacongressional
+## JavaScript Alias: maps/nebraskacongressional
 
 Map Name: Nebraskacongressional
 Dimensions (Width x Height): 880x430

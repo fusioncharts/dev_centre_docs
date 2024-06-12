@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northdakotaareacode
+## JavaScript Alias: maps/northdakotaareacode
 
 Map Name: Northdakotaareacode
 Dimensions (Width x Height): 302x180

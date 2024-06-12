@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hunan
+## JavaScript Alias: maps/hunan
 
 Map Name: Hunan
 Dimensions (Width x Height): 462x505

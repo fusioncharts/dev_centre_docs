@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/beqaa
+## JavaScript Alias: maps/beqaa
 
 Map Name: Beqaa
 Dimensions (Width x Height): 421x391

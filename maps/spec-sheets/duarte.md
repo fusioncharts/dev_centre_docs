@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/duarte
+## JavaScript Alias: maps/duarte
 
 Map Name: Duarte
 Dimensions (Width x Height): 610x570

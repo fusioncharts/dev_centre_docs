@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/midwesterndevelopmentregion
+## JavaScript Alias: maps/midwesterndevelopmentregion
 
 Map Name: Midwesterndevelopmentregion
 Dimensions (Width x Height): 750x400

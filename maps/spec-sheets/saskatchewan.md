@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saskatchewan
+## JavaScript Alias: maps/saskatchewan
 
 Map Name: Saskatchewan
 Dimensions (Width x Height): 250x450

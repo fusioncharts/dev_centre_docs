@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/puertorico
+## JavaScript Alias: maps/puertorico
 
 Map Name: Puertorico
 Dimensions (Width x Height): 660x340

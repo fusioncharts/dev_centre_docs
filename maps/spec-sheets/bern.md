@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bern
+## JavaScript Alias: maps/bern
 
 Map Name: Bern
 Dimensions (Width x Height): 650x600

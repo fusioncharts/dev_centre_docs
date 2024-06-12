@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/phetchaburi
+## JavaScript Alias: maps/phetchaburi
 
 Map Name: Phetchaburi
 Dimensions (Width x Height): 545x974

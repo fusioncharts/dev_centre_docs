@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/olomoucregion
+## JavaScript Alias: maps/olomoucregion
 
 Map Name: Olomoucregion
 Dimensions (Width x Height): 350x450

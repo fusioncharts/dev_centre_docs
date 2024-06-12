@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kronoberg
+## JavaScript Alias: maps/kronoberg
 
 Map Name: Kronoberg
 Dimensions (Width x Height): 410x270

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vanuatu
+## JavaScript Alias: maps/vanuatu
 
 Map Name: Vanuatu
 Dimensions (Width x Height): 200x380

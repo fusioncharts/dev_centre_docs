@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/veneto
+## JavaScript Alias: maps/veneto
 
 Map Name: Veneto
 Dimensions (Width x Height): 460x500

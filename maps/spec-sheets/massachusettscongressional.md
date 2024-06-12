@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/massachusettscongressional
+## JavaScript Alias: maps/massachusettscongressional
 
 Map Name: Massachusettscongressional
 Dimensions (Width x Height): 850x540

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chiangrai
+## JavaScript Alias: maps/chiangrai
 
 Map Name: ChiangRai
 Dimensions (Width x Height): 545x974

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/illinoiscongressional
+## JavaScript Alias: maps/illinoiscongressional
 
 Map Name: Illinoiscongressional
 Dimensions (Width x Height): 470x800

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manitoba
+## JavaScript Alias: maps/manitoba
 
 Map Name: Manitoba
 Dimensions (Width x Height): 320x470

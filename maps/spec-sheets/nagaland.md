@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nagaland
+## JavaScript Alias: maps/nagaland
 
 Map Name: Nagaland
 Dimensions (Width x Height): 380x440

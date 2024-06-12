@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kumamoto
+## JavaScript Alias: maps/kumamoto
 
 Map Name: Kumamoto
 Dimensions (Width x Height): 460x590

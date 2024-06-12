@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lambayeque
+## JavaScript Alias: maps/lambayeque
 
 Map Name: Lambayeque
 Dimensions (Width x Height): 540x600

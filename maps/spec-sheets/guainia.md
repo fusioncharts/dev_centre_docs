@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guainia
+## JavaScript Alias: maps/guainia
 
 Map Name: Guainia
 Dimensions (Width x Height): 420x580

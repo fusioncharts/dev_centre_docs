@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mersin
+## JavaScript Alias: maps/mersin
 
 Map Name: Mersin
 Dimensions (Width x Height): 610x570

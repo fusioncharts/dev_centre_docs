@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ouhampende
+## JavaScript Alias: maps/ouhampende
 
 Map Name: Ouham Pende
 Dimensions (Width x Height): 600x460

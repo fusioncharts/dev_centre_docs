@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/narayani
+## JavaScript Alias: maps/narayani
 
 Map Name: Narayani
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samdrupjongkhar
+## JavaScript Alias: maps/samdrupjongkhar
 
 Map Name: SamdrupJongkhar
 Dimensions (Width x Height): 440x590

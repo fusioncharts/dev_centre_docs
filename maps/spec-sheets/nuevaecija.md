@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nuevaecija
+## JavaScript Alias: maps/nuevaecija
 
 Map Name: Nueva Ecija
 Dimensions (Width x Height): 610x570

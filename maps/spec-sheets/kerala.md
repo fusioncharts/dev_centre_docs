@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kerala
+## JavaScript Alias: maps/kerala
 
 Map Name: Kerala
 Dimensions (Width x Height): 290x430

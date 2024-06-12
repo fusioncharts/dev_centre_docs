@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/basilicata
+## JavaScript Alias: maps/basilicata
 
 Map Name: Basilicata
 Dimensions (Width x Height): 440x470

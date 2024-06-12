@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wielkopolskie
+## JavaScript Alias: maps/wielkopolskie
 
 Map Name: Wielkopolskie
 Dimensions (Width x Height): 504x619

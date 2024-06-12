@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chongqing
+## JavaScript Alias: maps/chongqing
 
 Map Name: Chongqing
 Dimensions (Width x Height): 613x586

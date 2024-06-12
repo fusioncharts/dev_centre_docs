@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/monofiya
+## JavaScript Alias: maps/monofiya
 
 Map Name: Monofiya
 Dimensions (Width x Height): 838x528

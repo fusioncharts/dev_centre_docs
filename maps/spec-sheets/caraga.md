@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/caraga
+## JavaScript Alias: maps/caraga
 
 Map Name: Caraga
 Dimensions (Width x Height): 610x570

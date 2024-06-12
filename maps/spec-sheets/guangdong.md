@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guangdong
+## JavaScript Alias: maps/guangdong
 
 Map Name: Guangdong
 Dimensions (Width x Height): 498x369

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gumushane
+## JavaScript Alias: maps/gumushane
 
 Map Name: Gumushane
 Dimensions (Width x Height): 610x570

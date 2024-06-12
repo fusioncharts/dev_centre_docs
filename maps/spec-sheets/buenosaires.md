@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/buenosaires
+## JavaScript Alias: maps/buenosaires
 
 Map Name: BuenosAires
 Dimensions (Width x Height): 674x800

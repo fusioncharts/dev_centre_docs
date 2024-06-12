@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/adana
+## JavaScript Alias: maps/adana
 
 Map Name: Adana
 Dimensions (Width x Height): 610x570

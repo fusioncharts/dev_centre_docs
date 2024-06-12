@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southeastsulawesi
+## JavaScript Alias: maps/southeastsulawesi
 
 Map Name: Southeast Sulawesi
 Dimensions (Width x Height): 270x410

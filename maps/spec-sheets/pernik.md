@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pernik
+## JavaScript Alias: maps/pernik
 
 Map Name: Pernik
 Dimensions (Width x Height): 600x504

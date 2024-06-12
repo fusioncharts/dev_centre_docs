@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cochabamba
+## JavaScript Alias: maps/cochabamba
 
 Map Name: Cochabamba
 Dimensions (Width x Height): 300x340

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/goias
+## JavaScript Alias: maps/goias
 
 Map Name: Goias
 Dimensions (Width x Height): 1100x1090

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karaganda
+## JavaScript Alias: maps/karaganda
 
 Map Name: Karaganda
 Dimensions (Width x Height): 421x391

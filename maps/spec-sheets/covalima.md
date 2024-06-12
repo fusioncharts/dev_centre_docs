@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/covalima
+## JavaScript Alias: maps/covalima
 
 Map Name: Covalime
 Dimensions (Width x Height): 480x330

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/narino
+## JavaScript Alias: maps/narino
 
 Map Name: Narino
 Dimensions (Width x Height): 610x570

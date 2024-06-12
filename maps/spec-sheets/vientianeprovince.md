@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vientianeprovince
+## JavaScript Alias: maps/vientianeprovince
 
 Map Name: Vientiane Province
 Dimensions (Width x Height): 440x590

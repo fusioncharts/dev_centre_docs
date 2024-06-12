@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wakayama
+## JavaScript Alias: maps/wakayama
 
 Map Name: Wakayama
 Dimensions (Width x Height): 540x594

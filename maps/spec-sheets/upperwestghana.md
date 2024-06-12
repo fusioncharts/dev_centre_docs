@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/upperwestghana
+## JavaScript Alias: maps/upperwestghana
 
 Map Name: Upper West Ghana
 Dimensions (Width x Height): 261x371

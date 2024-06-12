@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southkordofan
+## JavaScript Alias: maps/southkordofan
 
 Map Name: SouthKordofan
 Dimensions (Width x Height): 1120x1240

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/haryana
+## JavaScript Alias: maps/haryana
 
 Map Name: Haryana
 Dimensions (Width x Height): 370x440

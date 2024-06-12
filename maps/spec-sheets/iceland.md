@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iceland
+## JavaScript Alias: maps/iceland
 
 Map Name: Iceland
 Dimensions (Width x Height): 560x400

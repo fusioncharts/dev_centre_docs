@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/eastflanders
+## JavaScript Alias: maps/eastflanders
 
 Map Name: Eastflanders
 Dimensions (Width x Height): 400x400

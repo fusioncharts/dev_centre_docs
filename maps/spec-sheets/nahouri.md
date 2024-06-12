@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nahouri
+## JavaScript Alias: maps/nahouri
 
 Map Name: Nahouri
 Dimensions (Width x Height): 600x460

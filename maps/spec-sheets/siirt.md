@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/siirt
+## JavaScript Alias: maps/siirt
 
 Map Name: Siirt
 Dimensions (Width x Height): 610x570

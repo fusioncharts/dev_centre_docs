@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yilancounty
+## JavaScript Alias: maps/yilancounty
 
 Map Name: Yilan County
 Dimensions (Width x Height): 610x570

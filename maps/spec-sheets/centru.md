@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centru
+## JavaScript Alias: maps/centru
 
 Map Name: Centru
 Dimensions (Width x Height): 308x198

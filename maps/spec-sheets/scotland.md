@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/scotland
+## JavaScript Alias: maps/scotland
 
 Map Name: Scotland
 Dimensions (Width x Height): 469x610

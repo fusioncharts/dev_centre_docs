@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/darkhanuul
+## JavaScript Alias: maps/darkhanuul
 
 Map Name: Darkhan-Uul
 Dimensions (Width x Height): 610x570

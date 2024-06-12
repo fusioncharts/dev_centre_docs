@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bayofplenty
+## JavaScript Alias: maps/bayofplenty
 
 Map Name: Bayofplenty
 Dimensions (Width x Height): 600x541

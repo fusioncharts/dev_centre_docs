@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northerncaliforniabayareacode
+## JavaScript Alias: maps/northerncaliforniabayareacode
 
 Map Name: Northerncaliforniabayareacode
 Dimensions (Width x Height): 360x300

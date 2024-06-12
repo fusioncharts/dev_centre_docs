@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bolivia
+## JavaScript Alias: maps/bolivia
 
 Map Name: Bolivia
 Dimensions (Width x Height): 300x340

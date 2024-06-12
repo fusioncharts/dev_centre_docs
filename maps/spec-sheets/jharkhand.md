@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jharkhand
+## JavaScript Alias: maps/jharkhand
 
 Map Name: Jharkhand
 Dimensions (Width x Height): 470x330

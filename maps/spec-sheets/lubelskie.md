@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lubelskie
+## JavaScript Alias: maps/lubelskie
 
 Map Name: Lubelskie
 Dimensions (Width x Height): 418x536

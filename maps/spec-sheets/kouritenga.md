@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kouritenga
+## JavaScript Alias: maps/kouritenga
 
 Map Name: Kouritenga
 Dimensions (Width x Height): 600x460

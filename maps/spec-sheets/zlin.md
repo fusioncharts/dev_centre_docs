@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zlin
+## JavaScript Alias: maps/zlin
 
 Map Name: Zlin
 Dimensions (Width x Height): 701x581

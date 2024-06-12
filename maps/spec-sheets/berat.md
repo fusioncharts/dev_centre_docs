@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/berat
+## JavaScript Alias: maps/berat
 
 Map Name: Berat
 Dimensions (Width x Height): 563x538

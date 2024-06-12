@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/washingtonareacode
+## JavaScript Alias: maps/washingtonareacode
 
 Map Name: Washingtonareacode
 Dimensions (Width x Height): 460x300

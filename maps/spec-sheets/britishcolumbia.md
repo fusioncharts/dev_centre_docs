@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/britishcolumbia
+## JavaScript Alias: maps/britishcolumbia
 
 Map Name: Britishcolumbia
 Dimensions (Width x Height): 560x555

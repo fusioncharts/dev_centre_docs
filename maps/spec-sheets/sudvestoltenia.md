@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sudvestoltenia
+## JavaScript Alias: maps/sudvestoltenia
 
 Map Name: Sudvestoltenia
 Dimensions (Width x Height): 301x274

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/andorra
+## JavaScript Alias: maps/andorra
 
 Map Name: Andorra
 Dimensions (Width x Height): 480x390

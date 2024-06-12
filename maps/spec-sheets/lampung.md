@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lampung
+## JavaScript Alias: maps/lampung
 
 Map Name: Lampung
 Dimensions (Width x Height): 270x410

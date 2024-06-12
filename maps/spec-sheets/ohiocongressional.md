@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ohiocongressional
+## JavaScript Alias: maps/ohiocongressional
 
 Map Name: Ohiocongressional
 Dimensions (Width x Height): 700x770

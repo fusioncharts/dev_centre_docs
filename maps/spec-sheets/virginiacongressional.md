@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/virginiacongressional
+## JavaScript Alias: maps/virginiacongressional
 
 Map Name: Virginiacongressional
 Dimensions (Width x Height): 880x400

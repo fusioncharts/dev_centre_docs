@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pemagatshel
+## JavaScript Alias: maps/pemagatshel
 
 Map Name: Pemagatshel
 Dimensions (Width x Height): 440x590

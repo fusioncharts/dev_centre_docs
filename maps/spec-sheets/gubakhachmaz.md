@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gubakhachmaz
+## JavaScript Alias: maps/gubakhachmaz
 
 Map Name: Gubakhachmaz
 Dimensions (Width x Height): 310x460

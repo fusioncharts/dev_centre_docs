@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/blagoevgrad
+## JavaScript Alias: maps/blagoevgrad
 
 Map Name: Blagoevgrad
 Dimensions (Width x Height): 633x570

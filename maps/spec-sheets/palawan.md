@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/palawan
+## JavaScript Alias: maps/palawan
 
 Map Name: Palawan
 Dimensions (Width x Height): 610x570

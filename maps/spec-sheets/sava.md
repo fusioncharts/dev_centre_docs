@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sava
+## JavaScript Alias: maps/sava
 
 Map Name: Sava
 Dimensions (Width x Height): 600x460

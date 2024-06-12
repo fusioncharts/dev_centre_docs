@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sjaelland
+## JavaScript Alias: maps/sjaelland
 
 Map Name: Sjaelland
 Dimensions (Width x Height): 462x719

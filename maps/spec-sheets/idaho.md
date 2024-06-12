@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/idaho
+## JavaScript Alias: maps/idaho
 
 Map Name: Idaho
 Dimensions (Width x Height): 555x880

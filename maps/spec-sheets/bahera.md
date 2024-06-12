@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bahera
+## JavaScript Alias: maps/bahera
 
 Map Name: Bahera
 Dimensions (Width x Height): 560x593

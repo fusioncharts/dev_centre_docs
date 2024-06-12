@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newmexico
+## JavaScript Alias: maps/newmexico
 
 Map Name: Newmexico
 Dimensions (Width x Height): 590x700

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/songkhla
+## JavaScript Alias: maps/songkhla
 
 Map Name: Songkhla
 Dimensions (Width x Height): 545x974

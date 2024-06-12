@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bukhara
+## JavaScript Alias: maps/bukhara
 
 Map Name: Bukhara
 Dimensions (Width x Height): 480x330

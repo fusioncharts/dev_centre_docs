@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/seattleareacode
+## JavaScript Alias: maps/seattleareacode
 
 Map Name: Seattleareacode
 Dimensions (Width x Height): 390x500

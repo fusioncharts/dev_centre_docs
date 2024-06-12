@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bolama
+## JavaScript Alias: maps/bolama
 
 Map Name: Bolama
 Dimensions (Width x Height): 680x420

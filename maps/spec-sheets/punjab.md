@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/punjab
+## JavaScript Alias: maps/punjab
 
 Map Name: Punjab
 Dimensions (Width x Height): 390x420

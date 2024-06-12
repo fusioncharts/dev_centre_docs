@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ciegodeavila
+## JavaScript Alias: maps/ciegodeavila
 
 Map Name: Ciego de Avila
 Dimensions (Width x Height): 510x400

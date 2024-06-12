@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/equatorialguinea
+## JavaScript Alias: maps/equatorialguinea
 
 Map Name: Equatorialguinea
 Dimensions (Width x Height): 320x200

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ayacucho
+## JavaScript Alias: maps/ayacucho
 
 Map Name: Ayacucho
 Dimensions (Width x Height): 391x628

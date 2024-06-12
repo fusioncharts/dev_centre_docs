@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sinop
+## JavaScript Alias: maps/sinop
 
 Map Name: Sinop
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/matanzas
+## JavaScript Alias: maps/matanzas
 
 Map Name: Matanzas
 Dimensions (Width x Height): 510x400

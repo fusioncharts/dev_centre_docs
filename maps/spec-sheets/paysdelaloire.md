@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/paysdelaloire
+## JavaScript Alias: maps/paysdelaloire
 
 Map Name: Pays De La Loire
 Dimensions (Width x Height): 610x570

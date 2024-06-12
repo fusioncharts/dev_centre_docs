@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/coimbra
+## JavaScript Alias: maps/coimbra
 
 Map Name: Coimbra
 Dimensions (Width x Height): 530x360

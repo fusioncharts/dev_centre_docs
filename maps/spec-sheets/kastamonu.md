@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kastamonu
+## JavaScript Alias: maps/kastamonu
 
 Map Name: Kastamonu
 Dimensions (Width x Height): 610x570

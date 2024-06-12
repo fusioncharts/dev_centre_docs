@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/midtjylland
+## JavaScript Alias: maps/midtjylland
 
 Map Name: Midtjylland
 Dimensions (Width x Height): 895x538
