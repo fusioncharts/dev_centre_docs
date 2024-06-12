@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/grandsponts
+## JavaScript Alias: maps/grandsponts
 
 Map Name: GrandsPonts
 Dimensions (Width x Height): 600x460

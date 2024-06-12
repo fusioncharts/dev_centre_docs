@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintgallen
+## JavaScript Alias: maps/saintgallen
 
 Map Name: Saintgallen
 Dimensions (Width x Height): 370x400

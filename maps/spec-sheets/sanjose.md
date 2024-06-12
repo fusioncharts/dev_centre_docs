@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanjose
+## JavaScript Alias: maps/sanjose
 
 Map Name: SanJose
 Dimensions (Width x Height): 706x686

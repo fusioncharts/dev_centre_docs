@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/namur
+## JavaScript Alias: maps/namur
 
 Map Name: Namur
 Dimensions (Width x Height): 460x550

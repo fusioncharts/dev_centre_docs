@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/schwyz
+## JavaScript Alias: maps/schwyz
 
 Map Name: Schwyz
 Dimensions (Width x Height): 930x740

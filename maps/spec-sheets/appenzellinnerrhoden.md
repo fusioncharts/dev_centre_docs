@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/appenzellinnerrhoden
+## JavaScript Alias: maps/appenzellinnerrhoden
 
 Map Name: Appenzellinnerrhoden
 Dimensions (Width x Height): 601x581

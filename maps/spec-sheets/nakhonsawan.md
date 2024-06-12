@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nakhonsawan
+## JavaScript Alias: maps/nakhonsawan
 
 Map Name: NakhonSawan
 Dimensions (Width x Height): 545x974

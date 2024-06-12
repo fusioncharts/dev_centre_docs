@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hatomayor
+## JavaScript Alias: maps/hatomayor
 
 Map Name: HatoMayor
 Dimensions (Width x Height): 610x570

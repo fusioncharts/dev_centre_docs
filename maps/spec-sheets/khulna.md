@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khulna
+## JavaScript Alias: maps/khulna
 
 Map Name: Khulna
 Dimensions (Width x Height): 431x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/troms
+## JavaScript Alias: maps/troms
 
 Map Name: Troms
 Dimensions (Width x Height): 600x460

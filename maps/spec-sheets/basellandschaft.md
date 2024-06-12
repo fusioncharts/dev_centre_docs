@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/basellandschaft
+## JavaScript Alias: maps/basellandschaft
 
 Map Name: Basellandschaft
 Dimensions (Width x Height): 780x440

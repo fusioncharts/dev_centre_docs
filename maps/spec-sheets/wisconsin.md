@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wisconsin
+## JavaScript Alias: maps/wisconsin
 
 Map Name: Wisconsin
 Dimensions (Width x Height): 640x680

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/argentina
+## JavaScript Alias: maps/argentina
 
 Map Name: Argentina
 Dimensions (Width x Height): 340x690

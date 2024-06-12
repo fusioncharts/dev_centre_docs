@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/poland
+## JavaScript Alias: maps/poland
 
 Map Name: Poland
 Dimensions (Width x Height): 410x390

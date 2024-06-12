@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/seti
+## JavaScript Alias: maps/seti
 
 Map Name: Seti
 Dimensions (Width x Height): 421x391

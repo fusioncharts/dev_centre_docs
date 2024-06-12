@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pattani
+## JavaScript Alias: maps/pattani
 
 Map Name: Pattani
 Dimensions (Width x Height): 545x974

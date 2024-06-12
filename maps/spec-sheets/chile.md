@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chile
+## JavaScript Alias: maps/chile
 
 Map Name: Chile
 Dimensions (Width x Height): 600x460

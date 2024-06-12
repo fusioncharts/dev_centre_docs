@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jordan
+## JavaScript Alias: maps/jordan
 
 Map Name: Jordan
 Dimensions (Width x Height): 520x580

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oudalan
+## JavaScript Alias: maps/oudalan
 
 Map Name: Oudalan
 Dimensions (Width x Height): 600x460

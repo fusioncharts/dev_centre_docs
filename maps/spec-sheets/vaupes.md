@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vaupes
+## JavaScript Alias: maps/vaupes
 
 Map Name: Vaupes
 Dimensions (Width x Height): 610x570

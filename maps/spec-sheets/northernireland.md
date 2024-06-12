@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northernireland
+## JavaScript Alias: maps/northernireland
 
 Map Name: Northernireland
 Dimensions (Width x Height): 410x340

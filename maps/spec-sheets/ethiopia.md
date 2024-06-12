@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ethiopia
+## JavaScript Alias: maps/ethiopia
 
 Map Name: Ethiopia
 Dimensions (Width x Height): 510x400

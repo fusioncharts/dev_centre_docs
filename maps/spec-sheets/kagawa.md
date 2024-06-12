@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kagawa
+## JavaScript Alias: maps/kagawa
 
 Map Name: Kagawa
 Dimensions (Width x Height): 540x340

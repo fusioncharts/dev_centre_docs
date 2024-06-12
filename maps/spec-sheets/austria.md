@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/austria
+## JavaScript Alias: maps/austria
 
 Map Name: Austria
 Dimensions (Width x Height): 570x310

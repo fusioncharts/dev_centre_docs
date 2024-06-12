@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westdarfur
+## JavaScript Alias: maps/westdarfur
 
 Map Name: WestDarfur
 Dimensions (Width x Height): 1120x1240

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gao
+## JavaScript Alias: maps/gao
 
 Map Name: Gao
 Dimensions (Width x Height): 470x470

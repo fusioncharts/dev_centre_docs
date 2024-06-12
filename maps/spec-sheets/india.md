@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/india
+## JavaScript Alias: maps/india
 
 Map Name: India
 Dimensions (Width x Height): 595x640

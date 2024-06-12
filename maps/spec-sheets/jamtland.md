@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jamtland
+## JavaScript Alias: maps/jamtland
 
 Map Name: Jamtland
 Dimensions (Width x Height): 400x580

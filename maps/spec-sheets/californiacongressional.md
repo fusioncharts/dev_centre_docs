@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/californiacongressional
+## JavaScript Alias: maps/californiacongressional
 
 Map Name: Californiacongressional
 Dimensions (Width x Height): 910x1000

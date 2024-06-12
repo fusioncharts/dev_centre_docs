@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/loslagos
+## JavaScript Alias: maps/loslagos
 
 Map Name: Los Lagos
 Dimensions (Width x Height): 600x460

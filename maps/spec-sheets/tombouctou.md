@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tombouctou
+## JavaScript Alias: maps/tombouctou
 
 Map Name: Tombouctou
 Dimensions (Width x Height): 470x470

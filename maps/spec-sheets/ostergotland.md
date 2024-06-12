@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ostergotland
+## JavaScript Alias: maps/ostergotland
 
 Map Name: Ostergotland
 Dimensions (Width x Height): 530x570

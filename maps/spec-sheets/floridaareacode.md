@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/floridaareacode
+## JavaScript Alias: maps/floridaareacode
 
 Map Name: Floridaareacode
 Dimensions (Width x Height): 400x385

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ibaraki
+## JavaScript Alias: maps/ibaraki
 
 Map Name: Ibaraki
 Dimensions (Width x Height): 470x590

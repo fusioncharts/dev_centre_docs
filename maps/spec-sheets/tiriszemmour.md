@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tiriszemmour
+## JavaScript Alias: maps/tiriszemmour
 
 Map Name: Tiris Zemmour
 Dimensions (Width x Height): 600x625

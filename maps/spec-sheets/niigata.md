@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/niigata
+## JavaScript Alias: maps/niigata
 
 Map Name: Niigata
 Dimensions (Width x Height): 540x594

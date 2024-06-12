@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/greece
+## JavaScript Alias: maps/greece
 
 Map Name: Greece
 Dimensions (Width x Height): 410x420

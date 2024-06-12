@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pennsylvania
+## JavaScript Alias: maps/pennsylvania
 
 Map Name: Pennsylvania
 Dimensions (Width x Height): 760x450

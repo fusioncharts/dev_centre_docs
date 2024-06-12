@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/curacao
+## JavaScript Alias: maps/curacao
 
 Map Name: Curacao
 Dimensions (Width x Height): 710x610

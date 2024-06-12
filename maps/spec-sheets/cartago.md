@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cartago
+## JavaScript Alias: maps/cartago
 
 Map Name: Cartago
 Dimensions (Width x Height): 798x681

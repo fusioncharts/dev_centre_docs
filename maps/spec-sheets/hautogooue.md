@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautogooue
+## JavaScript Alias: maps/hautogooue
 
 Map Name: Haut-Ogooué (Franceville)
 Dimensions (Width x Height): 310x340

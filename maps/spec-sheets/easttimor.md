@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easttimor
+## JavaScript Alias: maps/easttimor
 
 Map Name: Easttimor
 Dimensions (Width x Height): 1060x460

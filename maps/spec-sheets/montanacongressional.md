@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/montanacongressional
+## JavaScript Alias: maps/montanacongressional
 
 Map Name: Montanacongressional
 Dimensions (Width x Height): 500x290

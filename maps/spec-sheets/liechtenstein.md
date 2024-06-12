@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liechtenstein
+## JavaScript Alias: maps/liechtenstein
 
 Map Name: Liechtenstein
 Dimensions (Width x Height): 310x600

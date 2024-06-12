@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/matogrosso
+## JavaScript Alias: maps/matogrosso
 
 Map Name: Matogrosso
 Dimensions (Width x Height): 1100x1060

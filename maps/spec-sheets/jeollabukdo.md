@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jeollabukdo
+## JavaScript Alias: maps/jeollabukdo
 
 Map Name: Jeollabukdo
 Dimensions (Width x Height): 248x177

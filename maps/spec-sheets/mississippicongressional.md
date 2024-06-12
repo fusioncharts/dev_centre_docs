@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mississippicongressional
+## JavaScript Alias: maps/mississippicongressional
 
 Map Name: Mississippicongressional
 Dimensions (Width x Height): 360x580

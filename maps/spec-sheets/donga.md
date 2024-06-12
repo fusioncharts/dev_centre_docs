@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/donga
+## JavaScript Alias: maps/donga
 
 Map Name: Donga
 Dimensions (Width x Height): 600x460

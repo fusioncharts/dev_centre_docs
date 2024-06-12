@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khorasansouth
+## JavaScript Alias: maps/khorasansouth
 
 Map Name: Khorasan South
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khatlon
+## JavaScript Alias: maps/khatlon
 
 Map Name: Khatlon
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/qashqadaryo
+## JavaScript Alias: maps/qashqadaryo
 
 Map Name: Qashqadaryo
 Dimensions (Width x Height): 480x330

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gandaki
+## JavaScript Alias: maps/gandaki
 
 Map Name: Gandaki
 Dimensions (Width x Height): 421x391

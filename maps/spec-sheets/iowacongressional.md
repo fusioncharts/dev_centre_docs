@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iowacongressional
+## JavaScript Alias: maps/iowacongressional
 
 Map Name: Iowacongressional
 Dimensions (Width x Height): 750x500

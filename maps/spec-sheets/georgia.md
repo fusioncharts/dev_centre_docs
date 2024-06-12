@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/georgia
+## JavaScript Alias: maps/georgia
 
 Map Name: Georgia
 Dimensions (Width x Height): 591x681

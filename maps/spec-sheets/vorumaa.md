@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vorumaa
+## JavaScript Alias: maps/vorumaa
 
 Map Name: Vorumaa
 Dimensions (Width x Height): 700x508

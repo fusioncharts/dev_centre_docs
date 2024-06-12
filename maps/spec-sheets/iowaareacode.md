@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iowaareacode
+## JavaScript Alias: maps/iowaareacode
 
 Map Name: Iowaareacode
 Dimensions (Width x Height): 470x310

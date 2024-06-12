@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bitlis
+## JavaScript Alias: maps/bitlis
 
 Map Name: Bitlis
 Dimensions (Width x Height): 610x570

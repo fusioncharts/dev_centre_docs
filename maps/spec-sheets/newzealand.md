@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newzealand
+## JavaScript Alias: maps/newzealand
 
 Map Name: Newzealand
 Dimensions (Width x Height): 401x591

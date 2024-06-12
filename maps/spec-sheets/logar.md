@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/logar
+## JavaScript Alias: maps/logar
 
 Map Name: Logar
 Dimensions (Width x Height): 610x570

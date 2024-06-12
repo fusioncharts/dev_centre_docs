@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/diana
+## JavaScript Alias: maps/diana
 
 Map Name: Diana
 Dimensions (Width x Height): 600x460

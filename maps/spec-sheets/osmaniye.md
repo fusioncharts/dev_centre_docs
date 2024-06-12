@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/osmaniye
+## JavaScript Alias: maps/osmaniye
 
 Map Name: Osmaniye
 Dimensions (Width x Height): 610x570

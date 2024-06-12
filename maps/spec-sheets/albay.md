@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/albay
+## JavaScript Alias: maps/albay
 
 Map Name: Albay
 Dimensions (Width x Height): 610x570

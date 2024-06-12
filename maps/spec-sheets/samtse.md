@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samtse
+## JavaScript Alias: maps/samtse
 
 Map Name: Samtse
 Dimensions (Width x Height): 440x590

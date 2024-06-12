@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nevadacongressional
+## JavaScript Alias: maps/nevadacongressional
 
 Map Name: Nevadacongressional
 Dimensions (Width x Height): 400x600

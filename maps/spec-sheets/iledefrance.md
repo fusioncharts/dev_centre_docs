@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iledefrance
+## JavaScript Alias: maps/iledefrance
 
 Map Name: Ile-De-France 
 Dimensions (Width x Height): 610x570

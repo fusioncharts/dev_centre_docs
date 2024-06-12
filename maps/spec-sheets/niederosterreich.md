@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/niederosterreich
+## JavaScript Alias: maps/niederosterreich
 
 Map Name: Niederosterreich
 Dimensions (Width x Height): 550x500

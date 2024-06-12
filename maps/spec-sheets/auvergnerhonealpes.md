@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/auvergnerhonealpes
+## JavaScript Alias: maps/auvergnerhonealpes
 
 Map Name: Auvergne Rhone Alpes
 Dimensions (Width x Height): 610x570

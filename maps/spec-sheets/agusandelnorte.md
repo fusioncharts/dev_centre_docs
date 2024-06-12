@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/agusandelnorte
+## JavaScript Alias: maps/agusandelnorte
 
 Map Name: Agusandel Norte
 Dimensions (Width x Height): 610x570

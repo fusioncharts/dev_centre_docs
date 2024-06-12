@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/toamasina
+## JavaScript Alias: maps/toamasina
 
 Map Name: Toamasina
 Dimensions (Width x Height): 600x460

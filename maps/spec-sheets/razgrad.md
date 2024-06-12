@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/razgrad
+## JavaScript Alias: maps/razgrad
 
 Map Name: Razgrad
 Dimensions (Width x Height): 597x578

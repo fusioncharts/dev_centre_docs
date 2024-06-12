@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/detroitareacode
+## JavaScript Alias: maps/detroitareacode
 
 Map Name: Detroitareacode
 Dimensions (Width x Height): 440x300

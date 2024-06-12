@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/viqueque
+## JavaScript Alias: maps/viqueque
 
 Map Name: Viqueque
 Dimensions (Width x Height): 421x391

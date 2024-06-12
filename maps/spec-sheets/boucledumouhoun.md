@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/boucledumouhoun
+## JavaScript Alias: maps/boucledumouhoun
 
 Map Name: Boucle du Mouhoun
 Dimensions (Width x Height): 600x460

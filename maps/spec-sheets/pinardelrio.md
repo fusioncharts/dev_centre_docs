@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pinardelrio
+## JavaScript Alias: maps/pinardelrio
 
 Map Name: Pinar del Rio
 Dimensions (Width x Height): 510x400

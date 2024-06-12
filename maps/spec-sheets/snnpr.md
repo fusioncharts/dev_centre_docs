@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/snnpr
+## JavaScript Alias: maps/snnpr
 
 Map Name: Southern Nations, Nationalities, and Peoples' Region
 Dimensions (Width x Height): 610x570

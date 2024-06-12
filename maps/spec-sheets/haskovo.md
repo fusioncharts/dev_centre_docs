@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/haskovo
+## JavaScript Alias: maps/haskovo
 
 Map Name: Haskovo
 Dimensions (Width x Height): 596x532

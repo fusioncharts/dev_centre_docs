@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mymensingh
+## JavaScript Alias: maps/mymensingh
 
 Map Name: Mymensingh
 Dimensions (Width x Height): 431x600

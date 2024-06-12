@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centresud
+## JavaScript Alias: maps/centresud
 
 Map Name: Centre-Sud
 Dimensions (Width x Height): 600x460

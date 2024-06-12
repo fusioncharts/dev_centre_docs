@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kaesong
+## JavaScript Alias: maps/kaesong
 
 Map Name: Kaesong
 Dimensions (Width x Height): 288x282

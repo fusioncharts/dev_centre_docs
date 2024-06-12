@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manufahi
+## JavaScript Alias: maps/manufahi
 
 Map Name: Manufahi
 Dimensions (Width x Height): 480x330

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guemon
+## JavaScript Alias: maps/guemon
 
 Map Name: Guemon
 Dimensions (Width x Height): 600x460

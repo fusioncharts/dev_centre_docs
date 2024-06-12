@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/germany
+## JavaScript Alias: maps/germany
 
 Map Name: Germany
 Dimensions (Width x Height): 447x576

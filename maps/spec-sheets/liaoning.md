@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liaoning
+## JavaScript Alias: maps/liaoning
 
 Map Name: Liaoning
 Dimensions (Width x Height): 445x412

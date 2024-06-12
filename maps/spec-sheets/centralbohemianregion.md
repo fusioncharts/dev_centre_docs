@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralbohemianregion
+## JavaScript Alias: maps/centralbohemianregion
 
 Map Name: Centralbohemianregion
 Dimensions (Width x Height): 560x440

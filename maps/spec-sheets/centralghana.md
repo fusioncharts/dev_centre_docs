@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralghana
+## JavaScript Alias: maps/centralghana
 
 Map Name: Central Ghana
 Dimensions (Width x Height): 261x371

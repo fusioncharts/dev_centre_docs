@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/peru
+## JavaScript Alias: maps/peru
 
 Map Name: Peru
 Dimensions (Width x Height): 370x520

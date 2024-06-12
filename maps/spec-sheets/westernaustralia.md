@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernaustralia
+## JavaScript Alias: maps/westernaustralia
 
 Map Name: Westernaustralia
 Dimensions (Width x Height): 427x558

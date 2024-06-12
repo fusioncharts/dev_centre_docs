@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aragon
+## JavaScript Alias: maps/aragon
 
 Map Name: Aragon
 Dimensions (Width x Height): 610x570

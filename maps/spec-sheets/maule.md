@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maule
+## JavaScript Alias: maps/maule
 
 Map Name: Maule
 Dimensions (Width x Height): 600x460

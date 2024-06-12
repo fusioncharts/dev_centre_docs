@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pennsylvaniacongressional
+## JavaScript Alias: maps/pennsylvaniacongressional
 
 Map Name: Pennsylvaniacongressional
 Dimensions (Width x Height): 800x480

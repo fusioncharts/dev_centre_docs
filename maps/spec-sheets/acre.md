@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/acre
+## JavaScript Alias: maps/acre
 
 Map Name: Acre
 Dimensions (Width x Height): 1450x810

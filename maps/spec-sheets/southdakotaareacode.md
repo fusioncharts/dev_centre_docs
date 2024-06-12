@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southdakotaareacode
+## JavaScript Alias: maps/southdakotaareacode
 
 Map Name: Southdakotaareacode
 Dimensions (Width x Height): 315x200

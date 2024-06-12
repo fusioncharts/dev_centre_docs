@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/philippines
+## JavaScript Alias: maps/philippines
 
 Map Name: Philippines
 Dimensions (Width x Height): 440x590

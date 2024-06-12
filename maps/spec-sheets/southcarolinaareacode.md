@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southcarolinaareacode
+## JavaScript Alias: maps/southcarolinaareacode
 
 Map Name: Southcarolinaareacode
 Dimensions (Width x Height): 530x415

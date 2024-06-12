@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/grandest
+## JavaScript Alias: maps/grandest
 
 Map Name: Grand Est
 Dimensions (Width x Height): 610x570

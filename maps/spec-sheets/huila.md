@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guaviare
+## JavaScript Alias: maps/guaviare
 
 Map Name: Guaviare
 Dimensions (Width x Height): 420x580

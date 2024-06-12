@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hovedstaden
+## JavaScript Alias: maps/hovedstaden
 
 Map Name: Hovedstaden
 Dimensions (Width x Height): 730x456

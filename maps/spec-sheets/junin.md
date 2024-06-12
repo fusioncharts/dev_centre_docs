@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/junin
+## JavaScript Alias: maps/junin
 
 Map Name: Junín
 Dimensions (Width x Height): 803x523

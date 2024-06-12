@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/syria
+## JavaScript Alias: maps/syria
 
 Map Name: Syria
 Dimensions (Width x Height): 420x370

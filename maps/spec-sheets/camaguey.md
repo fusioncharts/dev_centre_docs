@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/camaguey
+## JavaScript Alias: maps/camaguey
 
 Map Name: Camaguey
 Dimensions (Width x Height): 510x400

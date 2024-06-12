@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/prachinburi
+## JavaScript Alias: maps/prachinburi
 
 Map Name: Prachinburi
 Dimensions (Width x Height): 545x974

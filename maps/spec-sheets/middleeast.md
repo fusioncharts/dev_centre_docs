@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/middleeast
+## JavaScript Alias: maps/middleeast
 
 Map Name: Middleeast
 Dimensions (Width x Height): 640x470

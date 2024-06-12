@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/parnumaa
+## JavaScript Alias: maps/parnumaa
 
 Map Name: Parnumaa
 Dimensions (Width x Height): 600x600

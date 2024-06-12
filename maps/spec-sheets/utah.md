@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/utah
+## JavaScript Alias: maps/utah
 
 Map Name: Utah
 Dimensions (Width x Height): 600x765

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kerewan
+## JavaScript Alias: maps/kerewan
 
 Map Name: Kerewan
 Dimensions (Width x Height): 600x460

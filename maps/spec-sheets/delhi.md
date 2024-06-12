@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/delhi
+## JavaScript Alias: maps/delhi
 
 Map Name: Delhi
 Dimensions (Width x Height): 380x410

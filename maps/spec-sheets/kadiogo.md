@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kadiogo
+## JavaScript Alias: maps/kadiogo
 
 Map Name: Kadiogo
 Dimensions (Width x Height): 600x460

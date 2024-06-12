@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yagha
+## JavaScript Alias: maps/yagha
 
 Map Name: Yagha
 Dimensions (Width x Height): 600x460

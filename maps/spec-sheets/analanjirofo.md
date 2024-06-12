@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/analanjirofo
+## JavaScript Alias: maps/analanjirofo
 
 Map Name: Analanjirofo
 Dimensions (Width x Height): 600x460

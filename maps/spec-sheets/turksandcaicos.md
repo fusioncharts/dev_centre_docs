@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/turksandcaicos
+## JavaScript Alias: maps/turksandcaicos
 
 Map Name: Turksandcaicos
 Dimensions (Width x Height): 820x510

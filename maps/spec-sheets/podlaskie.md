@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/podlaskie
+## JavaScript Alias: maps/podlaskie
 
 Map Name: Podlaskie
 Dimensions (Width x Height): 351x510

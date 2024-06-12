@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dosso
+## JavaScript Alias: maps/dosso
 
 Map Name: Dosso
 Dimensions (Width x Height): 560x450

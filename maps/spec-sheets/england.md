@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/england
+## JavaScript Alias: maps/england
 
 Map Name: England
 Dimensions (Width x Height): 490x560

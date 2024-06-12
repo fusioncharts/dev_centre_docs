@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/targovishte
+## JavaScript Alias: maps/targovishte
 
 Map Name: Targovishte
 Dimensions (Width x Height): 597x578

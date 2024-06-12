@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/libya
+## JavaScript Alias: maps/libya
 
 Map Name: Libya
 Dimensions (Width x Height): 570x590

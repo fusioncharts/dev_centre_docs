@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/benguet
+## JavaScript Alias: maps/benguet
 
 Map Name: Benguet
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santodomingo
+## JavaScript Alias: maps/santodomingo
 
 Map Name: Santo Domingo
 Dimensions (Width x Height): 610x570

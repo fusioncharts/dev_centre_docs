@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kalbajarlachin
+## JavaScript Alias: maps/kalbajarlachin
 
 Map Name: Kalbajarlachin
 Dimensions (Width x Height): 310x460

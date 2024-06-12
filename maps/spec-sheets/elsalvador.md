@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/elsalvador
+## JavaScript Alias: maps/elsalvador
 
 Map Name: Elsalvador
 Dimensions (Width x Height): 390x215

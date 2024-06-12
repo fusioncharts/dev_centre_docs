@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/elbasan
+## JavaScript Alias: maps/elbasan
 
 Map Name: Elbasan
 Dimensions (Width x Height): 550x493

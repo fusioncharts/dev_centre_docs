@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/agusandelsur
+## JavaScript Alias: maps/agusandelsur
 
 Map Name: Agusandel Sur
 Dimensions (Width x Height): 610x570

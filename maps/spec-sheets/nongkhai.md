@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nongkhai
+## JavaScript Alias: maps/nongkhai
 
 Map Name: NongKhai
 Dimensions (Width x Height): 545x974

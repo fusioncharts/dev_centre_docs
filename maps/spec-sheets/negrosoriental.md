@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/negrosoriental
+## JavaScript Alias: maps/negrosoriental
 
 Map Name: Negros Oriental
 Dimensions (Width x Height): 610x570

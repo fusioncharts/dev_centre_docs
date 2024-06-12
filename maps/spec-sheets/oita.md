@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oita
+## JavaScript Alias: maps/oita
 
 Map Name: Oita
 Dimensions (Width x Height): 540x510

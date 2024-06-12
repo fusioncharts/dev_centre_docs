@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/losrios
+## JavaScript Alias: maps/losrios
 
 Map Name: Los Rios
 Dimensions (Width x Height): 600x460

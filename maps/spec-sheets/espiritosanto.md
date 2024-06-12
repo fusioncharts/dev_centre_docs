@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/espiritosanto
+## JavaScript Alias: maps/espiritosanto
 
 Map Name: Espiritosanto
 Dimensions (Width x Height): 850x1300

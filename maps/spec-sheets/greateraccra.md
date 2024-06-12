@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/greateraccra
+## JavaScript Alias: maps/greateraccra
 
 Map Name: Greater Accra
 Dimensions (Width x Height): 261x371

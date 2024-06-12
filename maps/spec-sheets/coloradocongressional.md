@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/coloradocongressional
+## JavaScript Alias: maps/coloradocongressional
 
 Map Name: Coloradocongressional
 Dimensions (Width x Height): 680x500

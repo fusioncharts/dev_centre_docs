@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternnorway
+## JavaScript Alias: maps/easternnorway
 
 Map Name: Easternnorway
 Dimensions (Width x Height): 415x526

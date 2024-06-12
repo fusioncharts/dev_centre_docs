@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saxony
+## JavaScript Alias: maps/saxony
 
 Map Name: Saxony
 Dimensions (Width x Height): 481x381

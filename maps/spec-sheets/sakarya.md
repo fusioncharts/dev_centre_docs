@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sakarya
+## JavaScript Alias: maps/sakarya
 
 Map Name: Sakarya
 Dimensions (Width x Height): 610x570

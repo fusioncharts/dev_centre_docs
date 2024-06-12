@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/australia2
+## JavaScript Alias: maps/australia2
 
 Map Name: Australia2
 Dimensions (Width x Height): 650x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintbarthelemy
+## JavaScript Alias: maps/saintbarthelemy
 
 Map Name: Saintbarthelemy
 Dimensions (Width x Height): 380x220

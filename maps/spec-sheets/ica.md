@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ica
+## JavaScript Alias: maps/ica
 
 Map Name: Ica
 Dimensions (Width x Height): 362x505

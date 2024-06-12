@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/armenia
+## JavaScript Alias: maps/armenia
 
 Map Name: Armenia
 Dimensions (Width x Height): 490x500

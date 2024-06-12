@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/syddanmark
+## JavaScript Alias: maps/syddanmark
 
 Map Name: Syddanmark
 Dimensions (Width x Height): 823x664

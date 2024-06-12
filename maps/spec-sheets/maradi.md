@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maradi
+## JavaScript Alias: maps/maradi
 
 Map Name: Maradi
 Dimensions (Width x Height): 560x450

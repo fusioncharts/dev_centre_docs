@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jammuandkashmir
+## JavaScript Alias: maps/jammuandkashmir
 
 Map Name: Jammu and Kashmir
 Dimensions (Width x Height): 400x310

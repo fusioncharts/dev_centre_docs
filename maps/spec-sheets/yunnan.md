@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yunnan
+## JavaScript Alias: maps/yunnan
 
 Map Name: Yunnan
 Dimensions (Width x Height): 364x384

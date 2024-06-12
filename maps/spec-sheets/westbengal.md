@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westbengal
+## JavaScript Alias: maps/westbengal
 
 Map Name: West Bengal
 Dimensions (Width x Height): 270x410

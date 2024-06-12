@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newhampshireareacode
+## JavaScript Alias: maps/newhampshireareacode
 
 Map Name: Newhampshireareacode
 Dimensions (Width x Height): 240x480

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/srilankaprovince
+## JavaScript Alias: maps/srilankaprovince
 
 Map Name: Sri Lanka Province
 Dimensions (Width x Height): 600x1040

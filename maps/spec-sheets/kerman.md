@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kerman
+## JavaScript Alias: maps/kerman
 
 Map Name: Kerman
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newbrunswick
+## JavaScript Alias: maps/newbrunswick
 
 Map Name: Newbrunswick
 Dimensions (Width x Height): 450x450

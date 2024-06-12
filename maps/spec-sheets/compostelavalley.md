@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/compostelavalley
+## JavaScript Alias: maps/compostelavalley
 
 Map Name: Compostela Valley
 Dimensions (Width x Height): 610x570

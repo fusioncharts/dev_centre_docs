@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zambales
+## JavaScript Alias: maps/zambales
 
 Map Name: Zambales
 Dimensions (Width x Height): 610x570

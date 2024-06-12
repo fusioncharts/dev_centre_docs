@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/calabria
+## JavaScript Alias: maps/calabria
 
 Map Name: Calabria
 Dimensions (Width x Height): 320x450

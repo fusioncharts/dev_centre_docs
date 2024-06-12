@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vakinankaratra
+## JavaScript Alias: maps/vakinankaratra
 
 Map Name: Vakinankaratra
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cordoba
+## JavaScript Alias: maps/cordoba
 
 Map Name: Cordoba
 Dimensions (Width x Height): 420x580

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/palau
+## JavaScript Alias: maps/palau
 
 Map Name: Palau
 Dimensions (Width x Height): 630x710

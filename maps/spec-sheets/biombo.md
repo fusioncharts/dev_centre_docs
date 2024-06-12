@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/biombo
+## JavaScript Alias: maps/biombo
 
 Map Name: Biombo
 Dimensions (Width x Height): 680x420

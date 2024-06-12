@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northjeolla
+## JavaScript Alias: maps/northjeolla
 
 Map Name: Northjeolla
 Dimensions (Width x Height): 248x177

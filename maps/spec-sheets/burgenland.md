@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/burgenland
+## JavaScript Alias: maps/burgenland
 
 Map Name: Burgenland
 Dimensions (Width x Height): 220x390

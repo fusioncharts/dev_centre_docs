@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kagoshima
+## JavaScript Alias: maps/kagoshima
 
 Map Name: Kagoshima
 Dimensions (Width x Height): 370x591

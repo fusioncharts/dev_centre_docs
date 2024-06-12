@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/champasak
+## JavaScript Alias: maps/champasak
 
 Map Name: Champasak
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/thimphu
+## JavaScript Alias: maps/thimphu
 
 Map Name: Thimphu
 Dimensions (Width x Height): 440x590

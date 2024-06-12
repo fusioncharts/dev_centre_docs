@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uzbekistan
+## JavaScript Alias: maps/uzbekistan
 
 Map Name: Uzbekistan
 Dimensions (Width x Height): 390x230

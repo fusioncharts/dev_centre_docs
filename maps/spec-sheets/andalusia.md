@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/andalusia
+## JavaScript Alias: maps/andalusia
 
 Map Name: Andalusia
 Dimensions (Width x Height): 610x570

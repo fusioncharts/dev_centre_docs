@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralvisayas
+## JavaScript Alias: maps/centralvisayas
 
 Map Name: Central Visayas
 Dimensions (Width x Height): 440x590

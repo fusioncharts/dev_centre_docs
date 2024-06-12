@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ehime
+## JavaScript Alias: maps/ehime
 
 Map Name: Ehime
 Dimensions (Width x Height): 540x470

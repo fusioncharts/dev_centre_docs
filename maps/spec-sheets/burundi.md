@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/burundi
+## JavaScript Alias: maps/burundi
 
 Map Name: Burundi
 Dimensions (Width x Height): 450x490

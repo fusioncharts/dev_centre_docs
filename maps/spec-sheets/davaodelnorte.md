@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/davaodelnorte
+## JavaScript Alias: maps/davaodelnorte
 
 Map Name: Davaodel Norte
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/obwalden
+## JavaScript Alias: maps/obwalden
 
 Map Name: Obwalden
 Dimensions (Width x Height): 920x660

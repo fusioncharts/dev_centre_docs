@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautsbassins
+## JavaScript Alias: maps/hautsbassins
 
 Map Name: Hauts-Bassins
 Dimensions (Width x Height): 600x460

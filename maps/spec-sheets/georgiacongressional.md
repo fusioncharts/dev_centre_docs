@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/georgiacongressional
+## JavaScript Alias: maps/georgiacongressional
 
 Map Name: Georgiacongressional
 Dimensions (Width x Height): 670x790

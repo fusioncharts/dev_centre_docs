@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oklahomaareacode
+## JavaScript Alias: maps/oklahomaareacode
 
 Map Name: Oklahomaareacode
 Dimensions (Width x Height): 490x240

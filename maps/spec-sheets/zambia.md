@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zambia
+## JavaScript Alias: maps/zambia
 
 Map Name: Zambia
 Dimensions (Width x Height): 500x430

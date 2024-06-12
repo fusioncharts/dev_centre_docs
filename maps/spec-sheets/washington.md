@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/washington
+## JavaScript Alias: maps/washington
 
 Map Name: Washington
 Dimensions (Width x Height): 755x500

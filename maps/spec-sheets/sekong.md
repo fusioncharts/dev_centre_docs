@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sekong
+## JavaScript Alias: maps/sekong
 
 Map Name: Sekong
 Dimensions (Width x Height): 440x590

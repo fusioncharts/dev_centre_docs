@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bursa
+## JavaScript Alias: maps/bursa
 
 Map Name: Bursa
 Dimensions (Width x Height): 610x570

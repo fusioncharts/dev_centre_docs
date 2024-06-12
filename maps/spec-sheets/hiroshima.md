@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hiroshima
+## JavaScript Alias: maps/hiroshima
 
 Map Name: Hiroshima
 Dimensions (Width x Height): 540x440

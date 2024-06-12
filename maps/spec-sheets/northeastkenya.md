@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northeastkenya
+## JavaScript Alias: maps/northeastkenya
 
 Map Name: Northeast Kenya
 Dimensions (Width x Height): 440x590

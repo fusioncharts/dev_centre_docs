@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aguascalientes
+## JavaScript Alias: maps/aguascalientes
 
 Map Name: Aguascalientes
 Dimensions (Width x Height): 740x570

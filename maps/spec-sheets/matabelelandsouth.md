@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/matabelelandsouth
+## JavaScript Alias: maps/matabelelandsouth
 
 Map Name: Matabeleland South
 Dimensions (Width x Height): 801x391

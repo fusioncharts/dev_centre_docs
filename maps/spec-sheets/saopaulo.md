@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saopaulo
+## JavaScript Alias: maps/saopaulo
 
 Map Name: Saopaulo
 Dimensions (Width x Height): 1616x1033

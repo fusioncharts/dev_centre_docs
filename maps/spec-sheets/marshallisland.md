@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marshallisland
+## JavaScript Alias: maps/marshallisland
 
 Map Name: Marshallisland
 Dimensions (Width x Height): 370x300

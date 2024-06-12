@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/michiganareacode
+## JavaScript Alias: maps/michiganareacode
 
 Map Name: Michiganareacode
 Dimensions (Width x Height): 475x468

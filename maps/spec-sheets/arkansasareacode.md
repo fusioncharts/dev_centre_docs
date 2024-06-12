@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arkansasareacode
+## JavaScript Alias: maps/arkansasareacode
 
 Map Name: Arkansasareacode
 Dimensions (Width x Height): 460x400

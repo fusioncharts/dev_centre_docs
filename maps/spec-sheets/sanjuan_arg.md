@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sanjuan_arg
+## JavaScript Alias: maps/sanjuan_arg
 
 Map Name: SanJuan
 Dimensions (Width x Height): 462x591

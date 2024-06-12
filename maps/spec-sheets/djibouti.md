@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/djibouti
+## JavaScript Alias: maps/djibouti
 
 Map Name: Djibouti
 Dimensions (Width x Height): 370x440

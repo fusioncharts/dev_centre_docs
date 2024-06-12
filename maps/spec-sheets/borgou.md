@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/borgou
+## JavaScript Alias: maps/borgou
 
 Map Name: Borgou
 Dimensions (Width x Height): 600x460

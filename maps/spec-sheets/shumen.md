@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/shumen
+## JavaScript Alias: maps/shumen
 
 Map Name: Shumen
 Dimensions (Width x Height): 516x600

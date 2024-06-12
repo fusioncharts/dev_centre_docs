@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/afarregion
+## JavaScript Alias: maps/afarregion
 
 Map Name: Afar Region
 Dimensions (Width x Height): 610x570

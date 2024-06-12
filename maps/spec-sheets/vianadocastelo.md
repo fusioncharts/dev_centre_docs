@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vianadocastelo
+## JavaScript Alias: maps/vianadocastelo
 
 Map Name: Vianadocastelo
 Dimensions (Width x Height): 390x360

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nevada
+## JavaScript Alias: maps/nevada
 
 Map Name: Nevada
 Dimensions (Width x Height): 620x870

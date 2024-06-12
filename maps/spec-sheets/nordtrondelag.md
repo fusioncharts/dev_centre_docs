@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nordtrondelag
+## JavaScript Alias: maps/nordtrondelag
 
 Map Name: Nordtrondelag
 Dimensions (Width x Height): 556x600

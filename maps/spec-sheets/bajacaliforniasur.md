@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bajacaliforniasur
+## JavaScript Alias: maps/bajacaliforniasur
 
 Map Name: Bajacaliforniasur
 Dimensions (Width x Height): 330x380

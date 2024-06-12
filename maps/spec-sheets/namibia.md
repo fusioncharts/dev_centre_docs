@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/namibia
+## JavaScript Alias: maps/namibia
 
 Map Name: Namibia
 Dimensions (Width x Height): 321x331

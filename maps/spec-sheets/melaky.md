@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/melaky
+## JavaScript Alias: maps/melaky
 
 Map Name: Melaky
 Dimensions (Width x Height): 600x460

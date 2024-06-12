@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tucuman
+## JavaScript Alias: maps/tucuman
 
 Map Name: Tucumán
 Dimensions (Width x Height): 464x531

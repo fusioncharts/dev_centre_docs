@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/oberosterreich
+## JavaScript Alias: maps/oberosterreich
 
 Map Name: Oberosterreich
 Dimensions (Width x Height): 750x640

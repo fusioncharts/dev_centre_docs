@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hedmark
+## JavaScript Alias: maps/hedmark
 
 Map Name: Hedmark
 Dimensions (Width x Height): 317x600

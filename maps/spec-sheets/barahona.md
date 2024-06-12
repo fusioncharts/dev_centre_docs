@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/barahona
+## JavaScript Alias: maps/barahona
 
 Map Name: Barahona
 Dimensions (Width x Height): 610x570

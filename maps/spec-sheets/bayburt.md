@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bayburt
+## JavaScript Alias: maps/bayburt
 
 Map Name: Bayburt
 Dimensions (Width x Height): 610x570

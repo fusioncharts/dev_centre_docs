@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sennar
+## JavaScript Alias: maps/sennar
 
 Map Name: Sennar
 Dimensions (Width x Height): 1120x1240

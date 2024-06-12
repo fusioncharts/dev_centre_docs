@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/batken
+## JavaScript Alias: maps/batken
 
 Map Name: Batken Map
 Dimensions (Width x Height): 440x590

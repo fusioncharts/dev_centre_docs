@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nidwalden
+## JavaScript Alias: maps/nidwalden
 
 Map Name: Nidwalden
 Dimensions (Width x Height): 440x420

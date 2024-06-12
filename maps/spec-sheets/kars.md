@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kars
+## JavaScript Alias: maps/kars
 
 Map Name: Kars
 Dimensions (Width x Height): 610x570

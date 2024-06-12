@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/missouriareacode
+## JavaScript Alias: maps/missouriareacode
 
 Map Name: Missouriareacode
 Dimensions (Width x Height): 470x415

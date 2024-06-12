@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mahasarakham
+## JavaScript Alias: maps/mahasarakham
 
 Map Name: MahaSarakham
 Dimensions (Width x Height): 545x974

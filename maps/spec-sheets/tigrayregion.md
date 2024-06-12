@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tigrayregion
+## JavaScript Alias: maps/tigrayregion
 
 Map Name: Tigray Region
 Dimensions (Width x Height): 610x570

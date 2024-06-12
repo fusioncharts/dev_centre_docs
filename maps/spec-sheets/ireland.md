@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ireland
+## JavaScript Alias: maps/ireland
 
 Map Name: Ireland
 Dimensions (Width x Height): 398x520

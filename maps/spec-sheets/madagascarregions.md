@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/madagascarregions
+## JavaScript Alias: maps/madagascarregions
 
 Map Name: Madagascar Regions
 Dimensions (Width x Height): 600x460

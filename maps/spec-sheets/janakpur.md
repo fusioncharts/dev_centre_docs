@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/janakpur
+## JavaScript Alias: maps/janakpur
 
 Map Name: Janakpur
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hokkaido
+## JavaScript Alias: maps/hokkaido
 
 Map Name: Hokkaido
 Dimensions (Width x Height): 540x500

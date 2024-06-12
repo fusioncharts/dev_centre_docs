@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nebraskaareacode
+## JavaScript Alias: maps/nebraskaareacode
 
 Map Name: Nebraskaareacode
 Dimensions (Width x Height): 430x200

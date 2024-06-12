@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westnusatenggara
+## JavaScript Alias: maps/westnusatenggara
 
 Map Name: West Nusa Tenggara
 Dimensions (Width x Height): 270x410

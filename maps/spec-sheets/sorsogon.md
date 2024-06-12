@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sorsogon
+## JavaScript Alias: maps/sorsogon
 
 Map Name: Sorsogon
 Dimensions (Width x Height): 610x570

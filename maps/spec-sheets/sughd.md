@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sughd
+## JavaScript Alias: maps/sughd
 
 Map Name: Sughd
 Dimensions (Width x Height): 610x570

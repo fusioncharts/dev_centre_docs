@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ecuador
+## JavaScript Alias: maps/ecuador
 
 Map Name: Ecuador
 Dimensions (Width x Height): 354x386

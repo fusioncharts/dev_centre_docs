@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/eritrea
+## JavaScript Alias: maps/eritrea
 
 Map Name: Eritrea
 Dimensions (Width x Height): 420x380

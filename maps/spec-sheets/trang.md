@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trang
+## JavaScript Alias: maps/trang
 
 Map Name: Trang
 Dimensions (Width x Height): 545x974

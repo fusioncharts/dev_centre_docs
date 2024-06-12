@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northwestterritories
+## JavaScript Alias: maps/northwestterritories
 
 Map Name: Northwestterritories
 Dimensions (Width x Height): 300x430

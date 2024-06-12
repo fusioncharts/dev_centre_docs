@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wellington
+## JavaScript Alias: maps/wellington
 
 Map Name: Wellington
 Dimensions (Width x Height): 600x424

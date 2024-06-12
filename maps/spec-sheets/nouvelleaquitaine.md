@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nouvelleaquitaine
+## JavaScript Alias: maps/nouvelleaquitaine
 
 Map Name: Nouvelle Aquitaine
 Dimensions (Width x Height): 610x570

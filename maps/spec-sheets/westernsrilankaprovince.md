@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernsrilankaprovince
+## JavaScript Alias: maps/westernsrilankaprovince
 
 Map Name: Western SriLanka Province
 Dimensions (Width x Height): 600x1040

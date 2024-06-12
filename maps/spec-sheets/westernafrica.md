@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernafrica
+## JavaScript Alias: maps/westernafrica
 
 Map Name: Westernafrica
 Dimensions (Width x Height): 742x434

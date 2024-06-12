@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pleven
+## JavaScript Alias: maps/pleven
 
 Map Name: Pleven
 Dimensions (Width x Height): 696x470

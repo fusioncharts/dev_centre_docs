@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sancristobal
+## JavaScript Alias: maps/sancristobal
 
 Map Name: San Cristobal
 Dimensions (Width x Height): 610x570

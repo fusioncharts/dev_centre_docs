@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautsdefrance
+## JavaScript Alias: maps/hautsdefrance
 
 Map Name: Hauts de France
 Dimensions (Width x Height): 610x570

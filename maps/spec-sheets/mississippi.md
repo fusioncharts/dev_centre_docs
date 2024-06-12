@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mississippi
+## JavaScript Alias: maps/mississippi
 
 Map Name: Mississippi
 Dimensions (Width x Height): 560x890

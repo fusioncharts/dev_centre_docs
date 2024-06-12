@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hiiumaa
+## JavaScript Alias: maps/hiiumaa
 
 Map Name: Hiiumaa
 Dimensions (Width x Height): 638x485

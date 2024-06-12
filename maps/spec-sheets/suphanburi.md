@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/suphanburi
+## JavaScript Alias: maps/suphanburi
 
 Map Name: SuphanBuri
 Dimensions (Width x Height): 545x974

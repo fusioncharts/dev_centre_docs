@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/maryland
+## JavaScript Alias: maps/maryland
 
 Map Name: Maryland
 Dimensions (Width x Height): 740x395

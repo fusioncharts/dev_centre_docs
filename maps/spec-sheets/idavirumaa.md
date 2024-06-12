@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/idavirumaa
+## JavaScript Alias: maps/idavirumaa
 
 Map Name: Idavirumaa
 Dimensions (Width x Height): 602x496

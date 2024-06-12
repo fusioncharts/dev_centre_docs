@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gradsofia
+## JavaScript Alias: maps/gradsofia
 
 Map Name: Sofia City
 Dimensions (Width x Height): 600x532

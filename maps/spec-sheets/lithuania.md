@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lithuania
+## JavaScript Alias: maps/lithuania
 
 Map Name: Lithuania
 Dimensions (Width x Height): 790x610

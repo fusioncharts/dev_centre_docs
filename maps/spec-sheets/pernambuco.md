@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pernambuco
+## JavaScript Alias: maps/pernambuco
 
 Map Name: Pernambuco
 Dimensions (Width x Height): 1375x600

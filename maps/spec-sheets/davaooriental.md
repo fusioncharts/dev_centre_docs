@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/davaooriental
+## JavaScript Alias: maps/davaooriental
 
 Map Name: Davao Oriental
 Dimensions (Width x Height): 610x570

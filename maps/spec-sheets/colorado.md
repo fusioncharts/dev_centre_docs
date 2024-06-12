@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/colorado
+## JavaScript Alias: maps/colorado
 
 Map Name: Colorado
 Dimensions (Width x Height): 800x660

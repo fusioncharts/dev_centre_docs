@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/hautmbomou
+## JavaScript Alias: maps/hautmbomou
 
 Map Name: HautMbomou
 Dimensions (Width x Height): 600x460

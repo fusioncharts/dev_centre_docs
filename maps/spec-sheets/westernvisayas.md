@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/westernvisayas
+## JavaScript Alias: maps/westernvisayas
 
 Map Name: Western Visayas
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gisborne
+## JavaScript Alias: maps/gisborne
 
 Map Name: Gisborne
 Dimensions (Width x Height): 500x600

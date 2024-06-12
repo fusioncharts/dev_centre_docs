@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/montenegro
+## JavaScript Alias: maps/montenegro
 
 Map Name: Montenegro
 Dimensions (Width x Height): 510x580

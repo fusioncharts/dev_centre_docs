@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bratislava
+## JavaScript Alias: maps/bratislava
 
 Map Name: Bratislava
 Dimensions (Width x Height): 423x600

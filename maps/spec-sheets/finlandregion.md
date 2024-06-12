@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/finlandregion
+## JavaScript Alias: maps/finlandregion
 
 Map Name: FinlandRegion Map
 Dimensions (Width x Height): 440x590

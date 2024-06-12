@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/seno
+## JavaScript Alias: maps/seno
 
 Map Name: Seno
 Dimensions (Width x Height): 600x460

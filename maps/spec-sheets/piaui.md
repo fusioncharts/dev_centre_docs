@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/piaui
+## JavaScript Alias: maps/piaui
 
 Map Name: Piaui
 Dimensions (Width x Height): 800x1150

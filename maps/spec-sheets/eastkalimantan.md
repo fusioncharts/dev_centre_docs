@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/eastkalimantan
+## JavaScript Alias: maps/eastkalimantan
 
 Map Name: East Kalimantan
 Dimensions (Width x Height): 270x410

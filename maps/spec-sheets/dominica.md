@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dominica
+## JavaScript Alias: maps/dominica
 
 Map Name: Dominica
 Dimensions (Width x Height): 150x280

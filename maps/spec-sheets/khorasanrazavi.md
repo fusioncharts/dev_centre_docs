@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/khorasanrazavi
+## JavaScript Alias: maps/khorasanrazavi
 
 Map Name: Khorasan Razavi
 Dimensions (Width x Height): 610x570

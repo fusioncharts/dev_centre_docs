@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dominicanrepublic
+## JavaScript Alias: maps/dominicanrepublic
 
 Map Name: DominicanRepublic
 Dimensions (Width x Height): 610x570

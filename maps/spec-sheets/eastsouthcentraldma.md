@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/eastsouthcentraldma
+## JavaScript Alias: maps/eastsouthcentraldma
 
 Map Name: Eastsouthcentraldma
 Dimensions (Width x Height): 527x600

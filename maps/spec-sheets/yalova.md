@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yalova
+## JavaScript Alias: maps/yalova
 
 Map Name: Yalova
 Dimensions (Width x Height): 610x570

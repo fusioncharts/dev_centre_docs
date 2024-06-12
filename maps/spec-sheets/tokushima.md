@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tokushima
+## JavaScript Alias: maps/tokushima
 
 Map Name: Tokushima
 Dimensions (Width x Height): 540x430

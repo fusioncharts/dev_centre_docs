@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gangwon
+## JavaScript Alias: maps/gangwon
 
 Map Name: Gangwon
 Dimensions (Width x Height): 300x210

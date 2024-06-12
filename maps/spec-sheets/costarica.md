@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/costarica
+## JavaScript Alias: maps/costarica
 
 Map Name: Costarica
 Dimensions (Width x Height): 311x301

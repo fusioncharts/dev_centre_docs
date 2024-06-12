@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bheri
+## JavaScript Alias: maps/bheri
 
 Map Name: Bheri
 Dimensions (Width x Height): 421x391

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ardahan
+## JavaScript Alias: maps/ardahan
 
 Map Name: Ardahan
 Dimensions (Width x Height): 610x570

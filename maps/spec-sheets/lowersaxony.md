@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lowersaxony
+## JavaScript Alias: maps/lowersaxony
 
 Map Name: Lowersaxony
 Dimensions (Width x Height): 410x370

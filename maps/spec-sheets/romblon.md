@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/romblon
+## JavaScript Alias: maps/romblon
 
 Map Name: Romblon
 Dimensions (Width x Height): 610x570

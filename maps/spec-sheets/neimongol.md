@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/neimongol
+## JavaScript Alias: maps/neimongol
 
 Map Name: Neimongol
 Dimensions (Width x Height): 533x385

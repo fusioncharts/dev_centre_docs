@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/congo
+## JavaScript Alias: maps/congo
 
 Map Name: Congo
 Dimensions (Width x Height): 320x370

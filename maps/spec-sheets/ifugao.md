@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ifugao
+## JavaScript Alias: maps/ifugao
 
 Map Name: Ifugao
 Dimensions (Width x Height): 610x570

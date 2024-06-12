@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gangwondo
+## JavaScript Alias: maps/gangwondo
 
 Map Name: Gangwondo
 Dimensions (Width x Height): 300x210

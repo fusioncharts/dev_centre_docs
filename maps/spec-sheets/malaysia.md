@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/malaysia
+## JavaScript Alias: maps/malaysia
 
 Map Name: Malaysia
 Dimensions (Width x Height): 580x250

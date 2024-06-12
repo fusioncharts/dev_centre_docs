@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cusco
+## JavaScript Alias: maps/cusco
 
 Map Name: Cusco
 Dimensions (Width x Height): 560x679

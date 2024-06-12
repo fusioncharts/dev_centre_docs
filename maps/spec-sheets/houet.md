@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/houet
+## JavaScript Alias: maps/houet
 
 Map Name: Houet
 Dimensions (Width x Height): 600x460

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usa
+## JavaScript Alias: maps/usa
 
 Map Name: Usa
 Dimensions (Width x Height): 730x445

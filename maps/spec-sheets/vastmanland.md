@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vastmanland
+## JavaScript Alias: maps/vastmanland
 
 Map Name: Vastmanland
 Dimensions (Width x Height): 320x380

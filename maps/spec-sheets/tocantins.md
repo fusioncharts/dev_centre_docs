@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tocantins
+## JavaScript Alias: maps/tocantins
 
 Map Name: Tocantins
 Dimensions (Width x Height): 1090x1850

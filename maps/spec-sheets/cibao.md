@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cibao
+## JavaScript Alias: maps/cibao
 
 Map Name: Cibao Map
 Dimensions (Width x Height): 440x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/camiguin
+## JavaScript Alias: maps/camiguin
 
 Map Name: Camiguin
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/denmarkregion
+## JavaScript Alias: maps/denmarkregion
 
 Map Name: Denmarkregion
 Dimensions (Width x Height): 520x580

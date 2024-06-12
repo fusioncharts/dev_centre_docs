@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/minnesotaareacode
+## JavaScript Alias: maps/minnesotaareacode
 
 Map Name: Minnesotaareacode
 Dimensions (Width x Height): 430x480

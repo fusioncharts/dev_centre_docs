@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/slovenia
+## JavaScript Alias: maps/slovenia
 
 Map Name: Slovenia
 Dimensions (Width x Height): 560x380

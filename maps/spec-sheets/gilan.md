@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gilan
+## JavaScript Alias: maps/gilan
 
 Map Name: Gilan
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bulgariamontana
+## JavaScript Alias: maps/bulgariamontana
 
 Map Name: Bulgariamontana
 Dimensions (Width x Height): 580x600

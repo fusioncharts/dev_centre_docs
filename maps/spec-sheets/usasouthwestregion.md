@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usasouthwestregion
+## JavaScript Alias: maps/usasouthwestregion
 
 Map Name: Usasouthwestregion
 Dimensions (Width x Height): 260x220

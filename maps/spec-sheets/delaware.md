@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/delaware
+## JavaScript Alias: maps/delaware
 
 Map Name: Delaware
 Dimensions (Width x Height): 351x826

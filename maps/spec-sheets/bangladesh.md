@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bangladesh
+## JavaScript Alias: maps/bangladesh
 
 Map Name: Bangladesh
 Dimensions (Width x Height): 431x600

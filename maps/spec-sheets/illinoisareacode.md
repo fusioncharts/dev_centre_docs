@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/illinoisareacode
+## JavaScript Alias: maps/illinoisareacode
 
 Map Name: Illinoisareacode
 Dimensions (Width x Height): 285x470

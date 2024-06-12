@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/wisconsincongressional
+## JavaScript Alias: maps/wisconsincongressional
 
 Map Name: Wisconsincongressional
 Dimensions (Width x Height): 600x600

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bolu
+## JavaScript Alias: maps/bolu
 
 Map Name: Bolu
 Dimensions (Width x Height): 610x570

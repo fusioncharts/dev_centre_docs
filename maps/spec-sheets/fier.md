@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/fier
+## JavaScript Alias: maps/fier
 
 Map Name: Fier
 Dimensions (Width x Height): 426x594

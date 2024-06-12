@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lanaodelnorte
+## JavaScript Alias: maps/lanaodelnorte
 
 Map Name: Lanaodel Norte
 Dimensions (Width x Height): 610x570

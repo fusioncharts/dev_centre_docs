@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/savannakhet
+## JavaScript Alias: maps/savannakhet
 
 Map Name: Savannakhet
 Dimensions (Width x Height): 440x590

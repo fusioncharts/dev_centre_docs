@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yunlincounty
+## JavaScript Alias: maps/yunlincounty
 
 Map Name: Yunlin County
 Dimensions (Width x Height): 610x570

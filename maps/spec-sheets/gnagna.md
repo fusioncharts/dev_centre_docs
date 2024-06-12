@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gnagna
+## JavaScript Alias: maps/gnagna
 
 Map Name: Gnagna
 Dimensions (Width x Height): 600x460

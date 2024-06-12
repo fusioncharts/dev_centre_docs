@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guatemala
+## JavaScript Alias: maps/guatemala
 
 Map Name: Guatemala
 Dimensions (Width x Height): 440x440

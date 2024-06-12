@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/telemark
+## JavaScript Alias: maps/telemark
 
 Map Name: Telemark
 Dimensions (Width x Height): 550x600

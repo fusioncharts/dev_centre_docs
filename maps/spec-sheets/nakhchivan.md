@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nakhchivan
+## JavaScript Alias: maps/nakhchivan
 
 Map Name: Nakhchivan
 Dimensions (Width x Height): 310x460

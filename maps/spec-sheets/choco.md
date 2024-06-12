@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/choco
+## JavaScript Alias: maps/choco
 
 Map Name: Choco
 Dimensions (Width x Height): 510x400

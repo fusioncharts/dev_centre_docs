@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/coastalkenya
+## JavaScript Alias: maps/coastalkenya
 
 Map Name: CoastalKenya
 Dimensions (Width x Height): 440x590

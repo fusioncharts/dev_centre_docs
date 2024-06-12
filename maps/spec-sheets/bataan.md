@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bataan
+## JavaScript Alias: maps/bataan
 
 Map Name: Bataan
 Dimensions (Width x Height): 610x570

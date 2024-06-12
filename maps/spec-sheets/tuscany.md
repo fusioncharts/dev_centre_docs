@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tuscany
+## JavaScript Alias: maps/tuscany
 
 Map Name: Tuscany
 Dimensions (Width x Height): 530x590

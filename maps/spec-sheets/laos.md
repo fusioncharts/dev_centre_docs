@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/laos
+## JavaScript Alias: maps/laos
 
 Map Name: Laos
 Dimensions (Width x Height): 270x310

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iwate
+## JavaScript Alias: maps/iwate
 
 Map Name: Iwate
 Dimensions (Width x Height): 400x590

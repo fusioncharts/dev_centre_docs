@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/bougouriba
+## JavaScript Alias: maps/bougouriba
 
 Map Name: Bougouriba
 Dimensions (Width x Height): 600x460

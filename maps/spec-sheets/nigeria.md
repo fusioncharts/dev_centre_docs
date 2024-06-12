@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nigeria
+## JavaScript Alias: maps/nigeria
 
 Map Name: Nigeria
 Dimensions (Width x Height): 420x380

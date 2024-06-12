@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tillaberi
+## JavaScript Alias: maps/tillaberi
 
 Map Name: Tillaberi
 Dimensions (Width x Height): 560x450

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tchologo
+## JavaScript Alias: maps/tchologo
 
 Map Name: Tchologo
 Dimensions (Width x Height): 600x460

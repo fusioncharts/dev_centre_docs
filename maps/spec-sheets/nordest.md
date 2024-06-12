@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nordest
+## JavaScript Alias: maps/nordest
 
 Map Name: Nordest
 Dimensions (Width x Height): 306x292

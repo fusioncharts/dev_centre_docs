@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/taiwan
+## JavaScript Alias: maps/taiwan
 
 Map Name: Taiwan
 Dimensions (Width x Height): 440x550

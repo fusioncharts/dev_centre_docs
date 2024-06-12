@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/navarre
+## JavaScript Alias: maps/navarre
 
 Map Name: Navarre
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/telangana
+## JavaScript Alias: maps/telangana
 
 Map Name: Telangana
 Dimensions (Width x Height): 440x410

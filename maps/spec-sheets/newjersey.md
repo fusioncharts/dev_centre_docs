@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newjersey
+## JavaScript Alias: maps/newjersey
 
 Map Name: Newjersey
 Dimensions (Width x Height): 475x880

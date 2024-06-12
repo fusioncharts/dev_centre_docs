@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tacna
+## JavaScript Alias: maps/tacna
 
 Map Name: Tacna
 Dimensions (Width x Height): 600x564

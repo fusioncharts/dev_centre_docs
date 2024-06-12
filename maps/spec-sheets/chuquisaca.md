@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chuquisaca
+## JavaScript Alias: maps/chuquisaca
 
 Map Name: Chuquisaca
 Dimensions (Width x Height): 300x340

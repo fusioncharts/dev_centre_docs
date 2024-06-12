@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nakhonpathom
+## JavaScript Alias: maps/nakhonpathom
 
 Map Name: NakhonPathom
 Dimensions (Width x Height): 545x974

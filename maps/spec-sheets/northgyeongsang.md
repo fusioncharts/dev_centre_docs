@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northgyeongsang
+## JavaScript Alias: maps/northgyeongsang
 
 Map Name: Northgyeongsang
 Dimensions (Width x Height): 300x225

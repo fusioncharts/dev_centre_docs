@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saintkittsandnevis
+## JavaScript Alias: maps/saintkittsandnevis
 
 Map Name: Saintkittsandnevis
 Dimensions (Width x Height): 350x330

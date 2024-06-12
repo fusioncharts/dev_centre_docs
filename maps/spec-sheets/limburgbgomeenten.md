@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/limburgbgomeenten
+## JavaScript Alias: maps/limburgbgomeenten
 
 Map Name: Limburg
 Dimensions (Width x Height): 191x195

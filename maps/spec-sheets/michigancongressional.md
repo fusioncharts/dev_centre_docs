@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/michigancongressional
+## JavaScript Alias: maps/michigancongressional
 
 Map Name: Michigancongressional
 Dimensions (Width x Height): 710x800

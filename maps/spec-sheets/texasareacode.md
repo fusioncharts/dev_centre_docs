@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/texasareacode
+## JavaScript Alias: maps/texasareacode
 
 Map Name: Texasareacode
 Dimensions (Width x Height): 470x450

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trongsa
+## JavaScript Alias: maps/trongsa
 
 Map Name: Trongsa
 Dimensions (Width x Height): 440x590

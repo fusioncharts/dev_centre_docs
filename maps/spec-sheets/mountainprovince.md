@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mountainprovince
+## JavaScript Alias: maps/mountainprovince
 
 Map Name: Mountain Province
 Dimensions (Width x Height): 610x570

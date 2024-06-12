@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chad
+## JavaScript Alias: maps/chad
 
 Map Name: Chad
 Dimensions (Width x Height): 321x491

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ghazni
+## JavaScript Alias: maps/ghazni
 
 Map Name: Ghazni
 Dimensions (Width x Height): 610x570

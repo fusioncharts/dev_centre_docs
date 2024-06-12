@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/aysendelgeneralcarlosibanezdelcampo
+## JavaScript Alias: maps/aysendelgeneralcarlosibanezdelcampo
 
 Map Name: Aysendel General Carlos Ibanez del Campo
 Dimensions (Width x Height): 600x460

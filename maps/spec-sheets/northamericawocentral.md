@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northamericawocentral
+## JavaScript Alias: maps/northamericawocentral
 
 Map Name: Northamericawocentral
 Dimensions (Width x Height): 650x650

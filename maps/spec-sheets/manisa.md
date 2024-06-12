@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/manisa
+## JavaScript Alias: maps/manisa
 
 Map Name: Manisa
 Dimensions (Width x Height): 610x570

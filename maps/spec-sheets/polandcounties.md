@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/polandcounties
+## JavaScript Alias: maps/polandcounties
 
 Map Name: Polandcounties
 Dimensions (Width x Height): 644x600

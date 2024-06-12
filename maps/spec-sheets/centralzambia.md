@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralzambia
+## JavaScript Alias: maps/centralzambia
 
 Map Name: Central Zambia
 Dimensions (Width x Height): 610x570

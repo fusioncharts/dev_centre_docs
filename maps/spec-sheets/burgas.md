@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/burgas
+## JavaScript Alias: maps/burgas
 
 Map Name: Burgas
 Dimensions (Width x Height): 574x567

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/vlore
+## JavaScript Alias: maps/vlore
 
 Map Name: Vlore
 Dimensions (Width x Height): 489x594

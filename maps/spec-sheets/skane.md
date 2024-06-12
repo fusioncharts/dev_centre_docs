@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/skane
+## JavaScript Alias: maps/skane
 
 Map Name: Skane
 Dimensions (Width x Height): 580x580

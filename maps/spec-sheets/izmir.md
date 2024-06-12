@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/izmir
+## JavaScript Alias: maps/izmir
 
 Map Name: İzmir
 Dimensions (Width x Height): 610x570

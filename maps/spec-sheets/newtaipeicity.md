@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newtaipeicity
+## JavaScript Alias: maps/newtaipeicity
 
 Map Name: New Taipei City
 Dimensions (Width x Height): 610x570

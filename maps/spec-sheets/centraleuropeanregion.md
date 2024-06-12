@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centraleuropeanregion
+## JavaScript Alias: maps/centraleuropeanregion
 
 Map Name: Centraleuropeanregion
 Dimensions (Width x Height): 140x120

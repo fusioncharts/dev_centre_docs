@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tombali
+## JavaScript Alias: maps/tombali
 
 Map Name: Tombali
 Dimensions (Width x Height): 680x420

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/dobrich
+## JavaScript Alias: maps/dobrich
 
 Map Name: Dobrich
 Dimensions (Width x Height): 840x590

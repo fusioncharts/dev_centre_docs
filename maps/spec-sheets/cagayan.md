@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/cagayan
+## JavaScript Alias: maps/cagayan
 
 Map Name: Cagayan
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/liberec
+## JavaScript Alias: maps/liberec
 
 Map Name: Liberec
 Dimensions (Width x Height): 740x530

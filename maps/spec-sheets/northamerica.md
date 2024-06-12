@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northamerica
+## JavaScript Alias: maps/northamerica
 
 Map Name: Northamerica
 Dimensions (Width x Height): 640x660

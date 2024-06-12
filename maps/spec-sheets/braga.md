@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/braga
+## JavaScript Alias: maps/braga
 
 Map Name: Braga
 Dimensions (Width x Height): 350x240

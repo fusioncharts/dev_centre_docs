@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lastunas
+## JavaScript Alias: maps/lastunas
 
 Map Name: Las Tunas
 Dimensions (Width x Height): 510x400

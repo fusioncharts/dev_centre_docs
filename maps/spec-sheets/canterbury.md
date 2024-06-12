@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/canterbury
+## JavaScript Alias: maps/canterbury
 
 Map Name: Canterbury
 Dimensions (Width x Height): 600x579

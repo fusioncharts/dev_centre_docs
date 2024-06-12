@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gyeonggi
+## JavaScript Alias: maps/gyeonggi
 
 Map Name: Gyeonggi
 Dimensions (Width x Height): 267x272

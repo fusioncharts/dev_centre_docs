@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gorgol
+## JavaScript Alias: maps/gorgol
 
 Map Name: Gorgol
 Dimensions (Width x Height): 600x625

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tekirdag
+## JavaScript Alias: maps/tekirdag
 
 Map Name: Tekirdag
 Dimensions (Width x Height): 610x570

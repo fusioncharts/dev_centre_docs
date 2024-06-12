@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/mali
+## JavaScript Alias: maps/mali
 
 Map Name: Mali
 Dimensions (Width x Height): 470x470

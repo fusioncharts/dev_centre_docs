@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tamilnadu
+## JavaScript Alias: maps/tamilnadu
 
 Map Name: Tamilnadu
 Dimensions (Width x Height): 370x470

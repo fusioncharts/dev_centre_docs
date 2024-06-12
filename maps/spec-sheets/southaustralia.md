@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southaustralia
+## JavaScript Alias: maps/southaustralia
 
 Map Name: Southaustralia
 Dimensions (Width x Height): 393x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ogoouemaritime
+## JavaScript Alias: maps/ogoouemaritime
 
 Map Name: Ogooué-Maritime (Port-Gentil)
 Dimensions (Width x Height): 310x340

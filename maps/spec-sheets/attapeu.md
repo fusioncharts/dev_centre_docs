@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/attapeu
+## JavaScript Alias: maps/attapeu
 
 Map Name: Attapeu
 Dimensions (Width x Height): 440x590

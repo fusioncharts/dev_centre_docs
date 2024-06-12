@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/erzurum
+## JavaScript Alias: maps/erzurum
 
 Map Name: Erzurum
 Dimensions (Width x Height): 610x570

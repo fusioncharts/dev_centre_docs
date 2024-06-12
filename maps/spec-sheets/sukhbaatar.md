@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/sukhbaatar
+## JavaScript Alias: maps/sukhbaatar
 
 Map Name: Sükhbaatar
 Dimensions (Width x Height): 610x570

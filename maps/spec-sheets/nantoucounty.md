@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/nantoucounty
+## JavaScript Alias: maps/nantoucounty
 
 Map Name: Nantou County
 Dimensions (Width x Height): 610x570

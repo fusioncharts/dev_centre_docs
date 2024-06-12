@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/risaralda
+## JavaScript Alias: maps/risaralda
 
 Map Name: Risaralda
 Dimensions (Width x Height): 610x570

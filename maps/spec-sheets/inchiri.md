@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/inchiri
+## JavaScript Alias: maps/inchiri
 
 Map Name: Inchiri
 Dimensions (Width x Height): 600x625

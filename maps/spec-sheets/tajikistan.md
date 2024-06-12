@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tajikistan
+## JavaScript Alias: maps/tajikistan
 
 Map Name: Tajikistan
 Dimensions (Width x Height): 610x570

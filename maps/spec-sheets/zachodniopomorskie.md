@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zachodniopomorskie
+## JavaScript Alias: maps/zachodniopomorskie
 
 Map Name: Zachodniopomorskie
 Dimensions (Width x Height): 413x442

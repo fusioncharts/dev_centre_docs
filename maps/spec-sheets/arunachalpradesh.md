@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/arunachalpradesh
+## JavaScript Alias: maps/arunachalpradesh
 
 Map Name: Arunachalpradesh
 Dimensions (Width x Height): 460x280

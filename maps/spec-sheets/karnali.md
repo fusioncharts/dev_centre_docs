@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/karnali
+## JavaScript Alias: maps/karnali
 
 Map Name: Karnali
 Dimensions (Width x Height): 421x391

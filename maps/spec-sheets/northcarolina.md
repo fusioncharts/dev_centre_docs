@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northcarolina
+## JavaScript Alias: maps/northcarolina
 
 Map Name: Northcarolina
 Dimensions (Width x Height): 890x380

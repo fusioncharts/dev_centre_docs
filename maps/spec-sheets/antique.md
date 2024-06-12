@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/antique
+## JavaScript Alias: maps/antique
 
 Map Name: Antique
 Dimensions (Width x Height): 610x570

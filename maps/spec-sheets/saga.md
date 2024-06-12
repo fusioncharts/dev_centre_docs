@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/saga
+## JavaScript Alias: maps/saga
 
 Map Name: Saga
 Dimensions (Width x Height): 430x520

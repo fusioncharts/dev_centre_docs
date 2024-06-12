@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/jambi
+## JavaScript Alias: maps/jambi
 
 Map Name: Jambi
 Dimensions (Width x Height): 270x410

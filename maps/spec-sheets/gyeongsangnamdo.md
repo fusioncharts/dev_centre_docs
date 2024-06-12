@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gyeongsangnamdo
+## JavaScript Alias: maps/gyeongsangnamdo
 
 Map Name: Gyeongsangnamdo
 Dimensions (Width x Height): 246x180

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gontougo
+## JavaScript Alias: maps/gontougo
 
 Map Name: Gontougo
 Dimensions (Width x Height): 600x460

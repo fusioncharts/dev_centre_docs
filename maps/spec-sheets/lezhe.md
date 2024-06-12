@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/lezhe
+## JavaScript Alias: maps/lezhe
 
 Map Name: Lezhe
 Dimensions (Width x Height): 568x514

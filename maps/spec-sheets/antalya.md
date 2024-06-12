@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/antalya
+## JavaScript Alias: maps/antalya
 
 Map Name: Antalya
 Dimensions (Width x Height): 610x570

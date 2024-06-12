@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gyeonggido
+## JavaScript Alias: maps/gyeonggido
 
 Map Name: Gyeonggido
 Dimensions (Width x Height): 267x272

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/taichungcity
+## JavaScript Alias: maps/taichungcity
 
 Map Name: Taichung City
 Dimensions (Width x Height): 610x570

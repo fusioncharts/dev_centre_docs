@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/amoronimania
+## JavaScript Alias: maps/amoronimania
 
 Map Name: AmoroniMania
 Dimensions (Width x Height): 600x460

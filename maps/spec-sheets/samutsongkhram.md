@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/samutsongkhram
+## JavaScript Alias: maps/samutsongkhram
 
 Map Name: SamutSongkhram
 Dimensions (Width x Height): 545x974

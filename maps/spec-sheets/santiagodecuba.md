@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/santiagodecuba
+## JavaScript Alias: maps/santiagodecuba
 
 Map Name: Santiago de Cuba
 Dimensions (Width x Height): 510x400

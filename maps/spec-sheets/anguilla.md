@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/anguilla
+## JavaScript Alias: maps/anguilla
 
 Map Name: Anguilla
 Dimensions (Width x Height): 540x320

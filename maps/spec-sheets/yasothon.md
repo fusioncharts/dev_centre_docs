@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yasothon
+## JavaScript Alias: maps/yasothon
 
 Map Name: Yasothon
 Dimensions (Width x Height): 545x974

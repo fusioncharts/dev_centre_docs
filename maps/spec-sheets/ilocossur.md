@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ilocossur
+## JavaScript Alias: maps/ilocossur
 
 Map Name: Ilocos Sur
 Dimensions (Width x Height): 610x570

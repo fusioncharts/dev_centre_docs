@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/zurich
+## JavaScript Alias: maps/zurich
 
 Map Name: Zurich
 Dimensions (Width x Height): 510x620

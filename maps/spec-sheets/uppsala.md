@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/uppsala
+## JavaScript Alias: maps/uppsala
 
 Map Name: Uppsala
 Dimensions (Width x Height): 350x430

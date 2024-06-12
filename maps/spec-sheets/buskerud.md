@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/buskerud
+## JavaScript Alias: maps/buskerud
 
 Map Name: Buskerud
 Dimensions (Width x Height): 534x600

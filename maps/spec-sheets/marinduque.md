@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/marinduque
+## JavaScript Alias: maps/marinduque
 
 Map Name: Marinduque
 Dimensions (Width x Height): 610x570

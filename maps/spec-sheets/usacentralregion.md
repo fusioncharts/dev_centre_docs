@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/usacentralregion
+## JavaScript Alias: maps/usacentralregion
 
 Map Name: Usacentralregion
 Dimensions (Width x Height): 240x310

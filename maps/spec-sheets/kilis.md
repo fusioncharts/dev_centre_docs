@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kilis
+## JavaScript Alias: maps/kilis
 
 Map Name: Kilis
 Dimensions (Width x Height): 610x570

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ainaro
+## JavaScript Alias: maps/ainaro
 
 Map Name: Ainaro
 Dimensions (Width x Height): 480x330

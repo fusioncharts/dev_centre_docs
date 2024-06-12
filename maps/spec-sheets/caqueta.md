@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/caqueta
+## JavaScript Alias: maps/caqueta
 
 Map Name: Caqueta
 Dimensions (Width x Height): 270x410

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/queensland
+## JavaScript Alias: maps/queensland
 
 Map Name: Queensland
 Dimensions (Width x Height): 467x602

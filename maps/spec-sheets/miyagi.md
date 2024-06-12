@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/miyagi
+## JavaScript Alias: maps/miyagi
 
 Map Name: Miyagi
 Dimensions (Width x Height): 460x590

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/trondelag
+## JavaScript Alias: maps/trondelag
 
 Map Name: Trondelag
 Dimensions (Width x Height): 414x413

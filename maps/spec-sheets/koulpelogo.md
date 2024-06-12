@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/koulpelogo
+## JavaScript Alias: maps/koulpelogo
 
 Map Name: Koulpelogo
 Dimensions (Width x Height): 600x460

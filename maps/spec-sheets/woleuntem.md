@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/woleuntem
+## JavaScript Alias: maps/woleuntem
 
 Map Name: Woleu-Ntem (Oyem)
 Dimensions (Width x Height): 310x340

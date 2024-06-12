@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/guyana
+## JavaScript Alias: maps/guyana
 
 Map Name: Guyana
 Dimensions (Width x Height): 330x450

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/newjerseyareacode
+## JavaScript Alias: maps/newjerseyareacode
 
 Map Name: Newjerseyareacode
 Dimensions (Width x Height): 260x490

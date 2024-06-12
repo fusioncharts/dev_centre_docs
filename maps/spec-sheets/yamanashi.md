@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/yamanashi
+## JavaScript Alias: maps/yamanashi
 
 Map Name: Yamanashi
 Dimensions (Width x Height): 540x500
