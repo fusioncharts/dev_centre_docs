@@ -28,9 +28,9 @@ The newly implemented attribute `autoUpdateStartEndDateColumn`, auto-updates the
 The recently adopted `allowTaskbarOverlap` attribute for `Gantt` Charts, allows users to drag the taskbar over adjacent taskbars in the `Gantt` Chart. The taskbar start and end date will not be restricted by adjacent taskbar’s x and y position.
 
 
-## Introducing marginLeft, marginRight, marginTop, and marginBottom attributes: 
+## Introducing marginLeft, marginRight, marginTop, and marginBottom attributes: Numeric Milestone Setting
 
-The newly implemented `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` attributes were introduced in the milestone option of `Gantt` charts. These attributes are used to position the milestone as per the numeric value provided in these.
+The newly implemented `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` attributes were introduced in the milestone option of `Gantt` charts. These attributes are utilized to set the milestone as per the numeric value provided in these.
 
 
  
