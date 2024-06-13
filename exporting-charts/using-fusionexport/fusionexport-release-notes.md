@@ -4,9 +4,19 @@ description: Stay up-to-date with the newest FusionExport release notes! Click n
 heading: FusionExport Release Notes
 ---
 
+<h2 class="sub-heading">v2.1</h2>
+
+<p class="release-date">21st June, 2024</p>
+
+<h4>Improvements</h4>
+
+-  **Improved compatibility:** This version enhanced compatibility of the **FusionExport PHP** client through `guzzlehttp/guzzle` dependency upgrade.
+
+-  **Improved enhanced:** This version improved compatibility of **FusionExport C# Nuget** package with the latest **.NET Framework** versions (6 and above) for modern development environments.
+-  
 <h2 class="sub-heading">v2.0</h2>
 
-<p class="release-date">20th July 2021</p>
+<p class="release-date">20th July, 2021</p>
 
 <h4 class="sub-heading">New Feature</h4>
 
@@ -36,7 +46,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.2.3</h2>
 
-<p class="release-date">21st April 2020</p>
+<p class="release-date">21st April, 2020</p>
 
 <h4 class="sub-heading">Improvements</h4>
 
@@ -50,7 +60,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.2.2</h2>
 
-<p class="release-date">20th January 2020</p>
+<p class="release-date">20th January, 2020</p>
 
 <h4 class="sub-heading">New Feature</h4>
 
@@ -70,7 +80,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.2.1</h2>
 
-<p class="release-date">28th August 2019</p>
+<p class="release-date">28th August, 2019</p>
 
 <h4 class="sub-heading">New Feature</h4>
 
@@ -78,7 +88,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.2.0</h2>
 
-<p class="release-date">8th August 2019</p>
+<p class="release-date">8th August, 2019</p>
 
 <h4 class="sub-heading">New Feature</h4>
 
@@ -92,7 +102,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.1.1</h2>
 
-<p class="release-date">23rd April 2019</p>
+<p class="release-date">23rd April, 2019</p>
 
 <h4 class="sub-heading">Fixes</h4>
 
@@ -100,7 +110,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v1.1.0</h2>
 
-<p class="release-date">13th March 2019</p>
+<p class="release-date">13th March, 2019</p>
 
 <h4 class="sub-heading">Fixes</h4>
 
