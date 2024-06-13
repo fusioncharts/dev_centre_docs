@@ -4,35 +4,35 @@ description: This section discusses the new features introduced in the latest ve
 heading: What's New
 ---
 
-This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v3.23.x.
+This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.0.x.
 
-## Draggable task bars in `Gantt` Chart
+## FusionDev AI: AI-powered knowledge base and documentation assistant
 
-FusionCharts release 3.23.0 implemented the new function to enhance interactivity and streamline project scheduling with draggable taskbars in the FusionCharts `Gantt` chart.
+FusionCharts release 4.0.0 introduces **FusionDev AI: AI-powered knowledge base and documentation assistant**.
 
-The newly implemented feature includes `dragMove` and `dragStar`t methods, allowing users to drag individual tasks and their parent tasks which adjusts the children's task accordingly across the x-axis ticks. 
+The newly implemented assistant helps you to:
 
-The `onUpdate` event in the Gantt chart triggers whenever a drag operation occurs, providing the updated state.
+- Improve Discoverability and unblock developers by finding instant answers to questions about using FusionCharts with AI-powered context-aware documentation.
+- Increase developer productivity by providing instant access to clear, concise, and up-to-date documentation, including code examples for the FusionCharts.
+- Improve development efficiency with automated code generation.
 
-The `draggable` attribute should be used to enable this feature.
+To start using **FusionDev AI** just refer to the following page.
 
-```js
-events:{
-    dataplotdragmove:(event, data) => {
-    console.log(data)
-    }
-}
-```
+## Introducing autoUpdateStartEndDateColumn attribute: Auto-Update Actual Dates on Taskbar Drag
+
+The newly implemented attribute `autoUpdateStartEndDateColumn`, auto-updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are getting dragged. Whenever this attribute is enabled, the data source will update the column start/end dates as well along with the taskbar position.
 
 
-## Introducing markerLabelOffset attribute: Enhancing `AngularGauge` Precision and Clarity
+## Presenting allowTaskbarOverlap attribute: Enhancing User Experience
 
-The newly implemented offset property attribute `markerLabelOffset`, allows users to manually set the position on `AngularGauge` trend points labels aiming to address the problem of overlap that occurs with small differences in values.
+The recently adopted `allowTaskbarOverlap` attribute for `Gantt` Charts, allows users to drag the taskbar over adjacent taskbars in the `Gantt` Chart. The taskbar start and end date will not be restricted by adjacent taskbar’s x and y position.
 
 
-## Enhanced Clarity: Introducing `showValues` attribute for `StackedBar2DCharts`
+## Introducing marginLeft, marginRight, marginTop, and marginBottom attributes: 
 
-The recently adopted `showValues` attribute for StackedBar2DCharts, enables users to auto-hide or show the chart if the text overflows the bar subsection.
+The newly implemented `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` attributes were introduced in the milestone option of `Gantt` charts. These attributes are used to position the milestone as per the numeric value provided in these.
+
+
  
  
  
