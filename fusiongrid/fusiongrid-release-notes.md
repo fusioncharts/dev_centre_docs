@@ -17,6 +17,7 @@ heading: FusionGrid Release Notes
 
 
 <h4>Fixes</h4>
+
 - Resolved the issue of **FusionGrid** filters not retaining the **row-specific styles** provided.
 - A method called `dispose` was introduced which removes all the UI elements of the grid and sets the FusionGrid instance to **null**.
 - Fixed the issue where **FusionGrid** was not showing within the `Bootstrap` modal dialogue.
