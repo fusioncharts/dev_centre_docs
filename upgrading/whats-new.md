@@ -20,7 +20,7 @@ To start using **FusionDev AI** just refer to the following page.
 
 ## Introducing autoUpdateStartEndDateColumn attribute: Auto-Update Actual Dates on Taskbar Drag
 
-The newly implemented attribute `autoUpdateStartEndDateColumn`, auto-updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are getting dragged. Whenever this attribute is enabled, the data source will update the column start/end dates as well along with the taskbar position.
+The newly implemented attribute `autoUpdateStartEndDateColumn`, auto-updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are dragged. Whenever this attribute is enabled, the data source will update the column start/end dates and the taskbar position.
 
 
 ## Presenting allowTaskbarOverlap attribute: Enhancing User Experience
