@@ -12,7 +12,7 @@ heading: FusionExport Release Notes
 
 -  **Improved compatibility:** This version enhanced compatibility of the **FusionExport PHP** client through `guzzlehttp/guzzle` dependency upgrade.
 
--  **Improved enhanced:** This version improved compatibility of **FusionExport C# Nuget** package with the latest **.NET Framework** versions (6 and above) for modern development environments.
+-  **Enhanced compatibility:** This version improved compatibility of the **FusionExport C# Nuget** package with the latest **.NET Framework** versions (6 and above) for modern development environments.
 -  
 <h2 class="sub-heading">v2.0</h2>
 
