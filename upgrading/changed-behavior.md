@@ -4,7 +4,7 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-We're thrilled to unveil the latest release of FusionCharts, version 4.0.0, FusionGrid v2.0, and FusionExport 2.1 introducing a suite of new enhancements designed to make  user experience smooether, more efficient, and more enjoyable.
+We're thrilled to unveil the latest release of FusionCharts, version 4.0.0, FusionGrid v2.0, and FusionExport 2.1 introducing a suite of new enhancements designed to make  user experience smoother, more efficient, and more enjoyable.
 
 A standout feature in this release is the introduction of **AI-powered knowledge base and documentation assistant** for development teams seeking to accelerate time-to-market and boost efficiency, `FusionDev AI` provides instant, context-aware answers and automated code generation, empowering developers to focus on delivering innovative solutions, faster.
 
