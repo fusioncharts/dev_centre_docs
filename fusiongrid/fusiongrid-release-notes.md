@@ -6,7 +6,7 @@ heading: FusionGrid Release Notes
 
 <h2 class="sub-heading">Version 2.0</h2>
 
-<p class="release-date">June 21st, 2024</p>
+<p class="release-date">June 27th, 2024</p>
 
 <h4>Improvements</h4>
 
