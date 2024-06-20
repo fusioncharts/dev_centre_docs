@@ -6,7 +6,7 @@ heading: FusionExport Release Notes
 
 <h2 class="sub-heading">v2.1</h2>
 
-<p class="release-date">21st June, 2024</p>
+<p class="release-date">27th June, 2024</p>
 
 <h4>Improvements</h4>
 
