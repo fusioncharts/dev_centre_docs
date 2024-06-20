@@ -1925,6 +1925,10 @@
                   "title": "Version History",
                   "children": [
                      {
+                        "title": "v3.23.x",
+                        "path": "/upgrading/version-history/version-3-23-X"
+                     },
+                     {
                         "title": "v3.22.x",
                         "path": "/upgrading/version-history/version-3-22-X"
                      },

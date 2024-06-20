@@ -4,10 +4,14 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-We're thrilled to unveil the latest release of FusionCharts, version 3.23.0, and FusionTime v2.9, introducing a host of enhancements designed to elevate user experience and compatibility.
+We're thrilled to unveil the latest release of FusionCharts, version 4.0.0, FusionGrid v2.0, and FusionExport 2.1 introducing a suite of new enhancements designed to make  user experience smoother, more efficient, and more enjoyable.
 
-A standout feature in this release is the redefined Watermark text for License Expired Customers. This update effectively restricts unauthorized usage of our product, ensuring tighter control over licensing compliance.
+We're excited to unveil a groundbreaking integration that elevates the FusionCharts experience with the introduction of **AI-powered knowledge base and documentation assistant** for development teams seeking to accelerate time-to-market and boost efficiency, `FusionDev AI` provides instant, context-aware answers, and automated code generation, empowering developers to focus on delivering innovative solutions, faster.
 
-Key improvements include fixing inline styling functionality, resolving broken link attribute issues in zoom charts, and addressing scrolling problems with `setjsondata` or `setchartdata`. Additionally, we've incorporated 16 Japanese provinces and resolved an accessibility concern regarding Microsoft Narrator's inability to read chart plot details in specific configurations of Windows 10 and Chrome.
+We've meticulously crafted the FusionCharts knowledge base with your needs in mind. Now, with FusionDev AI, we're taking it a step further. Accessing essential code examples, tutorials, and in-depth explanations is easier than ever, ensuring you have the resources to create stunning visuals confidently.
+
+Our team of subject matter experts diligently verifies the accuracy of key knowledge sources and identifies any knowledge gaps. Trained on a diverse range of knowledge sources, FusionDev AI is adept at navigating these complexities.
+
+Other key improvements for this release include new attributes for the `Gantt` Chart to make the user experience more efficient, resolving `resizeTo` issues guaranteeing seamless chart resizing, improving the visual clarity of Multi-series Bar charts by addressing `transposeAxis` attribute bug, and much more. Additionally, we upgraded the framework integrations for `React`, `Angular`, `Vue`, and `Svelte`.
 
 For additional details, kindly refer to our [changelog](https://www.fusioncharts.com/dev/upgrading/change-log/) and [blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-23-and-fusiontime-v2-9-elevating-data-visualization-to-new-heights/). 
