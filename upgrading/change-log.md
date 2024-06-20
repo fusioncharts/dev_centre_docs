@@ -6,7 +6,7 @@ heading: Version 4.0.x
 
 <h2 class="sub-heading">Version 4.0.0</h2>
 
-<p class="release-date">21st June, 2024</p>
+<p class="release-date">27th June, 2024</p>
 
 <h4>New Features</h4>
 
