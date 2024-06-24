@@ -42,8 +42,8 @@ heading: Version 4.0.x
 - Resolved an issue where inline styles used for `Pie` chart watermarks and tooltips triggered CSP errors, potentially hindering chart display.
 - Fixed the bug where the scroll bar position was getting reset to the initial position, when `setChartData` is used to update the chart’s data.
 - Handled the case of negative values for radial bar in `Radial Bar` charts. For negative values, the radial bar will stick to the 0 position.
-- Fixed the issue where `React FusionCharts` wrapper was not working in strict mode. In react wrapper, if the chart is already rendered then the `dispose` method is used to delete the instance to avoid render callback in loop.
-- Resolved the issue where data values were not visible for plots in the `Bar` chart.
+- Fixed the issue where `React FusionCharts` wrapper was not working in strict mode. In `react` wrapper, if the chart is already rendered then the `dispose` method is used to delete the instance to avoid render callback in loop.
+- Resolved the issue where data values were not visible for plots in the `Bar2D` chart. The data values were hidden when the bar width was very low.
 - Optimized user experience with `Gauge` charts through seamless resizing.
 
 
