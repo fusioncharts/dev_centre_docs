@@ -10,7 +10,7 @@ heading: Version 4.0.x
 
 <h4>New Features</h4>
 
-- FusionCharts version 4.0.0 introduces an attribute called `autoUpdateStartEndDateColumn` was introduced. This attribute updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are getting dragged.
+- An attribute called `autoUpdateStartEndDateColumn` was introduced. This attribute updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are getting dragged.
 - An attribute called `allowTaskbarOverlap` was introduced. When this attribute is set to 1, it allows the dragging of the taskbar over adjacent taskbars in the `Gantt` Chart.
 - The attributes `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` were introduced in the milestone option of `Gantt charts`. These attributes are used to position the milestone per the numeric value provided.
 
