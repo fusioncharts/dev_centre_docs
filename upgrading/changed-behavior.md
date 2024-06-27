@@ -10,4 +10,4 @@ Key improvements for this release include new attributes for the `Gantt` Chart t
 
 Additionally, we upgraded the framework integrations for `React`, `Angular`, `Vue`, and `Svelte` to further enhance our system's capabilities. These improvements not only streamline the integration process but also boost performance, ensuring a more seamless and efficient experience for our users. 
 
-For additional details, kindly refer to our [changelog](https://www.fusioncharts.com/dev/upgrading/change-log/) and [blog post](https://www.fusioncharts.com/blog/fusioncharts-v3-23-and-fusiontime-v2-9-elevating-data-visualization-to-new-heights/). 
+For additional details, kindly refer to our [changelog](https://www.fusioncharts.com/dev/upgrading/change-log/) and [blog post](https://www.fusioncharts.com//blog/fusioncharts-4-0-elevate-your-data-visualization-new-capabilities).
