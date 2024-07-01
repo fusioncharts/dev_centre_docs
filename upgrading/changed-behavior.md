@@ -8,7 +8,7 @@ We're thrilled to unveil the latest release of FusionCharts, version 4.0.0, Fusi
 
 We're excited to unveil a groundbreaking integration that elevates the FusionCharts experience with the introduction of **AI-powered knowledge base and documentation assistant** for development teams seeking to accelerate time-to-market and boost efficiency, `Ask FusionDev AI` provides instant, context-aware answers, and automated code generation, empowering developers to focus on delivering innovative solutions, faster.
 
-We've meticulously crafted the FusionCharts knowledge base with your needs in mind. Now, with Ask `FusionDev AI`, we're taking it a step further. Accessing essential code examples, tutorials, and in-depth explanations is easier than ever, ensuring you have the resources to create stunning visuals confidently.
+We've meticulously crafted the FusionCharts knowledge base with your needs in mind. Now, with `Ask FusionDev AI`, we're taking it a step further. Accessing essential code examples, tutorials, and in-depth explanations is easier than ever, ensuring you have the resources to create stunning visuals confidently.
 
 Our team of subject matter experts diligently verifies the accuracy of key knowledge sources and identifies any knowledge gaps. Trained on a diverse range of knowledge sources, `Ask FusionDev AI` is adept at navigating these complexities.
 
