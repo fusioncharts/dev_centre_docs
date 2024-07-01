@@ -6,6 +6,18 @@ heading: What's New
 
 This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.0.x.
 
+## Ask FusionDev AI: AI-powered knowledge base and documentation assistant
+
+FusionCharts release 4.0.0 introduces **Ask FusionDev AI: AI-powered knowledge base and documentation assistant**.
+
+The newly implemented assistant helps you to:
+
+- Improve Discoverability and unblock developers by finding instant answers to questions about using FusionCharts with AI-powered context-aware documentation.
+- Increase developer productivity by providing instant access to clear, concise, and up-to-date documentation, including code examples for the FusionCharts.
+- Improve development efficiency with automated code generation.
+
+To start using **Ask FusionDev AI** just refer to the following [page](https://www.fusioncharts.com/askfusiondev-ai).
+
 ## Elevating Project Management with Enhanced Gantt Charts
 
 FusionCharts release 4.0.0 introduces advanced capabilities for scheduling and project management visualizations. Automatic updates minimize manual data entry errors while overlapping taskbars and customizable milestones enhance project communication.
