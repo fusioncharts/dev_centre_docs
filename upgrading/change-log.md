@@ -10,6 +10,10 @@ heading: Version 4.0.x
 
 <h4>New Features</h4>
 
+- FusionCharts version 4.0.0 introduces `FusionDev AI: AI-powered` knowledge base and documentation assistant which:
+  - **Improves discoverability and unblocks developers** by finding instant answers to questions about using FusionCharts.
+  - **Increases developer productivity** by providing instant access to clear, concise, and up-to-date documentation.
+  - **Improves development efficiency** with automated code generation.
 - An attribute called `autoUpdateStartEndDateColumn` was introduced. This attribute updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are getting dragged.
 - An attribute called `allowTaskbarOverlap` was introduced. When this attribute is set to 1, it allows the dragging of the taskbar over adjacent taskbars in the `Gantt` Chart.
 - The attributes `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` were introduced in the milestone option of `Gantt` Chart. These attributes are used to position the milestone per the numeric value provided.
