@@ -10,7 +10,7 @@ heading: Version 4.0.x
 
 <h4>New Features</h4>
 
-- FusionCharts version 4.0.0 introduces `FusionDev AI: AI-powered` knowledge base and documentation assistant which:
+- FusionCharts version 4.0.0 introduces `Ask FusionDev AI` knowledge base and documentation assistant which:
   - **Improves discoverability and unblocks developers** by finding instant answers to questions about using FusionCharts.
   - **Increases developer productivity** by providing instant access to clear, concise, and up-to-date documentation.
   - **Improves development efficiency** with automated code generation.
