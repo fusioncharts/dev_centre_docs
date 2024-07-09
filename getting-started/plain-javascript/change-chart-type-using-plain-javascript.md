@@ -4,6 +4,8 @@ description: This article will showcase a sample to change the chart type at run
 heading: Change Chart Type at Runtime
 ---
 
+## The chart has been rendered using the following steps:
+
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
 
 This article focuses on how you can change the chart type of the chart at runtime. The chart types used in the sample is:
