@@ -7,7 +7,7 @@ chartPresent: true
 layout: page
 ---
 
-## Shown below is a simple column 2D chart that is disposed at runtime when a button is clicked.
+## Shown below is a simple column 2D chart that is disposed at runtime when a button is clicked
 
 It is essential to remove content that is no longer used from a page. It helps keep memory consumption to a minimum and keeps the UI smooth even when there are several elements on the page.
 
