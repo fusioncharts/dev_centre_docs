@@ -4,6 +4,8 @@ description: The sample in this article lists the basic lifestyle events at the 
 heading: Lifecycle Events using Jquery
 ---
 
+## The chart has been rendered using the following steps:
+
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
 
 The sample in this article lists the basic lifestyle events at the time of rendering the chart using `jquery-fusioncharts` component.
