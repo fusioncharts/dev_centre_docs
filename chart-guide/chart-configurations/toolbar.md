@@ -4,6 +4,8 @@ description: The advantage of toolbar is it manages all the UI action elements c
 heading: Toolbar
 ---
 
+## The drag-node chart below shows the implementation of the toolbar:
+
 FusionCharts Suite XT introduces the toolbar, starting from version 3.11.0. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping.
 
 The new toolbar has changed the way certain chart elements are implemented. The table below summarizes these changes:
