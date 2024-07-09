@@ -6,6 +6,8 @@ heading: API Reference
 chartPresent: false
 ---
 
+## jQuery Functions
+
 <table>
     <tr>
         <th>Name</th>
