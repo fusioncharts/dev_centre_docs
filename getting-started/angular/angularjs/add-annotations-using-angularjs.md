@@ -4,6 +4,8 @@ description: This article focuses on different type of configurations possible u
 heading: Adding Annotations Using AngularJS
 ---
 
+## The code to render the chart is given below:
+
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
 In this article we'll create a **Spline** chart and add annotations using `angularjs-fusioncharts` component. A spline chart using annotations to highlight a particular anchor along with text is shown below:
