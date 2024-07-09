@@ -4,6 +4,8 @@ description: This article will showcase a sample to change the chart type at run
 heading: Change Chart Type at Runtime
 ---
 
+## A chart configured to change the chart type, is shown below:
+
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
 
 This article focuses on how you can change the chart type of the chart at runtime using `vue-fusioncharts` component. The chart types used in the sample is:
