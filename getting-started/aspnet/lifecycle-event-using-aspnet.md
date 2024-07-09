@@ -4,6 +4,8 @@ description: The sample in this article lists the basic lifestyle events at the 
 heading: Lifecycle Events using ASP.NET
 ---
 
+## Apart from the usual boilerplate, the sample C#/VB code provided corresponds to the following tasks:
+
 > ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
