@@ -7,7 +7,7 @@ chartPresent: true
 layout: page
 ---
 
-## Shown below is a code snippet that shows you how to get a SVG string from a chart.
+## Shown below is a code snippet that shows you how to get a SVG string from a chart
 
 Using FusionCharts Suite XT you can easily get the SVG string of any chart using the `getSVGString` method. Shown below is a chart that displays the SVG string of a chart when the button is clicked.
 
