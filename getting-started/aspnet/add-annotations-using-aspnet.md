@@ -4,6 +4,8 @@ description: This article focuses on different type of configurations possible u
 heading: Add Annotations using ASP.NET
 ---
 
+## The consolidated code for the chart is shown below:
+
 > ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
