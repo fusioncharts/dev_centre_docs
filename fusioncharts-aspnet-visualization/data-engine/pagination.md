@@ -4,8 +4,6 @@ description: Extract data only from a specific page and return the resultant dat
 heading: Pagination
 ---
 
-## Set page size
-
 Extract data only from a specific page and return the resultant data into another instance of the `DataModel`.
 
 #### Set page size
