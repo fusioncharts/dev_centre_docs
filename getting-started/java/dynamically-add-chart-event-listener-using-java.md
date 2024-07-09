@@ -4,7 +4,7 @@ description: This article tells you how to dynamically add chart event listener 
 heading: Dynamically Add Chart Event Listener using Java
 ---
 
-## The full code for the above chart is shown below:
+## The full code for the chart is shown below:
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
 
