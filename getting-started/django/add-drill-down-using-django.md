@@ -4,6 +4,8 @@ description: Explore unlimited levels of drill-down using Django with FusionChar
 heading: Adding Drill Down using Django
 ---
 
+## The models in models.py chart looks like:
+
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
 You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
