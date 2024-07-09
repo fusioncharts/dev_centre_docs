@@ -4,7 +4,7 @@ description: Gain deeper insights from your charts. Export your data to Excel (X
 heading: Exporting Chart Data
 ---
 
-## To export chart data in CSV format, select the Export as CSV option. The CSV file with the chart data gets downloaded to your machine.
+## To export chart data in CSV format, select the Export as CSV option. The CSV file with the chart data gets downloaded to your machine
 
 FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. FusionCharts also allows you to export chart data in XLSX format (as an Excel spreadsheet). Starting v3.14.1, FusionCharts Suite XT introduces exporting chart data in the **CSV** format.
 
