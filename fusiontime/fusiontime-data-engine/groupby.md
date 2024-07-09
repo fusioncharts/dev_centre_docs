@@ -4,8 +4,6 @@ description: Master the GroupBy method in FusionTime to efficiently group and ag
 heading: GroupBy
 ---
 
-## In the above code:
-
 **GroupBy** is used to group the rows that have the same values in one or more columns. For example, if a particular column has the same values in different rows, `groupBy` will arrange these rows in a group.
 
 When you apply `groupBy` into a `DataTable`, it transforms the data and creates a new `DataTable`. The syntax to apply groupBy to the `DataTable` in the DataStore is given below:
