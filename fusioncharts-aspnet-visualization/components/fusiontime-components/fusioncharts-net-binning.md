@@ -4,6 +4,8 @@ description: Uncover data binning's essence, utilizing time's hierarchy to group
 heading: Data Binning
 ---
 
+## The available methods are listed below:
+
 The natural hierarchy of time aids in binning smaller units of time into larger units of time. For example, two bins, each of 12hr size can fall into one bin of 1 day (or 24 hours) bin. A user can **zoom** into 12hr bin and zoom out to 1-day bin.
 
 The time series charts exploit this behavior of time to create data bins. Though it is suggested to follow the smartly suggested bins for each data, an enthusiastic developer can always modify this.
