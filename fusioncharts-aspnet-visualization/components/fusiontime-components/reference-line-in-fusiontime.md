@@ -4,6 +4,8 @@ description: Check versatility of FusionTime's Reference Line component with our
 heading: Reference Line
 ---
 
+## A Reference Line looks as shown in the image below:
+
 A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, you can set separate reference lines for each chart canvas.
 
 A Reference Line looks as shown in the image below:
