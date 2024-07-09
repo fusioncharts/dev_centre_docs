@@ -4,6 +4,8 @@ description: This article tells you how to dynamically add chart event listener 
 heading: Dynamically Add Chart Event Listener Using AngularJS
 ---
 
+## The code to render the chart is given below:
+
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates and option to add/remove events at runtime.
 
 Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update of a chart. For example, you can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
