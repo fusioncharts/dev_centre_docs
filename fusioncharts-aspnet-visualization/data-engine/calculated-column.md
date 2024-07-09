@@ -4,7 +4,7 @@ description: Discover the power of calculated columns in a DataModel and expand 
 heading: Calculated Column
 ---
 
-## Let's take a basic example of tabular data in a DataModel.
+## Let's take a basic example of tabular data in a DataModel
 
 **A calculated column** is a column generated as a result of a mathematical expression applied to one or more columns in a `DataModel`. You can provide more than one mathematical expression on multiple columns of a `DataModel`. This will generate a new `DataModel` which will contain the existing and the calculated columns.
 
