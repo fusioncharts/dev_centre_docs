@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Jquery | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply Different Themes in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Apply Different Themes using Jquery
 ---
 
