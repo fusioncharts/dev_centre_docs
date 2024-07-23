@@ -4,8 +4,6 @@ description: The sample in this article lists the basic lifestyle events at the 
 heading: Lifecycle Events using Angular
 ---
 
-## Setup the Main Module
-
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
 
 The sample in this article lists the basic lifestyle events at the time of rendering the chart using `angular-fusioncharts` component.
@@ -14,7 +12,7 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-### Setup the Main Module
+## Setup the Main Module
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
