@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Plain JS | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Know how to apply Different Themes using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Apply Different Themes using Plain JS
 ---
 
