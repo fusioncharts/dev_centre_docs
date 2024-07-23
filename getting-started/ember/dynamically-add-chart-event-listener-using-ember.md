@@ -14,7 +14,7 @@ A chart is shown below:
 
 {% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 
-### Setup `ember-cli-build.js`
+## Setup `ember-cli-build.js`
 
 In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
 
