@@ -4,13 +4,11 @@ description: In this article a sample to calculate the percentage value of the d
 heading: Percentage Calculation Using AngularJS
 ---
 
-## Render the chart by following the steps mentioned below:
-
 Events are signals that let you execute specific actions (such as sending data to the server using JavaScript) in response to any interaction/update for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using the `angularjs-fusioncharts` component.
 
-A chart configured to calculate the percentage, is shown below:
+## A chart configured to calculate the percentage, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
