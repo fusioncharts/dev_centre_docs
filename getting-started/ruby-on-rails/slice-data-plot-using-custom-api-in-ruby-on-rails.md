@@ -4,7 +4,7 @@ description: Slice Data Plot using API  in Ruby on Rails using FusionCharts them
 heading: Slice Data Plot using API
 ---
 
-FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
+FusionCharts Suite XT includes advanced features that offer a wide range of APIs that you can use for different stages in the life cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
 This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using **FusionCharts rails gem wrapper**. 
 
