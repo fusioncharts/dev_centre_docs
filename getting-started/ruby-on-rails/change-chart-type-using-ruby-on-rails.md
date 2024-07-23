@@ -1,6 +1,6 @@
 ---
 title: Change Chart Type at Runtime | FusionCharts
-description: This article will showcase a sample to change the chart type at runtime.
+description: Change Chart Type at Runtime in Ruby on Rails using FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
 heading: Change Chart Type at Runtime
 ---
 
