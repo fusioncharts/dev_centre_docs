@@ -1,6 +1,6 @@
 ---
 title: Setting Data Source Using URL | FusionCharts
-description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
+description: Enhance your ASP.NET projects by Setting Data Source Using URL with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Setting Data Source Using URL
 ---
 
