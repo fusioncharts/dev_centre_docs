@@ -1,6 +1,6 @@
 ---
 title: Introduction to Events in FusionTime | FusionCharts
-description: `Explore FusionTime's API events: learn how to manage chart interactions with detailed documentation on event handling in FusionTime by FusionCharts. Check now!`
+description: "Explore FusionTime's API events: learn how to manage chart interactions with detailed documentation on event handling in FusionTime by FusionCharts. Check now!"
 heading: Introduction to Events
 ---
 
