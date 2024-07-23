@@ -4,8 +4,6 @@ description: This article focuses on different type of configurations possible u
 heading: Add Annotations using django
 ---
 
-## The HTML template to render the chart is shown below:
-
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
 In this article, we'll create a **spline chart** and add annotations using a Python `function`. A spline chart using annotations to highlight a particular anchor along with text is shown below:
@@ -126,7 +124,7 @@ def chart(request):
 
 ```
 
-The HTML template to render the above chart is shown below:
+## The HTML template to render the above chart is shown below:
 
 ```
 <!DOCTYPE html>
