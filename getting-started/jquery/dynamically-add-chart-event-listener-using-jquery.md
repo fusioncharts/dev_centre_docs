@@ -4,8 +4,6 @@ description: This article tells you how to dynamically add chart event listener 
 heading: Dynamically Add Chart Event Listener using Jquery
 ---
 
-## The chart has been rendered using the following steps:
-
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
 
 Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
@@ -102,7 +100,7 @@ $('document').ready(function () {
 });
 ```
 
-The HTML template of the above sample is shown below:
+## The HTML template of the above sample is shown below:
 
 ```HTML
 <div id="chart-container">
