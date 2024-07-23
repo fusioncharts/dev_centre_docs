@@ -1,6 +1,6 @@
 ---
 title: Setting Data Source Using URL | FusionCharts
-description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
+description: Setting Data Source effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Setting Data Source Using URL
 ---
 
