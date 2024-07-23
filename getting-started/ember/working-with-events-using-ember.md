@@ -127,7 +127,7 @@ In the above code:
 	* Callback handler for `dataplotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
     * Callback handler for `dataplotRollOut` event has been used which is triggered when the mouse pointer is rolled out of the data plot.
 
-### Add data to `chart-viewer.hbs`
+## Add data to `chart-viewer.hbs`
 
 Add the following code to `chart-viewer.hbs`:
 
