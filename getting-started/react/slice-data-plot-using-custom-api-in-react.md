@@ -8,7 +8,7 @@ FusionCharts Suite XT includes advanced features that offers a wide range of API
 
 This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using React `props` object. 
 
-A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
+## A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
 
 {% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 

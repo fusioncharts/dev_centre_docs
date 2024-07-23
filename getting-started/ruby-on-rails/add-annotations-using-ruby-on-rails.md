@@ -103,7 +103,7 @@ The code to render the above sample is given below:
 %>
 ```
 
-The HTML template of the above sample is shown below:
+## The HTML template of the above sample is shown below:
 
 ```html
 <div style="width: 100%; display: block;" align="center">

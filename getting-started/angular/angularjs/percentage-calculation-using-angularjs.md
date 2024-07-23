@@ -8,7 +8,7 @@ Events are signals that let you execute specific actions (such as sending data t
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using the `angularjs-fusioncharts` component.
 
-A chart configured to calculate the percentage, is shown below:
+## A chart configured to calculate the percentage, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 

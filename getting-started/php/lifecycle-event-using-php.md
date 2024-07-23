@@ -91,7 +91,7 @@ The full code of the above sample is given below:
 </html>
 ```
 
-The above chart has been rendered using the following steps:
+## The above chart has been rendered using the following steps:
 
 1. Include the `fusioncharts.php` file which contains functions to embed the charts.
 

@@ -4,6 +4,8 @@ description: Read the article to learn more about the Time Axis displaying time-
 heading: Time Axis
 ---
 
+## The Time Axis will look as shown below:
+
 The X-axis of a timeseries chart displays time-based data and is known as the Time Axis. Based on the atomicity of the data and the active window (of the time navigator) the time axis intelligently creates a timescale to display the chart data. Refer to the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-time-axis.png" alt="Time Axis" width="700" height="420">

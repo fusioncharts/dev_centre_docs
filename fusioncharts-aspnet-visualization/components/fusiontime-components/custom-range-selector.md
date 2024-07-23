@@ -4,6 +4,8 @@ description: Optimize your data exploration with the Custom Range Selector withi
 heading: Custom Range Selector
 ---
 
+## A Custom Range Selector looks as shown in the image below:
+
 The Custom Range Selector lets you select and focus on data within a specific time period by selecting the start and end points. It comes in handy when you are aware of the exact time period, for which you want to see the data.
 
 A Custom Range Selector looks as shown in the image below:

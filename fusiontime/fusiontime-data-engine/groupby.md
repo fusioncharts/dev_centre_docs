@@ -24,7 +24,7 @@ GroupBy method takes two arguments which are:
 
 * An array of the aggregation configurations.
 
-### Groupby Configuration
+## Groupby Configuration
 
 In the first argument of the `groupBy` method, each group of configuration object can have the following attributes:
 

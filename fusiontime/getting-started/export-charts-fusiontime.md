@@ -4,6 +4,8 @@ description: This article focuses on how you can export your chart using plain j
 heading: Exporting Charts
 ---
 
+## The dropdown menu with export options looks as shown below:
+
 FusionTime allows you to export your rendered charts in JPG, PNG, SVG, and PDF formats.
 
 In this article we will discuss how to export time-series charts in FusionTime.

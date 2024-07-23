@@ -4,6 +4,8 @@ description: Utilize Time Markers to highlight events on the Time Axis. The over
 heading: Time Markers
 ---
 
+## A time marker looks as shown in the image below:
+
 You can mark events on the Time Axis using Time Markers. A time marker appears as an overlay on the chart canvas. When you hover the mouse pointer over a time marker or tap on it, a tooltip appears with information about the marker.
 
 A time marker looks as shown in the image below:

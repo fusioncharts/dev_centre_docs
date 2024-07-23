@@ -12,7 +12,7 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-### Setup the Main Module
+## Setup the Main Module
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 

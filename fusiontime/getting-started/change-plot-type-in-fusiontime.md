@@ -4,6 +4,8 @@ description: Find versatile plot types & enhance visualization. Transform your c
 heading: Change Plot Type
 ---
 
+## The chart is shown below:
+
 Plot refers to a line in the line chart, a column in the column chart or an area in the area chart.
 
 In this article, we'll see how to change the [plot types](/fusiontime/fusiontime-component/plot-types-in-fusiontime) of the chart.

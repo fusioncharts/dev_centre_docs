@@ -12,7 +12,7 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 import React, {Component} from 'react';

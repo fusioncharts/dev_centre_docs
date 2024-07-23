@@ -6,6 +6,8 @@ heading: Kagi Chart
 
 > This chart type belongs to **PowerCharts XT**.
 
+## Kagi Chart- Elements
+
 Developed by the Japanese in the 1870s, the Kagi chart uses a series of vertical lines to illustrate general levels of supply and demand for certain assets. Thick lines are drawn when the price of the underlying asset breaks above the previous high price and is interpreted as an increase in demand for the asset. Thin lines are used to represent increased stock when the price falls below the previous low.
 
 {% embed_chartAnatomy kagi-chart.json %}

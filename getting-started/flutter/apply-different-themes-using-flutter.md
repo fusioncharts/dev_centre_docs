@@ -4,6 +4,8 @@ description: This article will showcase how to apply different themes to the cha
 heading: Apply Different Themes using Flutter
 ---
 
+## The complete code of the sample is given below:
+
 In FusionCharts Suite XT, you can manually set each chart's cosmetics and functional attributes in the corresponding JSON/XML file. This works when dealing with only a small number of charts. As the number of charts increases, so do the hassles. FusionCharts Suite ships with predefined themes that you can use to set your chart's visual appearance or behavior.
 
 FusionCharts Suite XT ships with the following predefined themes:

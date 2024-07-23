@@ -10,7 +10,7 @@ Events are signals that let you execute specific actions - such as manipulate th
 
 This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using `angularjs-fusioncharts` component.
 
-A chart is shown below:
+## A chart is shown below:
 
 {% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 

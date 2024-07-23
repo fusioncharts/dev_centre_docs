@@ -4,6 +4,8 @@ description: Utilize the TopRecords operation to extract a specific number of ro
 heading: Select Top Records
 ---
 
+## Let's take a basic example of a tabular data shown below:
+
 `TopRecords` operation should be used only when you want to extract the specific number of rows starting from the topmost row of the **data** in the `DataModel`.
 
 Note that when you use the `TopRecords` operation on a `DataModel`, it will generate a new `DataModel` with only the selected rows of the data.

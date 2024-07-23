@@ -16,7 +16,7 @@ A chart configured to change the chart type, is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
-The code to render a chart using `require` is given below:
+## The code to render a chart using `require` is given below:
 
 ```
 // Include fusioncharts

@@ -124,7 +124,7 @@ def chart(request):
 
 ```
 
-The HTML template to render the above chart is shown below:
+## The HTML template to render the above chart is shown below:
 
 ```
 <!DOCTYPE html>

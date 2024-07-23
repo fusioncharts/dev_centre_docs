@@ -131,7 +131,7 @@ The HTML template of the above sample is shown below:
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+## The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
