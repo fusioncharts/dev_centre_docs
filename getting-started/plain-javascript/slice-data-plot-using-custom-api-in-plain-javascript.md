@@ -4,8 +4,6 @@ description: This article will showcase a sample to slice data plot of the pie c
 heading: Slice Data Plot using API
 ---
 
-## The full code of the sample is given below:
-
 FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
 This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API.
@@ -14,7 +12,7 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 import React, {Component} from 'react';
