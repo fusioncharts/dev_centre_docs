@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Flutter | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply Different Themes using Flutter on FusionCharts. Elevate your data visualization aesthetics and user experience seamlessly. Get in touch now.
 heading: Apply Different Themes using Flutter
 ---
 
