@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Slice Data Plot using API  in Ruby on Rails using FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
 heading: Slice Data Plot using API
 ---
 
