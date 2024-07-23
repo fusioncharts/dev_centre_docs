@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot Using API in AngularJS | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Slice Data Plot using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Slice Data Plot Using API in AngularJS
 ---
 
