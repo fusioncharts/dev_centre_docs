@@ -48,7 +48,7 @@ The full code for the above sample is given below:
 
 ```
 
-The sample code provided above corresponds to the following tasks:
+## The sample code provided above corresponds to the following tasks:
 
 1. Import and resolve the dependency `fusioncharts.FusionCharts`
 
