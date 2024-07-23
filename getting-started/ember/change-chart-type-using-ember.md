@@ -1,6 +1,6 @@
 ---
 title: Change Chart Type at Runtime | FusionCharts
-description: This article will showcase a sample to change the chart type at runtime.
+description: Change Chart Type at Runtime with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Change Chart Type at Runtime
 ---
 
