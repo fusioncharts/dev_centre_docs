@@ -20,7 +20,7 @@ This article focuses on how you can dynamically add/remove event listener to the
 
 {% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 
-The full code for the above chart is shown below:
+## The full code for the above chart is shown below:
 
 ```
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
