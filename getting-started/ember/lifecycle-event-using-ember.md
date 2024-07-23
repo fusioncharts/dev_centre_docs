@@ -135,7 +135,7 @@ In the above code:
 	* `drawComplete` event is updated.
 	* `renderComplete` event is updated.
 
-### Add data to `chart-viewer.hbs`
+## Add data to `chart-viewer.hbs`
 
 Add the following code to `chart-viewer.hbs`:
 
