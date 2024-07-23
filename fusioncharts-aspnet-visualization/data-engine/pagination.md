@@ -6,7 +6,7 @@ heading: Pagination
 
 Extract data only from a specific page and return the resultant data into another instance of the `DataModel`.
 
-#### Set page size
+## Set page size
 
 The code to set the page size is given below:
 
