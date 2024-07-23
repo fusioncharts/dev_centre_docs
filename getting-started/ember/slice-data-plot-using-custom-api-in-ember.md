@@ -12,7 +12,7 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
-### Setup `ember-cli-build.js`
+## Setup `ember-cli-build.js`
 
 In this step we will include all the necessary files and add the dependency to create the chart. The code is given below:
 
