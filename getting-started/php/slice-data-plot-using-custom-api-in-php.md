@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Understand how to Slice Data Plot using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Slice Data Plot using API
 ---
 
