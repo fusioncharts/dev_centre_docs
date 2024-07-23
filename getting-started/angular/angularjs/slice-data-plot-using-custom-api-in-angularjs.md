@@ -4,6 +4,8 @@ description: This article will showcase a sample to slice data plot of the pie c
 heading: Slice Data Plot Using API in AngularJS
 ---
 
+## A chart configured to slice out the data plots of a pie2d chart, is shown below:
+
 FusionCharts Suite XT includes advanced features that offer a wide range of APIs. You can use them in different stages of the life cycle of a chart, or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
 This article focuses on how you can slice out the data plots of a Pie 2D chart using chart-specific custom API. The chart will be rendered using `angular-fusioncharts` component. 

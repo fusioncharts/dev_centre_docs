@@ -118,7 +118,7 @@ class _ColumnChartState extends State<ColumnChart> {
 
 ```
 
-These are the steps to follow to render the sample chart above.
+## These are the steps to follow to render the sample chart above.
 
 1. Include the necessary libraries and components using `import`. For example, `flutter-fusioncharts`, `fusioncharts`, etc.
 

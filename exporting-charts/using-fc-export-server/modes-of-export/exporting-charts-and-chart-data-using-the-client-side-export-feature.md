@@ -6,6 +6,8 @@ heading: Exporting Charts and Chart Data Using the Client-side Export Feature
 chartPresent: true
 ---
 
+## Given below is a brief description of the attributes that are used to enable client-side exporting:
+
 FusionCharts Suite XT, starting v3.8.0, includes support for client-side exporting.
 
 While FusionCharts has an established server-side exporting feature, common concerns with this feature include:

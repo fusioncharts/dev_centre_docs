@@ -14,7 +14,7 @@ A chart is shown below:
 
 {% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 import FusionCharts from 'fusioncharts';

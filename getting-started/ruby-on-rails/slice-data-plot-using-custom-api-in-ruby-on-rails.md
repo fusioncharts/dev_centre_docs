@@ -152,7 +152,7 @@ The full code of the above sample is given below:
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+## The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
 

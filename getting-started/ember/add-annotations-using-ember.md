@@ -10,7 +10,7 @@ In this article we'll create a **Spline** chart and add annotations using `ember
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
-### Setup `ember-cli-build.js`
+## Setup `ember-cli-build.js`
 
 In this step we will include all the necessary files and add the dependency to create the **Spline** chart. The code is given below:
 

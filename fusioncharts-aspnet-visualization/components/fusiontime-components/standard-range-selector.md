@@ -4,6 +4,8 @@ description: With FusionCharts' Standard Range Selector, effortlessly select and
 heading: Standard Range Selector
 ---
 
+## A Standard Range Selector looks as shown in the image below:
+
 The Standard Range Selector lets you select and focus on data within standard time periods. The options of contextual time periods vary according to the atomicity of your data and the data you are currently displaying in the chart.
 
 A Standard Range Selector looks as shown in the image below:

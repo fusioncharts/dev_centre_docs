@@ -4,6 +4,8 @@ description: Unlock the potential of predictive data representation with FusionT
 heading: Predictive data representation
 ---
 
+## A time-series chart with predictable date looks like as shown below:
+
 Forecasting has always been an important aspect of time-series data representation and with FT 1.2 we want to ensure that our library has the capability to represent predictive data values.
 
 The product does not forecast values right now; it just represents the data which are predicted (once specified) differently. 

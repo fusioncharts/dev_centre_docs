@@ -100,7 +100,7 @@ $('document').ready(function () {
 });
 ```
 
-The HTML template of the above sample is shown below:
+## The HTML template of the above sample is shown below:
 
 ```HTML
 <div id="chart-container">

@@ -4,7 +4,7 @@ description: This article contains the list of charts supported in FusionCharts.
 heading: List of Charts
 ---
 
-Given below is the list of charts in FusionCharts.NET.
+## Given below is the list of charts in FusionCharts.NET.
 
 - [Column Chart](/fusioncharts-aspnet-visualization/chart-types/column-bar-net)
 

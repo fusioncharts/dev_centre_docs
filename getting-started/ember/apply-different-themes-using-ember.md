@@ -58,7 +58,7 @@ In the above code:
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
-### Add chart data to `chart-viewer.js`
+## Add chart data to `chart-viewer.js`
 
 Add the following code to `chart-viewer.js`:
 

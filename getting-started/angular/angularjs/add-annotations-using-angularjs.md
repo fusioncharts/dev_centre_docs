@@ -10,7 +10,7 @@ In this article we'll create a **Spline** chart and add annotations using `angul
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
-The code to render the above chart is given below:
+## The code to render the above chart is given below:
 
 ```
 //  Require AngularJS 

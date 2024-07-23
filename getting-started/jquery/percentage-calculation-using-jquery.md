@@ -97,7 +97,7 @@ $('document').ready(function () {
 });
 ```
 
-The HTML template of the above sample is shown below:
+## The HTML template of the above sample is shown below:
 
 ```html
 <div id="chart-container">

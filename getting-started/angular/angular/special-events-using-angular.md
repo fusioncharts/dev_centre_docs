@@ -4,6 +4,8 @@ description: Discover leveraging Special Events in Angular with FusionCharts Sui
 heading: Special Events using Angular
 ---
 
+## A drag-able column chart is shown below:
+
 FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
 This article focuses on how you can dynamically drag the column and see modified value as text using `angular-fusioncharts` component.

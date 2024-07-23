@@ -4,9 +4,11 @@ description: This article outlines the steps how apply group by data and apply a
 heading: Group By with Aggregation
 ---
 
+## Let's apply both operations on the tabular data of a DataModel
+
 In FusionCharts.Net, you can apply GroupBy and Aggregation operations to a DataModel at the same time.
 
-Let's apply both the operations on the tabular data of a DataModel.
+Let's apply both operations on the tabular data of a DataModel.
 
 * Grouping to the Country column.
 

@@ -10,7 +10,7 @@ In this article we'll create a **Spline** chart and add annotations using Fusion
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 <!DOCTYPE html>

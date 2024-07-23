@@ -12,7 +12,7 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 //Including react

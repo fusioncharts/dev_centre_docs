@@ -12,7 +12,7 @@ This article focuses on how you can change the chart type of the chart at runtim
 * Bar 2D
 * Pie 2D
 
-A chart configured to change the chart type, is shown below:
+## A chart configured to change the chart type, is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
