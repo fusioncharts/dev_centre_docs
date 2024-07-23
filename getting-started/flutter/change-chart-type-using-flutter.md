@@ -4,7 +4,6 @@ description: This article will showcase a sample to change the chart type at run
 heading: Change Chart Type at Runtime
 ---
 
-## These are the steps to follow to render the sample chart
 FusionCharts Suite XT includes advanced features that add more context to your chart and simplify data visualization. These features include chart updates, update chart type at runtime, and events.
 
 This article focuses on how to change the chart type of the chart at runtime using the `flutter-fusioncharts` component. The chart types used in the sample are:
@@ -119,7 +118,7 @@ class _ColumnChartState extends State<ColumnChart> {
 
 ```
 
-These are the steps to follow to render the sample chart above.
+## These are the steps to follow to render the sample chart above.
 
 1. Include the necessary libraries and components using `import`. For example, `flutter-fusioncharts`, `fusioncharts`, etc.
 
