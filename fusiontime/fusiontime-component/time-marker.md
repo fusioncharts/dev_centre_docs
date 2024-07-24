@@ -1,6 +1,6 @@
 ---
 title: Time Marker | FusionCharts
-description: Easily mark events on the time axis with FusionTime. Dive into our comprehensive article to learn more about Time instance marker and Time band marker.
+description: Discover FusionTime's time markers for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Time Marker
 ---
 
