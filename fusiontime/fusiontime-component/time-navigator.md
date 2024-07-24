@@ -1,6 +1,6 @@
 ---
 title: Time Navigator | FusionCharts
-description: Gain valuable insights with FusionTime's time navigator component. Explore specific time periods without losing sight of the complete data picture in the article.
+description: Discover FusionTime's time navigator for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Time Navigator
 ---
 
