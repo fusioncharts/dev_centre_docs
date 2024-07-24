@@ -1,6 +1,6 @@
 ---
 title: Percentage Calculation | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: Learn percentage calculation in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Percentage Calculation
 ---
 
