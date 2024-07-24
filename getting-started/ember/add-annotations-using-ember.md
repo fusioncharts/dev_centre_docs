@@ -1,6 +1,6 @@
 ---
 title: Add Annotations | FusionCharts
-description: This article focuses on different type of configurations possible using the ember.
+description: Add Annotations with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Add Annotations
 ---
 
