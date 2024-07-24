@@ -1,6 +1,6 @@
 ---
 title: Percentage Calculation | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: Know how to Percentage Calculation using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Percentage Calculation
 ---
 
