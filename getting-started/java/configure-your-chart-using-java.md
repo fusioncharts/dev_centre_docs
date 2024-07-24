@@ -1,6 +1,6 @@
 ---
 title: Configuring your Chart using Java | FusionCharts
-description: This article focuses on different type of configurations possible using the Java.
+description: Configuring your Chart using Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info.
 heading: Configuring your Chart using Java
 ---
 
