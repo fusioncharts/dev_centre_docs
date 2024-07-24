@@ -1,6 +1,6 @@
 ---
 title: Configuring your Chart using Ember | FusionCharts
-description: This article focuses on different type of configurations possible using the ember.
+description: Configuring your Chart using Ember with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Configuring your Chart using Ember
 ---
 
