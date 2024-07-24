@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Django | FusionCharts
-description: Explore unlimited levels of drill-down using Django with FusionCharts. Read article to navigate through parent & descendant charts with a single data source.
+description: Find out how to Adding Drill Down using Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Adding Drill Down using Django
 ---
 
