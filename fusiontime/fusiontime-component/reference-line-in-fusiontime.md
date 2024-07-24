@@ -1,6 +1,6 @@
 ---
 title: Reference Line | FusionCharts
-description: Find how to enhance time-series charts with reference lines in FusionTime. Dive into detailed examples & code snippets for easy implementation. Start now!
+description: Discover FusionTime's reference line for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Reference Line
 ---
 
