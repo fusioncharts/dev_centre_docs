@@ -2,6 +2,7 @@
 title: Cross Line | FusionCharts
 description: Cross line is a vertical line/area used as quick reference for the data plots. The tooltip that appears is consolidated with all the information required.
 heading: Cross Line
+canonical: "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line"
 ---
 
 Cross line is a vertical line/area used as a quick reference for data plots. When you hover over the canvas, a line/area appears highlighting the data plots along with the information in a tooltip. The tooltip that appears has all the information required, for example, data values, labels of each data plot and also the color of the data plots. A cross line appears as shown in the image below:

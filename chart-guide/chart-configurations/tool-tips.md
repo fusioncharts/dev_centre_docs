@@ -2,6 +2,7 @@
 title: Customizing the Tooltips | FusionCharts
 description: A tooltip is displayed when the mouse is hovered over a particular data point. This article talk about customizing the tooltip.
 heading: Tooltips
+canonical: "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips"
 ---
 
 A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information such as:
