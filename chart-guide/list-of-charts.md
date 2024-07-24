@@ -2,6 +2,7 @@
 title: List of 95+ Charts & Graphs | General, Business, Statistical and Stock-Market Charts
 description: FusionCharts has 95+ Charts that cover all aspects of data visualization - Time Series, Comparisons, Trend Analysis, Part-to-whole and much more.
 heading: List of Charts
+canonical: "https://www.fusioncharts.com/dev/chart-guide/list-of-charts"
 ---
 
 Given below is the list of charts in FusionCharts XT, FusionWidgets XT, and PowerCharts XT along with their JavaScript chart alias. You can use this alias to create an instance of a particular chart type, in your JavaScript code.
