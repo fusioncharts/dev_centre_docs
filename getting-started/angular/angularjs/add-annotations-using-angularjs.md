@@ -1,6 +1,6 @@
 ---
 title: Adding Annotations Using AngularJS | FusionCharts
-description: This article focuses on different type of configurations possible using angularjs.
+description: Adding Annotations using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Adding Annotations Using AngularJS
 ---
 
