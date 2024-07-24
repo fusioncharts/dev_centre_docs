@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using React Native | FusionCharts
-description: Unlock the power of drill-down functionality in React Native with FusionCharts using a single data source. Click now to explore our comprehensive article!
+description: Explore how to Adding Drill Down in React Native effortlessly with FusionCharts, optimizing your data visualization for mobile applications seamlessly.
 heading: Adding Drill Down using React Native
 ---
 
