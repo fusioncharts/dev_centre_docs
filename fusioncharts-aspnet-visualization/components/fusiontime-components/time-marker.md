@@ -1,6 +1,6 @@
 ---
 title: Time Markers | FusionCharts
-description: Utilize Time Markers to highlight events on the Time Axis. The overlays provide tooltip information when hovered over or tapped. Visit the article to learn more.
+description: Explore FusionTime's time markers for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Time Markers
 ---
 
