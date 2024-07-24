@@ -1,6 +1,6 @@
 ---
 title: Configuring your Chart using PHP | FusionCharts
-description: This article focuses on different type of configurations possible using the PHP.
+description: Understand how to Configuring your Chart using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Configuring your Chart using PHP
 ---
 
