@@ -1,6 +1,6 @@
 ---
 title: Reference Line | FusionCharts
-description: Check versatility of FusionTime's Reference Line component with our detailed guide for ASP.NET Visualization. Improve your data visualizations effortlessly!
+description: Explore FusionTime's reference line for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Reference Line
 ---
 
