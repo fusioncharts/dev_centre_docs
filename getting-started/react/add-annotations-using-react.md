@@ -1,6 +1,6 @@
 ---
 title: Add Annotations | FusionCharts
-description: This article focuses on different type of configurations possible using the react.
+description: Add Annotations effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Add Annotations
 ---
 
