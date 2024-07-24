@@ -1,6 +1,6 @@
 ---
 title: Configuring your Chart using React | FusionCharts
-description: This article focuses on different type of configurations possible using the react.
+description: Configuring your Chart effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Configuring your Chart using React
 ---
 
