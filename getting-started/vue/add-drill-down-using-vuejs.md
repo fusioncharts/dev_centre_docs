@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Vue | FusionCharts
-description: Unlock the power of drill-down capabilities with FusionCharts. Read our comprehensive article to navigate through parent and descendant charts effortlessly.
+description: Adding Drill Down using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Adding Drill Down using Vue
 ---
 
