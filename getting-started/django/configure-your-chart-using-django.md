@@ -1,6 +1,6 @@
 ---
 title: Configuring your Chart using django | FusionCharts
-description: This article focuses on different type of configurations possible using django.
+description: Find out how to Configuring your Chart Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Configuring your Chart using django
 ---
 
