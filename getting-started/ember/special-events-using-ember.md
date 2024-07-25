@@ -1,6 +1,6 @@
 ---
 title: Special Events using Ember | FusionCharts
-description: Explore the potential of Special Events with Ember using the FusionCharts Suite XT API. Delve into our comprehensive article to uncover more insights on Ember.
+description: Special Events using Ember with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Special Events using Ember
 ---
 
