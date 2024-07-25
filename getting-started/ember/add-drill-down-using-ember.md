@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Ember | FusionCharts
-description: Explore Ember integration with FusionCharts for dynamic drill-down charts! Elevate your data visualization with interactive charts in your Ember app.
+description: Adding Drill Down using Ember in this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Adding Drill Down using Ember
 ---
 
