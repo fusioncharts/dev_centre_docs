@@ -1,6 +1,6 @@
 ---
 title: Data Markers | FusionCharts
-description: Unlock new insights in your data with FusionCharts data markers. Highlight key trends & anomalies, make your charts more informative & actionable. Try now!
+description: Explore FusionTime's data markers for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Data Markers
 ---
 
