@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Adding Special Characters in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Adding Special Characters
 ---
 
