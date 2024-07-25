@@ -1,6 +1,6 @@
 ---
 title: Special Events using Angular | FusionCharts
-description: Discover leveraging Special Events in Angular with FusionCharts Suite XT API. Trigger actions during chart lifecycle stages for enhanced functionality.
+description: Learn Special Events in Angular with FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try it now!
 heading: Special Events using Angular
 ---
 
