@@ -1,5 +1,6 @@
 ---
 # Front matter (even empty) required for Jekyll to process
+description: Explore Latviamunicipalities with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
 description: Explore Latvia Municipalities with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today!
 ---
 
