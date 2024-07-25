@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Vue | FusionCharts
-description: Explore unlimited drill-down capabilities using Vue with FusionCharts. It allows you to seamlessly navigate through multiple levels of data visualization.
+description: Adding Drill Down using Vue in Ruby on Rails using FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
 heading: Adding Drill Down using Vue
 chartPresent: true
 ---

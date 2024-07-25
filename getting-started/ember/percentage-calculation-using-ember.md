@@ -1,6 +1,6 @@
 ---
 title: Percentage Calculation | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: Percentage Calculation in ember with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Percentage Calculation
 ---
 

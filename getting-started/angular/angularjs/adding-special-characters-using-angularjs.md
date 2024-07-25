@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters Using AngularJS | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Adding Special Characters using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Adding Special Characters Using AngularJS
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Understand how to Adding Special Characters using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Adding Special Characters
 ---
 

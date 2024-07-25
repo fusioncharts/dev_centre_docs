@@ -1,6 +1,6 @@
 ---
 title: Changelog | FusionCharts
-description: This section talks about the change in features and attributes with latest released version.
+description: Upgrade to FusionCharts 3.15.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Try now!
 heading: Version 3.15.x
 ---
 <h2 class="sub-heading">Version 3.15.3</h2>

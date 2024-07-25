@@ -1,6 +1,6 @@
 ---
 title: Y-Axis | FusionCharts
-description: Learn how the Y-Axis object can be specified within the dataSource object of the FusionCharts constructor. Tap into our article to gain in-depth insights!
+description: Discover FusionTime's y-axis for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Y-Axis
 ---
 

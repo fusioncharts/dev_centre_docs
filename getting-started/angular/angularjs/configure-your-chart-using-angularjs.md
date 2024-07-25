@@ -1,6 +1,6 @@
 ---
 title: Configuring Your Chart Using AngularJS | FusionCharts
-description: This article focuses on different type of configurations possible using AngularJS.
+description: Configuring Your Chart using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Configuring Your Chart Using AngularJS
 ---
 

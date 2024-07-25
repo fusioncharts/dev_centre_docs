@@ -1,6 +1,6 @@
 ---
 title: Percentage Calculation | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: Percentage Calculation effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Percentage Calculation
 ---
 

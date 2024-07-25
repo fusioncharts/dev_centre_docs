@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Django | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Find out how to Apply Different Themes using django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Apply Different Themes using django
 ---
 

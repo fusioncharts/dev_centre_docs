@@ -1,6 +1,6 @@
 ---
 title: Add Annotations | FusionCharts
-description: This article focuses on different type of configurations possible using django.
+description: Find out how to Add Annotations using django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Add Annotations using django
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Time Axis | FusionCharts
-description: Read the article to learn more about the Time Axis displaying time-based data on a timeseries chart - how it creates a timescale for chart data display.
+description: Explore FusionTime's time axis for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Time Axis
 ---
 

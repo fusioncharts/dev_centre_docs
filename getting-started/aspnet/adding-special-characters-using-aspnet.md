@@ -1,12 +1,10 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Enhance your ASP.NET projects by Adding Special Characters with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Adding Special Characters
 ---
 
-## To customize the prefix and suffix of the numbers on the chart, use the following attributes:
-
-> ### FusionCharts.NET
+> ## FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 >

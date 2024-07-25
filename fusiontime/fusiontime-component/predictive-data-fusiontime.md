@@ -1,6 +1,6 @@
 ---
 title: Predictive data representation | FusionCharts
-description: Unlock the potential of predictive data representation with FusionTime. Check out the article to customize your data plots and visualize forecasts with ease.
+description: Discover FusionTime's predictive data representation for powerful data visualization. Integrate interactive date controls & elevate your web apps. Start now!
 heading: Predictive data representation
 ---
 

@@ -1,7 +1,7 @@
 ---
 permalink: exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature.html
 title: Exporting Charts and Chart Data Using the Auto Export Feature | FusionCharts
-description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats.
+description: Explore FusionCharts' auto-export feature to effortlessly export charts and data. Optimize your workflow with FusionCharts Export Server. Get started today!
 heading: Exporting Charts and Chart Data Using the Auto Export Feature
 chartPresent: true
 ---

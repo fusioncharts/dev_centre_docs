@@ -1,6 +1,6 @@
 ---
 title: Export a Dashboard | FusionCharts
-description: Master exporting dashboards with multiple charts using FusionExport effortlessly. Dive into our comprehensive article for detailed guidance on exporting.
+description: Learn to enhance export a dashboard using FusionExport. Elevate visual appeal and customization effortlessly. Get started today with Fusioncharts!
 heading: Export a Dashboard
 ---
 

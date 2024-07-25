@@ -1,6 +1,6 @@
 ---
 title: Column Filter | FusionGrid
-description: Learn how to add column filters to your FusionGrid using FusionCharts. Follow our step-by-step tutorial for easy integration and customization. Check now!
+description: Filter FusionGrid columns easily with our step-by-step tutorial. Enhance your data visualization today! Try FusionCharts now for seamless integration.
 heading: Column Filter
 ---
 

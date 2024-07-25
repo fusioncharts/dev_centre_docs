@@ -1,7 +1,7 @@
 ---
 permalink: advanced-chart-configurations/events/introduction-to-events.html
 title: Introduction to Events | FusionCharts
-description: Events can be used for applications like monitoring the state of a system or a business.
+description: Customize and enhance your charts using events in FusionCharts. Discover detailed guides and examples for effective advanced chart configurations. Learn more!
 heading: Introduction to Events
 chartPresent: true
 ---

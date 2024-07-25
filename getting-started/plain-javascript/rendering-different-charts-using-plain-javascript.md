@@ -1,6 +1,6 @@
 ---
 title: Rendering different Charts | FusionCharts
-description: This article outlines some of the popular charts and the way to render them with their respective data formats.
+description: Know how to Rendering Different Charts using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Rendering Different Charts
 ---
 

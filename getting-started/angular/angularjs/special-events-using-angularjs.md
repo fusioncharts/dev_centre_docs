@@ -1,6 +1,6 @@
 ---
 title: Special Events using AngularJS | FusionCharts
-description: Discover the power of Special Events with AngularJS - Experience dynamic chart interactions and modified values with the angularjs-fusioncharts component.
+description: Special Events using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Special Events using AngularJS
 ---
 

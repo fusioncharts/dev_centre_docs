@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Slice Data Plot effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Slice Data Plot using API
 ---
 

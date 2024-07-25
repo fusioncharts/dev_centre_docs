@@ -1,6 +1,6 @@
 ---
 title: Add Annotations | FusionCharts
-description: This article focuses on different type of configurations possible using the Java.
+description: Add Annotations using Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info here.
 heading: Add Annotations
 ---
 

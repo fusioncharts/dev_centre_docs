@@ -1,6 +1,6 @@
 ---
 title: Change Chart Type at Runtime | FusionCharts
-description: This article will showcase a sample to change the chart type at runtime.
+description: Enhance your ASP.NET projects by Change Chart Type at Runtime with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Change Chart Type at Runtime
 ---
 

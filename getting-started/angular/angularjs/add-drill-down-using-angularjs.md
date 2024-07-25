@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down Using AngularJS | FusionCharts
-description: Enhance your AngularJS dashboards with FusionCharts' drill-down functionality! Navigate from high-level summaries to granular breakdowns. Explore more.
+description: Adding Drill Down using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Adding Drill Down Using AngularJS
 chartPresent: true
 ---

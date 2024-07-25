@@ -1,6 +1,6 @@
 ---
 title: List of 95+ Charts & Graphs | General, Business, Statistical and Stock-Market Charts
-description: FusionCharts has 95+ Charts that cover all aspects of data visualization - Time Series, Comparisons, Trend Analysis, Part-to-whole and much more.
+description: Explore FusionCharts' comprehensive guide to various charts. Learn about bar charts, line graphs, and more. Start creating stunning data visualizations today!
 heading: List of Charts
 canonical: "https://www.fusioncharts.com/dev/chart-guide/list-of-charts"
 ---

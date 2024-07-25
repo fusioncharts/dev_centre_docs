@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Ember | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply different themes in ember with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Apply Different Themes using Ember
 ---
 

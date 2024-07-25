@@ -1,6 +1,6 @@
 ---
 title: FusionGrid Release Notes | FusionGrid
-description: This section talks about the change in features and attributes with latest released version.
+description: Explore the latest updates and enhancements in FusionGrid with our detailed release notes. Stay informed and optimize your data visualization today!
 heading: FusionGrid Release Notes
 ---
 

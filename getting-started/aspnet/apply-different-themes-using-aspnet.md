@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using ASP.NET | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Enhance your ASP.NET projects by Apply Different Themes with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Apply Different Themes using ASP.NET
 ---
 

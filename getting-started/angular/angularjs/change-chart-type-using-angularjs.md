@@ -1,6 +1,6 @@
 ---
 title: Change Chart Type at Runtime Using AngularJS | FusionCharts
-description: This article will showcase a sample to change the chart type at runtime.
+description: Change Chart Type at Runtime using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Change Chart Type at Runtime Using AngularJS
 ---
 

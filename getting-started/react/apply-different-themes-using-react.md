@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using React | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply Different Themes effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Apply Different Themes using React
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Add a logo or a heading to the dashboard | FusionCharts
-description: Learn to enhance dashboard images professionally. Add logos, headings, and subheadings at the top for a polished look. Read our article for additional details.
+description: Learn to enhance dashboard presentations with logos or headings using FusionExport. Elevate visual appeal and customization effortlessly. Get started today!
 heading: Add a logo or a heading to the dashboard
 ---
 

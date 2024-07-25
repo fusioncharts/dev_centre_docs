@@ -1,6 +1,6 @@
 ---
 title: Release Notes | FusionCharts
-description: This section talks about the change in features and attributes with latest released version.
+description: Stay updated with the latest FusionTime features! Read the release notes now and enhance your data visualization experience. Visit FusionCharts for more info.
 heading: Release Notes
 ---
 

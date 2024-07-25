@@ -1,5 +1,6 @@
 ---
 # Front matter (even empty) required for Jekyll to process
+description: Explore Sardinia with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
 ---
 
 ## JavaScript Alias: maps/sardinia
