@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Adding Special Characters effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Adding Special Characters
 ---
 
