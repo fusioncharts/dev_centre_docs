@@ -1,6 +1,6 @@
 ---
 title: Time Navigator | FusionCharts
-description: Time navigators in FusionCharts help users explore timelines. They allow users to zoom in, out and pan to specific timeframes. Start exploring our tool now!
+description: Explore FusionTime's time navigator for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Time Navigator
 ---
 

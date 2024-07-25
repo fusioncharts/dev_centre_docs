@@ -1,6 +1,6 @@
 ---
 title: Export Grid | FusionGrid
-description: Export data seamlessly from FusionGrid to CSV, Excel & PDF formats with our user-friendly tutorial. Ideal for easy integration & data management. Check now!
+description: Learn to export FusionGrid data effortlessly with our step-by-step tutorial. Enhance your data visualization skills. Start exporting your grid data now!
 heading: Data Export
 ---
 # Export your Grid

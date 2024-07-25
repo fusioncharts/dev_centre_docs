@@ -1,6 +1,6 @@
 ---
 title: Percentage Calculation Using AngularJS | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: Percentage Calculation using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Percentage Calculation Using AngularJS
 ---
 

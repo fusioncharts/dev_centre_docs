@@ -1,6 +1,6 @@
 ---
 title: Setting Data Source Using URL | FusionCharts
-description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
+description: Set data sources using URLs in Java effortlessly with FusionCharts. Enhance application's data visualization capabilities and performance. Find more info here.
 heading: Setting Data Source Using URL
 ---
 

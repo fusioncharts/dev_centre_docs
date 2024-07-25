@@ -1,6 +1,6 @@
 ---
 title: Custom Range Selector | FusionCharts
-description: Discover the functionality of the custom range selector extension, enabling precise date/time selection. Explore its utility in accessing specific data periods.
+description: Discover FusionTime's custom range selector for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Custom Range Selector
 ---
 

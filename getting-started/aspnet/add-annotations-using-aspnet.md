@@ -1,6 +1,6 @@
 ---
 title: Add Annotations | FusionCharts
-description: This article focuses on different type of configurations possible using ASP.NET.
+description: Enhance your ASP.NET projects by Add Annotations with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Add Annotations using ASP.NET
 ---
 

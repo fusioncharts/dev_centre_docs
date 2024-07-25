@@ -1,7 +1,7 @@
 ---
 permalink: exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature.html
 title: Exporting Charts and Chart Data Using the Client-side Export Feature | FusionCharts
-description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats.
+description: Simplify chart exports! FusionCharts client-side exporting eliminates server dependency, reducing turnaround time. Download & export charts & data directly!
 heading: Exporting Charts and Chart Data Using the Client-side Export Feature
 chartPresent: true
 ---

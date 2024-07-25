@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Slice Data Plot using API in Vue.js applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Slice Data Plot using API
 ---
 

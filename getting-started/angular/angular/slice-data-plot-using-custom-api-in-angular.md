@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Learn Slice Data Plot using API in Angular with FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Slice Data Plot using API
 ---
 

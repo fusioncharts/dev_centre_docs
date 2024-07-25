@@ -1,6 +1,6 @@
 ---
 title: Reference Zone | FusionCharts
-description: Optimize data analysis with FusionCharts.NET's reference zones & visually analyze specific data plots within defined zones. Uncover insights in our blog!
+description: Explore FusionTime's reference zone for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Reference Zone
 ---
 

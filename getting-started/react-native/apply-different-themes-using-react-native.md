@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using React Native | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Explore how to Apply Different Themes in React Native effortlessly with FusionCharts, optimizing your data visualization for mobile applications seamlessly.
 heading: Apply Different Themes using React Native
 ---
 

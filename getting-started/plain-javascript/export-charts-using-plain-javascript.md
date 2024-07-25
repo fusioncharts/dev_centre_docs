@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using plain javascript.
+description: Know how to Exporting Charts using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Exporting Charts
 ---
 

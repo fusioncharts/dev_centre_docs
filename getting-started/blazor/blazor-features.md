@@ -1,6 +1,6 @@
 ---
 title: Blazor Features | FusionCharts
-description: This article outlines how to work with events, APIs, and modules.
+description: Discover FusionCharts' Blazor features in this detailed guide. Easily integrate dynamic data visualizations for enhanced performance. Try it now!
 heading: Blazor Features
 ---
 

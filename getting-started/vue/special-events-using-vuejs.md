@@ -1,6 +1,6 @@
 ---
 title: Special Events using Vue | FusionCharts
-description: Discover the power of Special Events with Vue using the Vue-FusionCharts component for dynamic column chart interactions. Click now to explore our article!
+description: Special Events using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Special Events using Vue
 ---
 

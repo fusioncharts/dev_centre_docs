@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Learn adding special characters in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Adding Special Characters
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Slice Data Plot using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+description: Enhance your ASP.NET projects by Slice Data Plot using API with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Slice Data Plot using API
 ---
 

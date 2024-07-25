@@ -1,6 +1,6 @@
 ---
 title: Reference Zone | FusionCharts
-description: Read the article to discover the power of reference zones in FusionTime! It visually highlights data plots within marked zones for improved data analysis.
+description: Discover FusionTime's reference zone for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Reference Zone
 ---
 

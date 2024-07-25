@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Java | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply Different Themes using Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info here.
 heading: Apply Different Themes using Java
 ---
 

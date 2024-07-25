@@ -1,6 +1,6 @@
 ---
 title: Install FusionGrid Angular | FusionGrid
-description: Unlock the potential of Angular by mastering the art of creating and configuring a Grid. Explore our comprehensive article now to get started with Angular!
+description: Learn how to install and get started with FusionGrid in Angular. Follow our easy steps and start building interactive grids today. Try it now!
 heading: Getting Started with Angular
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down | FusionCharts
-description: Discover the effortless way to implement multi-level drill-downs with FusionCharts & navigate through your data from parent to child and grandchild charts.
+description: Know how to Add Drill Down using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Adding Drill Down
 ---
 

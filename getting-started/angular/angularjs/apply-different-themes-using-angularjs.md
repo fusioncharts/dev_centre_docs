@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes Using AngularJS | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Apply Different Themes using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Apply Different Themes Using AngularJS
 ---
 

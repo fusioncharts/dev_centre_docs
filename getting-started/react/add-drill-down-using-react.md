@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using React | FusionCharts
-description: Unlock deeper data dives with FusionCharts and react. Craft interactive charts with seamless drill-downs for unmatched insights. Boost your analytics now!
+description: Adding Drill Down effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Adding Drill Down using React
 ---
 

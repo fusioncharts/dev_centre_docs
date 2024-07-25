@@ -1,6 +1,6 @@
 ---
 title: Setting Data Source Using URL in AngularJS | FusionCharts
-description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
+description: Setting Data Source using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Setting Data Source Using URL in AngularJS
 ---
 

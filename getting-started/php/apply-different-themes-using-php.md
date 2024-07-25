@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using PHP | FusionCharts
-description: This article will showcase how to apply different themes to the chart at runtime.
+description: Understand how to Apply Different Themes using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Apply Different Themes using PHP
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Custom Range Selector | FusionCharts
-description: Optimize your data exploration with the Custom Range Selector within a specific time period by selecting the start & end points. Click now to explore more.
+description: Explore FusionTime's custom range selector for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Custom Range Selector
 ---
 

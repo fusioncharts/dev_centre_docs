@@ -1,6 +1,6 @@
 ---
 title: Time Axis | FusionCharts
-description: Explore the capabilities of FusionTime's Time Axis in our article! It generates a timescale for chart data by utilizing the date column in your data table.
+description: Discover FusionTime's time axis for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Time Axis
 ---
 

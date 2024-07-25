@@ -1,6 +1,6 @@
 ---
 title: Y-Axis | FusionCharts
-description: Enhance your data visualization with a timeseries chart featuring one or more Y-axes for multi-series or multivariate analysis. Click to read the article!
+description: Explore FusionTime's y-axis for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Y-Axis
 ---
 

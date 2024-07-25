@@ -1,6 +1,6 @@
 ---
 title: Rendering different Charts | FusionCharts
-description: This article outlines some of the popular charts and the way to render them with their respective data formats.
+description: Learn Rendering Different Charts in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Rendering Different Charts
 ---
 

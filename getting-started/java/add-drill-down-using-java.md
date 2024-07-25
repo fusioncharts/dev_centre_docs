@@ -1,6 +1,6 @@
 ---
 title: Adding Drill Down using Java | FusionCharts
-description: Learn more about drill-down capabilities in Java with FusionCharts! Visualize top countries & cities dynamically. Experience powerful data insights now!
+description: Adding Drill Down using Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info here.
 heading: Adding Drill Down using Java
 ---
 
