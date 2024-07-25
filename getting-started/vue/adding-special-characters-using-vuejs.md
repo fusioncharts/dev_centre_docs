@@ -1,6 +1,6 @@
 ---
 title: Adding Special Characters | FusionCharts
-description: This article outlines the steps to be executed for adding special characters to the data values of your chart.
+description: Adding Special Characters using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Adding Special Characters
 ---
 
