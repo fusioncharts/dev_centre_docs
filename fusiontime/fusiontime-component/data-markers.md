@@ -1,6 +1,6 @@
 ---
 title: Data Marker | FusionCharts
-description: Discover the significance of data markers in a chart and how they represent important events on specific data points. Read the article for more information.
+description: Discover FusionTime's data marker for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Data Marker
 ---
 
