@@ -4,13 +4,11 @@ description: Know how to Percentage Calculation using plain JavaScript with Fusi
 heading: Percentage Calculation
 ---
 
-## A chart configured to calculate the percent, is shown below:
-
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots.
 
-A chart configured to calculate the percent, is shown below:
+## A chart configured to calculate the percent, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
