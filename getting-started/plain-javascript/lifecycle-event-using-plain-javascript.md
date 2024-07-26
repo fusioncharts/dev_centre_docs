@@ -12,7 +12,7 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-The full code of the above sample is given below:
+## The full code of the above sample is given below:
 
 ```
 import FusionCharts from 'fusioncharts';
@@ -90,7 +90,7 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-## The above chart has been rendered using the following steps:
+The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
