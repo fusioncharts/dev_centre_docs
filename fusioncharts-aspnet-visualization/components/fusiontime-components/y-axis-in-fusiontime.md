@@ -4,11 +4,9 @@ description: Explore FusionTime's y-axis for ASP.NET, offering intuitive control
 heading: Y-Axis
 ---
 
-## A Y-axis in a timeseries chart looks as shown in the image below:
-
 A timeseries chart can have one or more Y-axes. The latter situation occurs when you need to build a multi-series or multivariate chart.
 
-A Y-axis in a timeseries chart looks as shown in the image below:
+## A Y-axis in a timeseries chart looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
