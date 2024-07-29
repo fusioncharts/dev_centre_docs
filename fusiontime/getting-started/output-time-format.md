@@ -4,11 +4,9 @@ description: Customize the output time format in time series charts with FusionC
 heading: Change output time format
 ---
 
-## FusionTime supports the following time units:
-
 In a time series chart, time is primarily displayed on the time axis and tooltip of a data plot. With v1.2.0, developers will be able to control the display of output time using standard [date-time formats](/fusiontime/fusiontime-attributes#date-time-format) for the specific time unit.
 
-FusionTime supports the following time units:
+## FusionTime supports the following time units:
 
 - Year
 - Month
