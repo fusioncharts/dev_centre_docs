@@ -4,8 +4,6 @@ description: Explore & learn how to effectively use Pivot, an operation that con
 heading: Pivot
 ---
 
-## Let's apply pivot operation on the table given below:
-
 Pivot is an operation with which you can group data from one or more columns, and convert them into aggregated tables by "pivoting" (transposing/rotating) around unique values of a particular column (called the pivot column).
 
 In FusionCharts.NET, when you apply to pivot on an object of the `DataModel` class, it creates a new object of the `DataModel` class with the result. You need to create the following:
@@ -14,7 +12,7 @@ In FusionCharts.NET, when you apply to pivot on an object of the `DataModel` cla
 * A second object of the `GroupColumn` class and provide the name of the pivot column
 * An object of the `Aggregation` class and provide the aggregate function you want to use (i.e., `SUM`)
 
-Let's apply pivot operation on the table given below:
+## Let's apply pivot operation on the table given below:
 
 | Order Date | Country       | Sales   | Quantity | Shipping Cost |
 | ---------- | ------------- | ------- | -------- | ------------- |
