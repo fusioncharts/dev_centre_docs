@@ -4,8 +4,6 @@ description: Apply Different Themes using Flutter on FusionCharts. Elevate your 
 heading: Apply Different Themes using Flutter
 ---
 
-## The complete code of the sample is given below:
-
 In FusionCharts Suite XT, you can manually set each chart's cosmetics and functional attributes in the corresponding JSON/XML file. This works when dealing with only a small number of charts. As the number of charts increases, so do the hassles. FusionCharts Suite ships with predefined themes that you can use to set your chart's visual appearance or behavior.
 
 FusionCharts Suite XT ships with the following predefined themes:
@@ -23,7 +21,7 @@ The following is an example of a chart configured to change the theme.
 
 ![2D Column](/images/flutter_chart_column.png)
 
-The complete code of the above sample is given below:
+## The complete code of the above sample is given below:
 
 ```javascript
 import 'package:flutter/foundation.dart';
