@@ -4,15 +4,13 @@ description: Find versatile plot types & enhance visualization. Transform your c
 heading: Change Plot Type
 ---
 
-## The chart is shown below:
-
 Plot refers to a line in the line chart, a column in the column chart or an area in the area chart.
 
 In this article, we'll see how to change the [plot types](/fusiontime/fusiontime-component/plot-types-in-fusiontime) of the chart.
 
 Let's create a time series chart using a **line** as the data plot showcasing online sales of SuperStore in the United States of America.
 
-The chart is shown below:
+## The chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 

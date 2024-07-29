@@ -4,7 +4,7 @@ description: This page consists of list of improvement made in map specification
 heading: Map Improvements in Version 3.14.0
 ---
 
-- The core maps package has been updated to:
+## The core maps package has been updated to:
 
     - Updated the specification sheet for [Papua New Guinea](/maps/spec-sheets/papuanewguinea).
 

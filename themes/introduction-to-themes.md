@@ -8,7 +8,7 @@ You can use FusionCharts Suite XT to create web applications that include multip
 
 You can manually set the cosmetic and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. That is where the Theme Manager shipped with FusionCharts Suite XT comes in. You can use the Theme Manager to create centralized theme files (similar to CSS files) and then apply those themes to any number of charts.
 
-In a theme file, you can centralize the following aspects of a chart, gauge, or map:
+## In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)

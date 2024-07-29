@@ -6,7 +6,7 @@ heading: Version 3.6.0
 
 <p class="release-date"> 14th January, 2015 </p>
 
-#### Improvements
+## Improvements
 
 - Added support for self hosted export servers in **Java**.
 

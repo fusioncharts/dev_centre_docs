@@ -6,7 +6,7 @@ heading: Version 3.8.0
 
 <p class="release-date"> 21st July, 2015 </p>
 
-#### New Features
+## New Features
 
 - The following attributes have been added to customize the legend icon shape:
 

@@ -4,11 +4,9 @@ description: Read article to optimize your data operations with FusionGrid's Pip
 heading: Join Operations using Pipe
 ---
 
-## Let's take a basic example of a DataTable shown below:
-
 **Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable` which creates multiple DataTable(s), you can combine them in one single step using **pipe** and apply to the **DataTable**. This creates only one DataTable.
 
-Let's take a basic example of a DataTable shown below:
+## Let's take a basic example of a DataTable shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 

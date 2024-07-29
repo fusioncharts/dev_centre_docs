@@ -4,11 +4,9 @@ description: Adding Special Characters using URLs in AngularJS with FusionCharts
 heading: Adding Special Characters Using AngularJS
 ---
 
-## To customize the prefix and suffix of the numbers on the chart, use the following attributes:
-
 FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you customize the prefix and suffix of the numbers on the chart using `angularjs-fusioncharts` component.
 
-To customize the prefix and suffix of the numbers on the chart, use the following attributes:
+## To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
 * Specify the prefix for all the values on the chart using the `numberPrefix` attribute. Note that the value of this attribute works only if you don't specifically mention the values of the `yNumberPrefix` and `xNumberPrefix` attributes.
 

@@ -4,8 +4,6 @@ description: The advantage of toolbar is it manages all the UI action elements c
 heading: Toolbar
 ---
 
-## The drag-node chart below shows the implementation of the toolbar:
-
 FusionCharts Suite XT introduces the toolbar, starting from version 3.11.0. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping.
 
 The new toolbar has changed the way certain chart elements are implemented. The table below summarizes these changes:
@@ -20,7 +18,7 @@ Real-time charts|Real-time menu|Menu placed at the bottom-left side of the chart
 
 The samples shown below showcase the difference between the current and the previous implementations.
 
-The drag-node chart below shows the implementation of the toolbar:
+## The drag-node chart below shows the implementation of the toolbar:
 
 {% embed_chart chart-configurations-toolbar-example-1.js %}
 

@@ -4,13 +4,11 @@ description: Know how to Add Drill Down using plain JavaScript with FusionCharts
 heading: Adding Drill Down
 ---
 
-## Create linked charts by following the steps given below:
-
 With FusionCharts, you can create unlimited levels of drill down with a single data source. The parent chart contains all the data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
 You can drill down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill up, or it can open in a new window or frame.
 
-Create linked charts by following the steps given below:
+## Create linked charts by following the steps given below:
 
 1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 

@@ -4,13 +4,11 @@ description: This article lists the basic lifestyle events at the time of render
 heading: Lifecycle Events Using AngularJS
 ---
 
-## A chart is shown below:
-
 Events are signals that let you execute specific actions (such as sending data to the server using JavaScript) in response to any interaction/update for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates and events.
 
 This article lists the basic lifestyle events at the time of rendering the chart using `angularjs-fusioncharts` component.
 
-A chart is shown below:
+## A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
