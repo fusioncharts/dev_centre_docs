@@ -6,8 +6,6 @@ heading: Exporting Charts and Chart Data Using the Auto Export Feature
 chartPresent: true
 ---
 
-## The table below shows the comparison between the server-side and client-side modes of export:
-
 FusionCharts Suite XT lets you export charts as images and PDF as well as the chart data in the XLSX format.
 To enable chart export, the suite supports the following three modes of export:
 
@@ -19,7 +17,7 @@ While FusionCharts already included support for server-side and client-side expo
 
 Before we delve into details about the auto export feature, let us first take at a look at the comparison between the server-side and clinet-side exporting modes to understand what prompted the need for an auto export mode.
 
-The table below shows the comparison between the server-side and client-side modes of export:
+## The table below shows the comparison between the server-side and client-side modes of export:
 
 <table> 
 	<tr>
