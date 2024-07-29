@@ -7,8 +7,6 @@ chartPresent: true
 layout: page
 ---
 
-## Here we created a simple column 2D chart and used the data from this chart to build an HTML table
-
 This guide will show you how you can get tabular data from a chart and display it as a table alongside it. Shown below is a chart that displays its data in a tabular format.
 
 {% embed_chart view-data-of-existing-chart-on-page-example-1.js %}
@@ -30,7 +28,7 @@ This guide will show you how you can get tabular data from a chart and display i
 </table>
 
 
-Here we created a simple column 2D chart and use the data from this chart to build a HTML table.
+## Here we created a simple column 2D chart and use the data from this chart to build a HTML table.
 
 First we get the data of the chart using the getDataAsCSV method like this.
 
