@@ -21,7 +21,7 @@ Consider the example dataset given in the table below. It shows the population n
 
 In this example, assume that you want to rename the internal ID for North America from `NA` to `NAM`, that of South America from `SA` to `SAM`, and so on. You can do this by defining new IDs for entities within the `entitydef` array as part of the `dataSource` of the map.
 
-Refer to the code given below:
+## Refer to the code given below:
 
 ```json
 {

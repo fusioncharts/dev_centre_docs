@@ -4,13 +4,11 @@ description: Optimize your data analysis by selecting specific columns from tabu
 heading: Select Fields
 ---
 
-## Let's take a basic example of a tabular data in a DataModel
-
 `Select` operation should be used only when you want to extract a few specific columns from the tabular **data** in the `DataModel`.
 
 Note that when you use the `Select` operation on a `DataModel`, it will generate a new `DataModel` with only the selected columns in the data.
 
-Let's take a basic example of a  tabular data in a DataModel.
+## Let's take a basic example of a  tabular data in a DataModel.
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 

@@ -4,8 +4,6 @@ description: GroupBy operation in FusionGrid groups identical rows of tabular da
 heading: Group By
 ---
 
-## The code to group the above tabular data with respect to the Country and Quantity column is shown below:
-
 **GroupBy** is used to group the identical rows of tabular data. For example, if a particular column has the same values in different rows, `groupBy` will group those rows.
 
 When you apply `GroupBy` to a DataModel, it transforms it and creates a new DataModel.
@@ -24,7 +22,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/26/2011 | India | 79.38 | 3 | 13.82 
 1/26/2011 | India | 342.51 | 7 | 13.22
 
-The code to group the above tabular data with respect to the **Country** and **Quantity** column is shown below:
+## The code to group the above tabular data with respect to the **Country** and **Quantity** column is shown below:
 
 ```
 GroupColumn columnData = new GroupColumn {

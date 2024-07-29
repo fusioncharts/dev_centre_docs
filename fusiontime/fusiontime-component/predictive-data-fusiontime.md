@@ -4,8 +4,6 @@ description: Discover FusionTime's predictive data representation for powerful d
 heading: Predictive data representation
 ---
 
-## A time-series chart with predictable date looks like as shown below:
-
 Forecasting has always been an important aspect of time-series data representation and with FT 1.2 we want to ensure that our library has the capability to represent predictive data values.
 
 The product does not forecast values right now; it just represents the data which are predicted (once specified) differently. 
@@ -14,7 +12,7 @@ To represent your predicted data in different styles, FusionTime allows you to s
 
 > If date/timestamp beyond which data is predictive is not specified, Fusiontime considers the current date (or today()) for predictive representation.
 
-A time-series chart with predictable date looks like as shown below:
+## A time-series chart with predictable date looks like as shown below:
 
 {% embed_ftChart predictive-data-in-fusiontime %}
 

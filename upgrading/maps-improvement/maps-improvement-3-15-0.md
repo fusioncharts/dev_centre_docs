@@ -4,7 +4,7 @@ description: This page consists of list of improvement made in map specification
 heading: Map Improvements in Version 3.15.0
 ---
 
-- In the core maps package:
+## In the core maps package:
 
   - Updated the specification sheet for [Trinidad and Tobago](/maps/spec-sheets/trinidadandtobago).
 

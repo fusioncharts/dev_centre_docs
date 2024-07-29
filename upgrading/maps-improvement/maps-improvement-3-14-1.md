@@ -4,7 +4,7 @@ description: This page consists of list of improvement made in map specification
 heading: Map Improvements in Version 3.14.1
 ---
 
-- The core maps package has been updated to:
+## The core maps package has been updated to:
 
   - Updated the specification sheet for [Sudan Without South Sudan](/maps/spec-sheets/sudanwosouthsudan) and 2 separate province maps:
 

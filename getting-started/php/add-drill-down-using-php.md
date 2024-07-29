@@ -4,8 +4,6 @@ description: Understand how to Adding Drill Down using PHP with FusionCharts. Ef
 heading: Adding Drill Down using PHP
 ---
 
-## The chart thus rendered looks like this:
-
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
 You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
@@ -14,7 +12,7 @@ Assume that the __fusioncharts_phpsample__ database also includes the __City__ t
 
 To show data at different levels of a hierarchy, we use drill-down charts. We will now see how you can create a drill-down column 2D chart based on the above scenario, the data for which will be loaded from a database.
 
-The chart thus rendered looks like this:
+## The chart thus rendered looks like this:
 
 {% embed_chart adding-drill-down-using-php.js %}
 

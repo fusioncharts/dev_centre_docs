@@ -4,11 +4,9 @@ description: Explore FusionTime's standard range selector for ASP.NET, offering 
 heading: Standard Range Selector
 ---
 
-## A Standard Range Selector looks as shown in the image below:
-
 The Standard Range Selector lets you select and focus on data within standard time periods. The options of contextual time periods vary according to the atomicity of your data and the data you are currently displaying in the chart.
 
-A Standard Range Selector looks as shown in the image below:
+## A Standard Range Selector looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
 

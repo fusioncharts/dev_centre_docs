@@ -4,8 +4,6 @@ description: Enhance your ASP.NET projects by Change Chart Type at Runtime with 
 heading: Change Chart Type at Runtime
 ---
 
-## A chart configured to change the chart type is shown below:
-
 > ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
@@ -24,7 +22,7 @@ This article focuses on how you can change the chart type of the chart at runtim
 - Bar chart
 - Pie chart
 
-A chart configured to change the chart type is shown below:
+## A chart configured to change the chart type is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 

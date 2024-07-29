@@ -4,8 +4,6 @@ description: Understand how to Apply Different Themes using PHP with FusionChart
 heading: Apply Different Themes using PHP
 ---
 
-## A chart configured to change the theme, is shown below:
-
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
 
 FusionCharts Suite XT ships with the following predefined themes:
@@ -19,7 +17,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 
 This article focuses on how you can apply different themes to the chart at runtime using FusionCharts PHP wrapper. Click any radio button, to see how the look and feel of the chart change with each theme.
 
-A chart configured to change the theme, is shown below:
+## A chart configured to change the theme, is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 

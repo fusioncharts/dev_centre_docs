@@ -4,7 +4,7 @@ description: Enhance your ASP.NET projects by Adding Special Characters with Fus
 heading: Adding Special Characters
 ---
 
-> ## FusionCharts.NET
+> ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 >
@@ -16,7 +16,7 @@ heading: Adding Special Characters
 
 FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you customize the prefix and suffix of the numbers on the chart using **FusionCharts ASP.NET `C#` & `VB` wrapper**.
 
-To customize the prefix and suffix of the numbers on the chart, use the following attributes:
+## To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
 - Specify the prefix for all the values on the chart using the `numberPrefix` attribute. Note that the value of this attribute works only if you don't specifically mention the values of the `yNumberPrefix` and `xNumberPrefix` attributes.
 

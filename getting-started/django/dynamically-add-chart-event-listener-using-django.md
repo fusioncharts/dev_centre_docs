@@ -4,8 +4,6 @@ description: This article tells you how to dynamically add chart event listener 
 heading: Dynamically Add Chart Event Listener using django
 ---
 
-## The HTML template to render the chart is shown below:
-
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
 
 Events are signals that let you execute specific actions — such as manipulating the DOM, sending data to the server, and so on — using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when:
@@ -84,7 +82,7 @@ def chart(request):
     return  render(request, 'interactive-event.html', {'output' : column2d.render(), 'chartTitle': 'Example of event (interactive event)'})
 
 ```
-The HTML template to render the chart is shown below:
+## The HTML template to render the chart is shown below:
 
 ```
 <!DOCTYPE html>

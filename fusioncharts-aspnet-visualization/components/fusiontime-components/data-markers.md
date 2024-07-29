@@ -4,11 +4,9 @@ description: Explore FusionTime's data markers for ASP.NET, offering intuitive c
 heading: Data Markers
 ---
 
-## A data marker looks as shown in the image below:
-
 You can use a Data Marker in a chart to indicate an important event, which occurred on a specific data point. You can hover the mouse pointer over a data marker or tap on it to show additional description of the event in the tooltip.
 
-A data marker looks as shown in the image below:
+## A data marker looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
 

@@ -4,11 +4,9 @@ description: Explore FusionTime's custom range selector for ASP.NET, offering in
 heading: Custom Range Selector
 ---
 
-## A Custom Range Selector looks as shown in the image below:
-
 The Custom Range Selector lets you select and focus on data within a specific time period by selecting the start and end points. It comes in handy when you are aware of the exact time period, for which you want to see the data.
 
-A Custom Range Selector looks as shown in the image below:
+## A Custom Range Selector looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-custom-range-selector.png" alt="Custom Range Selector" width="700" height="420">
 

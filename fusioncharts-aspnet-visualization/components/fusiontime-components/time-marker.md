@@ -4,11 +4,9 @@ description: Explore FusionTime's time markers for ASP.NET, offering intuitive c
 heading: Time Markers
 ---
 
-## A time marker looks as shown in the image below:
-
 You can mark events on the Time Axis using Time Markers. A time marker appears as an overlay on the chart canvas. When you hover the mouse pointer over a time marker or tap on it, a tooltip appears with information about the marker.
 
-A time marker looks as shown in the image below:
+## A time marker looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-time-marker.png" alt="Data Markers" width="700" height="420">
 

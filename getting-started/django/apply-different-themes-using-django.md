@@ -4,8 +4,6 @@ description: Find out how to Apply Different Themes using django with FusionChar
 heading: Apply Different Themes using django
 ---
 
-## The HTML template used to render the chart is shown below:
-
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases, so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
 
 FusionCharts Suite XT ships with the following predefined themes:
@@ -95,7 +93,7 @@ def chart(request):
 
 ```
 
-The HTML template used to render the chart is shown below:
+## The HTML template used to render the chart is shown below:
 
 ```
 <!DOCTYPE html>

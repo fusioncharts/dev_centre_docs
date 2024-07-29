@@ -4,13 +4,11 @@ description: Read the article to discover the power of working with events in An
 heading: Working with Events Using AngularJS
 ---
 
-## Take a look at the Column 2D chart shown below:
-
 Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update for a chart. For example, you can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the Column 2D chart shown below:
+## Take a look at the Column 2D chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 

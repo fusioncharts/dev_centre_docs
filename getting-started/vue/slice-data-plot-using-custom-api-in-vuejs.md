@@ -4,8 +4,6 @@ description: Slice Data Plot using API in Vue.js applications using URLs with Fu
 heading: Slice Data Plot using API
 ---
 
-## The code to render a chart is given below:
-
 FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
 This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using `vue-fusioncharts` component. 
@@ -14,7 +12,7 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
-The code to render a chart is given below:
+## The code to render a chart is given below:
 
 ```
 import Vue from 'vue';
