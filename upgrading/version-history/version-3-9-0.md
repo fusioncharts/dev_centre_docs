@@ -6,7 +6,7 @@ heading: Version 3.9.0
 
 <p class="release-date"> 28th September, 2015 </p>
 
-#### New Features
+## New Features
 
 - The `forceNumberScale` (`sForceNumberScale` for the secondary y-axis) has been introduced to format values lower than the specified `numberScaleValue`.
 
