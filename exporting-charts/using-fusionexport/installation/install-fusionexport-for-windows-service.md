@@ -4,8 +4,6 @@ description: This article focuses on how you can install the FusionExport for wi
 heading: Install FusionExport for Windows Service
 ---
 
-## Follow the steps below for the installation process:
-
 In this article, we elaborate on how to install FusionExport binary on your Windows Machine.
 
 There are two different packages for Windows.
@@ -13,7 +11,7 @@ There are two different packages for Windows.
 1. **Normal FusionExport Service** - This is like any other FusionExport distribution for different OS, where you just need to execute `fusionexport.sh` or `fusionexport.bat`.
 2. **FusionExport Windows Service** - This is what we will be doing in this installation guide.
 
-Follow the steps below for the installation process:
+## Follow the steps below for the installation process:
 
 - Download the FusionExport Service 64 bit for Windows.
 
