@@ -6,8 +6,6 @@ heading: Exporting Charts and Chart Data Using the Client-side Export Feature
 chartPresent: true
 ---
 
-## Given below is a brief description of the attributes that are used to enable client-side exporting:
-
 FusionCharts Suite XT, starting v3.8.0, includes support for client-side exporting.
 
 While FusionCharts has an established server-side exporting feature, common concerns with this feature include:
@@ -24,7 +22,7 @@ The primary need for coming up with the client-side export feature was to elimin
 
 </p>
 
-Given below is a brief description of the attributes that are used to enable client-side exporting:
+## Given below is a brief description of the attributes that are used to enable client-side exporting:
 
 <table width="100%" border="0" class="table" cellpadding="2" cellspacing="2">
 	<thead>
