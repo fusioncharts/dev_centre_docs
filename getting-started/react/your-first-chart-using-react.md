@@ -271,7 +271,7 @@ _Get started with FusionCharts._
 <details>
 <summary> <h3> Can I customize the appearance of FusionCharts in my React project?</h3></summary>
 <br>
-Yes, you can customize various aspects of **charts in reactjs** with FusionCharts, such as colors, fonts, tooltips, and animations, to match the design of your react application. Refer to our documentation for detailed customization options.
+Yes, you can customize various aspects of <strong>charts in reactjs<strong> with FusionCharts, such as colors, fonts, tooltips, and animations, to match the design of your react application. Refer to our documentation for detailed customization options.
 </details>
 
 <details>
