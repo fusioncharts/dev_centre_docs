@@ -271,7 +271,7 @@ _Get started with FusionCharts._
 <details>
 <summary> <h3> Can I customize the appearance of FusionCharts in my React project?</h3></summary>
 <br>
-Yes, you can customize various aspects of <strong>charts in reactjs</strong>strong> with FusionCharts, such as colors, fonts, tooltips, and animations, to match the design of your react application. Refer to our documentation for detailed customization options.
+Yes, you can customize various aspects of <strong>charts in reactjs</strong> with FusionCharts, such as colors, fonts, tooltips, and animations, to match the design of your react application. Refer to our documentation for detailed customization options.
 </details>
 
 <details>
@@ -289,6 +289,6 @@ Check your browser console for exact error messages if you encounter JavaScript 
 <details>
 <summary> <h3> Can I integrate FusionCharts with state management libraries like Redux in React?</h3></summary>
 <br>
-Yes, you can integrate FusionCharts with state management libraries like Redux to manage the state of your **charts in reactjs** within a React application. Check out our documentation for examples and best practices.
+Yes, you can integrate FusionCharts with state management libraries like Redux to manage the state of your <strong>charts in reactjs</strong>strong> within a React application. Check out our documentation for examples and best practices.
 </details>
 
