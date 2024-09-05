@@ -269,10 +269,10 @@ Elevate your data with FusionCharts Suite XT's scroll chart – simplify complex
 ## FAQs
 
 ### Can the number of visible data plots in a scroll chart be configured?
-Yes, FusionCharts allows users to configure the number of visible data plots in a scroll chart using the numVisiblePlot attribute. This feature lets users control the amount of data displayed initially, improving the chart's readability.
+Yes, FusionCharts allows users to configure the number of visible data plots in a **scroll chart** using the numVisiblePlot attribute. This feature lets users control the amount of data displayed initially, improving the chart's readability.
 
 ### Can I integrate scroll charts with other features of FusionCharts, such as drill-downs and annotations?
-Yes, FusionCharts supports the integration of scroll charts with various advanced features, including drill-downs, annotations, and real-time updates. This enables users to create interactive and informative charts that provide deeper insights into their data.
+Yes, FusionCharts supports the integration of **scroll charts** with various advanced features, including drill-downs, annotations, and real-time updates. This enables users to create interactive and informative charts that provide deeper insights into their data.
 
 ### Are there any performance considerations when using scroll charts with large datasets?
 While scroll charts can effectively handle large datasets, users should be mindful of potential performance implications, especially when rendering charts with thousands or millions of data points. Optimizations such as data aggregation and lazy loading can help mitigate performance issues.
