@@ -1,6 +1,6 @@
 ---
-title: Scroll Chart | FusionCharts
-description: Charts with scrolls allows you to plot large quantities of data. They are also used to avoid cluttering of plots.
+title: Create Scroll Chart With FusionCharts Suite XT
+description: Elevate your data presentation with FusionCharts Suite XT's scroll chart. Simplify complexity and make smarter decisions. Easily integrate advanced features.
 heading: Scroll Chart
 ---
 
