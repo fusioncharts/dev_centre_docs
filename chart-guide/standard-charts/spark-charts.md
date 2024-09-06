@@ -1,5 +1,5 @@
 ---
-title: Spark Charts: Data Visualization for Executive Dashboards
+title: ¨Spark Charts: Data Visualization for Executive Dashboards¨
 description: FusionCharts presents Spark Charts: Embed data-intensive, design-simple graphics in text. Visualize trends succinctly for executive dashboards. Give it a try!
 heading: Spark Chart
 ---
