@@ -584,13 +584,13 @@ Click [here](https://www.fusioncharts.com/charts) to explore FusionCharts Suite 
 ## Frequently Asked Questions (FAQs)
 
 ### What's the difference between a pie chart and a doughnut chart?
-Both pie and doughnut charts represent data in a circular format, but a doughnut chart has a blank center, resembling a doughnut. The key distinction lies in their appearance and visual impact. Along with this, the working process of the pie and donut chart maker is also quite different. 
+Both pie and doughnut charts represent data in a circular format, but a doughnut chart has a blank center, resembling a doughnut. The key distinction lies in their appearance and visual impact. Along with this, the working process of the pie and **donut chart maker** is also quite different. 
 
 ### How can I customize the appearance of labels and values in my charts?
 FusionCharts offers various attributes like labelPosition, valuePosition, labelDistance, and minAngleForLabel, allowing you to customize the placement and appearance of labels and values within your pie and doughnut charts.
 
 ### Can I animate my pie and doughnut charts?
-Yes, you can customize the animation direction using the animate Clockwise attribute. Additionally, FusionCharts provides options to enable/disable slicing effects, configure slicing distance, and add 3D effects (use3DLighting) for enhanced visual appeal in your donuts chart. 
+Yes, you can customize the animation direction using the animate Clockwise attribute. Additionally, FusionCharts provides options to enable/disable slicing effects, configure slicing distance, and add 3D effects (use3DLighting) for enhanced visual appeal in your **donuts chart**. 
 
 ### Can I configure a bevel effect for a pie/doughnut chart?
 Absolutely! By setting the use3DLighting attribute to 1, FusionCharts Suite XT enables advanced gradients and shadow effects, creating a sleek bevel effect on your pie and doughnut charts. This adds depth and visual appeal, enhancing the overall presentation of your data.
