@@ -1,6 +1,6 @@
 ---
-title: Spark Charts | FusionCharts
-description: Spark charts are data-intensive, design-simple, word-sized graphics charts for embedding in a context of words, numbers and images.
+title:  Spark Charts: Data Visualization for Executive Dashboards
+description: FusionCharts presents Spark Charts: Embed data-intensive, design-simple graphics in text. Visualize trends succinctly for executive dashboards. Give it a try!
 heading: Spark Chart
 ---
 
