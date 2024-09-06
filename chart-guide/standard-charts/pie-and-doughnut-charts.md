@@ -575,3 +575,22 @@ A pie chart configured for the bevel effect looks like this:
 Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/) to edit the pie 2D chart.
 
 > For all the samples shown above, if you want to see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**
+
+## Build Stunning Pie/ Doughnut Chart Now With FusionCharts Suite XT
+Ready to create a stunning pie and doughnut chart for your data visualization needs? Highlight key insights, track trends, and make informed decisions with visually compelling charts that resonate with your audience.Start experimenting with FusionCharts Suite XT now to bring your data to life! 
+
+Click [here](https://www.fusioncharts.com/charts) to explore FusionCharts Suite XT.
+
+## Frequently Asked Questions (FAQs)
+
+### What's the difference between a pie chart and a doughnut chart?
+Both pie and doughnut charts represent data in a circular format, but a doughnut chart has a blank center, resembling a doughnut. The key distinction lies in their appearance and visual impact. Along with this, the working process of the pie and donut chart maker is also quite different. 
+
+### How can I customize the appearance of labels and values in my charts?
+FusionCharts offers various attributes like labelPosition, valuePosition, labelDistance, and minAngleForLabel, allowing you to customize the placement and appearance of labels and values within your pie and doughnut charts.
+
+### Can I animate my pie and doughnut charts?
+Yes, you can customize the animation direction using the animate Clockwise attribute. Additionally, FusionCharts provides options to enable/disable slicing effects, configure slicing distance, and add 3D effects (use3DLighting) for enhanced visual appeal in your donuts chart. 
+
+### Can I configure a bevel effect for a pie/doughnut chart?
+Absolutely! By setting the use3DLighting attribute to 1, FusionCharts Suite XT enables advanced gradients and shadow effects, creating a sleek bevel effect on your pie and doughnut charts. This adds depth and visual appeal, enhancing the overall presentation of your data.
