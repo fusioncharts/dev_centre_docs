@@ -1,9 +1,9 @@
 ---
-title: Learn to create Pie & Doughnut Charts for Web & Mobile
-description: Create pie and doughnut charts for web pages. Learn how to create visually stunning & informative data rep for your projects. Customize their look & feel.
+title: A Comprehensive Guide on Pie and Doughnut Chart
+description: Unleash the magic of pie & doughnut chart with FusionCharts Suite XT! Go beyond static data. Customize, animate, & bring your information to life. Start now.
 heading: Pie and Doughnut Charts
 ---
-
+# A Comprehensive Guide on Pie and Doughnut Chart 
 > These chart types belong to **FusionCharts XT**.
 
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
