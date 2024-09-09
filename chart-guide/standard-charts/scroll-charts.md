@@ -60,7 +60,7 @@ Now, let's create a scroll bar 2D chart. To render a scroll bar chart in 2D, cha
 
 For the detailed list of attributes, refer to the [chart attributes](/chart-attributes/scrollbar2d) page of the scroll bar 2D chart.
 
-A single-series **scroller vertica**l bar 2D chart looks like:
+A single-series **scroller vertical** bar 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-10.js %}
 
