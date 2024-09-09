@@ -1,12 +1,12 @@
 ---
-title: Learn to create Pie & Doughnut Charts for Web & Mobile
-description: Create pie and doughnut charts for web pages. Learn how to create visually stunning & informative data rep for your projects. Customize their look & feel.
+title: A Comprehensive Guide on Pie and Doughnut Chart
+description: Unleash the magic of pie & doughnut chart with FusionCharts Suite XT! Go beyond static data. Customize, animate, & bring your information to life. Start now.
 heading: Pie and Doughnut Charts
 ---
-
+## Introduction
 > These chart types belong to **FusionCharts XT**.
 
-A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
+A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and **doughnut chart** to plot data that needs to be shown as a percent of the whole.
 
 {% embed_chartAnatomy pie-chart.json %}
 
@@ -48,7 +48,7 @@ Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D char
 
 ## Doughnut 2D Chart
 
-As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut.
+As we know, a **donut chart maker** is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut.
 
 {% embed_chartAnatomy doughnut-chart.json %}
 
@@ -80,7 +80,7 @@ Now, let's customize the appearance and properties of pie and doughnut charts.
 
 ## Configure the Animation Direction
 
-By default, when a pie/doughnut chart is loaded for the first time or refreshed, the rendering animation is in the anti-clockwise direction.
+By default, when a **pie/donut chart maker** is loaded for the first time or refreshed, the rendering animation is in the anti-clockwise direction.
 However, FusionCharts includes the `animateClockwise` attribute that lets you animate the chart in the clockwise direction. Set the `animateClockwise` attribute to `1` to animate the chart in the clockwise direction.
 
 Refer to the code given below:
@@ -103,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/g4bdb3f2/) to edit the above chart
 
 By default, for a pie chart, the actual data values are shown on the chart and in the tooltips. However, you can choose to show percent values on the chart while retaining the actual values in tooltips.
 
-To show percent values and actual values in your chart, follow the steps given below:
+To show percent values and actual values in your chart, follow the steps given below in your **donut chart maker**:
 
 - Set the `showPercentValues` attribute to `1` to show percent values as data labels.
 
@@ -134,7 +134,7 @@ Click [here](https://codepen.io/fusioncharts/pen/qBoEqmj/59b750adb2d81d61befe2bb
 
 ## Place values inside the Pie/Doughnut chart
 
-Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a pie and doughnut chart respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
+Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a **pie** and **doughnut chart** respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
 
 You can place the value inside the slices by setting the value of the newly added attribute `valuePosition` to **inside**. The default value of `valuePosition` attribute is **outside**.
 
@@ -186,7 +186,7 @@ A pie2d with `valuePosition` attribute set to **inside** (at chart level) is sho
 
 Click [here](http://jsfiddle.net/fusioncharts/3dts9evm/) to edit the above chart.
 
-In a pie/doughnut charts, changing the position of the value can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForValue` has been introduced which sets the minimum angle of the pie below which the values will not be visible.
+In a pie/**doughnut chart**, changing the position of the value can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForValue` has been introduced which sets the minimum angle of the pie below which the values will not be visible.
 
 Refer to the code below:
 
@@ -209,7 +209,7 @@ Click [here](http://jsfiddle.net/fusioncharts/2m8fskpa/) to edit the above chart
 
 ## Place label inside the Pie/Doughnut Chart
 
-Now that you have already customized the position of the values of a pie/doughnut charts, let's see how to place the labels inside the pie/doughnut slices of a pie and doughnut chart respectively.
+Now that you have already customized the position of the values of a pie/doughnut charts, let's see how to place the labels inside the pie/doughnut slices of a pie and **doughnut chart** respectively.
 
 You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`\*\*. The default value of `labelPosition` attribute is `outside`.
 
@@ -284,7 +284,7 @@ Click [here](http://jsfiddle.net/fusioncharts/w834e0pb/) to edit the above chart
 
 ## Customize the Center Label for a Doughnut Chart
 
-For a doughnut chart, you can configure the default text that will be rendered on the center label. You can also configure the text that will be rendered on the center label when the mouse pointer is hovered over one of the doughnut slices.
+For a **doughnut chart**, you can configure the default text that will be rendered on the center label. You can also configure the text that will be rendered on the center label when the mouse pointer is hovered over one of the doughnut slices.
 
 To customize the center label of your chart, follow the steps given below:
 
@@ -307,7 +307,7 @@ A doughnut chart with the center label customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the 2D **doughnut chart**.
 
 ## Enable Single-Slice Slicing
 
@@ -413,7 +413,7 @@ Click [here](http://jsfiddle.net/fusioncharts/dmyqomdp/) to edit the pie 2D char
 
 ## Skip Overlap Labels
 
-When there are too many labels in the pie/doughnut chart (which is difficult to adjust even if you are using smart labels), the labels may overlap. In this case, you have the option to skip the overlapping labels. The labels of the least significant pies will be removed. To skip the overlapping of labels set the `skipOverlapLabels` attribute to `1`.
+When there are too many labels in the pie/**doughnut chart** (which is difficult to adjust even if you are using smart labels), the labels may overlap. In this case, you have the option to skip the overlapping labels. The labels of the least significant pies will be removed. To skip the overlapping of labels set the `skipOverlapLabels` attribute to `1`.
 
 Refer to the code given below:
 
@@ -467,7 +467,7 @@ Refer to the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/eh6rsmnt/) to edit the above chart.
 
-To customize the inner radius of the doughnut chart, set the value of `doughnutRadius` attribute in percent.
+To customize the inner radius of the **doughnut chart**, set the value of `doughnutRadius` attribute in percent.
 
 Refer to the image below:
 
@@ -492,7 +492,7 @@ Click [here](http://jsfiddle.net/fusioncharts/osezmt87/) to edit the above chart
 
 ## Set the Starting Angle
 
-By default, pie/doughnut charts start plotting from the 0° angle. The chart allows you to explicitly set the starting angle. Specify the `startingAngle` attribute set the starting angle for the pie/doughnut chart. The first pie slice will start plotting from the angle measure specified in this attribute.
+By default, pie/**doughnut chart** start plotting from the 0° angle. The chart allows you to explicitly set the starting angle. Specify the `startingAngle` attribute set the starting angle for the pie/doughnut chart. The first pie slice will start plotting from the angle measure specified in this attribute.
 
 Refer to the code given below:
 
@@ -575,3 +575,22 @@ A pie chart configured for the bevel effect looks like this:
 Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/) to edit the pie 2D chart.
 
 > For all the samples shown above, if you want to see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**
+
+## Build Stunning Pie/ Doughnut Chart Now With FusionCharts Suite XT
+Ready to create a stunning pie and doughnut chart for your data visualization needs? Highlight key insights, track trends, and make informed decisions with visually compelling charts that resonate with your audience.Start experimenting with FusionCharts Suite XT now to bring your data to life! 
+
+Click [here](https://www.fusioncharts.com/charts) to explore FusionCharts Suite XT.
+
+## Frequently Asked Questions (FAQs)
+
+### What's the difference between a pie chart and a doughnut chart?
+Both pie and doughnut charts represent data in a circular format, but a doughnut chart has a blank center, resembling a doughnut. The key distinction lies in their appearance and visual impact. Along with this, the working process of the pie and **donut chart maker** is also quite different. 
+
+### How can I customize the appearance of labels and values in my charts?
+FusionCharts offers various attributes like labelPosition, valuePosition, labelDistance, and minAngleForLabel, allowing you to customize the placement and appearance of labels and values within your pie and doughnut charts.
+
+### Can I animate my pie and doughnut charts?
+Yes, you can customize the animation direction using the animate Clockwise attribute. Additionally, FusionCharts provides options to enable/disable slicing effects, configure slicing distance, and add 3D effects (use3DLighting) for enhanced visual appeal in your **donuts chart**. 
+
+### Can I configure a bevel effect for a pie/doughnut chart?
+Absolutely! By setting the use3DLighting attribute to 1, FusionCharts Suite XT enables advanced gradients and shadow effects, creating a sleek bevel effect on your pie and doughnut charts. This adds depth and visual appeal, enhancing the overall presentation of your data.
