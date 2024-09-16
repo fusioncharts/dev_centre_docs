@@ -294,13 +294,13 @@ FusionCharts empowers you to create highly customized LED gauges with precise co
 ## FAQs
 
 ### What are tick marks in FusionCharts gauges?
-Tick marks are calibration lines on the gauge scale that help interpret readings. There are two types: major tick marks (bigger lines) and minor tick marks (smaller lines interspersed within the major ones).
+**Tick marks** are calibration lines on the gauge scale that help interpret readings. There are two types: major tick marks (bigger lines) and minor tick marks (smaller lines interspersed within the major ones).
 
 ### Can I place tick marks and values inside the gauge?
-Yes, you can place tick marks inside the gauge by setting the placeTicksInside attribute to 1 and tick values inside by setting the placeValuesInside attribute to 1.
+Yes, you can place tick marks inside the gauge by setting the `placeTicksInside` attribute to 1 and tick values inside by setting the `placeValuesInside` attribute to 1.
 
 ### How do I position tick marks and values for horizontal and vertical gauges?
-For horizontal gauges, set ticksBelowGauge to 0 to place tick marks above the gauge. For vertical gauges, set ticksOnRight to 0 to place tick marks to the left of the gauge.
+For horizontal gauges, set `ticksBelowGauge` to 0 to place **tick marks** above the gauge. For vertical gauges, set `ticksOnRight` to 0 to place tick marks to the left of the gauge.
 
 ### How do I set the number of decimal places for tick values?
-Use the tickValueDecimals attribute to specify the number of decimal places and the forceTickValueDecimals attribute set to 1 to enforce this.
+Use the `tickValueDecimals` attribute to specify the number of decimal places and the `forceTickValueDecimals` attribute set to 1 to enforce this.
