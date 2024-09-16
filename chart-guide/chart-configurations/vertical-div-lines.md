@@ -164,12 +164,14 @@ When you need to draw a vertical line in a div, CSS comes to the rescue. By sett
 ### How do I vertically divide a div?
 To vertically divide a div, you can use the CSS border property or create multiple divs inside a parent div with specified widths and borders. This technique is useful for displaying a **vertical line graph** within a container. Here's an example:
 
+```css
 .divider {
 border-left: 1px solid black;
 height: 100%;
 }
+```
 
 ### What is the tag for the vertical line?</H3>
 There isn't a specific HTML tag exclusively for vertical lines. However, you can create a vertical line using a styled div or the hr tag with CSS transformations. This approach allows you to create **vertical grid lines** or markers in your designs.
 
-<hr style="width: 1px; height: 200px; transform: rotate(90deg);">
+`<hr style="width: 1px; height: 200px; transform: rotate(90deg);">`
