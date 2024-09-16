@@ -1,5 +1,5 @@
 ---
-title: How to Customize Tick Marks in Fusion Charts: Complete Guide
+title: "How to Customize Tick Marks in Fusion Charts: Complete Guide"
 description: "Customize tick marks in FusionCharts. Show/hide marks & values, set decimals & configure visuals for enhanced data presentation. Start customizing today!"
 heading: Tick Marks
 ---
