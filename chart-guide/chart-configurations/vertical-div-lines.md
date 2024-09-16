@@ -147,9 +147,9 @@ Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/) to edit the above chart
 
 Vertical divisional lines, or div lines, are a powerful tool for improving the clarity and visual appeal of your charts. They provide visual separators between data points on the x-axis, making it easier for viewers to interpret trends and compare values. This blog has equipped you with the knowledge to:
 
-- Enable and customize the appearance of vertical divisional lines.
-- Create dashed lines for a more distinct separation.
-- Implement vertical grid bands for additional visual emphasis.
+* Enable and customize the appearance of vertical divisional lines.
+* Create dashed lines for a more distinct separation.
+* Implement vertical grid bands for additional visual emphasis.
  
 By incorporating these techniques, you can create charts that are not only informative but also aesthetically pleasing, promoting a better understanding of your data.
 
