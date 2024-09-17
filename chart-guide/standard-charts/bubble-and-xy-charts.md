@@ -1,12 +1,14 @@
 ---
-title: Bubble and Scatter Charts | FusionCharts
-description: Bubble and Scatter are used for plotting data that is defined in terms of two numeric parameters.
+title: "Create Scatter & Bubble Line Chart : A Complete Guide"
+description: Learn how to create and customize scatter & bubble line chart. Know all about visualizing data, displaying labels & more. Find more info here.
 heading: Bubble and Scatter Charts
 ---
 
 > These chart types belong to **FusionCharts XT**.
 
-Bubble and Scatter charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
+## Introduction
+
+Bubble and Scatter charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values. Here, we have highlighted few points that will help you understand their use and relevance for data visualization.
 
 ## Scatter Chart
 
@@ -30,7 +32,7 @@ To create a scatter chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=scatter) page of scatter chart.
 
-A scatter chart looks like:
+**This chart shows a scatterplot with the x-axis** indicating the average temperature. Here is what a scatter chart looks like:
 
 {% embed_all standard-charts-bubble-and-xy-charts-example-1.js %}
 
@@ -38,7 +40,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6deM9/) to edit the scatter chart.
 
 ## Bubble Charts
 
-Bubble charts are used for plotting data that is defined in terms of three numeric parameters. The third numeric parameter is indicated by the diameter of the bubble. The JSON/XML format of a bubble chart is slightly different from that of a scatter chart, and this is because the bubble chart plots an additional numeric parameter.
+A **bubble line chart** is used for plotting data that is defined in terms of three numeric parameters. The third numeric parameter is indicated by the diameter of the bubble. The JSON/XML format of a bubble chart is slightly different from that of a scatter chart, and this is because the bubble chart plots an additional numeric parameter.
 
 {% embed_chartAnatomy bubble-chart.json %}
 
@@ -64,7 +66,7 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Display Value Labels on Bubbles
 
-By default, data labels are not rendered on the bubbles in a bubble chart. To show individual labels for the bubbles in the chart, set the `showValues` attribute to `1`.
+By default, data labels are not rendered on the bubbles in a **bubble line chart**. To show individual labels for the bubbles in the chart, set the `showValues` attribute to `1`.
 
 Refer to the code given below:
 
@@ -84,7 +86,7 @@ Click [here](http://jsfiddle.net/fusioncharts/apo6yp8r/) to edit the above chart
 
 ## Segment the x-axis into Categorical Zones
 
-The x-axis of the bubble/scatter chart can be segmented into categorical zones using vertical trend lines. To set the categorical zones follow the steps given below:
+The x-axis of the scatter/**bubble line chart** can be segmented into categorical zones using vertical trend lines. To set the categorical zones follow the steps given below:
 
 - Set the `isTrendZone` attribute to display the trendzone instead of the line.
 
@@ -153,7 +155,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jcjjmhon/) to edit the above chart
 
 ## Configure X-axis Labels
 
-You can configure the display mode of the x-axis labels for bubble and scatter charts. You can either choose to make the chart automatically generate the x-axis labels along with vertical divisional lines or you can explicitly define each x-axis label. Additionally, you can also opt to mix these two modes.
+You can configure the display mode of the x-axis labels for scatter and **bubble line chart**. You can either choose to make the chart automatically generate the x-axis labels along with vertical divisional lines or you can explicitly define each x-axis label. Additionally, you can also opt to mix these two modes.
 
 To configure the x-axis labels set the `xAxisLabelMode` attribute to specify the mode to render the x-axis labels. This attribute takes three values:
 
@@ -301,7 +303,7 @@ Click [here](http://jsfiddle.net/fusioncharts/t7Ladarf/) to edit the above chart
 
 ## Draw Regression Lines
 
-In scatter and bubble charts, each data point has two distinct numeric values: the **x** value for the x-axis and the **y** value for the y-axis.
+In scatter and **bubble line chart**, each data point has two distinct numeric values: the **x** value for the x-axis and the **y** value for the y-axis.
 
 A regression line, rendered as a straight line, is used to show the trend of **y** values for the **x** values or the trend of **x** values for the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
 
@@ -377,7 +379,7 @@ Click [here](http://jsfiddle.net/fusioncharts/yo0dc81r/) to edit the above chart
 
 ## Draw Quadrants
 
-Dividing the canvas of a bubble/scatter chart into quadrants makes the analysis of the chart easier. Set the value of `drawQuadrant` attribute to `1` to draw quadrants for the chart. The default value of this attribute is `0`.
+Dividing the canvas of scatter/**bubble line chart** into quadrants makes the analysis of the chart easier. Set the value of `drawQuadrant` attribute to `1` to draw quadrants for the chart. The default value of this attribute is `0`.
 
 Refer to the code given below:
 
@@ -395,7 +397,7 @@ A bubble chart rendered with quadrants looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/9Lk3u31L/) to edit the above chart.
 
-A bubble chart rendered with quadrants can also be drawn at user-defined positions. To specify the position of the vertical and horizontal quadrant lines, set the value to `quadrantXVal` and `quadrantYVal` attribute respectively. The value of these attribute should be within the range of its corresponding relative axis (and not pixels).
+A **bubble line chart** rendered with quadrants can also be drawn at user-defined positions. To specify the position of the vertical and horizontal quadrant lines, set the value to `quadrantXVal` and `quadrantYVal` attribute respectively. The value of these attribute should be within the range of its corresponding relative axis (and not pixels).
 
 Refer to the code given below:
 
@@ -445,7 +447,7 @@ Refer to the code given below:
 }
 ```
 
-A bubble chart with quadrant labels displayed looks like this:
+A **bubble line chart** with quadrant labels displayed looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-14.js %}
 
@@ -478,7 +480,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6o6jh6jm/) to edit the above chart
 
 ## Customize Quadrant Lines
 
-Customize the quadrant lines in the bubble chart using the list of attributes given below:
+Customize the quadrant lines in the **bubble line chart** using the list of attributes given below:
 
 - Set the `quadrantLineThickness` attribute to specify the thickness of the quadrant lines.
 
@@ -515,3 +517,13 @@ A bubble chart rendered with customized quadrant lines looks like this:
 {% embed_chart standard-charts-bubble-and-xy-charts-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mgf2z57n/) to edit the above chart.
+
+## Conclusion
+
+Scatter and **bubble line chart** are powerful tools for visualizing data with multiple numeric parameters. Scatter charts plot two numeric parameters and can include features like data point connections, regression lines, and categorical zones. Bubble charts add a third numeric parameter through bubble sizes and can be customized with data labels, quadrants, and customized quadrant labels and lines. 
+
+Both chart types offer extensive customization, including x-axis labels, vertical divisional, and regression lines. Follow our guide and use our interactive editor to create and customize impactful scatter and bubble charts, unlocking the full potential of your data visualizations.
+
+## Go Beyond Basic Charts! Craft Powerful Scatter and Bubble Line Chart Visualizations
+
+Go beyond basic charts! Craft powerful scatter and **bubble line chart** visualizations with our in-depth guide and interactive editor. Transform your data into powerful insights and make impactful presentations.
