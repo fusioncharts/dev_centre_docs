@@ -1,6 +1,6 @@
 ---
-title: Configure Tick Marks in a Gauge| FusionCharts
-description: "FusionCharts XT gauge: control display, position, and visuals. Customize ticks, show/hide values, set padding, and enhance with color and transparency."
+title: "How to Customize Tick Marks in Fusion Charts: Complete Guide"
+description: Customize tick marks in FusionCharts. Show/hide marks & values, set decimals & configure visuals for enhanced data presentation. Start customizing today!
 heading: Tick Marks
 ---
 
@@ -16,7 +16,7 @@ An LED gauge with major and minor tick marks looks like this:
 
 ## Show/Hide Tick Marks
 
-By default, the tick marks are displayed. To hide the tick marks set the `showTickMarks` attribute to `1`. Refer to the code below:
+By default, the **tick marks** are displayed. To hide the tick marks set the `showTickMarks` attribute to `1`. Refer to the code below:
 
 ```json
 {
@@ -72,7 +72,7 @@ Click [here](http://jsfiddle.net/fusioncharts/4aLmm0vs/) to edit the above chart
 
 By default, tick marks and tick values are placed outside a gauge. In vertical gauges (like the vertical LED gauge), they are placed to the right of the gauge by default. Similarly, in horizontal gauges (like the horizontal LED gauge), they are placed below the gauge.
 
-To customize the position of tick marks and tick values use the following attributes:
+To customize the position of **tick marks** and tick values use the following attributes:
 
 * Set the `placeTicksInside` to `1` to view the tick marks inside the gauge.
 
@@ -97,7 +97,7 @@ Click [here](http://jsfiddle.net/fusioncharts/76s1f9m3/) to edit the above chart
 
 ### Tick Value Position of Horizontal Gauges
 
-To customize the position of tick marks and tick values of a horizontal use the following attributes:
+To customize the position of **tick marks** and tick values of a horizontal use the following attributes:
 
 * Set the `ticksBelowGauge` to `0` to view the tick marks above the gauge.
 
@@ -196,7 +196,7 @@ To do so, use the following attributes:
 
 * Set the distance (in pixels) between the gauge and the tick marks using the `tickMarkDistance` attribute.
 
-* Set the distance (in pixels) between the tick values and tick marks using the `tickValueDistance` attribute.
+* Set the distance (in pixels) between the tick values and **marks fusion** using the `tickValueDistance` attribute.
 
 Refer to the code below:
 
@@ -217,7 +217,7 @@ Click [here](http://jsfiddle.net/fusioncharts/b7vLwyoh/) to edit the above chart
 
 ## Set the Number of Major and Minor Tick Marks
 
-By default, the number of major and minor ticks are automatically adjusted. You can opt to define the number of major and minor tick marks to be rendered on a gauge. To do so, the following attributes are used:
+By default, the number of major and minor ticks are automatically adjusted. You can opt to define the number of major and minor **chart tick** to be rendered on a gauge. To do so, the following attributes are used:
 
 * Set the `adjustTM` attribute to '0' to disable the automatic adjustment of the tick marks.
 
@@ -245,7 +245,7 @@ Click [here](http://jsfiddle.net/fusioncharts/eke99cLx/) to edit the above chart
 
 ## Configure Visuals of Tick Marks
 
-You can configure the color, transparency, height, and thickness of both, major and minor tick marks. 
+You can configure the color, transparency, height, and thickness of both, major and minor **marks fusion**. 
 
 To do so, use the following attributes:
 
@@ -286,3 +286,21 @@ A horizontal LED gauge will look like as shown below:
 {% embed_chart chart-configurations-tick-marks-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/1w5un5zq/) to edit the above chart.
+
+## Conclusion
+
+FusionCharts empowers you to create highly customized LED gauges with precise control over tick marks. You can choose to show or hide them, position them strategically, display specific values, set decimal precision, adjust spacing, define the number of major and minor **chart tick**, and even customize their color, transparency, size, and thickness – all in one go. This granular control ensures your gauges are not only functional but also visually aligned with your design and data presentation requirements.
+
+## FAQs
+
+### What are tick marks in FusionCharts gauges?
+**Tick marks** are calibration lines on the gauge scale that help interpret readings. There are two types: major tick marks (bigger lines) and minor tick marks (smaller lines interspersed within the major ones).
+
+### Can I place tick marks and values inside the gauge?
+Yes, you can place tick marks inside the gauge by setting the `placeTicksInside` attribute to 1 and tick values inside by setting the `placeValuesInside` attribute to 1.
+
+### How do I position tick marks and values for horizontal and vertical gauges?
+For horizontal gauges, set `ticksBelowGauge` to 0 to place **tick marks** above the gauge. For vertical gauges, set `ticksOnRight` to 0 to place tick marks to the left of the gauge.
+
+### How do I set the number of decimal places for tick values?
+Use the `tickValueDecimals` attribute to specify the number of decimal places and the `forceTickValueDecimals` attribute set to 1 to enforce this.
