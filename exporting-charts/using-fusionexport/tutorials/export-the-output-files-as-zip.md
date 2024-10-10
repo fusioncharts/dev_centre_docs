@@ -394,13 +394,13 @@ Whether you're exporting multiple charts simultaneously or emailing them as atta
 ## FAQs
 
 ### How do I export multiple charts as a zip file using FusionExport?
-To export multiple charts as a zip file using FusionExport, you need to do is define configs in JSON (one file per chart), set exportAsZip=true in the SDK client, and run export. All charts will zip into "fusioncharts_export.zip".
+To export multiple charts as a zip file using FusionExport, you need to define configs in JSON (one file per chart), set exportAsZip=true in the SDK client, and run export. All charts will zip into "fusioncharts_export.zip".
 
 ### Is it mandatory to create a chart configuration file for exporting charts?
-No, it is not mandatory to create a separate chart configuration file for graph export. You can directly create an object containing a serialized JSON string representation of the chart configuration and pass it to the ExportConfig.set() method in the FusionExport SDK.
+No, it is not mandatory to create a separate chart configuration file for **graph export**. You can directly create an object containing a serialized JSON string representation of the chart configuration and pass it to the ExportConfig.set() method in the FusionExport SDK.
 
 ### What are the benefits of exporting charts as a zip file?
 Zipping your FusionExport charts brings a triple threat of benefits. Sharing becomes easy, as all charts are bundled in a single file. It helps save precious time by exporting everything simultaneously, ditching the individual exports. Also, keeping your files organized with zipped charts means a clean and clutter-free storage system.
 
 ### What types of programming languages are compatible with graph export?
-The graph export functionality is compatible with a wide range of programming languages, including JavaScript, Node.js, Python, Java, C#, and PHP. This flexibility allows you to integrate the export process into your existing projects regardless of the language you're using, making it a versatile solution for exporting charts.
+The **graph export** functionality is compatible with a wide range of programming languages, including JavaScript, Node.js, Python, Java, C#, and PHP. This flexibility allows you to integrate the export process into your existing projects regardless of the language you're using, making it a versatile solution for exporting charts.
