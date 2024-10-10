@@ -1,6 +1,6 @@
 ---
-title: Heat Map Chart | FusionCharts
-description: A heat map chart is a specialized chart that uses colors to represent data values in a table. It is mostly used to plot large and complex data.
+title: Transform Data Visualization with Heatmap Chart by Fusion Charts
+description: Unleash the power of color with heatmap chart by Fusion Charts!  Turn complex data into clear & compelling insights. Stop waiting; transform your data today!
 heading: Heat Map Chart
 ---
 
@@ -10,7 +10,7 @@ A heat map chart is a specialized chart that uses colors to represent data value
 
 ## Basics of a heat map chart
 
-You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart is rendered, you will be able to easily distinguish the four grades.
+You can use the **heatmap chart** to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart is rendered, you will be able to easily distinguish the four grades.
 
 {% embed_chartAnatomy heat-map-chart.json %}
 
@@ -32,7 +32,7 @@ Using a heat map chart, you can:
 
 ## Types of heat map charts
 
-Using FusionCharts Suite XT, you can build two types of heat map charts. Use the numeric heat map chart to plot numeric data, and the category based heat map chart to plot non-numeric data. These charts look as shown below:
+Using FusionCharts Suite XT, you can build two types of heat map charts. Use the numeric heat map chart to plot numeric data, and the category-based **heatmap legend** chart to plot non-numeric data. These charts look as shown below:
 
 ### Numeric heat map chart
 
@@ -60,7 +60,7 @@ As stated earlier, you can use two different types of legends with heat map char
 
 ## Create numeric heat map charts
 
-Use the following attributes to create a simple numeric heat map chart:
+Use the following attributes to create a simple numeric heat map chart using a **heat map maker**:
 
 - Specify the unique ID of the row in which the data has to be entered using the `rowID` attribute.
 
@@ -103,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/9mngxv1s/) to edit the above chart
 
 In the chart given above, you can see that the chart automatically decides the order of rows and columns according to the sequence in which you define them for the data object. So, the chart displays `Samsung Galaxy S5` in the first row, `HTC One (M8)` in the second, and so on.
 
-However, there is one more method to plot numeric based heat map charts, where you can predefine the order of rows and columns. Once you do that, you can provide data in any order through the data object. The chart will display them in the order you define beforehand.
+However, there is one more method to plot numeric based on a **heatmap chart**, where you can predefine the order of rows and columns. Once you do that, you can provide data in any order through the data object. The chart will display them in the order you define beforehand.
 
 Use the following attributes to predefine the order of rows and columns:
 
@@ -230,7 +230,7 @@ You can do category based mapping by defining several color categories or ranges
 
 Use the following attributes to create a category based heat map chart:
 
-- Set the value of the `mapByCateory` attribute to `1`, to create a category based heat map chart.
+- Set the value of the `mapByCateory` attribute to `1`, to create a category based **heatmap chart**.
 
 - Specify the unique ID of the row (or column) in which the data has to be entered using the `id` attribute with the `row` (or `column`) object.
 
@@ -315,7 +315,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/m0bkumqw/) to edit the above chart.
 
-In the category based heat map chart given above, you can see the average temperature, across various seasons, for the top four cities in the U.S. Note that you can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. You cannot use gradient colors in a category based heat map chart.
+In the category based **heatmap chart** given above, you can see the average temperature, across various seasons, for the top four cities in the U.S. Note that you can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. You cannot use gradient colors in a category based heat map chart.
 
 ## Legend options
 
@@ -325,7 +325,7 @@ You can create two types of legends in heat map charts built with FusionCharts S
 
 Using an icon legend, you can display single color icons for numeric ranges. By default, a heat map chart is rendered with an icon legend.
 
-Use the following attributes to specify the color for each icon in the legend:
+Use the following attributes to specify the color for each icon in the **heatmap legend**:
 
 - Specify the hex code of the color that will represent a particular color range in legends, using the `code` attribute. Note that you can use this attribute with `colorRange` or `color` object. In `colorRange`, when you set `gradient` attribute to `1` (gradient legend), you need to use the `code` attribute under `colorRange` to specify the color of the `minValue` and `color` objects simultaneously. On the other hand, when you set the value of `gradient` attribute to `0` (icon legend), you need to use the `color` object to render the chart.
 
@@ -375,7 +375,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ou00rdwd/) to edit the above chart
 
 ### Use interactivity of icon legends
 
-Icon legends are interactive. You can click a legend item to show or hide all the cells mapped with the color range represented by the legend item. A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
+Icon legends are interactive. You can click a **heatmap legend** item to show or hide all the cells mapped with the color range represented by the legend item. A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
 
 ![icon-legend](/images/standard-charts-heat-map-chart-image-1.jpg)
 
@@ -440,7 +440,7 @@ Click [here](http://jsfiddle.net/fusioncharts/9jfkcnmc/) to edit the above chart
 
 ### Configure a single-color gradient legend
 
-By default, a gradient legend is rendered using several different colors. However, you can also render a gradient legend using shades of the same color. To do this, set the hex code of the single color using the `code` attribute under the `colorRange` object.
+By default, a gradient **heatmap legend** is rendered using several different colors. However, you can also render a gradient legend using shades of the same color. To do this, set the hex code of the single color using the `code` attribute under the `colorRange` object.
 
 Refer to the code below:
 
@@ -496,7 +496,7 @@ Using FusionCharts XT, you can configure the functional properties of labels and
 
 ### Configure labels
 
-In a heat map chart, you can show multiple labels in different positions for the same data plot. For example, you can display labels at the center and the four corners of a dataplot. Use the following attributes to configure labels:
+In a **heatmap chart**, you can show multiple labels in different positions for the same data plot. For example, you can display labels at the center and the four corners of a dataplot. Use the following attributes to configure labels:
 
 - Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply if you use this attribute.
 
@@ -555,7 +555,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jjpkt7zt/) to edit the above chart
 
 ### Configure individual labels font configuration
 
-In a heat map chart, you can show multiple labels in different positions, starting version 3.17.0 you can personalize labels with specific colors in order to make labels clearly visible. Use the following attributes to configure labels:
+In a **heatmap chart**, you can show multiple labels in different positions, starting version 3.17.0 you can personalize labels with specific colors in order to make labels clearly visible. Use the following attributes to configure labels:
 
 - Sets the font name for the top-left label of a data plot, using the `tlLabelFont` attribute.
 - Sets the font color for the top-left label of a data plot, using the `tlLabelFontColor` attribute.
@@ -686,7 +686,7 @@ To avoid such blank data plots, you can enable percentage mapping for heat map c
 
 ## Map data by percentage
 
-Using percentage mapping, you can display data values in percentage. Set the value of the `mapByPercent` attribute to `1`, to enable percentage mapping for heat map charts.
+Using percentage mapping, you can display data values in percentages. Set the value of the `mapByPercent` attribute to `1`, to enable percentage mapping for a **heatmap chart**.
 
 Refer to the code below:
 
@@ -729,3 +729,13 @@ Click [here](http://jsfiddle.net/fusioncharts/a0bz875q/) to edit the above chart
 > When you use percentage mapping, the lowest data value from the JSON data is considered to be the lower limit and displayed as 0%. The highest data value, on the other hand, is considered as the upper limit and is displayed as 100%. Also, you need to create color ranges with 0 as the lower limit and 100 as the upper limit. You can enable percentage mapping even if all your data values fall within the defined range.
 
 In a category based heat map chart, if you provide a category name by the attribute `colorRangeLabel` through the `data` element, which is not defined in the `colorRange` element, the chart will show blank data plot.
+
+## Conclusion
+
+Heat map charts in FusionCharts Suite XT offer an effective way to visualize intricate data sets with ease. They allow you to represent data values using colors, making it simple to identify patterns and trends. 
+
+Whether plotting employee attendance, stock market investments, or comparing company performances, a **heatmap chart** provides a versatile and visually appealing solution. With features like numeric and category-based mapping, customizable legends, and interactive tooltips, you can tailor your charts to meet your specific data visualization needs.
+
+## Explore FusionCharts Heat Maps for Enhanced Analytics
+
+Ready to enhance your data visualization with a **heatmap chart**? Explore the extensive customization options and create stunning, interactive charts with Fusion Charts. Click here to get started and transform your data into actionable insights today!
