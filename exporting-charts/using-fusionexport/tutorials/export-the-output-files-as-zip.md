@@ -1,10 +1,10 @@
 ---
-title: Export the output files as a zip | FusionCharts
-description: This article talks about the SDKs used for exporting output files as a zip.
+title: Export Charts as Zip Files with FusionExport
+description: Effortlessly graph export multiple charts as a zip file using FusionExport. Save time by bundling charts together for easy sharing. Try it now!
 heading: Export the output files as a zip
 ---
 
-When exporting multiple charts simultaneously, or emailing multiple charts as attachments, it is helpful to have a `.zip` file that bundles all the charts together. FusionExport natively allows you to export charts as a `.zip` file, thus saving your time and effort. In this article, we show how to use FusionExport for exporting charts as a zip file - it's as easy as setting a flag called `unzip` to `false` in the code.
+When exporting multiple charts simultaneously, or emailing multiple charts as attachments, it is helpful to have a `.zip` file that bundles all the charts together. FusionExport natively allows you to **graph export** and charts as a `.zip` file, thus saving your time and effort. In this article, we show how to use FusionExport for exporting charts as a zip file - it's as easy as setting a flag called `unzip` to `false` in the code.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before starting with the code, ensure that you have:
 
 ## Chart Configuration
 
-The chart configuration file is a simple `.json` file, and can contain multiple chart configurations. Since in this tutorial we will show how to export multiple charts as a zip file, we will put configuration of 3 charts in a single file. 
+The chart configuration file is a simple `.json` file, and can contain multiple chart configurations. Since in this tutorial we will show how to export multiple charts or a single **graph export** as a zip file, we will put configuration of 3 charts in a single file. 
 
 > Even a single chart can be exported as a zip file.
 
@@ -26,7 +26,7 @@ For exporting multiple charts simultaneously in bulk:
 
 * Each object contains configurations for individual charts
 
-Given below is a schematic representation of a JSON file containing configurations of three charts.
+Given below is a schematic representation of a JSON file containing configurations of three charts for a **graph export**.
 
 ```
 [{
@@ -172,7 +172,7 @@ The accepted format of configuration is the same as that of charts you can gener
 }]
 ```
 
-Based on the above configuration, three charts will be exported and then zipped, generating an output file with the default name `fusioncharts_export.zip` in the same directory from here the export code is executed. You may unzip the file and inspect the exported charts - they will look like the images below.
+Based on the above configuration, three charts will be exported and then zipped, generating an output file with the default name `fusioncharts_export.zip` in the same directory from here the **graph export** code is executed. You may unzip the file and inspect the exported charts - they will look like the images below.
 
 ![Export-The-Output-File](/images/export-charts-in-bulk-image-1.png)
 
@@ -180,7 +180,7 @@ Based on the above configuration, three charts will be exported and then zipped,
 
 ## Code
 
-Before you start with the code, we suggest going through the steps that the code accomplishes. 
+Before you start with the code, we suggest going through the steps that the **graph export** code accomplishes. 
 
 1. Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 
@@ -188,7 +188,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`.
 
-4. Use the instance of `ExportManager()` to perform pass success messages using the `on()` method, and save the exported chart in an appropriate file format using the `saveExportedFiles()` method. The three charts will be exported, compressed, and then zipped, generating an output file with the default name `fusioncharts_export.zip` in the same directory from here the export code is executed.
+4. Use the instance of `ExportManager()` to perform **graph export** pass success messages using the `on()` method, and save the exported chart in an appropriate file format using the `saveExportedFiles()` method. The three charts will be exported, compressed, and then zipped, generating an output file with the default name `fusioncharts_export.zip` in the same directory from here the export code is executed.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 
@@ -380,3 +380,27 @@ em.export(export_config, outputDir = ".", unzip = False)
 * [Export a Dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
 * [Export a D3 Chart](/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)
+
+## Ready to Zip Up Your Charts?
+
+Effortlessly export and share multiple Charts at once with our FusionExport solution. Simply follow these steps and get a downloadable zip file containing all your charts in one convenient location. Try now!
+
+## Conclusion
+
+Effortlessly **graph export** and share multiple charts at once with our FusionExport solution. By following the steps outlined above, you can generate a downloadable zip file containing all your charts in one convenient location. This feature saves you time and effort, ensuring your charts are neatly bundled together for easy sharing and distribution.
+
+Whether you're exporting multiple charts simultaneously or emailing them as attachments, FusionExport's zip file functionality streamlines the process. Try it now and experience the convenience of graph export with FusionExport.
+
+## FAQs
+
+### How do I export multiple charts as a zip file using FusionExport?
+To export multiple charts as a zip file using FusionExport, you need to define configs in JSON (one file per chart), set exportAsZip=true in the SDK client, and run export. All charts will zip into "fusioncharts_export.zip".
+
+### Is it mandatory to create a chart configuration file for exporting charts?
+No, it is not mandatory to create a separate chart configuration file for **graph export**. You can directly create an object containing a serialized JSON string representation of the chart configuration and pass it to the ExportConfig.set() method in the FusionExport SDK.
+
+### What are the benefits of exporting charts as a zip file?
+Zipping your FusionExport charts brings a triple threat of benefits. Sharing becomes easy, as all charts are bundled in a single file. It helps save precious time by exporting everything simultaneously, ditching the individual exports. Also, keeping your files organized with zipped charts means a clean and clutter-free storage system.
+
+### What types of programming languages are compatible with graph export?
+The **graph export** functionality is compatible with a wide range of programming languages, including JavaScript, Node.js, Python, Java, C#, and PHP. This flexibility allows you to integrate the export process into your existing projects regardless of the language you're using, making it a versatile solution for exporting charts.
