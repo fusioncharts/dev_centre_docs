@@ -24,14 +24,14 @@ FusionCharts release 4.1.0 implemented advanced new dynamic keys to control the 
 
 The newly added attributes allow you to enable or disable shading gradient colors, giving control over the look and feel of the `Legend Scrollbars`.
 
-### Enhanced Support for Third-Party Integrations
+## Enhanced Support for Third-Party Integrations
 
 FusionCharts 4.1.0 enhanced support for third-party tools and libraries to ensure smoother, more secure performance:
 
 - Updated `Ember` to the latest version for better performance.
 - Refined component variables and functions in `Glimmer` components.
 - Resolved `dependabot` security updates to keep the app safe.
-- 
+  
 These updates aim to provide a more seamless experience when integrating with third-party systems, while also maintaining high performance and security standards.
 
 
