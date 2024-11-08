@@ -90,6 +90,6 @@ FusionCharts v4.1 introduces a range of new features and enhancements designed t
     
 <h4>Feedback and Support</h4>
 
-If you encounter any unexpected behavior or have questions about these changes, please reach out to our support team or visit the FusionCharts support page.
+If you encounter any unexpected behavior or have questions about these changes, please reach out to our support team or visit the FusionCharts [support page](https://www.fusioncharts.com/contact-support).
 
 For additional details, kindly refer to our [Changelog](https://www.fusioncharts.com/dev/upgrading/change-log/), [What’s New page](https://www.fusioncharts.com/dev/upgrading/whats-new), and our [release blog post](https://www.fusioncharts.com//blog/fusioncharts-4-0-elevate-your-data-visualization-new-capabilities).
