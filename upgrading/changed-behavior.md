@@ -4,7 +4,7 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-<h4>Overview</h4>
+<h2>Overview</h2>
 
 FusionCharts v4.1 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
 
