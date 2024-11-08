@@ -30,9 +30,9 @@ FusionCharts v4.1 introduces a range of new features and enhancements designed t
     
 <h4>Improved Compatibility with React Native</h4>
 
-- **Summary:** Enhanced support for React Native and updates to Ember dependencies make it easier to integrate FusionCharts into mobile applications built with React Native.
-- **Impact:** Users previously encountering compatibility issues with React Native should experience smoother chart integrations. This may affect workflows that require custom adjustments or workarounds.
-- **What to Check:** Verify that existing React Native integrations continue to function as expected with the updated library and Ember version.
+- **Summary:** Enhanced support for `React Native` and updates to `Embe`r dependencies make it easier to integrate FusionCharts into mobile applications built with `React Native`.
+- **Impact:** Users previously encountering compatibility issues with `React Native` should experience smoother chart integrations. This may affect workflows that require custom adjustments or workarounds.
+- **What to Check:** Verify that existing`React Native` integrations continue to function as expected with the updated library and Ember version.
 
 - **Example:**
   - **Before:** Limited compatibility, requiring workarounds for certain chart functionalities.
@@ -40,9 +40,9 @@ FusionCharts v4.1 introduces a range of new features and enhancements designed t
     
 <h4>New Scrollbar Feature for Waterfall Charts</h4>
 
-- **Summary:** FusionCharts v4.1 introduces a scrollbar feature specifically for Waterfall charts.
-- **Impact:** Users working with extensive datasets in Waterfall charts can now navigate the data more easily. This may alter how charts are displayed if previously configured to show all data points by default.
-- **What to Check:** Test Waterfall charts with large datasets to ensure that the scrollbar feature behaves as desired.
+- **Summary:** FusionCharts v4.1 introduces a scrollbar feature specifically for `Waterfall` charts.
+- **Impact:** Users working with extensive datasets in `Waterfall` charts can now navigate the data more easily. This may alter how charts are displayed if previously configured to show all data points by default.
+- **What to Check:** Test `Waterfall` charts with large datasets to ensure that the scrollbar feature behaves as desired.
 
 - **Example:**
   - **Before:** Full dataset displayed without a scrolling option, potentially cluttering the view.
