@@ -4,35 +4,36 @@ description: This section discusses the new features introduced in the latest ve
 heading: What's New
 ---
 
-This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.0.x.
+This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.1.x.
 
-## Ask FusionDev AI: AI-powered knowledge base and documentation assistant
+## Improved CSP Compliance: Enforcing Trusted Types for 'Script' with Webpack Upgrades
 
-FusionCharts release 4.0.0 introduces **Ask FusionDev AI: AI-powered knowledge base and documentation assistant**.
+FusionCharts 4.1.0 improves and enhances CSP compatibility for the `require-trusted-types-for 'script'` by upgrading Webpack and related packages to their latest versions, preventing indirect script injection unless the scripts are injected using secure, trusted policies. 
 
-The newly implemented assistant helps you to:
+Resolving `style-src` Policy Issues: Ensuring Compatibility with `Inline Styles` in **Tooltips**, `Radial Chart CSS`, and **Table Styling** for `Draggable Column 2D Charts`.
 
-- Improve Discoverability and unblock developers by finding instant answers to questions about using FusionCharts with AI-powered context-aware documentation.
-- Increase developer productivity by providing instant access to clear, concise, and up-to-date documentation, including code examples for the FusionCharts.
-- Improve development efficiency with automated code generation.
+## Enhancing Waterfall Charts: Introducing a Scrollbar for Improved X-Axis Navigation
 
-To start using **Ask FusionDev AI** just refer to the following [page](https://www.fusioncharts.com/askfusiondev-ai).
+FusionCharts release 4.1.0 introduces a new scrollbar for `Waterfall` **Charts** to improve user experience and navigation through the x-axis without impacting the existing chart or layout.
 
-## Elevating Project Management with Enhanced Gantt Charts
+This addition facilitates better user interaction with data that might otherwise overflow due to lengthy labels or an extensive range of values depicted in one axis section of the `Waterfall` chart.
 
-FusionCharts release 4.0.0 introduces advanced capabilities for scheduling and project management visualizations. Automatic updates minimize manual data entry errors while overlapping taskbars and customizable milestones enhance project communication.
+## Customizable Legend Scrollbars: New Dynamic Keys for Enhanced Look and Feel Control
 
-### Introducing autoUpdateStartEndDateColumn attribute: Auto-Update Actual Dates on Taskbar Drag
+FusionCharts release 4.1.0 implemented advanced new dynamic keys to control the look and feel of the legend scrollbars.
 
-The newly implemented attribute `autoUpdateStartEndDateColumn`, auto-updates the actual start date / actual end date columns in the `Gantt` Chart when taskbars are dragged. The data source will update the column start/end dates and taskbar position whenever this attribute is enabled.
+The newly added attributes allow you to enable or disable shading gradient colors, giving control over the look and feel of the `Legend Scrollbars`.
 
-### Presenting allowTaskbarOverlap attribute: Enhancing User Experience
+### Enhanced Support for Third-Party Integrations
 
-The recently adopted `allowTaskbarOverlap` attribute for `Gantt` Charts, allows users to drag the taskbar over adjacent taskbars in the `Gantt` Chart. The taskbar start and end date will not be restricted by the adjacent taskbar’s x and y positions.
+FusionCharts 4.1.0 enhanced support for third-party tools and libraries to ensure smoother, more secure performance:
 
-### Introducing marginLeft, marginRight, marginTop, and marginBottom attributes: Numeric Milestone Setting
+- Updated `Ember` to the latest version for better performance.
+- Refined component variables and functions in `Glimmer` components.
+- Resolved `dependabot` security updates to keep the app safe.
+- 
+These updates aim to provide a more seamless experience when integrating with third-party systems, while also maintaining high performance and security standards.
 
-The newly implemented `marginLeft`, `marginRight`, `marginTop`, and `marginBottom` attributes were introduced in the milestone option of `Gantt` charts. These attributes are utilized to set the milestone as per the numeric value provided in these.
 
 
  
