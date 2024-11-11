@@ -6,7 +6,7 @@ heading: Changed Behavior
 
 <h2>Overview</h2>
 
-FusionCharts v4.1 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
+FusionCharts v4.1.0 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
 
 <h4>Content Security Policy (CSP) Compatibility</h4>
 
@@ -40,7 +40,7 @@ FusionCharts v4.1 introduces a range of new features and enhancements designed t
     
 <h4>New Scrollbar Feature for Waterfall Charts</h4>
 
-- **Summary:** FusionCharts v4.1 introduces a scrollbar feature specifically for `Waterfall` charts.
+- **Summary:** FusionCharts v4.1.0 introduces a scrollbar feature specifically for `Waterfall` charts.
 - **Impact:** Users working with extensive datasets in `Waterfall` charts can now navigate the data more easily. This may alter how charts are displayed if previously configured to show all data points by default.
 - **What to Check:** Test `Waterfall` charts with large datasets to ensure that the scrollbar feature behaves as desired.
 
