@@ -4,16 +4,92 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-We're thrilled to unveil the latest release of FusionCharts, version 4.0.0, FusionGrid v2.0, and FusionExport 2.1 introducing a suite of new enhancements designed to make  user experience smoother, more efficient, and more enjoyable.
+<h2>Overview</h2>
 
-We're excited to unveil a groundbreaking integration that elevates the FusionCharts experience with the introduction of **AI-powered knowledge base and documentation assistant** for development teams seeking to accelerate time-to-market and boost efficiency, `Ask FusionDev AI` provides instant, context-aware answers, and automated code generation, empowering developers to focus on delivering innovative solutions, faster.
+FusionCharts v4.1.0 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
 
-We've meticulously crafted the FusionCharts knowledge base with your needs in mind. Now, with `Ask FusionDev AI`, we're taking it a step further. Accessing essential code examples, tutorials, and in-depth explanations is easier than ever, ensuring you have the resources to create stunning visuals confidently.
+<h4>Content Security Policy (CSP) Compatibility</h4>
 
-Our team of subject matter experts diligently verifies the accuracy of key knowledge sources and identifies any knowledge gaps. Trained on a diverse range of knowledge sources, `Ask FusionDev AI` is adept at navigating these complexities.
+- **Summary:** FusionCharts now includes Content Security Policy (CSP) Compatibility to protect applications from content injection attacks.
+- **Impact:** Users who previously did not implement CSP may now notice stricter enforcement of secure content handling. Certain scripts or inline styles may be blocked if they don’t meet CSP requirements.
+- **What to Check:** Ensure that your application adheres to the `style-src` and `require-trusted-types-for 'script'` policies, as these are now actively enforced within FusionCharts.
 
-Other key improvements for this release include new attributes for the `Gantt` Chart to make the user experience more efficient, resolving `resizeTo` issues guaranteeing seamless chart resizing, improving the visual clarity of Multi-series Bar charts by addressing `transposeAxis` attribute bug, and much more. 
+- **Example:**
+  - **Before:** Inline styling or scripts may have been applied directly without restriction.
+  - **After:** Inline styling must comply with the new CSP requirements, and some scripts may require adjustment to avoid conflicts.
+    
+<h4>Licensing and Device Compatibility Enhancements</h4>
 
-Additionally, we upgraded the framework integrations for `React`, `Angular`, `Vue`, and `Svelte` to further enhance our system's capabilities. These improvements streamline the integration process and boost performance, ensuring a more seamless and efficient experience for our users. 
+- **Summary:** Licensing concerns have been streamlined, ensuring seamless chart access across multiple devices.
+- **Impact:** Users should experience uninterrupted access to FusionCharts visualizations across all devices (e.g., laptops, tablets, and smartphones), removing prior licensing interruptions.
+- **What to Check:** Test charts on various devices to verify seamless display, especially in client-facing environments.
 
-For additional details, kindly refer to our [changelog](https://www.fusioncharts.com/dev/upgrading/change-log/), [blog post](https://www.fusioncharts.com//blog/fusioncharts-4-0-elevate-your-data-visualization-new-capabilities), and [Ask FusionDev AI](https://www.fusioncharts.com/askfusiondev-ai).
+- **Example:**
+  - **Before:** Potential for interruptions in licensing when switching between devices.
+  - **After:** Continuous access across devices without additional licensing prompts.
+    
+<h4>Improved Compatibility with React Native</h4>
+
+- **Summary:** Enhanced support for `React Native` and updates to `Embe`r dependencies make it easier to integrate FusionCharts into mobile applications built with `React Native`.
+- **Impact:** Users previously encountering compatibility issues with `React Native` should experience smoother chart integrations. This may affect workflows that require custom adjustments or workarounds.
+- **What to Check:** Verify that existing`React Native` integrations continue to function as expected with the updated library and Ember version.
+
+- **Example:**
+  - **Before:** Limited compatibility, requiring workarounds for certain chart functionalities.
+  - **After:** Direct compatibility, reducing the need for custom code adjustments.
+    
+<h4>New Scrollbar Feature for Waterfall Charts</h4>
+
+- **Summary:** FusionCharts v4.1.0 introduces a scrollbar feature specifically for `Waterfall` charts.
+- **Impact:** Users working with extensive datasets in `Waterfall` charts can now navigate the data more easily. This may alter how charts are displayed if previously configured to show all data points by default.
+- **What to Check:** Test `Waterfall` charts with large datasets to ensure that the scrollbar feature behaves as desired.
+
+- **Example:**
+  - **Before:** Full dataset displayed without a scrolling option, potentially cluttering the view.
+  - **After:** A scrollbar allows for cleaner, more manageable navigation of large datasets.
+    
+<h4>Enhanced Accessibility for Visualizations</h4>
+
+- **Summary:** Accessibility improvements have been made to all FusionCharts visualizations.
+- **Impact:** The new accessibility features improve user interaction across different abilities, aligning with inclusive design standards. Users might observe modifications in chart elements to support screen readers or keyboard navigation.
+- **What to Check:** Review accessibility settings, especially if using custom elements or modified charts.
+
+- **Example:**
+  - **Before:** Limited support for assistive technologies, potentially restricting usability for some audiences.
+  - **After:** Full support for screen readers and accessible navigation, enhancing inclusivity.
+ 
+<h4>Custom Aggregation Assistance</h4>
+
+- **Summary:** A new feature to simplify complex data management by supporting custom aggregation.
+- **Impact:** For users who previously created custom aggregation methods, this functionality offers built-in support, potentially replacing custom solutions.
+- **What to Check:** Test aggregation behavior in dashboards or reports to ensure consistent output.
+
+- **Example:**
+  - **Before:** Custom aggregation logic required manual handling of data aggregation.
+  - **After:** Built-in aggregation options streamline setup, allowing for standardized data handling.
+    
+<h4>Enhanced Tooltip Accuracy</h4>
+
+- **Summary:** Tooltips are now more accurate, providing precise data markers and placement.
+- **Impact:** Tooltip content should appear more reliably in alignment with data points, which may shift tooltip positioning or alter hover responses in existing charts.
+- **What to Check:** Review tooltips in complex or densely populated charts to verify accuracy.
+
+- **Example:**
+  - **Before:** Tooltips might have had minor misalignment or less accuracy.
+  - **After:** Tooltips align more precisely with data markers, ensuring an accurate representation of values.
+ 
+<h4>Visual Consistency Enhancements</h4>
+
+- **Summary:** Legend icons are synchronized, and customizable scrollbar features enhance the visual consistency of charts.
+- **Impact:** Users may notice that legend icons and scrollbars now offer a unified appearance across different charts, improving design uniformity.
+- **What to Check:** Ensure that your charts' legend and scrollbar settings align with your desired aesthetic and functional expectations.
+
+- **Example:**
+  - **Before:** Slight discrepancies in legend icon size or scrollbar appearance across charts.
+  - **After:** Consistent legend icon sizing and customizable scrollbars provide a cohesive look.
+    
+<h4>Feedback and Support</h4>
+
+If you encounter any unexpected behavior or have questions about these changes, please reach out to our support team or visit the FusionCharts [support page](https://www.fusioncharts.com/contact-support).
+
+For additional details, kindly refer to our [Changelog](https://www.fusioncharts.com/dev/upgrading/change-log/), [What’s New page](https://www.fusioncharts.com/dev/upgrading/whats-new), and our [release blog post](https://www.fusioncharts.com/blog/announcing-fusioncharts-v4-1-elevate-your-data-visualization-experience).

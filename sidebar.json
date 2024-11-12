@@ -1885,7 +1885,7 @@
                   "path": "/upgrading/license-activation"
                },
                {
-                  "title": "Upgrade to v4.0.0",
+                  "title": "Upgrade to v4.1.0",
                   "children": [
                      {
                         "title": "Changelog",
@@ -1924,6 +1924,10 @@
                {
                   "title": "Version History",
                   "children": [
+                     {
+                        "title": "v4.0.x",
+                        "path": "/upgrading/version-history/version-4-0-X"
+                     },
                      {
                         "title": "v3.23.x",
                         "path": "/upgrading/version-history/version-3-23-X"
