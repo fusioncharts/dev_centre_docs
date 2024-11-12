@@ -4,6 +4,17 @@ description: Stay updated with the latest FusionTime features! Read the release 
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.9.1</h2>
+
+<p class="release-date">13th November, 2024</p>
+
+<h4>Fixes</h4>
+
+- FusionTime implemented a new functionality that enables users to style the legend through the addition of two objects within the legend items series `legendTextStyle` and `legendSymbolStyle`.
+- FusionTime added a new key as an array object `customAggregatorData` along with object parameters as `aggregatorFunctionName`, and `aggregatorFunction` to address **Custom Aggregation**.
+- FusionTime resolved an issue where the **Data Marker** was incorrectly positioned.
+- FusionTime added the `alwaysVisible` attribute to the reference line configuration in the `dataSource` object to allow the visibility of the reference line to be visible always or on hover.
+
 <h2 class="sub-heading">Version 2.9.0</h2>
 
 <p class="release-date">26th March, 2024</p>

@@ -4,11 +4,11 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is to talk about the new features introduced in the lates version. Filter data by specific values, or with conditional 
+This section is to talk about the new features introduced in the latest version. Filter data by specific values, or with conditional 
 
 ## Column Filter
 
-This feature allows you to apply filters on specific columns for a better data analysis. Enable the conditional filter to use conditions and logical operations such as; equals, between, greater than , etc. to filter data. To learn more about column filters visit our [tutorial pages](/fusiongrid/tutorials-fusiongrid/column-filter).
+This feature allows you to apply filters on specific columns for better data analysis. Enable the conditional filter to use conditions and logical operations such as; equals, between, greater than, etc. to filter data. To learn more about column filters visit our [tutorial pages](/fusiongrid/tutorials-fusiongrid/column-filter).
 
 Here is an example of a conditional column filter:
 <iframe width="100%" height="400" src="//jsfiddle.net/fusioncharts/azcvfu8e/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
