@@ -15,7 +15,7 @@ heading: Version 4.1.x
 <h4>Improvements</h4>
 
 - FusionCharts version 4.1.0 upgrades the version for underline dependencies of the `react-native-fusioncharts` package and makes it compatible with 0.70.x, 0.71.x, 0.72.x, 0.73.x and 0.74.x versions.
-FusionCharts version 4.1.0 introduced new dynamic attributes for customizing the appearance and behavior of the **Legend scrollbars**.
+- FusionCharts version 4.1.0 introduced new dynamic attributes for customizing the appearance and behavior of the **Legend scrollbars**.
   - The `useLegendScrollGradient` attribute determines whether to enable or disable gradient colors. If the set value is 1, you need to provide gradient colors for `legendScrollTrackColor` and `legendScrollAnchorColor` in the form of an object with `angle`, `startColor`, and `endColor`. If the value is set to 0, you should provide `legendScrollTrackColor` and `legendScrollAnchorColor` in hexadecimal format instead of an object.
 - Upgraded third-party integrations support:
   - Updated `ember` dependency with the latest CLI version (5.11).
