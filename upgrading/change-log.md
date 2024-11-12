@@ -31,6 +31,6 @@ heading: Version 4.1.x
 - Fixed an issue where the **watermark** on the map remained even after applying a valid license key for the chart type: `maps/france2016`.
 - Resolved an issue in the `legend-item.js` file where the `legendData` object properties were not getting passed to the `getAnchorProps` function, causing it to apply the same properties to every legend item, regardless of the data.
 - Fixed an issue that prevented highlighting specific series in the **Crossline tooltip** when `applycsstransform` attribute was set to 1.
-- Fixed the issue where hovering over the dataplot, the tooltip showed incorrect values when the cursor moved out of the plot area for `scrollbar2d` chart when `drawCrossLine` is enabled for `scrollbar2d` chart and `scroll Stacked` bar charts.
+- Fixed the issue where hovering over the dataplot, the tooltip showed incorrect values when the cursor moved out of the plot area when `drawCrossLine` was enabled for `scrollbar2d` chart and `scroll Stacked` bar charts.
 
 
