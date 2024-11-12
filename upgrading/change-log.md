@@ -26,11 +26,11 @@ heading: Version 4.1.x
 
 - FusionCharts 4.1.0 enhanced **Content Security Policy (CSP)** compatibility for the `require-trusted-types-for 'script'` upgrading **Webpack** and related packages to their latest versions, preventing indirect script injection unless the scripts are injected using secure, trusted policies.
 - Fixed the **Content Security Policy (CSP) Compatibility** issues for `style-src`. Also implemented support for different scenarios, such as `Inline Styles Tooltips`, `Inline CSS` in `Radial Charts`, and `Inline CSS` for styling tables in `Draggable column 2D` charts.
-- Resolved an accessibility issue where the tab took focus to the overall chart area instead of the `chart-plot` when the chart did not have a first X-axis value.
+- Resolved an accessibility issue where the tab focused on the overall chart area instead of the `chart-plot` when the chart did not have a first X-axis value.
 - Fixed an issue where `Multie-Pie` charts did not resize properly without requiring a re-render.
 - Fixed an issue where the **watermark** on the map remained even after applying a valid license key for the chart type: `maps/france2016`.
 - Resolved an issue in the `legend-item.js` file where the `legendData` object properties were not getting passed to the `getAnchorProps` function, causing it to apply the same properties to every legend item, regardless of the data.
 - Fixed an issue that prevented highlighting specific series in the **Crossline tooltip** when `applycsstransform` attribute was set to 1.
-- Fixed the issue where hovering over the dataplot, the tooltip showed incorrect values when the cursor moved out of the plot area when `drawCrossLine` was enabled for `scrollbar2d` chart and `scroll Stacked` bar charts.
+- Fixed the issue where hovering over the dataplot, the tooltip showed incorrect values when the cursor moved out of the plot area when `drawCrossLine` was enabled for `Scrollbar2d` chart and `Scroll Stacked` bar charts.
 
 
