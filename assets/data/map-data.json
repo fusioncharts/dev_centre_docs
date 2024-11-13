@@ -8538,7 +8538,7 @@
               {
                 "name": "JalalAbad Map",
                 "alias": "jalalabad",
-                "specSheet": "maps/jalalabad"
+                "specSheet": "maps/spec-sheets/jalalabad"
               },
               {
                 "name": "Naryn Map",
@@ -10823,7 +10823,7 @@
           {
             "name": "River Nile Map",
             "alias": "rivernile",
-            "specSheet": "maps/rivernile"
+            "specSheet": "maps/spec-sheets/rivernile"
           },
           {
             "name": "Sennar Map",

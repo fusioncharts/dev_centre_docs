@@ -8,7 +8,7 @@ The time navigator component in FusionTime gives the pattern of complete data. U
 
 The time navigator component is drawn below the time axis of a FusionTime chart. You can see it in the image below:
 
-<img src="{% site.BASE_URL %}/images/fusiontime-component-time-navigator.png">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-time-navigator.png" alt="Time navigator of Sales Analysis | FC">
 
 The major features of **Time Navigator** include the following:
 
@@ -135,7 +135,7 @@ FusionTime allows you to add style to the time navigator of the chart. Time Navi
 
 Refer to the image shown below:
 
-<img src="{% site.BASE_URL %}/images/time-navigator-window-scrollbar.png">
+<img src="{% site.BASE_URL %}/images/time-navigator-window-scrollbar.png" alt= "Time Navigator of Scroll Bar | FC">
 
 You can customize both the above sub-sections of the time navigator.
 
