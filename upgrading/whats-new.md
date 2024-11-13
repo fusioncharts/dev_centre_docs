@@ -28,11 +28,11 @@ The newly added attributes allow you to enable or disable shading gradient color
 
 FusionCharts 4.1.0 enhanced support for third-party tools and libraries to ensure smoother, more secure performance:
 
-- Updated `Ember` to the latest version for better performance.
-- Refined component variables and functions in `Glimmer` components.
-- Resolved `dependabot` security updates to keep the app safe.
+ - Updated `ember` dependency with the latest CLI version (5.11).
+ - Addressed `dependabot` pull requests, handling security vulnerabilities and ensuring a more secure and reliable dependency management process.
+ - Removed `expo` dependencies which optimized and made `react-native` more lightweight.
   
-These updates aim to provide a more seamless experience when integrating with third-party systems, while also maintaining high performance and security standards.
+These updates aim to provide a more seamless experience when integrating with third-party systems while maintaining high performance and security standards.
 
 
 
