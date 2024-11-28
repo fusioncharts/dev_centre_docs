@@ -400,6 +400,13 @@
 	},
 	{
 		"name": "Radar Chart",
+		"json": "RadialBar",
+		"code": "xt-attr-radial.js",
+		"alias": "radial",
+		"xls": true
+	},
+	{
+		"name": "Radial Chart",
 		"json": "Radar",
 		"code": "xt-attr-radar.js",
 		"alias": "radar",
