@@ -406,6 +406,13 @@
 		"xls": true
 	},
 	{
+		"name": "Radial Bar Chart",
+		"json": "RadialBar",
+		"code": "xt-attr-radial.js",
+		"alias": "radial",
+		"xls": true
+	},
+	{
 		"name": "Real-time Angular",
 		"json": "Angular",
 		"code": "xt-attr-angulargauge.js",
