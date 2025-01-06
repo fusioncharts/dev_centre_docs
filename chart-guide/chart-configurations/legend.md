@@ -1,14 +1,16 @@
 ---
-title: Configure Legend | FusionCharts
-description: A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts
+title: "Simple to Stunning: Customize Legend of Chart Like a Pro"
+description: How to customize & enhance the legend of chart in FusionCharts? Learn HERE! Show/hide, highlight & customize legends for clearer data visualization. Read now!
 heading: Legend
 ---
+
+## Introduction
 
 A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.
 
 > Legends are not applicable to single series charts.
 
-In the following image, the legend rendered below the x-axis helps identify the data plots corresponding to a series name. Each series is represented by its own icon in the legend.
+In the following image, the **legend of chart** rendered below the x-axis helps identify the data plots corresponding to a series name. Each series is represented by its own icon in the legend.
 
 ![Legend](/images/chart-configurations-legend-image-1.png)
 
@@ -36,7 +38,7 @@ In the chart shown above, when you click the legend icon for **Last Year**, all 
 
 ## Show/Hide Data Plots via the Legend
 
-With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without the interactive legend.
+With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The **chart legend** interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without the interactive legend.
 
 Refer to the code below:
 
@@ -131,6 +133,8 @@ Refer to the code below:
 }
 ```
 
+The chart will look as shown below:
+
 {% embed_chart chart-configurations-legend-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v39dnw63/) to edit the above chart.
@@ -150,6 +154,8 @@ Refer to the code below:
   }
 }
 ```
+
+The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-14.js %}
 
@@ -173,6 +179,8 @@ Refer to the code below:
   }
 }
 ```
+
+The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-15.js %}
 
@@ -255,7 +263,7 @@ Click [here](http://jsfiddle.net/fusioncharts/0ca9wu47/) to edit the above chart
 
 ## Draw a Custom Legend Icon Shape
 
-Use the following attributes to draw a custom legend icon shape:
+Use the following attributes to draw a custom **chart legend** icon shape:
 
 - Set the `drawCustomLegendIcon` attribute to `1` to enable drawing of a custom legend icon. All other legend icon customization attributes work only if you enable this feature.
 
@@ -345,7 +353,7 @@ In the above chart, even if the value of `legendNumRows` attribute is set to **3
 
 ## Customize Legend Scroll Bar
 
-If you have multiple data items in a multi-series chart, the legend automatically displays a scroll bar. Use the `legendScrollBgColor` attribute to specify the background color of the scroll bar.
+If you have multiple data items in a multi-series chart, the **legend of chart** automatically displays a scroll bar. Use the `legendScrollBgColor` attribute to specify the background color of the scroll bar.
 
 Refer to the code below:
 
@@ -401,7 +409,7 @@ Click [here](https://codepen.io/fusioncharts/pen/gOebwyv/cfe9372ce06343f59004c6e
 
 ## Reverse Legend Order
 
-Set the value of `reverseLegend` attribute to `1`, to reverse the order of datasets in the legend.
+Set the value of `reverseLegend` attribute to `1`, to reverse the order of datasets in the **chart legend**.
 
 Refer to the code below:
 
@@ -421,7 +429,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Lgq5tcko/) to edit the above chart
 
 ## Hide Data Series upon Loading
 
-Set the value of `initiallyHidden`attribute to `1`, to hide the data plots of a data series initially, on chart load. The plots will become visible when you click on the name of the series in the legend. This attribute works from the `dataset` object level in JSON data, and by default takes the value of `0`, thereby displaying data plots of every series when you load the chart.
+Set the value of `initiallyHidden`attribute to `1`, to hide the data plots of a data series initially, on chart load. The plots will become visible when you click on the name of the series in the **chart legend**. This attribute works from the `dataset` object level in JSON data, and by default takes the value of `0`, thereby displaying data plots of every series when you load the chart.
 
 Refer to the code below:
 
@@ -444,7 +452,7 @@ Click [here](http://jsfiddle.net/fusioncharts/vhydr4f9/) to edit the above chart
 
 ## Customize Legend Appearance
 
-Use the following attributes used to customize legend appearance:
+Use the following attributes to customize **chart legend** appearance:
 
 - Specify the background color for the legend using the `legendBgColor` attribute, which accepts hex codes as values.
 
@@ -540,7 +548,7 @@ Refer to the code below:
 }
 ```
 
-- Specify the legend caption value using the `legendCaption` attribute, which accepts strings.
+- Specify the **legend of chart** caption value using the `legendCaption` attribute, which accepts strings.
 
 - Specify the legend caption font using the `legendCaptionFont` attribute.
 
@@ -569,3 +577,11 @@ The chart will look as shown below:
 {% embed_chart chart-configurations-legend-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zyw5z2za/) to edit the above chart.
+
+## Conclusion
+
+Legends are a valuable tool for enhancing chart readability by clearly associating data plots with their corresponding series names. FusionCharts offers a range of customization options to modify the Legend's Looks and behavior to best suit your data visualization needs. You can control everything from the Legend's location and size to its font style and color. With these customizations, you can create the perfect **legend of chart** that complements your charts and effectively communicates your data story.
+
+## Boost your chart clarity with FusionCharts Legends!
+
+Confused charts? FusionCharts Legends can help! Unlock clarity and interactivity, take your data storytelling to the next level. Explore now!
