@@ -1,5 +1,5 @@
 ---
-title: Configure Legend | FusionCharts
+title: Simple to Stunning: Customize Legend of Chart Like a Pro
 description: A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts
 heading: Legend
 ---
