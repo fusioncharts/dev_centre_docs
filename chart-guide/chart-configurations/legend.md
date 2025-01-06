@@ -1,14 +1,16 @@
 ---
-title: "Simple to Stunning: Customize **Legend of Chart** Like a Pro"
-description: A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts
+title: "Simple to Stunning: Customize Legend of Chart Like a Pro"
+description: How to customize & enhance the legend of chart in FusionCharts? Learn HERE! Show/hide, highlight & customize legends for clearer data visualization. Read now!
 heading: Legend
 ---
+
+## Introduction
 
 A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.
 
 > Legends are not applicable to single series charts.
 
-In the following image, the legend rendered below the x-axis helps identify the data plots corresponding to a series name. Each series is represented by its own icon in the legend.
+In the following image, the **legend of chart** rendered below the x-axis helps identify the data plots corresponding to a series name. Each series is represented by its own icon in the legend.
 
 ![Legend](/images/chart-configurations-legend-image-1.png)
 
@@ -36,7 +38,7 @@ In the chart shown above, when you click the legend icon for **Last Year**, all 
 
 ## Show/Hide Data Plots via the Legend
 
-With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without the interactive legend.
+With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The **chart legend** interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without the interactive legend.
 
 Refer to the code below:
 
