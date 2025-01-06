@@ -384,7 +384,7 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 To add a new text label:
 
-* From the bottom-left corner of the chart, click the <span>![Drag-node-image](/images/standard-charts-drag-node-chart-image-26.png)</span> option. A menu is rendered.
+* From the bottom-left corner of the chart, click the <span> ![Drag-node-image](/images/standard-charts-drag-node-chart-image-26.png)</span> option. A menu is rendered.
 
 * From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
 
