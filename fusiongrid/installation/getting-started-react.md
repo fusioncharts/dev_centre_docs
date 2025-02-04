@@ -160,5 +160,5 @@ Attach the callback to an event through the React-FG component:
 Where the 'EVENTNAME' property is replaced by the event you want to track.
 
 ## See your grid
-![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
+![Automobile Ranking](/images/automobile_ranking_sample.png)
 
