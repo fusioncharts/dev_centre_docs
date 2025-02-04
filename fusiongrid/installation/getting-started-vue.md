@@ -203,4 +203,4 @@ Here's HTML template for the above example:
 ```
 
 ## See your grid
-![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
+![Automobile Ranking](/images/automobile_ranking_sample.png)
