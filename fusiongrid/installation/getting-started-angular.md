@@ -153,4 +153,4 @@ You can attach an event as follows:
 ```
  
 ## See your grid
-![Automobile Ranking](/fusiongrid/images/automobile_ranking_sample.png)
+![Automobile Ranking](/images/automobile_ranking_sample.png)
