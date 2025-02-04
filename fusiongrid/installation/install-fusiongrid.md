@@ -201,7 +201,7 @@ var grid = new FusionGrid(container, dataTable, {});
 grid.render();
 ```
 ## See Your Grid
-![Automobile Ranking](../images/automobile_ranking_sample.png)
+![Automobile Ranking](/images/automobile_ranking_sample.png)
 
 ### Next Steps
 
