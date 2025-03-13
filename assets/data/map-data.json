@@ -3507,6 +3507,11 @@
                 "specSheet": "/maps/spec-sheets/californiaareacode"
               },
               {
+                "name": "Chicago Area Code",
+                "alias": "chicagoareacode",
+                "specSheet": "/maps/spec-sheets/chicagoareacode"
+              },
+              {
                 "name": "Colorado Area Code",
                 "alias": "coloradoareacode",
                 "specSheet": "/maps/spec-sheets/coloradoareacode"
