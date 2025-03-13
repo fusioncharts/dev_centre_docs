@@ -10924,6 +10924,11 @@
             "specSheet": "/maps/spec-sheets/asyut"
           },
           {
+            "name": "Bahera",
+            "alias": "bahera",
+            "specSheet": "/maps/spec-sheets/bahera"
+          },
+          {
             "name": "Bani-swaif",
             "alias": "baniswaif",
             "specSheet": "/maps/spec-sheets/baniswaif"
