@@ -341,6 +341,11 @@
                 "specSheet": "/maps/spec-sheets/razgrad"
               },
               {
+                "name": "Ruse",
+                "alias": "ruse",
+                "specSheet": "/maps/spec-sheets/ruse"
+              },
+              {
                 "name": "Shumen",
                 "alias": "shumen",
                 "specSheet": "/maps/spec-sheets/shumen"
