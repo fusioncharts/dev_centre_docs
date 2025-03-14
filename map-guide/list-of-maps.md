@@ -1104,13 +1104,13 @@ To render these maps, you need to download the map definition files from [here](
 | [South Chungcheong](/maps/spec-sheets/southchungcheong) | maps/southchungcheong |
 | [Gangwon](/maps/spec-sheets/gangwon)                    | maps/gangwon          |
 | [Gwangju](/maps/spec-sheets/gwangju)                    | maps/gwangju          |
-| [Gyeonggido](/maps/spec-sheets/gyeonggido)              | maps/gyeonggido       |
-| [Gyeongsang bukdo](/maps/spec-sheets/gyeongsangbukdo)   | maps/gyeongsangbukdo  |
-| [Gyeongsang namdo](/maps/spec-sheets/gyeongsangnamdo)   | maps/gyeongsangnamdo  |
+| [Gyeonggi](/maps/spec-sheets/gyeonggi)                  | maps/gyeonggi         |
+| [North Gyeongsang](/maps/spec-sheets/northgyeongsang)   | maps/northgyeongsang  |
+| [South Gyeongsang](/maps/spec-sheets/southgyeongsang)   | maps/southgyeongsang  |
 | [Incheon](/maps/spec-sheets/incheon)                    | maps/incheon          |
 | [Jejudo](/maps/spec-sheets/jejudo)                      | maps/jejudo           |
-| [Jeolla bukdo](/maps/spec-sheets/jeollabukdo)           | maps/jeollabukdo      |
-| [Jeolla namdo](/maps/spec-sheets/jeollanamdo)           | maps/jeollanamdo      |
+| [North Jeolla](/maps/spec-sheets/northjeolla)           | maps/northjeolla      |
+| [South Jeolla](/maps/spec-sheets/southjeolla)           | maps/southjeolla      |
 | [Daegu](/maps/spec-sheets/daegu)                        | maps/daegu            |
 | [Daejeon](/maps/spec-sheets/daejeon)                    | maps/daejeon          |
 | [Seoul](/maps/spec-sheets/seoul)                        | maps/seoul            |
