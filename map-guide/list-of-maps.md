@@ -1100,8 +1100,8 @@ To render these maps, you need to download the map definition files from [here](
 | Chart Type                                              | JavaScript Alias      |
 | ------------------------------------------------------- | --------------------- |
 | [Busan](/maps/spec-sheets/busan)                        | maps/busan            |
-| [Chungcheong bukdo](/maps/spec-sheets/chungcheongbukdo) | maps/chungcheongbukdo |
-| [Chungcheong namdo](/maps/spec-sheets/chungcheongnamdo) | maps/chungcheongnamdo |
+| [North Chungcheong](/maps/spec-sheets/northchungcheong) | maps/northchungcheong |
+| [South Chungcheong](/maps/spec-sheets/southchungcheong) | maps/southchungcheong |
 | [Gangwon](/maps/spec-sheets/gangwon)                    | maps/gangwon          |
 | [Gwangju](/maps/spec-sheets/gwangju)                    | maps/gwangju          |
 | [Gyeonggido](/maps/spec-sheets/gyeonggido)              | maps/gyeonggido       |
