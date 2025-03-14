@@ -1102,7 +1102,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Busan](/maps/spec-sheets/busan)                        | maps/busan            |
 | [Chungcheong bukdo](/maps/spec-sheets/chungcheongbukdo) | maps/chungcheongbukdo |
 | [Chungcheong namdo](/maps/spec-sheets/chungcheongnamdo) | maps/chungcheongnamdo |
-| [Gangwondo](/maps/spec-sheets/gangwondo)                | maps/gangwondo        |
+| [Gangwon](/maps/spec-sheets/gangwon)                    | maps/gangwon          |
 | [Gwangju](/maps/spec-sheets/gwangju)                    | maps/gwangju          |
 | [Gyeonggido](/maps/spec-sheets/gyeonggido)              | maps/gyeonggido       |
 | [Gyeongsang bukdo](/maps/spec-sheets/gyeongsangbukdo)   | maps/gyeongsangbukdo  |
