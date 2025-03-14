@@ -8294,9 +8294,9 @@
             "marker": false,
             "members": [
               {
-                "name": "Isfahan",
-                "alias": "isfahan",
-                "specSheet": "/maps/spec-sheets/isfahan"
+                "name": "Esfahan",
+                "alias": "esfahan",
+                "specSheet": "/maps/spec-sheets/esfahan"
               },
               {
                 "name": "Kermanshah",
