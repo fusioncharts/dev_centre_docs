@@ -1381,7 +1381,6 @@ To render these maps, you need to download the map definition files from [here](
 | [New Hampshire Area Code](/maps/spec-sheets/newhampshireareacode)                    | maps/newhampshireareacode          |
 | [New Jersey Area Code](/maps/spec-sheets/newjerseyareacode)                          | maps/newjerseyareacode             |
 | [New Mexico Area Code](/maps/spec-sheets/newmexicoareacode)                          | maps/newmexicoareacode             |
-| [New Yorkarea Area Code](/maps/spec-sheets/newyorkareaareacode)                      | maps/newyorkareaareacode           |
 | [New York Area Code](/maps/spec-sheets/newyorkareacode)                              | maps/newyorkareacode               |
 | [North Carolina Area Code](/maps/spec-sheets/northcarolinaareacode)                  | maps/northcarolinaareacode         |
 | [North Dakota Area Code](/maps/spec-sheets/northdakotaareacode)                      | maps/northdakotaareacode           |
