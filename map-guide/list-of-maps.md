@@ -1036,7 +1036,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Maule](/maps/spec-sheets/maule)                               | maps/maule               |
 | [Metropolitana de Santiago](/maps/spec-sheets/metropolitanadesantiago)   | maps/metropolitanadesantiago  |
 | [Nuble](/maps/spec-sheets/nuble)                               | maps/nuble               |
-| [Tarapaca](/maps/spec-sheets/taracapa)                         | maps/taracapa            |
+| [Tarapaca](/maps/spec-sheets/tarapaca)                         | maps/tarapaca            |
 | [Val Paraiso](/maps/spec-sheets/valparaiso)                    | maps/valparaiso          |
 
 ## Asia
