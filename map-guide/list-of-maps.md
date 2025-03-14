@@ -1133,7 +1133,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Kangwon](/maps/spec-sheets/kangwon)              | maps/kangwon       |
 | [Kumgangsan](/maps/spec-sheets/kumgangsan)        | maps/kumgangsan    |
 | [Kaesong](/maps/spec-sheets/kaesong)              | maps/kaesong       |
-| [South Hwangae](/maps/spec-sheets/southhwangae)   | maps/southhwangae  |
+| [South Hwanghae](/maps/spec-sheets/southhwanghae) | maps/southhwanghae |
 
 ### China (Provincial)
 
