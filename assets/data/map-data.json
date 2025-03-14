@@ -10828,7 +10828,7 @@
           {
             "name": "River Nile Map",
             "alias": "rivernile",
-            "specSheet": "maps/spec-sheets/rivernile"
+            "specSheet": "/maps/spec-sheets/rivernile"
           },
           {
             "name": "Sennar Map",
