@@ -160,6 +160,11 @@
                 "specSheet": "/maps/spec-sheets/oberosterreich"
               },
               {
+                "name": "Salzburg",
+                "alias": "salzburg",
+                "specSheet": "/maps/spec-sheets/salzburg"
+              },
+              {
                 "name": "Steiermark (Styria)",
                 "alias": "steiermark",
                 "specSheet": "/maps/spec-sheets/steiermark"
