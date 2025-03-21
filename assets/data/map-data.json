@@ -3677,6 +3677,11 @@
                 "specSheet": "/maps/spec-sheets/northcarolinaareacode"
               },
               {
+                "name": "Northern California Bay Area Code",
+                "alias": "northerncaliforniabayareacode",
+                "specSheet": "/maps/spec-sheets/northerncaliforniabayareacode"
+              },
+              {
                 "name": "North Dakota Area Code",
                 "alias": "northdakotaareacode",
                 "specSheet": "/maps/spec-sheets/northdakotaareacode"
