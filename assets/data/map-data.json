@@ -8558,7 +8558,7 @@
               {
                 "name": "JalalAbad Map",
                 "alias": "jalalabad",
-                "specSheet": "maps/spec-sheets/jalalabad"
+                "specSheet": "/maps/spec-sheets/jalalabad"
               },
               {
                 "name": "Naryn Map",
