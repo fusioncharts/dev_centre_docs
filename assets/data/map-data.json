@@ -160,6 +160,11 @@
                 "specSheet": "/maps/spec-sheets/oberosterreich"
               },
               {
+                "name": "Salzburg",
+                "alias": "salzburg",
+                "specSheet": "/maps/spec-sheets/salzburg"
+              },
+              {
                 "name": "Steiermark (Styria)",
                 "alias": "steiermark",
                 "specSheet": "/maps/spec-sheets/steiermark"
@@ -339,6 +344,11 @@
                 "name": "Razgrad",
                 "alias": "razgrad",
                 "specSheet": "/maps/spec-sheets/razgrad"
+              },
+              {
+                "name": "Ruse",
+                "alias": "ruse",
+                "specSheet": "/maps/spec-sheets/ruse"
               },
               {
                 "name": "Shumen",
@@ -3507,6 +3517,11 @@
                 "specSheet": "/maps/spec-sheets/californiaareacode"
               },
               {
+                "name": "Chicago Area Code",
+                "alias": "chicagoareacode",
+                "specSheet": "/maps/spec-sheets/chicagoareacode"
+              },
+              {
                 "name": "Colorado Area Code",
                 "alias": "coloradoareacode",
                 "specSheet": "/maps/spec-sheets/coloradoareacode"
@@ -3660,6 +3675,11 @@
                 "name": "North Carolina Area Code",
                 "alias": "northcarolinaareacode",
                 "specSheet": "/maps/spec-sheets/northcarolinaareacode"
+              },
+              {
+                "name": "Northern California Bay Area Code",
+                "alias": "northerncaliforniabayareacode",
+                "specSheet": "/maps/spec-sheets/northerncaliforniabayareacode"
               },
               {
                 "name": "North Dakota Area Code",
@@ -4238,7 +4258,7 @@
           {
             "name": "Ciudad Autónoma de Buenos Aires",
             "alias": "ciudadautonomadebuenosaires",
-            "specSheet": "/maps/spec-sheets/ciudadautonomabuenosaires"
+            "specSheet": "/maps/spec-sheets/ciudadautonomadebuenosaires"
           },
           {
             "name": "Buenos Aires",
@@ -8289,9 +8309,9 @@
             "marker": false,
             "members": [
               {
-                "name": "Isfahan",
-                "alias": "isfahan",
-                "specSheet": "/maps/spec-sheets/isfahan"
+                "name": "Esfahan",
+                "alias": "esfahan",
+                "specSheet": "/maps/spec-sheets/esfahan"
               },
               {
                 "name": "Kermanshah",
@@ -8538,7 +8558,7 @@
               {
                 "name": "JalalAbad Map",
                 "alias": "jalalabad",
-                "specSheet": "maps/spec-sheets/jalalabad"
+                "specSheet": "/maps/spec-sheets/jalalabad"
               },
               {
                 "name": "Naryn Map",
@@ -10823,7 +10843,7 @@
           {
             "name": "River Nile Map",
             "alias": "rivernile",
-            "specSheet": "maps/spec-sheets/rivernile"
+            "specSheet": "/maps/spec-sheets/rivernile"
           },
           {
             "name": "Sennar Map",
@@ -10922,6 +10942,11 @@
             "name": "Asyut",
             "alias": "asyut",
             "specSheet": "/maps/spec-sheets/asyut"
+          },
+          {
+            "name": "Bahera",
+            "alias": "bahera",
+            "specSheet": "/maps/spec-sheets/bahera"
           },
           {
             "name": "Bani-swaif",

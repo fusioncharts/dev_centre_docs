@@ -761,7 +761,7 @@ Namespace TestProject
             ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
             ViewData("Message") = "Dual Y-axis Scroll Combination Chart 2D"
             Dim model As DataModel = New DataModel()
-            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json")
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombi2d.json")
             model.DataSources.Add(jsonFileSource)
             Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("scrollcombidy2d")
             combiChart.Data.Source = model
@@ -874,35 +874,6 @@ Create a `CombinationChart.aspx.cs` file and do the following:
 * Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='csharp'>C#</a></li>
-    <li><a data-toggle='vb'>VB</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab csharp-tab active'>
-<pre><code class="language-csharp">
-
-
-
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-
-<div class='tab vb-tab'>
-<pre><code class="language-csharp">
-
-
-
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-</div>
-</div>
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

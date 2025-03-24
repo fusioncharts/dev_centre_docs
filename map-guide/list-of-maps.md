@@ -1036,7 +1036,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Maule](/maps/spec-sheets/maule)                               | maps/maule               |
 | [Metropolitana de Santiago](/maps/spec-sheets/metropolitanadesantiago)   | maps/metropolitanadesantiago  |
 | [Nuble](/maps/spec-sheets/nuble)                               | maps/nuble               |
-| [Tarapaca](/maps/spec-sheets/taracapa)                         | maps/taracapa            |
+| [Tarapaca](/maps/spec-sheets/tarapaca)                         | maps/tarapaca            |
 | [Val Paraiso](/maps/spec-sheets/valparaiso)                    | maps/valparaiso          |
 
 ## Asia
@@ -1100,17 +1100,17 @@ To render these maps, you need to download the map definition files from [here](
 | Chart Type                                              | JavaScript Alias      |
 | ------------------------------------------------------- | --------------------- |
 | [Busan](/maps/spec-sheets/busan)                        | maps/busan            |
-| [Chungcheong bukdo](/maps/spec-sheets/chungcheongbukdo) | maps/chungcheongbukdo |
-| [Chungcheong namdo](/maps/spec-sheets/chungcheongnamdo) | maps/chungcheongnamdo |
-| [Gangwondo](/maps/spec-sheets/gangwondo)                | maps/gangwondo        |
+| [North Chungcheong](/maps/spec-sheets/northchungcheong) | maps/northchungcheong |
+| [South Chungcheong](/maps/spec-sheets/southchungcheong) | maps/southchungcheong |
+| [Gangwon](/maps/spec-sheets/gangwon)                    | maps/gangwon          |
 | [Gwangju](/maps/spec-sheets/gwangju)                    | maps/gwangju          |
-| [Gyeonggido](/maps/spec-sheets/gyeonggido)              | maps/gyeonggido       |
-| [Gyeongsang bukdo](/maps/spec-sheets/gyeongsangbukdo)   | maps/gyeongsangbukdo  |
-| [Gyeongsang namdo](/maps/spec-sheets/gyeongsangnamdo)   | maps/gyeongsangnamdo  |
+| [Gyeonggi](/maps/spec-sheets/gyeonggi)                  | maps/gyeonggi         |
+| [North Gyeongsang](/maps/spec-sheets/northgyeongsang)   | maps/northgyeongsang  |
+| [South Gyeongsang](/maps/spec-sheets/southgyeongsang)   | maps/southgyeongsang  |
 | [Incheon](/maps/spec-sheets/incheon)                    | maps/incheon          |
 | [Jejudo](/maps/spec-sheets/jejudo)                      | maps/jejudo           |
-| [Jeolla bukdo](/maps/spec-sheets/jeollabukdo)           | maps/jeollabukdo      |
-| [Jeolla namdo](/maps/spec-sheets/jeollanamdo)           | maps/jeollanamdo      |
+| [North Jeolla](/maps/spec-sheets/northjeolla)           | maps/northjeolla      |
+| [South Jeolla](/maps/spec-sheets/southjeolla)           | maps/southjeolla      |
 | [Daegu](/maps/spec-sheets/daegu)                        | maps/daegu            |
 | [Daejeon](/maps/spec-sheets/daejeon)                    | maps/daejeon          |
 | [Seoul](/maps/spec-sheets/seoul)                        | maps/seoul            |
@@ -1133,7 +1133,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Kangwon](/maps/spec-sheets/kangwon)              | maps/kangwon       |
 | [Kumgangsan](/maps/spec-sheets/kumgangsan)        | maps/kumgangsan    |
 | [Kaesong](/maps/spec-sheets/kaesong)              | maps/kaesong       |
-| [South Hwangae](/maps/spec-sheets/southhwangae)   | maps/southhwangae  |
+| [South Hwanghae](/maps/spec-sheets/southhwanghae) | maps/southhwanghae |
 
 ### China (Provincial)
 
@@ -1381,7 +1381,6 @@ To render these maps, you need to download the map definition files from [here](
 | [New Hampshire Area Code](/maps/spec-sheets/newhampshireareacode)                    | maps/newhampshireareacode          |
 | [New Jersey Area Code](/maps/spec-sheets/newjerseyareacode)                          | maps/newjerseyareacode             |
 | [New Mexico Area Code](/maps/spec-sheets/newmexicoareacode)                          | maps/newmexicoareacode             |
-| [New Yorkarea Area Code](/maps/spec-sheets/newyorkareaareacode)                      | maps/newyorkareaareacode           |
 | [New York Area Code](/maps/spec-sheets/newyorkareacode)                              | maps/newyorkareacode               |
 | [North Carolina Area Code](/maps/spec-sheets/northcarolinaareacode)                  | maps/northcarolinaareacode         |
 | [North Dakota Area Code](/maps/spec-sheets/northdakotaareacode)                      | maps/northdakotaareacode           |
