@@ -1,6 +1,6 @@
 ---
 # Front matter (even empty) required for Jekyll to process
-description: Explore Ciudadautonomabuenosaires with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
+description: Explore Ciudadautonoma de Buenos Aires with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
 ---
 
 ## JavaScript Alias: maps/ciudadautonomadebuenosaires

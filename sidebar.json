@@ -293,6 +293,10 @@
                               "path": "/getting-started/react/your-first-chart-using-react"
                            },
                            {
+                              "title": "Your First Map",
+                              "path": "/getting-started/react/your-first-map-using-react"
+                           },
+                           {
                               "title": "Rendering Different Charts",
                               "path": "/getting-started/react/rendering-different-charts-using-react"
                            }
