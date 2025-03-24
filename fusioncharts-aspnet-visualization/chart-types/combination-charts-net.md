@@ -884,35 +884,6 @@ The code is shown below:
 
 <div class='tab csharp-tab active'>
 <pre><code class="language-csharp">
-
-
-
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-
-<div class='tab vb-tab'>
-<pre><code class="language-csharp">
-
-
-
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-</div>
-</div>
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='csharp'>C#</a></li>
-    <li><a data-toggle='vb'>VB</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab csharp-tab active'>
-<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
