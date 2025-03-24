@@ -8,7 +8,7 @@ In addition to specifying the chart data (or the URL for the file in which the c
 
 This section showcases how you can do this using the FusionCharts JSP wrapper.
 
-> Before you proceed, make sure you have [installed and set up the plugin](/getting-started/java/install-using-java) correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.
+> Before you proceed, make sure you have [installed and set up the plugin](/getting-started/java/your-first-chart-using-java) correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.
 
 ## Creating a Column 2D Chart
 
