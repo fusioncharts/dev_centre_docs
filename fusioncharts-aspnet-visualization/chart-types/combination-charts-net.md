@@ -761,7 +761,7 @@ Namespace TestProject
             ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
             ViewData("Message") = "Dual Y-axis Scroll Combination Chart 2D"
             Dim model As DataModel = New DataModel()
-            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json")
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombi2d.json")
             model.DataSources.Add(jsonFileSource)
             Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("scrollcombidy2d")
             combiChart.Data.Source = model
