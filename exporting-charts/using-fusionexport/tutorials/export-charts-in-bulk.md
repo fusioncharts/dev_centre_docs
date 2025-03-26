@@ -184,7 +184,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 > When multiple charts are exported, the default output files will have names like `export--1.png`, `export--2.png`, `export--3.png`, etc. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed. 
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/overview#fusionexport-sdks), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
