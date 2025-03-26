@@ -601,7 +601,7 @@ You can customize tooltips for nodes and links to show more contextual informati
 
 The `plotToolText` attribute works at global level, it defines a tooltip template for all the nodes in a chart. The value for the `plotToolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
-For Sankey diagram, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+For Sankey diagram, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
 Refer to the code below:
 
@@ -617,7 +617,7 @@ Refer to the code below:
 
 The `linkToolText` attribute works at global level, it defines a tooltip template for all the links in a chart. The value for the `linkToolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
-For Sankey diagram, `linkToolText` supports the following macros `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+For Sankey diagram, `linkToolText` supports the following macros `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
 Refer to the code below:
 
@@ -633,7 +633,7 @@ Refer to the code below:
 
 The `toolText` attribute works at local level for links and nodes, it defines a tooltip template for individual links or nodes in a chart. The value for the `toolText` attribute is a template made of macros, templates can also contain plain text and various inline HTML tags like `br`, `strong`, `em`,and `b`.
 
-When using `toolText` in nodes, it uses the following macros: `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+When using `toolText` in nodes, it uses the following macros: `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`. For more information on macros refer to the [List of Macros](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
 Refer to the code below:
 
@@ -646,7 +646,7 @@ Refer to the code below:
 ```
 
 
-When using `toolText` in links, it uses the following macros: `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+When using `toolText` in links, it uses the following macros: `$from`, `$to`, `$linkValue`, `$linkDataValue`, `$fromPlotIdentifier`, `$toPlotIdentifier`, and `$flowDirection`. For more information on macros refer to the [List of Macros](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
 Refer to the code below:
 
