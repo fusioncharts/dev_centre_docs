@@ -145,15 +145,15 @@ Before you start with the code, we suggest going through the steps that the code
 
 2. Create a new instance of the `ExportConfig()` object, and use its `set()` method to pass the path of the HTML file containing the D3 chart, and to set the `asyncCapture` flag to `true`.
 
-3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
+3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 
-4. Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
+4. Optionally, you can print the names of the exported files on the console and the error messages if anything goes wrong.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 
-> The exported dashboard will have the default name of `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed.
+> The exported dashboard will have the default name of `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from which the code was executed.
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](exporting-charts/using-fusionexport/overview#fusionexport-sdks), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/overview#fusionexport-sdks), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
