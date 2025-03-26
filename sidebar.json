@@ -25,6 +25,10 @@
                               "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                            },
                            {
+                              "title": "Your First Map",
+                              "path": "/getting-started/plain-javascript/your-first-map-using-plain-javascript"
+                           },
+                           {
                               "title": "Rendering Different Charts",
                               "path": "/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript"
                            }
