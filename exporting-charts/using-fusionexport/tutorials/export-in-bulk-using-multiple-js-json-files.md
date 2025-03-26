@@ -1,5 +1,5 @@
 ---
-title: Export charts in bulk | FusionCharts
+title: Export charts in bulk using multiple JS or JSON files | FusionCharts
 description: This article talks about the SDKs used for exporting charts in bulk.
 heading: Export charts in bulk using multiple JS or JSON files
 ---
