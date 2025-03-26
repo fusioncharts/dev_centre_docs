@@ -291,7 +291,7 @@ You can customize tooltips for nodes and links to present more informative messa
 
 The `plotToolText` attribute works at global level, it defines a tooltip template for all the nodes in a chart. The value for the `plotToolText` attribute is a template made of macros, templates can also contain plain text and basic html tags like `br`, `strong`, `em`,and `b`. 
 
-For Chord charts, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/dev/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
+For Chord charts, `plotToolText` supports the following macros `$label`, `$nodeValue`, `$nodeDataValue`, `$plotFillColor`, `$plotFillAlpha`, and `$plotIdentifier`. For more information on macros refer to the [List of Macros](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros).
 
 Refer to the code below:
 
