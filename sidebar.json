@@ -2352,6 +2352,10 @@
                   "path": "/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk"
                },
                {
+                  "title": "Export charts in bulk using multiple JS or JSON files",
+                  "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
+               },
+               {
                   "title": "Change the export quality",
                   "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-quality"
                },
