@@ -105,7 +105,7 @@ Then, to go back one level up, click on Northern Region in the header of the vie
 
 ## Create a simple treemap
 
-A treemap is useful when you need to analyze hierarchical information. You can compare the 2D nested rectangles of a treemap to quickly gain insights from the data. To render a treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here](https://www.fusioncharts.com/dev/installation/client-side-frameworks/install-using-plainjs).
+A treemap is useful when you need to analyze hierarchical information. You can compare the 2D nested rectangles of a treemap to quickly gain insights from the data. To render a treemap chart, include fusioncharts.treemap.js in the project folder with the rest of the .js files as mentioned [here](/getting-started/plain-javascript/your-first-chart-using-plain-javascript#installation-and-including-dependencies).
 
 Use the following attributes to build a simple treemap:
 
