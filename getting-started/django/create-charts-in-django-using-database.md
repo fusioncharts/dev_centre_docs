@@ -9,7 +9,7 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts Django wrapper.
 
-> Before you proceed, make sure you have [installed and set up the plugin](getting-started/django/your-first-chart-using-django) correctly.
+> Before you proceed, make sure you have [installed and set up the plugin](/getting-started/django/your-first-chart-using-django) correctly.
 
 ## Creating a simple Column Chart
 
