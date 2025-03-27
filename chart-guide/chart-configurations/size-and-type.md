@@ -56,7 +56,7 @@ Ensure that you set the parent container of the chart in a way that allows its d
 
 After you initialize a chart, you can change the dimensions dynamically, at client-side, through the JavaScript API `resizeTo()`.
 
-Recreate the same chart you created earlier (as described in the [Your first chart](/chart-guide/getting-started/building-your-first-chart) article), using the same data. To resize the chart dynamically, invoke the `resizeTo()` method, specifying the new width and height of your chart (in pixels). You can call this method anytime after the chart has finished rendering.
+Recreate the same chart you created earlier (as described in the [Your first chart](/getting-started/plain-javascript/your-first-chart-using-plain-javascript) article), using the same data. To resize the chart dynamically, invoke the `resizeTo()` method, specifying the new width and height of your chart (in pixels). You can call this method anytime after the chart has finished rendering.
 
 Take a look at an example below, along with the code:
 
