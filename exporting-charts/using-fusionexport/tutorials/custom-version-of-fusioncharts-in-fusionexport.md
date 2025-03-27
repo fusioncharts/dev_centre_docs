@@ -45,7 +45,7 @@ To run `FusionExport` with your version of `FusionCharts` run:
 
 After you've learnt how to use the custom version of FusionCharts, we recommend to learn how to:
 
-* [Disable Watermark](/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport)
+* [Disable Watermark](/exporting-charts/using-fusionexport/fusionexport-license-activation)
 
 * [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
