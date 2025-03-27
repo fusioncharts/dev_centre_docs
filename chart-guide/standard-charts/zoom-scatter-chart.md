@@ -67,7 +67,7 @@ Button Icon|Button Name|Function|
 <span> ![Reset](/images/standard-charts-zoom-scatter-chart-image-5.png) </span>|Reset|Click to zoom-out to the original macroscopic view of data.|
 <span> ![Select-zoom](/images/standard-charts-zoom-scatter-chart-image-6.png) </span>|Select-zoom/Pan switch button|Click to switch between the modes of interaction. The zoom-scatter chart supports two modes of interaction—the zoom mode and the pan mode. The zoom mode lets you select a subset of data to get a zoomed view of that data. The pan mode lets you pan through the data in the current chart view. By default, the zoom mode is enabled. After every zoom, the pan mode is activated.|
 
-> In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned **[here](https://www.fusioncharts.com/dev/getting-started/installation.html)**.
+> In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned **[here](/getting-started/plain-javascript/your-first-chart-using-plain-javascript#installation-and-including-dependencies)**.
 
 > The anchors in the zoom-scatter chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points due to performance concerns.
 
