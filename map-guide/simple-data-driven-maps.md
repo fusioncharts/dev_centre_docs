@@ -54,7 +54,7 @@ In the final step, you have to create an instance of the map, initialize it with
 
 * Create an instance of `FusionCharts()` object in the `populationMap` variable. Each map in your HTML page needs to have a separate variable. Also, note that the initialization code is wrapped within `FusionCharts.ready()` method. This safeguards your map instantiation code from being called before FusionCharts Suite XT library is loaded and is ready to be used on the page.
 
-* Create an instance of the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here](/chart-guide/getting-started/list-of-maps).
+* Create an instance of the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here](/map-guide/list-of-maps).
 
 * Next, specify the width and height of the map (in pixels), using `width` and `height` properties of the constructor.
 
