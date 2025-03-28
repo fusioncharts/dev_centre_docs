@@ -13,7 +13,6 @@ Radial Charts fix a unique radius for each bar representing each data plot. A Ra
 
 {% embed_chartAnatomy radial-bar.json %}
 
-
 To create a radial bar chart follow the steps below:
 
  - In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
@@ -22,14 +21,12 @@ To create a radial bar chart follow the steps below:
  - Specify the dimension of the chart using the `width` and `height` attributes.
  - Set the type of data (JSON/XML) you want to pass to the chart object using the `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [attributes link] page of chord diagram.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=RadialBar) page of Radial Bar chart.
 
 A Radial Bar chart looks as shown below:
-{% embed_chart name %}
-Click [here](fiddle link) to edit the above chart. 
 
-[describe the chart above]
-
+{% embed_chart radial-bar-example.js %}
+ 
 ## Customizations of a Radial Bar Chart
 
 ### Customize Track and Bar
