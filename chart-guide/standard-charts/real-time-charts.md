@@ -854,7 +854,7 @@ If you get JavaScript errors when accessing the above functions, make sure that:
 
 * Enable the message logger for the chart as mentioned in Setting up the **Message Logger** and **Configuring the Message Logger** section above.
 
-* Accessing these functions after the chart has rendered (you can use the [rendered](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html#event-rendered) [event listener](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to track if a chart has finished rendering).
+* Accessing these functions after the chart has rendered (you can use the [rendered](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events#event-rendered) [event listener](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs#eventListener) to track if a chart has finished rendering).
 
 ## Clear Chart View
 

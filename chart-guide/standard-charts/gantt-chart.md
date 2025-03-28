@@ -152,7 +152,7 @@ The Gantt chart is a specialized chart that you can use to monitor the progress 
 
 As an example, see how you can create a Gantt chart that monitors the various processes and tasks involved in optimizing the reach of an organization on social media.
 
-> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here](/installation/client-side-frameworks/install-using-plainjs)**.
+> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here](/getting-started/plain-javascript/your-first-chart-using-plain-javascript#installation-and-including-dependencies)**.
 
 A Gantt chart that you build to track the progress of a Social Media Optimization project looks like the following:
 

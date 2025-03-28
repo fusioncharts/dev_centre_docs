@@ -94,7 +94,7 @@ heading: Release Notes
 
 <h4>Improvements</h4>
 
-- Starting version 2.3.0, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
+- Starting version 2.3.0, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/upgrading/license-activation).
 
 <h2 class="sub-heading">Version 2.2.0</h2>
 

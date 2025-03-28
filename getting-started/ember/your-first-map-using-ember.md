@@ -180,7 +180,7 @@ module.exports = function(defaults) {
 
 - Set the map `width` and `height`
 
-- Set the map type as `world`. Each map is represented with a unique alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-maps).
+- Set the map type as `world`. Each map is represented with a unique alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](/map-guide/list-of-maps).
 
 - Set the data source
 

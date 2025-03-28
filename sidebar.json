@@ -25,6 +25,10 @@
                               "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                            },
                            {
+                              "title": "Your First Map",
+                              "path": "/getting-started/plain-javascript/your-first-map-using-plain-javascript"
+                           },
+                           {
                               "title": "Rendering Different Charts",
                               "path": "/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript"
                            }
@@ -2344,8 +2348,12 @@
                   "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-type"
                },
                {
-                  "title": "Export charts as bulk",
+                  "title": "Export charts in bulk",
                   "path": "/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk"
+               },
+               {
+                  "title": "Export charts in bulk using multiple JS or JSON files",
+                  "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
                },
                {
                   "title": "Change the export quality",
