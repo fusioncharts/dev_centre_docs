@@ -34954,7 +34954,7 @@
 						"listener": {
 							"name": "listener",
 							"type": ["FusionCharts~eventListener"],
-							"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+							"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs#eventListener) to read more about the eventListener arguments.\n\n",
 							"defaultvalue": "",
 							"optional": "",
 							"nullable": "",
@@ -35059,7 +35059,7 @@
 						"listener": {
 							"name": "listener",
 							"type": ["FusionCharts~eventListener"],
-							"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+							"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs#eventListener) to read more about the eventListener arguments.\n\n",
 							"defaultvalue": "",
 							"optional": "",
 							"nullable": "",

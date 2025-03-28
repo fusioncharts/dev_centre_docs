@@ -259,7 +259,7 @@ Drill down to detailed **linked charts** that show data at different levels of d
 
 ### Create and configure linked charts
 
-Using linked charts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
+Using linked charts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
 
 You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
 
@@ -277,7 +277,7 @@ Once you implement the steps above, the FusionCharts JavaScript class takes care
 
 - It clones all chart configuration settings from the parent chart to create the descendant charts.
 
-- It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
+- It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configureLink) function.
 
 - It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
 
@@ -705,7 +705,7 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
 
 Use the events object (under the dataSource object) to configure the events raised for a chart.
 
-> The FusionCharts.addEventListener() static function can be used to trap events globally—for all charts. For detailed descriptions of the LinkedChart events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
+> The FusionCharts.addEventListener() static function can be used to trap events globally—for all charts. For detailed descriptions of the LinkedChart events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events).
 
 ### Use JavaScript functions as links
 

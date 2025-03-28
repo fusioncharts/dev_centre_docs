@@ -196,7 +196,7 @@ To render the chart, follow the steps below:
 10. Insert the `mapDataArray` `dataSource["data"]` list.
 
 11. Create the gauge instance and set the following:
-    * Set the chart type as `world`. Each map is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-maps).
+    * Set the chart type as `world`. Each map is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias[ here ](/map-guide/list-of-maps).
 
     * Set the map `id`.
 

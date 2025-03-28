@@ -9,7 +9,7 @@ heading: Version 3.15.x
 
 <h4>Improvements</h4>
 
--  Starting version 3.15.3, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/dev/upgrading/license-activation).
+-  Starting version 3.15.3, licenses will be activated using a newly introduced license validation system. For more information, please refer to this [guide](/upgrading/license-activation).
 
 <h2 class="sub-heading">Version 3.15.2</h2>
 

@@ -652,4 +652,4 @@ chartInstance.render();
 
 Use the `events` object (under the `dataSource` object) to configure the events raised for a chart.
 
-> The `FusionCharts.addEventListener()` static function can be used to trap events globally — i.e., for all charts. For detailed descriptions of the `LinkedChart` events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
+> The `FusionCharts.addEventListener()` static function can be used to trap events globally — i.e., for all charts. For detailed descriptions of the `LinkedChart` events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events).

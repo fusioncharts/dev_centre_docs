@@ -164,7 +164,7 @@ A quarterly sales summary chart rendered with a trendzone to show a range of tar
 
 Click [here](http://jsfiddle.net/fusioncharts/6cq0uafp/) to edit the column chart.
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/trend-lines-and-zones.html).
+FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](/chart-guide/chart-configurations/trend-lines-and-zones).
 
 ## Plot Vertical Line Elements
 
@@ -207,7 +207,7 @@ A line chart rendered with a vertical line looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/cdjco7hq/) to edit the above chart.
 
-FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here.](https://www.fusioncharts.com/dev/basic-chart-configurations/vertical-lines.html)
+FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here.](/chart-guide/chart-configurations/vertical-lines)
 
 ## Change Chart Type
 

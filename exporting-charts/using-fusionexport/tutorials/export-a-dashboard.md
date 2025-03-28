@@ -244,7 +244,7 @@ Based on the template, chart configurations, and the code mentioned above, the e
 
 > The exported dashboard will have the default name of `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed. 
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/overview#fusionexport-sdks), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">

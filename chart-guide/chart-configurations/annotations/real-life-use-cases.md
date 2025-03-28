@@ -729,7 +729,7 @@ Click [here](http://jsfiddle.net/fusioncharts/3Lnm59z6/) to edit the above chart
 
 ## Create a Collaborative Dashboard
 
-Click [here](http://www.fusioncharts.com/dashboards/collaboration/) to see a collaborative dashboard that is a complex and practical example of how to use annotations, to add more information to a chart.
+Click [here](https://www.fusioncharts.com/resources/dashboard-primers/collaboration-dashboard) to see a collaborative dashboard that is a complex and practical example of how to use annotations, to add more information to a chart.
 
 Notice the callout that renders above the data plot for April. The callout is an annotation. When this callout is clicked, **annotationClick** event is triggered. This navigates the user to a view that shows the monthly sales analysis for April in the left pane and user comments on this analysis in the right pane. Every time a comment is added, the text annotation (showing the number of comments) alongside the callout is updated.
 
