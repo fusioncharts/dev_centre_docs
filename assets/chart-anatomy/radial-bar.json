@@ -6,7 +6,7 @@
       "contentGroup": [
          {
             "_itemHeader": "Radial Bar",
-            "imgSrc": "@@@.png",
+            "imgSrc": "radial-bar-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
@@ -106,19 +106,19 @@
                   "leftPosition": "33%",
                   "topPosition": "45%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the data plots, learn more about it . ",
+                     "linkDesc": "You can customize the data plots, learn more about it. ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
                   }]
                },
                {
                   "annotationNumber": "9",
                   "annotationName": "Tooltip",
-                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It is used to show additional information along with data plot names and values. ",
-                  "annotationDescLinkPath": "null",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It shows additional information, data plot names, and values. ",
+                  "annotationDescLinkPath": null,
                   "leftPosition": "66%",
                   "topPosition": "62.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
+                        "linkDesc": "You can customize padding, size, and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
                      },
                      {
