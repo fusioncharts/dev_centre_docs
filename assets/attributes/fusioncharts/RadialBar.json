@@ -1,5 +1,5 @@
 [
-  {
+   {
     "table": "Functional Attributes",
     "attrs": [
       {
@@ -16,7 +16,21 @@
         "name": "animationDuration"
       },
       {
-        "description": "FusionCharts XT offers the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
+        "description": "Animates the plot in clockwise direction. \n\nDefault value: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.11.0",
+        "name": "animateClockwise"
+      },
+      {
+        "description": "Instead of rotational animation, you can set alpha animation which displays your chart slowly from `0` alpha to `100`. \n\nDefault value : 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.11.0",
+        "name": "alphaAnimation"
+      },
+      {
+        "description": "FusionCharts XT introduces the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
         "range": "1-5",
         "type": "Number",
         "name": "palette"
@@ -28,71 +42,40 @@
         "name": "paletteColors"
       },
       {
-        "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
+        "description": "Configuration whether to show pies with 0 values (and their values). Otherwise, they won't show up in the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showZeroPies"
+      },
+      {
+        "description": "Whether to show percentage values in labels of the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showPercentValues"
+      },
+      {
+        "description": "Whether to show percentage values in tool tip.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showPercentInToolTip"
+      },
+      {
+        "description": "Whether to show labels on the chart.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLabels"
       },
       {
-        "description": "By default, all the labels are displayed on the chart. However, if you've a set of streaming data (like name of months or days of week), you can opt to show every n-th label for better clarity. This attribute just lets you do so. When a value greater than 1 (n) is set to this attribute, the first label from left and every label at the n-th position from left will be displayed. e.g., a chart showing data for 12 months and set with `labelStep: 3` will show labels for January, April, July, and October. The rest of the labels will be skipped.",
-        "range": "1 or above",
-        "type": "Number",
-        "name": "labelStep"
-      },
-      {
-        "description": "Restricts the maximum length of data labels in terms of percentage of the charts width that the data labels can occupy. If a data label is longer than the specified percentage width then it will either be wrapped or get truncated, subject to availability of vertical space. Unnecessary space is not reserved for the data labels, in case all of them are shorter than the specified maximum width.",
-        "range": "1-100",
-        "type": "Number",
-        "name": "maxLabelWidthPercent"
-      },
-      {
-        "description": "Restricts the minimum length of data labels in terms of percentage of the chart's width that the data labels can occupy. The space thus calculated stays reserved even if the label width is less than the minimum width.",
-        "range": "1-100",
-        "type": "Number",
-        "name": "minLabelWidthPercent"
-      },
-      {
-        "description": "This attribute lets you set whether the overflowing data labels will be truncated by adding ellipses.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.2.1",
-        "name": "useEllipsesWhenOverflow"
-      },
-      {
-        "description": "Sets the configuration whether data values will be displayed along with the data plot on chart.",
+        "description": "Whether to show values on the chart.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showValues"
       },
       {
-        "description": "If you've opted to show data values, you can show them inside the columns using this attribute. By default, the data values show outside the column.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "placeValuesInside"
-      },
-      {
-        "description": "Whether to show chart limit values.If not specified `showYAxisValues` attribute overrides this value.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showLimits"
-      },
-      {
-        "description": "Whether to show div line values. If not specified `showYAxisValues` attribute overrides this value.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showDivLineValues"
-      },
-      {
-        "description": "Whether to show bar shadows.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showShadow"
-      },
-      {
-        "description": "FusionCharts XT automatically tries to adjust divisional lines and limit values based on the data provided. However, if you want to set your explicit lower and upper limit values and number of divisional lines, first set this attribute to false. That will disable automatic adjustment of divisional lines.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "adjustDiv"
+        "description": "The character to separate the data label and data values on the chart.",
+        "range": "Character",
+        "type": "String",
+        "name": "labelSepChar"
       },
       {
         "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link format.",
@@ -106,18 +89,6 @@
         "type": "Boolean",
         "versionsince": "3.7.0",
         "name": "clickURLOverridesPlotLinks"
-      },
-      {
-        "description": "Sets the maximum allowed bar height.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "maxBarHeight"
-      },
-      {
-        "description": "This attribute lets you set whether the y-axis lower limit will be 0 (in case of all positive values on chart) or should the y-axis lower limit adapt itself to a different figure based on values provided to the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "setAdaptiveYMin"
       },
       {
         "description": "Uses the same data plot color for data labels.",
@@ -134,24 +105,16 @@
         "name": "hasRTLText"
       },
       {
+        "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
+        "range": "",
+        "type": "String",
+        "name": "plotHighlightEffect"
+      },
+      {
         "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
-      },
-      {
-        "description": "This attribute is used to skip the data plot without any change in visualization. When set to `1`, minimum one data plot will be rendered within the width of one pixel. \n\n Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel. For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot will be rendered within the width of one pixel. Data skipping can be disabled by setting this attribute to `0`. \n\n Default value: __0.5__",
-        "range": "In Pixels",
-        "type": "Number",
-        "versionsince": "3.12.0",
-        "name": "plotBinSize"
-      },
-      {
-        "description": "This attribute is used to skip the labels of the data plots. When set to `1`, minimum one label will be displayed within the width of one pixel. To disable this label skipping, set this attribute to `0`. \n\nDefault value: __1__",
-        "range": "In Pixels",
-        "type": "Number",
-        "versionsince": "3.12.0",
-        "name": "labelBinSize"
       },
       {
         "description": "This attribute changes the theme of the chart. There are 7 types of themes which have been made according to the different color combinations.",
@@ -160,5 +123,958 @@
         "name": "theme"
       }
     ],
-    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. "
+    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values etc. You can also set chart limits and extended properties. "
   },
+  {
+    "table": "Chart Titles",
+    "attrs": [
+      {
+        "description": "Caption of the chart.",
+        "type": "String",
+        "name": "caption"
+      },
+      {
+        "description": "Sub-caption of the chart.",
+        "type": "String",
+        "name": "subCaption"
+      }
+    ],
+    "description": "Using these attributes, you can set the various headings and titles of chart like caption and sub-caption. "
+  },
+  {
+    "table": "Chart Caption Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets horizontal alignment of caption",
+        "range": "\"left\", \"center\", \"right\"",
+        "type": "String",
+        "name": "captionAlignment"
+      },
+      {
+        "description": "Whether caption should be on top of the data plot area",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "captionOnTop"
+      },
+      {
+        "description": "Sets the caption font size in pixels. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "captionFontSize"
+      },
+      {
+        "description": "Sets the sub-caption font size (in pixels). Besides pixels (px) values can also be defined in rem, %, em, and vw.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "subCaptionFontSize"
+      },
+      {
+        "description": "Sets the caption font family",
+        "range": "Font Name",
+        "type": "String",
+        "name": "captionFont"
+      },
+      {
+        "description": "Sets the sub-caption font family",
+        "range": "Font Name",
+        "type": "String",
+        "name": "subCaptionFont"
+      },
+      {
+        "description": "Sets the caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "captionFontColor"
+      },
+      {
+        "description": "Sets the sub-caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "subCaptionFontColor"
+      },
+      {
+        "description": "Whether the caption font should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "captionFontBold"
+      },
+      {
+        "description": "Whether the sub caption font should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "subCaptionFontBold"
+      },
+      {
+        "description": "Whether the caption is aligned with the canvas. Else, it will be aligned with the entire chart area",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "alignCaptionWithCanvas"
+      },
+      {
+        "description": "If caption is not centre aligned, lets you configure the padding (in pixels) from either edge.\nWill be ignored if caption is centre aligned.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "captionHorizontalPadding"
+      }
+    ],
+    "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."
+  },
+  {
+    "table": "Font Properties",
+    "attrs": [
+      {
+        "description": "This attribute lets you set the font face (family) of all the text (data labels, values etc.) on chart.",
+        "range": "Font Name",
+        "type": "String",
+        "name": "baseFont"
+      },
+      {
+        "description": "This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "baseFontSize"
+      },
+      {
+        "description": "This attribute sets the base font color of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font color provided here.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "baseFontColor"
+      }
+    ],
+    "description": " Using the attributes below, you can define the generic font properties for all the text on the chart. These attributes allow you a high level control over font properties. If you intend to specify font properties for individual chart elements (like Caption, sub-caption etc.), you'll need to use the Styles feature of FusionCharts XT. Using Styles, you can also specify advanced font properties like Bold, Italics, HTML Mode etc. "
+  },
+   {
+    "table": "Data Label Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets the x-axis label font family for the text.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "labelFont"
+      },
+      {
+        "description": "Sets the x-axis label font color.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "labelFontColor"
+      },
+      {
+        "description": "Specifies the x-axis label font size. Besides pixels (px) values can also be defined in rem, %, em, and vw.",
+        "range": "6 - 72",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelFontSize"
+      },
+      {
+        "description": "Flag indicating whether x-axis label font should be bold or not.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.5.0",
+        "name": "labelFontBold"
+      },
+      {
+        "description": "Flag indicating whether x-axis label font should be italicized or not.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.5.0",
+        "name": "labelFontItalic"
+      },
+      {
+        "description": "Sets the background color for x-axis label text.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "labelBgColor"
+      },
+      {
+        "description": "Sets the color of the border around the x-axis label text.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "labelBorderColor"
+      },
+      {
+        "description": "Sets the x-axis label alpha for both font and background.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelAlpha"
+      },
+      {
+        "description": "Sets the x-axis label background alpha.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBgAlpha"
+      },
+      {
+        "description": "Sets the x-axis label border alpha.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderAlpha"
+      },
+      {
+        "description": "Sets the x-axis label border padding.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderPadding"
+      },
+      {
+        "description": "Sets the x-axis label border radius.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderRadius"
+      },
+      {
+        "description": "Sets the x-axis label border thickness.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderThickness"
+      },
+      {
+        "description": "Whether the border around x-axis labels should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.5.0",
+        "name": "labelBorderDashed"
+      },
+      {
+        "description": "Sets the length of each dash when the border around the x-axis labels are rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderDashLen"
+      },
+      {
+        "description": "Sets the gap between two consecutive dashes when the border around x-axis labels are rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "labelBorderDashGap"
+      },
+      {
+        "description": "Sets a link for every data plot label.",
+        "range": "",
+        "type": "URL",
+        "versionsince": "3.5.0",
+        "name": "labelLink"
+      },
+      {
+        "description": "Enables the use of pattern fills at global level.",
+        "range": "1/0",
+        "type": "Boolean",
+        "versionsince": "3.16.0",
+        "name": "usePattern"
+      },
+      {
+        "description": "Set the type of pattern, possible values are: `circle`, `square`, and `line`. The default value is `line`",
+        "range": "'circle', 'square', 'line'",
+        "type": "String",
+        "versionsince": "3.16.0",
+        "name": "patternType"
+      },
+      {
+        "description": "Set the angle of the pattern fill in degrees. The default value is 40 for lines and 0 for circle and square.",
+        "range": "0-360",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternAngle"
+      },
+      {
+        "description": "Set the density of pattern fill shapes in pixels. The default value is 6.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternDensity"
+      },
+      {
+        "description": "Set the size of the pattern fill shape.\n\nIt sets the thickness of lines, the default value is 2.\nIt sets the diameter of circles, the default value is 4.\nIt sets the length of squares, the default value is 4.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternSize"
+      },
+      {
+        "description": "Sets the color of pattern shapes in 6-digit hex color notation, by default it inherits values from `paletteColors`.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.16.0",
+        "name": "color"
+      },
+      {
+        "description": "Set the opacity of pattern shapes in %. The default value is 100.",
+        "range": "0-100",
+        "type": "Number",
+        "versionsince": "3.16.0",
+        "name": "patternAlpha"
+      },
+      {
+        "description": "Set the background color for pattern fills in 6-digit hex color notation.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.16.0",
+        "name": "patternBgColor"
+      },
+      {
+        "description": "Set the padding for the label.",
+        "range": "0-100",
+        "type": "Pixels",
+        "versionsince": "3.17.0",
+        "name": "labelPadding"
+      },
+      {
+        "description": "Use this attribute to show or hide the context label.",
+        "range": "0, 1",
+        "type": "Boolean",
+        "versionsince": "3.17.0",
+        "name": "showContextLabel"
+      },
+      {
+        "description": "Use this attribute to specify the context label which will be displayed.",
+        "range": "0, 1",
+        "type": "Boolean",
+        "versionsince": "3.17.0",
+        "name": "defaultContextLabel"
+      },
+      {
+        "description": "Use this attribute to specify the context label text which will be displayed.",
+        "range": "$label, $value, $dataValue, $barColor, $plotIdentifier, $icon",
+        "type": "string",
+        "versionsince": "3.17.0",
+        "name": "contextLabelText"
+      },
+       {
+        "description": "Use this attribute to specify the context label font style.",
+        "range": "font",
+        "type": "string",
+        "versionsince": "3.17.0",
+        "name": "contextLabelFont"
+      },
+        {
+        "description": "Use this attribute to specify the context label font size.",
+        "range": "0-100",
+        "type": "number",
+        "versionsince": "3.17.0",
+        "name": "contextLabelFontSize"
+      },
+        {
+        "description": "Use this attribute to specify the context label font size.",
+        "range": "hex code",
+        "type": "string",
+        "versionsince": "3.17.0",
+        "name": "contextLabelFontColor"
+      },
+      {
+        "description": "Use this attribute to specify the context label opacity.",
+        "range": "0-100",
+        "type": "number",
+        "versionsince": "3.17.0",
+        "name": "contextLabelAlpha"
+      },
+      {
+        "description": "You can individually opt to show/hide labels of individual data items using this attribute.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2.2 - SR5",
+        "name": "showLabel"
+      }
+    ],
+    "description": "These attributes let you configure the cosmetics of all data labels of the chart."
+  },
+  {
+    "table": "Legend Properties",
+    "attrs": [
+      {
+        "description": "Whether to show legend on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "showLegend"
+      },
+      {
+        "description": "Whether legend keys should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendItemFontBold"
+      },
+      {
+        "description": "Sets legend item font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendItemFont"
+      },
+      {
+        "description": "Sets legend item font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendItemFontSize"
+      },
+      {
+        "description": "Sets legend item font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemFontColor"
+      },
+      {
+        "description": "Sets legend item font color on hover",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemHoverFontColor"
+      },
+      {
+        "description": "The legend can be plotted at different positions with respect to the chart. Note that if the value of `legendPosition` is set to `absolute`, you also need to set the coordinates of the legend. You can do that using the attributes `legendXPosition` and `legendYPosition`, both of which accept absolute or percentage values.",
+        "range": "bottom, right, top, top-left, top-right, bottom-left, bottom-right, left, left-top, left-bottom, right, right-top, right-bottom, and absolute",
+        "type": "String",
+        "name": "legendPosition"
+      },
+      {
+        "description": "When the value of `legendPosition` is set to `absolute`, use this attribute to set the X-coordinate of the legend. It accepts absolute or percentage values. By default, its value is set to `0`.",
+        "range": "0 to chart width (in pixels)",
+        "type": "Number",
+        "name": "legendXPosition"
+      },
+      {
+        "description": "When the value of `legendPosition` is set to `absolute`, use this attribute to set the Y-coordinate of the legend. It accepts absolute or percentage values. By default, its value is set to `0`.",
+        "range": "0 to chart height (in pixels)",
+        "type": "Number",
+        "name": "legendYPosition"
+      },
+      {
+        "description": "Sets the number of rows the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumRows"
+      },
+      {
+        "description": "Sets the number of columns the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumColumns"
+      },
+      {
+        "description": "Sets the legend caption horizontal alignment .",
+        "range": "\"left\", \"center\", \"right\"",
+        "type": "String",
+        "name": "legendCaptionAlignment"
+      },
+      {
+        "description": "Whether legend caption should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendCaptionFontBold"
+      },
+      {
+        "description": "Sets legend caption font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendCaptionFont"
+      },
+      {
+        "description": "Sets legend caption font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendCaptionFontSize"
+      },
+      {
+        "description": "Sets legend caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendCaptionFontColor"
+      },
+      {
+        "description": "You can add a caption for the entire legend by setting the same here.",
+        "range": " ",
+        "type": "String",
+        "versionsince": "3.2",
+        "name": "legendCaption"
+      },
+      {
+        "description": "Sets the color that applies on both text font and icon when they are in a  disabled / hidden state",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemHiddenColor"
+      },
+      {
+        "description": "Scaling of legend icon is possible in FusionCharts XT. This attribute lets you control the size of the legend icon. The default scale value is 1. Anything less than 1 reduces the size of the legend-icons on the chart. Any value bigger than 1 enlarges the icons. e.g., 0.5 means half the size, where as, 2 means twice the size.",
+        "range": "1-5",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendIconScale"
+      },
+      {
+        "description": "Background color for the legend.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.2",
+        "name": "legendBgColor"
+      },
+      {
+        "description": "Background alpha for the legend.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendBgAlpha"
+      },
+      {
+        "description": "Border Color for the legend.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.2",
+        "name": "legendBorderColor"
+      },
+      {
+        "description": "Border thickness for the legend.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendBorderThickness"
+      },
+      {
+        "description": "Border alpha for the legend.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendBorderAlpha"
+      },
+      {
+        "description": "Whether to show a shadow for legend.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "legendShadow"
+      },
+      {
+        "description": "The legend can be made drag-able by setting this attribute to 1. End viewers of the chart can drag the legend around on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "legendAllowDrag"
+      },
+      {
+        "description": "If you've too many items on the legend, a scroll bar shows up on the same. This attribute lets you configure the background color of the scroll bar.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.2",
+        "name": "legendScrollBgColor"
+      },
+      {
+        "description": "You can reverse the ordering of datasets in the legend by setting this attribute to 1.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "reverseLegend"
+      },
+      {
+        "description": "This attribute lets you interact with the legend in your chart. When you click a particular legend key, the associated slice slides out from the chart. Re-clicking the key causes the slice to slide in.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "interactiveLegend"
+      },
+      {
+        "description": "The legend items are arranged in columns. Using this attribute, you can propose the number of columns. This value undergoes internal checking on judicious use of white-space. In case, the value is found improper, the chart auto-calculates the number of columns. When set to 0, the chart automatically decides the number of columns. The above is applicable when `legendPosition` is set to BOTTOM`.` If you have set RIGHT `legendPosition`, the number of columns is always set to 1.",
+        "range": "Zero and Positive Integers",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendNumColumns"
+      },
+      {
+        "description": "Whether to minimize legend item text wrapping.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "minimiseWrappingInLegend"
+      },
+      {
+        "description": "Specifies whether drawing a custom legend icon will be enabled. All legend icon customization attributes will work only if this feature is enabled. \n\nDefault value: 0 (disabled)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.8.0",
+        "name": "drawCustomLegendIcon"
+      },
+      {
+        "description": "Sets the border color for the legend icon. \n\nDefault value: Data plot border color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.8.0",
+        "name": "legendIconBorderColor"
+      },
+      {
+        "description": "Sets the background color for the legend icon. \n\nDefault value: Data plot fill color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.8.0",
+        "name": "legendIconBgColor"
+      },
+      {
+        "description": "Sets the legend icon transparency. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconAlpha"
+      },
+      {
+        "description": "Sets the legend icon background transparency. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconBgAlpha"
+      },
+      {
+        "description": "Sets the number of sides for the legend icon. \n\nDefault value: 4",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconSides"
+      },
+      {
+        "description": "Sets the thickness of the legend icon border. \n\nDefault value: 1",
+        "range": "1-5",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconBorderThickness"
+      },
+      {
+        "description": "Sets the starting angle of for drawing the legend icon. \n\nDefault value: 45",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconStartAngle"
+      },
+      {
+        "description": "This attribute if set to `0`, the legend box will be center aligned with respect to the entire width of the chart only if the total width of the legend box is more than the canvas width. By default, the legend box is center aligned with respect to the canvas width and it remains the same if the width of the legend box is less than the canvas width.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.0",
+        "name": "alignLegendWithCanvas"
+      }
+    ],
+    "description": " In Radial Bar charts, the name of each bar shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
+  },
+   {
+    "table": "Track and Bar",
+    "attrs": [
+      {
+        "description": "This attribute lets you explicitly set the inner radius of the chart. FusionCharts XT automatically calculates the best fit radius for the chart. This attribute is useful if you want to enforce one of your own values. Starting v3.14.0, you can specify the radius of a doughnut chart in both percentage and pixel values.",
+        "range": "In Pixels & Percentage",
+        "type": "Number",
+        "versionsince": "3.17",
+        "name": "innerRadius"
+      },
+      {
+        "description": "This attribute lets you explicitly set the outer radius of the chart. FusionCharts XT automatically calculates the best fit radius for the chart. This attribute is useful if you want to enforce one of your own values. Starting v3.14.0, you can specify the radius of a doughnut chart in both percentage and pixel values.",
+        "range": "In Pixels & Percentage",
+        "type": "Number",
+        "versionsince": "3.17",
+        "name": "outerRadius"
+      },
+      {
+        "description": "By default, the Radial Bar chart starts from angle 90 degrees. If you want to change the starting angle of the chart, use this attribute. It obeys the conventions of co-ordinate geometry where 0 degrees means hand of a clock at 3. Starting angle Increases anti-clockwise.",
+        "range": "0-360",
+        "type": "Number",
+        "name": "startAngle"
+      },
+      {
+        "description": "By default, the Radial Bar chart end from angle 180 degrees. If you want to change the starting angle of the chart, use this attribute. It obeys the conventions of co-ordinate geometry where 0 degrees means hand of a clock at 3. Starting angle Increases anti-clockwise.",
+        "range": "0-360",
+        "type": "Number",
+        "name": "endAngle"
+      },
+      {
+        "description": "Controls and enforces the space between the bars and tracks.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "trackPadding"
+      },
+        {
+        "description": "Controls and enforces the space between the bars. The default value will be 6px.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "trackMargin"
+      },
+        {
+        "description": "Modifies the radius of the track corners at the start.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "trackStartRadius"
+      },
+       {
+        "description": "Modifies the radius of the track corners at the end.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "trackEndRadius"
+      },
+      {
+        "description": "Modifies the radius of the bar's corner at the start.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "barStartRadius"
+      },
+       {
+        "description": "Modifies the radius of the bar's corner at the end.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "barEndRadius"
+      },
+      {
+        "description": "Sets the opacity for the bars. Default is set to 100%.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "barAlpha"
+      },
+       {
+        "description": "Sets the opacity for the tracks. Default is set to 40%.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "trackAlpha"
+      },
+       {
+        "description": "Set at the data level so that individual plot colors could be configured.",
+        "range": "hex code",
+        "type": "string",
+        "name": "color"
+      },
+      {
+        "description": "Set at both chart and data level. If set on chart level then it should be applied to all the tracks.",
+        "range": "hex code",
+        "type": "string",
+        "name": "trackFillColor"
+      },
+       {
+        "description": "Sets the border for the tracks. Default is set to none.",
+        "range": "Solid, Dash, None",
+        "type": "Text",
+        "name": "trackBorder"
+      },
+       {
+        "description": "Sets the border for the bars. Default is set to none.",
+        "range": "Solid, Dash, None",
+        "type": "string",
+        "name": "barBorder"
+      },
+       {
+        "description": "Configure the color of the track border.",
+        "range": "hex code",
+        "type": "string",
+        "name": "trackBorderColor"
+      },
+       {
+        "description": "Configure the color of the bar border.",
+        "range": "hex code",
+        "type": "string",
+        "name": "barBorderColor"
+      },
+       {
+        "description": "Configure the opacity for the track border.",
+        "range": "0-100",
+        "type": "number",
+        "name": "trackBorderAlpha"
+      },
+       {
+        "description": "Configure the opacity for the bar border.",
+        "range": "0-100",
+        "type": "number",
+        "name": "barBorderAlpha"
+      },
+      {
+        "description": "Configure the thickness for the track's border.",
+        "range": "0-100",
+        "type": "number",
+        "name": "trackBorderThickness"
+      },
+       {
+        "description": "Configure the thickness for the bar's border.",
+        "range": "0-100",
+        "type": "number",
+        "name": "barBorderThickness"
+      }
+      ],
+    "description": "The following attributes let you control various functionalities of the Radial Bar chart."
+  },
+  {
+    "table": "Icon",
+    "path": "FusionCharts",
+    "attrs": [
+      {
+        "description": "Set the URL of the icon you want to render.",
+        "range": "url",
+        "type": "string",
+        "name": "icon"
+      },
+      {
+        "description": "Configure wether to show or hide the labels for the icons.",
+        "range": "0, 1",
+        "type": "boolean",
+        "name": "showLabelIcon"
+      },
+      {
+        "description": "Place icon inside or outside chart.",
+        "range": "0, 1",
+        "type": "boolean",
+        "name": "placeValueInside"
+      },
+       {
+        "description": "Use this attribute to increase or decrease the label icon size.",
+        "range": "1-100",
+        "type": "number",
+        "name": "iconScale"
+      },
+      {
+        "description": "Use this attribute to select the icon's position.",
+        "range": "start, end",
+        "type": "string",
+        "name": "iconPosition"
+      }
+      ],
+    "description": "The following attributes let you control the icon functionalities of the Radial Bar chart."
+  },
+  {
+    "table": "Ticks",
+    "path": "FusionCharts",
+    "attrs": [
+      {
+        "description": "Choose the number for the ticks.",
+        "range": "1-100",
+        "type": "Number",
+        "name": "numTicks"
+      },
+       {
+        "description": "Choose the show or hide the tick values.",
+        "range": "0, 1",
+        "type": "Boolean",
+        "name": "showTickValues"
+      },
+      {
+        "description": "Selects the font for the tick's value.",
+        "range": "Font",
+        "type": "String",
+        "name": "tickValueLabelFont"
+      },
+      {
+        "description": "Select the tick's value font size.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickValueFontSize"
+      },
+        {
+        "description": "Select the tick's value font color.",
+        "range": "Hex code",
+        "type": "String",
+        "name": "tickValueFontColor"
+      },
+      {
+        "description": "Select the tick's value font color.",
+        "range": "1-100",
+        "type": "Number",
+        "name": "tickValueAlpha"
+      },
+       {
+        "description": "Choose to display or to hide tick marks.",
+        "range": "0, 1",
+        "type": "Boolean",
+        "name": "showTickMarks"
+      },
+       {
+        "description": "Specify the lenght of tick marks.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickMarkLenght"
+      },
+       {
+        "description": "Specify the thickness of tick marks.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickMarkThickness"
+      },
+       {
+        "description": "Specify the opacity of tick marks.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickAlpha"
+      },
+      {
+        "description": "Specify the opacity of tick mark's value.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickValueAlpha"
+      },
+      {
+        "description": "Choose the tick mark color.",
+        "range": "Hex code",
+        "type": "String",
+        "name": "tickMarkColor"
+      }
+      ],
+    "description": "The following attributes let you control the tick functionalities of the Radial Bar chart."
+  },
+   {
+    "table": "Tooltip Attributes",
+    "attrs": [
+      {
+        "description": "Whether to show tool tip on chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolTip"
+      },
+      {
+        "description": "Background color for tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBgColor"
+      },
+      {
+        "description": "Font color for the tool-tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipColor"
+      },
+      {
+        "description": "Border color for tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBorderColor"
+      },
+      {
+        "description": "Sets the border transparency for tool tip.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "tooltipBorderAlpha"
+      },
+      {
+        "description": "The character specified as the value of this attribute separates the name and value displayed in tool tip.",
+        "range": "",
+        "type": "String",
+        "name": "toolTipSepChar"
+      },
+      {
+        "description": "Whether to show shadow for tool-tips on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolTipShadow"
+      },
+      {
+        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
+        "range": "",
+        "type": "String",
+        "name": "plottooltext"
+      },
+      {
+        "description": "Configure the tooltip's position.",
+        "range": "auto, top and bottom",
+        "type": "String",
+        "name": "tooltipPosition"
+      }
+    ],
+    "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
+  }
+  ]
+      
+      
+      
+      
