@@ -161,4 +161,5 @@
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. "
-  },
+  }
+]
