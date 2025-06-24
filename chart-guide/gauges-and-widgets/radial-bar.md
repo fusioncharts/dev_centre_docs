@@ -35,7 +35,9 @@ Click [here](fiddle link) to edit the above chart.
 ### Customize Track and Bar
 
 #### Configure Outer and Inner Radius
-Based on the data values provided, the inner and outer radius are automatically calculated for the color range scale. You can set the radius using the following attributes:
+Based on the data values provided, the inner and outer radii are automatically calculated for the color range scale. The default value for inner and outer radius is  55px and 77px, respectively. 
+
+You can set the radius using the following attributes:
  - Specify the outer radius (in percentage or pixels values) using the `outerRadius` attribute.
  - Specify the inner radius (in percentage or pixels values) using the `innerRadius` attribute.
 
