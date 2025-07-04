@@ -1250,6 +1250,11 @@
                 "alias": "nordland",
                 "specSheet": "/maps/spec-sheets/nordland"
               },
+{
+                "name": "Oppland",
+                "alias": "oppland",
+                "specSheet": "/maps/spec-sheets/oppland"
+              },
               {
                 "name": "Oslo",
                 "alias": "oslo",
@@ -3510,6 +3515,11 @@
                 "name": "Arkansas Area Code",
                 "alias": "arkansasareacode",
                 "specSheet": "/maps/spec-sheets/arkansasareacode"
+              },
+              {
+                "name": "Boston Area Code",
+                "alias": "bostonareacode",
+                "specSheet": "/maps/spec-sheets/bostonareacode"
               },
               {
                 "name": "California Area Code",
@@ -7184,6 +7194,11 @@
                 "name": "Zambales",
                 "alias": "zambales",
                 "specSheet": "/maps/spec-sheets/zambales"
+              },
+              {
+                "name": "Zamboanga City",
+                "alias": "zamboangacity",
+                "specSheet": "/maps/spec-sheets/zamboangacity"
               },
               {
                 "name": "Zamboanga Sibugay",

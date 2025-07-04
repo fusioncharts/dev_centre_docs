@@ -6,7 +6,7 @@
       "contentGroup": [
          {
             "_itemHeader": "Radial Bar",
-            "imgSrc": "@@@.png",
+            "imgSrc": "radial-bar-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",

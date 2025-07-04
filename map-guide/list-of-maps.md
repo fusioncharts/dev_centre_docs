@@ -552,7 +552,6 @@ To render these maps, you need to download the map definition files from [here](
 | [Central Uganda](/maps/spec-sheets/centraluganda)                               | maps/centraluganda             |
 | [Northern Uganda](/maps/spec-sheets/northernuganda)                             | maps/northernuganda            |
 | [Eastern Uganda](/maps/spec-sheets/easternuganda)                               | maps/easternuganda             |
-| [Southern Uganda](/maps/spec-sheets/southernuganda)                             | maps/southernuganda            |
 | [Western Sahara](/maps/spec-sheets/westernsahara)                               | maps/westernsahara             |
 | [Zambia](/maps/spec-sheets/zambia)                                              | maps/zambia                    |
 | [Zimbabwe](/maps/spec-sheets/zimbabwe)                                          | maps/zimbabwe                  |
