@@ -1764,6 +1764,12 @@
         "name": "markerColor"
       },
       {
+        "description": "This attribute specifies the vertical distance between the drag marker and the marker label (the value text shown when dragging). ",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "markerLabelOffset"
+      },
+      {
         "description": "Radius of the marker.",
         "range": "In pixels",
         "type": "Number",
