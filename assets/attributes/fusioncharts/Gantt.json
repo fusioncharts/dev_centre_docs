@@ -148,6 +148,12 @@
         "type": "Boolean",
         "versionsince": "3.5.0",
         "name": "forceRowHeight"
+      },
+      {
+        "description": "Drag-able charts of PowerCharts XT pack allow you to configure each dataset as drag-able or non-drag-able using this attribute. Your end users will only be able to change the data belonging to drag-able datasets.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "allowDrag"
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties."
