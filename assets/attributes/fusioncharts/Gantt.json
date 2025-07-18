@@ -154,6 +154,18 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "allowDrag"
+      },
+      {
+        "description": "This attribute updates the actual start date / actual end date columns when taskbars are dragged.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "autoUpdateStartEndDateColumn"
+      },
+      {
+        "description": "This attribute allows taskbars to be dragged over adjacent ones, enabling visual overlap when they occur at the same time or overlapping periods.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "allowTaskbarOverlap"
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties."
