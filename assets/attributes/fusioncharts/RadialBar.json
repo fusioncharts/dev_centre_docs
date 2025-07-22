@@ -312,7 +312,7 @@
       },
       {
         "description": "This attribute allows you to toggle the visibility of the context label displayed in the center of the radial chart. Use it to show or hide additional context or summary information within the chart’s inner area.",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Boolean",
         "name": "showContextLabel"
       },
@@ -354,7 +354,7 @@
       },
       {
         "description": "This attribute controls the visibility of both ticks and their corresponding values on the radial chart. Set it to 1 to display them, or 0 to hide both the ticks and their labels.",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Boolean",
         "name": "showTicks"
       },
@@ -366,7 +366,7 @@
       },
       {
         "description": "This attribute toggles the visibility of the values displayed alongside each tick. By default, the values are visible (1).",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Boolean",
         "name": "showTickValues"
       },
@@ -396,7 +396,7 @@
       },
       {
         "description": "This attribute controls the visibility of the tick marks on the radial chart. By default, tick marks are visible.",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Boolean",
         "name": "showTickMarks"
       },
@@ -1502,7 +1502,7 @@
       },
       {
         "description": "This attribute places the data value inside of a particular track. The default value is 0.",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Boolean",
         "name": "placeValuesInside"
       },
@@ -1547,7 +1547,7 @@
       },
       {
         "description": "Helps configure the position of the vLine label by setting a relative position between 0 and 1. In vertical charts, 0 means top of canvas and 1 means bottom. In horizontal charts, 0 means left of canvas and 1 means right.",
-        "range": "0-1",
+        "range": "0/1,
         "type": "Number",
         "name": "labelPosition"
       }
