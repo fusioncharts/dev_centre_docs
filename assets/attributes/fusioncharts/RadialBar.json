@@ -1538,7 +1538,7 @@
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelFontSize"
-      }
+      },
       {
         "description": "This attribute sets the vertical space between the labels and canvas bottom edge. If you want more space between the canvas and the x-axis labels, you can use this attribute to control it.",
         "range": "In Pixels",
