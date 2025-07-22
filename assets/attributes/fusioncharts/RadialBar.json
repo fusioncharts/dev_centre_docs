@@ -298,62 +298,146 @@
         "name": "bgImageHAlign"
       },
       {
-        "description": "Helps you magnify the background image.This attribute will only work when the attribute `bgImageDisplayMode` is set to none, center, or tile.",
+        "description": "Helps you magnify the background image. This attribute will only work when the attribute `bgImageDisplayMode` is set to none, center, or tile.",
         "range": "0-300",
         "type": "Number",
         "versionsince": "3.2.2",
         "name": "bgImageScale"
       },
       {
-        "description": "You can load an external logo (JPEG/PNG) to your chart. This attribute lets you specify the URL. Due to cross-domain security restrictions, it is advised to use a logo from the same domain name as your charts.",
-        "range": "URL",
-        "type": "String",
-        "name": "logoURL"
-      },
-      {
-        "description": "This attribute helps you set the amount of empty space that you want to put on the left side of your logo image. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "logoLeftMargin"
-      },
-      {
-        "description": "This attribute helps you set the amount of empty space that you want to put on top of your logo image. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "logoTopMargin"
-      },
-      {
-        "description": "Where to position the logo on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
-        "range": "TL, TR, BL, BR, CC",
-        "type": "String",
-        "name": "logoPosition"
-      },
-      {
-        "description": "Once the logo has loaded on the chart, you can configure its opacity using this attribute.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "logoAlpha"
-      },
-      {
-        "description": "You can also change the scale of an externally loaded logo at run-time by specifying a value for this parameter.",
+        "description": "Helps you magnify the background image. This attribute will only work when the attribute `bgImageDisplayMode` is set to none, center, or tile.",
         "range": "0-300",
         "type": "Number",
-        "name": "logoScale"
+        "name": "showLabelIcon"
       },
       {
-        "description": "If you want to link the logo to an external URL, specify the link in this attribute. The link can be in FusionCharts Link format, allowing you to link to new windows, pop-ups, frames etc.",
-        "range": "URL",
+        "description": "This attribute allows you to toggle the visibility of the context label displayed in the center of the radial chart. Use it to show or hide additional context or summary information within the chart’s inner area.",
+        "range": "0-1",
+        "type": "Boolean",
+        "name": "showContextLabel"
+      },
+      {
+        "description": "This attribute sets the default context label shown at the center of the radial chart when no bar is hovered. You can include supported inline HTML elements to customize the appearance of the label.",
+        "range": "",
         "type": "String",
-        "name": "logoLink"
+        "name": "defaultContextLabel"
+      },
+      {
+        "description": "This attribute allows you to define the content of the context label that appears at the center of the radial chart when a bar is hovered over any of the track bars. The attribute supports macros like `$label`, `$value`, `$dataValue`, etc. to dynamically display data-specific information.",
+        "range": "`$label`- `$value`- `$dataValue`- `$barColor`- `plotIdentifier`- `icon`",
+        "type": "String",
+        "name": "contextLabelText"
+      },
+      {
+        "description": "This attribute allows you to define the font of the context label that appears at the center of the radial chart when a bar is hovered over any of the track bars. If this is not defined, then `baseFont` will be used for context labels.",
+        "range": "Font Name",
+        "type": "String",
+        "name": "contextLabelFont"
+      },
+      {
+        "description": "This attribute allows you to define the font size of the context label that appears at the center of the radial chart when a bar is hovered over any of the track bars, accepting `px`, `em`, `rem`, `%`, `vw` units. If this is not defined, then `baseFontSize` will be used for context labels.",
+        "range": "Font Name",
+        "type": "Number and String Percentage",
+        "name": "contextLabelFontSize"
+      },
+      {
+        "description": "This attribute allows you to define the font color of the context label that appears at the center of the radial chart when a bar is hovered over any of the track bars. If this is not defined, then `baseFontColor` will be used for context labels.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "contextLabelFontColor"
+      },
+      {
+        "description": "This attribute allows you to define the transparency of the context label that appears at the center of the radial chart when a bar is hovered over any of the track bars.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "contextLabelAlpha"
+      },
+      {
+        "description": "This attribute controls the visibility of both ticks and their corresponding values on the radial chart. Set it to 1 to display them, or 0 to hide both the ticks and their labels.",
+        "range": "0-1",
+        "type": "Boolean",
+        "name": "showTicks"
+      },
+      {
+        "description": "This attribute lets you manually set the number of tick divisions on the radial chart. If not specified, the chart automatically calculates the divisions based on available space. Invalid or unsupported values will revert the chart to auto mode.",
+        "range": "",
+        "type": "Number",
+        "name": "numTicks"
+      },
+      {
+        "description": "This attribute toggles the visibility of the values displayed alongside each tick. By default, the values are visible (1).",
+        "range": "0-1",
+        "type": "Boolean",
+        "name": "showTickValues"
+      },
+      {
+        "description": "This attribute lets you set the font of the tick label values for the radial chart.",
+        "range": "Font Name",
+        "type": "String",
+        "name": "tickValueLabelFont"
+      },
+      {
+        "description": "This attribute lets you set the font size of the tick label values in `px`, `em`, `rem`, `%`, `vw` units for the radial chart.",
+        "range": "",
+        "type": "Number",
+        "name": "tickValueFontSize"
+      },
+      {
+        "description": "This attribute lets you set the font color of the tick label values in hex string for the radial chart.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "tickValueFontColor"
+      },
+      {
+        "description": "This attribute lets you set the transparency of the tick labels.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickValueAlpha"
+      },
+      {
+        "description": "This attribute controls the visibility of the tick marks on the radial chart. By default, tick marks are visible.",
+        "range": "0-1",
+        "type": "Boolean",
+        "name": "showTickMarks"
+      },
+      {
+        "description": "This attribute lets you set the color of the tick marks.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "tickMarkColor"
+      },
+      {
+        "description": "This attribute lets you set the tick marks' length in pixels.",
+        "range": "",
+        "type": "Number",
+        "name": "tickMarkLength"
+      },
+      {
+        "description": "This attribute lets you set the tick marks' thickness in pixels.",
+        "range": "",
+        "type": "Number",
+        "name": "tickMarkThickness"
+      },
+      {
+        "description": "This attribute lets you set the tick marks transparency in percentage number.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickAlpha"
+      },
+      {
+        "description": "If `tickAlpha` attribute is defined, the value of `tickValueAlpha` increases / decreases the opacity for value text.",
+        "range": "0-100",
+        "type": "Number",
+        "name": "tickValueAlpha"
       }
     ],
-    "description": "The following attributes let you configure chart cosmetics like background color, background alpha, etc. "
+    "description": "The following attributes let you configure chart cosmetics like background color, background alpha, ticks, etc. "
   },
   {
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the column, area, pie etc., border will show up. This attribute is used to show or hide the plot border, and it is configurable at the chart instance, data plot, and data-series levels.",
+        "description": "Whether the column, area, pie, etc., border will show up. This attribute is used to show or hide the plot border, and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
@@ -399,6 +483,24 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showShadow"
+      },
+      {
+        "description": "This attribute lets you introduce a URL of an image or icon to be rendered. This attribute needs to be added at data level.",
+        "range": "",
+        "type": "URL",
+        "name": "icon"
+      },
+      {
+        "description": "This attribute lets you increase or decrease the label icon size. This attribute will only work when the attribute `icon` is specified.",
+        "range": "0-100",
+        "type": "Number and String Percentages",
+        "name": "iconScale"
+      },
+      {
+        "description": "This attribute lets you specify the position of the icon. This attribute will only work when the attribute `icon` is specified.",
+        "range": "`start` or `end`",
+        "type": "String",
+        "name": "iconPosition"
       }
     ],
     "description": " These attributes let you configure how your plot (columns, lines, area, or any data that you're plotting) will appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "
