@@ -305,7 +305,7 @@
         "name": "bgImageScale"
       },
       {
-        "description": "You can load an external logo (JPEG/PNG) to your chart, this attribute lets you specify the URL. Due to cross domain security restrictions it is advised to use a logo from the same domain name as your charts.",
+        "description": "You can load an external logo (JPEG/PNG) to your chart. This attribute lets you specify the URL. Due to cross-domain security restrictions, it is advised to use a logo from the same domain name as your charts.",
         "range": "URL",
         "type": "String",
         "name": "logoURL"
@@ -347,25 +347,25 @@
         "name": "logoLink"
       }
     ],
-    "description": "The following attributes let you configure chart cosmetics like background color, background alpha etc. "
+    "description": "The following attributes let you configure chart cosmetics like background color, background alpha, etc. "
   },
   {
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "Whether the column, area, pie etc. border will show up. This attribute is used to show or hide the plot border and it is configurable at the chart instance, data plot, and data-series levels.",
+        "description": "Whether the column, area, pie etc., border will show up. This attribute is used to show or hide the plot border, and it is configurable at the chart instance, data plot, and data-series levels.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPlotBorder"
       },
       {
-        "description": "Color for column, area, pie border This attribute is used to specify the color for the plot border at the chart instance level.",
+        "description": "Color for column, area, pie border. This attribute is used to specify the color for the plot border at the chart instance level.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for column, area, pie border This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
+        "description": "Thickness for column, area, pie border. This attribute is used to specify the thickness for the plot border at chart instance, data plot, and data-series levels.",
         "range": "0-5",
         "type": "Number",
         "name": "plotBorderThickness"
@@ -383,6 +383,18 @@
         "name": "plotFillAlpha"
       },
       {
+        "description": "This attribute lets you control the opacity of the bar. You can adjust its transparency by setting a value between 0 (completely transparent) and 100 (fully opaque).",
+        "range": "0 - 100",
+        "type": "Number and String Percentages",
+        "name": "barAlpha"
+      },
+      {
+        "description": "This attribute sets the opacity of the track behind the bar. It accepts values from 0 to 100, helping you fine-tune the background visibility to complement or contrast the bar.",
+        "range": "0 - 100",
+        "type": "Number and String Percentages",
+        "name": "trackAlpha"
+      },      
+      {
         "description": "Whether to apply the shadow effect for pie/doughnuts.",
         "range": "0/1",
         "type": "Boolean",
@@ -390,6 +402,36 @@
       }
     ],
     "description": " These attributes let you configure how your plot (columns, lines, area, or any data that you're plotting) will appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "
+  },
+  {
+    "table": "Radial Bar Properties",
+    "attrs": [
+      {
+        "description": "This attribute lets you explicitly set the inner radius of the chart. This attribute is useful if you want to enforce one of your own values.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "innerRadius"
+      },
+      {
+        "description": "This attribute lets you explicitly set the outer radius of the chart. By defining inner and outer radius together, you can define the width/thickness of the bar as well.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "outerRadius"
+      },
+      {
+        "description": "Angle from where the radial bar will start drawing. By default, the start angle will be 90° and the track will run in a clockwise direction.",
+        "range": "-360-360",
+        "type": "Number",
+        "name": "startAngle"
+      },
+      {
+        "description": "Attribute that controls and enforces the ending angle of the track. By default, the end angle will be 180°.",
+        "range": "-360-360",
+        "type": "Number",
+        "name": "endAngle"
+      }
+    ],
+    "description": "The following attributes let you control various functionalities of radial bar chart. "
   },
   {
     "table": "Number Formatting",
@@ -664,7 +706,7 @@
         "name": "usePattern"
       },
       {
-        "description": "Set the type of pattern, possible values are: `circle`, `square`, and `line`. The default value is `line`",
+        "description": "Set the type of pattern. Possible values are: `circle`, `square`, and `line`. The default value is `line`",
         "range": "'circle', 'square', 'line'",
         "type": "String",
         "versionsince": "3.16.0",
@@ -692,7 +734,7 @@
         "name": "patternSize"
       },
       {
-        "description": "Sets the color of pattern shapes in 6-digit hex color notation, by default it inherits values from `paletteColors`.",
+        "description": "Sets the color of pattern shapes in 6-digit hex color notation. By default, it inherits values from `paletteColors`.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.16.0",
@@ -976,14 +1018,20 @@
         "name": "legendIconStartAngle"
       },
       {
-        "description": "This attribute if set to `0`, the legend box will be center aligned with respect to the entire width of the chart only if the total width of the legend box is more than the canvas width. By default, the legend box is center aligned with respect to the canvas width and it remains the same if the width of the legend box is less than the canvas width.",
+        "description": "This attribute, if set to `0`, the legend box will be center aligned with respect to the entire width of the chart only if the total width of the legend box is more than the canvas width. By default, the legend box is center aligned with respect to the canvas width and it remains the same if the width of the legend box is less than the canvas width.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.10.0",
         "name": "alignLegendWithCanvas"
+      },
+      {
+        "description": "This attribute is set to `0` by default. When set to `1`, this attribute replaces the legend shape with icons using a new global attribute called.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showIconInLegend"
       }
     ],
-    "description": " In pie / doughnut charts, the name of each slice shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
+    "description": " In radial bar charts, the name of each slice shows up in the legend of the chart. If you do not need the legend, you can opt to hide it. Additionally, the legend can be placed at the bottom of the chart or to the right of it. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
   },
   {
     "table": "Tooltip Attributes",
@@ -1186,35 +1234,47 @@
     "table": "Chart Padding & Margins",
     "attrs": [
       {
-        "description": "This attribute lets you control the space (in pixels) between the sub-caption and top of the pie. If the sub-caption is not defined, it controls the space between caption and top of the pie. If neither caption, nor sub-caption is defined, this padding does not come into play.",
+        "description": "This attribute lets you control the space (in pixels) between the sub-caption and top of the pie. If the sub-caption is not defined, it controls the space between the caption and top of the pie. If neither caption, nor sub-caption is defined, this padding does not come into play.",
         "range": "In Pixels",
         "type": "Number",
         "name": "captionPadding"
       },
       {
-        "description": "Amount of empty space that you want to put on the left side of your chart. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "chartLeftMargin"
+        "description": "This attribute lets you control the space between bar and track. The default value will be 0.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "trackPadding"
       },
       {
-        "description": "Amount of empty space that you want to put on the right side of your chart. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "chartRightMargin"
+        "description": "This attribute lets you control the space between adjacent tracks. It creates separation between different tracks to improve clarity and readability. The default value will be 6px.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "trackMargin"
       },
       {
-        "description": "Amount of empty space that you want to put on the top of your chart. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "chartTopMargin"
+        "description": "This attribute lets you control and modify the radius of the track corners at the start of the track.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "trackStartRadius"
       },
       {
-        "description": "Amount of empty space that you want to put at the bottom of your chart. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "chartBottomMargin"
-      }
+        "description": "This attribute lets you control and modify the radius of the track corners at the end of the track.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "trackEndRadius"
+      },
+      {
+        "description": "This attribute allows you to customize the roundness of the bar's leading edge by adjusting the corner radius at the start of the track. Increasing the value creates more rounded corners, giving the bar a smoother, softer appearance at its starting point.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "barStartRadius"
+      },
+      {
+        "description": "This attribute allows you to customize the roundness of the bar's leading edge by adjusting the corner radius at the end of the track. Increasing the value creates more rounded corners, giving the bar a smoother, softer appearance at its starting point.",
+        "range": "In Pixels or Percentages",
+        "type": "Number and String values",
+        "name": "barEndRadius"
+      }      
     ],
     "description": " The following attributes help you control chart margins and paddings. FusionCharts XT allows you to manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts XT will not plot anything in that space. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
   },
@@ -1223,7 +1283,7 @@
     "path": "data",
     "attrs": [
       {
-        "description": "This attribute determines the transparency of a data item. The range for this attribute is 0 to 100. 0 means complete transparency (the data item wont be shown on the graph) and 100 means opaque.",
+        "description": "This attribute determines the transparency of a data item. The range for this attribute is 0 to 100. 0 means complete transparency (the data item won't be shown on the graph) and 100 means opaque.",
         "range": "0 - 100",
         "type": "Number",
         "name": "alpha"
@@ -1241,10 +1301,52 @@
         "name": "borderColor"
       },
       {
-        "description": "If you want to define your own colors for the data items on chart, use this attribute to specify color for the data item. ",
+        "description": "This attribute sets the border around the track. The attribute can be set to `solid`, `none`, or `dashed`, and the default value is `none`.",
+        "range": "`solid`, `none`, or `dashed`",
+        "type": "String",
+        "name": "trackBorder"
+      },
+      {
+        "description": "This attribute defines the border around the bar itself. The attribute can be set to `solid`, `none`, `dashed`, and the default value is `none`.",
+        "range": "`solid`, `none`, or `dashed`",
+        "type": "String",
+        "name": "barBorder"
+      },
+      {
+        "description": "This attribute sets the opacity level of the track's border.",
+        "range": "",
+        "type": "Number or String Percentage",
+        "name": "trackBorderAlpha"
+      },
+      {
+        "description": "This attribute controls the transparency of the bar's border.",
+        "range": "",
+        "type": "Number or String Percentage",
+        "name": "barBorderAlpha"
+      },
+      {
+        "description": "This attribute controls the thickness of the border around the track. Adjusting this value helps define how strongly the track is framed within the chart.",
+        "range": "Pixels",
+        "type": "Number or String",
+        "name": "trackBorderThickness"
+      },
+      {
+        "description": "This attribute sets the thickness of the border around the bar. You can increase or decrease the value to make the bar’s outline more prominent or subtle.",
+        "range": "Pixels",
+        "type": "Number or String",
+        "name": "barBorderThickness"
+      },
+      {
+        "description": "If you want to define your own colors for the data items on the chart, use this attribute to specify color for the data item. ",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"
+      },
+      {
+        "description": "Sets the background color of the bar in pattern shapes of 6-digit hex color notation. This attribute needs to be set on both chart and data level.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "trackFillColor"
       },
       {
         "description": "Whether the border of this data item should appear as dashed. This is particularly useful when you want to highlight a data (such as forecast or trend etc.).",
@@ -1297,11 +1399,10 @@
         "name": "labelPosition"
       },
       {
-        "description": "This attribute places the data value outside/inside of a particular pie slice. \n\nDefault value: Outside",
-        "range": "Outside, Inside",
-        "type": "String",
-        "versionSince": "3.14.0",
-        "name": "valuePosition"
+        "description": "This attribute places the data value inside of a particular track. The default value is 0.",
+        "range": "0-1",
+        "type": "Boolean",
+        "name": "placeValuesInside"
       },
       {
         "description": "By default, FusionCharts XT shows the data item name and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",
@@ -1335,134 +1436,18 @@
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelFontSize"
-      },
+      }
       {
-        "description": "Flag indicating whether x-axis label font should be bold or not.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.5.0",
-        "name": "labelFontBold"
-      },
-      {
-        "description": "Flag indicating whether x-axis label font should be italicized or not.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.5.0",
-        "name": "labelFontItalic"
-      },
-      {
-        "description": "Sets the background color for x-axis label text.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "versionsince": "3.5.0",
-        "name": "labelBgColor"
-      },
-      {
-        "description": "Sets the color of the border around the x-axis label text.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "versionsince": "3.5.0",
-        "name": "labelBorderColor"
-      },
-      {
-        "description": "Sets the x-axis label alpha for both font and background.",
-        "range": "0 - 100",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelAlpha"
-      },
-      {
-        "description": "Sets the x-axis label background alpha.",
-        "range": "0 - 100",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBgAlpha"
-      },
-      {
-        "description": "Sets the x-axis label border alpha.",
-        "range": "0 - 100",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderAlpha"
-      },
-      {
-        "description": "Sets the x-axis label border padding.",
+        "description": "This attribute sets the vertical space between the labels and canvas bottom edge. If you want more space between the canvas and the x-axis labels, you can use this attribute to control it.",
         "range": "In Pixels",
         "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderPadding"
+        "name": "labelPadding"
       },
       {
-        "description": "Sets the x-axis label border radius.",
-        "range": "In Pixels",
+        "description": "Helps configure the position of the vLine label by setting a relative position between 0 and 1. In vertical charts, 0 means top of canvas and 1 means bottom. In horizontal charts, 0 means left of canvas and 1 means right.",
+        "range": "0-1",
         "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderRadius"
-      },
-      {
-        "description": "Sets the x-axis label border thickness.",
-        "range": "In Pixels",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderThickness"
-      },
-      {
-        "description": "Whether the border around x-axis labels should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.5.0",
-        "name": "labelBorderDashed"
-      },
-      {
-        "description": "Sets the length of each dash when the border around the x-axis label is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderDashLen"
-      },
-      {
-        "description": "Sets the gap between two consecutive dashes when the border around x-axis label is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "versionsince": "3.5.0",
-        "name": "labelBorderDashGap"
-      },
-      {
-        "description": "Sets the link for each individual data plot label.",
-        "range": "",
-        "type": "URL",
-        "versionsince": "3.5.0",
-        "name": "labelLink"
-      },
-      {
-        "description": "This attribute can set the hover color for a particular data plot.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "hoverColor"
-      },
-      {
-        "description": "This attribute sets the transparency for a particular data plot when hovered.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "hoverAlpha"
-      },
-      {
-        "description": "This attribute sets the border color of a data plot on hover.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "borderHoverColor"
-      },
-      {
-        "description": "This attribute sets the border's transparency for a data plot on hover.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "borderHoverAlpha"
-      },
-      {
-        "description": "This attribute sets the thickness for a data plot's border on hover.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverThickness"
+        "name": "labelPosition"
       }
     ],
     "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nAttributes of the `data` object are used to set and configure the data values for the chart."
