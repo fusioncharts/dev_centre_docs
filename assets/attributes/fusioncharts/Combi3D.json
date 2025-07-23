@@ -1794,6 +1794,24 @@
         "name": "legendScrollBgColor"
       },
       {
+        "description": "Determines whether gradient colors are used for the legend scroll components. When set to 1, `legendScrollTrackColor` and `legendScrollAnchorColor` must be defined as objects using `angle`, `startColor`, and `endColor`. When set to 0, those colors should be provided as simple hexadecimal values.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "useLegendScrollGradient"
+      },
+      {
+        "description": "This attribute defines the color of the scroll track behind the legend’s scroll anchor. Introduce a gradient object using `angle`, `startColor`, and `endColor` when `useLegendScrollGradient` is set to 1. If (`useLegendScrollGradient`) is set to 0, use hex color string.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendScrollTrackColor"
+      },
+      {
+        "description": "This attribute specifies the color of the scroll anchor used to navigate the legend. Similar to `legendScrollTrackColor`, accepts a hex value or a gradient object based on the `useLegendScrollGradient` setting.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendScrollAnchorColor"
+      },
+      {
         "description": "If your chart contains multiple series, the legend is displayed as a grid comprising of multiple legend keys. With the help of this attribute you can specify the number of columns that are to be displayed in the legend.",
         "range": "Positive Integer",
         "type": "Number",
