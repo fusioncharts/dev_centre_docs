@@ -572,7 +572,8 @@ In a **heatmap chart**, you can show multiple labels in different positions, sta
 
 Refer to the code below:
 
-```color: [
+```json
+color: [
       {
         code: "#ff9933",
         maxvalue: "-4",
