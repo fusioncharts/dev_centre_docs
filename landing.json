@@ -285,8 +285,12 @@
             ]
          },
          "fusiontime": {
-            "title": "v2.9.1",
+            "title": "v3.0.0",
             "children": [
+               {
+                  "title": "v2.9.1",
+                  "link": "https://docs.fusioncharts.com/archive/4.0.0/"
+               }, 
                {
                   "title": "v2.9.0",
                   "link": "https://docs.fusioncharts.com/archive/3.23.0/"
