@@ -1,5 +1,5 @@
 ---
-title: Changelog | FusionCharts
+title: Version 4.1.x | FusionCharts
 description: This section discusses the change in features and attributes with the latest released version.
 heading: Version 4.1.x
 ---
