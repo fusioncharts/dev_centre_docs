@@ -176,8 +176,12 @@
       },
       {
          "fusioncharts": {
-            "title": "v4.1.0",
+            "title": "v4.2.0",
             "children": [
+               {
+                  "title": "v4.1.x",
+                  "link": "https://docs.fusioncharts.com/archive/4.1.0/upgrading/change-log"
+               },
                {
                   "title": "v4.0.x",
                   "link": "https://docs.fusioncharts.com/archive/4.0.0/upgrading/change-log"
