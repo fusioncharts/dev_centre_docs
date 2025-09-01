@@ -16,7 +16,7 @@
         "name": "animationDuration"
       },
       {
-        "description": "FusionCharts XT uses the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
+        "description": "FusionCharts XT uses the concept of Color Palettes. Each chart has 5 pre-defined color palettes, which you can choose from. Each palette renders the chart in a different color theme. ",
         "range": "1-5",
         "type": "Number",
         "name": "palette"
@@ -181,6 +181,13 @@
         "type": "Number",
         "versionsince": "3.7.0",
         "name": "hasRTLText"
+      },
+         {
+        "description": "This attribute, when set to `true`, and if there is only a single line plot left in the chart after hiding the other column plots, then the line will act as a 2D. ",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "4.2.0",
+        "name": "ignoredepthforlineplots"
       },
       {
         "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
