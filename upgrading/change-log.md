@@ -4,13 +4,14 @@ description: This section discusses the change in features and attributes with t
 heading: Version 4.1.x
 ---
 
-<h2 class="sub-heading">Version 4.1.0</h2>
+<h2 class="sub-heading">Version 4.2.0</h2>
 
-<p class="release-date">13th November, 2024</p>
+<p class="release-date">5th September, 2025</p>
 
 <h4>New Features</h4>
 
-- FusionCharts version 4.1.0 implements a horizontal scrollbar for **Waterfall Charts** X-axis optimizing the user interface by enabling seamless navigation through large datasets. This enhancement improves layout efficiency and expands the scope for visualizing additional Data points without impacting readability or overall design integrity.
+- FusionCharts version 4.2 introduces the `ignoredepthforlineplots` attribute, which, when set to `true`, makes the leftover line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart act as a 2D line. Otherwise, the line continues to appear in 3D.
+- FusionCharts version 4.2.0 introduces support for inverse axes in **Scatter** and **Bubble** charts. You can now reverse the **X** and **Y** axes by setting the new attributes 'reversexaxis' and 'reverseyaxis' to 'true' in the chart configuration. 
   
 <h4>Improvements</h4>
 
