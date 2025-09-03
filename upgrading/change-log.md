@@ -11,7 +11,7 @@ heading: Version 4.1.x
 <h4>New Features</h4>
 
 - FusionCharts version 4.2 introduces the `ignoredepthforlineplots` attribute, which, when set to `true`, makes the leftover line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart act as a 2D line. Otherwise, the line continues to appear in 3D.
-- FusionCharts version 4.2.0 introduces support for inverse axes in **Scatter** and **Bubble** charts. You can now reverse the **X** and **Y** axes by setting the new attributes 'reversexaxis' and 'reverseyaxis' to 'true' in the chart configuration. 
+- FusionCharts version 4.2.0 introduces support for inverse axes in **Scatter** and **Bubble** charts. You can now reverse the **X** and **Y** axes by setting the new attributes `reversexaxis` and `reverseyaxis` to `true` in the chart configuration. 
   
 <h4>Improvements</h4>
 
