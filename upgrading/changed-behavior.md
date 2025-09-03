@@ -8,7 +8,7 @@ heading: Changed Behavior
 
 FusionCharts v4.2.0 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
 
-<h4>The **ignoredepthforlineplots** Attribute </h4>
+<h4>The "ignoredepthforlineplots" Attribute </h4>
 
 - **Summary:** FusionCharts implemented the `ignoredepthforlineplots` attribute to prevent inconsistencies when displaying plotted values. 
 - **Impact:** This issue affected the `mscolumn3dlinedy` and `stackedcolumn3dlinedy` chart types. The problem arose when switching from a 3D to a 2D line.
