@@ -942,6 +942,13 @@
         "type": "Boolean",
         "versionsince": "3.12.0",
         "name": "reverseXaxis"
+      },
+      {
+        "description": "You can reverse the y-axis by setting this attribute to `1`. The y-axis values will appear in decreasing order. \n\n Default value: __0__",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "4.2.0",
+        "name": "reverseYaxis"
       }
     ],
     "description": "Using these attributes, you can set and configure x-axis labels, y-axis values and set chart cosmetics for the axis like color, alpha, etc."
