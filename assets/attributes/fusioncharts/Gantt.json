@@ -148,24 +148,6 @@
         "type": "Boolean",
         "versionsince": "3.5.0",
         "name": "forceRowHeight"
-      },
-      {
-        "description": "Drag-able charts of PowerCharts XT pack allow you to configure each dataset as drag-able or non-drag-able using this attribute. Your end users will only be able to change the data belonging to drag-able datasets.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "allowDrag"
-      },
-      {
-        "description": "This attribute updates the actual start date / actual end date columns when taskbars are dragged.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "autoUpdateStartEndDateColumn"
-      },
-      {
-        "description": "This attribute allows taskbars to be dragged over adjacent ones, enabling visual overlap when they occur at the same time or overlapping periods.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "allowTaskbarOverlap"
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties."
@@ -1418,24 +1400,6 @@
         "name": "legendScrollBgColor"
       },
       {
-        "description": "Determines whether gradient colors are used for the legend scroll components. When set to 1, `legendScrollTrackColor` and `legendScrollAnchorColor` must be defined as objects using `angle`, `startColor`, and `endColor`. When set to 0, those colors should be provided as simple hexadecimal values.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "useLegendScrollGradient"
-      },
-      {
-        "description": "This attribute defines the color of the scroll track behind the legend’s scroll anchor. Introduce a gradient object using `angle`, `startColor`, and `endColor` when `useLegendScrollGradient` is set to 1. If (`useLegendScrollGradient`) is set to 0, use hex color string.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "legendScrollTrackColor"
-      },
-      {
-        "description": "This attribute specifies the color of the scroll anchor used to navigate the legend. Similar to `legendScrollTrackColor`, accepts a hex value or a gradient object based on the `useLegendScrollGradient` setting.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "legendScrollAnchorColor"
-      },
-      {
         "description": "You can reverse the ordering of datasets in the legend by setting this attribute to 1.",
         "range": "0/1",
         "type": "Boolean",
@@ -1640,7 +1604,7 @@
         "name": "legendPadding"
       }
     ],
-    "description": "The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you to manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts Suite XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
+    "description": "The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts Suite XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
   },
   {
     "table": "Chart Level Attributes for Customizing Milestone Labels",
@@ -3015,30 +2979,6 @@
         "range": "",
         "type": "String",
         "name": "link"
-      },
-      {
-        "description": "This attribute helps you set the amount of space that you want to put on the left side of your milestone label. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "marginLeft"
-      },
-      {
-        "description": "This attribute helps you set the amount of space that you want to put on the right side of your milestone label. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "marginRight"
-      },
-      {
-        "description": "This attribute helps you set the amount of space that you want to put on top of your milestone label. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "marginTop"
-      },
-      {
-        "description": "This attribute helps you set the amount of space that you want to put at the bottom of your milestone label. Nothing is rendered in this space.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "marginBottom"
       },
       {
         "description": "Number of sides that the milestone should have.",
