@@ -1916,6 +1916,12 @@
         "name": "legendScrollBgColor"
       },
       {
+        "description": "This attribute determines a fixed width in pixels for the chart legend.",
+        "range": "In Pixels",
+        "type": "Number ",
+        "name": "legendWidth"
+      },
+      {
         "description": "You can reverse the ordering of datasets in the legend by setting this attribute to 1.",
         "range": "0/1",
         "type": "Boolean",

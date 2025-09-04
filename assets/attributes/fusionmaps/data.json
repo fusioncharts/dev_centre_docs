@@ -730,14 +730,15 @@
       {
         "type": "Number",
         "range": "In Pixels",
-        "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space.",
+        "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space. Ensure the value is set higher than 5px; otherwise, the trial watermark and legend will overlap.
+",
         "name": "chartBottomMargin"
       }
     ],
     "description": "The following attributes help you control map margins and paddings."
   },
   {
-    "table": "Attributes to allow exporting of map as image, PDF, SVG or XLSX",
+    "table": "Attributes to allow exporting of map as image, PDF, SVG, or XLSX",
     "attrs": [
       {
         "type": "Boolean",
