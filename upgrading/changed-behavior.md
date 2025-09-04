@@ -18,7 +18,7 @@ FusionCharts v4.2.0 introduces a range of new features and enhancements designed
     
 <h4>Inverse Y-axis on Scatter and Bubble Charts </h4>
 
-- **Summary:** FusionCharts now supports inverting the y-axis on Scatter and Bubble Charts. This facilitates users in spotting trends or patterns from a different perspective using the `reverseYaxis` attribute.
+- **Summary:** FusionCharts now supports inverting the y-axis on Scatter and Bubble Charts. This facilitates users in spotting trends or patterns from a different perspective using the `reverseyaxis` attribute.
 - **Impact:** Users can now more easily control how data is displayed, especially for datasets with descending values or negative/positive axes.
 - **What to Check:** Test both axes for your graphics; this way, you can see which one is preferable for displaying the information and data corresponding to your project.
     
