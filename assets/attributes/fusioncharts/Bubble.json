@@ -2587,6 +2587,12 @@
         "name": "legendScrollBgColor"
       },
       {
+        "description": "This attribute determines a fixed width in pixels for the chart legend.",
+        "range": "In Pixels",
+        "type": "Number ",
+        "name": "legendWidth"
+      },
+      {
         "description": "This attribute lets you interact with the legend in your chart. When you click a legend key, the dataplots associated with that series are eliminated from the chart. Re-clicking the key causes the dataplots to reappear.",
         "range": "0/1",
         "type": "Boolean",
