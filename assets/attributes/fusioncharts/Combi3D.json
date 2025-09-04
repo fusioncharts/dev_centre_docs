@@ -1794,6 +1794,12 @@
         "name": "legendScrollBgColor"
       },
       {
+        "description": "This attribute determines a fixed width in pixels for the chart legend.",
+        "range": "In Pixels",
+        "type": "Number ",
+        "name": "legendWidth"
+      },
+      {
         "description": "If your chart contains multiple series, the legend is displayed as a grid comprising of multiple legend keys. With the help of this attribute you can specify the number of columns that are to be displayed in the legend.",
         "range": "Positive Integer",
         "type": "Number",

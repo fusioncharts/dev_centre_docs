@@ -4,38 +4,35 @@ description: This section discusses the new features introduced in the latest ve
 heading: What's New
 ---
 
-This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.1.x.
+This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.2.x.
 
-## Improved CSP Compliance: Enforcing Trusted Types for 'Script' with Webpack Upgrades
+## New `ignoredepthforlineplots` Attribute
 
-FusionCharts 4.1.0 improves and enhances CSP compatibility for the `require-trusted-types-for 'script'` by upgrading Webpack and related packages to their latest versions, preventing indirect script injection unless the scripts are injected using secure, trusted policies. 
+FusionCharts version 4.2.0 introduces the `ignoredepthforlineplots` attribute, which avoids issues when plot lines should change appearance from 3D to 2D.  
 
-Resolving `style-src` Policy Issues: Ensuring Compatibility with `Inline Styles` in **Tooltips**, `Radial Chart CSS`, and **Table Styling** for `Draggable Column 2D Charts`.
+This addition can be used when hiding column plots and leaving a single line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart. The line appears as a 2D line, rather than in 3D.
 
-## Enhancing Waterfall Charts: Introducing a Scrollbar for Improved X-Axis Navigation
+## Inverse Y-axis for Scatter and Bubble Charts
 
-FusionCharts release 4.1.0 introduces a new scrollbar for `Waterfall` **Charts** to improve user experience and navigation through the x-axis without impacting the existing chart or layout.
+FusionCharts release 4.2.0 introduces support for a new feature that allows users to invert the **X** and **Y** axes for `Scatter` and `Bubble` Charts, improving user experience and customization through the **X** and **Y** axes. Using the `reverseyaxis` attribute facilitates users in spotting trends or patterns from a different perspective.
 
-This addition facilitates better user interaction with data that might otherwise overflow due to lengthy labels or an extensive range of values depicted in one axis section of the `Waterfall` chart.
+This feature gives users better control over data display, particularly for datasets where natural ordering, such as descending values or negative/positive axes, is important.
 
-## Customizable Legend Scrollbars: New Dynamic Keys for Enhanced Look and Feel Control
+## React Native WebView Improvements
 
-FusionCharts release 4.1.0 implemented advanced new dynamic keys to control the look and feel of the legend scrollbars.
+This release added an explicit Webpack public path assignment, which, if undefined by the user, gets defined as an empty string. This ensures that the chart is rendered unaffected in **React Native WebView** across all mobile platforms. 
 
-The newly added attributes allow you to enable or disable shading gradient colors, giving control over the look and feel of the `Legend Scrollbars`.
+Additionally, this release updated the FusionCharts library version to 4.2.0-alpha.0 in `react-native-fusioncharts` to be compatible with the latest React Native version. 
 
-## Enhanced Support for Third-Party Integrations
+## Upgraded SDKs and Support for Third-Party Integrations
 
-FusionCharts 4.1.0 enhanced support for third-party tools and libraries to ensure smoother, more secure performance:
+FusionCharts 4.2.0 enhanced support for third-party tools and libraries to better and safer user experience:
 
- - Updated `ember` dependency with the latest CLI version (5.11).
- - Addressed `dependabot` pull requests, handling security vulnerabilities and ensuring a more secure and reliable dependency management process.
- - Removed `expo` dependencies which optimized and made `react-native` more lightweight.
-  
-These updates aim to provide a more seamless experience when integrating with third-party systems while maintaining high performance and security standards.
+- C#: Upgraded to v2 major version, now supporting **.NET 9**.
+- Python: Upgraded to v2 major version, now supporting **Python 3.13.5** and **Django 5.2.4**.
+- Java: Upgraded to v2 major version, now supporting **Java 24**.
+- Upgraded `react-fusioncharts` integration supports the latest version of **React v19**.
+- Upgraded `vue-fusioncharts` integration supports the version **Vue 3.5.17**.
+- Upgraded `angular-fusioncharts` integration supports **Angular v20**.
 
-
-
- 
- 
- 
+These updates aim to provide a more seamless experience for improved compatibility, performance, and access to the latest features across all platforms.
