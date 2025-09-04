@@ -14,7 +14,7 @@ This addition can be used when hiding column plots and leaving a single line plo
 
 ## Inverse Y-axis for Scatter and Bubble Charts
 
-FusionCharts release 4.2.0 introduces support for a new feature that allows users to invert the **X** and **Y** axes for `Scatter` and `Bubble` Charts, improving user experience and customization through the **X** and **Y** axes. This facilitates users in spotting trends or patterns from a different perspective.
+FusionCharts release 4.2.0 introduces support for a new feature that allows users to invert the **X** and **Y** axes for `Scatter` and `Bubble` Charts, improving user experience and customization through the **X** and **Y** axes. Using the `reverseyaxis` attribute facilitates users in spotting trends or patterns from a different perspective.
 
 This feature gives users better control over data display, particularly for datasets where natural ordering, such as descending values or negative/positive axes, is important.
 
