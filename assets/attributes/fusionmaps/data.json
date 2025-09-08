@@ -730,8 +730,7 @@
       {
         "type": "Number",
         "range": "In Pixels",
-        "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space. Ensure the value is set higher than 5px; otherwise, the trial watermark and legend will overlap.
-",
+        "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space. \n\n Ensure the value is set higher than 5px; otherwise, the trial watermark and legend will overlap.",
         "name": "chartBottomMargin"
       }
     ],
@@ -743,7 +742,7 @@
       {
         "type": "Boolean",
         "range": "0/1",
-        "description": "Whether the map will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the map will allow exporting to images, PDFs, SVG, or XLSX.  \n\n__Default value__: 0",
         "name": "exportEnabled"
       },
       {
