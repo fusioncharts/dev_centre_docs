@@ -239,7 +239,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-17.js %}
 
-Click [here](https://jsfiddle.net/fusioncharts/qybh1rdt/) to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/gdu2539p/) to edit the above chart.
 
 ## Configure Legend Icon Size
 
