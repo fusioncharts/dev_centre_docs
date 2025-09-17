@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts | FusionCharts
+title: Exporting Charts using PHP | FusionCharts
 description: Expand your chart exporting capabilities with FusionCharts Suite XT's JavaScript & PHP integration, supporting JPG, PNG, SVG, & PDF formats. Checkout article!
 heading: Exporting Charts
 ---
@@ -14,9 +14,9 @@ In this section we will discuss how to:
 
 ## Export Charts as Image and PDF
 
-A server-side helper library enables export by conveting the SVG to the required format. You can also export VML as it is converted to SVG internally before exporting. During the export process, the data to be exported is first sent to the FusionCharts servers to be processed, finally generating the output in the required format.
+A server-side helper library enables export by converting the SVG to the required format. You can also export VML as it is converted to SVG internally before exporting. During the export process, the data to be exported is first sent to the FusionCharts servers to be processed, finally generating the output in the required format.
 
-When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
+When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and downloaded using the HTML5 `download` attribute.
 
 > You must have an active internet connection for this feature to work.
 
