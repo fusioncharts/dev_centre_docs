@@ -1,5 +1,5 @@
 ---
-title: Time Navigator | FusionCharts
+title: Time Navigator in ASP.NET | FusionCharts
 description: Explore FusionTime's time navigator for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Time Navigator
 ---
