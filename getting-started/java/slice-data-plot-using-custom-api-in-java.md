@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in Java | FusionCharts
 description: Slice Data Plots using URLs in Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info here.
 heading: Slice Data Plot using API
 ---
