@@ -1,5 +1,5 @@
 ---
-title: Working with Events | FusionCharts
+title: Working with Events in Angular | FusionCharts
 description: Harness the potential of JavaScript events to trigger specific actions & enhance your chart's functionality. Explore our in-depth article to discover more!
 heading: Working with Events
 ---
