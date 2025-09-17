@@ -1,6 +1,6 @@
 ---
-title: Pyramid Chart | FusionCharts
-description: Pyramid charts are used for comparison of data. This section indroduces some basics of pyramid chart with some of its silent features
+title: Pyramid Chart Guide | FusionCharts
+description: Pyramid charts are used for comparison of data. This section introduces some basics of the pyramid chart with some of its silent features
 heading: Pyramid Chart
 ---
 
