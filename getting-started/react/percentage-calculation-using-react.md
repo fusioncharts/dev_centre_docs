@@ -1,5 +1,5 @@
 ---
-title: Percentage Calculation | FusionCharts
+title: Percentage Calculation Using React | FusionCharts
 description: Percentage Calculation effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Percentage Calculation
 ---
@@ -8,7 +8,7 @@ Events are signals that let you execute specific actions—such as sending data 
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using React `props` object.
 
-## A chart configured to calculate the percent, is shown below:
+## A chart configured to calculate the percent is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
