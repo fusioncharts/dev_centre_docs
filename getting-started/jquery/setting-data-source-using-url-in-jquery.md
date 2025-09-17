@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source via URL in JQuery | FusionCharts
+title: Setting Data Source via URL in jQuery | FusionCharts
 description: Implement URL-based data sources in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Setting Data Source Using URL
 ---
