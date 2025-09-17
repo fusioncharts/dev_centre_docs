@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source via URL in React | FusionCharts
 description: Setting Data Source effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Setting Data Source Using URL
 ---
