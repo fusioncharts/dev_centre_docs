@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts using Vue.js | FusionCharts
+title: Exporting Charts Using Vue.js | FusionCharts
 description: Experience the versatility of FusionCharts Suite XT, a JavaScript-powered suite that renders charts using SVG and VML. Dive into the article to explore more!
 heading: Exporting Charts
 ---
