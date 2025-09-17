@@ -1,6 +1,6 @@
 ---
-title: Exporting Charts using PHP | FusionCharts
-description: Expand your chart exporting capabilities with FusionCharts Suite XT's JavaScript & PHP integration, supporting JPG, PNG, SVG, & PDF formats. Checkout article!
+title: Exporting Charts Using PHP | FusionCharts
+description: Expand your chart exporting capabilities with FusionCharts Suite XT's JavaScript & PHP integration, supporting JPG, PNG, SVG, & PDF formats. Check out the article!
 heading: Exporting Charts
 ---
 
