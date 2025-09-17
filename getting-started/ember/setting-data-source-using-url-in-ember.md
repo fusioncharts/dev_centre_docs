@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source via URL in Ember | FusionCharts
 description: Setting Data Source Using URL with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Setting Data Source Using URL
 ---
