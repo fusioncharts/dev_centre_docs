@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in React | FusionCharts
 description: Slice Data Plot effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Slice Data Plot using API
 ---
