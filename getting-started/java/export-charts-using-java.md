@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts using Java | FusionCharts
+title: Exporting Charts Using Java | FusionCharts
 description: With server-side exporting, you can seamlessly export charts as images, PDFs, or Excel files. Get powerful chart export capabilities with FusionCharts!
 heading: Exporting Charts
 ---
