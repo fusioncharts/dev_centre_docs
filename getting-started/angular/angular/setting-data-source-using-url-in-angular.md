@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source by URL in Angular | FusionCharts
 description: Learn Setting Data Source in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Setting Data Source Using URL
 ---
