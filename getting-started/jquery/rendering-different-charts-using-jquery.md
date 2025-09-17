@@ -1,5 +1,5 @@
 ---
-title: Rendering different Charts | FusionCharts
+title: Render Charts Using JQuery | FusionCharts
 description: Rendering Different Charts in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Rendering Different Charts
 ---
