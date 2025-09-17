@@ -1,6 +1,6 @@
 ---
-title: Rendering different Charts | FusionCharts
-description: Explore how to Rendering Different Charts in React Native effortlessly with FusionCharts, optimizing your data visualization for mobile applications seamlessly.
+title: Render Charts in React Native Apps | FusionCharts
+description: Explore how to Render Different Charts in React Native effortlessly with FusionCharts, optimizing your data visualization for mobile applications seamlessly.
 heading: Rendering Different Charts
 ---
 
