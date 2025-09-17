@@ -1,5 +1,5 @@
 ---
-title: Tooltip | FusionCharts
+title: Tooltip in FusionTime Charts | FusionCharts
 description: Read the article & discover the power of tooltips - how they enhance your understanding of chart elements with context-sensitive information and data values.
 heading: Tooltip
 ---
