@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts | FusionCharts
+title: Exporting Charts Using Ember | FusionCharts
 description: Read our article & effortlessly export your rendered charts in JPG, PNG, SVG, & PDF formats using FusionCharts Suite XT & ember-fusioncharts components.
 heading: Exporting Charts
 ---
