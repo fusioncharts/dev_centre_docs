@@ -1,5 +1,5 @@
 ---
-title: Percentage Calculation | FusionCharts
+title: Percentage Calculation Using JavaScript | FusionCharts
 description: Know how to Percentage Calculation using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Percentage Calculation
 ---
@@ -8,7 +8,7 @@ Events are signals that let you execute specific actions—such as sending data 
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots.
 
-## A chart configured to calculate the percent, is shown below:
+## A chart configured to calculate the percent is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
