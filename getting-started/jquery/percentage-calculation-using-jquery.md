@@ -1,5 +1,5 @@
 ---
-title: Percentage Calculation Using JQuery | FusionCharts
+title: Percentage Calculation Using jQuery | FusionCharts
 description: Percentage Calculation in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Percentage Calculation
 ---
