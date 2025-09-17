@@ -1,5 +1,5 @@
 ---
-title: Working with Events | FusionCharts
+title: Working with Events in Vue.js | FusionCharts
 description: Learn how to effectively work with events in VueJS to manipulate the DOM, send data to the server, & more. Get informed with our comprehensive article now!
 heading: Working with Events
 ---
@@ -16,7 +16,7 @@ Roll the mouse pointer over any one data plot and see how the text (the data lab
 
 For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-**You are currently hovering over Canada whose value is 180**
+**You are currently hovering over Canada, whose value is 180**
 
 The full code of the above sample is given below:
 
