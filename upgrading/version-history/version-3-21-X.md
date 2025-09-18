@@ -1,5 +1,5 @@
 ---
-title: Changelog | FusionCharts
+title: Version 3.21 Release Notes | FusionCharts
 description: Upgrade to FusionCharts 3.21.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Try now!
 heading: Version 3.21.x
 ---
