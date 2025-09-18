@@ -1,5 +1,5 @@
 ---
-title: Build Your First Time-Series Chart | FusionCharts
+title: Build Your First Time-Series Chart | FusionTime
 description: This article outlines the steps to be executed for creating your first chart.
 heading: Create Your First Chart
 ---
