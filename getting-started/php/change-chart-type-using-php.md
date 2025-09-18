@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in PHP | FusionCharts
 description: Understand how to dynamically change chart types using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Change Chart Type at Runtime
 ---
