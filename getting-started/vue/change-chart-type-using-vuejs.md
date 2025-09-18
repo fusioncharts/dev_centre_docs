@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Vue.js | FusionCharts
 description: Change Chart Type at Runtime in Vue.js applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Change Chart Type at Runtime
 ---
