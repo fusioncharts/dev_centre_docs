@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Flutter | FusionCharts
 description: Change chart type at runtime using Flutter on FusionCharts. Elevate your data visualization aesthetics and user experience seamlessly. Get in touch now.
 heading: Change Chart Type at Runtime
 ---
