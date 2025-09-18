@@ -1,6 +1,6 @@
 ---
-title: Adding Special Characters | FusionCharts
-description: Know how to Adding Special Characters using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
+title: Adding Special Characters in JavaScript | FusionCharts
+description: Know how to Add Special Characters using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Adding Special Characters
 ---
 
