@@ -1,5 +1,5 @@
 ---
-title: Add Annotations | FusionCharts
+title: Add Annotations in Vue.js Charts | FusionCharts
 description: This article focuses on different type of configurations possible using the vuejs.
 heading: Add Annotations
 ---
