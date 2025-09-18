@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in jQuery | FusionCharts
 description: Change Chart Type in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Change Chart Type at Runtime
 ---
