@@ -1,6 +1,6 @@
 ---
-title: Add Annotations | FusionCharts
-description: Enhance your ASP.NET projects by Add Annotations with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
+title: Add Annotations in ASP.NET Charts | FusionCharts
+description: Enhance your ASP.NET projects by Adding Annotations with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Add Annotations using ASP.NET
 ---
 
