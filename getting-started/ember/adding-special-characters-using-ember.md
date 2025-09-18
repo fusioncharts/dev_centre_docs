@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in Ember | FusionCharts
 description: Adding Special Characters with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Adding Special Characters
 ---
