@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in Vue.js | FusionCharts
 description: Adding Special Characters using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Adding Special Characters
 ---
