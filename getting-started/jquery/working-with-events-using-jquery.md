@@ -1,5 +1,5 @@
 ---
-title: Bind Event Listener | FusionCharts
+title: Bind Event Listener in jQuery | FusionCharts
 description: Master event handling in FusionCharts with jQuery. Our tutorial covers everything for creating interactive charts for your web projects. Get started now!
 heading: Bind Event Listener
 ---
