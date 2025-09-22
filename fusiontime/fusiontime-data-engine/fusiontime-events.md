@@ -1,5 +1,5 @@
 ---
-title: FusionTime Events | FusionCharts
+title: FusionTime Data Engine Events | FusionCharts
 description: Unleash the power of events in executing actions and manipulating the DOM for your website's events. Explore our comprehensive article for further insights.
 heading: Events
 ---

@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in PHP | FusionCharts
 description: Understand how to Slice Data Plot using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Slice Data Plot using API
 ---

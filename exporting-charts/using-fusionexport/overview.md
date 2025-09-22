@@ -1,5 +1,5 @@
 ---
-title: Overview | FusionCharts
+title: FusionExport Overview | FusionCharts
 description: Export your dashboards to various formats like PNG, JPG, SVG & PDF using FusionExport. Send them as attachments, printable documents & email them. Try now!
 heading: Overview
 ---
@@ -96,3 +96,4 @@ FusionCharts comes bundled with a free add-on called 'Export Handler' which lets
 * [Install FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 * [Export chart as a image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 * [Export a dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+

@@ -1,5 +1,5 @@
 ---
-title: Pyramid chart | FusionCharts
+title: Pyramid Chart in .NET | FusionCharts
 description: Read our comprehensive article and learn the step-by-step process of creating a Pyramid chart and visualize the Global Wealth Pyramid using a funnel chart.
 heading: Pyramid chart
 ---

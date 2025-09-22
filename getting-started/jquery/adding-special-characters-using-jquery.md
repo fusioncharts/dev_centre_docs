@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in jQuery | FusionCharts
 description: Adding Special Characters in jQuery with FusionCharts. Streamline data visualization in your web projects. Check out our website for more info.
 heading: Adding Special Characters
 ---

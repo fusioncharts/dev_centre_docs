@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in JavaScript | FusionCharts
 description: Know how to slice Data Plot using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Slice Data Plot using API
 ---

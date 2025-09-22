@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source via URL in Vue.js | FusionCharts
 description: Efficiently manage data sources in Vue.js applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Setting Data Source Using URL
 ---

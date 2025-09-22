@@ -1,5 +1,5 @@
 ---
-title: Rendering different Charts | FusionCharts
+title: Render Charts with React | FusionCharts
 description: Rendering Different Charts effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Rendering Different Charts
 ---

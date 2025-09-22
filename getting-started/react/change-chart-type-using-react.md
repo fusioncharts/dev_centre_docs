@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in React | FusionCharts
 description: Change chart types effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Change Chart Type at Runtime
 ---

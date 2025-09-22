@@ -1,5 +1,5 @@
 ---
-title: Add Annotations | FusionCharts
+title: Add Annotations in Ruby on Rails Charts | FusionCharts
 description: This article focuses on different type of configurations possible using FusionCharts Rails get wrapper.
 heading: Add Annotations
 ---

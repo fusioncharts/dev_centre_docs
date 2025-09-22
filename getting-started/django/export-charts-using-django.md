@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts | FusionCharts
+title: Exporting Charts Using Django | FusionCharts
 description: Learn how to export your charts as JPG, PNG, SVG, or PDF files using FusionCharts Suite XT and its Django wrapper. Explore to know what's new in the article!
 heading: Exporting Charts
 ---

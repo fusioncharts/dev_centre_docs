@@ -1,6 +1,6 @@
 ---
-title: Adding Special Characters | FusionCharts
-description: Understand how to Adding Special Characters using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
+title: Adding Special Characters in PHP | FusionCharts
+description: Understand how to Add Special Characters using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Adding Special Characters
 ---
 

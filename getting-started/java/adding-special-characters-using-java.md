@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in Java | FusionCharts
 description: Adding Special Characters using Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info.
 heading: Adding Special Characters
 ---

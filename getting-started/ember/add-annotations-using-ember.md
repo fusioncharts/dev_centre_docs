@@ -1,5 +1,5 @@
 ---
-title: Add Annotations | FusionCharts
+title: Add Annotations in Ember Charts | FusionCharts
 description: Add Annotations with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Add Annotations
 ---

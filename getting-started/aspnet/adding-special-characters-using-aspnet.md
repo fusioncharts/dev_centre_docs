@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in ASP.NET | FusionCharts
 description: Enhance your ASP.NET projects by Adding Special Characters with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Adding Special Characters
 ---

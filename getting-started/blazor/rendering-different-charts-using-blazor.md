@@ -1,5 +1,5 @@
 ---
-title: Rendering different Charts | FusionCharts
+title: Render Charts in Blazor Apps | FusionCharts
 description: Render various charts effortlessly in Blazor with FusionCharts. Learn how to integrate and visualize data seamlessly in your Blazor apps. Try it now!
 heading: Rendering Different Charts
 ---

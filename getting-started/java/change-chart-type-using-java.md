@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Java | FusionCharts
 description: Change Chart Type at Runtime using URLs in Java effortlessly with FusionCharts. Enhance your application's data visualization capabilities and performance. Find more info.
 heading: Change Chart Type at Runtime
 ---

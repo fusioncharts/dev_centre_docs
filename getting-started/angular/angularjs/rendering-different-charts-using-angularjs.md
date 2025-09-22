@@ -1,5 +1,5 @@
 ---
-title: Rendering different Charts | FusionCharts
+title: Render Charts with AngularJS | FusionCharts
 description: Rendering Different Charts using URLs in AngularJS with FusionCharts. Take your data visualization capabilities to the next level. Get in touch now.
 heading: Rendering Different Charts
 ---

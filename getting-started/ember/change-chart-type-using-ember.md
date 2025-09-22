@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Ember | FusionCharts
 description: Change Chart Type at Runtime with FusionCharts using this comprehensive guide. Create visually appealing applications effortlessly. Visit our website now.
 heading: Change Chart Type at Runtime
 ---

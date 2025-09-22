@@ -1,5 +1,5 @@
 ---
-title: Overview | FusionCharts
+title: FusionCharts.NET Data Engine Overview | FusionCharts
 description: Gain in-depth insights into FusionCharts DataEngine's data source store and discover the ease of data integration from DataTable with the StaticSource class.
 heading: Overview
 ---
@@ -14,7 +14,7 @@ DataModel has a store for data source. In FusionCharts DataEngine the supported 
 
 DataModel is a class of FusionCharts DataEngine which has a data source store, methods to perform operation on data, a DataTable for output data and if it is derived from another DataModel, a reference of that DataModel.
 
-The DataModel contains the folliowing:
+The DataModel contains the following:
 
 * Data on which operations can be performed.
 * Number of operators to transform the data.

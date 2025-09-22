@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in ASP.NET | FusionCharts
 description: Enhance your ASP.NET projects by Slice Data Plot using API with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
 heading: Slice Data Plot using API
 ---

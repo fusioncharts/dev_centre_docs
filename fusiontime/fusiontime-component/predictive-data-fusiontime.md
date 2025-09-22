@@ -1,5 +1,5 @@
 ---
-title: Predictive data representation | FusionCharts
+title: Predictive Data Representation in FC.NET | FusionCharts
 description: Discover FusionTime's predictive data representation for powerful data visualization. Integrate interactive date controls & elevate your web apps. Start now!
 heading: Predictive data representation
 ---

@@ -1,5 +1,5 @@
 ---
-title: Percentage Calculation | FusionCharts
+title: Percentage Calculation using Vue.js | FusionCharts
 description: Percentage Calculation using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Percentage Calculation
 ---

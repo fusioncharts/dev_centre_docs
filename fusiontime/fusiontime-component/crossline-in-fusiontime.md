@@ -1,5 +1,5 @@
 ---
-title: Crossline | FusionCharts
+title: Crossline in FusionTime Charts | FusionCharts
 description: Discover the power of Crosslines - vertical & horizontal lines to gain quick context of the data. Check out the comprehensive article for more details.
 heading: Crossline
 ---

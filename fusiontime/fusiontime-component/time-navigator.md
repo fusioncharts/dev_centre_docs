@@ -1,5 +1,5 @@
 ---
-title: Time Navigator | FusionCharts
+title: Time Navigator in FusionTime | FusionCharts
 description: Discover FusionTime's time navigator for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Time Navigator
 ---
