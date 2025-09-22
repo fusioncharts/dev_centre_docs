@@ -1,5 +1,5 @@
 ---
-title: Add Annotations | FusionCharts
+title: Add Annotations in PHP Charts | FusionCharts
 description: Understand how to Add Annotations using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Add Annotations
 ---

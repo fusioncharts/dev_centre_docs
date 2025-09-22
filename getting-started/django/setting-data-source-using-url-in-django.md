@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source by URL in Django | FusionCharts
 description: Find out how to set data sources using URLs in Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Setting Data Source Using URL
 ---

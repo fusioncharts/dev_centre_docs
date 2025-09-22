@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Django | FusionCharts
 description: Find out how to Change Chart Type at Runtime in Django with FusionCharts. Check out our guide & simplify the process. Enhance your data visualization game now.
 heading: Change Chart Type at Runtime
 ---

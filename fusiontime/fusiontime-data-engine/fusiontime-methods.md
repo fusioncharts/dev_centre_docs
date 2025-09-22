@@ -1,5 +1,5 @@
 ---
-title: FusionTime Methods | FusionCharts
+title: FusionTime Data Engine Methods | FusionCharts
 description: Discover the DataStore methods for efficient data management and manipulation. Unlock the potential of DataStore by reading our comprehensive article now.
 heading: Methods
 ---

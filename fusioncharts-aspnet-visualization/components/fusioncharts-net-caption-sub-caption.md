@@ -1,5 +1,5 @@
 ---
-title: Caption and Sub-Caption | FusionCharts
+title: Caption & Sub-Caption in FusionCharts .NET | FusionCharts
 description: This article outlines the steps of how to configure caption and sub-caption.
 heading: Caption and Sub-Caption
 ---

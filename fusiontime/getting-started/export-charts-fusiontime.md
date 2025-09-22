@@ -1,5 +1,5 @@
 ---
-title: Exporting Charts | FusionCharts
+title: Exporting Charts in FusionTime | FusionCharts
 description: Export charts seamlessly with FusionTime! Learn how to export charts in various formats. Enhance your data visualization now! Explore the guide.
 heading: Exporting Charts
 ---

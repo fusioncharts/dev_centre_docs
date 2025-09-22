@@ -1,5 +1,5 @@
 ---
-title: Funnel chart | FusionCharts
+title: Funnel Chart in ASP.NET | FusionCharts
 description: Explore the steps involved in creating a funnel chart to analyze the conversion rates of a website's purchases. Click now to explore more with our article!
 heading: Funnel chart
 ---

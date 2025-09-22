@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in JavaScript | FusionCharts
 description: Know how to change chart types using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us. Get in touch.
 heading: Change Chart Type at Runtime
 ---

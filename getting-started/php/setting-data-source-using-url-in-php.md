@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source by URL in PHP | FusionCharts
 description: Understand how to set Data Source using PHP with FusionCharts. Efficiently enhance flexibility & visual appeal in your web applications.
 heading: Setting Data Source Using URL
 ---

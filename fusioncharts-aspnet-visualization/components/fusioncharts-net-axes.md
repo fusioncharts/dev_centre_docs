@@ -1,5 +1,5 @@
 ---
-title: Axes | FusionCharts
+title: Axes in ASP.NET | FusionCharts
 description: Discover FusionCharts ASP.NET Axes to create interactive charts with customizable axes for better data visualization. Try it now and enhance presentations!
 heading: Axes
 ---

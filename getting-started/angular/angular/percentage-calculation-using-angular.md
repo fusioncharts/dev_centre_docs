@@ -1,5 +1,5 @@
 ---
-title: Percentage Calculation | FusionCharts
+title: Percentage Calculation Using Angular | FusionCharts
 description: Learn percentage calculation in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Percentage Calculation
 ---
@@ -8,7 +8,7 @@ Events are signals that let you execute specific actions—such as sending data 
 
 This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using `angular-fusioncharts` component.
 
-## A chart configured to calculate the percent, is shown below:
+## A chart configured to calculate the percent is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 

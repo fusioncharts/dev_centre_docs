@@ -1,5 +1,5 @@
 ---
-title: Adding Special Characters | FusionCharts
+title: Adding Special Characters in React | FusionCharts
 description: Adding Special Characters effortlessly in React with FusionCharts, optimizing your data visualization capabilities for web applications seamlessly.
 heading: Adding Special Characters
 ---

@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in Django | FusionCharts
 description: Find out how to Slice Data Plot using API in Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Slice Data Plot using API
 ---

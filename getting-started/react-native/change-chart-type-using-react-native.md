@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in React Native | FusionCharts
 description: Explore how to change chart types in React Native effortlessly with FusionCharts, optimizing your data visualization for mobile applications seamlessly.
 heading: Change Chart Type at Runtime
 ---

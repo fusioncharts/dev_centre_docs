@@ -1,5 +1,5 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in Angular | FusionCharts
 description: Learn Slice Data Plot using API in Angular with FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Slice Data Plot using API
 ---

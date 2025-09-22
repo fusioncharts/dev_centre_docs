@@ -1,6 +1,6 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
-description: Setting Data Source Using URL n Ruby on Rails utilizing FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
+title: Setting Data Source by URL in Ruby on Rails | FusionCharts
+description: Setting Data Source Using URL in Ruby on Rails utilizing FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
 heading: Setting Data Source Using URL
 ---
 

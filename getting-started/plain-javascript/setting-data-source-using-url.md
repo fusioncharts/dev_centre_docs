@@ -1,6 +1,6 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
-description: Know how to Setting Data Source using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
+title: Setting Data Source by URL in JavaScript | FusionCharts
+description: Know how to Set Data Source using plain JavaScript with FusionCharts. Take your data visualization capabilities a notch up seamlessly with us.
 heading: Setting Data Source Using URL
 ---
 

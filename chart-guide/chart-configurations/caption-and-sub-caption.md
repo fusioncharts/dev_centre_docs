@@ -1,5 +1,5 @@
 ---
-title: Caption and Sub-caption | FusionCharts
+title: Chart Caption and Sub-Caption Guide | FusionCharts
 description: Enhance your charts with captivating captions and sub-captions! Dive into FusionCharts' guide now for expert tips. Optimize your data visualization. 
 heading: Caption and sub-caption
 ---

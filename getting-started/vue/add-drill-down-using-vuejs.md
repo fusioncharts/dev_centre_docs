@@ -1,5 +1,5 @@
 ---
-title: Adding Drill Down using Vue | FusionCharts
+title: Adding Drill-Down in Vue.js Charts | FusionCharts
 description: Adding Drill Down using Vue applications using URLs with FusionCharts, optimizing data presentation. Enhance charts with easy data integration!
 heading: Adding Drill Down using Vue
 ---

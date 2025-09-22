@@ -1,5 +1,5 @@
 ---
-title: Adding Drill Down using Vue | FusionCharts
+title: Adding Drill-Down in Ruby on Rails Charts | FusionCharts
 description: Adding Drill Down using Vue in Ruby on Rails using FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
 heading: Adding Drill Down using Vue
 chartPresent: true

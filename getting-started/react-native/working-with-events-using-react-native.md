@@ -1,5 +1,5 @@
 ---
-title: Bind Event Listener | FusionCharts
+title: Bind Event Listener in React Native | FusionCharts
 description: Check out the article & harness the potential of JavaScript events for executing actions and manipulating data in response to chart interactions and updates.
 heading: Bind Event Listener
 ---

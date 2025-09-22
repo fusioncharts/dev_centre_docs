@@ -1,5 +1,5 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime in Angular | FusionCharts
 description: Learn to change chart type in Angular using FusionCharts with this guide. Enhance your data visualization capabilities efficiently. Try now!
 heading: Change Chart Type at Runtime
 ---

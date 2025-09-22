@@ -1,6 +1,6 @@
 ---
-title: Adding Special Characters | FusionCharts
-description: Find out how to Adding Special Characters in Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
+title: Adding Special Characters in Django | FusionCharts
+description: Find out how to Add Special Characters in Django with FusionCharts. Check out our guide and simplify the process. Enhance your data visualization game now.
 heading: Adding Special Characters
 ---
 

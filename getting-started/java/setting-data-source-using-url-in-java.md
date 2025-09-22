@@ -1,5 +1,5 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source by URL in Java | FusionCharts
 description: Set data sources using URLs in Java effortlessly with FusionCharts. Enhance application's data visualization capabilities and performance. Find more info here.
 heading: Setting Data Source Using URL
 ---

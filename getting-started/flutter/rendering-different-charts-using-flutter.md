@@ -1,5 +1,5 @@
 ---
-title: Rendering different Charts | FusionCharts
+title: Render Charts with Flutter | FusionCharts
 description: Rendering Different Charts using Flutter on FusionCharts. Elevate your data visualization aesthetics and user experience seamlessly. Get in touch now.
 heading: Rendering Different Charts
 ---

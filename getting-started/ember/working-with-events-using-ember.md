@@ -1,5 +1,5 @@
 ---
-title: Bind Event Listener | FusionCharts
+title: Bind Event Listener in Ember | FusionCharts
 description: Discover how to bind event listeners to FusionCharts in Ember for interactive chart actions! Elevate your charting experience with dynamic event handling.
 heading: Bind Event Listener
 ---

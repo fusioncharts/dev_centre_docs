@@ -1,5 +1,5 @@
 ---
-title: Add Annotations | FusionCharts
+title: Add Annotations in JavaScript Charts | FusionCharts
 description: This article focuses on different type of configurations possible using Plain JavaScript.
 heading: Add Annotations
 ---
