@@ -1,6 +1,6 @@
 ---
 title: Version 4.1.x | FusionCharts
-description: This section discusses the change in features and attributes with the latest released version.
+description: Explore FusionCharts 4.1.X update history. See key improvements, fixes, and enhancements that boost performance and elevate your data visualizations quickly.
 heading: Version 4.1.x
 ---
 
