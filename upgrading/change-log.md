@@ -1,6 +1,6 @@
 ---
 title: Full Changelog & Version History | FusionCharts
-description: This section discusses the change in features and attributes with the latest released version.
+description: Stay updated with the FusionCharts Change Log. Track new features, improvements, and bug fixes in every release to keep your projects running smoothly.
 heading: Version 4.2.x
 ---
 

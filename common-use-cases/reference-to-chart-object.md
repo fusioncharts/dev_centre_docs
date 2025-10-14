@@ -1,6 +1,7 @@
 ---
 permalink: api/tutorials/reference-to-chart-object.html
 title: Check out the comprehensive guide to FusionCharts' charts, providing detailed documentation on every aspect, from configuration options to customizations.
+description: Learn how to reference chart objects in FusionCharts. Access, update, and control charts with ease to create dynamic, interactive visualizations.
 heading: Get Reference to Chart Object
 chartPresent: true
 layout: page
