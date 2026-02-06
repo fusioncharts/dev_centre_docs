@@ -4,18 +4,35 @@ description: This section discusses the new features introduced in the latest ve
 heading: What's New
 ---
 
-This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.2.1.
+This section is for users using the previous version of FusionCharts in their application. Here, we'll talk about the new features introduced in v4.2.x.
 
-## Improved Horizontal Legend Scrolling
+## New `ignoredepthforlineplots` Attribute
 
-FusionCharts version 4.2.1 improves the behavior of **Horizontal Legend Scrolling** and now works independently from vertical scrolling. This improvement ensures smoother navigation and prevents horizontal scroll actions from unintentionally affecting vertical movement, making chart interaction more intuitive and precise.
+FusionCharts version 4.2.0 introduces the `ignoredepthforlineplots` attribute, which avoids issues when plot lines should change appearance from 3D to 2D.  
 
-## New Axis Domain Padding Controls for TimeSeries Charts
+This addition can be used when hiding column plots and leaving a single line plot in an `mscolumn3dlinedy` or `stackedcolumn3dlinedy` chart. The line appears as a 2D line, rather than in 3D.
 
-FusionCharts release 4.2.1 introduces support for `maxpadding`, `minpadding`, and `strictpadding` attributes for `TimeSeries` charts, giving you greater control over how axis ranges are displayed.
+## Inverse Y-axis for Scatter and Bubble Charts
 
-With strict padding enabled, you can define exact minimum and maximum values, ensuring consistent and predictable axis boundaries. When strict mode is not used, charts continue to apply automatic padding by default, so existing implementations remain unchanged.
+FusionCharts release 4.2.0 introduces support for a new feature that allows users to invert the **X** and **Y** axes for `Scatter` and `Bubble` Charts, improving user experience and customization through the **X** and **Y** axes. Using the `reverseyaxis` attribute facilitates users in spotting trends or patterns from a different perspective.
 
-## Updated jsPDF Dependency
+This feature gives users better control over data display, particularly for datasets where natural ordering, such as descending values or negative/positive axes, is important.
 
-PDF export capabilities have been improved in this release, updating the **jsPDF** dependency to **v4.0.0**. This upgrade incorporates the latest security improvements while preserving existing PDF generation behavior, ensuring a seamless experience.
+## React Native WebView Improvements
+
+This release added an explicit Webpack public path assignment, which, if undefined by the user, gets defined as an empty string. This ensures that the chart is rendered unaffected in **React Native WebView** across all mobile platforms. 
+
+Additionally, this release updated the FusionCharts library version to 4.2.0-alpha.0 in `react-native-fusioncharts` to be compatible with the latest React Native version. 
+
+## Upgraded SDKs and Support for Third-Party Integrations
+
+FusionCharts 4.2.0 enhanced support for third-party tools and libraries to better and safer user experience:
+
+- C#: Upgraded to v2 major version, now supporting **.NET 9**.
+- Python: Upgraded to v2 major version, now supporting **Python 3.13.5** and **Django 5.2.4**.
+- Java: Upgraded to v2 major version, now supporting **Java 24**.
+- Upgraded `react-fusioncharts` integration supports the latest version of **React v19**.
+- Upgraded `vue-fusioncharts` integration supports the version **Vue 3.5.17**.
+- Upgraded `angular-fusioncharts` integration supports **Angular v20**.
+
+These updates aim to provide a more seamless experience for improved compatibility, performance, and access to the latest features across all platforms.
