@@ -4,6 +4,17 @@ description: Stay updated with the FusionCharts Change Log. Track new features, 
 heading: Version 4.2.x
 ---
 
+<h2 class="sub-heading">Version 4.2.1</h2>
+
+<p class="release-date">30th January, 2025</p>
+  
+<h4>Improvements</h4>
+
+- Enhanced the behavior of **Horizontal Legend Scrolling** to work independently from vertical scrolling. This ensures smoother navigation and prevents horizontal scroll actions from affecting vertical movement. Refined scrollbar sizing to improve alignment and prevent extra padding, resulting in a cleaner legend layout.
+- FusionCharts 4.2.1 introduces `maxpadding`, `minpadding`, and `strictpadding` attributes to configure **Axis Domain Padding** in `TimeSeries` charts. When strict mode is enabled, charts can render with explicitly defined **minimum** and **maximum** values. Default auto‑padding behavior remains unchanged for all other cases.
+- Updated the **jsPDF** dependency to version 4.0.0 for PDF export, addressing security updates while maintaining existing PDF generation behavior unchanged.
+
+
 <h2 class="sub-heading">Version 4.2.0</h2>
 
 <p class="release-date">5th September, 2025</p>
@@ -37,5 +48,3 @@ heading: Version 4.2.x
 - Resolved an issue that prevented the `react-fusioncharts` component from rendering correctly inside the **shadow DOM**.
 - Resolved an issue where **Tooltips** did not display upon hovering over values on an `Errorline` chart. Now, the tooltips are shown as expected.
 - Resolved the issue where **ReactJS FusionCharts** did not work as expected when using **StrictMode**. Users using React version 17 can use `react-fusioncharts` version 4.1.0, while those using React version 18 or higher should use the latest `react-fusioncharts` version.
-
-

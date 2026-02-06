@@ -6,7 +6,7 @@ heading: Changed Behavior
 
 <h2>Overview</h2>
 
-FusionCharts v4.2.0 introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
+FusionCharts v4.2.x introduces a range of new features and enhancements designed to improve functionality, accessibility, and security. Some of these updates may change existing behaviors within the platform. Please review the details below to understand how these adjustments might impact your workflows.
 
 <h4>The "ignoredepthforlineplots" Attribute </h4>
 
