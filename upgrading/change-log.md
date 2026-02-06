@@ -1,7 +1,7 @@
 ---
 title: Full Changelog & Version History | FusionCharts
 description: Stay updated with the FusionCharts Change Log. Track new features, improvements, and bug fixes in every release to keep your projects running smoothly.
-heading: Version 4.2.1
+heading: Version 4.2.x
 ---
 
 <h2 class="sub-heading">Version 4.2.1</h2>
