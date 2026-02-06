@@ -4,7 +4,7 @@ description: Stay updated with the FusionCharts Change Log. Track new features, 
 heading: Version 4.2.1
 ---
 
-<h2 class="sub-heading">Version 4.2.0</h2>
+<h2 class="sub-heading">Version 4.2.1</h2>
 
 <p class="release-date">30th January, 2025</p>
   
