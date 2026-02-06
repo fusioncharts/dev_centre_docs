@@ -1933,10 +1933,6 @@
                   "title": "Version History",
                   "children": [
                      {
-                        "title": "v4.2.x",
-                        "path": "/upgrading/version-history/version-4-2-X"
-                     },
-                     {
                         "title": "v4.1.x",
                         "path": "/upgrading/version-history/version-4-1-X"
                      },
