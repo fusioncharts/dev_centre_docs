@@ -4,6 +4,21 @@ description: Stay updated with the FusionCharts Change Log. Track new features, 
 heading: Version 4.2.x
 ---
 
+<h2 class="sub-heading">Version 4.2.2</h2>
+
+<p class="release-date">1st April, 2026</p>
+  
+<h4>Improvements</h4>
+
+- FusionCharts 4.2.2 improved chart behavior when the chart type is changed. The **Scroll Position** now automatically resets to the beginning, providing a more consistent and predictable experience when switching between `scrollcolumn2d`, `scrollline2d`, and other scroll charts.
+- Enhanced zoom and scroll behavior in `ZoomLine` charts. Zoom state is now preserved correctly after scrolling, ensuring consistency for the user experience. This update also improves performance for `resetChart()` and `zoomOut()` methods.
+- FusionCharts 4.2.2 improved how the **jQuery** plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both versioned and latest paths available. This enhancement also standardizes artifact naming and updates the npm package to `jquery-fusioncharts@2.0.1` for consistency.
+
+<h4>Fixes</h4>
+
+- Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in financial and variance charts.
+
+
 <h2 class="sub-heading">Version 4.2.1</h2>
 
 <p class="release-date">30th January, 2026</p>
