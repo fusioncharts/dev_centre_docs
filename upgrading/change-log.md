@@ -14,7 +14,7 @@ heading: Version 4.2.x
 
 <h4>Fixes</h4>
 
-- FusionCharts 4.2.2 improved chart behavior when the chart type is changed. The **Scroll Position** now automatically resets to the beginning, providing a more consistent and predictable experience when switching between `scrollcolumn2d`, `scrollline2d`, and other scroll charts.
+- FusionCharts 4.2.2 fixed chart behavior when the chart type is changed. The **Scroll Position** now automatically resets to the beginning, providing a more consistent and predictable experience when switching between `scrollcolumn2d`, `scrollline2d`, and other scroll charts.
 - Enhanced zoom and scroll behavior in `ZoomLine` charts. **Zoom state** is now preserved correctly after scrolling, ensuring a consistent user experience.
 - Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in financial and variance charts.
 
