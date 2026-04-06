@@ -10,7 +10,7 @@ heading: Version 4.2.x
   
 <h4>Improvements</h4>
 
-- FusionCharts 4.2.2 improved how the **jQuery** plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both [versioned](https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js) and [latest](https://cdn.fusioncharts.com/jquery-fusioncharts/latest/jquery.fusioncharts.min.js) paths available.
+- FusionCharts 4.2.2 improved how the jQuery plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both [versioned](https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js) and [latest](https://cdn.fusioncharts.com/jquery-fusioncharts/latest/jquery.fusioncharts.min.js) paths available.
 
 <h4>Fixes</h4>
 
