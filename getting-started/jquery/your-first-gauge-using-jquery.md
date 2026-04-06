@@ -47,7 +47,7 @@ $ npm install fusioncharts --save
     &lt;!-- FusionCharts --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
@@ -269,7 +269,7 @@ $('document').ready(function () {
         &lt;!-- Include fusion theme file --&gt;
         &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;
@@ -332,7 +332,7 @@ $('document').ready(function () {
         &lt;!-- Include fusion theme file --&gt;
         &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;
