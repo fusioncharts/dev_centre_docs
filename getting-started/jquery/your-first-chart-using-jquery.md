@@ -39,7 +39,7 @@ If you choose to install `fusioncharts` package via **npm**, make sure you have 
     &lt;!-- FusionCharts --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
@@ -199,7 +199,7 @@ Get ready to render your first chart finally with the steps below:
         &lt;!-- Include fusion theme file --&gt;
         &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;

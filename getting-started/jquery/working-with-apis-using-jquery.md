@@ -30,7 +30,7 @@ Let's take an example shown below, which will convert a Column 2D chart to a Pie
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
     <script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"></script>
 </head>
 
 <body>

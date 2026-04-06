@@ -50,7 +50,7 @@ $ npm install fusioncharts --save
     &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts@3.13.3-sr.1/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -445,7 +445,7 @@ Also, include the following code in your `.html` file:
     &gt;&lt;/script&gt;
     &lt;script
       type="text/javascript"
-      src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"
+      src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"
     &gt;&lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -478,7 +478,7 @@ Also, include the following code in your `.html` file:
     &gt;&lt;/script&gt;
     &lt;script
       type="text/javascript"
-      src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"
+      src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"
     &gt;&lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
