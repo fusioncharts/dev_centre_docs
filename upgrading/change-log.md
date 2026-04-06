@@ -10,13 +10,13 @@ heading: Version 4.2.x
   
 <h4>Improvements</h4>
 
-- FusionCharts 4.2.2 improved how the **jQuery** plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both versioned and latest paths available.
+- FusionCharts 4.2.2 improved how the **jQuery** plugin is delivered to make it easier and more reliable to use. The plugin is now officially hosted on the FusionCharts CDN, with both [versioned](https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js) and [latest](https://cdn.fusioncharts.com/jquery-fusioncharts/latest/jquery.fusioncharts.min.js) paths available.
 
 <h4>Fixes</h4>
 
-- FusionCharts 4.2.2 fixed chart behavior when the chart type is changed. The scroll position now automatically resets to the beginning, providing a more consistent and predictable experience when switching between `scrollcolumn2d`, `scrollline2d`, and other scroll charts.
-- Enhanced zoom and scroll behavior in `ZoomLine` charts. **Zoom state** is now preserved correctly after scrolling, ensuring a consistent user experience.
-- Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in financial and variance charts.
+- FusionCharts 4.2.2 fixed chart behavior when the chart type is changed. The scroll position now automatically resets to the beginning, providing a more consistent and predictable experience when switching between charts.
+- Fixed zoom and scroll behavior in `ZoomLine` charts. Zoom and reset states are now correctly maintained when navigating across multiple zoom levels and using scroll.
+- Resolved an issue where enabling `showPlotBorder` and `plotBorderThickness` caused thin internal lines to appear in negative stacks. Borders are now rendered consistently, resulting in clean, seamless borders between segments and more consistent visuals in `stacked-column-2d` charts.
 
 
 <h2 class="sub-heading">Version 4.2.1</h2>
