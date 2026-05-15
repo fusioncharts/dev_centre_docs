@@ -988,7 +988,7 @@ export class AppModule {}
 
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
 
-You can download the map definition files separately from [here](https://www.fusioncharts.com/download/map-definition-files) if you want to save them locally. In the section below, we will see how to build a world map.
+You can download the map definition files separately from [here](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) if you want to save them locally. In the section below, we will see how to build a world map.
 
 {% embed_chart getting-started-your-first-map.js %}
 
