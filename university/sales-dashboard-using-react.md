@@ -79,7 +79,7 @@ The multi-series column 2D chart is used to plot data for multiple datasets. Thi
 The multi-series line chart is used to visualize trends and relationships in multiple datasets. It consists of various data points connected using line segments, where each point represents a single value. It is widely used to show continuous data like opportunities in pipeline, closed opportunities etc. Take a detailed look at Multi-Series Line Charts [here](https://www.fusioncharts.com/charts/line-area-charts/line-chart-with-multiple-series). 
 
 **Maps**
-FusionCharts offers more than 1400+ maps to plot geographical data like revenue by regions, population by state and survey effectively. To render the maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/map-definition-files) and copy-paste the maps folder within your FusionCharts directory.
+FusionCharts offers more than 1400+ maps to plot geographical data like revenue by regions, population by state, and conduct surveys effectively. To render the maps, you need to download the map definition files from [here](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) and copy-paste the maps folder within your FusionCharts directory.
 
 There are multiple ways to install them, for more details you can check out this [developer documentation page](https://www.fusioncharts.com/dev/map-guide/setup).
 

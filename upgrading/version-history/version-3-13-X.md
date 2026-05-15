@@ -393,7 +393,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
   - Older Map files are supported till 3.12.2
   - Latest Map files are supported starting 3.13.0
 
-> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/map-definition-files) the latest version and replace for upgrading to the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) the latest version and replace for upgrading to the latest map definition files.
 
 - The core maps package has been updated to:
 
