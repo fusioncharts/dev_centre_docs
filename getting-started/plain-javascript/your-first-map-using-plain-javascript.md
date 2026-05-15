@@ -602,7 +602,7 @@ That's it! Your first map using Plain JavaScript is ready.
 
 ## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
+To reduce the size of the package, FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provides 1600+ maps for you to explore. [Download](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -741,7 +741,7 @@ webVisit.render();
 </div>
 
 <div class='tab cdn-tab'>
-<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. </br>The map definition files are named in the `fusioncharts.[MAP_ALIAS].js ` format, where `MAP_ALIAS` represents the country, state or region name.</div>
+<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) the map definition files, then copy those map files to your current maps folder. </br>The map definition files are named in the `fusioncharts.[MAP_ALIAS].js ` format, where `MAP_ALIAS` represents the country, state or region name.</div>
 <pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
@@ -798,7 +798,7 @@ webVisit.render();
 </div>
 
 <div class='tab localfiles-tab'>
-<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. </br>The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where `MAP_ALIAS` represents the country, state or region name.</div>
+<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) the map definition files, then copy those map files to your current maps folder. </br>The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where `MAP_ALIAS` represents the country, state or region name.</div>
 <pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
