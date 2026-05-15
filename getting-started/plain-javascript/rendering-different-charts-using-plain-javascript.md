@@ -731,11 +731,11 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
 
-You can download the map definition files separately from [here](https://www.fusioncharts.com/download/map-definition-files) if you want to save them locally. In the section below, we will see how to build a world map.
+You can download the map definition files separately from [here](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) if you want to save them locally. In the section below, we will see how to build a world map.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents.
+As you can see in the map above, the data plot indicates the average annual population growth across the 7 continents.
 
 | State | Entity Name | Value |
 | ----- | ----------- | ----- |
@@ -910,7 +910,7 @@ That’s it. Your first map is ready.
 
 ### Render other Maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
+To reduce the size of the package, FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provides 1600+ maps for you to explore. [Download](https://cdn.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
