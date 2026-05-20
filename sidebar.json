@@ -1731,6 +1731,10 @@
                   "title": "Common Use Cases",
                   "children": [
                      {
+                        "title": "Accessibility",
+                        "path": "/common-use-cases/introduction-to-accessibility"
+                     },
+                     {
                         "title": "Building a Dashboard",
                         "path": "/common-use-cases/building-dashboards"
                      },
