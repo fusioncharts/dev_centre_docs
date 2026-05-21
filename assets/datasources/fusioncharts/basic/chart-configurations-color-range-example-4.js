@@ -240,17 +240,17 @@
                 'maps/world': 'world map'
             };
             var chartSelected = 'angulargauge';
-            var uniqueId = Math.random().toString(36).substr(2, 9);
+            var uniqueId = container.id || Math.random().toString(36).substr(2, 9);
 
             function instantiate() {
                 // Create option containers
                 var parent = container.parentNode;
 
                 var optionsContainer = document.createElement('div');
-                optionsContainer.id = 'config-container';
+                optionsContainer.id = 'config-container-' + uniqueId;
 
                 var spanLabel = document.createElement('span');
-                spanLabel.id = 'select-text';
+                spanLabel.id = 'select-text-' + uniqueId;
                 spanLabel.innerText = "Choose a chart type: ";
 
                 var radioContainer = document.createElement('form');
