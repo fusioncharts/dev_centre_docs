@@ -119,7 +119,7 @@
                   "topPosition": "72%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data value looks using colors, font, and font properties, using available attributes. Learn more about their usage ",
-                     "linkPath": "/chart-guide/chart-configurations/data-value"
+                     "linkPath": "/chart-guide/chart-configurations/data-values"
                   }]
                },
                {
