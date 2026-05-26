@@ -8,7 +8,7 @@ heading: Dynamically Control Annotations
 
 - [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
 - [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
-- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
+- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations)
 - [Grouping Annotations](/chart-guide/chart-configurations/annotations/grouping-annotations)
 
 You can use methods available within FusionCharts Suite XT to create, update, set the visibility of, and delete annotation groups and items at runtime, with the FusionCharts API. This is especially helpful when you want to augment your charts with context sensitive information. For instance, you can show, hide, or update the color for an annotation group or item using the respective methods.
