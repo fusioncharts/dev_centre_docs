@@ -14,7 +14,7 @@ We are assuming that you have a 'react-native project' up and running. If not, f
 
 ## Create an application using FusionCharts – with Expo
 
-Using FusionCharts with Expo, you can create your application. First, ensure you have 'Node.js' and 'Git' installed in your environment. For more details, you can check the official [Expo documentation](https://docs.expo.dev/get-started/installation/).
+Using FusionCharts with Expo, you can create your application. First, ensure you have 'Node.js' and 'Git' installed in your environment. For more details, you can check the official [Expo documentation](https://docs.expo.dev/get-started/set-up-your-environment/).
 
 To get started, open the Command Prompt and run the following command to create a new application: 
 ```
