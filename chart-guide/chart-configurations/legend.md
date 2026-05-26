@@ -347,9 +347,9 @@ Now, let's set the value of `legendNumRows` attribute to **3** and the value of 
 
 {% embed_chart chart-configurations-legend-example-19.js %}
 
-Click [here](https://jsfiddle.net/fusioncharts/1q92e8jr/) to edit the above chart.
+Click [here](https://www.fusioncharts.com/dev/demos/chart-gallery) to edit the above chart.
 
-In the above chart, even if the value of `legendNumRows` attribute is set to **3**, the number of rows displayed is **2** whereas the number of columns have changed to **3**. For the legends, `legendNumColumns` attribute gets the higher priority than `legendNumRows`. So, in the above sample when the value of `legendNumColumns` is set to **3**, the chart sets the legend icons according to the attribute.
+In the above chart, even if the value of `legendNumRows` attribute is set to **3**, the number of rows displayed is **2**, whereas the number of columns has changed to **3**. For the legends, `legendNumColumns` attribute gets the higher priority than `legendNumRows`. So, in the above sample when the value of `legendNumColumns` is set to **3**, the chart sets the legend icons according to the attribute.
 
 ## Customize Legend Scroll Bar
 
