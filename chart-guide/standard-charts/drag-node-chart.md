@@ -556,7 +556,7 @@ Now, make the following updates to this drag-node chart:
 
 * [Add a node](https://www.fusioncharts.com/dev/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-nodes)** **named **My New Location**, using the **Add a Node** menu item.
 
-* [Add a connector](https://www.fusioncharts.com/dev/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-connectors) named **Way to SM**, between "Santa Monica" and "My New Location", using the **Add a Connector** menu item.
+* [Add a connector](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-node-chart/) named **Way to SM**, between "Santa Monica" and "My New Location", using the **Add a Connector** menu item.
 
 The chart will look as shown in the image below:
 
