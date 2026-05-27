@@ -300,9 +300,9 @@ The code given below ensures that whenever you click on an entity, a pop up wind
 }
 ```
 
-Click [here](https://www.fusioncharts.com/getting-started/building-your-map) for Instructions on building the base US map and the data used. 
+Click [here](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-map-using-plain-javascript) for Instructions on building the base US map and the data used. 
 
-Refer to the code snippet given below to configures the behavior of the drill down as part of the entity:
+Refer to the code snippet given below to configure the behavior of the drill down as part of the entity:
 
 ```json
 {
