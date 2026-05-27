@@ -364,7 +364,7 @@ heading: Release Notes
 
 <p class="release-date">27th February, 2019</p>
 
-- This marks the release of first version of [FusionTime](https://www.fusioncharts.com/fusiontime)! One can now create high performing time series visualizations and stock charts in Javascript very easily.
+- This marks the release of first version of [FusionTime](https://www.fusioncharts.com/time)! One can now create high performing time series visualizations and stock charts in Javascript very easily.
 
 - The usage of a special [data layer](/fusiontime/getting-started/how-fusion-time-works#fusiontime-data-layer) in FusionTime ensures that a seamless experience of the out-of-the-box features of time series visualization is available even with a high volume of time series data.
 
