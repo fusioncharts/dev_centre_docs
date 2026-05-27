@@ -445,4 +445,4 @@ Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/) to configure the above 
 
 > In the above chart, all values in the range 900-1000 will be included in the initial display.
 
-FusionCharts offers a 14-day [free trial](https://www.fusioncharts.com/download), so you have to pay only once satisfied. 
+FusionCharts offers a 14-day [free trial](https://resources.fusioncharts.com/download-free-trial/), so you have to pay only once satisfied. 
