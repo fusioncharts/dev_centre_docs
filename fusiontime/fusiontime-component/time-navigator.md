@@ -109,7 +109,7 @@ Refer to the code below:
 }
 ```
 
-For a list of supported formats refer to [Date and Time Formats](/dev/fusiontime/fusiontime-attributes#date-time-format)
+For a list of supported formats refer to [Date and Time Formats](https://www.fusioncharts.com/dev/fusiontime/getting-started/output-time-format)
 
 {% embed_ftChart fusiontime-timenavigator-tooltip %}
 
