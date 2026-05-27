@@ -44,7 +44,7 @@ rails server
 
 Download the FusionCharts library to get the `FusionCharts rails gem` wrapper.
 
-<a href="https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=js">Download FusionCharts library</a>
+<a href="https://resources.fusioncharts.com/download-free-trial/">Download FusionCharts library</a>
 
 FusionCharts rails gem wrapper can be added in two ways:
 
