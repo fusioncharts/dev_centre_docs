@@ -10,7 +10,7 @@ heading: Version 3.11.x
 
 <h4 class="sub-heading">Key Change</h4>
 
-- The current pricing plan has been changed to an annual model, based on the number of developers.For more details, please visit our [pricing](https://www.fusioncharts.com/buy/) page.
+- The current pricing plan has been changed to an annual model, based on the number of developers.For more details, please visit our [pricing](https://cart.fusioncharts.com/) page.
 
 <h4>New Features</h4>
 

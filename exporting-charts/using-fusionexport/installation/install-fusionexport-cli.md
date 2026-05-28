@@ -34,7 +34,7 @@ We recommend global installation to facilitate using the tool from any directory
 $ fusionexport --help
 ```
 
-> Before using FusionExport CLI, ensure that [FusionExport Server](/dev/exporting-charts/using-fusionexport/installation/install-fusionexport-server) is running.
+> Before using FusionExport CLI, ensure that [FusionExport Server](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/fusionexport-server) is running.
 
 ## Next Steps
 

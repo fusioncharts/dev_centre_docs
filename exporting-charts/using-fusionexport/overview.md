@@ -33,7 +33,7 @@ Now that you are aware of what you get with FusionExport. Let's explore how you 
 2. Send dashboards over email in an email-friendly format or as a PDF attachment
 3. Automate server-side generation of dashboards for scheduled reporting
 
-You can see them in action by trying one of the[ demo of FusionExport](https://www.fusioncharts.com/demos/dashboards/wealth-management-dashboard-with-export/).
+You can see them in action by trying one of the[ demo of FusionExport](https://www.fusioncharts.com/dashboards/).
 
 ### Add Download dashboard as PDF button to your live dashboards
 
@@ -43,7 +43,7 @@ Most popular feature in a dashboard is to be able to download it in PDF. And you
 
 ### Send dashboards over email in an email-friendly format or as a PDF attachment
 
-Another most common use case for FusionExport is to be able to send an email which contains the dashboards. Instead of sending plain tables or CSV files in the email, you can send real charts and take the product engagement to a next level. Here is how you can implement it:
+Another common use case for FusionExport is to be able to send an email that contains the dashboards. Instead of sending plain tables or CSV files in the email, you can send real charts and take the product engagement to a next level. Here is how you can implement it:
 
 ![FusionExport - FlowChart - Send dashboards over an email](/images/FusionExport-Flowchart-Send.png)
 

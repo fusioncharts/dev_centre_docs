@@ -123,9 +123,9 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jm8rfp7h/) to edit the zoom scatter chart.
+Click [here](https://www.fusioncharts.com/dev/demos/chart-gallery/) to edit the zoom scatter chart.
 
-> The formulae used to draw the regression lines for both the modes are given below: 
+> The formulae used to draw the regression lines for both modes are given below: 
 
 > **Y on X**: The regression equation of **Y on X** is the equation of the best fitting straight line in the form **y=a+bx**, where **x** is the explanatory variable and **y** is the dependent variable and **b=(n . Σ (x.y) - (Σ x).(Σ y) )/ (n Σx² – (Σx)²)**. 
 

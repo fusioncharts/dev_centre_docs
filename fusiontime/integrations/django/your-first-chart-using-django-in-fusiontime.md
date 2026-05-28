@@ -18,7 +18,7 @@ To create a chart in a web app developed using Django, download the following wr
 
 - Django Framework - [Link](https://www.djangoproject.com/download/)
 - FusionCharts Library - [Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)
-- FusionCharts Django wrapper - [Link](https://www.fusioncharts.com/django-charts/)
+- FusionCharts Django wrapper - [Link](https://www.fusioncharts.com/dev/getting-started/django/your-first-chart-using-django/)
 
 Note that the `FusionCharts Django` wrapper requires Python 2.7 or higher.
 
