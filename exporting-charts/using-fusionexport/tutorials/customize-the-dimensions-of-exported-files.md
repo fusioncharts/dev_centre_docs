@@ -14,7 +14,7 @@ Before you start, ensure that you have:
 
 2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
-3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
+3. [Export a Dashboard](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
 ## Customize the dimension
 

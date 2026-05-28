@@ -25,7 +25,7 @@ For Windows based systems, create a Web application project.
 
 Download the FusionCharts library to get the `asp-net-wrapper` wrapper.
 
-<a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=csharp' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
+<a href='https://resource.fusioncharts.com/download-free-trial/' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
 Open your project and follow the steps mentioned below:
 

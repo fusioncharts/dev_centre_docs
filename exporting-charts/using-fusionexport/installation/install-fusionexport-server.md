@@ -4,7 +4,7 @@ description: This article focuses on how you can install the FusionExport server
 heading: Install FusionExport Server
 ---
 
-Before going ahead, please ensure that you have downloaded the FusionExport server from [the download page](https://fusioncharts.com/download/fusionexport). After downloading, unzip the downloaded package and follow the instructions gives below based on your environment.
+Before going ahead, please ensure that you have downloaded the FusionExport server from [the download page](https://resources.fusioncharts.com/download-free-trial/). After downloading, unzip the downloaded package and follow the instructions gives below based on your environment.
 
 ## macOS X
 

@@ -17,7 +17,7 @@ The `FusionCharts JSP` wrapper requires JAVA 6 or higher.
 
 Download the FusionCharts library to get the `jsp-fusioncharts` wrapper.
 
-<a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=java' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
+<a href='https://resources.fusioncharts.com/download-free-trial/' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
 Create a new Java dynamic web project (we have named it as `FusionchartsJava`) and follow the steps below:
 

@@ -297,7 +297,7 @@ So with this we have our data source for the chart ready. Let us now go ahead an
 
 First let us download the required JavaScript libraries:
 
-1. Download FusionCharts from [here](http://www.fusioncharts.com/download/) (if you don’t have it already) and copy the required JavaScript files under js folder in BITNAMI_INSTALL_DIR\apache2\htdocs.
+1. Download FusionCharts from [here](https://resources.fusioncharts.com/download-free-trial/) (if you don’t have it already) and copy the required JavaScript files under js folder in BITNAMI_INSTALL_DIR\apache2\htdocs.
 2. Download jQuery 2.x from [here](http://jquery.com/download/) and copy it under the above created js folder.
 
 Now let us create the HTML page chart_sample.html required to render the chart:

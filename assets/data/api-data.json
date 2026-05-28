@@ -14979,7 +14979,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[Try It Yourself! (zoom-line chart)](http://jsfiddle.net/fusioncharts/5tajR/)\r\r \n\n \r\r >[Try It Yourself! (zoom-scatter chart)](http://jsfiddle.net/fusioncharts/qyjwq3un/) \r\r",
+					"description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[Try It Yourself! (zoom-line chart)](http://jsfiddle.net/fusioncharts/5tajR/)\r\r \n\n \r\r >[Try It Yourself! (zoom-scatter chart)](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -15077,7 +15077,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/356h97t9/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/ysvfd1kj/) \r\r",
+					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/356h97t9/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -15275,7 +15275,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/f00L0jep/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/zLoofks2/) \r\r",
+					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/f00L0jep/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -15473,7 +15473,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in or zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/pp7fs0r5/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/mo96L209/) \r\r",
+					"description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in or zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/pp7fs0r5/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -15671,7 +15671,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered every time a zoom-line/zoom-scatter chart switches between the pin mode and the zoom mode. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/n86ar6bu/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/bxz90nv7/) \r\r",
+					"description": "Triggered every time a zoom-line/zoom-scatter chart switches between the pin mode and the zoom mode. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/n86ar6bu/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -19663,7 +19663,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/thf9fxbg/) \r\r",
+					"description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -19951,7 +19951,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/6Lays0wo/) \r\r",
+					"description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](https://www.fusioncharts.com/dev/demos/chart-gallery/) \r\r",
 					"examples": {},
 					"params": {
 						"eventObj": {

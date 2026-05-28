@@ -21,7 +21,7 @@ This section showcases how you can do this using the FusionCharts ASP.NET wrappe
 
 > Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples.
 
-> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">**FusionCharts.dll**</a> file in the **Bin** folder of your web application.
+> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper" target="_blank">**FusionCharts.dll**</a> file in the **Bin** folder of your web application.
 
 ## Creating a Multi-series Line Chart
 

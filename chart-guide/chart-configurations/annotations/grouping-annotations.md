@@ -8,7 +8,7 @@ heading: Grouping Annotations
 
 - [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
 - [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
-- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
+- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations)
 
 You can group a number of annotation items together as one item. This is useful when there are multiple annotations on a chart and you have to configure common properties for all of them.
 

@@ -18,7 +18,7 @@ We assume that you have PHP installed in the system. You will also need a local 
 
 Download the FusionCharts library to get the `php-fusioncharts` wrapper.
 
-<a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=php' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
+<a href='https://resources.fusioncharts.com/download-free-trial/' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
 Create a project inside the new installed XAMPP. Go to `XAMPP>htdocs` and create a new empty directory (PHPfusioncharts) for you project. Now follow these steps:
 

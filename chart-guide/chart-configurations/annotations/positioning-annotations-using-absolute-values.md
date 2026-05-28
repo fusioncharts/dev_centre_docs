@@ -8,7 +8,7 @@ heading: Positioning Annotations Using Absolute Values
 
 - [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
 - [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
-- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
+- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations)
 
 You can configure positions of annotations either during their creation or after rendering them on a chart/gauge. Position annotation items by setting the positioning attributes (`x`, `y`, `toX`, `toY`, `radius`, and so on) to the required coordinates.
 
