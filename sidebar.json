@@ -12,19 +12,6 @@
         "path": "/demos/chart-gallery"
       },
       {
-        "title": "Integrations",
-        "children": [
-          {
-            "title": "Frontend Integrations",
-            "path": "/fusioncharts?tab=frontend"
-          },
-          {
-            "title": "Backend Integrations",
-            "path": "/fusioncharts?tab=backend"
-          }
-        ]
-      },
-      {
         "title": "Getting Started ",
         "children": [
           {
@@ -1242,6 +1229,19 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "title": "Integrations",
+        "children": [
+          {
+            "title": "Frontend Integrations",
+            "path": "/fusioncharts?tab=frontend"
+          },
+          {
+            "title": "Backend Integrations",
+            "path": "/fusioncharts?tab=backend"
           }
         ]
       },
