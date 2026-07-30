@@ -1,5 +1,5 @@
 ---
-title: Sunburst Chart | FusionCharts
+title: Sunburst Charts with FusionCharts Complete Guide Now
 description: Visualize hierarchical data with a Sunburst chart. Effective and space-filling, it's perfect for understanding breakdowns in a radial layout. Discover now!
 heading: Sunburst Chart
 ---

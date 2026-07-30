@@ -1,5 +1,5 @@
 ---
-title: Node.js | FusionCharts
+title: FusionCharts Node.js Integration Guide for Developers
 description: Export from your desktop and web server using Node.js SDKs. A complete list of API reference.
 heading: Node.js
 ---

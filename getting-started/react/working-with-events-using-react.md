@@ -1,6 +1,6 @@
 ---
 title: Bind Event Listener in React | FusionCharts
-description: Learn how to bind event listeners in JavaScript to execute specific actions in response to interactions or updates for a chart on your website. Stay updated!
+description: Learn how to bind event listeners in JavaScript to execute specific actions in response to interactions or updates for a chart on the site. Stay updated!
 heading: Bind Event Listener
 ---
 

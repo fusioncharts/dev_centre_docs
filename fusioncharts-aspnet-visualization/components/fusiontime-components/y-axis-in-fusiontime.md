@@ -1,5 +1,5 @@
 ---
-title: Y-Axis | FusionCharts
+title: FusionCharts Y-Axis Configuration Guide for Charts
 description: Explore FusionTime's y-axis for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Y-Axis
 ---

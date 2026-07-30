@@ -1,5 +1,5 @@
 ---
-title: Your First Chart in Flutter using FusionCharts | FusionCharts
+title: Create Your First Flutter Chart with FusionCharts Now
 description: This article outlines the steps to be executed for creating your first chart using the flutter-fusioncharts component.
 heading: Create a Chart in Flutter using FusionCharts
 ---

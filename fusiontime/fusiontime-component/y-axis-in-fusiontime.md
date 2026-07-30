@@ -1,5 +1,5 @@
 ---
-title: Y-Axis | FusionCharts
+title: FusionCharts Y-Axis Configuration Guide for Charts
 description: Discover FusionTime's y-axis for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Y-Axis
 ---

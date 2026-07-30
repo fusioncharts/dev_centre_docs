@@ -1,6 +1,6 @@
 ---
-title: Export Charts | FusionCharts
-description: Explore exporting options in FusionCharts.NET, from images to PDFs, with the flexibility to choose client-side or server-side export. Learn more in our article.
+title: FusionCharts Export Charts Guide for Every Developer
+description: Explore exporting options in FusionCharts.NET, from images to PDFs, with client-side or server-side export flexibility. Learn more in our article now!
 heading: Export charts
 ---
 

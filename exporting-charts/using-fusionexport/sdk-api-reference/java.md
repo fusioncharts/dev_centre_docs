@@ -1,5 +1,5 @@
 ---
-title: Java | FusionCharts
+title: FusionCharts Java Integration Guide for Developers
 description: Export from your desktop and web server using Java SDKs. A complete list of API reference.
 heading: Java
 ---

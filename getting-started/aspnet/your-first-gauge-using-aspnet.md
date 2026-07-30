@@ -1,5 +1,5 @@
 ---
-title: Your First Gauge in ASP.NET using FusionCharts | FusionCharts
+title: Create Your First ASP.NET Gauge with FusionCharts Now
 description: This article outlines the steps to be executed for creating your first gauge using the asp.net.
 heading: Create a Gauge Using ASP.NET in FusionCharts
 ---

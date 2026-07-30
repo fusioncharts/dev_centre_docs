@@ -1,7 +1,7 @@
 ---
 permalink: api/tutorials/remove-an-existing-chart-from-a-page.html
 title: Remove an Existing Chart from a Page | FusionCharts
-description: Need to remove a chart from your web page? With simple JS commands, you can easily delete any unwanted charts. Give it a try and streamline your development.
+description: Need to remove a chart from your web page? Use simple JS commands to quickly delete any unwanted FusionCharts. Try it now to streamline your workflow!
 heading: Remove an Existing Chart from a Page
 chartPresent: true
 layout: page

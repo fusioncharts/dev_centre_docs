@@ -1,5 +1,5 @@
 ---
-title: Pivot | FusionCharts.NET
+title: FusionCharts .NET Pivot Table Guide for Developers
 description: Explore & learn how to effectively use Pivot, an operation that converts data into aggregated tables by rotating around unique values of a specific column. 
 heading: Pivot
 ---

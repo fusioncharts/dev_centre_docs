@@ -1,6 +1,6 @@
 ---
-title: Radial Bar | FusionCharts
-description: Radial Bar charts use circular shapes to compare different categories, similar to a typical Bar chart but displayed on a polar coordinate system, instead of a cartesian system.
+title: Radial Bar Charts with FusionCharts Developer Guide
+description: Radial Bar charts use a polar coordinate system to compare categories in a circular layout, offering an engaging alternative to traditional bar charts.
 heading: Radial Bar
 ---
 

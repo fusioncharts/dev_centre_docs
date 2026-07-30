@@ -1,5 +1,5 @@
 ---
-title: Theme Manager | FusionCharts
+title: FusionCharts Theme Manager Guide for Developers Now
 description: You can choose a theme depending on your aesthetic requirements for the charts, gauges, and maps in your application.
 heading: Theme Manager
 ---

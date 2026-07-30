@@ -1,6 +1,6 @@
 ---
 title: "Simple to Stunning: Customize Legend of Chart Like a Pro"
-description: How to customize & enhance the legend of chart in FusionCharts? Learn HERE! Show/hide, highlight & customize legends for clearer data visualization. Read now!
+description: Learn how to customize and enhance chart legends in FusionCharts. Show/hide, highlight & style legends for clearer data visualization. Read the guide now.
 heading: Legend
 ---
 

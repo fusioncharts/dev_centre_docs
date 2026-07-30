@@ -1,5 +1,5 @@
 ---
-title: Column Filter | FusionGrid
+title: FusionGrid Column Filter Guide for Better Data Search
 description: Filter FusionGrid columns easily with our step-by-step tutorial. Enhance your data visualization today! Try FusionCharts now for seamless integration.
 heading: Column Filter
 ---

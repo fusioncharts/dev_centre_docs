@@ -1,5 +1,5 @@
 ---
-title: Row Sorting | FusionGrid
+title: FusionGrid Row Sorting Guide for Better Data Tables
 description: Streamline grouping in FusionGrid with Row sorting. Effortlessly organize data in ascending or descending order by setting the sortable property to true.
 heading: Row Sorting
 ---

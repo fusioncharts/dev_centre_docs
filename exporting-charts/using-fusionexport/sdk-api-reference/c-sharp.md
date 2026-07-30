@@ -1,5 +1,5 @@
 ---
-title: C# | FusionCharts
+title: FusionCharts C# Integration Guide for Developers Now
 description: Export from your desktop and web server using C# SDKs. A complete list of API reference.
 heading: C Sharp
 ---

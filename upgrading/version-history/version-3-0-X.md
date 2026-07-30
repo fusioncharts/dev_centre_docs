@@ -1,5 +1,5 @@
 ---
-title: Version 3.0.x | FusionCharts
+title: FusionCharts Version 3.0.x Release Notes and Updates
 description: This section talks about the new features, improvements and fixes for v3.0.x.
 heading: Version 3.0.x
 ---

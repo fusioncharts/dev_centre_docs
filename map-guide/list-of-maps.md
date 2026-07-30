@@ -1,5 +1,5 @@
 ---
-title: List of Maps | FusionCharts
+title: FusionCharts Complete List of Maps for Developers Now
 description: FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively.
 heading: List of Maps
 ---

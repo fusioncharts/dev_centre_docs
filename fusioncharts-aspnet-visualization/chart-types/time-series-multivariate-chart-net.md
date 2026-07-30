@@ -1,12 +1,12 @@
 ---
 title: Create Multivariate chart | FusionCharts
-description: Read article to discover how to create a multivariate chart in FusionCharts, showcasing the Global SuperStore database with separate canvases for each measure.
+description: Read article to learn how to create a multivariate chart in FusionCharts, display the Global SuperStore databases with separate canvases for each measure.
 heading: Create Multivariate chart
 ---
 
 In FusionCharts, you can create a time-series chart with multiple canvases showing different measures in each canvas.
 
-In this article, we will create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (X-axis).
+In this article, we will create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (X-axis).
 
 The multivariate chart will look as shown below:
 

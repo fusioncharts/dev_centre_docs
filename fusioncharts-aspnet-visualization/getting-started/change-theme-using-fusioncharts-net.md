@@ -1,5 +1,5 @@
 ---
-title: Change Theme | FusionCharts
+title: FusionCharts Theme Customization Guide for Developers
 description: Explore the convenience of changing themes in FusionCharts.NET for setting chart appearance and behavior. Read the article to change the theme of a chart.
 heading: Change Theme
 ---

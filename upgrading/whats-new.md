@@ -1,5 +1,5 @@
 ---
-title: What's New | FusionCharts
+title: What's New in FusionCharts? Latest Features & Updates
 description: This section discusses the new features introduced in the latest version.
 heading: What's New
 ---

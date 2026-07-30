@@ -1,5 +1,5 @@
 ---
-title: Your First Chart in ASP.NET using FusionCharts | FusionCharts
+title: Create Your First ASP.NET Chart with FusionCharts Now
 description: This article outlines the steps to be executed for creating your first chart using the asp.net.
 heading: Create a Chart Using ASP.NET in FusionCharts
 ---

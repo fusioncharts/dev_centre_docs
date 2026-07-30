@@ -1,6 +1,6 @@
 ---
 title: Create Scroll Chart With FusionCharts Suite XT
-description: Elevate your data presentation with FusionCharts Suite XT's scroll chart. Simplify complexity and make smarter decisions. Easily integrate advanced features.
+description: Elevate your data presentation with FusionCharts Suite XT's scroll chart. Simplify complexity and make smarter decisions. Easily integrate advanced now.
 heading: Scroll Chart
 ---
 

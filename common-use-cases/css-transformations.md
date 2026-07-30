@@ -1,6 +1,6 @@
 ---
 title: CSS Transformations | FusionCharts
-description: Elevate your charts to new heights with CSS Transformations! Explore the article to integrate seamlessly with other visuals for a truly immersive experience.
+description: Elevate your charts with CSS Transformations to create immersive visuals and seamlessly integrate them into modern web layouts. Explore the guide now.
 heading: CSS Transformations
 ---
 

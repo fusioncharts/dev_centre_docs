@@ -1,6 +1,6 @@
 ---
 # Front matter (even empty) required for Jekyll to process
-description: Explore Belgiumluxembourg with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
+description: View the FusionCharts latest spec sheet for the Belgium Luxembourg map, with entity IDs and codes for building interactive province data maps and charts. 
 ---
 
 ## JavaScript Alias: maps/belgiumluxembourg

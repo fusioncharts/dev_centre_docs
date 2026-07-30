@@ -1,6 +1,6 @@
 ---
 title: Apply Different Themes using Ruby on Rails | FusionCharts
-description: Optimize data presentation by applying Different Themes in Ruby on Rails using FusionCharts themes, enhancing visual appeal and user interaction effortlessly.
+description: Optimize data presentation by applying Different Themes in Ruby on Rails using FusionCharts, enhancing visual appeal and user interaction effortlessly.
 heading: Apply Different Themes using Ruby on Rails
 ---
 

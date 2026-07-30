@@ -1,5 +1,5 @@
 ---
-title: Dynamically Add Chart Event Listener using Angular | FusionCharts
+title: Add Chart Event Listeners in Angular with FusionCharts
 description: This article tells you how to dynamically add chart event listener to your chart using angular.
 heading: Dynamically Add Chart Event Listener using Angular
 ---

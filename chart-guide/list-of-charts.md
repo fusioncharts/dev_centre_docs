@@ -1,6 +1,6 @@
 ---
-title: List of 95+ Charts & Graphs | General, Business, Statistical and Stock-Market Charts
-description: Explore FusionCharts' comprehensive guide to various charts. Learn about bar charts, line graphs, and more. Start creating stunning data visualizations today!
+title: 95+ Charts and Graphs Available in FusionCharts Guide
+description: Explore FusionCharts' comprehensive guide to the various charts. Learn about bar charts, line graphs, and more. Start creating stunning data visuals now!
 heading: List of Charts
 canonical: "https://www.fusioncharts.com/dev/chart-guide/list-of-charts"
 ---

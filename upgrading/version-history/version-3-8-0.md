@@ -1,5 +1,5 @@
 ---
-title: Version 3.8.0 | FusionCharts
+title: FusionCharts Version 3.8.0 Release Notes Updates
 description: This section talks about the new features, improvements and fixes for v3.8.0.
 heading: Version 3.8.0
 ---

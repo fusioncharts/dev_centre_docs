@@ -1,5 +1,5 @@
 ---
-title: Dynamically Add Chart Event Listener using Plain JS | FusionCharts
+title: Add Chart Event Listeners Using Plain JavaScript Now
 description: This article tells you how to dynamically add chart event listener to your chart using plain JS.
 heading: Dynamically Add Chart Event Listener using Plain JS
 ---

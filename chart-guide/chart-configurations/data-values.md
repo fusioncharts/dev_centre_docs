@@ -1,5 +1,5 @@
 ---
-title: Plot Data values in your Charts & Graphs | Cutomize labels, colors and orientations
+title: Plot Data Values in Charts with FusionCharts Easily Now
 description: Unlock advanced features for managing chart data via FusionCharts Developer Guide. Unleash the full potential of your data with accurate representations!
 heading: Data Values
 ---

@@ -1,5 +1,5 @@
 ---
-title: Standard Range Selector | FusionCharts
+title: FusionTime Standard Range Selector Documentation Guide
 description: Explore FusionTime's standard range selector for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Standard Range Selector
 ---

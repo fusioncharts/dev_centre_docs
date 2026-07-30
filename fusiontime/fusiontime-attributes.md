@@ -1,10 +1,10 @@
 ---
-title: FusionTime Attributes | FusionChartsgit
+title: FusionTime Attributes Documentation Guide for Devs
 description: Explore the distinct attributes of FusionTime components through this detailed compilation that offers a comprehensive overview of the website's offerings.
 heading: Attributes
 ---
 
-This article contains the list of attributes of FusionTime. The attributes have been differentiated by FusionTime components.
+This article contains the list of FusionTime's attributes. The attributes have been differentiated by FusionTime components.
 
 ## Time Axis
 

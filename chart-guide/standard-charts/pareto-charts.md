@@ -1,5 +1,5 @@
 ---
-title: Pareto Chart | FusionCharts
+title: Pareto Charts with FusionCharts Complete Guide Today
 description: In this section of Pareto chart you will be introduced to the basics of the Pareto chart and how you can create a simple one.
 heading: Pareto Chart
 ---

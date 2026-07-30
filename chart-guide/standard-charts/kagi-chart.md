@@ -1,5 +1,5 @@
 ---
-title: Kagi Chart | FusionCharts
+title: Kagi Charts with FusionCharts Complete Developer Guide
 description: Kagi chart uses a series of vertical lines to illustrate general levels of supply and demand for certain assets. These charts are independent of time
 heading: Kagi Chart
 ---

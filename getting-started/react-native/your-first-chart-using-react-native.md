@@ -1,5 +1,5 @@
 ---
-title: Your First Chart in React Native using FusionCharts | FusionCharts
+title: Create Your First React Native Chart with FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the react-native-fusioncharts component.
 heading: Create a Chart in React Native using FusionCharts
 ---

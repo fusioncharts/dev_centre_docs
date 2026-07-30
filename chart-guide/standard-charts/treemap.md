@@ -1,5 +1,5 @@
 ---
-title: Treemap | FusionCharts
+title: Treemap Charts with FusionCharts Complete Guide Today
 description: Master the art of data exploration with our Treemap chart guide! Learn the details of this tool offered by FusionCharts. Enhance your dashboards today!
 heading: Treemap
 ---

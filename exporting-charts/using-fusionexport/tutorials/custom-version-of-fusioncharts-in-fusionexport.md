@@ -1,5 +1,5 @@
 ---
-title: Use custom version of FusionCharts in FusionExport | FusionCharts
+title: Use Custom FusionCharts Version in FusionExport Guide
 description: This article talks about how to update the custom version of FusionCharts in FusionExport.
 heading: Use custom version of FusionCharts in FusionExport
 ---

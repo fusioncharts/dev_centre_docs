@@ -1,6 +1,6 @@
 ---
 title: Axes Configuration Guide | FusionCharts
-description: Configure axes & enhance your FusionCharts experience by positioning the X-axis and Y-axis in vertical and horizontal charts. Read the article to gain insights.
+description: Configure axes and enhance your FusionCharts experience by positioning the X-axis and Y-axis in vertical and horizontal charts. Read on for the insights.
 heading: Configure axes
 ---
 

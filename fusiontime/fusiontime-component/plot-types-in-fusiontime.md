@@ -1,6 +1,6 @@
 ---
-title: Plot Types | FusionCharts
-description: Enhance data analysis with the right plot type for your data structure. Read article to make the most of your data visualization with a range of plot types.
+title: FusionCharts Plot Types Guide for Better Visualizations
+description: Enhance data analysis with the right plot type for your data structure. Read article to make the most of your data visualization with a range of plot now.
 heading: Plot Types
 ---
 

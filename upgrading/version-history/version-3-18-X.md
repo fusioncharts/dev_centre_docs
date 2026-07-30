@@ -1,6 +1,6 @@
 ---
-title: Version 3.18 Changelog & Fixes | FusionCharts
-description: Upgrade to FusionCharts 3.18.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Try now!
+title: FusionCharts Version 3.18.x Release Notes Updates
+description: Upgrade to FusionCharts 3.18.x for enhanced features, bug fixes & improved performance. Check the detailed version history for every update. Try it now!
 heading: Version 3.18.x
 ---
 

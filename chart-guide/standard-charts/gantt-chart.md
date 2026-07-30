@@ -1,5 +1,5 @@
 ---
-title: Gantt Chart | FusionCharts
+title: Gantt Charts with FusionCharts Complete Guide for All
 description: The Gantt chart is a specialized chart used for displaying various timelines like project timelines, development timelines, etc.
 heading: Gantt Chart
 ---

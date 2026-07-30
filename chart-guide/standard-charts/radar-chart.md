@@ -1,5 +1,5 @@
 ---
-title: Radar Chart | FusionCharts
+title: Radar Charts with FusionCharts Complete Guide Today
 description: A radar chart is a visual interpretation of data bearing multiple dimensions, the radial grid like structure,the chart displays different categories values
 heading: Radar Chart
 ---

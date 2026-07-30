@@ -1,5 +1,5 @@
 ---
-title: Customize the width and height of an exported chart | FusionCharts
+title: Customize Exported Chart Width and Height with Ease
 description: This article talks about the SDKs used for customizing the width an height of an exported chart.
 heading: Customize the width and height of an exported chart
 ---

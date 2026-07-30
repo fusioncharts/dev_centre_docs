@@ -1,6 +1,6 @@
 ---
-title: Build Interactive Charts in ReactJS with FusionCharts (Step-by-Step Guide)
-description: Want to create stunning and interactive charts in your ReactJS applications?  Learn how to easily integrate FusionCharts with clear step-by-step instructions. Explore various chart types and get started visualizing your data today!
+title: Build Interactive ReactJS Charts with FusionCharts
+description: Want to create stunning, interactive charts in your ReactJS apps? Learn how to easily integrate FusionCharts with clear step-by-step instructions today!
 heading: Create a Chart in React using FusionCharts
 ---
 

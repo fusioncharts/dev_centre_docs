@@ -1,5 +1,5 @@
 ---
-title: List of Charts | FusionCharts
+title: FusionCharts Complete List of Charts and Graphs Guide
 description: This article contains the list of charts supported in FusionCharts.NET.
 heading: List of Charts
 ---

@@ -1,6 +1,6 @@
 ---
 title: Export a D3.js chart using FusionExport | FusionCharts
-description: Discover the seamless integration of FusionExport with D3.js and effortlessly export your charts for enhanced data analysis. Read our article for more details.
+description: Discover the seamless integration of FusionExport with D3.js & effortlessly export your charts for enhanced data analysis. Read our blog for more details.
 heading: Export a D3.js chart using FusionExport
 ---
 

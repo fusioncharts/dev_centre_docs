@@ -1,6 +1,6 @@
 ---
 title: Customizing the Tooltips | FusionCharts
-description: Master tooltips configurations for FusionCharts with our guide. Learn how to customize and enhance chart tooltips for optimal data visualization. Dive in now!
+description: Master tooltip configuration in FusionCharts with our guide. Learn how to customize & enhance chart tooltips for optimal data visualization. Dive in now!
 heading: Tooltips
 canonical: "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips"
 ---

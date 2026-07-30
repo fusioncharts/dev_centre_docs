@@ -1,5 +1,5 @@
 ---
-title: Data Plot | FusionCharts
+title: FusionCharts Data Plot Customization Guide for Charts
 description: Enhance your charts with customized data plots using FusionCharts. Customize colors, transparency, borders, & more for impactful insights. Explore now!
 heading: Data Plot
 ---

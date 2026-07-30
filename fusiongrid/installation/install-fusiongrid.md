@@ -1,5 +1,5 @@
 ---
-title: Overview | FusionGrid
+title: FusionGrid Overview Guide for Developers and Teams
 description: Easily install FusionGrid with our step-by-step guide. Follow our instructions for seamless integration. Get started today and enhance your data grids!
 heading: Overview and Install FusionGrid
 ---

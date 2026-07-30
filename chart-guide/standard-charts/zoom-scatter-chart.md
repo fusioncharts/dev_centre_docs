@@ -1,6 +1,6 @@
 ---
 title: Zoom Scatter Chart | FusionCharts
-description: With FusionCharts Zoom Scatter Chart, delve deep into your data & uncover hidden correlations. Predict future trends effortlessly. Explore & get started now.
+description: With FusionCharts Zoom Scatter Chart, delve deep into your data & uncover hidden correlations. Predict future trends effortlessly. Explore & get started!
 heading: Zoom Scatter Chart
 ---
 

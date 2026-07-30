@@ -1,6 +1,6 @@
 ---
 # Front matter (even empty) required for Jekyll to process
-description: Explore Ustinadlabem with FusionCharts Maps – Detailed features for seamless integration. Try now & enhance your data visualization today! 
+description: View the FusionCharts latest spec sheet for the Usti nad Labem map, with entity IDs and codes for building interactive Czech region data maps and charts. 
 ---
 
 ## JavaScript Alias: maps/ustinadlabem

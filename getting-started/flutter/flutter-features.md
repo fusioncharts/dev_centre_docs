@@ -1,6 +1,6 @@
 ---
 title: Flutter Features | FusionCharts
-description: Discover features of FusionCharts for Flutter, including seamless integration, responsive design & interactive charts to enhance your app's data visualization.
+description: Discover FusionCharts for Flutter, offering seamless integration, responsive design & interactive charts to enhance your app's data visualization today!
 heading: Flutter Features
 ---
 

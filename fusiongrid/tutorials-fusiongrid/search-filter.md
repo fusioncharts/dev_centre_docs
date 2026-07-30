@@ -1,5 +1,5 @@
 ---
-title: Search Filter | FusionGrid
+title: FusionGrid Search Filter Guide for Better Data Search
 description: Unlock the potential of efficient data analysis with FusionGrid's quick Search filter. Read the article and locate relevant data using a searchable grid.
 heading: Search Filter
 ---

@@ -1,5 +1,5 @@
 ---
-title: Number Format | FusionCharts
+title: FusionCharts Number Formatting Guide for Developers
 description: The section talks about basics of number formatting/scaling. Examples for configuring decimal places by rounding off with trailing zeroes is also possible
 heading: Number Format
 ---

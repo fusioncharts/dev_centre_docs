@@ -2,101 +2,144 @@
 title: Create a Chart in jQuery | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the jquery-fusioncharts component.
 heading: Create a Chart in jQuery Using FusionCharts
-author: sowmya
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight jQuery plugin which provides bindings for FusionCharts. The `jquery-fusioncharts` plugin allows you to easily add rich and interactive charts to any jQuery project.
+## Introduction
 
-On this page, we'll see how to install FusionCharts and render a chart using the `jquery-fusionCharts` plugin.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards.
 
-## Prerequisite
+The lightweight `jquery-fusioncharts` plugin provides jQuery bindings for FusionCharts, allowing you to render and manage FusionCharts using familiar jQuery syntax.
 
-In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
+In this tutorial, you will learn how to:
 
-- jQuery requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+- Create a JavaScript project using Vite
+- Install FusionCharts, jQuery, and the jQuery-FusionCharts plugin
+- Prepare chart data
+- Configure a Column 2D chart
+- Render the chart using jQuery
 
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
+You can also include the required libraries using a CDN or locally downloaded files.
 
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
-If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/).
+## Choose Your Installation Method
 
-## Installation and including dependencies
+FusionCharts can be used with jQuery in three ways:
+1. **npm + Vite (Recommended)** — For modern development workflows.
+2. **CDN** — For quickly creating charts without a build tool.
+3. **Local Files** — For projects that use downloaded JavaScript files.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-    <li><a data-toggle='npm'>NPM</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
+## Option 1: Install Using npm (Recommended)
 
-<div class='tab cdn-tab active'>
-<div class='mt-30'>To install the FusionCharts package and the `jquery-fusioncharts` component include the following code in the html file</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- jQuery --&gt;
-    &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
-    &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+### Prerequisites
+To install the required packages using npm, make sure Node.js and npm are installed on your system.
 
-<div class='tab local-tab'>
-<div class='mt-30'>Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- jQuery --&gt;
-    &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+Check the installed versions by running:
 
-<div class='tab npm-tab'>
-<div class='mt-30'>Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.</div>
-<div class='mt-30'>You can install the `jquery-fusioncharts` and `fusioncharts` components through npm as shown below</div>
-<pre><code class="language-javascript">
-    $ npm install jquery-fusioncharts fusioncharts --save
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div class='mt-30'>After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.</div>
-<pre><code class="language-javascript">
-//Including FusionCharts Dependencies
-var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-var $ = require('jquery');
-var jQueryFusionCharts = require('jquery-fusioncharts');
+```javascript
+node -v
+npm -v
+```
 
-Charts(FusionCharts); // Resolve Charts as dependency for FusionCharts
+If these commands do not return version numbers, install Node.js before continuing.
 
-FusionTheme(FusionCharts); // Resolve Fusion theme as dependency for FusionCharts
+You can skip this prerequisite if you plan to load FusionCharts and jQuery directly from a CDN or local files.
 
-jQueryFusionCharts(FusionCharts); //Resolve jQueryFusionCharts as dependency for FusionCharts
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+### Create a JavaScript Project with Vite
+Create a new vanilla JavaScript project using Vite:
 
-</div>
+```javascript
+npm create vite@latest first-fusioncharts-jquery-project -- --template vanilla
+```
 
-</div>
-</div>
+Navigate to the project directory:
 
-That completes the installation of `FusionCharts` and the `jquery-fusioncharts` plugin.
+```javascript
+cd first-fusioncharts-jquery-project
+```
 
-## Preparing the data
+Install the project dependencies:
 
-Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
+```javascript
+npm install
+```
+
+Start the development server:
+
+```javascript
+npm run dev
+```
+
+Once the server starts, open the local URL displayed in the terminal, typically:
+
+```javascript
+http://localhost:5173
+```
+
+You should see the default Vite application, confirming that your project has been created successfully.
+
+### Installation and including dependencies 
+#### Install FusionCharts and jQuery
+Install FusionCharts, jQuery, and the jQuery-FusionCharts plugin:
+
+```javascript
+npm install fusioncharts jquery jquery-fusioncharts
+```
+
+The `jquery-fusioncharts` package is the official jQuery wrapper for rendering and manipulating FusionCharts through jQuery syntax.
+
+#### Include the Required Dependencies
+Open `src/main.js` and replace its existing content with the following imports:
+
+```javascript
+// STEP 1 - Include the required dependencies
+
+// Include jQuery
+import $ from "jquery";
+
+// Include the FusionCharts library
+import FusionCharts from "fusioncharts";
+
+// Include the charts module
+import Charts from "fusioncharts/fusioncharts.charts";
+
+// Include the Fusion theme
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+// Include the jQuery-FusionCharts plugin
+import jQueryFusionCharts from "jquery-fusioncharts";
+```
+
+#### Register the Chart Module, Theme, and jQuery Plugin with FusionCharts
+Next, register the chart module, theme, and jQuery plugin with FusionCharts:
+
+```javascript
+// Register the charts module with FusionCharts
+Charts(FusionCharts);
+
+// Register the Fusion theme with FusionCharts
+FusionTheme(FusionCharts);
+
+// Register the jQuery plugin with FusionCharts
+jQueryFusionCharts(FusionCharts);
+```
+
+The complete dependency section should look like this:
+
+```javascript
+// STEP 1 - Include the required dependencies
+
+import $ from "jquery";
+import FusionCharts from "fusioncharts";
+import Charts from "fusioncharts/fusioncharts.charts";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import jQueryFusionCharts from "jquery-fusioncharts";
+
+Charts(FusionCharts);
+FusionTheme(FusionCharts);
+jQueryFusionCharts(FusionCharts);
+```
+
+### Preparing the Chart Data
+In this example, you will create a chart showing the countries with the largest oil reserves.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -109,321 +152,519 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
+Because the example contains a single dataset, you can use a Column 2D chart. The countries appear as labels along the x-axis, while the oil reserve values appear along the y-axis.
 
-FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
+FusionCharts accepts chart data in JSON format. Add the following array to `src/main.js`:
+
 
 ```javascript
-// Preparing the chart data
+// STEP 2 - Prepare the chart data
+
 const chartData = [
   {
     label: "Venezuela",
-    value: "290"
+    value: "290",
   },
   {
-    label: "Saudi",
-    value: "260"
+    label: "Saudi Arabia",
+    value: "260",
   },
   {
     label: "Canada",
-    value: "180"
+    value: "180",
   },
   {
     label: "Iran",
-    value: "140"
+    value: "140",
   },
   {
     label: "Russia",
-    value: "115"
+    value: "115",
   },
   {
     label: "UAE",
-    value: "100"
+    value: "100",
   },
   {
-    label: "US",
-    value: "30"
+    label: "United States",
+    value: "30",
   },
   {
     label: "China",
-    value: "30"
-  }
+    value: "30",
+  },
 ];
 ```
 
-## Configure your chart
-
-Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
+### Configure the chart
+Create a configuration object containing the chart type, dimensions, appearance, and data:
 
 ```javascript
-// Create a JSON object to store the chart configurations
+// STEP 3 - Configure the chart
+
 const chartConfigs = {
-  type: "column2d", //Set the chart type
-  width: "700", //Set the chart width
-  height: "400", //Set the chart height
-  dataFormat: "json", //Set the type of data
-  chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
-    subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
-    xAxisName: "Country", //Set the x-axis name
-    yAxisName: "Reserves (MMbbl)", //Set the y-axis name
-    numberSuffix: "K",
-    theme: "fusion" //Set the theme for your chart
+  type: "column2d",
+  width: "700",
+  height: "400",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017–18]",
+      subCaption: "In MMbbl = One Million Barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion",
+    },
+    data: chartData,
   },
-  // Chart Data - from step 2
-  data: chartData
 };
 ```
 
-> Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+The main configuration properties are:
 
-## Render the chart
+- `type` specifies the chart type to render.
+- `width` and height define the chart dimensions.
+- `dataFormat` specifies the format of the chart data.
+- `dataSource` contains the chart settings and data.
+- `theme` applies the Fusion theme.
 
-Get ready to render your first chart finally with the steps below:
+The value `column2d` instructs FusionCharts to render a Column 2D chart. You can replace it with another supported [chart alias](https://www.fusioncharts.com/dev/chart-guide/list-of-charts) to render a different chart type.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-    <li><a data-toggle='npm'>NPM</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab cdn-tab active'>
-<pre><code class="language-html">
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;!-- Include jQuery --&gt;
-        &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
-        &lt;!-- Include fusioncharts core library file --&gt;
-        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;!-- Include fusion theme file --&gt;
-        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-        &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;script type="text/javascript"&gt;
-            //STEP 2 - Chart Data
-            const chartData = [{
-                label: "Venezuela",
-                value: "290"
-            }, {
-                label: "Saudi",
-                value: "260"
-            }, {
-                label: "Canada",
-                value: "180"
-            }, {
-                label: "Iran",
-                value: "140"
-            }, {
-                label: "Russia",
-                value: "115"
-            }, {
-                label: "UAE",
-                value: "100"
-            }, {
-                label: "US",
-                value: "30"
-            }, {
-                label: "China",
-                value: "30"
-            }]
-            //STEP 3 - Chart Configurations
-        	const chartConfigs = {
-                type: "column2d",
-                width: "700",
-                height: "400",
-                dataFormat: "json",
-                dataSource: {
-                    // Chart Configuration
-                    "chart": {
-                        "caption": "Countries With Most Oil Reserves [2017-18]",
-                        "subCaption": "In MMbbl = One Million barrels",
-                        "xAxisName": "Country",
-                        "yAxisName": "Reserves (MMbbl)",
-                        "numberSuffix": "K",
-                        "theme": "fusion",
-                    },
-                    // Chart Data
-                    "data": chartData
-                }
-            }
-            // Create a chart container
-            $('document').ready(function () {
-                $("#chart-container").insertFusionCharts(chartConfigs);
-            });
-        &lt;/script&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+### Render the chart
+#### Add the Chart Container
+Open `index.html` and replace the default content inside the `<body>` element with:
 
-<div class='tab local-tab'>
-<pre><code class="language-html">
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;!-- Include jQuery --&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;!-- Include fusioncharts core library file --&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;!-- Include fusion theme file --&gt;
-        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;script type="text/javascript"&gt;
-            //STEP 2 - Chart Data
-            const chartData = [{
-                label: "Venezuela",
-                value: "290"
-            }, {
-                label: "Saudi",
-                value: "260"
-            }, {
-                label: "Canada",
-                value: "180"
-            }, {
-                label: "Iran",
-                value: "140"
-            }, {
-                label: "Russia",
-                value: "115"
-            }, {
-                label: "UAE",
-                value: "100"
-            }, {
-                label: "US",
-                value: "30"
-            }, {
-                label: "China",
-                value: "30"
-            }];
-          //STEP 3 - Chart Configurations
-        	const chartConfigs = {
-                type: "column2d",
-                width: "700",
-                height: "400",
-                dataFormat: "json",
-                dataSource: {
-                    // Chart Configuration
-                    "chart": {
-                        "caption": "Countries With Most Oil Reserves [2017-18]",
-                        "subCaption": "In MMbbl = One Million barrels",
-                        "xAxisName": "Country",
-                        "yAxisName": "Reserves (MMbbl)",
-                        "numberSuffix": "K",
-                        "theme": "fusion",
-                    },
-                    // Chart Data
-                    "data": chartData
-                }
-            }
-            // Create a chart container
-            $('document').ready(function () {
-                $("#chart-container").insertFusionCharts(chartConfigs);
-            });
-        &lt;/script&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+```javascript
+<body>
+  <div id="chart-container">FusionCharts will render here</div>
 
-<div class='tab npm-tab'>
-<div><strong>Step 1</strong>: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
-<pre><code class="language-javascript">
-var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-var $ = require('jquery');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-$('document').ready(function () {
-    Charts(FusionCharts);* // Resolve Charts as dependency for FusionCharts*
-    FusionTheme(FusionCharts);*  // Resolve Fusion theme as dependency for FusionCharts*
-    jQueryFusionCharts(FusionCharts);* //Resolve jQueryFusionCharts as dependency for FusionCharts*
-    //STEP 2 - Chart Data
-    const chartData = [{
-        label: "Venezuela",
-        value: "290"
-    }, {
-        label: "Saudi",
-        value: "260"
-    }, {
-        label: "Canada",
-        value: "180"
-    }, {
-        label: "Iran",
-        value: "140"
-    }, {
-        label: "Russia",
-        value: "115"
-    }, {
-        label: "UAE",
-        value: "100"
-    }, {
-        label: "US",
-        value: "30"
-    }, {
-        label: "China",
-        value: "30"
-    }];
-    //STEP 3 - Chart Configurations
-    const chartConfigs = {
+  <script type="module" src="/src/main.js"></script>
+</body>
+```
+
+The `chart-container` element provides the location where FusionCharts will render the chart.
+
+#### Render the Chart Using jQuery’s Document-Ready Handler
+Use jQuery’s document-ready handler to render the chart after the page has loaded:
+
+```javascript
+// STEP 4 - Render the chart
+
+$(function () {
+  $("#chart-container").insertFusionCharts(chartConfigs);
+});
+```
+
+The `insertFusionCharts()` method creates the chart inside the selected HTML element using the supplied configuration.
+
+### Complete `src/main.js` Code
+Replace the contents of `src/main.js` with the following code:
+
+```javascript
+// STEP 1 - Include the required dependencies
+
+import $ from "jquery";
+import FusionCharts from "fusioncharts";
+import Charts from "fusioncharts/fusioncharts.charts";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import jQueryFusionCharts from "jquery-fusioncharts";
+
+// Register the charts module, theme, and jQuery plugin
+Charts(FusionCharts);
+FusionTheme(FusionCharts);
+jQueryFusionCharts(FusionCharts);
+
+// STEP 2 - Prepare the chart data
+
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290",
+  },
+  {
+    label: "Saudi Arabia",
+    value: "260",
+  },
+  {
+    label: "Canada",
+    value: "180",
+  },
+  {
+    label: "Iran",
+    value: "140",
+  },
+  {
+    label: "Russia",
+    value: "115",
+  },
+  {
+    label: "UAE",
+    value: "100",
+  },
+  {
+    label: "United States",
+    value: "30",
+  },
+  {
+    label: "China",
+    value: "30",
+  },
+];
+
+// STEP 3 - Configure the chart
+
+const chartConfigs = {
+  type: "column2d",
+  width: "700",
+  height: "400",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017–18]",
+      subCaption: "In MMbbl = One Million Barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion",
+    },
+    data: chartData,
+  },
+};
+
+// STEP 4 - Render the chart
+
+$(function () {
+  $("#chart-container").insertFusionCharts(chartConfigs);
+});
+```
+
+### Complete index.html Code
+Your `index.html` file should look like this:
+
+```javascript
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>FusionCharts jQuery Example</title>
+  </head>
+
+  <body>
+    <div id="chart-container">FusionCharts will render here</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+```
+
+## View the Chart
+
+Start the Vite development server if it is not already running:
+
+```javascript
+npm run dev
+```
+
+Open the local URL shown in your terminal, typically:
+
+```javascript
+http://localhost:5173
+```
+
+You should now see a Column 2D chart displaying the oil reserves for each country.
+
+{% embed_chart getting-started-your-first-chart.js %}
+
+## Option 2: Include FusionCharts Using a CDN
+
+You can also create the chart without npm or a build tool by loading the required libraries from a CDN.
+
+Simply create an HTML file and include the required scripts from the CDN.
+
+Add the following scripts inside the `<head>` element of your HTML file:
+
+```javascript
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>FusionCharts jQuery Example</title>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Include the FusionCharts library -->
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+  <!-- Include the Fusion theme -->
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+  <!-- Include the jQuery-FusionCharts plugin -->
+  <script src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"></script>
+</head>
+```
+
+### Complete CDN Example
+
+```javascript
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>FusionCharts jQuery Example</title>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Include the FusionCharts library -->
+    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+    <!-- Include the Fusion theme -->
+    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+    <!-- Include the jQuery-FusionCharts plugin -->
+    <script src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"></script>
+  </head>
+
+  <body>
+    <div id="chart-container">FusionCharts will render here</div>
+
+    <script>
+      const chartData = [
+        {
+          label: "Venezuela",
+          value: "290",
+        },
+        {
+          label: "Saudi Arabia",
+          value: "260",
+        },
+        {
+          label: "Canada",
+          value: "180",
+        },
+        {
+          label: "Iran",
+          value: "140",
+        },
+        {
+          label: "Russia",
+          value: "115",
+        },
+        {
+          label: "UAE",
+          value: "100",
+        },
+        {
+          label: "United States",
+          value: "30",
+        },
+        {
+          label: "China",
+          value: "30",
+        },
+      ];
+
+      const chartConfigs = {
         type: "column2d",
         width: "700",
         height: "400",
         dataFormat: "json",
         dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": chartData
-        }
-    }
-    $("#chart-container").insertFusionCharts(chartConfigs);
-});
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+          chart: {
+            caption: "Countries With Most Oil Reserves [2017–18]",
+            subCaption: "In MMbbl = One Million Barrels",
+            xAxisName: "Country",
+            yAxisName: "Reserves (MMbbl)",
+            numberSuffix: "K",
+            theme: "fusion",
+          },
+          data: chartData,
+        },
+      };
 
-</pre>
-<div class='mt-30'><strong>Step 2: Specify the chart container within the `index.html` file.</strong></div>
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Getting Started&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
-    &lt;script src="main.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-
-<div class='mt-30'><strong>Step 3: Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</strong></div>
-</div>
-
-</div>
-</div>
-
-## See your chart
-
-You should be able to see the chart as shown below.
+      $(function () {
+        $("#chart-container").insertFusionCharts(chartConfigs);
+      });
+    </script>
+  </body>
+</html>
+```
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+## Option 3: Include FusionCharts Using Local Files
 
-That's it! Your first chart using `jquery-fusioncharts` is ready.
+This example assumes you have downloaded the required files and placed them in the following project structure:
+
+```javascript
+project-folder/
+├── index.html
+└── js/
+    ├── jquery-3.7.1.min.js
+    ├── fusioncharts.js
+    ├── fusioncharts.theme.fusion.js
+    └── jquery.fusioncharts.min.js
+```
+
+Use the following complete HTML file:
+
+```javascript
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>FusionCharts jQuery Example</title>
+
+    <!-- Include jQuery -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- Include the FusionCharts library -->
+    <script src="./js/fusioncharts.js"></script>
+
+    <!-- Include the Fusion theme -->
+    <script src="./js/fusioncharts.theme.fusion.js"></script>
+
+    <!-- Include the jQuery-FusionCharts plugin -->
+    <script src="./js/jquery.fusioncharts.min.js"></script>
+  </head>
+
+  <body>
+    <div id="chart-container">FusionCharts will render here</div>
+
+    <script>
+      const chartData = [
+        {
+          label: "Venezuela",
+          value: "290",
+        },
+        {
+          label: "Saudi Arabia",
+          value: "260",
+        },
+        {
+          label: "Canada",
+          value: "180",
+        },
+        {
+          label: "Iran",
+          value: "140",
+        },
+        {
+          label: "Russia",
+          value: "115",
+        },
+        {
+          label: "UAE",
+          value: "100",
+        },
+        {
+          label: "United States",
+          value: "30",
+        },
+        {
+          label: "China",
+          value: "30",
+        },
+      ];
+
+      const chartConfigs = {
+        type: "column2d",
+        width: "700",
+        height: "400",
+        dataFormat: "json",
+        dataSource: {
+          chart: {
+            caption: "Countries With Most Oil Reserves [2017–18]",
+            subCaption: "In MMbbl = One Million Barrels",
+            xAxisName: "Country",
+            yAxisName: "Reserves (MMbbl)",
+            numberSuffix: "K",
+            theme: "fusion",
+          },
+          data: chartData,
+        },
+      };
+
+      $(function () {
+        $("#chart-container").insertFusionCharts(chartConfigs);
+      });
+    </script>
+  </body>
+</html>
+```
+
+Make sure the script files are loaded in this order:
+
+1. jQuery
+2. FusionCharts
+3. Fusion theme
+4. jQuery-FusionCharts plugin
+
+The file paths in the `<script>` tags must match the actual locations of the downloaded files in your project.
+
+## Troubleshooting
+
+If your chart does not appear, open your browser’s developer tools and check the Console tab for the exact error message.
+
+Also verify that:
+
+- jQuery is loaded before the jQuery-FusionCharts plugin.
+- The FusionCharts library and required chart modules are included.
+- The Fusion theme is loaded before rendering the chart.
+- The `chart-container` element exists in the HTML.
+- The chart configuration contains valid JSON data.
+- All npm packages were installed successfully.
+- The Vite development server is running.
+
+If you modify installed dependencies and the Vite application does not update correctly, stop the development server and run:
+
+```javascript
+npm run dev -- --force
+```
+
+If you are unable to resolve the issue, contact the [FusionCharts Support Team](mailto:support@fusioncharts.com).
+
+That’s it! Your first chart using `jquery-fusioncharts` is ready.
+
+## FAQs
+
+### Can I customize FusionCharts in a jQuery application?
+Yes. You can customize chart colors, fonts, labels, tooltips, legends, animations, themes, and other visual properties through the FusionCharts configuration object.
+
+### Can I render different chart types using the jQuery plugin?
+Yes. Change the `type` property in the chart configuration to a supported chart alias, such as `line`, `pie2d`, `bar2d`, or another FusionCharts chart type.
+
+### Can I update chart data dynamically with jQuery?
+Yes. You can use the jQuery-FusionCharts API and FusionCharts methods to update chart data and properties after the chart has been rendered.
+
+### Can I export a chart from a jQuery application?
+Yes. FusionCharts provides built-in export functionality for downloading charts in supported image and document formats.
+
+### How do I troubleshoot a chart that is not rendering?
+Check the browser console for errors and confirm that the required scripts are loaded in the correct order. You should also verify the chart container, configuration object, and supplied data.
+
+### Does the jQuery-FusionCharts plugin work with Vite?
+The plugin can be installed through npm and used in a Vite-based vanilla JavaScript project. Import and register FusionCharts, the chart module, the theme, and the jQuery plugin before rendering the chart.

@@ -1,5 +1,5 @@
 ---
-title: Data Value | FusionCharts
+title: FusionCharts Data Value Configuration Guide for Apps
 description: Enhance your understanding of data values and their configuration process for different chart plots. Click here to learn more in our comprehensive article!
 heading: Data Value
 ---

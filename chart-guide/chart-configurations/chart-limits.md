@@ -1,5 +1,5 @@
 ---
-title: Chart Limits | FusionCharts
+title: FusionCharts Chart Limits Guide for Better Performance
 description: Chart limits are the minimum and maximum y-axis values. While FusionCharts Suite XT can automatically calculate the best chart limits.
 heading: Chart Limits
 ---

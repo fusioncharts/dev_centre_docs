@@ -1,5 +1,5 @@
 ---
-title: Linear Gauge | FusionCharts
+title: Linear Gauge Charts with FusionCharts Developer Guide
 description: A linear gauge uses a horizontal scale to display the data range. This section talks about basics of a linear gauge and its elements
 heading: Linear Gauge
 ---

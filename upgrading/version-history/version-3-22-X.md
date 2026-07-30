@@ -1,6 +1,6 @@
 ---
-title: Version 3.22 Changelog & Features | FusionCharts
-description: Upgrade to FusionCharts 3.22.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Try now!
+title: FusionCharts Version 3.22.x Release Notes Updates
+description: Upgrade to FusionCharts 3.22.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Go!
 heading: Version 3.22.x
 ---
 

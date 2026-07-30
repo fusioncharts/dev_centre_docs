@@ -1,5 +1,5 @@
 ---
-title: Filter Data | FusionCharts
+title: FusionCharts Data Filtering Guide for Better Insights
 description: Explore the power of the Filter operation in generating a new DataModel with filtered data from a large dataset. Dive into the article for more details.
 heading: Filter Data
 ---

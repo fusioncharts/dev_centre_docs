@@ -1,6 +1,6 @@
 ---
 title: Enhance Charts with Vertical Divisional Lines
-description: Struggling to read charts? Vertical divisional lines are the solution! Add, customize, use dashed lines & grid bands for clear, informative charts. Start now!
+description: Struggling to read charts? Vertical divisional lines are the solution! Add, customize, dashed lines & grid bands for clear, informative charts. Start now!
 heading: Vertical Div Lines
 ---
 

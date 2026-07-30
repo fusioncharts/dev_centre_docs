@@ -1,6 +1,6 @@
 ---
 title: A Comprehensive Guide on Pie and Doughnut Chart
-description: Unleash the magic of pie & doughnut chart with FusionCharts Suite XT! Go beyond static data. Customize, animate, & bring your information to life. Start now.
+description: Unleash the magic of pie & doughnut chart with FusionCharts Suite XT! Go beyond static data. Customize & animate bring your information to life. Start now.
 heading: Pie and Doughnut Charts
 ---
 ## Introduction

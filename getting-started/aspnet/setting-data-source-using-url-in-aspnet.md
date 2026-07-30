@@ -1,6 +1,6 @@
 ---
 title: Setting Data Source by URL in ASP.NET | FusionCharts
-description: Enhance your ASP.NET projects by Setting Data Source Using URL with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Try now!
+description: Enhance your ASP.NET projects by Setting Data Source Using URL with FusionCharts. This step-by-step guide makes your data visualizations pop with ease. Go!
 heading: Setting Data Source Using URL
 ---
 

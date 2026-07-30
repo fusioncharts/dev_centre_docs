@@ -1,5 +1,5 @@
 ---
-title: Tooltip | FusionCharts
+title: FusionCharts Tooltip Customization Guide for Charts
 description: Explore FusionTime's interactive tooltip feature for in-depth data insights. Customize tooltips for a richer data visualization experience. Learn more!
 heading: Tooltips
 ---

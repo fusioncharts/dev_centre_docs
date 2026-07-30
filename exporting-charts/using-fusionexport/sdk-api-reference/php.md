@@ -1,5 +1,5 @@
 ---
-title: PHP | FusionCharts
+title: FusionCharts PHP Integration Guide for Developers Now
 description: Export from your desktop and web server using PHP SDKs. A complete list of API reference.
 heading: PHP
 ---

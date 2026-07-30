@@ -1,5 +1,5 @@
 ---
-title: Python | FusionCharts
+title: FusionCharts Python Integration Guide for Developers
 description: Export from your desktop and web server using Python SDKs. A complete list of API reference.
 heading: Python
 ---

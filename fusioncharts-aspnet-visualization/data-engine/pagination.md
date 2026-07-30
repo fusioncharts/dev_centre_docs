@@ -1,5 +1,5 @@
 ---
-title: Pagination | FusionCharts
+title: FusionCharts Pagination Guide for Large Data Tables
 description: Extract data only from a specific page and return the resultant data into another instance of the DataModel.
 heading: Pagination
 ---

@@ -1,5 +1,5 @@
 ---
-title: Version 3.16 Release Notes & Features | FusionCharts
+title: FusionCharts Version 3.16.x Release Notes Updates
 description: Upgrade to FusionCharts 3.16.x to enjoy enhanced features, bug fixes, and improved performance. Check out the detailed version history for all updates. Try now!
 heading: Version 3.16.x
 ---

@@ -1,5 +1,5 @@
 ---
-title: Version 4.0 Release Notes & Updates | FusionCharts
+title: FusionCharts Version 4.0.x Release Notes Updates
 description: Explore FusionCharts 4.0.X update history. See key improvements, fixes, and enhancements that boost performance and elevate your data visualizations quickly.
 heading: Version 4.0.x
 ---

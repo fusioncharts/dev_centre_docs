@@ -1,5 +1,5 @@
 ---
-title: Time Axis | FusionCharts
+title: FusionTime Time Axis Documentation Guide for Devs
 description: Explore FusionTime's time axis for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Time Axis
 ---

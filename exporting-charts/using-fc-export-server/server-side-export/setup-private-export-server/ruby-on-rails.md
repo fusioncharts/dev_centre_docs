@@ -1,6 +1,6 @@
 ---
 permalink: exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-ruby-on-rails.html
-title: Setup Private Export Server Using Ruby on Rails | FusionCharts
+title: Setup Private Export Server Using Ruby on Rails Guide
 description: To setup a private export server in Ruby on Rails, you will need to install the official RoR export handler in your project.
 heading: Ruby on Rails
 chartPresent: false

@@ -1,5 +1,5 @@
 ---
-title: Data Marker | FusionCharts
+title: FusionCharts Data Marker Guide for Better Visuals
 description: Discover FusionTime's data marker for powerful data visualization. Integrate interactive date controls & elevate your web apps. Get started now!
 heading: Data Marker
 ---

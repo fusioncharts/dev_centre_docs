@@ -1,5 +1,5 @@
 ---
-title: Reference Line | FusionCharts
+title: FusionCharts Reference Line Guide for Better Charts
 description: Explore FusionTime's reference line for ASP.NET, offering intuitive control over date ranges for dynamic data visualization. Learn more now!
 heading: Reference Line
 ---
