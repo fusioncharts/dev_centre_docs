@@ -1943,10 +1943,6 @@
             ]
           },
           {
-            "title": "SDK Upgrades",
-            "path": "/upgrading/sdk-upgrades.md"
-          },
-          {
             "title": "From Flash to JavaScript",
             "path": "/upgrading/from-flash-to-javascript"
           }
