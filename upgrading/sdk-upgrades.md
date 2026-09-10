@@ -68,7 +68,7 @@ heading: FusionCharts SDK Upgrades
 
 <h4>Breaking</h4>
 
-- Minimum supported React Native version raised to 0.75.0; versions below this (and 0.87.0+) are no longer supported.
+- Minimum supported React Native version raised to 0.75.0.
 - You must now install the five native modules directly, as they no longer autolink.
 
 <h4>Links</h4>
