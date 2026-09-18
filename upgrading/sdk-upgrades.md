@@ -4,11 +4,37 @@ description: This section discusses the changes and updates for the FusionCharts
 heading: FusionCharts SDK Upgrades
 ---
 
+<style>
+.color-badge {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.17px;
+  line-height: 12px;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin: 1.6rem 0 !important;
+}
+.color-badge-angular {
+  background-color: #48B884;
+}
+.color-badge-svelte {
+  background-color: #3CBAE8;
+}
+.color-badge-react-native {
+  background-color: #E1A434;
+}
+.color-badge-flutter {
+  background-color: #a97cf8;
+}
+</style>
+
 <h2 class="sub-heading">SDKs Upgrades</h2>
 
 <p class="release-date">11th September, 2026</p>
   
-<h3>Angular FusionCharts 5.0.0</h3>
+<h3 class="color-badge color-badge-angular">Angular FusionCharts 5.0.0</h3>
 
 - Updated the Angular SDK to its latest compatible version, resolving known security vulnerabilities and ensuring smoother compatibility with newer Angular releases.
 
@@ -31,7 +57,7 @@ heading: FusionCharts SDK Upgrades
 - [NPM Angular FusionCharts](https://npmjs.com/package/angular-fusioncharts)
 - [GitHub Angular FusionCharts](https://github.com/fusioncharts/angular-fusioncharts)
 
-<h3>Svelte FusionCharts 2.0.0</h3>
+<h3 class="color-badge color-badge-svelte">Svelte FusionCharts 2.0.0</h3>
 
 - Updated the Svelte SDK to its latest compatible version, addressing identified security vulnerabilities as part of the ongoing SDK security compliance initiative.
 
@@ -55,7 +81,7 @@ heading: FusionCharts SDK Upgrades
 - [NPM Svelte FusionCharts](https://npmjs.com/package/svelte-fusioncharts)
 - [GitHub Svelte FusionCharts](https://github.com/fusioncharts/svelte-fusioncharts)
 
-<h3>React-Native FusionCharts 7.0.0</h3>
+<h3 class="color-badge color-badge-react-native">React-Native FusionCharts 7.0.0</h3>
 
 - Updated the React Native SDK to its latest compatible version, resolving security vulnerabilities and improving reliability across supported React Native versions. 
 
@@ -76,7 +102,7 @@ heading: FusionCharts SDK Upgrades
 - [NPM React-Native FusionCharts](https://npmjs.com/package/react-native-fusioncharts)
 - [GitHub React-Native FusionCharts](https://github.com/fusioncharts/react-native-fusioncharts)
 
-<h3>Flutter FusionCharts 2.0.0</h3>
+<h3 class="color-badge color-badge-flutter">Flutter FusionCharts 2.0.0</h3>
 
 - Updated the Flutter SDK to the latest compatible version to improve stability and keep pace with the broader SDK modernization initiative.
 
