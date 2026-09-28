@@ -4,6 +4,20 @@ description: 'FusionCharts changelog: Detailed release notes covering new featur
 heading: Version 4.2.x
 ---
 
+<h2 class="sub-heading">Version 4.2.3</h2>
+
+<p class="release-date">30th September, 2026</p>
+
+<h4>Improvements</h4>
+
+- FusionCharts 4.2.3 upgraded the **DOMPurify** library from **3.3.3** to **3.4.16**, resolving open security advisories. **DOMPurify** is used internally to clean and sanitize the content rendered inside chart tooltips.
+
+<h4>Fixes</h4>
+
+- Fixed an issue where hovering a legend item in multi-series stacked charts only highlighted the first plot instead of every plot in that series. This affected `msstackedcolumn2d`, `msstackedbar2d`, and any chart with a legend label long enough to be truncated.
+- FusionCharts 4.2.3 resolved an error where dragging the last task bar on a `Gantt chart` row would throw an uncaught exception when `percentComplete` was set, or when `allowTaskbarOverlap` was enabled. Task bars continue to stop correctly against their neighbors unless overlap is explicitly allowed.
+
+
 <h2 class="sub-heading">Version 4.2.2</h2>
 
 <p class="release-date">1st April, 2026</p>
