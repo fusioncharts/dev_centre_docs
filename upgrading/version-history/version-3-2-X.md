@@ -666,7 +666,7 @@ heading: Version 3.2.x
 
 - Use `FusionCharts.asp`, `FusionCharts.php`, `FusionCharts.dll` (or the sources `FusionCharts.cs`, `FusionCharts.vb`)
 
-- Use of various XML and JavaScript APIs as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#deprecatedxt).
+- Use of various XML and JavaScript APIs as listed [here](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X).
 
 <h4>FusionMaps (30th July, 2012)</h4>
 
