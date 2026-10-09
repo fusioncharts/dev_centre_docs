@@ -712,7 +712,7 @@ heading: Version 3.2.x
 
 - Set default polygon shape to circle when sides are less than 3
 
-- Correction of entity long names for numerous maps as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#definitions)
+- Correction of entity long names for numerous maps as listed [here](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X)
 
 - "China-2" map has been renamed to "China (With Direct-controlled municipalities and Special administrative regions)"
 
