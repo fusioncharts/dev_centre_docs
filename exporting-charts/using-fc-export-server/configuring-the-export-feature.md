@@ -114,7 +114,7 @@ The following is a complete list of `chart` level attributes that can be used to
             <td valign="top" class="code">`logHandler`</td>
             <td valign="top" class="text">URL</td>
             <td valign="top" class="text"> </td>
-            <td valign="top" class="text"> Used to set the URL for the log endpoint <br> __Default value__: [https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/configuring-the-export-feature/](https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/configuring-the-export-feature/) <br> The use of __http__ or __https__ will depend on the protocol being used. </td>
+            <td valign="top" class="text"> Used to set the URL for the log endpoint <br> __Default value__: [https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/configuring-the-export-feature](https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/configuring-the-export-feature) <br> The use of __http__ or __https__ will depend on the protocol being used. </td>
         </tr>
     </tbody>
 </table>
