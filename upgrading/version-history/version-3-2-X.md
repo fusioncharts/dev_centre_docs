@@ -338,7 +338,7 @@ heading: Version 3.2.x
 
   - Real-time Dual Y-Axis Line chart
 
-- Ability to control number formatting for [Indian and East Asian thousand/lac separation formats](http://docs.fusioncharts.com/widgets/Contents/Advanced/NumberFormat/Basics.html#thousandSeparatorPosition)
+- Ability to control number formatting for [Indian and East Asian thousand/lac separation formats](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X)
 
 <h4>Improvements</h4>
 
