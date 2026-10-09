@@ -876,7 +876,7 @@ If you are using an earlier version of FusionCharts versions, here's how you can
 
 Once you change the value of the gauge, the gauge automatically calls the FC_ChartUpdated(DOMId) JavaScript function. You need to define this method in your HTML page and then retrieve the data using getData(index) or getDataForId(id) method.
 
-To look at the HTML + JavaScript code required to retrieve data from the gauge when you change the value, click [here](http://docs.fusioncharts.com/widgets/Contents/Linear/Edit.html).
+To look at the HTML + JavaScript code required to retrieve data from the gauge when you change the value, click [here](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/linear-gauge).
 
 ## Create a Realtime Linear Gauge
 

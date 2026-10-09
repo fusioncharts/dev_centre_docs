@@ -338,7 +338,7 @@ heading: Version 3.2.x
 
   - Real-time Dual Y-Axis Line chart
 
-- Ability to control number formatting for [Indian and East Asian thousand/lac separation formats](http://docs.fusioncharts.com/widgets/Contents/Advanced/NumberFormat/Basics.html#thousandSeparatorPosition)
+- Ability to control number formatting for [Indian and East Asian thousand/lac separation formats](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X)
 
 <h4>Improvements</h4>
 
@@ -666,7 +666,7 @@ heading: Version 3.2.x
 
 - Use `FusionCharts.asp`, `FusionCharts.php`, `FusionCharts.dll` (or the sources `FusionCharts.cs`, `FusionCharts.vb`)
 
-- Use of various XML and JavaScript APIs as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#deprecatedxt).
+- Use of various XML and JavaScript APIs as listed [here](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X).
 
 <h4>FusionMaps (30th July, 2012)</h4>
 
@@ -712,7 +712,7 @@ heading: Version 3.2.x
 
 - Set default polygon shape to circle when sides are less than 3
 
-- Correction of entity long names for numerous maps as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#definitions)
+- Correction of entity long names for numerous maps as listed [here](https://www.fusioncharts.com/dev/upgrading/version-history/version-3-2-X)
 
 - "China-2" map has been renamed to "China (With Direct-controlled municipalities and Special administrative regions)"
 
