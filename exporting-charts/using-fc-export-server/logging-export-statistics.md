@@ -68,7 +68,7 @@ The image below shows the architecture of the export statistics logger:
             <td valign="top" class="code">`logHandler`</td>
             <td valign="top" class="text">URL</td>
             <td valign="top" class="text"> </td>
-            <td valign="top" class="text"> Used to set the URL for the log endpoint <br> __Default value__: ["https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/logging-export-statistics"](https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/logging-export-statistics) <br> The use of __http__ or __https__ will depend on the protocol being used. </td>
+            <td valign="top" class="text"> Used to set the URL for the log endpoint <br> __Default value__: https://www.fusioncharts.com/dev/exporting-charts/using-fc-export-server/logging-export-statistics <br> The use of __http__ or __https__ will depend on the protocol being used. </td>
         </tr>
     </tbody>
 </table>
