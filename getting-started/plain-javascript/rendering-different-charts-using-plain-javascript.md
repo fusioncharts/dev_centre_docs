@@ -818,7 +818,7 @@ We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all t
 <!-- Including the map renderer file -->
 <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "></script>
 <!-- Including the map definition file -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"></script>
 <!-- Including the fusion theme -->
 <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 <script type="text/javascript">
