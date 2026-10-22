@@ -45,7 +45,7 @@ $ npm install fusioncharts --save
     &lt;!-- jQuery --&gt;
     &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
     &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- jQuery-FusionCharts --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Fusion Theme --&gt;
