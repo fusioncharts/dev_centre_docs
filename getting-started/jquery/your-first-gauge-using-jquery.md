@@ -49,7 +49,7 @@ $ npm install fusioncharts --save
     &lt;!-- jQuery-FusionCharts --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/jquery-fusioncharts/v2.0.1/jquery.fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
