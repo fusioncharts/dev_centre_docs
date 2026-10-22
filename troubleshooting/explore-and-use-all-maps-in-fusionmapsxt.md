@@ -10,7 +10,7 @@ FusionMaps XT offers beautiful and interactive maps to plot geographical data ef
 
 To add these maps to your web application, download the map definition files and follow the steps given below.  
 
-* Click [here](http://www.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) to download the maps definition files
+* Click [here](https://www.fusioncharts.com/downloads/addons/fusionmaps-xt-definition.zip) to download the maps definition files
 
 Locate the **fusioncharts** folder in your web application, containing `fusioncharts.js` and `fusioncharts.maps.js`. These two JavaScript files must be present in your web application to render any map.
 
