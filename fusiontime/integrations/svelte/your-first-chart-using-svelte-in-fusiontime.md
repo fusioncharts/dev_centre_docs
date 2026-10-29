@@ -30,7 +30,7 @@ The chart will look as shown below:
 
 {% embed_ftChart integrations-react %}
 
-The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/refs/heads/master/assets/datasources/fusiontime/examples/integrations-react/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time     | Sales   |
 | -------- | ------- |
