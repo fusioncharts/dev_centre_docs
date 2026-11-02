@@ -107,7 +107,7 @@ let data = [
 ]
 ```
 
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-multi-variate/data.json)
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/refs/heads/master/assets/datasources/fusiontime/examples/online-sales-multi-variate/data.json)
 
 In the above code:
 
