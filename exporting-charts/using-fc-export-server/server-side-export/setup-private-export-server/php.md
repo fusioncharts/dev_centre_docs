@@ -66,7 +66,7 @@ To use the private export server, the following attributes need to be configured
         </tr>
         <tr>
             <td valign="top" class="code">`exportHandler`</td>
-            <td valign="top" class="text">Set to the absolute path of the export handler, for example: __http://www.example.com/fcExportHandler/FCExporter__</td>
+            <td valign="top" class="text">Set to the absolute path of the export handler, for example: <code>http://www.example.com/fcExportHandler/FCExporter</code></td>
         </tr>
         <tr>
             <td valign="top" class="code">`exportAction`</td>

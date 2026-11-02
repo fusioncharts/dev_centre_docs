@@ -8,7 +8,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 ## Prerequisite (expo cli / react-native cli) 
 
-We are assuming that you have a 'react-native project' up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your React-Native project setup.<br/>
+We are assuming that you have a 'react-native project' up and running. If not, follow the steps [here](https://reactnative.dev/docs/environment-setup) to get started with your React-Native project setup.<br/>
 
 **IMPORTANT NOTE:** Install react-native-web if not present already.
 
